@@ -1,389 +1,395 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html lang="vi" data-theme="auto">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhà Chung • Gương 3D Mirror Theme</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="referrer" content="no-referrer" />
 
-        :root {
-            --glass-bg: rgba(255, 255, 255, 0.08);
-            --glass-border: rgba(255, 255, 255, 0.18);
-            --glass-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
-        }
+  <title>Muôn Nơi – Muốn nói | Social-first • Privacy-first • Ecosystem Hub</title>
+  <meta name="description" content="Muôn Nơi (mn) là cổng hệ sinh thái social-first hướng đến sự tự do tuyệt đối từ bên trong, với trách nhiệm rõ ràng trong đời sống muôn nơi. Tối giản để mở rộng: app, nhà chung, làm việc, học tập, du lịch, đầu tư…" />
 
-        .glass {
-            background: var(--glass-bg);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border: 1px solid var(--glass-border);
-            box-shadow: var(--glass-shadow);
-        }
+  <meta property="og:title" content="Muôn Nơi – Muốn nói" />
+  <meta property="og:description" content="Tự do từ bên trong. Trách nhiệm rõ ràng. Hệ sinh thái sống – học – làm – đầu tư – du lịch cho đời sống muôn nơi." />
+  <meta property="og:type" content="website" />
 
-        .mirror-shine {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .mirror-shine::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -100%;
-            width: 50%;
-            height: 300%;
-            background: linear-gradient(
-                120deg,
-                transparent,
-                rgba(255, 255, 255, 0.35),
-                transparent
-            );
-            animation: shine 6s linear infinite;
-            pointer-events: none;
-        }
-
-        @keyframes shine {
-            0% { transform: translateX(-100%) rotate(25deg); }
-            100% { transform: translateX(400%) rotate(25deg); }
-        }
-
-        .perspective-container {
-            perspective: 1400px;
-            perspective-origin: 50% 30%;
-        }
-
-        #mirror-nav {
-            transition: transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);
-            transform-style: preserve-3d;
-            will-change: transform;
-        }
-
-        .nav-link {
-            position: relative;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 50%;
-            background: linear-gradient(to right, #fff, #aaa);
-            transition: all 0.4s ease;
-            transform: translateX(-50%);
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        .dropdown-content {
-            animation: dropdownPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-
-        @keyframes dropdownPop {
-            from {
-                opacity: 0;
-                transform: translateY(-20px) scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        .hero-bg {
-            background: radial-gradient(circle at 50% 20%, rgba(255,255,255,0.07) 0%, transparent 70%);
-        }
-    </style>
+  <link rel="icon" href="/assets/brand/mn.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/assets/site.css" />
 </head>
-<body class="bg-gradient-to-br from-zinc-950 via-black to-zinc-950 text-white overflow-x-hidden">
-    <!-- PERSPECTIVE CONTAINER CHO HIỆU ỨNG GƯƠNG 3D -->
-    <div class="perspective-container fixed top-0 left-0 right-0 z-50">
-        <nav id="mirror-nav" 
-             class="glass mirror-shine mx-auto mt-6 max-w-7xl rounded-3xl px-8 py-5 flex items-center justify-between border border-white/10 shadow-2xl">
-            
-            <!-- LOGO -->
-            <div onclick="window.location.href='https://nhachung.org/'" 
-                 class="flex items-center gap-3 cursor-pointer group">
-                <div class="w-9 h-9 bg-gradient-to-br from-white to-zinc-300 rounded-2xl flex items-center justify-center text-black font-bold text-2xl shadow-inner group-hover:rotate-12 transition-transform">
-                    N
-                </div>
-                <div>
-                    <span class="text-2xl font-bold tracking-tighter text-white">Nhà Chung</span>
-                    <span class="block text-[10px] text-zinc-400 -mt-1 tracking-[2px]">SOCIAL OS</span>
-                </div>
-            </div>
 
-            <!-- MENU DESKTOP -->
-            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
-                <!-- Trang chủ -->
-                <a href="https://nhachung.org/" 
-                   class="nav-link text-white hover:text-zinc-300">Trang chủ</a>
+<body class="mn-body">
+  <!-- Top System Bar (sticky, clear, separate, desktop + mobile) -->
+  <header class="mn-top" role="banner">
+    <div class="mn-top__inner">
+      <a class="mn-brand" href="/" aria-label="Muôn Nơi">
+        <img class="mn-brand__logo" src="/assets/brand/mn.svg" alt="mn" />
+        <div class="mn-brand__meta">
+          <div class="mn-brand__name">Muôn Nơi</div>
+          <div class="mn-brand__tag">Muốn nói</div>
+        </div>
+      </a>
 
-                <!-- Hệ sinh thái với Dropdown -->
-                <div class="relative group">
-                    <button onclick="toggleDropdown(this)" 
-                            class="nav-link flex items-center gap-1 text-white hover:text-zinc-300">
-                        Hệ sinh thái
-                        <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
-                    </button>
-                    <!-- Dropdown -->
-                    <div class="dropdown-content absolute hidden group-hover:block pt-6">
-                        <div class="glass rounded-3xl py-6 px-8 w-72 text-sm shadow-2xl border border-white/10">
-                            <a href="#" class="flex items-center gap-4 py-3 px-5 hover:bg-white/10 rounded-2xl transition-colors">
-                                <i class="fa-solid fa-home w-5 text-zinc-400"></i>
-                                <div>
-                                    <div class="font-semibold">Sống</div>
-                                    <div class="text-zinc-400 text-xs">Không gian sống thật</div>
-                                </div>
-                            </a>
-                            <a href="#" class="flex items-center gap-4 py-3 px-5 hover:bg-white/10 rounded-2xl transition-colors">
-                                <i class="fa-solid fa-book w-5 text-zinc-400"></i>
-                                <div>
-                                    <div class="font-semibold">Học</div>
-                                    <div class="text-zinc-400 text-xs">Kiến thức bền vững</div>
-                                </div>
-                            </a>
-                            <a href="#" class="flex items-center gap-4 py-3 px-5 hover:bg-white/10 rounded-2xl transition-colors">
-                                <i class="fa-solid fa-briefcase w-5 text-zinc-400"></i>
-                                <div>
-                                    <div class="font-semibold">Làm</div>
-                                    <div class="text-zinc-400 text-xs">Công việc thật</div>
-                                </div>
-                            </a>
-                            <a href="#" class="flex items-center gap-4 py-3 px-5 hover:bg-white/10 rounded-2xl transition-colors">
-                                <i class="fa-solid fa-chart-line w-5 text-zinc-400"></i>
-                                <div>
-                                    <div class="font-semibold">Đầu tư</div>
-                                    <div class="text-zinc-400 text-xs">Dòng tiền minh bạch</div>
-                                </div>
-                            </a>
-                            <a href="#" class="flex items-center gap-4 py-3 px-5 hover:bg-white/10 rounded-2xl transition-colors">
-                                <i class="fa-solid fa-users w-5 text-zinc-400"></i>
-                                <div>
-                                    <div class="font-semibold">Cộng đồng</div>
-                                    <div class="text-zinc-400 text-xs">Kết nối chân thực</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <nav class="mn-nav" aria-label="Primary">
+        <a class="mn-nav__link" href="#vision">Tầm nhìn</a>
+        <a class="mn-nav__link" href="#ecosystem">Hệ sinh thái</a>
+        <a class="mn-nav__link" href="#roadmap">Lộ trình</a>
+        <a class="mn-nav__link" href="#trust">Bảo mật</a>
+        <a class="mn-nav__link" href="https://docs.muonnoi.org/" rel="noopener">Docs</a>
+      </nav>
 
-                <!-- Các link chuẩn của trang -->
-                <a href="https://app.nhachung.org" 
-                   class="nav-link text-white hover:text-zinc-300">App</a>
-                
-                <a href="https://api.nhachung.org" 
-                   class="nav-link text-white hover:text-zinc-300">API</a>
+      <div class="mn-top__actions">
+        <button class="mn-btn mn-btn--ghost" id="themeBtn" type="button" aria-label="Theme">◐</button>
+        <button class="mn-btn mn-btn--ghost" id="langBtn" type="button" aria-label="Language">VI</button>
+        <a class="mn-btn mn-btn--primary" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
 
-                <!-- Verify & Admin (redirect về App) -->
-                <a href="https://app.nhachung.org" 
-                   class="nav-link text-white hover:text-zinc-300">Verify</a>
-                <a href="https://app.nhachung.org" 
-                   class="nav-link text-white hover:text-zinc-300">Admin</a>
-            </div>
-
-            <!-- RIGHT SIDE -->
-            <div class="flex items-center gap-6">
-                <!-- Search -->
-                <div class="relative group">
-                    <input id="searchInput"
-                           type="text" 
-                           placeholder="Tìm kiếm trong Nhà Chung..."
-                           class="glass w-0 group-focus-within:w-72 transition-all duration-500 pl-12 py-3 rounded-3xl text-sm focus:outline-none border border-transparent focus:border-white/30">
-                    <i onclick="document.getElementById('searchInput').focus()" 
-                       class="fa-solid fa-magnifying-glass absolute left-5 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none"></i>
-                </div>
-
-                <!-- Nút hành động -->
-                <a href="https://app.nhachung.org" 
-                   class="glass px-7 py-3 rounded-3xl text-sm font-semibold hover:scale-105 active:scale-95 transition-all flex items-center gap-2 shadow-inner">
-                    <i class="fa-solid fa-arrow-right"></i>
-                    <span>Mở App</span>
-                </a>
-
-                <!-- Profile / Đăng nhập -->
-                <div onclick="alert('Chức năng đăng nhập sẽ kết nối với https://app.nhachung.org')"
-                     class="w-9 h-9 glass rounded-2xl flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
-                    <i class="fa-solid fa-user text-lg"></i>
-                </div>
-
-                <!-- Hamburger Mobile -->
-                <button onclick="toggleMobileMenu()" 
-                        class="md:hidden w-10 h-10 glass rounded-2xl flex items-center justify-center text-xl">
-                    <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </nav>
+        <button class="mn-burger" id="mnBurger" type="button" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
 
-    <!-- MOBILE MENU SLIDE -->
-    <div id="mobileMenu" 
-         class="fixed inset-0 bg-black/90 backdrop-blur-3xl z-50 hidden flex-col pt-24 px-8">
-        <div class="flex flex-col gap-8 text-xl font-medium">
-            <a href="https://nhachung.org/" class="py-3 border-b border-white/10">Trang chủ</a>
-            <a href="#" class="py-3 border-b border-white/10">Hệ sinh thái</a>
-            <a href="https://app.nhachung.org" class="py-3 border-b border-white/10">App</a>
-            <a href="https://api.nhachung.org" class="py-3 border-b border-white/10">API</a>
-            <a href="https://app.nhachung.org" class="py-3 border-b border-white/10">Verify</a>
-            <a href="https://app.nhachung.org" class="py-3 border-b border-white/10">Admin</a>
-        </div>
-        
-        <div class="mt-auto pb-12">
-            <a href="https://app.nhachung.org" 
-               class="block text-center glass py-5 rounded-3xl font-semibold">Mở Nhà Chung App</a>
-        </div>
+    <!-- Mobile Menu Panel -->
+    <div class="mn-mobile" id="mnMobile" hidden>
+      <a class="mn-mobile__item mn-mobile__item--primary" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
+      <a class="mn-mobile__item" href="#vision">Tầm nhìn</a>
+      <a class="mn-mobile__item" href="#ecosystem">Hệ sinh thái</a>
+      <a class="mn-mobile__item" href="#roadmap">Lộ trình</a>
+      <a class="mn-mobile__item" href="#trust">Bảo mật</a>
+      <a class="mn-mobile__item" href="https://docs.muonnoi.org/" rel="noopener">Docs</a>
+      <div class="mn-mobile__sep"></div>
+      <a class="mn-mobile__item" href="https://app.muonnoi.org/me" rel="noopener">Tài khoản</a>
     </div>
+  </header>
 
-    <!-- HERO SECTION - ĐỂ THỂ HIỆN TOÀN BỘ THEME -->
-    <section class="hero-bg min-h-screen flex items-center justify-center pt-32 pb-20 relative">
-        <div class="max-w-4xl mx-auto text-center px-6">
-            <div class="inline-flex items-center gap-3 bg-white/5 backdrop-blur-xl px-6 py-2 rounded-3xl mb-8 border border-white/10">
-                <div class="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
-                <span class="text-xs tracking-widest font-medium text-emerald-300">HỆ SINH THÁI ĐÃ HOẠT ĐỘNG</span>
-            </div>
-            
-            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
-                NHÀ CHUNG
-            </h1>
-            <p class="text-4xl md:text-5xl font-light text-zinc-400 tracking-tight mb-8">
-                Không gian sống • học • làm • đầu tư • cộng đồng<br>thật nhất Việt Nam
-            </p>
-            
-            <div class="max-w-md mx-auto text-zinc-400 text-lg mb-12">
-                Nơi con người có không gian ở thật, công việc thật, cộng đồng thật và dòng tiền thật.
-            </div>
+  <!-- 4D Mirror Background (pure HTML layers, CSS-driven) -->
+  <div class="mn-bg" aria-hidden="true">
+    <div class="mn-bg__grid"></div>
+    <div class="mn-bg__glow"></div>
+    <div class="mn-bg__sweep"></div>
+    <div class="mn-bg__noise"></div>
+  </div>
 
-            <div class="flex flex-col sm:flex-row gap-5 justify-center">
-                <a href="https://app.nhachung.org" 
-                   class="glass px-10 py-6 rounded-3xl font-semibold text-lg flex items-center justify-center gap-4 hover:scale-105 transition-all">
-                    <span>BẮT ĐẦU NGAY</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-                
-                <a href="https://api.nhachung.org" 
-                   class="border border-white/30 hover:bg-white/5 px-10 py-6 rounded-3xl font-medium text-lg transition-all">
-                    Khám phá API
-                </a>
-            </div>
+  <main class="mn-main" role="main">
+    <!-- HERO -->
+    <section class="mn-hero" id="vision">
+      <div class="mn-wrap">
+        <div class="mn-hero__card mn-glass">
+          <div class="mn-hero__top">
+            <span class="mn-chip">mn • social-first</span>
+            <span class="mn-chip mn-chip--soft">privacy-first</span>
+            <span class="mn-chip mn-chip--soft">module-first</span>
+          </div>
 
-            <div class="mt-24 text-xs text-zinc-500 flex items-center justify-center gap-8">
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <span>Bảo mật 100%</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-users"></i>
-                    <span>Cộng đồng minh bạch</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-circle-nodes"></i>
-                    <span>Online + Offline</span>
-                </div>
+          <h1 class="mn-h1">
+            Tự Do Tuyệt Đối Từ Bên Trong<br/>
+            Và Trách Nhiệm Rõ Ràng Trong Đời Sống Muôn Nơi.
+          </h1>
+
+          <p class="mn-lead">
+            Muôn Nơi là cổng hệ sinh thái dành cho mọi người: kết nối, chia sẻ, học tập, làm việc, kinh doanh, đầu tư và cùng nhau tạo giá trị thật. Chúng tôi bắt đầu từ social core miễn phí, bảo mật cao, và mở rộng theo từng mô-đun subdomain để tăng trưởng bền vững mà không phá vỡ nền tảng.
+          </p>
+
+          <div class="mn-hero__cta">
+            <a class="mn-btn mn-btn--primary mn-btn--xl" href="https://app.muonnoi.org/" rel="noopener">Bắt đầu ở Social App</a>
+            <a class="mn-btn mn-btn--ghost mn-btn--xl" href="#ecosystem">Xem sơ đồ hệ sinh thái</a>
+            <a class="mn-btn mn-btn--ghost mn-btn--xl" href="https://docs.muonnoi.org/" rel="noopener">Xem tài liệu</a>
+          </div>
+
+          <div class="mn-hero__meta">
+            <div class="mn-kpi">
+              <div class="mn-kpi__k">Mục tiêu</div>
+              <div class="mn-kpi__v">1.000.000 tài khoản</div>
+              <div class="mn-kpi__d">Social-first trước khi mở rộng các mô-đun lớn.</div>
             </div>
+            <div class="mn-kpi">
+              <div class="mn-kpi__k">Nguyên tắc</div>
+              <div class="mn-kpi__v">Không tracker</div>
+              <div class="mn-kpi__d">Tối thiểu dữ liệu, minh bạch vận hành.</div>
+            </div>
+            <div class="mn-kpi">
+              <div class="mn-kpi__k">Kiến trúc</div>
+              <div class="mn-kpi__v">Subdomain Apps</div>
+              <div class="mn-kpi__d">Nhà chung, làm việc, học tập, du lịch, đầu tư…</div>
+            </div>
+          </div>
         </div>
 
-        <!-- Hiệu ứng gương nổi dưới hero -->
-        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 text-[10px] tracking-[4px] text-zinc-500 flex items-center gap-3">
-            <div class="h-px w-12 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-            CUỘN XUỐNG ĐỂ KHÁM PHÁ GƯƠNG 3D
-            <div class="h-px w-12 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+        <!-- Quick Links (always correct) -->
+        <div class="mn-quick mn-glass">
+          <a class="mn-quick__a" href="https://app.muonnoi.org/" rel="noopener">
+            <span class="mn-quick__t">Social App</span>
+            <span class="mn-quick__d">app.muonnoi.org</span>
+          </a>
+          <a class="mn-quick__a" href="https://docs.muonnoi.org/" rel="noopener">
+            <span class="mn-quick__t">Docs</span>
+            <span class="mn-quick__d">docs.muonnoi.org</span>
+          </a>
+          <a class="mn-quick__a" href="#roadmap">
+            <span class="mn-quick__t">Roadmap</span>
+            <span class="mn-quick__d">Mở mô-đun theo mốc</span>
+          </a>
         </div>
+      </div>
     </section>
 
-    <!-- FOOTER NHỎ (tùy chọn) -->
-    <footer class="py-8 text-center text-xs text-zinc-500 border-t border-white/10">
-        Theme Gương 3D Mirror • Dành riêng cho <a href="https://nhachung.org/" class="hover:text-white">nhachung.org</a> 
-        • Code hoàn thiện 2026
-    </footer>
+    <!-- ECOSYSTEM MAP -->
+    <section class="mn-section" id="ecosystem">
+      <div class="mn-wrap">
+        <div class="mn-head">
+          <h2 class="mn-h2">Sơ Đồ Hệ Sinh Thái Muôn Nơi</h2>
+          <p class="mn-sub">
+            Một trang chủ phải là bản đồ. Mỗi mô-đun là một ứng dụng độc lập, triển khai an toàn trên subdomain. Mở dần theo lộ trình, không “đẻ một khối khổng lồ” dễ lỗi.
+          </p>
+        </div>
 
-    <script>
-        // Tailwind script
-        function initializeTailwind() {
-            // Không cần vì dùng CDN
-        }
+        <div class="mn-grid">
+          <!-- LIVE -->
+          <article class="mn-tile mn-glass">
+            <div class="mn-tile__top">
+              <span class="mn-badge mn-badge--live">LIVE</span>
+              <span class="mn-tile__code">CORE</span>
+            </div>
+            <h3 class="mn-tile__h">Social App</h3>
+            <p class="mn-tile__p">Đăng nhập, hồ sơ, nền tảng feed, cơ chế chống spam mạnh. Tập trung đạt quy mô trước.</p>
+            <div class="mn-tile__links">
+              <a class="mn-btn mn-btn--primary" href="https://app.muonnoi.org/" rel="noopener">Mở app.muonnoi.org</a>
+              <a class="mn-btn mn-btn--ghost" href="https://app.muonnoi.org/me" rel="noopener">Tài khoản</a>
+            </div>
+          </article>
 
-        // 3D MIRROR TILT EFFECT
-        const nav = document.getElementById('mirror-nav');
-        const perspectiveContainer = document.querySelector('.perspective-container');
+          <!-- NEXT -->
+          <article class="mn-tile mn-glass">
+            <div class="mn-tile__top">
+              <span class="mn-badge mn-badge--next">NEXT</span>
+              <span class="mn-tile__code">HOUSE</span>
+            </div>
+            <h3 class="mn-tile__h">Nhà Chung Muôn Nơi</h3>
+            <p class="mn-tile__p">Mạng nhà ở, co-living, hồ sơ nhà, quy tắc cộng đồng, đồng hành dài hạn.</p>
+            <div class="mn-tile__links">
+              <a class="mn-btn mn-btn--ghost" href="https://nhachung.muonnoi.org/" rel="noopener">nhachung.muonnoi.org</a>
+              <a class="mn-btn mn-btn--ghost" href="#roadmap">Xem thời điểm mở</a>
+            </div>
+          </article>
 
-        function handleMouseMove(e) {
-            const rect = perspectiveContainer.getBoundingClientRect();
-            const centerX = rect.left + rect.width / 2;
-            const centerY = rect.top + rect.height / 2;
-            
-            const rotateY = (e.clientX - centerX) / 25;
-            const rotateX = (centerY - e.clientY) / 25;
-            
-            nav.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        }
+          <article class="mn-tile mn-glass">
+            <div class="mn-tile__top">
+              <span class="mn-badge mn-badge--next">NEXT</span>
+              <span class="mn-tile__code">WORK</span>
+            </div>
+            <h3 class="mn-tile__h">Làm Việc Muôn Nơi</h3>
+            <p class="mn-tile__p">Việc làm, dự án, cộng tác, hợp đồng nhẹ, hồ sơ năng lực xác thực.</p>
+            <div class="mn-tile__links">
+              <a class="mn-btn mn-btn--ghost" href="https://lamviec.muonnoi.org/" rel="noopener">lamviec.muonnoi.org</a>
+              <a class="mn-btn mn-btn--ghost" href="#roadmap">Xem thời điểm mở</a>
+            </div>
+          </article>
 
-        function resetTilt() {
-            nav.style.transform = `rotateX(0deg) rotateY(0deg)`;
-        }
+          <article class="mn-tile mn-glass">
+            <div class="mn-tile__top">
+              <span class="mn-badge mn-badge--next">NEXT</span>
+              <span class="mn-tile__code">LEARN</span>
+            </div>
+            <h3 class="mn-tile__h">Học Tập Muôn Nơi</h3>
+            <p class="mn-tile__p">Thư viện, khóa học, tài liệu, học nhóm. Học để tự do và có trách nhiệm.</p>
+            <div class="mn-tile__links">
+              <a class="mn-btn mn-btn--ghost" href="https://hoctap.muonnoi.org/" rel="noopener">hoctap.muonnoi.org</a>
+              <a class="mn-btn mn-btn--ghost" href="#roadmap">Xem thời điểm mở</a>
+            </div>
+          </article>
 
-        // Chỉ kích hoạt tilt trên desktop
-        if (window.innerWidth > 768) {
-            perspectiveContainer.addEventListener('mousemove', handleMouseMove);
-            perspectiveContainer.addEventListener('mouseleave', resetTilt);
-        }
+          <!-- VISION -->
+          <article class="mn-tile mn-glass">
+            <div class="mn-tile__top">
+              <span class="mn-badge">VISION</span>
+              <span class="mn-tile__code">TRAVEL</span>
+            </div>
+            <h3 class="mn-tile__h">Du Lịch Muôn Nơi</h3>
+            <p class="mn-tile__p">Hành trình, trải nghiệm, cộng đồng địa phương, chia sẻ sống thật.</p>
+            <div class="mn-tile__links">
+              <a class="mn-btn mn-btn--ghost" href="https://dulich.muonnoi.org/" rel="noopener">dulich.muonnoi.org</a>
+              <a class="mn-btn mn-btn--ghost" href="#roadmap">Lộ trình</a>
+            </div>
+          </article>
 
-        // Toggle Dropdown (hỗ trợ click trên mobile)
-        function toggleDropdown(btn) {
-            const dropdown = btn.parentElement.querySelector('.dropdown-content');
-            dropdown.classList.toggle('hidden');
-        }
+          <article class="mn-tile mn-glass">
+            <div class="mn-tile__top">
+              <span class="mn-badge">VISION</span>
+              <span class="mn-tile__code">INVEST</span>
+            </div>
+            <h3 class="mn-tile__h">Đầu Tư Muôn Nơi</h3>
+            <p class="mn-tile__p">Dự án, hợp tác, phòng deal, minh bạch thông tin theo mô-đun.</p>
+            <div class="mn-tile__links">
+              <a class="mn-btn mn-btn--ghost" href="https://dautu.muonnoi.org/" rel="noopener">dautu.muonnoi.org</a>
+              <a class="mn-btn mn-btn--ghost" href="#roadmap">Lộ trình</a>
+            </div>
+          </article>
 
-        // Mobile Menu
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            const icon = document.getElementById('hamburgerIcon');
-            
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-                menu.classList.add('flex');
-                icon.classList.replace('fa-bars', 'fa-xmark');
-            } else {
-                menu.classList.add('hidden');
-                menu.classList.remove('flex');
-                icon.classList.replace('fa-xmark', 'fa-bars');
-            }
-        }
+          <article class="mn-tile mn-glass">
+            <div class="mn-tile__top">
+              <span class="mn-badge">VISION</span>
+              <span class="mn-tile__code">LIFE</span>
+            </div>
+            <h3 class="mn-tile__h">Cuộc Sống Muôn Nơi</h3>
+            <p class="mn-tile__p">Các công cụ sống: checklist, nhắc nhở, thói quen, đời sống tỉnh thức.</p>
+            <div class="mn-tile__links">
+              <a class="mn-btn mn-btn--ghost" href="https://cuocsong.muonnoi.org/" rel="noopener">cuocsong.muonnoi.org</a>
+              <a class="mn-btn mn-btn--ghost" href="#trust">Bảo mật</a>
+            </div>
+          </article>
 
-        // Search enter key demo
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                alert('Tìm kiếm: ' + this.value + '\n\n(Trong thực tế sẽ redirect về App)');
-                this.value = '';
-            }
-        });
+          <article class="mn-tile mn-glass">
+            <div class="mn-tile__top">
+              <span class="mn-badge">VISION</span>
+              <span class="mn-tile__code">MARKET</span>
+            </div>
+            <h3 class="mn-tile__h">Cửa Hàng Số</h3>
+            <p class="mn-tile__p">Người dùng bán chương trình, tài liệu, dịch vụ. Mở dần khi social core ổn định.</p>
+            <div class="mn-tile__links">
+              <a class="mn-btn mn-btn--ghost" href="https://shop.muonnoi.org/" rel="noopener">shop.muonnoi.org</a>
+              <a class="mn-btn mn-btn--ghost" href="#roadmap">Lộ trình</a>
+            </div>
+          </article>
+        </div>
 
-        // Click ngoài dropdown để đóng (tùy chọn)
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.relative')) {
-                const allDropdowns = document.querySelectorAll('.dropdown-content');
-                allDropdowns.forEach(d => d.classList.add('hidden'));
-            }
-        });
+        <div class="mn-note mn-glass">
+          <div class="mn-note__h">Nguyên tắc mở rộng</div>
+          <div class="mn-note__p">
+            Muôn Nơi không xây “một app ôm hết” ngay lập tức. Chúng tôi khóa lõi social thật vững, sau đó mở từng mô-đun chuyên biệt theo subdomain để tăng tốc mà vẫn kiểm soát bảo mật và trải nghiệm.
+          </div>
+        </div>
+      </div>
+    </section>
 
-        // Khởi tạo khi load
-        window.onload = function() {
-            console.log('%c✅ Theme Gương 3D Mirror đã sẵn sàng cho nhachung.org', 'color:#aaa; font-family:monospace');
-            
-            // Tự động focus search khi nhấn "/"
-            document.addEventListener('keydown', function(e) {
-                if (e.key === '/' && document.activeElement.tagName !== "INPUT") {
-                    e.preventDefault();
-                    document.getElementById('searchInput').focus();
-                }
-            });
-        };
-    </script>
+    <!-- ROADMAP -->
+    <section class="mn-section" id="roadmap">
+      <div class="mn-wrap">
+        <div class="mn-head">
+          <h2 class="mn-h2">Lộ Trình Triển Khai</h2>
+          <p class="mn-sub">Mở đúng thứ tự: bảo mật trước, trải nghiệm trước, rồi mới tăng module.</p>
+        </div>
+
+        <div class="mn-steps">
+          <div class="mn-step mn-glass">
+            <div class="mn-step__k">Giai đoạn 1 • Social-first</div>
+            <div class="mn-step__t">Auth + Profile + Anti-spam</div>
+            <div class="mn-step__d">Đăng nhập an toàn, hồ sơ tối giản, rate-limit, report/block nền tảng.</div>
+          </div>
+
+          <div class="mn-step mn-glass">
+            <div class="mn-step__k">Giai đoạn 2</div>
+            <div class="mn-step__t">Feed + Search</div>
+            <div class="mn-step__d">Bảng tin mượt, tìm kiếm người/nhóm/chủ đề, chống nội dung rác.</div>
+          </div>
+
+          <div class="mn-step mn-glass">
+            <div class="mn-step__k">Giai đoạn 3</div>
+            <div class="mn-step__t">Marketplace số</div>
+            <div class="mn-step__d">Người dùng bán tài liệu/chương trình, hóa đơn, minh bạch giao dịch.</div>
+          </div>
+
+          <div class="mn-step mn-glass">
+            <div class="mn-step__k">Giai đoạn 4</div>
+            <div class="mn-step__t">Chat + gọi</div>
+            <div class="mn-step__d">Nhắn tin trước, gọi sau. Mở dần theo hạ tầng & bảo mật.</div>
+          </div>
+
+          <div class="mn-step mn-glass">
+            <div class="mn-step__k">Giai đoạn 5 • Ecosystem</div>
+            <div class="mn-step__t">Nhà Chung • Làm Việc • Học Tập • Du Lịch • Đầu Tư</div>
+            <div class="mn-step__d">Mỗi mô-đun là một app độc lập trên subdomain, liên kết với social core.</div>
+          </div>
+
+          <div class="mn-step mn-glass">
+            <div class="mn-step__k">Mục tiêu mở rộng</div>
+            <div class="mn-step__t">1.000.000 tài khoản</div>
+            <div class="mn-step__d">Khi đạt quy mô đủ, hệ sinh thái được mở nhanh hơn theo nhu cầu thật.</div>
+          </div>
+        </div>
+
+        <div class="mn-cta mn-glass">
+          <div class="mn-cta__l">
+            <div class="mn-cta__t">Bắt đầu từ Social App</div>
+            <div class="mn-cta__d">Tạo tài khoản, hoàn thiện hồ sơ, tham gia feed khi mở.</div>
+          </div>
+          <div class="mn-cta__r">
+            <a class="mn-btn mn-btn--primary" href="https://app.muonnoi.org/" rel="noopener">Vào app.muonnoi.org</a>
+            <a class="mn-btn mn-btn--ghost" href="https://docs.muonnoi.org/" rel="noopener">Docs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / SECURITY -->
+    <section class="mn-section" id="trust">
+      <div class="mn-wrap">
+        <div class="mn-head">
+          <h2 class="mn-h2">Bảo Mật & Niềm Tin</h2>
+          <p class="mn-sub">
+            Bảo mật không phải trang trí. Đây là cấu trúc vận hành để người dùng yên tâm sống và tạo giá trị.
+          </p>
+        </div>
+
+        <div class="mn-trust">
+          <div class="mn-trust__col mn-glass">
+            <h3 class="mn-h3">Privacy-first</h3>
+            <ul class="mn-list">
+              <li>Không trackers, không quảng cáo bám đuôi.</li>
+              <li>Tối thiểu dữ liệu lưu trữ; tách mô-đun theo subdomain để giảm rủi ro.</li>
+              <li>Minh bạch tài liệu và quy tắc vận hành trên docs.</li>
+            </ul>
+          </div>
+
+          <div class="mn-trust__col mn-glass">
+            <h3 class="mn-h3">Security-first</h3>
+            <ul class="mn-list">
+              <li>CSP nghiêm ngặt, session HttpOnly, CORS allowlist.</li>
+              <li>Rate-limit + anti-bot + audit log theo mô-đun.</li>
+              <li>Cơ chế report, block, chống spam và nội dung rác.</li>
+            </ul>
+          </div>
+
+          <div class="mn-trust__col mn-glass">
+            <h3 class="mn-h3">Responsible freedom</h3>
+            <ul class="mn-list">
+              <li>Tự do từ bên trong đi kèm trách nhiệm rõ ràng.</li>
+              <li>Tạo giá trị thật, giao tiếp thật, minh bạch thật.</li>
+              <li>Phát triển bền vững, không làm hỏng xã hội vì tối ưu ngắn hạn.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mn-footlinks mn-glass">
+          <a class="mn-footlinks__a" href="https://app.muonnoi.org/" rel="noopener">Vào Social App</a>
+          <a class="mn-footlinks__a" href="https://docs.muonnoi.org/" rel="noopener">Docs</a>
+          <a class="mn-footlinks__a" href="#ecosystem">Sơ đồ hệ sinh thái</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mn-footer" role="contentinfo">
+    <div class="mn-wrap mn-footer__inner">
+      <div class="mn-footer__left">
+        <div class="mn-footer__brand">
+          <img class="mn-footer__logo" src="/assets/brand/mn.svg" alt="mn" />
+          <div>
+            <div class="mn-footer__name">Muôn Nơi</div>
+            <div class="mn-footer__tag">Muốn nói</div>
+          </div>
+        </div>
+        <div class="mn-muted">© <span id="year"></span> muonnoi.org • social-first • privacy-first</div>
+      </div>
+
+      <div class="mn-footer__right">
+        <a class="mn-footer__link" href="https://app.muonnoi.org/" rel="noopener">app.muonnoi.org</a>
+        <a class="mn-footer__link" href="https://docs.muonnoi.org/" rel="noopener">docs.muonnoi.org</a>
+        <a class="mn-footer__link" href="#trust">security</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- No inline JS heavy. Keep hooks only; site.js wires burger/theme/lang/year -->
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>
