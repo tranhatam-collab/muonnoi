@@ -1,52 +1,232 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        /* Nền trắng đen hòa trộn */
-        background: linear-gradient(135deg, #111 0%, #444 50%, #eee 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Chung - Gương 4D Interface</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --glass-bg: rgba(255, 255, 255, 0.4);
+            --glass-border: rgba(0, 0, 0, 0.1);
+            --shadow-deep: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+        }
 
-    .glass-card {
-        width: 300px;
-        height: 400px;
-        /* Hiệu ứng gương 3D */
-        background: rgba(255, 255, 255, 0.05); /* Lớp nền kính mờ */
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.2); /* Viền sáng */
-        backdrop-filter: blur(15px); /* Làm mờ nền sau kính */
-        -webkit-backdrop-filter: blur(15px);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Đổ bóng 3D */
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white; /* Chữ trắng trên nền tối */
-        padding: 20px;
-        transition: 0.5s;
-    }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
 
-    .glass-card:hover {
-        transform: translateY(-10px);
-        background: rgba(255, 255, 255, 0.1);
-    }
+        /* Hiệu ứng nền 4D chuyển động nhẹ */
+        .background-shimmer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 50% 50%, rgba(200,200,200,0.1) 0%, transparent 80%);
+            animation: moveShimmer 10s infinite alternate;
+        }
 
-    h2 { margin: 0; font-weight: 300; letter-spacing: 2px; }
-    p { font-size: 14px; opacity: 0.8; }
-</style>
+        @keyframes moveShimmer {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+
+        /* Navigation Menu 4D */
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 1200px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            z-index: 1000;
+            box-shadow: var(--shadow-deep);
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: 800;
+            text-decoration: none;
+            color: #000;
+            letter-spacing: -1px;
+        }
+
+        .menu-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .menu-links li a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            transition: all 0.4s ease;
+            position: relative;
+            padding: 5px 10px;
+        }
+
+        .menu-links li a:hover {
+            color: #000;
+            text-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        /* Hiệu ứng gạch chân 4D */
+        .menu-links li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #000;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .menu-links li a:hover::after {
+            width: 80%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 900;
+            background: linear-gradient(to right, #000, #888, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .cta-button {
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            background: #333;
+        }
+
+        /* Mirror Card Component */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 10%;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.7);
+            border: 1px solid var(--glass-border);
+            padding: 40px;
+            border-radius: 30px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
+            box-shadow: -20px 20px 60px #d9d9d9, 20px -20px 60px #ffffff;
+            background: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <div class="glass-card">
-        <h2>MIRROR</h2>
-        <p>Hiệu ứng gương 3D</p>
+
+    <div class="background-shimmer"></div>
+
+    <nav>
+        <div class="logo">
+            <a href="https://nhachung.org/">NHÀ CHUNG</a>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Hệ sinh thái</a></li>
+            <li><a href="#">Hạ tầng số</a></li>
+            <li><a href="#">Ước mơ</a></li>
+            <li><a href="#">Kết nối</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Kiến tạo Xã hội Đủ đầy</h1>
+        <p style="max-width: 600px; color: #666; line-height: 1.6;">
+            Chào mừng bạn đến với <b>nhachung.org</b> – Nơi tích hợp hạ tầng số, 
+            triết lý Trồi Sinh và những giá trị cốt lõi của hạnh phúc thực thụ.
+        </p>
+        <a href="https://nhachung.org/" class="cta-button">Khám phá ngay</a>
+    </section>
+
+    <div class="grid-container">
+        <div class="card">
+            <h3>Trồi Sinh (Emergence)</h3>
+            <p>Triết lý mới của nền kinh tế thế giới và sự vận hành tự nhiên.</p>
+        </div>
+        <div class="card" style="background: #000; color: #fff;">
+            <h3>Nhà Chung OS</h3>
+            <p>Hệ điều hành hạ tầng số dành cho cộng đồng thịnh vượng.</p>
+        </div>
+        <div class="card">
+            <h3>Trạm Ước Mơ</h3>
+            <p>Kết nối và hiện thực hóa những khát vọng nhân văn.</p>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Nhachung.org - Bản quyền thuộc về cộng đồng Nhà Chung.</p>
+    </footer>
+
 </body>
 </html>
