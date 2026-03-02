@@ -1,166 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Muôn Nơi – Muốn nói</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        /* Nền trắng đen hòa trộn */
+        background: linear-gradient(135deg, #111 0%, #444 50%, #eee 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
 
-  <meta name="description" content="Muôn Nơi (mn) là nền tảng social-first, bảo mật cao, tối giản để mở rộng bền vững. Sống thật. Chia sẻ thật. Tạo giá trị thật." />
-  <meta name="referrer" content="no-referrer" />
+    .glass-card {
+        width: 300px;
+        height: 400px;
+        /* Hiệu ứng gương 3D */
+        background: rgba(255, 255, 255, 0.05); /* Lớp nền kính mờ */
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Viền sáng */
+        backdrop-filter: blur(15px); /* Làm mờ nền sau kính */
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Đổ bóng 3D */
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white; /* Chữ trắng trên nền tối */
+        padding: 20px;
+        transition: 0.5s;
+    }
 
-  <meta property="og:title" content="Muôn Nơi – Muốn nói" />
-  <meta property="og:description" content="Social-first. Privacy-first. High security. Minimal to scale safely." />
-  <meta property="og:type" content="website" />
+    .glass-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.1);
+    }
 
-  <link rel="icon" href="/assets/brand/mn.svg" />
-  <link rel="stylesheet" href="/assets/site.css" />
+    h2 { margin: 0; font-weight: 300; letter-spacing: 2px; }
+    p { font-size: 14px; opacity: 0.8; }
+</style>
 </head>
-
 <body>
-  <!-- HEADER: desktop nav + mobile hamburger -->
-  <header class="mn-header" role="banner">
-    <div class="mn-header__inner">
-      <a class="brand" href="/" aria-label="Muôn Nơi">
-        <img class="logo" src="/assets/brand/mn.svg" alt="mn" />
-        <div class="brand__text">
-          <div class="brand__name">Muôn Nơi</div>
-          <div class="brand__tag">Muốn nói</div>
-        </div>
-      </a>
-
-      <nav class="mn-nav" aria-label="Primary">
-        <a class="mn-link" href="#about" id="tStart">Bắt đầu</a>
-        <a class="mn-link" href="#security" id="tSecurity">Security</a>
-        <a class="mn-link" href="#roadmap" id="tRoad">Lộ trình</a>
-        <a class="mn-link" href="/docs" data-href="/docs">Docs</a>
-      </nav>
-
-      <div class="mn-actions">
-        <button id="langBtn" class="btn btn--ghost mn-lang" type="button" aria-label="Language">VI</button>
-        <a class="btn btn--primary mn-cta" href="/app/join" data-href="/app/join">Vào ứng dụng</a>
-
-        <button class="mn-burger" id="mnBurger" type="button" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+    <div class="glass-card">
+        <h2>MIRROR</h2>
+        <p>Hiệu ứng gương 3D</p>
     </div>
-
-    <!-- Mobile menu panel -->
-    <div class="mn-mobile" id="mnMobile" hidden>
-      <a class="mn-mobile__item" href="/app/join" data-href="/app/join">Vào ứng dụng</a>
-      <a class="mn-mobile__item" href="#about">Bắt đầu</a>
-      <a class="mn-mobile__item" href="#security">Security</a>
-      <a class="mn-mobile__item" href="#roadmap">Lộ trình</a>
-      <a class="mn-mobile__item" href="/docs" data-href="/docs">Docs</a>
-      <div class="mn-mobile__sep"></div>
-      <a class="mn-mobile__item" href="/app/me" data-href="/app/me">Tài khoản</a>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <main class="mn-main container" role="main">
-    <section class="mn-hero" id="about">
-      <div class="mn-hero__bg" aria-hidden="true"></div>
-
-      <div class="mn-hero__content">
-        <h1 class="mn-h1" id="tHero">Sống thật. Chia sẻ thật. Tạo giá trị thật.</h1>
-        <p class="mn-sub" id="tSub">
-          Bắt đầu miễn phí. Bảo mật cao. Tối giản để phát triển bền vững.
-        </p>
-
-        <div class="mn-hero__row">
-          <a class="btn btn--primary" href="/app/join" data-href="/app/join" id="tEnter">Vào ứng dụng</a>
-          <a class="btn" href="#security" id="tLearn">Xem bảo mật</a>
-          <a class="btn btn--ghost" href="/app/me" data-href="/app/me" id="tMe">Tài khoản</a>
-        </div>
-
-        <div class="pills" aria-label="pill list">
-          <span class="pill">social-first</span>
-          <span class="pill">privacy-first</span>
-          <span class="pill">module-first</span>
-          <span class="pill">no trackers</span>
-          <span class="pill">Cloudflare + GitHub</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3 KEY POINTS: lighter, not heavy cards -->
-    <section class="mn-strip" id="security">
-      <div class="mn-strip__grid">
-        <div class="mn-strip__item">
-          <div class="mn-strip__title" id="tC1">Bảo mật khóa chuẩn</div>
-          <div class="mn-strip__text" id="tC1b">
-            CSP nghiêm ngặt, session HttpOnly, CORS allowlist, rate-limit D1, chống bot.
-          </div>
-        </div>
-
-        <div class="mn-strip__item">
-          <div class="mn-strip__title" id="tC2">Tối giản mà mạnh</div>
-          <div class="mn-strip__text" id="tC2b">
-            Thiết kế module-first: thêm tính năng nhanh, không phá hệ thống.
-          </div>
-        </div>
-
-        <div class="mn-strip__item">
-          <div class="mn-strip__title" id="tC3">Sẵn đường kiếm tiền</div>
-          <div class="mn-strip__text" id="tC3b">
-            Hồ sơ có “Cửa hàng số” để bán chương trình và tài liệu, bật dần theo mốc.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROADMAP -->
-    <section class="mn-road" id="roadmap">
-      <div class="mn-road__head">
-        <h2 class="mn-h2" id="tRoad">Lộ trình Social-first</h2>
-        <p class="mn-sub2" id="tRoadB">
-          Ưu tiên đạt 1.000.000 tài khoản trước. Chỉ mở module lớn khi hệ lõi đủ mạnh.
-        </p>
-      </div>
-
-      <div class="mn-steps">
-        <div class="mn-step">
-          <div class="mn-step__k">Giai đoạn 1</div>
-          <div class="mn-step__t">Auth + Profile nền tảng</div>
-          <div class="mn-step__d">Email code, session an toàn, đường dẫn /app/join, /app/me.</div>
-        </div>
-
-        <div class="mn-step">
-          <div class="mn-step__k">Giai đoạn 2</div>
-          <div class="mn-step__t">Feed tối giản</div>
-          <div class="mn-step__d">Bài đăng chữ, ảnh, reaction tối giản, chống spam mạnh.</div>
-        </div>
-
-        <div class="mn-step">
-          <div class="mn-step__k">Giai đoạn 3</div>
-          <div class="mn-step__t">Cửa hàng số</div>
-          <div class="mn-step__d">Bán tài liệu và chương trình. Thanh toán mở sau theo hạ tầng.</div>
-        </div>
-
-        <div class="mn-step">
-          <div class="mn-step__k">Giai đoạn 4</div>
-          <div class="mn-step__t">Chat + gọi</div>
-          <div class="mn-step__d">Nhắn tin trước, gọi sau. Mở dần theo bảo mật và hạ tầng.</div>
-        </div>
-      </div>
-
-      <div class="mn-road__cta">
-        <a class="btn btn--primary" href="/app/join" data-href="/app/join">Bắt đầu ngay</a>
-        <a class="btn" href="/docs" data-href="/docs">Xem tài liệu</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <span class="muted">© <span id="year"></span> mn • muonnoi.org</span>
-    <span class="muted">No trackers • Privacy-first • Security-first</span>
-  </footer>
-
-  <!-- No inline JS. Use site.js -->
-  <script src="/assets/site.js" defer></script>
-
-  <!-- Minimal hooks: site.js will wire data-href + lang toggle
-       Mobile menu uses IDs: mnBurger, mnMobile -->
 </body>
 </html>
