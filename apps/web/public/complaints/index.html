@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="vi" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Khiếu nại – Muôn Nơi</title>
+  <meta name="description" content="Khiếu nại & Báo cáo của Muôn Nơi: kênh tiếp nhận minh bạch, ưu tiên an toàn, bảo mật và xử lý nhanh." />
+  <meta name="referrer" content="no-referrer" />
+  <link rel="icon" href="/assets/brand/mn.svg" />
+  <link rel="stylesheet" href="/assets/site.css" />
+</head>
+
+<body class="mn-body">
+  <div class="mn-bg" aria-hidden="true">
+    <div class="mn-bg__grid"></div>
+    <div class="mn-bg__glow"></div>
+    <div class="mn-bg__sweep"></div>
+    <div class="mn-bg__noise"></div>
+  </div>
+
+  <header class="mn-top mn-top--pill" role="banner">
+    <div class="mn-top__inner">
+      <a class="mn-brand mn-brand--mono" href="/" aria-label="Muôn Nơi">
+        <span class="mn-mark" aria-hidden="true">MN</span>
+        <span class="mn-brand__title">Muôn Nơi</span>
+      </a>
+
+      <nav class="mn-nav mn-nav--pills" aria-label="Primary">
+        <a class="mn-pill" href="/">Trang chủ</a>
+        <a class="mn-pill" href="/ecosystem">Hệ sinh thái</a>
+        <a class="mn-pill" href="/roadmap">Lộ trình</a>
+        <a class="mn-pill" href="/security">Bảo mật</a>
+        <a class="mn-pill" href="/guide">Hướng dẫn</a>
+        <a class="mn-pill is-active" href="/complaints">Khiếu nại</a>
+        <a class="mn-pill mn-pill--ghost" href="/admin">Admin</a>
+      </nav>
+
+      <div class="mn-top__actions">
+        <button class="mn-btn mn-btn--ghost" id="themeBtn" type="button" aria-label="Theme">◐</button>
+        <button class="mn-btn mn-btn--ghost" id="langBtn" type="button" aria-label="Language">VI</button>
+        <button class="mn-burger" id="mnBurger" type="button" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mn-mobile" id="mnMobile" hidden>
+      <a class="mn-mobile__item mn-mobile__item--primary" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
+      <a class="mn-mobile__item" href="/ecosystem">Hệ sinh thái</a>
+      <a class="mn-mobile__item" href="/roadmap">Lộ trình</a>
+      <a class="mn-mobile__item" href="/security">Bảo mật</a>
+      <a class="mn-mobile__item" href="/guide">Hướng dẫn</a>
+      <a class="mn-mobile__item" href="/admin">Admin</a>
+    </div>
+  </header>
+
+  <main class="mn-main" role="main">
+    <section class="mn-section">
+      <div class="mn-wrap">
+        <div class="mn-head">
+          <h1 class="mn-h1" style="font-size:34px">Khiếu Nại & Báo Cáo</h1>
+          <p class="mn-lead">
+            Trang này là kênh tiếp nhận sự cố và khiếu nại theo cách rõ ràng, minh bạch và có trách nhiệm.
+            Hiện tại là phiên bản nền tảng để bạn triển khai API sau, nhưng UI và chuẩn điều hướng đã khóa từ đầu.
+          </p>
+        </div>
+
+        <!-- TRÌNH TỰ XỬ LÝ (overview) -->
+        <div class="mn-trust">
+          <div class="mn-trust__col mn-glass">
+            <h3 class="mn-h3">1) Gửi báo cáo</h3>
+            <ul class="mn-list">
+              <li>Chọn loại sự cố và mô tả ngắn gọn, đúng trọng tâm.</li>
+              <li>Không cần kể lan man, ưu tiên chứng cứ.</li>
+              <li>Giữ thông tin nhạy cảm ở mức tối thiểu.</li>
+            </ul>
+          </div>
+          <div class="mn-trust__col mn-glass">
+            <h3 class="mn-h3">2) Xác minh</h3>
+            <ul class="mn-list">
+              <li>Hệ thống chống spam và báo cáo giả.</li>
+              <li>Ưu tiên sự cố có nguy cơ cao: lừa đảo, đe doạ, xâm phạm.</li>
+              <li>Ghi nhận log và trạng thái xử lý.</li>
+            </ul>
+          </div>
+          <div class="mn-trust__col mn-glass">
+            <h3 class="mn-h3">3) Phản hồi</h3>
+            <ul class="mn-list">
+              <li>Cập nhật trạng thái theo mã báo cáo.</li>
+              <li>Điều phối sang Admin (app domain) khi cần.</li>
+              <li>Luôn ưu tiên an toàn và bảo mật.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="height:12px;"></div>
+
+        <!-- FORM UI (stub, không gọi API) -->
+        <div class="mn-glass" style="padding:16px;border-radius:24px;">
+          <div class="mn-head" style="margin-bottom:10px;">
+            <h2 class="mn-h2" style="font-size:20px;">Gửi báo cáo</h2>
+            <p class="mn-sub">Phiên bản hiện tại chỉ là UI. Khi có API, form sẽ gửi dữ liệu về Worker/D1.</p>
+          </div>
+
+          <form class="mn-form" id="complaintsForm" autocomplete="off" novalidate>
+            <div class="mn-form__grid">
+              <label class="mn-field">
+                <span class="mn-field__label">Loại sự cố</span>
+                <select class="mn-input" name="type" required>
+                  <option value="">Chọn loại</option>
+                  <option value="scam">Lừa đảo</option>
+                  <option value="impersonation">Giả mạo</option>
+                  <option value="harassment">Quấy rối</option>
+                  <option value="abuse">Lạm dụng / Spam</option>
+                  <option value="privacy">Xâm phạm riêng tư</option>
+                  <option value="security">Sự cố bảo mật</option>
+                  <option value="other">Khác</option>
+                </select>
+              </label>
+
+              <label class="mn-field">
+                <span class="mn-field__label">Mức độ</span>
+                <select class="mn-input" name="severity" required>
+                  <option value="">Chọn mức</option>
+                  <option value="low">Thấp</option>
+                  <option value="medium">Trung bình</option>
+                  <option value="high">Cao</option>
+                  <option value="critical">Khẩn cấp</option>
+                </select>
+              </label>
+
+              <label class="mn-field mn-field--full">
+                <span class="mn-field__label">Liên quan đến (URL hoặc @username)</span>
+                <input class="mn-input" type="text" name="target" placeholder="Ví dụ: https://app.muonnoi.org/u/abc hoặc @abc" maxlength="220" />
+              </label>
+
+              <label class="mn-field mn-field--full">
+                <span class="mn-field__label">Mô tả ngắn gọn (tối đa 800 ký tự)</span>
+                <textarea class="mn-input" name="message" rows="5" maxlength="800" placeholder="Nói đúng sự việc, càng cụ thể càng tốt."></textarea>
+              </label>
+
+              <label class="mn-field">
+                <span class="mn-field__label">Email liên hệ (tuỳ chọn)</span>
+                <input class="mn-input" type="email" name="email" placeholder="you@example.com" maxlength="120" />
+              </label>
+
+              <label class="mn-field">
+                <span class="mn-field__label">Bằng chứng (link, tuỳ chọn)</span>
+                <input class="mn-input" type="url" name="evidence" placeholder="https://..." maxlength="220" />
+              </label>
+            </div>
+
+            <div style="height:10px;"></div>
+
+            <div class="mn-cta mn-glass" style="padding:12px;border-radius:22px;box-shadow:none;">
+              <div class="mn-cta__l">
+                <div class="mn-cta__t">Lưu ý</div>
+                <div class="mn-cta__d">Không gửi mật khẩu, mã OTP, thông tin nhạy cảm. MN sẽ ưu tiên an toàn và xử lý theo chuẩn.</div>
+              </div>
+              <div class="mn-cta__r">
+                <button class="mn-btn mn-btn--ghost" type="reset">Xoá</button>
+                <button class="mn-btn mn-btn--primary" type="submit">Gửi báo cáo</button>
+              </div>
+            </div>
+
+            <div id="complaintsResult" class="mn-muted" style="margin-top:10px;display:none;"></div>
+          </form>
+        </div>
+
+        <div style="height:10px;"></div>
+
+        <h3 class="mn-h3">Liên kết liên quan</h3>
+        <div class="mn-footlinks mn-glass" style="padding:12px;border-radius:24px;">
+          <a class="mn-footlinks__a" href="/security">Bảo mật</a>
+          <a class="mn-footlinks__a" href="/guide">Hướng dẫn</a>
+          <a class="mn-footlinks__a" href="/verify">Xác minh</a>
+          <a class="mn-footlinks__a" href="/commit">Cam kết</a>
+          <a class="mn-footlinks__a" href="/status">Trạng thái</a>
+          <a class="mn-footlinks__a" href="/">Trang chủ</a>
+          <a class="mn-footlinks__a" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
+        </div>
+
+        <div style="height:12px;"></div>
+
+        <!-- FAQ -->
+        <div class="mn-glass" style="padding:16px;border-radius:24px;">
+          <h3 class="mn-h3">Câu hỏi nhanh</h3>
+          <ul class="mn-list">
+            <li><strong>Tôi có cần tài khoản để báo cáo không?</strong> Giai đoạn đầu: có thể không. Khi vào app, báo cáo sẽ gắn định danh để chống spam tốt hơn.</li>
+            <li><strong>Tôi theo dõi trạng thái như thế nào?</strong> Sắp có mã báo cáo và trang theo dõi. Hiện tại sẽ cập nhật ở /status khi triển khai.</li>
+            <li><strong>Báo cáo giả thì sao?</strong> MN sẽ có cơ chế chống lạm dụng và log để xử lý hành vi phá hoại.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="mn-footer" role="contentinfo">
+    <div class="mn-wrap mn-footer__inner">
+      <div class="mn-muted">© <span id="year"></span> muonnoi.org</div>
+      <div class="mn-footer__right">
+        <a class="mn-footer__link" href="/">Trang chủ</a>
+        <a class="mn-footer__link" href="/security">Bảo mật</a>
+        <a class="mn-footer__link" href="/guide">Hướng dẫn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js" defer></script>
+
+  <!-- Inline script avoided for CSP: use tiny safe handler via site.js later.
+       For now, keep it no-op by default. -->
+  <script>
+    // If CSP blocks inline scripts in your headers, remove this block.
+    // We'll move it into /assets/site.js in the next step if needed.
+    (function(){
+      var form = document.getElementById('complaintsForm');
+      var out = document.getElementById('complaintsResult');
+      if(!form || !out) return;
+      form.addEventListener('submit', function(ev){
+        ev.preventDefault();
+        out.style.display = 'block';
+        out.textContent = 'Đã ghi nhận UI báo cáo (chưa gửi API). Bước tiếp theo: nối Worker/D1 để tạo report_id và lưu trạng thái.';
+      });
+    })();
+  </script>
+</body>
+</html>
