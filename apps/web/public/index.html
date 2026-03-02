@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muôn Nơi – Muốn nói</title>
+  <meta name="description" content="Muôn Nơi – Muốn nói. Social-first, security-first. Kết nối chân thật và tạo giá trị." />
+  <meta property="og:title" content="Muôn Nơi – Muốn nói" />
+  <meta property="og:description" content="Social-first, security-first. Kết nối chân thật và tạo giá trị." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/assets/brand/mn.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <img class="logo" src="/assets/brand/mn.svg" alt="mn" />
+      <div class="brand__text">
+        <div class="brand__name">Muôn Nơi</div>
+        <div class="brand__tag">Muốn nói</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a class="btn btn--primary" href="/app">Vào ứng dụng</a>
+      <button id="langBtn" class="btn btn--ghost" type="button" aria-label="Language">VI</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 id="tHero">Sống thật. Chia sẻ thật. Tạo giá trị thật.</h1>
+      <p id="tSub">Bắt đầu miễn phí. Bảo mật cao. Tối giản để phát triển bền vững.</p>
+      <div class="row">
+        <a class="btn btn--primary" href="/app" id="tStart">Bắt đầu</a>
+        <a class="btn" href="/legal/terms.html" id="tTerms">Điều khoản</a>
+        <a class="btn" href="/legal/privacy.html" id="tPrivacy">Quyền riêng tư</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3 id="tC1">Bảo mật khóa chuẩn</h3>
+        <p id="tC1b">CSP nghiêm ngặt, session HttpOnly, CORS allowlist, rate-limit D1, chống bot.</p>
+      </div>
+      <div class="card">
+        <h3 id="tC2">Tối giản mà mạnh</h3>
+        <p id="tC2b">Thiết kế module-first: thêm tính năng nhanh, không phá hệ thống.</p>
+      </div>
+      <div class="card">
+        <h3 id="tC3">Sẵn đường kiếm tiền</h3>
+        <p id="tC3b">Mỗi hồ sơ có “Cửa hàng số” để bán chương trình/tài liệu (bật dần theo mốc).</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h3 id="tRoad">Lộ trình Social-first</h3>
+        <p class="note" id="tRoadB">Tập trung 1 triệu tài khoản trước. Chỉ mở rộng module lớn khi hệ lõi đủ mạnh.</p>
+        <div class="pills">
+          <span class="pill">Feed</span>
+          <span class="pill">Follow</span>
+          <span class="pill">Groups</span>
+          <span class="pill">Trust</span>
+          <span class="pill">Shop (Minimal)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Muôn Nơi</span>
+    <span class="muted">mn</span>
+  </footer>
+
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
