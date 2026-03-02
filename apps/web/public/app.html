@@ -1,9 +1,3 @@
-<!-- FILE: apps/web/public/app.html
-     Muôn Nơi (mn) — App Shell (Locked Baseline)
-     - No inline scripts/styles (CSP-friendly)
-     - Hash-based views: #join, #me (feed/groups/shop will unlock later)
-     - All user-facing strings from /assets/i18n.json (handled by site.js)
--->
 <!doctype html>
 <html lang="vi">
 <head>
@@ -11,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Muôn Nơi – App</title>
 
-  <!-- Do not index app shell -->
   <meta name="robots" content="noindex,nofollow" />
   <meta name="referrer" content="no-referrer" />
 
@@ -21,7 +14,6 @@
 </head>
 
 <body>
-  <!-- Topbar -->
   <header class="topbar" role="banner">
     <a class="brand" href="/app" aria-label="Muôn Nơi">
       <img class="logo" src="/assets/brand/mn.svg" alt="mn" />
@@ -37,9 +29,7 @@
     </nav>
   </header>
 
-  <!-- Main -->
   <main class="container app" role="main">
-    <!-- Sidebar -->
     <aside class="sidebar" aria-label="Sidebar">
       <div class="sidebar__section">
         <div class="sidebar__title" id="tMenu">Menu</div>
@@ -49,7 +39,6 @@
 
         <div class="hr"></div>
 
-        <!-- Locked modules (enabled in Step 2) -->
         <span class="side disabled" aria-disabled="true" id="tFeed">Bảng tin</span>
         <span class="side disabled" aria-disabled="true" id="tGroups">Nhóm</span>
         <span class="side disabled" aria-disabled="true" id="tShop">Cửa hàng số</span>
@@ -70,9 +59,7 @@
       </div>
     </aside>
 
-    <!-- Content -->
     <section class="content" aria-label="Content">
-      <!-- router target: site.js renders into #view -->
       <div id="view" aria-live="polite"></div>
 
       <noscript>
@@ -84,13 +71,11 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <span class="muted">App shell • module-first • locked baseline</span>
     <span class="muted">© <span id="year"></span> mn</span>
   </footer>
 
-  <!-- Scripts -->
   <script src="/assets/site.js" defer></script>
 </body>
 </html>
