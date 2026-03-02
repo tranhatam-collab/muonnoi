@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Hướng dẫn – Muôn Nơi</title>
+  <meta name="description" content="Hướng dẫn bắt đầu với Muôn Nơi: vào ứng dụng, tạo tài khoản, nguyên tắc, các trang chuẩn." />
+  <link rel="icon" href="/assets/brand/mn.svg" />
+  <link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body class="mn-body">
+  <header class="mn-top mn-top--pill">
+    <div class="mn-top__inner">
+      <a class="mn-brand mn-brand--mono" href="/"><span class="mn-mark">MN</span><span class="mn-brand__title">Muôn Nơi</span></a>
+      <nav class="mn-nav mn-nav--pills">
+        <a class="mn-pill" href="/">Trang chủ</a>
+        <a class="mn-pill" href="/ecosystem">Hệ sinh thái</a>
+        <a class="mn-pill" href="/roadmap">Lộ trình</a>
+        <a class="mn-pill" href="/security">Bảo mật</a>
+        <a class="mn-pill is-active" href="/guide">Hướng dẫn</a>
+      </nav>
+      <div class="mn-top__actions">
+        <button class="mn-btn mn-btn--ghost" id="themeBtn" type="button">◐</button>
+        <button class="mn-btn mn-btn--ghost" id="langBtn" type="button">VI</button>
+        <button class="mn-burger" id="mnBurger" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mn-mobile" id="mnMobile" hidden>
+      <a class="mn-mobile__item mn-mobile__item--primary" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
+      <a class="mn-mobile__item" href="/ecosystem">Hệ sinh thái</a>
+      <a class="mn-mobile__item" href="/roadmap">Lộ trình</a>
+      <a class="mn-mobile__item" href="/security">Bảo mật</a>
+    </div>
+  </header>
+
+  <div class="mn-bg" aria-hidden="true"><div class="mn-bg__grid"></div><div class="mn-bg__glow"></div><div class="mn-bg__sweep"></div><div class="mn-bg__noise"></div></div>
+
+  <main class="mn-main">
+    <section class="mn-section">
+      <div class="mn-wrap">
+        <div class="mn-head">
+          <h1 class="mn-h1" style="font-size:34px">Hướng Dẫn</h1>
+          <p class="mn-lead">Trang này là “bản đồ sử dụng” — bạn sẽ cập nhật dần thành docs đầy đủ.</p>
+        </div>
+
+        <div class="mn-grid">
+          <article class="mn-tile mn-glass">
+            <h3 class="mn-tile__h">Bước 1: Vào ứng dụng</h3>
+            <p class="mn-tile__p">Đi thẳng tới Social Core để tạo tài khoản.</p>
+            <div class="mn-tile__links"><a class="mn-btn mn-btn--primary" href="https://app.muonnoi.org/" rel="noopener">Vào app</a></div>
+          </article>
+          <article class="mn-tile mn-glass">
+            <h3 class="mn-tile__h">Bước 2: Xác minh</h3>
+            <p class="mn-tile__p">Hệ thống xác minh sẽ được mở theo giai đoạn.</p>
+            <div class="mn-tile__links"><a class="mn-btn mn-btn--ghost" href="/verify">Mở trang</a></div>
+          </article>
+          <article class="mn-tile mn-glass">
+            <h3 class="mn-tile__h">Bước 3: Cam kết</h3>
+            <p class="mn-tile__p">Tự do đi kèm trách nhiệm. Cam kết giúp cộng đồng sạch và bền.</p>
+            <div class="mn-tile__links"><a class="mn-btn mn-btn--ghost" href="/commit">Mở trang</a></div>
+          </article>
+          <article class="mn-tile mn-glass">
+            <h3 class="mn-tile__h">Khiếu nại</h3>
+            <p class="mn-tile__p">Kênh xử lý khiếu nại và báo cáo sự cố.</p>
+            <div class="mn-tile__links"><a class="mn-btn mn-btn--ghost" href="/complaints">Mở trang</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mn-footer">
+    <div class="mn-wrap mn-footer__inner">
+      <div class="mn-muted">© <span id="year"></span> muonnoi.org</div>
+      <div class="mn-footer__right">
+        <a class="mn-footer__link" href="/">Trang chủ</a>
+        <a class="mn-footer__link" href="/security">Bảo mật</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
