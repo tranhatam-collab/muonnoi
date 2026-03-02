@@ -1,0 +1,12 @@
+# FILE: apps/web/public/_redirects
+# Cloudflare Pages SPA routing for /app/*
+# Serve app.html for any /app route (join/me/feed/...)
+
+# Explicit routes (clear + future-proof)
+ /app         /app.html  200
+ /app/        /app.html  200
+ /app/join    /app.html  200
+ /app/me      /app.html  200
+
+# Catch-all for all future modules
+ /app/*       /app.html  200
