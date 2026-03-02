@@ -899,6 +899,95 @@ html[data-theme="light"] .mn-btn--primary{
   .mn-nav__link, .mn-btn, .mn-tile, .mn-mobile__item, .mn-quick__a, .mn-footlinks__a{transition:none}
 }
 /* =========================================================
+   MN — Pill Menu + Monogram Brand (override like mẫu NC)
+   Paste at END of site.css
+   ========================================================= */
+
+.mn-top--pill{
+  padding-top:6px;
+  padding-bottom:6px;
+}
+
+.mn-brand--mono{
+  gap:12px;
+  min-width:auto;
+}
+
+.mn-mark{
+  width:44px;
+  height:44px;
+  border-radius:16px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+  letter-spacing:-.6px;
+  border:1px solid var(--mn-stroke2);
+  background: linear-gradient(180deg, var(--mn-glass2), var(--mn-glass));
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+.mn-mark--sm{
+  width:38px;height:38px;border-radius:14px;
+}
+
+.mn-brand__title{
+  font-weight:950;
+  letter-spacing:-.25px;
+  font-size:18px;
+}
+
+.mn-nav--pills{
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.mn-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:44px;
+  padding:0 18px;
+  border-radius:999px;
+  border:1px solid var(--mn-stroke);
+  background: linear-gradient(180deg, var(--mn-glass2), var(--mn-glass));
+  color:var(--mn-fg);
+  font-weight:850;
+  letter-spacing:-.12px;
+  box-shadow: 0 8px 26px rgba(0,0,0,.25);
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.mn-pill:hover{
+  transform: translateY(-1px);
+  border-color: var(--mn-stroke2);
+  background: color-mix(in srgb, var(--mn-hi) 6%, var(--mn-glass2));
+}
+.mn-pill:active{transform: translateY(0)}
+
+.mn-pill.is-active{
+  border-color: color-mix(in srgb, var(--mn-hi) 34%, var(--mn-stroke2));
+  background: color-mix(in srgb, var(--mn-hi) 10%, var(--mn-glass2));
+}
+
+.mn-pill--ghost{
+  background: transparent;
+}
+
+.mn-hero__card--pill{
+  border-radius: 28px;
+}
+
+/* make header feel separated like mẫu */
+.mn-top__inner{
+  gap:16px;
+}
+
+@media (max-width:860px){
+  .mn-nav--pills{display:none}
+  .mn-brand__title{display:none} /* giống kiểu logo nhỏ gọn trên mobile */
+}
+/* =========================================================
    Landing Mobile Menu Behavior Hook (no inline JS)
    site.js will toggle [hidden] for #mnMobile
    ========================================================= */
