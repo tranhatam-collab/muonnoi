@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muôn Nơi – App</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" href="/assets/brand/mn.svg" />
+  <link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/app">
+      <img class="logo" src="/assets/brand/mn.svg" alt="mn" />
+      <div class="brand__text">
+        <div class="brand__name">Muôn Nơi</div>
+        <div class="brand__tag">Muốn nói</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a class="btn btn--ghost" href="/" id="tHome">Trang chủ</a>
+      <button id="langBtn" class="btn btn--ghost" type="button">VI</button>
+    </nav>
+  </header>
+
+  <main class="container app">
+    <aside class="sidebar">
+      <div class="sidebar__section">
+        <div class="sidebar__title" id="tMenu">Menu</div>
+        <a class="side" data-href="/app#join" id="tJoin">Đăng nhập</a>
+        <a class="side" data-href="/app#me" id="tMe">Tài khoản</a>
+        <div class="hr"></div>
+        <a class="side disabled" id="tFeed">Bảng tin</a>
+        <a class="side disabled" id="tGroups">Nhóm</a>
+        <a class="side disabled" id="tShop">Cửa hàng số</a>
+      </div>
+
+      <div class="sidebar__section">
+        <div class="sidebar__title" id="tSecurity">Security</div>
+        <div class="hint" id="tSecHint">Khóa chuẩn: CSP, HttpOnly session, allowlist origin, D1 rate-limit, anti-bot.</div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div id="view"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="muted">App shell • module-first • locked baseline</span>
+  </footer>
+
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
