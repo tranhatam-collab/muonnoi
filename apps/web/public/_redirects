@@ -1,5 +1,10 @@
-/app         /app.html  200
-/app/        /app.html  200
-/app/join    /app.html  200
-/app/me      /app.html  200
-/app/*       /app.html  200
+# Clean routes to folders
+/ecosystem   /ecosystem/   301
+/roadmap     /roadmap/     301
+/security    /security/    301
+/guide       /guide/       301
+/status      /status/      301
+/verify      /verify/      301
+/commit      /commit/      301
+/complaints  /complaints/  301
+/admin       /admin/       301
