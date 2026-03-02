@@ -1,501 +1,223 @@
-/* FILE: apps/web/public/assets/site.js
-   Muôn Nơi (mn) — Web/App Shell (Locked Baseline)
-   - PATH-BASED ROUTER (no #join)
-   - Landing hamburger menu toggle (#mnBurger, #mnMobile)
-   - i18n from /assets/i18n.json
-   - Safe rendering (escapeHtml)
-   - No external libs
+/* apps/web/public/assets/site.js
+   MN Core UI helpers (no libs, no trackers)
+   - Mobile burger menu
+   - Active nav pill based on pathname
+   - Theme toggle (auto/light/dark) with persistence
+   - Year stamp
+   - Page-specific hooks (Complaints form demo without inline JS)
 */
 
-const MN = (() => {
-  // -----------------------------
-  // Config
-  // -----------------------------
-  const CFG = {
-    isLocal:
-      location.hostname === "localhost" ||
-      location.hostname === "127.0.0.1" ||
-      location.hostname.endsWith(".pages.dev"),
-    apiBase: "",
-    langKey: "mn_lang",
-    themeKey: "mn_theme",
-    version: "v1"
-  };
+(function () {
+  "use strict";
 
-  CFG.apiBase = CFG.isLocal ? "http://127.0.0.1:8787" : "https://api.muonnoi.org";
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
   // -----------------------------
-  // Utils
+  // Utilities
   // -----------------------------
-  function $(sel, root = document) { return root.querySelector(sel); }
-  function $all(sel, root = document) { return Array.from(root.querySelectorAll(sel)); }
-
-  function escapeHtml(s) {
-    return String(s ?? "").replace(/[&<>"']/g, m => ({
-      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-    }[m]));
+  function safePathname() {
+    try {
+      return (location.pathname || "/").replace(/\/+$/, "") || "/";
+    } catch (_) {
+      return "/";
+    }
   }
 
-  function nowYear() {
-    const y = document.getElementById("year");
-    if (y) y.textContent = String(new Date().getFullYear());
-  }
+  function normalizeRoute(href) {
+    if (!href) return null;
+    // ignore external
+    if (/^https?:\/\//i.test(href)) return null;
 
-  function isEmail(s) {
-    if (!s) return false;
-    if (s.length > 120) return false;
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
-  }
-
-  function normalizePath(p) {
-    if (p.length > 1 && p.endsWith("/")) return p.slice(0, -1);
+    // keep only pathname part, strip hash/query, strip trailing slash
+    const h = href.split("#")[0].split("?")[0];
+    const p = h.replace(/\/+$/, "") || "/";
     return p;
   }
 
-  // -----------------------------
-  // Toast
-  // -----------------------------
-  function ensureToastHost() {
-    let host = document.getElementById("mnToastHost");
-    if (host) return host;
-    host = document.createElement("div");
-    host.id = "mnToastHost";
-    host.style.position = "fixed";
-    host.style.right = "14px";
-    host.style.bottom = "14px";
-    host.style.display = "grid";
-    host.style.gap = "10px";
-    host.style.zIndex = "9999";
-    document.body.appendChild(host);
-    return host;
-  }
-
-  function toast(msg, type = "info") {
-    const host = ensureToastHost();
-    const el = document.createElement("div");
-    el.style.border = "1px solid rgba(26,39,31,.95)";
-    el.style.background = "rgba(15,21,17,.95)";
-    el.style.color = "rgba(233,239,233,.95)";
-    el.style.padding = "10px 12px";
-    el.style.borderRadius = "14px";
-    el.style.boxShadow = "0 18px 55px rgba(0,0,0,.45)";
-    el.style.maxWidth = "360px";
-    el.style.fontSize = "13px";
-    el.style.lineHeight = "1.45";
-    el.style.backdropFilter = "blur(10px)";
-    el.textContent = msg;
-
-    if (type === "ok") el.style.borderColor = "rgba(74,168,107,.65)";
-    if (type === "warn") el.style.borderColor = "rgba(240,201,106,.65)";
-    if (type === "err") el.style.borderColor = "rgba(255,107,107,.65)";
-
-    host.appendChild(el);
-    setTimeout(() => {
-      el.style.opacity = "0";
-      el.style.transform = "translateY(6px)";
-      el.style.transition = "opacity .18s ease, transform .18s ease";
-      setTimeout(() => el.remove(), 220);
-    }, 2400);
+  function setText(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
   }
 
   // -----------------------------
-  // Theme (future hook)
+  // Year in footer
   // -----------------------------
-  const Theme = (() => {
-    function get() { return localStorage.getItem(CFG.themeKey) || "dark"; }
-    function apply() {
-      const t = get();
-      if (t === "light") document.documentElement.setAttribute("data-theme", "light");
-      else document.documentElement.removeAttribute("data-theme");
-    }
-    return { apply };
+  (function setYear() {
+    const y = String(new Date().getFullYear());
+    const els = document.querySelectorAll("#year");
+    els.forEach((el) => (el.textContent = y));
   })();
 
   // -----------------------------
-  // i18n
+  // Theme
+  // data-theme="auto|dark|light"
   // -----------------------------
-  const I18N = (() => {
-    let dict = null;
-    let lang = localStorage.getItem(CFG.langKey) || "vi";
+  const THEME_KEY = "mn_theme";
+  const themeBtn = document.getElementById("themeBtn");
 
-    async function load() {
-      if (dict) return dict;
-      const r = await fetch("/assets/i18n.json", { cache: "no-store" });
-      dict = await r.json();
-      return dict;
+  function applyTheme(mode) {
+    const html = document.documentElement;
+    const v = (mode === "dark" || mode === "light" || mode === "auto") ? mode : "auto";
+    html.setAttribute("data-theme", v);
+
+    // Optional: some CSS may use these hooks
+    html.classList.toggle("theme-dark", v === "dark");
+    html.classList.toggle("theme-light", v === "light");
+    html.classList.toggle("theme-auto", v === "auto");
+
+    try { localStorage.setItem(THEME_KEY, v); } catch (_) {}
+    if (themeBtn) {
+      // simple icon hint
+      themeBtn.textContent = (v === "dark") ? "◑" : (v === "light") ? "◐" : "◒";
+      themeBtn.setAttribute("aria-label", "Theme: " + v);
     }
-
-    async function t(key) {
-      await load();
-      const m = dict?.[lang] || {};
-      return (m && m[key]) ? m[key] : key;
-    }
-
-    async function applyStatic() {
-      await load();
-      const m = dict?.[lang] || {};
-
-      const map = [
-        ["tHome", "home"],
-        ["tMenu", "menu"],
-        ["tJoin", "join"],
-        ["tMe", "me"],
-        ["tFeed", "feed"],
-        ["tGroups", "groups"],
-        ["tShop", "shop"],
-        ["tSecurity", "security"],
-        ["tSecHint", "secHint"],
-
-        ["tHero", "hero"],
-        ["tSub", "sub"],
-        ["tStart", "start"],
-        ["tTerms", "terms"],
-        ["tPrivacy", "privacy"],
-        ["tC1", "c1"], ["tC1b", "c1b"],
-        ["tC2", "c2"], ["tC2b", "c2b"],
-        ["tC3", "c3"], ["tC3b", "c3b"],
-
-        // landing extras (safe if not present)
-        ["tRoad", "road"],
-        ["tRoadB", "roadB"]
-      ];
-
-      for (const [id, k] of map) {
-        const el = document.getElementById(id);
-        if (el && m[k]) el.textContent = m[k];
-      }
-
-      const lb = document.getElementById("langBtn");
-      if (lb) lb.textContent = lang.toUpperCase();
-
-      document.documentElement.lang = lang;
-    }
-
-    async function toggle() {
-      lang = (lang === "vi") ? "en" : "vi";
-      localStorage.setItem(CFG.langKey, lang);
-      await applyStatic();
-      if (isInApp()) await Router.render();
-    }
-
-    return { t, toggle, applyStatic };
-  })();
-
-  // -----------------------------
-  // API client
-  // -----------------------------
-  const API = (() => {
-    async function req(method, path, body) {
-      const url = CFG.apiBase + path;
-      const init = { method, credentials: "include", headers: {} };
-      if (body !== undefined) {
-        init.headers["content-type"] = "application/json";
-        init.body = JSON.stringify(body);
-      }
-      const r = await fetch(url, init);
-      const text = await r.text();
-      let data = null;
-      try { data = text ? JSON.parse(text) : null; } catch { data = null; }
-      if (!r.ok) {
-        const msg = data?.error || `HTTP ${r.status}`;
-        throw new Error(msg);
-      }
-      return data;
-    }
-    return {
-      get: (p) => req("GET", p),
-      post: (p, b) => req("POST", p, b)
-    };
-  })();
-
-  // -----------------------------
-  // App detection
-  // -----------------------------
-  function isInApp() {
-    return normalizePath(location.pathname).startsWith("/app");
   }
 
-  // -----------------------------
-  // Router (PATH-BASED)
-  // -----------------------------
-  const Router = (() => {
-    const base = "/app";
-
-    function routeFromLocation() {
-      const hash = (location.hash || "").replace("#", "").trim();
-      if (hash === "join") return "join";
-      if (hash === "me") return "me";
-
-      const p = normalizePath(location.pathname);
-      if (p === "/app" || p === "/app/") return "join";
-      if (p === "/app/join") return "join";
-      if (p === "/app/me") return "me";
-      return "join";
-    }
-
-    function pathFor(route) {
-      if (route === "me") return `${base}/me`;
-      return `${base}/join`;
-    }
-
-    function navigate(route, replace = false) {
-      const to = pathFor(route);
-      if (replace) history.replaceState({}, "", to);
-      else history.pushState({}, "", to);
-      if (location.hash) history.replaceState({}, "", to);
-      render().catch(() => {});
-    }
-
-    async function render() {
-      const view = document.getElementById("view");
-      if (!view) return;
-
-      const route = routeFromLocation();
-      if (route === "me") return viewMe(view);
-      return viewJoin(view);
-    }
-
-    function wirePopState() {
-      window.addEventListener("popstate", () => render().catch(() => {}));
-    }
-
-    function normalizeLegacyHash() {
-      const hash = (location.hash || "").replace("#", "").trim();
-      if (!hash) return;
-      if (hash === "join") return navigate("join", true);
-      if (hash === "me") return navigate("me", true);
-      history.replaceState({}, "", pathFor(routeFromLocation()));
-    }
-
-    return { render, navigate, wirePopState, normalizeLegacyHash };
-  })();
-
-  // -----------------------------
-  // Views
-  // -----------------------------
-  function renderHTML(root, html) { root.innerHTML = html; }
-  function bindClick(root, sel, fn) { const el = $(sel, root); if (el) el.addEventListener("click", fn); }
-
-  async function viewJoin(root) {
-    const title = await I18N.t("joinTitle");
-    const desc = await I18N.t("joinDesc");
-    const emailLbl = await I18N.t("email");
-    const sendLbl = await I18N.t("send");
-    const verifyTitle = await I18N.t("verifyTitle");
-    const codeLbl = await I18N.t("code");
-    const verifyLbl = await I18N.t("verify");
-
-    renderHTML(root, `
-      <h2>${escapeHtml(title)}</h2>
-      <p class="note">${escapeHtml(desc)}</p>
-
-      <div class="field">
-        <label>${escapeHtml(emailLbl)}</label>
-        <input id="mnEmail" type="email" placeholder="you@example.com" autocomplete="email" />
-        <button class="btn btn--primary" id="mnSend" type="button">${escapeHtml(sendLbl)}</button>
-        <div class="note" id="mnSendOut"></div>
-      </div>
-
-      <div class="hr"></div>
-
-      <h3>${escapeHtml(verifyTitle)}</h3>
-      <div class="field">
-        <label>${escapeHtml(codeLbl)}</label>
-        <input id="mnCode" type="text" placeholder="123456" inputmode="numeric" />
-        <button class="btn btn--primary" id="mnVerify" type="button">${escapeHtml(verifyLbl)}</button>
-        <div class="note" id="mnVerifyOut"></div>
-      </div>
-    `);
-
-    const emailEl = $("#mnEmail", root);
-    const codeEl = $("#mnCode", root);
-    const out1 = $("#mnSendOut", root);
-    const out2 = $("#mnVerifyOut", root);
-
-    const send = async () => {
-      const email = (emailEl?.value || "").trim().toLowerCase();
-      if (!isEmail(email)) {
-        if (out1) out1.textContent = "Invalid email.";
-        toast("Email không hợp lệ.", "warn");
-        return;
-      }
-      if (out1) out1.textContent = "";
-      try {
-        const res = await API.post(`/api/${CFG.version}/auth/start`, { email });
-        if (res?.dev_code) {
-          if (out1) out1.innerHTML = `DEV code: <span class="badge">${escapeHtml(res.dev_code)}</span>`;
-          toast("Đã tạo mã (DEV).", "ok");
-        } else {
-          if (out1) out1.textContent = "OK";
-          toast("Đã gửi mã.", "ok");
-        }
-      } catch (e) {
-        const msg = String(e?.message || e);
-        if (out1) out1.textContent = msg;
-        toast(msg, "err");
-      }
-    };
-
-    const verify = async () => {
-      const email = (emailEl?.value || "").trim().toLowerCase();
-      const code = (codeEl?.value || "").trim();
-      if (!isEmail(email)) {
-        if (out2) out2.textContent = "Email required.";
-        toast("Vui lòng nhập email.", "warn");
-        return;
-      }
-      if (!/^\d{6}$/.test(code)) {
-        if (out2) out2.textContent = "Invalid code.";
-        toast("Mã 6 số không hợp lệ.", "warn");
-        return;
-      }
-      if (out2) out2.textContent = "";
-      try {
-        await API.post(`/api/${CFG.version}/auth/verify`, { email, code });
-        toast("Đăng nhập thành công.", "ok");
-        Router.navigate("me");
-      } catch (e) {
-        const msg = String(e?.message || e);
-        if (out2) out2.textContent = msg;
-        toast(msg, "err");
-      }
-    };
-
-    bindClick(root, "#mnSend", send);
-    bindClick(root, "#mnVerify", verify);
-    if (emailEl) emailEl.addEventListener("keydown", (ev) => { if (ev.key === "Enter") send(); });
-    if (codeEl) codeEl.addEventListener("keydown", (ev) => { if (ev.key === "Enter") verify(); });
-
-    try { emailEl?.focus(); } catch {}
+  function nextTheme(cur) {
+    // cycle auto -> dark -> light -> auto
+    if (cur === "auto") return "dark";
+    if (cur === "dark") return "light";
+    return "auto";
   }
 
-  async function viewMe(root) {
-    const title = await I18N.t("meTitle");
-    const notLogged = await I18N.t("notLoggedIn");
-    const loggedAs = await I18N.t("loggedInAs");
-    const logoutLbl = await I18N.t("logout");
-
-    try {
-      const me = await API.get(`/api/${CFG.version}/me`);
-      renderHTML(root, `
-        <h2>${escapeHtml(title)}</h2>
-        <div class="kv">
-          <div class="muted">${escapeHtml(loggedAs)}</div><div>${escapeHtml(me?.email || "")}</div>
-          <div class="muted">Account ID</div><div>${escapeHtml(me?.account_id || "")}</div>
-          <div class="muted">Session</div><div><span class="badge">${escapeHtml(me?.session_id || "")}</span></div>
-        </div>
-        <div class="hr"></div>
-        <div class="row-center">
-          <button class="btn" id="mnLogout" type="button">${escapeHtml(logoutLbl)}</button>
-          <span class="muted">Feed / Groups / Shop sẽ mở ở bước tiếp theo.</span>
-        </div>
-      `);
-
-      bindClick(root, "#mnLogout", async () => {
-        try { await API.post(`/api/${CFG.version}/auth/logout`, {}); } catch {}
-        toast("Đã đăng xuất.", "ok");
-        Router.navigate("join");
+  (function initTheme() {
+    let saved = "auto";
+    try { saved = localStorage.getItem(THEME_KEY) || "auto"; } catch (_) {}
+    applyTheme(saved);
+    if (themeBtn) {
+      themeBtn.addEventListener("click", () => {
+        let cur = "auto";
+        try { cur = localStorage.getItem(THEME_KEY) || document.documentElement.getAttribute("data-theme") || "auto"; } catch (_) {}
+        applyTheme(nextTheme(cur));
       });
-    } catch {
-      renderHTML(root, `
-        <h2>${escapeHtml(title)}</h2>
-        <p class="note">${escapeHtml(notLogged)}</p>
-        <div class="spacer"></div>
-        <button class="btn btn--primary" id="mnGoJoin" type="button">Go</button>
-      `);
-      bindClick(root, "#mnGoJoin", () => Router.navigate("join"));
     }
-  }
+  })();
 
   // -----------------------------
-  // Navigation: data-href
+  // Language button (stub)
+  // Keeps current behavior minimal; you can wire to i18n.json later
   // -----------------------------
-  function wireNav() {
-    $all("[data-href]").forEach(el => {
-      el.addEventListener("click", (ev) => {
-        const href = el.getAttribute("data-href");
-        if (!href) return;
-
-        // Internal /app routes use SPA nav
-        if (href.startsWith("/app")) {
-          ev.preventDefault();
-          history.pushState({}, "", href);
-          Router.render().catch(() => {});
-          return;
-        }
-
-        location.href = href;
-      });
+  const langBtn = document.getElementById("langBtn");
+  (function initLang() {
+    if (!langBtn) return;
+    // If you already have your own logic, this won’t conflict much.
+    langBtn.addEventListener("click", () => {
+      const v = (langBtn.textContent || "VI").trim().toUpperCase();
+      langBtn.textContent = (v === "VI") ? "EN" : "VI";
     });
+  })();
+
+  // -----------------------------
+  // Mobile Burger Menu
+  // -----------------------------
+  const burger = document.getElementById("mnBurger");
+  const mobile = document.getElementById("mnMobile");
+
+  function closeMobile() {
+    if (!mobile) return;
+    mobile.hidden = true;
+    if (burger) burger.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("mn-menu-open");
   }
 
-  // -----------------------------
-  // Landing Mobile Menu Toggle
-  // -----------------------------
-  function wireLandingMenu() {
-    const burger = document.getElementById("mnBurger");
-    const panel = document.getElementById("mnMobile");
-    if (!burger || !panel) return; // only on landing
+  function openMobile() {
+    if (!mobile) return;
+    mobile.hidden = false;
+    if (burger) burger.setAttribute("aria-expanded", "true");
+    document.body.classList.add("mn-menu-open");
+  }
 
-    const open = () => { panel.hidden = false; burger.setAttribute("aria-expanded", "true"); };
-    const close = () => { panel.hidden = true; burger.setAttribute("aria-expanded", "false"); };
-    const toggle = () => { panel.hidden ? open() : close(); };
+  function toggleMobile() {
+    if (!mobile) return;
+    if (mobile.hidden) openMobile();
+    else closeMobile();
+  }
+
+  (function initMobileMenu() {
+    if (!burger || !mobile) return;
 
     burger.setAttribute("aria-expanded", "false");
-
-    burger.addEventListener("click", (ev) => {
-      ev.preventDefault();
-      toggle();
+    burger.addEventListener("click", (e) => {
+      e.preventDefault();
+      toggleMobile();
     });
 
-    // Auto-close when click any link inside panel
-    panel.addEventListener("click", (ev) => {
-      const a = ev.target && ev.target.closest ? ev.target.closest("a") : null;
-      if (a) close();
-    });
-
-    // Click outside closes
-    document.addEventListener("click", (ev) => {
-      if (panel.hidden) return;
-      const t = ev.target;
+    // Close when clicking outside
+    document.addEventListener("click", (e) => {
+      if (mobile.hidden) return;
+      const t = e.target;
       if (!t) return;
-      if (panel.contains(t) || burger.contains(t)) return;
-      close();
+      if (mobile.contains(t) || burger.contains(t)) return;
+      closeMobile();
     });
 
-    // Escape closes
-    document.addEventListener("keydown", (ev) => {
-      if (ev.key === "Escape" && !panel.hidden) close();
+    // Close on ESC
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMobile();
     });
 
-    // If screen resized to desktop, close panel
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 860 && !panel.hidden) close();
+    // Close on route click (mobile items)
+    $$(".mn-mobile__item", mobile).forEach((a) => {
+      a.addEventListener("click", () => closeMobile());
     });
-  }
+  })();
 
   // -----------------------------
-  // Init
+  // Active nav pill (desktop)
   // -----------------------------
-  async function init() {
-    nowYear();
-    Theme.apply();
+  (function initActiveNav() {
+    const path = safePathname();
+    const links = $$(".mn-nav a.mn-pill");
 
-    const lb = document.getElementById("langBtn");
-    if (lb) lb.addEventListener("click", () => I18N.toggle().catch(() => {}));
+    // Clear all first
+    links.forEach((a) => a.classList.remove("is-active"));
 
-    await I18N.applyStatic().catch(() => {});
-    wireNav();
-    wireLandingMenu();
-
-    if (isInApp()) {
-      Router.wirePopState();
-      Router.normalizeLegacyHash();
-      await Router.render().catch(() => {});
+    // Try to match exact route
+    let matched = null;
+    for (const a of links) {
+      const p = normalizeRoute(a.getAttribute("href"));
+      if (!p) continue;
+      if (p === path) { matched = a; break; }
     }
-  }
 
-  return { init };
+    // Fallback: match section root for nested routes (e.g., /complaints -> /complaints)
+    if (!matched && path !== "/") {
+      for (const a of links) {
+        const p = normalizeRoute(a.getAttribute("href"));
+        if (!p || p === "/") continue;
+        if (path.startsWith(p + "/") || path === p) { matched = a; break; }
+      }
+    }
+
+    if (matched) matched.classList.add("is-active");
+  })();
+
+  // -----------------------------
+  // Page-specific hook: Complaints demo submit (no inline JS)
+  // Requires:
+  // - form#complaintsForm
+  // - div#complaintsResult
+  // -----------------------------
+  (function initComplaintsDemo() {
+    const form = document.getElementById("complaintsForm");
+    const out = document.getElementById("complaintsResult");
+    if (!form || !out) return;
+
+    function show(msg) {
+      out.style.display = "block";
+      out.textContent = msg;
+    }
+
+    form.addEventListener("submit", (ev) => {
+      ev.preventDefault();
+      show("Đã ghi nhận UI báo cáo (chưa gửi API). Bước tiếp theo: nối Worker/D1 để tạo report_id và lưu trạng thái.");
+    });
+
+    form.addEventListener("reset", () => {
+      out.style.display = "none";
+      out.textContent = "";
+    });
+  })();
+
 })();
-
-MN.init().catch(() => {});
