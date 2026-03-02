@@ -1,19 +1,10 @@
 /* FILE: apps/web/public/assets/site.js
    Muôn Nơi (mn) — Web/App Shell (Locked Baseline)
-   UPDATE: PATH-BASED ROUTER (no more #join)
-   Routes:
-     /app          -> join
-     /app/         -> join
-     /app/join     -> join
-     /app/me       -> me
-   Backward compatible:
-     /app#join, /app#me still work (auto-normalize to /app/join, /app/me)
-
-   Rules:
-   - No external libs
+   - PATH-BASED ROUTER (no #join)
+   - Landing hamburger menu toggle (#mnBurger, #mnMobile)
    - i18n from /assets/i18n.json
    - Safe rendering (escapeHtml)
-   - API calls with credentials
+   - No external libs
 */
 
 const MN = (() => {
@@ -45,8 +36,6 @@ const MN = (() => {
     }[m]));
   }
 
-  function setText(id, text) { const el = document.getElementById(id); if (el) el.textContent = text; }
-
   function nowYear() {
     const y = document.getElementById("year");
     if (y) y.textContent = String(new Date().getFullYear());
@@ -59,13 +48,12 @@ const MN = (() => {
   }
 
   function normalizePath(p) {
-    // Remove trailing slash except root-like /app/
     if (p.length > 1 && p.endsWith("/")) return p.slice(0, -1);
     return p;
   }
 
   // -----------------------------
-  // Toast (simple)
+  // Toast
   // -----------------------------
   function ensureToastHost() {
     let host = document.getElementById("mnToastHost");
@@ -120,12 +108,7 @@ const MN = (() => {
       if (t === "light") document.documentElement.setAttribute("data-theme", "light");
       else document.documentElement.removeAttribute("data-theme");
     }
-    function toggle() {
-      const t = get();
-      localStorage.setItem(CFG.themeKey, t === "light" ? "dark" : "light");
-      apply();
-    }
-    return { get, apply, toggle };
+    return { apply };
   })();
 
   // -----------------------------
@@ -170,7 +153,11 @@ const MN = (() => {
         ["tPrivacy", "privacy"],
         ["tC1", "c1"], ["tC1b", "c1b"],
         ["tC2", "c2"], ["tC2b", "c2b"],
-        ["tC3", "c3"], ["tC3b", "c3b"]
+        ["tC3", "c3"], ["tC3b", "c3b"],
+
+        // landing extras (safe if not present)
+        ["tRoad", "road"],
+        ["tRoadB", "roadB"]
       ];
 
       for (const [id, k] of map) {
@@ -225,7 +212,6 @@ const MN = (() => {
   // App detection
   // -----------------------------
   function isInApp() {
-    // app.html is served for /app and /app/*
     return normalizePath(location.pathname).startsWith("/app");
   }
 
@@ -236,22 +222,14 @@ const MN = (() => {
     const base = "/app";
 
     function routeFromLocation() {
-      // Backward compat: if hash exists, map to /app/<hash> and normalize
       const hash = (location.hash || "").replace("#", "").trim();
       if (hash === "join") return "join";
       if (hash === "me") return "me";
 
       const p = normalizePath(location.pathname);
-      // Examples:
-      // /app -> join
-      // /app/join -> join
-      // /app/me -> me
       if (p === "/app" || p === "/app/") return "join";
       if (p === "/app/join") return "join";
       if (p === "/app/me") return "me";
-
-      // Future: /app/feed, /app/groups, /app/shop ...
-      // For now default to join (safe)
       return "join";
     }
 
@@ -264,7 +242,6 @@ const MN = (() => {
       const to = pathFor(route);
       if (replace) history.replaceState({}, "", to);
       else history.pushState({}, "", to);
-      // Clean hash to avoid mixed mode
       if (location.hash) history.replaceState({}, "", to);
       render().catch(() => {});
     }
@@ -285,11 +262,8 @@ const MN = (() => {
     function normalizeLegacyHash() {
       const hash = (location.hash || "").replace("#", "").trim();
       if (!hash) return;
-
       if (hash === "join") return navigate("join", true);
       if (hash === "me") return navigate("me", true);
-
-      // unknown hash -> drop it
       history.replaceState({}, "", pathFor(routeFromLocation()));
     }
 
@@ -300,11 +274,7 @@ const MN = (() => {
   // Views
   // -----------------------------
   function renderHTML(root, html) { root.innerHTML = html; }
-
-  function bindClick(root, sel, fn) {
-    const el = $(sel, root);
-    if (el) el.addEventListener("click", fn);
-  }
+  function bindClick(root, sel, fn) { const el = $(sel, root); if (el) el.addEventListener("click", fn); }
 
   async function viewJoin(root) {
     const title = await I18N.t("joinTitle");
@@ -393,11 +363,9 @@ const MN = (() => {
 
     bindClick(root, "#mnSend", send);
     bindClick(root, "#mnVerify", verify);
-
     if (emailEl) emailEl.addEventListener("keydown", (ev) => { if (ev.key === "Enter") send(); });
     if (codeEl) codeEl.addEventListener("keydown", (ev) => { if (ev.key === "Enter") verify(); });
 
-    // Autofocus email for fast UX
     try { emailEl?.focus(); } catch {}
   }
 
@@ -421,7 +389,6 @@ const MN = (() => {
           <button class="btn" id="mnLogout" type="button">${escapeHtml(logoutLbl)}</button>
           <span class="muted">Feed / Groups / Shop sẽ mở ở bước tiếp theo.</span>
         </div>
-        <p class="note">Từ giờ link chuẩn: /app/join, /app/me. Không dùng #join nữa.</p>
       `);
 
       bindClick(root, "#mnLogout", async () => {
@@ -441,31 +408,69 @@ const MN = (() => {
   }
 
   // -----------------------------
-  // Navigation: data-href (support future /app/*)
+  // Navigation: data-href
   // -----------------------------
   function wireNav() {
-    // Support both: data-href="/app/join" OR legacy "/app#join"
     $all("[data-href]").forEach(el => {
       el.addEventListener("click", (ev) => {
         const href = el.getAttribute("data-href");
         if (!href) return;
 
-        // If it's app internal route, handle as SPA navigation
+        // Internal /app routes use SPA nav
         if (href.startsWith("/app")) {
           ev.preventDefault();
-          // Normalize legacy hash -> path
-          if (href === "/app#join") return Router.navigate("join");
-          if (href === "/app#me") return Router.navigate("me");
-
-          // If dev already used /app/join format:
           history.pushState({}, "", href);
           Router.render().catch(() => {});
           return;
         }
 
-        // External/normal navigation
         location.href = href;
       });
+    });
+  }
+
+  // -----------------------------
+  // Landing Mobile Menu Toggle
+  // -----------------------------
+  function wireLandingMenu() {
+    const burger = document.getElementById("mnBurger");
+    const panel = document.getElementById("mnMobile");
+    if (!burger || !panel) return; // only on landing
+
+    const open = () => { panel.hidden = false; burger.setAttribute("aria-expanded", "true"); };
+    const close = () => { panel.hidden = true; burger.setAttribute("aria-expanded", "false"); };
+    const toggle = () => { panel.hidden ? open() : close(); };
+
+    burger.setAttribute("aria-expanded", "false");
+
+    burger.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      toggle();
+    });
+
+    // Auto-close when click any link inside panel
+    panel.addEventListener("click", (ev) => {
+      const a = ev.target && ev.target.closest ? ev.target.closest("a") : null;
+      if (a) close();
+    });
+
+    // Click outside closes
+    document.addEventListener("click", (ev) => {
+      if (panel.hidden) return;
+      const t = ev.target;
+      if (!t) return;
+      if (panel.contains(t) || burger.contains(t)) return;
+      close();
+    });
+
+    // Escape closes
+    document.addEventListener("keydown", (ev) => {
+      if (ev.key === "Escape" && !panel.hidden) close();
+    });
+
+    // If screen resized to desktop, close panel
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 860 && !panel.hidden) close();
     });
   }
 
@@ -481,10 +486,11 @@ const MN = (() => {
 
     await I18N.applyStatic().catch(() => {});
     wireNav();
+    wireLandingMenu();
 
     if (isInApp()) {
       Router.wirePopState();
-      Router.normalizeLegacyHash(); // if user opens /app#join -> /app/join
+      Router.normalizeLegacyHash();
       await Router.render().catch(() => {});
     }
   }
