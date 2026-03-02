@@ -1,10 +1,19 @@
-/* Muôn Nơi (mn) — Web/App Shell (Locked Baseline)
+/* FILE: apps/web/public/assets/site.js
+   Muôn Nơi (mn) — Web/App Shell (Locked Baseline)
+   UPDATE: PATH-BASED ROUTER (no more #join)
+   Routes:
+     /app          -> join
+     /app/         -> join
+     /app/join     -> join
+     /app/me       -> me
+   Backward compatible:
+     /app#join, /app#me still work (auto-normalize to /app/join, /app/me)
+
+   Rules:
    - No external libs
-   - No inline HTML event handlers
-   - i18n from /assets/i18n.json only
-   - Module-first router (hash views)
+   - i18n from /assets/i18n.json
    - Safe rendering (escapeHtml)
-   - Clean API client (CORS + credentials)
+   - API calls with credentials
 */
 
 const MN = (() => {
@@ -36,13 +45,12 @@ const MN = (() => {
     }[m]));
   }
 
+  function setText(id, text) { const el = document.getElementById(id); if (el) el.textContent = text; }
+
   function nowYear() {
-    const y = $("#year");
+    const y = document.getElementById("year");
     if (y) y.textContent = String(new Date().getFullYear());
   }
-
-  function setAttr(el, k, v) { if (el) el.setAttribute(k, v); }
-  function setText(id, text) { const el = document.getElementById(id); if (el) el.textContent = text; }
 
   function isEmail(s) {
     if (!s) return false;
@@ -50,8 +58,14 @@ const MN = (() => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
   }
 
+  function normalizePath(p) {
+    // Remove trailing slash except root-like /app/
+    if (p.length > 1 && p.endsWith("/")) return p.slice(0, -1);
+    return p;
+  }
+
   // -----------------------------
-  // Toast (simple, no dependencies)
+  // Toast (simple)
   // -----------------------------
   function ensureToastHost() {
     let host = document.getElementById("mnToastHost");
@@ -77,7 +91,7 @@ const MN = (() => {
     el.style.padding = "10px 12px";
     el.style.borderRadius = "14px";
     el.style.boxShadow = "0 18px 55px rgba(0,0,0,.45)";
-    el.style.maxWidth = "340px";
+    el.style.maxWidth = "360px";
     el.style.fontSize = "13px";
     el.style.lineHeight = "1.45";
     el.style.backdropFilter = "blur(10px)";
@@ -93,7 +107,7 @@ const MN = (() => {
       el.style.transform = "translateY(6px)";
       el.style.transition = "opacity .18s ease, transform .18s ease";
       setTimeout(() => el.remove(), 220);
-    }, 2600);
+    }, 2400);
   }
 
   // -----------------------------
@@ -127,8 +141,6 @@ const MN = (() => {
       dict = await r.json();
       return dict;
     }
-
-    function getLang() { return lang; }
 
     async function t(key) {
       await load();
@@ -176,10 +188,10 @@ const MN = (() => {
       lang = (lang === "vi") ? "en" : "vi";
       localStorage.setItem(CFG.langKey, lang);
       await applyStatic();
-      if (location.pathname.includes("/app")) await Router.render();
+      if (isInApp()) await Router.render();
     }
 
-    return { t, toggle, applyStatic, getLang };
+    return { t, toggle, applyStatic };
   })();
 
   // -----------------------------
@@ -188,11 +200,7 @@ const MN = (() => {
   const API = (() => {
     async function req(method, path, body) {
       const url = CFG.apiBase + path;
-      const init = {
-        method,
-        credentials: "include",
-        headers: {}
-      };
+      const init = { method, credentials: "include", headers: {} };
       if (body !== undefined) {
         init.headers["content-type"] = "application/json";
         init.body = JSON.stringify(body);
@@ -214,20 +222,90 @@ const MN = (() => {
   })();
 
   // -----------------------------
-  // View rendering
+  // App detection
   // -----------------------------
-  function renderHTML(view, html) {
-    view.innerHTML = html;
+  function isInApp() {
+    // app.html is served for /app and /app/*
+    return normalizePath(location.pathname).startsWith("/app");
   }
+
+  // -----------------------------
+  // Router (PATH-BASED)
+  // -----------------------------
+  const Router = (() => {
+    const base = "/app";
+
+    function routeFromLocation() {
+      // Backward compat: if hash exists, map to /app/<hash> and normalize
+      const hash = (location.hash || "").replace("#", "").trim();
+      if (hash === "join") return "join";
+      if (hash === "me") return "me";
+
+      const p = normalizePath(location.pathname);
+      // Examples:
+      // /app -> join
+      // /app/join -> join
+      // /app/me -> me
+      if (p === "/app" || p === "/app/") return "join";
+      if (p === "/app/join") return "join";
+      if (p === "/app/me") return "me";
+
+      // Future: /app/feed, /app/groups, /app/shop ...
+      // For now default to join (safe)
+      return "join";
+    }
+
+    function pathFor(route) {
+      if (route === "me") return `${base}/me`;
+      return `${base}/join`;
+    }
+
+    function navigate(route, replace = false) {
+      const to = pathFor(route);
+      if (replace) history.replaceState({}, "", to);
+      else history.pushState({}, "", to);
+      // Clean hash to avoid mixed mode
+      if (location.hash) history.replaceState({}, "", to);
+      render().catch(() => {});
+    }
+
+    async function render() {
+      const view = document.getElementById("view");
+      if (!view) return;
+
+      const route = routeFromLocation();
+      if (route === "me") return viewMe(view);
+      return viewJoin(view);
+    }
+
+    function wirePopState() {
+      window.addEventListener("popstate", () => render().catch(() => {}));
+    }
+
+    function normalizeLegacyHash() {
+      const hash = (location.hash || "").replace("#", "").trim();
+      if (!hash) return;
+
+      if (hash === "join") return navigate("join", true);
+      if (hash === "me") return navigate("me", true);
+
+      // unknown hash -> drop it
+      history.replaceState({}, "", pathFor(routeFromLocation()));
+    }
+
+    return { render, navigate, wirePopState, normalizeLegacyHash };
+  })();
+
+  // -----------------------------
+  // Views
+  // -----------------------------
+  function renderHTML(root, html) { root.innerHTML = html; }
 
   function bindClick(root, sel, fn) {
     const el = $(sel, root);
     if (el) el.addEventListener("click", fn);
   }
 
-  // -----------------------------
-  // Views
-  // -----------------------------
   async function viewJoin(root) {
     const title = await I18N.t("joinTitle");
     const desc = await I18N.t("joinDesc");
@@ -305,8 +383,7 @@ const MN = (() => {
       try {
         await API.post(`/api/${CFG.version}/auth/verify`, { email, code });
         toast("Đăng nhập thành công.", "ok");
-        location.hash = "#me";
-        await Router.render();
+        Router.navigate("me");
       } catch (e) {
         const msg = String(e?.message || e);
         if (out2) out2.textContent = msg;
@@ -317,9 +394,11 @@ const MN = (() => {
     bindClick(root, "#mnSend", send);
     bindClick(root, "#mnVerify", verify);
 
-    // Enter to submit
     if (emailEl) emailEl.addEventListener("keydown", (ev) => { if (ev.key === "Enter") send(); });
     if (codeEl) codeEl.addEventListener("keydown", (ev) => { if (ev.key === "Enter") verify(); });
+
+    // Autofocus email for fast UX
+    try { emailEl?.focus(); } catch {}
   }
 
   async function viewMe(root) {
@@ -342,14 +421,13 @@ const MN = (() => {
           <button class="btn" id="mnLogout" type="button">${escapeHtml(logoutLbl)}</button>
           <span class="muted">Feed / Groups / Shop sẽ mở ở bước tiếp theo.</span>
         </div>
-        <p class="note">Baseline đang khóa bảo mật và UI. Bước tiếp theo sẽ thêm Feed + moderation + media.</p>
+        <p class="note">Từ giờ link chuẩn: /app/join, /app/me. Không dùng #join nữa.</p>
       `);
 
       bindClick(root, "#mnLogout", async () => {
         try { await API.post(`/api/${CFG.version}/auth/logout`, {}); } catch {}
         toast("Đã đăng xuất.", "ok");
-        location.hash = "#join";
-        await Router.render();
+        Router.navigate("join");
       });
     } catch {
       renderHTML(root, `
@@ -358,42 +436,34 @@ const MN = (() => {
         <div class="spacer"></div>
         <button class="btn btn--primary" id="mnGoJoin" type="button">Go</button>
       `);
-      bindClick(root, "#mnGoJoin", async () => {
-        location.hash = "#join";
-        await Router.render();
-      });
+      bindClick(root, "#mnGoJoin", () => Router.navigate("join"));
     }
   }
 
   // -----------------------------
-  // Router
-  // -----------------------------
-  const Router = (() => {
-    function current() {
-      const h = (location.hash || "#join").replace("#", "").trim();
-      return h || "join";
-    }
-
-    async function render() {
-      const view = document.getElementById("view");
-      if (!view) return; // not in app.html
-
-      const route = current();
-      if (route === "me") return viewMe(view);
-      return viewJoin(view);
-    }
-
-    return { render };
-  })();
-
-  // -----------------------------
-  // Navigation: data-href
+  // Navigation: data-href (support future /app/*)
   // -----------------------------
   function wireNav() {
+    // Support both: data-href="/app/join" OR legacy "/app#join"
     $all("[data-href]").forEach(el => {
-      el.addEventListener("click", () => {
+      el.addEventListener("click", (ev) => {
         const href = el.getAttribute("data-href");
         if (!href) return;
+
+        // If it's app internal route, handle as SPA navigation
+        if (href.startsWith("/app")) {
+          ev.preventDefault();
+          // Normalize legacy hash -> path
+          if (href === "/app#join") return Router.navigate("join");
+          if (href === "/app#me") return Router.navigate("me");
+
+          // If dev already used /app/join format:
+          history.pushState({}, "", href);
+          Router.render().catch(() => {});
+          return;
+        }
+
+        // External/normal navigation
         location.href = href;
       });
     });
@@ -409,15 +479,12 @@ const MN = (() => {
     const lb = document.getElementById("langBtn");
     if (lb) lb.addEventListener("click", () => I18N.toggle().catch(() => {}));
 
-    // Future: theme toggle hook (not shown in UI yet)
-    // const tb = document.getElementById("themeBtn");
-    // if (tb) tb.addEventListener("click", () => Theme.toggle());
-
     await I18N.applyStatic().catch(() => {});
     wireNav();
 
-    if (location.pathname.includes("/app")) {
-      window.addEventListener("hashchange", () => Router.render().catch(() => {}));
+    if (isInApp()) {
+      Router.wirePopState();
+      Router.normalizeLegacyHash(); // if user opens /app#join -> /app/join
       await Router.render().catch(() => {});
     }
   }
