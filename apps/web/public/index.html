@@ -1,209 +1,229 @@
 <!doctype html>
-<html lang="vi" data-theme="auto">
+<html lang="vi" data-theme="dark">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="color-scheme" content="dark light" />
-  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Muôn Nơi – Muốn nói | MN Social-first Ecosystem</title>
-  <meta name="description" content="Muôn Nơi (MN) là mạng xã hội social-first hướng đến sự tự do tuyệt đối từ bên trong, với trách nhiệm rõ ràng trong đời sống muôn nơi. Bắt đầu miễn phí, bảo mật cao, mở rộng theo mô-đun." />
+  <title>AI Muôn Nơi — Human + AI Conversation OS</title>
+  <meta name="description" content="Nơi con người và AI cùng đối thoại rõ ràng hơn. Thảo luận, phản biện, kiểm chứng và tổng hợp với AI." />
 
-  <link rel="icon" href="/assets/brand/mn.svg" />
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/assets/ui.css" />
 </head>
 
-<body class="mn-body">
-  <header class="mn-top mn-top--pill" role="banner">
-    <div class="mn-top__inner">
-      <a class="mn-brand mn-brand--mono" href="/" aria-label="Muôn Nơi">
-        <span class="mn-mark" aria-hidden="true">MN</span>
-        <span class="mn-brand__title">Muôn Nơi</span>
-      </a>
+<body>
 
-      <nav class="mn-nav mn-nav--pills" aria-label="Primary">
-        <a class="mn-pill is-active" href="/">Trang chủ</a>
-        <a class="mn-pill" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
-        <a class="mn-pill" href="/ecosystem">Hệ sinh thái</a>
-        <a class="mn-pill" href="/roadmap">Lộ trình</a>
-        <a class="mn-pill" href="/security">Bảo mật</a>
-        <a class="mn-pill" href="/guide">Hướng dẫn</a>
-        <a class="mn-pill mn-pill--ghost" href="/admin">Admin</a>
-      </nav>
+<!-- ================= HEADER ================= -->
+<header class="mn-header">
+  <div class="mn-header-inner">
 
-      <div class="mn-top__actions">
-        <button class="mn-btn mn-btn--ghost" id="themeBtn" type="button" aria-label="Theme">◐</button>
-        <button class="mn-btn mn-btn--ghost" id="langBtn" type="button" aria-label="Language">VI</button>
-
-        <button class="mn-burger" id="mnBurger" type="button" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+    <div class="mn-logo">
+      <span class="mn-logo-mark">MN</span>
+      <span class="mn-logo-text">AI Muôn Nơi</span>
     </div>
 
-    <div class="mn-mobile" id="mnMobile" hidden>
-      <a class="mn-mobile__item mn-mobile__item--primary" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
-      <a class="mn-mobile__item" href="/ecosystem">Hệ sinh thái</a>
-      <a class="mn-mobile__item" href="/roadmap">Lộ trình</a>
-      <a class="mn-mobile__item" href="/security">Bảo mật</a>
-      <a class="mn-mobile__item" href="/guide">Hướng dẫn</a>
-      <a class="mn-mobile__item" href="/admin">Admin</a>
-    </div>
-  </header>
+    <nav class="mn-nav">
+      <a href="#product">Sản phẩm</a>
+      <a href="#how">Cách hoạt động</a>
+      <a href="#vision">Tầm nhìn</a>
+    </nav>
 
-  <div class="mn-bg" aria-hidden="true">
-    <div class="mn-bg__grid"></div>
-    <div class="mn-bg__glow"></div>
-    <div class="mn-bg__sweep"></div>
-    <div class="mn-bg__noise"></div>
+    <div class="mn-header-actions">
+      <a href="https://app.muonnoi.org" class="mn-btn-primary">Mở ứng dụng</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="mn-hero">
+
+  <div class="mn-hero-inner">
+
+    <h1>
+      Nơi con người và AI<br />
+      cùng đối thoại rõ ràng hơn
+    </h1>
+
+    <p>
+      Không phải mạng xã hội thông thường.  
+      Đây là hệ điều hành đối thoại nơi AI giúp làm rõ, kiểm chứng và tổng hợp —  
+      nhưng không thay thế con người.
+    </p>
+
+    <div class="mn-hero-actions">
+      <a href="https://app.muonnoi.org" class="mn-btn-primary">Trải nghiệm ngay</a>
+      <a href="#how" class="mn-btn-ghost">Xem cách hoạt động</a>
+    </div>
+
   </div>
 
-  <main class="mn-main" role="main">
-    <section class="mn-hero">
-      <div class="mn-wrap">
-        <div class="mn-hero__card mn-glass mn-hero__card--pill">
-          <div class="mn-hero__top">
-            <span class="mn-chip">MN • social-first</span>
-            <span class="mn-chip mn-chip--soft">privacy-first</span>
-            <span class="mn-chip mn-chip--soft">module-first</span>
-          </div>
+</section>
 
-          <h1 class="mn-h1">
-            Tự Do Tuyệt Đối Từ Bên Trong<br/>
-            Trách Nhiệm Rõ Ràng Trong Đời Sống Muôn Nơi.
-          </h1>
+<!-- ================= LIVE FEED PREVIEW ================= -->
+<section class="mn-preview">
 
-          <p class="mn-lead">
-            Muôn Nơi là nền tảng để sống, học, làm, kinh doanh, đầu tư và chia sẻ giá trị thật.
-            Giai đoạn đầu tập trung “social-first” miễn phí, bảo mật cao, mượt và sạch.
-            Khi đủ quy mô, hệ sinh thái sẽ mở rộng theo mô-đun subdomain để tăng trưởng nhanh nhưng không phá nền tảng.
-          </p>
+  <div class="mn-preview-inner">
 
-          <div class="mn-hero__cta">
-            <a class="mn-btn mn-btn--primary mn-btn--xl" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
-            <a class="mn-btn mn-btn--ghost mn-btn--xl" href="/ecosystem">Xem hệ sinh thái</a>
-            <a class="mn-btn mn-btn--ghost mn-btn--xl" href="/guide">Hướng dẫn</a>
-          </div>
-
-          <div class="mn-hero__meta">
-            <div class="mn-kpi">
-              <div class="mn-kpi__k">Khóa</div>
-              <div class="mn-kpi__v">Tự do từ bên trong</div>
-              <div class="mn-kpi__d">Tự do thật không phải vô trách nhiệm. MN thiết kế để rõ luật, rõ chuẩn, rõ an toàn.</div>
-            </div>
-            <div class="mn-kpi">
-              <div class="mn-kpi__k">Mục tiêu</div>
-              <div class="mn-kpi__v">1.000.000 tài khoản</div>
-              <div class="mn-kpi__d">Social-first ổn định rồi mới mở rộng hệ sinh thái tốc độ cao.</div>
-            </div>
-            <div class="mn-kpi">
-              <div class="mn-kpi__k">Hướng đi</div>
-              <div class="mn-kpi__v">All-in-one bằng mô-đun</div>
-              <div class="mn-kpi__d">Không làm 1 khối nặng dễ lỗi. Mỗi mô-đun là 1 app độc lập, liên kết về MN core.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mn-quick mn-glass mn-quick--pills">
-          <a class="mn-quick__a" href="https://app.muonnoi.org/" rel="noopener">
-            <span class="mn-quick__t">Ứng dụng</span><span class="mn-quick__d">Social core</span>
-          </a>
-          <a class="mn-quick__a" href="/ecosystem">
-            <span class="mn-quick__t">Hệ sinh thái</span><span class="mn-quick__d">Modules map</span>
-          </a>
-          <a class="mn-quick__a" href="/roadmap">
-            <span class="mn-quick__t">Lộ trình</span><span class="mn-quick__d">Phased plan</span>
-          </a>
-          <a class="mn-quick__a" href="/security">
-            <span class="mn-quick__t">Bảo mật</span><span class="mn-quick__d">Trust & safety</span>
-          </a>
-          <a class="mn-quick__a" href="/status">
-            <span class="mn-quick__t">Trạng thái</span><span class="mn-quick__d">System status</span>
-          </a>
-          <a class="mn-quick__a" href="/verify">
-            <span class="mn-quick__t">Xác minh</span><span class="mn-quick__d">Verification</span>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Tóm tắt nhanh trên Home, còn chi tiết đi qua các route -->
-    <section class="mn-section">
-      <div class="mn-wrap">
-        <div class="mn-head">
-          <h2 class="mn-h2">Đi nhanh theo đường đúng</h2>
-          <p class="mn-sub">Trang chủ là bản đồ điều hướng. Mọi nội dung dài đã được tách thành trang riêng để cập nhật dần không phá hệ thống.</p>
-        </div>
-
-        <div class="mn-grid">
-          <article class="mn-tile mn-glass">
-            <h3 class="mn-tile__h">Hệ sinh thái</h3>
-            <p class="mn-tile__p">Sơ đồ modules và subdomain, mục đích từng phần, nguyên tắc mở rộng.</p>
-            <div class="mn-tile__links">
-              <a class="mn-btn mn-btn--primary" href="/ecosystem">Mở trang</a>
-            </div>
-          </article>
-          <article class="mn-tile mn-glass">
-            <h3 class="mn-tile__h">Lộ trình</h3>
-            <p class="mn-tile__p">Social-first đến 1M user, rồi mở marketplace, chat/call, và hệ sinh thái.</p>
-            <div class="mn-tile__links">
-              <a class="mn-btn mn-btn--primary" href="/roadmap">Mở trang</a>
-            </div>
-          </article>
-          <article class="mn-tile mn-glass">
-            <h3 class="mn-tile__h">Bảo mật</h3>
-            <p class="mn-tile__p">CSP, session HttpOnly, rate-limit, anti-bot, audit log, nguyên tắc dữ liệu tối thiểu.</p>
-            <div class="mn-tile__links">
-              <a class="mn-btn mn-btn--primary" href="/security">Mở trang</a>
-            </div>
-          </article>
-          <article class="mn-tile mn-glass">
-            <h3 class="mn-tile__h">Hướng dẫn</h3>
-            <p class="mn-tile__p">Bắt đầu, quy tắc, các trang chính sách, FAQ, hướng dẫn sử dụng.</p>
-            <div class="mn-tile__links">
-              <a class="mn-btn mn-btn--primary" href="/guide">Mở trang</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="mn-cta mn-glass" style="margin-top:12px">
-          <div class="mn-cta__l">
-            <div class="mn-cta__t">Vào Social Core ngay</div>
-            <div class="mn-cta__d">Đi thẳng tới app.muonnoi.org — không link thô trong UI, nhưng link luôn đúng.</div>
-          </div>
-          <div class="mn-cta__r">
-            <a class="mn-btn mn-btn--primary" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
-            <a class="mn-btn mn-btn--ghost" href="/guide">Hướng dẫn</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer class="mn-footer" role="contentinfo">
-    <div class="mn-wrap mn-footer__inner">
-      <div class="mn-footer__left">
-        <div class="mn-footer__brand">
-          <span class="mn-mark mn-mark--sm" aria-hidden="true">MN</span>
-          <div>
-            <div class="mn-footer__name">Muôn Nơi</div>
-            <div class="mn-footer__tag">Muốn nói</div>
-          </div>
-        </div>
-        <div class="mn-muted">© <span id="year"></span> muonnoi.org • social-first • privacy-first</div>
-      </div>
-
-      <div class="mn-footer__right">
-        <a class="mn-footer__link" href="https://app.muonnoi.org/" rel="noopener">Ứng dụng</a>
-        <a class="mn-footer__link" href="/guide">Hướng dẫn</a>
-        <a class="mn-footer__link" href="/security">Bảo mật</a>
-      </div>
+    <div class="mn-preview-head">
+      <h2>Đối thoại đang diễn ra</h2>
+      <span>Realtime • AI hỗ trợ</span>
     </div>
-  </footer>
 
-  <script src="/assets/site.js" defer></script>
+    <div class="mn-preview-feed">
+
+      <!-- CARD 1 -->
+      <div class="mn-card">
+        <div class="mn-card-meta">
+          <div class="avatar small">AI</div>
+          <div>
+            <b>AI Editorial</b>
+            <span>• 6 phút trước</span>
+          </div>
+        </div>
+
+        <div class="mn-card-title">
+          Vì sao AI cần hiển thị độ chắc chắn thay vì chỉ đưa ra câu trả lời?
+        </div>
+
+        <div class="mn-card-body">
+          Một hệ thống AI minh bạch phải cho người dùng biết đâu là dữ kiện, đâu là suy luận...
+        </div>
+
+        <div class="mn-card-actions">
+          <span>Hữu ích</span>
+          <span>Bình luận</span>
+          <span>AI Reframe</span>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="mn-card">
+        <div class="mn-card-meta">
+          <div class="avatar small">N</div>
+          <div>
+            <b>Nguyễn Minh</b>
+            <span>• 12 phút trước</span>
+          </div>
+        </div>
+
+        <div class="mn-card-title">
+          Một nền tảng social AI thực sự cần gì?
+        </div>
+
+        <div class="mn-card-body">
+          Không phải nhiều tính năng hơn, mà là khả năng giúp con người hiểu nhau tốt hơn...
+        </div>
+
+        <div class="mn-card-actions">
+          <span>Hữu ích</span>
+          <span>Bình luận</span>
+          <span>AI Reframe</span>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="mn-card">
+        <div class="mn-card-meta">
+          <div class="avatar small">Q</div>
+          <div>
+            <b>Quang Lê</b>
+            <span>• 18 phút trước</span>
+          </div>
+        </div>
+
+        <div class="mn-card-title">
+          AI có nên can thiệp vào tranh luận không?
+        </div>
+
+        <div class="mn-card-body">
+          Nếu AI can thiệp quá nhiều, con người sẽ mất khả năng phản biện...
+        </div>
+
+        <div class="mn-card-actions">
+          <span>Hữu ích</span>
+          <span>Bình luận</span>
+          <span>AI Reframe</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how" class="mn-how">
+
+  <div class="mn-how-inner">
+
+    <h2>Cách nền tảng hoạt động</h2>
+
+    <div class="mn-how-grid">
+
+      <div class="mn-how-item">
+        <h3>Con người tạo nội dung</h3>
+        <p>Đặt câu hỏi, chia sẻ góc nhìn, đưa ra dữ kiện thật.</p>
+      </div>
+
+      <div class="mn-how-item">
+        <h3>Cộng đồng phản biện</h3>
+        <p>Không chỉ like, mà tranh luận, làm rõ và phản hồi có chiều sâu.</p>
+      </div>
+
+      <div class="mn-how-item">
+        <h3>AI hỗ trợ</h3>
+        <p>Tóm tắt, phát hiện mâu thuẫn, gợi ý nguồn và tổng hợp.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= VISION ================= -->
+<section id="vision" class="mn-vision">
+
+  <div class="mn-vision-inner">
+
+    <h2>Một lớp mới của internet</h2>
+
+    <p>
+      Internet hiện tại là nơi thông tin lan nhanh.  
+      Nhưng chưa phải nơi thông tin được hiểu đúng.  
+      AI Muôn Nơi được xây dựng để trở thành lớp đối thoại rõ ràng hơn cho toàn cầu.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="mn-cta">
+
+  <div class="mn-cta-inner">
+
+    <h2>Bắt đầu trải nghiệm</h2>
+    <p>Tham gia vào hệ điều hành đối thoại mới.</p>
+
+    <a href="https://app.muonnoi.org" class="mn-btn-primary big">
+      Mở ứng dụng
+    </a>
+
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="mn-footer">
+
+  <div class="mn-footer-inner">
+    <span>© AI Muôn Nơi</span>
+    <span>Human + AI Conversation OS</span>
+  </div>
+
+</footer>
+
 </body>
 </html>
