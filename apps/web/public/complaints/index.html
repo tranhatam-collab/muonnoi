@@ -1,272 +1,50 @@
 <!doctype html>
-<html lang="vi" data-theme="auto">
+<html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="color-scheme" content="dark light" />
-  <meta name="referrer" content="no-referrer" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Khiếu nại – Muôn Nơi</title>
 
-  <title>Khiếu nại & Báo cáo | Muôn Nơi (MN)</title>
-  <meta name="description" content="Khiếu nại & Báo cáo của Muôn Nơi (MN). Gửi báo cáo lừa đảo, giả mạo, quấy rối, xâm phạm riêng tư, hoặc sự cố bảo mật theo quy trình rõ ràng." />
-
-  <link rel="icon" href="/assets/brand/mn.svg" />
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/assets/ui.css"/>
 </head>
 
-<body class="mn-body">
-  <!-- 4D Mirror Background -->
-  <div class="mn-bg" aria-hidden="true">
-    <div class="mn-bg__grid"></div>
-    <div class="mn-bg__glow"></div>
-    <div class="mn-bg__sweep"></div>
-    <div class="mn-bg__noise"></div>
+<body>
+
+<header class="mn-header">
+  <div class="mn-header-inner">
+    <div class="mn-logo">
+      <span class="mn-logo-mark">MN</span>
+    </div>
+    <a href="/" class="mn-btn-primary">Trang chủ</a>
   </div>
+</header>
 
-  <!-- TOP BAR -->
-  <header class="mn-top mn-top--pill" role="banner">
-    <div class="mn-top__inner">
-      <a class="mn-brand mn-brand--mono" href="/" aria-label="Muôn Nơi">
-        <span class="mn-mark" aria-hidden="true">MN</span>
-        <span class="mn-brand__title">Muôn Nơi</span>
-      </a>
+<section class="mn-hero">
+  <h1>Khiếu nại & Báo cáo</h1>
+  <p>Gửi thông tin để hệ thống xử lý</p>
+</section>
 
-      <nav class="mn-nav mn-nav--pills" aria-label="Primary">
-        <a class="mn-pill" href="/">Trang chủ</a>
-        <a class="mn-pill" href="/ecosystem">Hệ sinh thái</a>
-        <a class="mn-pill" href="/roadmap">Lộ trình</a>
-        <a class="mn-pill" href="/security">Bảo mật</a>
-        <a class="mn-pill" href="/guide">Hướng dẫn</a>
-        <a class="mn-pill is-active" href="/complaints">Khiếu nại</a>
-        <a class="mn-pill mn-pill--ghost" href="/admin">Admin</a>
-      </nav>
+<section class="mn-preview">
+  <div class="mn-preview-inner">
 
-      <div class="mn-top__actions">
-        <a class="mn-btn mn-btn--primary" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
-        <button class="mn-btn mn-btn--ghost" id="themeBtn" type="button" aria-label="Theme">◐</button>
-        <button class="mn-btn mn-btn--ghost" id="langBtn" type="button" aria-label="Language">VI</button>
-        <button class="mn-burger" id="mnBurger" type="button" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
+    <form style="display:flex;flex-direction:column;gap:12px">
 
-    <!-- Mobile Menu -->
-    <div class="mn-mobile" id="mnMobile" hidden>
-      <a class="mn-mobile__item mn-mobile__item--primary" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
-      <a class="mn-mobile__item" href="/">Trang chủ</a>
-      <a class="mn-mobile__item" href="/ecosystem">Hệ sinh thái</a>
-      <a class="mn-mobile__item" href="/roadmap">Lộ trình</a>
-      <a class="mn-mobile__item" href="/security">Bảo mật</a>
-      <a class="mn-mobile__item" href="/guide">Hướng dẫn</a>
-      <a class="mn-mobile__item" href="/admin">Admin</a>
-    </div>
-  </header>
+      <input placeholder="Email" style="padding:12px;border-radius:10px;border:1px solid #333;background:#111;color:#fff"/>
 
-  <main class="mn-main" role="main">
-    <section class="mn-section">
-      <div class="mn-wrap">
-        <!-- HEADER CARD -->
-        <div class="mn-glass" style="padding:18px;border-radius:28px;">
-          <div class="mn-hero__top" style="margin-bottom:10px;">
-            <span class="mn-chip">Khiếu nại</span>
-            <span class="mn-chip mn-chip--soft">Quy trình rõ ràng</span>
-            <span class="mn-chip mn-chip--soft">Ưu tiên an toàn</span>
-          </div>
+      <textarea placeholder="Nội dung khiếu nại"
+        style="padding:12px;border-radius:10px;border:1px solid #333;background:#111;color:#fff;height:120px">
+      </textarea>
 
-          <h1 class="mn-h1" style="font-size:34px;margin-top:6px;">
-            Khiếu Nại & Báo Cáo
-          </h1>
+      <button class="mn-btn-primary">Gửi</button>
 
-          <p class="mn-lead">
-            Đây là kênh xử lý các tình huống nghiêm túc: lừa đảo, giả mạo, quấy rối, xâm phạm riêng tư,
-            tranh chấp giao dịch, hoặc sự cố bảo mật. MN ưu tiên an toàn, bảo mật, và trách nhiệm rõ ràng.
-          </p>
+    </form>
 
-          <div class="mn-hero__cta" style="margin-top:14px;">
-            <a class="mn-btn mn-btn--primary mn-btn--xl" href="https://app.muonnoi.org/" rel="noopener">Báo cáo trong ứng dụng</a>
-            <a class="mn-btn mn-btn--ghost mn-btn--xl" href="/security">Chuẩn bảo mật</a>
-            <a class="mn-btn mn-btn--ghost mn-btn--xl" href="/guide">Hướng dẫn</a>
-          </div>
-        </div>
+  </div>
+</section>
 
-        <div style="height:12px;"></div>
+<footer class="mn-footer">
+  <span>© Muôn Nơi</span>
+</footer>
 
-        <!-- PROCESS -->
-        <div class="mn-trust">
-          <div class="mn-trust__col mn-glass">
-            <h3 class="mn-h3">1) Tiếp nhận</h3>
-            <ul class="mn-list">
-              <li>Gửi báo cáo theo mẫu để không thiếu dữ liệu quan trọng.</li>
-              <li>Giảm báo cáo rác bằng chuẩn xác minh theo giai đoạn.</li>
-              <li>Ưu tiên sự cố nguy cơ cao.</li>
-            </ul>
-          </div>
-          <div class="mn-trust__col mn-glass">
-            <h3 class="mn-h3">2) Xác minh</h3>
-            <ul class="mn-list">
-              <li>Đối chiếu nội dung, bằng chứng, và dấu vết kỹ thuật (log).</li>
-              <li>Phân loại: lừa đảo, giả mạo, quấy rối, riêng tư, bảo mật.</li>
-              <li>Chặn vòng lặp lạm dụng báo cáo.</li>
-            </ul>
-          </div>
-          <div class="mn-trust__col mn-glass">
-            <h3 class="mn-h3">3) Hành động</h3>
-            <ul class="mn-list">
-              <li>Cảnh báo, giới hạn, khóa, gỡ nội dung hoặc chuyển xử lý.</li>
-              <li>Minh bạch trạng thái và nguyên tắc xử lý.</li>
-              <li>Không làm lộ dữ liệu nhạy cảm của người báo cáo.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div style="height:12px;"></div>
-
-        <!-- FORM + SIDE -->
-        <div class="mn-grid" style="grid-template-columns: 1.1fr .9fr; gap:12px;">
-          <!-- FORM -->
-          <section class="mn-glass" style="padding:16px;border-radius:26px;">
-            <h2 class="mn-h2" style="font-size:20px;">Biểu mẫu khiếu nại</h2>
-            <p class="mn-sub">
-              Phiên bản hiện tại là UI nền tảng. Khi nối Worker/D1, hệ thống sẽ tạo <strong>report_id</strong> và lưu trạng thái xử lý.
-            </p>
-
-            <form id="complaintsForm" class="mn-form" autocomplete="off" novalidate style="margin-top:12px;">
-              <div class="mn-form__grid">
-                <label class="mn-field">
-                  <span class="mn-field__label">Loại sự cố</span>
-                  <select class="mn-input" name="type" required>
-                    <option value="">Chọn loại</option>
-                    <option value="scam">Lừa đảo</option>
-                    <option value="impersonation">Giả mạo</option>
-                    <option value="harassment">Quấy rối</option>
-                    <option value="privacy">Xâm phạm riêng tư</option>
-                    <option value="security">Sự cố bảo mật</option>
-                    <option value="transaction">Tranh chấp giao dịch</option>
-                    <option value="other">Khác</option>
-                  </select>
-                </label>
-
-                <label class="mn-field">
-                  <span class="mn-field__label">Mức độ</span>
-                  <select class="mn-input" name="severity" required>
-                    <option value="">Chọn mức</option>
-                    <option value="low">Thấp</option>
-                    <option value="medium">Trung bình</option>
-                    <option value="high">Cao</option>
-                    <option value="critical">Khẩn cấp</option>
-                  </select>
-                </label>
-
-                <label class="mn-field mn-field--full">
-                  <span class="mn-field__label">Đối tượng liên quan (URL hoặc @username)</span>
-                  <input class="mn-input" type="text" name="target" maxlength="220"
-                         placeholder="Ví dụ: https://app.muonnoi.org/u/abc hoặc @abc" />
-                </label>
-
-                <label class="mn-field mn-field--full">
-                  <span class="mn-field__label">Mô tả ngắn gọn (tối đa 800 ký tự)</span>
-                  <textarea class="mn-input" name="message" rows="6" maxlength="800"
-                            placeholder="Mô tả sự việc, thời gian, hành vi, và điều bạn mong muốn được xử lý."></textarea>
-                  <span class="mn-sub" style="margin-top:6px;display:block;">
-                    Không gửi mật khẩu, OTP, hoặc dữ liệu tài chính nhạy cảm.
-                  </span>
-                </label>
-
-                <label class="mn-field">
-                  <span class="mn-field__label">Email liên hệ (tuỳ chọn)</span>
-                  <input class="mn-input" type="email" name="email" maxlength="120" placeholder="you@example.com" />
-                </label>
-
-                <label class="mn-field">
-                  <span class="mn-field__label">Bằng chứng (link, tuỳ chọn)</span>
-                  <input class="mn-input" type="url" name="evidence" maxlength="220" placeholder="https://..." />
-                </label>
-              </div>
-
-              <div style="height:10px;"></div>
-
-              <div class="mn-cta mn-glass" style="padding:12px;border-radius:22px;box-shadow:none;">
-                <div class="mn-cta__l">
-                  <div class="mn-cta__t">Xác nhận</div>
-                  <div class="mn-cta__d">Bạn xác nhận báo cáo này đúng theo hiểu biết của bạn và chịu trách nhiệm về nội dung cung cấp.</div>
-                </div>
-                <div class="mn-cta__r">
-                  <button class="mn-btn mn-btn--ghost" type="reset">Xoá</button>
-                  <button class="mn-btn mn-btn--primary" type="submit">Gửi</button>
-                </div>
-              </div>
-
-              <!-- This will be shown by /assets/site.js (no inline JS) -->
-              <div id="complaintsResult" class="mn-muted" style="margin-top:10px;display:none;"></div>
-            </form>
-          </section>
-
-          <!-- SIDE -->
-          <aside class="mn-glass" style="padding:16px;border-radius:26px;">
-            <h2 class="mn-h2" style="font-size:20px;">Liên kết nhanh</h2>
-            <p class="mn-sub">Đi đúng trang, đúng chuẩn, không link thô, không anchor.</p>
-
-            <div class="mn-footlinks mn-glass" style="padding:12px;border-radius:24px;">
-              <a class="mn-footlinks__a" href="/security">Bảo mật</a>
-              <a class="mn-footlinks__a" href="/roadmap">Lộ trình</a>
-              <a class="mn-footlinks__a" href="/ecosystem">Hệ sinh thái</a>
-              <a class="mn-footlinks__a" href="/guide">Hướng dẫn</a>
-              <a class="mn-footlinks__a" href="/status">Trạng thái</a>
-              <a class="mn-footlinks__a" href="/verify">Xác minh</a>
-              <a class="mn-footlinks__a" href="/commit">Cam kết</a>
-              <a class="mn-footlinks__a" href="https://app.muonnoi.org/" rel="noopener">Vào ứng dụng</a>
-            </div>
-
-            <div style="height:12px;"></div>
-
-            <h3 class="mn-h3">Câu hỏi nhanh</h3>
-            <ul class="mn-list">
-              <li><strong>Tôi có thể báo cáo ẩn danh không?</strong> Có. Nhưng khi có email sẽ phản hồi nhanh hơn.</li>
-              <li><strong>MN xử lý trong bao lâu?</strong> Theo mức độ. Khẩn cấp sẽ ưu tiên trước.</li>
-              <li><strong>Làm sao tránh spam báo cáo?</strong> Sẽ triển khai rate-limit + xác minh theo giai đoạn.</li>
-            </ul>
-
-            <div style="height:12px;"></div>
-
-            <div class="mn-cta mn-glass" style="padding:12px;border-radius:22px;box-shadow:none;">
-              <div class="mn-cta__l">
-                <div class="mn-cta__t">Báo cáo chuẩn nhất</div>
-                <div class="mn-cta__d">Trong tương lai, báo cáo trực tiếp trong app sẽ gắn context và log để xử lý nhanh hơn.</div>
-              </div>
-              <div class="mn-cta__r">
-                <a class="mn-btn mn-btn--primary" href="https://app.muonnoi.org/" rel="noopener">Vào app</a>
-              </div>
-            </div>
-          </aside>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer class="mn-footer" role="contentinfo">
-    <div class="mn-wrap mn-footer__inner">
-      <div class="mn-footer__left">
-        <div class="mn-footer__brand">
-          <span class="mn-mark mn-mark--sm" aria-hidden="true">MN</span>
-          <div>
-            <div class="mn-footer__name">Muôn Nơi</div>
-            <div class="mn-footer__tag">Muốn nói</div>
-          </div>
-        </div>
-        <div class="mn-muted">© <span id="year"></span> muonnoi.org • complaints</div>
-      </div>
-
-      <div class="mn-footer__right">
-        <a class="mn-footer__link" href="/">Trang chủ</a>
-        <a class="mn-footer__link" href="/security">Bảo mật</a>
-        <a class="mn-footer__link" href="/guide">Hướng dẫn</a>
-        <a class="mn-footer__link" href="https://app.muonnoi.org/" rel="noopener">Ứng dụng</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/assets/site.js" defer></script>
 </body>
 </html>
