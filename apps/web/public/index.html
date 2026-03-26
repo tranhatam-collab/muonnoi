@@ -21,7 +21,13 @@
 
   <link rel="icon" href="/favicon.ico" />
   <link rel="manifest" href="/manifest.json" />
-  <link rel="stylesheet" href="/assets/ui.css?v=20260318-final" />
+  <link rel="stylesheet" href="/assets/ui.css?v=1.0.1" />
+
+  <style>
+    .i18n-en{display:none}
+    html[lang="en"] .i18n-vi{display:none}
+    html[lang="en"] .i18n-en{display:inline}
+  </style>
 </head>
 <body class="mn-body">
   <a class="mn-srOnlyFocus" href="#main">Đi tới nội dung</a>
@@ -84,6 +90,48 @@
     <div class="mn-shell">
       <div id="appView"></div>
     </div>
+
+    <section style="margin-top:22px; padding:18px 16px 34px; max-width:1240px; margin-left:auto; margin-right:auto;">
+      <div style="padding:18px; border-radius:24px; border:1px solid rgba(255,255,255,.10); background:rgba(255,255,255,.03);">
+        <h2 style="margin:0 0 8px; font-size:22px;">
+          <span class="i18n-vi">Hệ sinh thái Muôn Nơi</span>
+          <span class="i18n-en">Muon Noi ecosystem</span>
+        </h2>
+        <p style="margin:0 0 14px; color:rgba(238,244,251,.75); line-height:1.6;">
+          <span class="i18n-vi">Muon Noi mở rộng theo module dưới dạng subdomain — mọi nơi đều hướng tới “sống thật, chia sẻ thật, tạo giá trị thật”.</span>
+          <span class="i18n-en">Muon Noi expands as modules via subdomains — everywhere follows “live real, share real, create real value”.</span>
+        </p>
+
+        <div style="display:grid; grid-template-columns:repeat(12,1fr); gap:12px;">
+          <div style="grid-column:span 12; display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+            <a class="mn-btn mn-btn--primary" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px;" href="https://app.muonnoi.org/">
+              <span>App</span><span style="opacity:.7;">(Social core)</span>
+            </a>
+            <a class="mn-btn" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px;" href="https://family.muonnoi.org/">
+              <span>Family</span><span style="opacity:.7;">(Living layer)</span>
+            </a>
+            <a class="mn-btn" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px;" href="https://ai.muonnoi.org/">
+              <span>AI</span><span style="opacity:.7;">(Verify / Trust)</span>
+            </a>
+            <a class="mn-btn" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px;" href="https://chat.muonnoi.org/">
+              <span>Chat</span><span style="opacity:.7;">(Encrypted calls)</span>
+            </a>
+            <a class="mn-btn" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px;" href="https://lamviec.muonnoi.org/">
+              <span>Làm việc</span><span style="opacity:.7;">(Ops layer)</span>
+            </a>
+            <a class="mn-btn" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px;" href="https://docs.muonnoi.org/">
+              <span>Docs</span><span style="opacity:.7;">(Boundaries)</span>
+            </a>
+            <a class="mn-btn" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px;" href="https://dautu.muonnoi.org/">
+              <span>Đầu tư</span><span style="opacity:.7;">(Ecosystem finance)</span>
+            </a>
+            <a class="mn-btn" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px;" href="https://nhachung.muonnoi.org/">
+              <span>Nhà chung</span><span style="opacity:.7;">(Steward hub)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="mn-footer">
@@ -105,6 +153,6 @@
     </div>
   </footer>
 
-  <script src="/assets/ui.js?v=20260318-final" defer></script>
+  <script src="/assets/ui.js?v=1.0.1" defer></script>
 </body>
 </html>
