@@ -3,10 +3,12 @@
   <url>
     <loc>https://muonnoi.org/</loc>
   </url>
-  <url>
-    <loc>https://muonnoi.org/app/join</loc>
-  </url>
-  <url>
-    <loc>https://muonnoi.org/app/me</loc>
-  </url>
+  <url><loc>https://muonnoi.org/ecosystem/</loc></url>
+  <url><loc>https://muonnoi.org/roadmap/</loc></url>
+  <url><loc>https://muonnoi.org/security/</loc></url>
+  <url><loc>https://muonnoi.org/guide/</loc></url>
+  <url><loc>https://muonnoi.org/status/</loc></url>
+  <url><loc>https://muonnoi.org/verify/</loc></url>
+  <url><loc>https://muonnoi.org/complaints/</loc></url>
+  <url><loc>https://muonnoi.org/commit/</loc></url>
 </urlset>
