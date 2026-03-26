@@ -36,6 +36,7 @@
   --topbar-h:78px;
   --safe-t:env(safe-area-inset-top,0px);
   --safe-b:env(safe-area-inset-bottom,0px);
+  --card:var(--panel);
 }
 
 html[data-theme="light"]{
@@ -520,7 +521,7 @@ html[data-theme="light"] .mn-mobileMenu{
   padding-bottom:12px;
 }
 
-.mn-previewWindow__dots{.mn-previewWindow__dots{
+.mn-previewWindow__dots{
   display:flex;
   gap:6px;
 }
