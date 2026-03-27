@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://muonnoi.org/</loc>
-  </url>
-  <url><loc>https://muonnoi.org/ecosystem/</loc></url>
-  <url><loc>https://muonnoi.org/roadmap/</loc></url>
-  <url><loc>https://muonnoi.org/security/</loc></url>
-  <url><loc>https://muonnoi.org/guide/</loc></url>
-  <url><loc>https://muonnoi.org/status/</loc></url>
-  <url><loc>https://muonnoi.org/verify/</loc></url>
-  <url><loc>https://muonnoi.org/complaints/</loc></url>
-  <url><loc>https://muonnoi.org/commit/</loc></url>
+  <url><loc>https://www.muonnoi.org/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.muonnoi.org/ecosystem/</loc><priority>0.9</priority></url>
+  <url><loc>https://www.muonnoi.org/roadmap/</loc><priority>0.9</priority></url>
+  <url><loc>https://www.muonnoi.org/security/</loc><priority>0.9</priority></url>
+  <url><loc>https://www.muonnoi.org/guide/</loc><priority>0.8</priority></url>
+  <url><loc>https://www.muonnoi.org/feed/</loc><priority>0.8</priority></url>
+  <url><loc>https://www.muonnoi.org/verify/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.muonnoi.org/commit/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.muonnoi.org/complaints/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.muonnoi.org/admin/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.muonnoi.org/status/</loc><priority>0.6</priority></url>
 </urlset>
