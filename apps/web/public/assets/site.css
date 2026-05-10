@@ -991,3 +991,425 @@ html[data-theme="light"] .mn-btn--primary{
    Landing Mobile Menu Behavior Hook (no inline JS)
    site.js will toggle [hidden] for #mnMobile
    ========================================================= */
+
+/* ============================================================
+   MUÔN NƠI — BRAND v2.0 "VOICE & PLACE"
+   Append-only overlay. Existing tokens preserved as fallback.
+   Reference: docs/MUONNOI_V2_VOICE_AND_PLACE.md
+
+   Brand pun: Muôn Nơi (Many Places) = Muốn Nói (Want to Say)
+   = MN. The dual-meaning is the brand's signature.
+
+   Tinh thần: social-first, expression carries everywhere,
+   premium minimalism, with IAI ecosystem trust standard (gold).
+   ============================================================ */
+
+:root {
+  /* ── INK SUBSTRATE (preserve existing — 60–70% UI) ─────── */
+  --mn-ink-950: #050605;             /* deepest void */
+  --mn-ink-900: #070807;             /* existing --mn-bg */
+  --mn-ink-800: #0E1110;             /* surface */
+  --mn-ink-700: #161A19;             /* elevated */
+
+  /* ── AZURE (Voice & Place primary signal — 20–30% UI) ── */
+  /* Azure = sky/voice carries everywhere. Distinct from
+     OMDALA cyan and IAI Foundation violet. */
+  --mn-azure-700: #1E5BD9;
+  --mn-azure-600: #2D70F0;
+  --mn-azure-500: #3B7EFF;           /* primary signal */
+  --mn-azure-400: #6FA1FF;
+  --mn-azure-300: #A1C4FF;
+  --mn-azure-200: #D0E0FF;
+  --mn-azure-glow: rgba(59, 126, 255, 0.32);
+  --mn-azure-soft: rgba(59, 126, 255, 0.10);
+
+  /* ── WHISPER (voice resonance — secondary, < 8%) ──────── */
+  --mn-whisper-500: #7FE0E5;         /* aqua whisper */
+  --mn-whisper-soft: rgba(127, 224, 229, 0.14);
+
+  /* ── GOLD VERIFICATION (IAI standard — < 5% UI) ─────── */
+  --mn-gold-500: #D4AF37;
+  --mn-gold-bright: #FFD700;
+  --mn-gold-soft: rgba(212, 175, 55, 0.16);
+
+  /* ── WHITE / TEXT (preserve) ──────────────────────────── */
+  --mn-white-100: #F5F6F5;           /* primary text (existing --mn-fg) */
+  --mn-white-200: #C6CAC7;
+  --mn-white-300: #9DA29E;
+
+  /* ── GRADIENTS — voice flow ──────────────────────────── */
+  --mn-gradient-voice:
+    linear-gradient(135deg, #3B7EFF 0%, #7FE0E5 50%, #3B7EFF 100%);
+  --mn-gradient-place:
+    linear-gradient(180deg, #050605 0%, #0E1110 50%, #050605 100%);
+  --mn-gradient-gold:
+    linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #B8910C 100%);
+  --mn-gradient-text:
+    linear-gradient(180deg, #FFFFFF 0%, #A1C4FF 100%);
+
+  /* ── SHADOWS tuned to azure ──────────────────────────── */
+  --mn-shadow-azure:
+    0 0 0 1px rgba(59, 126, 255, 0.22),
+    0 12px 40px rgba(59, 126, 255, 0.18);
+  --mn-shadow-azure-strong:
+    0 0 0 1px rgba(59, 126, 255, 0.4),
+    0 16px 48px rgba(59, 126, 255, 0.32);
+  --mn-shadow-gold-soft: 0 0 24px rgba(212, 175, 55, 0.22);
+
+  /* ── EASING (luxury cubic, IAI standard) ─────────────── */
+  --mn-ease-luxury: cubic-bezier(0.32, 0.72, 0, 1);
+  --mn-transition-base: 0.42s var(--mn-ease-luxury);
+}
+
+/* ─── Body — voice ripple ambient ─────────────────────── */
+
+body.mn-body {
+  background:
+    /* Azure top-right (voice carrying outward) */
+    radial-gradient(circle at 88% 8%, rgba(59, 126, 255, 0.10), transparent 32%),
+    /* Whisper bottom-left (voice resonance) */
+    radial-gradient(circle at 8% 92%, rgba(127, 224, 229, 0.06), transparent 28%),
+    /* Subtle horizontal voice grid (sound waves) */
+    linear-gradient(90deg, rgba(59, 126, 255, 0.025) 1px, transparent 1px),
+    /* Existing base */
+    var(--mn-ink-900);
+  background-size: auto, auto, 80px 100%, auto;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Voice sweep — azure horizontal pulse */
+body.mn-body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    transparent 49%,
+    rgba(59, 126, 255, 0.04) 50%,
+    transparent 51%,
+    transparent 100%);
+  background-size: 220% 100%;
+  animation: mn-voice-sweep 24s linear infinite;
+  opacity: 0.55;
+}
+
+@keyframes mn-voice-sweep {
+  0%   { background-position: -120% 0%; }
+  100% { background-position: 220% 0%; }
+}
+
+.mn-header, .mn-main, .mn-footer { position: relative; z-index: 1; }
+
+/* ─── MN Mark — dual-meaning glyph ─────────────────────── */
+
+.mn-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  background: var(--mn-gradient-voice);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: mn-voice-flow 8s ease-in-out infinite;
+}
+
+@keyframes mn-voice-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+/* ─── Hero h1 — voice-place gradient text ─────────────── */
+
+.mn-hero h1,
+.mn-hero .mn-h1,
+section.mn-hero h1 {
+  background: var(--mn-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  letter-spacing: -0.022em;
+  line-height: 1.1;
+}
+
+.mn-hero h1 em,
+.mn-hero .mn-h1 em {
+  font-style: italic;
+  background: var(--mn-gradient-voice);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: mn-voice-flow 6s ease-in-out infinite;
+}
+
+/* Hero edge — voice line (single-pixel azure) */
+.mn-hero {
+  position: relative;
+}
+.mn-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 64px;
+  height: 1px;
+  background: var(--mn-azure-500);
+  box-shadow: 0 0 12px var(--mn-azure-500);
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ─── Eyebrow — azure leading rule ─────────────────────── */
+
+.mn-eyebrow,
+.mn-kicker,
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mn-azure-400);
+  margin-bottom: 12px;
+}
+
+.mn-eyebrow::before,
+.mn-kicker::before,
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--mn-azure-500);
+  flex-shrink: 0;
+}
+
+/* ─── Buttons — azure primary with sheen sweep ────────── */
+
+.mn-btn--primary,
+.mn-pill.is-active {
+  position: relative;
+  overflow: hidden;
+  background: var(--mn-azure-500);
+  color: #FFFFFF;
+  border: 1px solid var(--mn-azure-500);
+  box-shadow: var(--mn-shadow-azure);
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  transition: var(--mn-transition-base);
+}
+
+.mn-btn--primary::after,
+.mn-pill.is-active::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -120%;
+  width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
+  transition: left 0.7s var(--mn-ease-luxury);
+}
+
+.mn-btn--primary:hover::after,
+.mn-pill.is-active:hover::after { left: 130%; }
+
+.mn-btn--primary:hover {
+  background: var(--mn-azure-400);
+  border-color: var(--mn-azure-400);
+  box-shadow: var(--mn-shadow-azure-strong);
+  transform: translateY(-1px);
+}
+
+.mn-btn--ghost {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--mn-white-100);
+  border: 1px solid rgba(59, 126, 255, 0.32);
+  transition: var(--mn-transition-base);
+}
+
+.mn-btn--ghost:hover {
+  background: rgba(59, 126, 255, 0.10);
+  border-color: var(--mn-azure-500);
+  color: var(--mn-azure-400);
+}
+
+/* ─── Pills — azure highlight on hover ─────────────────── */
+
+.mn-pill {
+  transition: var(--mn-transition-base);
+}
+
+.mn-pill:hover:not(.is-active) {
+  background: rgba(59, 126, 255, 0.06);
+  border-color: rgba(59, 126, 255, 0.32);
+  color: var(--mn-azure-400);
+}
+
+/* ─── Cards — voice corner ticks ──────────────────────── */
+
+.mn-card,
+.mn-panel,
+.mn-feature {
+  position: relative;
+  transition: var(--mn-transition-base);
+}
+
+.mn-card:hover,
+.mn-panel:hover,
+.mn-feature:hover {
+  border-color: rgba(59, 126, 255, 0.28);
+}
+
+.mn-card::before, .mn-card::after,
+.mn-panel::before, .mn-panel::after,
+.mn-feature::before, .mn-feature::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--mn-azure-500);
+  opacity: 0;
+  transition: opacity var(--mn-transition-base);
+  pointer-events: none;
+}
+
+.mn-card::before, .mn-panel::before, .mn-feature::before {
+  top: -1px; left: -1px;
+  border-right: 0; border-bottom: 0;
+}
+
+.mn-card::after, .mn-panel::after, .mn-feature::after {
+  bottom: -1px; right: -1px;
+  border-left: 0; border-top: 0;
+}
+
+.mn-card:hover::before, .mn-card:hover::after,
+.mn-panel:hover::before, .mn-panel:hover::after,
+.mn-feature:hover::before, .mn-feature:hover::after { opacity: 0.75; }
+
+/* ─── Verified seal — gold proof badge (IAI standard) ── */
+
+.mn-verified,
+.mn-proof,
+.verified-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--mn-gold-soft);
+  color: var(--mn-gold-500);
+  border: 1px solid rgba(212, 175, 55, 0.32);
+  border-radius: 999px;
+}
+
+.mn-verified::before,
+.mn-proof::before,
+.verified-seal::before {
+  content: '✓';
+  font-weight: 700;
+  color: var(--mn-gold-bright);
+}
+
+/* ─── Inline links — azure underlined ─────────────────── */
+
+.mn-prose a,
+.mn-content a,
+article p a {
+  color: var(--mn-azure-400);
+  text-decoration: underline;
+  text-decoration-color: rgba(59, 126, 255, 0.45);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: var(--mn-transition-base);
+}
+
+.mn-prose a:hover,
+.mn-content a:hover,
+article p a:hover {
+  color: var(--mn-azure-300);
+  text-decoration-color: var(--mn-azure-500);
+  text-shadow: 0 0 10px rgba(59, 126, 255, 0.4);
+}
+
+/* ─── Pull-quote — azure bar (voice emphasis) ──────────── */
+
+.mn-content blockquote,
+article blockquote,
+.mn-prose blockquote {
+  position: relative;
+  padding-left: 24px;
+  border-left: 3px solid var(--mn-azure-500);
+  font-style: italic;
+  font-size: 1.125rem;
+  color: var(--mn-white-200);
+}
+
+/* ─── Light theme support (existing data-theme) ───────── */
+
+[data-theme="light"] body.mn-body {
+  background:
+    radial-gradient(circle at 88% 8%, rgba(59, 126, 255, 0.08), transparent 32%),
+    radial-gradient(circle at 8% 92%, rgba(127, 224, 229, 0.05), transparent 28%),
+    linear-gradient(90deg, rgba(59, 126, 255, 0.02) 1px, transparent 1px),
+    #FAFBFC;
+  background-size: auto, auto, 80px 100%, auto;
+}
+
+[data-theme="light"] .mn-hero h1 {
+  background: linear-gradient(180deg, #0E1110 0%, var(--mn-azure-700) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="light"] .mn-prose a {
+  color: var(--mn-azure-700);
+}
+
+/* ─── Scrollbar — azure ─────────────────────────────── */
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--mn-ink-900); }
+::-webkit-scrollbar-thumb { background: rgba(59, 126, 255, 0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--mn-azure-500); }
+
+/* ─── Selection — azure ─────────────────────────────── */
+
+::selection {
+  background: var(--mn-azure-500);
+  color: var(--mn-white-100);
+}
+
+/* ─── Reduced motion ────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  body.mn-body::before,
+  .mn-mark,
+  .mn-hero h1 em,
+  .mn-btn--primary::after,
+  .mn-pill.is-active::after {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ============================================================
+   END Muôn Nơi Brand v2.0 Voice & Place overlay
+   ============================================================ */
