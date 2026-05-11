@@ -269,13 +269,21 @@ html[data-theme="light"] .mn-brand__mark{
 .mn-mainNav{
   display:flex;
   justify-content:center;
-  gap:14px;
-  flex-wrap:wrap;
+  gap:10px;
+  flex-wrap:nowrap;
+  min-width:0;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scrollbar-width:none;
+}
+
+.mn-mainNav::-webkit-scrollbar{
+  display:none;
 }
 
 .mn-mainNav a{
-  min-height:56px;
-  padding:0 26px;
+  min-height:44px;
+  padding:0 16px;
   border-radius:999px;
   border:1px solid var(--line);
   background:var(--panel);
@@ -283,10 +291,9 @@ html[data-theme="light"] .mn-brand__mark{
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:17px;
+  font-size:15px;
   font-weight:800;
-  text-decoration:underline;
-  text-underline-offset:4px;
+  white-space:nowrap;
 }
 
 .mn-mainNav a:hover,
@@ -460,6 +467,13 @@ html[data-theme="light"] .mn-mobileMenu{
   line-height:1.72;
   font-size:20px;
   max-width:44ch;
+}
+
+.mn-homeHero__desc--small{
+  margin-top:12px;
+  font-size:16px;
+  color:var(--muted);
+  max-width:62ch;
 }
 
 .mn-homeHero__actions{
@@ -705,6 +719,160 @@ html[data-theme="light"] .mn-mobileMenu{
   align-items:center;
 }
 
+/* ================= LQOS LAUNCH ================= */
+
+.mn-homeHero--launch{
+  align-items:stretch;
+}
+
+.mn-section{
+  margin-top:64px;
+}
+
+.mn-sectionHead{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  max-width:860px;
+}
+
+.mn-sectionDesc{
+  margin:0;
+  color:var(--text-2);
+  font-size:16px;
+  line-height:1.72;
+  max-width:76ch;
+}
+
+.mn-sectionActions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:22px;
+}
+
+.mn-lifePanel{
+  height:100%;
+}
+
+.mn-proofStack{
+  display:grid;
+  gap:12px;
+  padding-top:14px;
+}
+
+.mn-proofCard,
+.mn-questCard,
+.mn-principleCard{
+  border:1px solid var(--line);
+  background:var(--panel);
+  border-radius:18px;
+  padding:18px;
+}
+
+.mn-proofCard strong,
+.mn-questCard span,
+.mn-principleCard h3{
+  display:block;
+  color:var(--text);
+  font-size:16px;
+  line-height:1.35;
+}
+
+.mn-proofCard p,
+.mn-questCard p,
+.mn-principleCard p{
+  margin:8px 0 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+.mn-statusPill{
+  display:inline-flex;
+  width:max-content;
+  margin-bottom:10px;
+  padding:5px 9px;
+  border:1px solid var(--brand-line);
+  border-radius:999px;
+  background:var(--brand-soft);
+  color:var(--brand);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.mn-statusPill--gold{
+  border-color:rgba(255,191,107,.28);
+  background:var(--amber-soft);
+  color:var(--amber);
+}
+
+.mn-lifeQuest{
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:var(--r-xl);
+  background:
+    radial-gradient(900px 480px at 10% 0%, var(--brand-soft), transparent 60%),
+    var(--panel);
+}
+
+.mn-questGrid{
+  display:grid;
+  grid-template-columns:repeat(7, minmax(180px,1fr));
+  gap:12px;
+  margin-top:24px;
+  overflow-x:auto;
+  padding-bottom:6px;
+}
+
+.mn-questCard{
+  min-height:190px;
+  transition:transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.mn-questCard:hover{
+  transform:translateY(-2px);
+  border-color:var(--brand-line);
+  background:var(--panel-2);
+}
+
+.mn-questCard strong{
+  display:block;
+  margin-top:8px;
+  color:var(--brand);
+  font-size:12px;
+  line-height:1.4;
+  word-break:break-word;
+}
+
+.mn-pilotCallout{
+  margin-top:64px;
+  padding:28px;
+  border:1px solid var(--brand-line);
+  border-radius:var(--r-xl);
+  background:
+    radial-gradient(760px 420px at 0% 20%, var(--green-soft), transparent 62%),
+    linear-gradient(135deg, var(--panel-2), var(--panel));
+  box-shadow:var(--shadow-md);
+}
+
+.mn-principleGrid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:24px;
+}
+
+.mn-principleCard h3{
+  margin:0;
+}
+
+.mn-footer__inner--wide{
+  align-items:flex-start;
+}
+
 /* ================= BUTTON ================= */
 
 .mn-btn{
@@ -805,4 +973,63 @@ html[data-theme="light"] .mn-mobileMenu{
     flex-direction:column;
   }
 
+  .mn-homeHero{
+    grid-template-columns:1fr;
+  }
+
+  .mn-h1{
+    font-size:34px;
+    line-height:1.05;
+    letter-spacing:-.03em;
+  }
+
+  .mn-homeHero__desc{
+    font-size:17px;
+  }
+
+  .mn-lifeQuest,
+  .mn-pilotCallout{
+    padding:20px;
+  }
+
+  .mn-questGrid{
+    grid-template-columns:1fr;
+    overflow:visible;
+  }
+
+  .mn-principleGrid{
+    grid-template-columns:1fr;
+  }
+
+  .mn-homeCTA__actions{
+    align-items:stretch;
+    flex-direction:column;
+  }
+
+}
+
+@media (max-width: 1220px){
+  .mn-topbar{
+    height:auto;
+  }
+
+  .mn-topbar__inner{
+    grid-template-columns:auto 1fr auto;
+  }
+
+  .mn-mainNav{
+    display:none;
+  }
+
+  .mn-burger{
+    display:grid;
+  }
+
+  .mn-brand__sub{
+    display:none;
+  }
+
+  .mn-topbar__actions .mn-btn--primary{
+    display:none;
+  }
 }
