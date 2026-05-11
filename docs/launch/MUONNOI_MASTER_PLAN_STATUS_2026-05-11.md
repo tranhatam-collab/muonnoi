@@ -49,6 +49,7 @@ Mobile plan đã được thêm vào như execution layer, không thay đổi đ
 - chuẩn hóa handoff docs
 - proof layer / trust layer page continuity
 - mobile execution pack
+- DNS/subdomain execution lock and evidence refresh
 
 ## 4. Chưa khóa hoàn toàn
 - feed/index page final production copy
@@ -57,6 +58,7 @@ Mobile plan đã được thêm vào như execution layer, không thay đổi đ
 - status public page final
 - live API implementation behind mobile contracts
 - real store assets and signed builds
+- full DNS evidence matrix for all announced subdomains
 
 ## 5. Dependencies
 ### To ship mobile alpha
@@ -105,6 +107,13 @@ Green for Sprint 0/Sprint 1 planning, Yellow for implementation
 Yellow, contracts defined but implementation pending
 ### QA / Release
 Yellow, gates/runbook defined but execution evidence pending
+
+## 10. DNS and public-link continuity
+Status file:
+- `docs/launch/MUONNOI_DNS_AND_SUBDOMAIN_EXECUTION_STATUS_2026-05-11.md`
+
+Latest action:
+- public shell links that pointed to not-yet-verified subdomains were redirected to safe internal routes (`/ecosystem/`, `/roadmap/`) to avoid dead-end user paths.
 
 ## 9. Mobile Sprint 0 / Sprint 1 execution pack
 
