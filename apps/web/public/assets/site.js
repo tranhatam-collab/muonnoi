@@ -99,12 +99,39 @@
   // Keeps current behavior minimal; you can wire to i18n.json later
   // -----------------------------
   const langBtn = document.getElementById("langBtn");
+  const LANG_STORAGE_KEY = "mn_lang";
+  const LANG_VI_TEXT = "Tiếng Việt";
+  const LANG_EN_TEXT = "English";
+  function setLangLabel(v) {
+    if (!langBtn) return;
+    langBtn.textContent = (v === "en") ? LANG_EN_TEXT : LANG_VI_TEXT;
+    langBtn.setAttribute("aria-label", v === "en" ? "Chuyển sang Tiếng Việt" : "Chuyển sang English");
+  }
+
+  function getStoredLang() {
+    try {
+      const s = localStorage.getItem(LANG_STORAGE_KEY);
+      if (s === "en") return "en";
+      if (s === "vi") return "vi";
+    } catch (_) {}
+    return (document.documentElement.getAttribute("lang") === "en") ? "en" : "vi";
+  }
+
+  function setLang(v) {
+    const next = (v === "en") ? "en" : "vi";
+    document.documentElement.setAttribute("lang", next);
+    setLangLabel(next);
+    try {
+      localStorage.setItem(LANG_STORAGE_KEY, next);
+    } catch (_) {}
+  }
+
   (function initLang() {
     if (!langBtn) return;
-    // If you already have your own logic, this won’t conflict much.
+    setLang(getStoredLang());
     langBtn.addEventListener("click", () => {
-      const v = (langBtn.textContent || "VI").trim().toUpperCase();
-      langBtn.textContent = (v === "VI") ? "EN" : "VI";
+      const cur = getStoredLang();
+      setLang(cur === "en" ? "vi" : "en");
     });
   })();
 

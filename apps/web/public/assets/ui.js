@@ -32,12 +32,14 @@
 
   /* ── LANG ──────────────────────────────────────────── */
   var LANG_KEY = "mn-lang";
+  var LABEL_VI = "Tiếng Việt";
+  var LABEL_EN = "English";
 
   function applyLang(l) {
     var v = l === "en" ? "en" : "vi";
     html.setAttribute("lang", v);
     var lbl = document.getElementById("langLabel");
-    if (lbl) lbl.textContent = v === "en" ? "EN" : "VI";
+    if (lbl) lbl.textContent = v === "en" ? LABEL_EN : LABEL_VI;
     try { localStorage.setItem(LANG_KEY, v); } catch (_) {}
   }
 
@@ -50,9 +52,8 @@
   var btnLang = document.getElementById("btnLang");
   if (btnLang) {
     btnLang.addEventListener("click", function () {
-      var lbl = document.getElementById("langLabel");
-      var cur = lbl ? lbl.textContent.trim().toUpperCase() : "VI";
-      applyLang(cur === "EN" ? "vi" : "en");
+      var cur = html.getAttribute("lang") === "en" ? "en" : "vi";
+      applyLang(cur === "en" ? "vi" : "en");
     });
   }
 

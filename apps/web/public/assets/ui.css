@@ -351,8 +351,12 @@ html[data-theme="light"] .mn-btn--primary{
 
 .mn-iconBtn,
 .mn-langBtn{
-  width:58px;
-  height:58px;
+  width: auto;
+  min-width: 130px;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: 700;
   border-radius:999px;
   border:1px solid var(--line);
   background:var(--panel);
