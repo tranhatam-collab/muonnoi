@@ -81,6 +81,15 @@ payment/email production evidence and rollback evidence.
 - unified next-phase master plan created
 - security and infrastructure baseline files created
 
+### Brandpro / Brand Governance
+- Brandpro-AAL and Brandpro kit reviewed
+- Muonnoi-specific brand adoption plan created
+- style lock created for `Muôn Nơi`, `Muốn Nói`, `Muon Noi`, `MN`
+- brand architecture and subdomain naming rules created
+- verbal identity and bilingual messaging rules created
+- visual identity, logo and token rules created
+- Brand Guardian and QA gate created
+
 ## 3. Đang làm
 - chuẩn hóa content public shell
 - chuẩn hóa handoff docs
@@ -110,6 +119,11 @@ payment/email production evidence and rollback evidence.
 ### Public content completeness check
 - missing placeholder pages in `apps/web/public`: none found by keyword scan (`TODO`, `TBD`, `placeholder`, `coming soon`, `đang cập nhật`).
 - remaining task is live DNS verification per announced ecosystem domains, not copy completeness.
+
+### Brand completeness check
+- Brand docs exist in `docs/brand`.
+- Brand is not yet fully applied to every live page asset.
+- Pending: logo asset pack, font lock, full copy audit and subdomain homepage audit.
 
 ## 5. Dependencies
 ### To ship mobile alpha
@@ -170,6 +184,9 @@ Green for planning, Yellow for implementation evidence
 
 ### Docs / Public Launch
 Green for package structure, Yellow for missing route implementation
+
+### Brand
+Green for governance docs, Yellow for full asset and live-surface implementation
 
 ## 10. DNS and public-link continuity
 Status file:

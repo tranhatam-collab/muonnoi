@@ -16,6 +16,20 @@ Do not open the next public launch phase until:
 - monitoring owner is named
 
 ## 3. Phase sequence
+### Phase 0A - Brandpro Adoption And Brand Gate
+Owner: Founder/Product + Brand Guardian + Web/Public + Docs + QA
+
+Scope:
+- style lock
+- visual identity
+- verbal identity
+- bilingual messaging
+- subdomain naming
+- brand QA gate
+
+Exit gate:
+`MUONNOI_BRAND_GATE_ACTIVE`
+
 ### Phase 0 - Payment and Email Operations
 Owner: Platform + API + QA
 
@@ -129,10 +143,10 @@ Product:
 - owns claim language, feature priority, user value and acceptance criteria
 
 Web/Public:
-- owns public pages, internal links, sitemap, redirects and shared UI consistency
+- owns public pages, internal links, sitemap, redirects, shared UI consistency and public brand implementation
 
 Docs:
-- owns docs.muonnoi.org structure and versioned source-of-truth publishing
+- owns docs.muonnoi.org structure, versioned source-of-truth publishing and brand docs publishing
 
 API/AI:
 - owns contracts, auth, proof, notification, payment and email endpoints
@@ -145,6 +159,9 @@ Platform/DevOps:
 
 Security/Legal:
 - owns data protection, source protection, ASVS/CIS mapping, investment language and incident policy
+
+Brand Guardian:
+- owns brand style lock, logo usage, voice, language labels, subdomain naming and quarterly brand audit
 
 QA/Release:
 - owns route matrix, live evidence, accessibility/basic SEO, release go/no-go and final report
@@ -159,6 +176,7 @@ QA/Release:
 - No public-ready claim without route and live evidence.
 - No deploy before Cloudflare project/domain check.
 - No visible language switch label using `VI`, `EN` or `VI/EN`; public UI must use `Tiếng Việt` and `English`.
+- No public brand surface can be called brand-ready before passing the Brand Guardian QA gate.
 
 ## 6. Completion signal
 Only report `MUONNOI_PUBLIC_AND_DEV_PLAN_SYNC_COMPLETE` when all required plan files exist, all old/new documents point to the same order, and each team has a named owner lane.
@@ -170,6 +188,7 @@ DONE:
 - Homepage/ecosystem link continuity updated.
 - Deployed to Cloudflare Pages project `muonnoi`:
 `https://d4c10a26.muonnoi.pages.dev`
+- Brandpro adoption docs created under `docs/brand`.
 
 IN_PROGRESS:
 - Docs hub publishing consistency across `docs/launch`, `docs/public-launch`, `docs/dev-handoff`.

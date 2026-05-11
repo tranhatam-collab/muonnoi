@@ -11,7 +11,10 @@ Primary product layers:
 - Life Quest OS
 - mobile execution layer
 - docs and governance
+- brand governance
 - payment/email operations
 - subdomain module layer
 
 Payment and email operations are the first operational gate before public expansion.
+
+Brand governance is the first content and identity gate before any team changes public copy, logo, language labels, subdomain names, store listing text or launch reports.
