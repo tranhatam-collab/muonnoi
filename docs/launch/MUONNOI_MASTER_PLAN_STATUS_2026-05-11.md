@@ -51,6 +51,13 @@ Mobile plan đã được thêm vào như execution layer, không thay đổi đ
 - mobile execution pack
 - DNS/subdomain execution lock and evidence refresh
 
+### Update 2026-05-11
+- public shell preview deploy completed:
+`https://c40d0df9.muonnoi.pages.dev`
+- alias:
+`https://brand-v2-0-voice-and-place.muonnoi.pages.dev`
+- link hardening completed for public pages that referenced not-yet-verified subdomains.
+
 ## 4. Chưa khóa hoàn toàn
 - feed/index page final production copy
 - complaints page final
@@ -59,6 +66,10 @@ Mobile plan đã được thêm vào như execution layer, không thay đổi đ
 - live API implementation behind mobile contracts
 - real store assets and signed builds
 - full DNS evidence matrix for all announced subdomains
+
+### Public content completeness check
+- missing placeholder pages in `apps/web/public`: none found by keyword scan (`TODO`, `TBD`, `placeholder`, `coming soon`, `đang cập nhật`).
+- remaining task is live DNS verification per announced ecosystem domains, not copy completeness.
 
 ## 5. Dependencies
 ### To ship mobile alpha
