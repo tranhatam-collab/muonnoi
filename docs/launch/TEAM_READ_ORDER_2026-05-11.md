@@ -72,3 +72,19 @@ No team starts coding from memory or chat notes. Every Sprint 0 task must refere
 ## Payment and email gate
 
 No team starts public expansion work until payment and email operations are marked `PAYMENT_EMAIL_REAL_OPERATION_PASS` in the master plan.
+
+## Live progress update 2026-05-12
+DONE:
+- Public launch routes implemented and deployed:
+`/about/`, `/manifesto/`, `/press/`, `/newsletter/`.
+- Deployment:
+`https://d4c10a26.muonnoi.pages.dev`
+
+NEED:
+- Production-domain validation for the new public routes on `www.muonnoi.org`.
+- DNS/custom-domain evidence matrix update for planned subdomains.
+
+NEXT:
+1. Platform + QA execute route matrix on production host.
+2. Docs publish synchronized launch collections.
+3. API/Platform close payment-email gate evidence.

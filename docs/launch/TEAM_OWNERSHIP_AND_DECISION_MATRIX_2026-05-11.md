@@ -75,3 +75,22 @@ P2:
 - copy polish
 - non-critical visual defects
 - secondary route cleanup
+
+## Team execution update 2026-05-12
+Web/Public:
+- DONE: implemented `/about/`, `/manifesto/`, `/press/`, `/newsletter/`.
+- DONE: linked announcement pages from homepage and ecosystem.
+- DONE: deployed new build on Cloudflare Pages `muonnoi`.
+- NEXT: run production-domain route matrix and fix any domain-specific mismatch.
+
+Platform:
+- DONE: deployment path validated on existing project `muonnoi` without creating a new project.
+- NEXT: lock DNS/custom-domain evidence for remaining planned subdomains.
+
+Docs:
+- DONE: launch and handoff package files are present in `docs/launch`, `docs/public-launch`, `docs/dev-handoff`.
+- NEXT: publish docs collections on `docs.muonnoi.org`.
+
+API/AI + QA/Trust:
+- BLOCKED_BY_GATE: payment/email production evidence not complete.
+- NEXT: close gate `PAYMENT_EMAIL_REAL_OPERATION_PASS` with rollback evidence and route-level verification.

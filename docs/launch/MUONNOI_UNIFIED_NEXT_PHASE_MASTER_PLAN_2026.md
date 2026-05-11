@@ -162,3 +162,22 @@ QA/Release:
 
 ## 6. Completion signal
 Only report `MUONNOI_PUBLIC_AND_DEV_PLAN_SYNC_COMPLETE` when all required plan files exist, all old/new documents point to the same order, and each team has a named owner lane.
+
+## 7. Execution checkpoint 2026-05-12
+DONE:
+- Public launch cleanup implemented in source for `/about/`, `/manifesto/`, `/press/`, `/newsletter/`.
+- Redirects and sitemap updated.
+- Homepage/ecosystem link continuity updated.
+- Deployed to Cloudflare Pages project `muonnoi`:
+`https://d4c10a26.muonnoi.pages.dev`
+
+IN_PROGRESS:
+- Custom-domain validation on production host for new routes.
+- Docs hub publishing consistency across `docs/launch`, `docs/public-launch`, `docs/dev-handoff`.
+
+BLOCKED:
+- `PAYMENT_EMAIL_REAL_OPERATION_PASS` is still pending; no phase advancement claim beyond gate 0.
+
+NEXT_30_MIN:
+- Run production-host route matrix and capture evidence.
+- Update DNS/subdomain execution status and team command handoff.

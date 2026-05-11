@@ -11,6 +11,30 @@ Mobile plan đã được thêm vào như execution layer, không thay đổi đ
 
 Payment and email operations remain the first gate before the public launch/subdomain expansion work.
 
+## 1.1 Checkpoint 2026-05-12
+### Đã làm
+- Added public launch routes live in source:
+`/about/`, `/manifesto/`, `/press/`, `/newsletter/`.
+- Updated internal linking on homepage and ecosystem to include public announcement pages and subdomain map continuity.
+- Updated sitemap and redirects for the new public launch routes.
+- Enforced footer-link consistency via shared script for all public pages.
+- Deployed to Cloudflare Pages project `muonnoi`:
+`https://d4c10a26.muonnoi.pages.dev`
+alias:
+`https://brand-v2-0-voice-and-place.muonnoi.pages.dev`
+
+### Cần làm
+- Confirm custom-domain propagation and response checks on `https://www.muonnoi.org` for all newly added routes.
+- Complete docs publishing lane on `docs.muonnoi.org` using the new launch package collections.
+- Lock per-subdomain DNS/custom-domain ownership evidence for:
+`dulich`, `hoctap`, `suckhoe`, `sangtao`, `congdong`, `lamviec`, `nhachung`, `dautu`, `duan`, `trust`.
+
+### Sắp làm
+- Phase 0 gate closeout:
+payment/email production evidence and rollback evidence.
+- Phase 1 claim-safe sweep on public copy and metadata.
+- Phase 2 docs hub publishing and handoff verification.
+
 ## 2. Đã khóa
 ### Public shell
 - homepage direction
