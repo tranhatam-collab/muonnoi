@@ -172,12 +172,12 @@ DONE:
 `https://d4c10a26.muonnoi.pages.dev`
 
 IN_PROGRESS:
-- Custom-domain validation on production host for new routes.
 - Docs hub publishing consistency across `docs/launch`, `docs/public-launch`, `docs/dev-handoff`.
+- Subdomain DNS/custom-domain evidence lock for planned domains.
 
 BLOCKED:
 - `PAYMENT_EMAIL_REAL_OPERATION_PASS` is still pending; no phase advancement claim beyond gate 0.
 
 NEXT_30_MIN:
-- Run production-host route matrix and capture evidence.
 - Update DNS/subdomain execution status and team command handoff.
+- Prepare payment/email gate closeout evidence checklist for API + Platform + QA.

@@ -81,11 +81,12 @@ Web/Public:
 - DONE: implemented `/about/`, `/manifesto/`, `/press/`, `/newsletter/`.
 - DONE: linked announcement pages from homepage and ecosystem.
 - DONE: deployed new build on Cloudflare Pages `muonnoi`.
-- NEXT: run production-domain route matrix and fix any domain-specific mismatch.
+- DONE: production-domain route matrix returned `200` for core, launch and quest routes in sitemap.
+- NEXT: metadata/copy claim-safe sweep on all public routes.
 
 Platform:
 - DONE: deployment path validated on existing project `muonnoi` without creating a new project.
-- NEXT: lock DNS/custom-domain evidence for remaining planned subdomains.
+- NEXT: lock DNS/custom-domain evidence for remaining planned subdomains and API worker lane.
 
 Docs:
 - DONE: launch and handoff package files are present in `docs/launch`, `docs/public-launch`, `docs/dev-handoff`.

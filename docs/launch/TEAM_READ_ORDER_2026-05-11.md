@@ -81,10 +81,13 @@ DONE:
 `https://d4c10a26.muonnoi.pages.dev`
 
 NEED:
-- Production-domain validation for the new public routes on `www.muonnoi.org`.
 - DNS/custom-domain evidence matrix update for planned subdomains.
+- Docs hub publishing synchronization on `docs.muonnoi.org`.
 
 NEXT:
-1. Platform + QA execute route matrix on production host.
+1. Platform + QA lock DNS/custom-domain evidence matrix.
 2. Docs publish synchronized launch collections.
 3. API/Platform close payment-email gate evidence.
+
+Route matrix note:
+- Production host validation completed on `2026-05-12 +07` with `200` on launch routes and sitemap core routes.

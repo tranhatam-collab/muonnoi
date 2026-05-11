@@ -48,3 +48,19 @@ Re-run live URL matrix and capture evidence before calling release-ready.
 `CLOUDFLARE_PAGES_PROJECT_LIST_CHECKED`
 `PAYMENT_EMAIL_GATE_STILL_FIRST`
 `RELEASE_READY_NOT_CLAIMED`
+
+## Production route matrix checkpoint (2026-05-12 +07)
+DONE:
+- Production host `https://www.muonnoi.org` returned `200` for:
+`/`, `/ecosystem/`, `/roadmap/`, `/plan/`, `/security/`, `/investment/`,
+`/about/`, `/manifesto/`, `/press/`, `/newsletter/`,
+`/quests/`, `/quests/dulich/`, `/quests/hoctap/`, `/quests/family/`, `/quests/suckhoe/`, `/quests/lamviec/`, `/quests/sangtao/`, `/quests/congdong/`,
+`/guide/`, `/host/`, `/partners/`, `/feed/`, `/verify/`, `/commit/`, `/complaints/`, `/admin/`, `/status/`.
+
+NEED:
+- Subdomain custom-domain evidence for planned domains that still route via ecosystem roadmap lane.
+- Worker-side `api.muonnoi.org` production verification after payment/email gate closeout.
+
+NEXT:
+1. Platform locks DNS ownership evidence per planned subdomain.
+2. API + Platform close payment/email production gate.

@@ -24,7 +24,6 @@ alias:
 `https://brand-v2-0-voice-and-place.muonnoi.pages.dev`
 
 ### Cần làm
-- Confirm custom-domain propagation and response checks on `https://www.muonnoi.org` for all newly added routes.
 - Complete docs publishing lane on `docs.muonnoi.org` using the new launch package collections.
 - Lock per-subdomain DNS/custom-domain ownership evidence for:
 `dulich`, `hoctap`, `suckhoe`, `sangtao`, `congdong`, `lamviec`, `nhachung`, `dautu`, `duan`, `trust`.
@@ -34,6 +33,11 @@ alias:
 payment/email production evidence and rollback evidence.
 - Phase 1 claim-safe sweep on public copy and metadata.
 - Phase 2 docs hub publishing and handoff verification.
+
+### Production matrix update
+- Confirmed `200` on `www.muonnoi.org` for public launch routes:
+`/about/`, `/manifesto/`, `/press/`, `/newsletter/`.
+- Confirmed `200` on `www.muonnoi.org` for core and quest routes listed in sitemap.
 
 ## 2. Đã khóa
 ### Public shell
