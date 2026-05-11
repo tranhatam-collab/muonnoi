@@ -37,17 +37,20 @@ declare -a FORBIDDEN=(
   "game-changer"
 )
 
-echo "─── Word filter (public-facing files only) ───"
-# Build file list: only public-facing surfaces
-PUBLIC_FILES=$(find "$TARGET" -maxdepth 4 -type f \
-  \( -name "*.html" -o -name "*.css" -o -name "*.txt" -o -name "*.md" \) \
+echo "─── Word filter (live public surface only) ───"
+# Scan the tracked live public shell. Do not scan legacy clones or governance docs
+# that intentionally list banned words as rules.
+PUBLIC_ROOT="$TARGET/apps/web/public"
+if [ ! -d "$PUBLIC_ROOT" ] && [ -d "$TARGET" ]; then
+  PUBLIC_ROOT="$TARGET"
+fi
+PUBLIC_FILES=$(find "$PUBLIC_ROOT" -maxdepth 5 -type f \
+  \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.json" -o -name "*.txt" \) \
   -not -path "*/node_modules/*" \
   -not -path "*/.git/*" \
   -not -path "*/.next/*" \
   -not -path "*/dist/*" \
-  -not -path "*/.wrangler/*" \
-  -not -path "*/packages/*" \
-  -not -path "*/openapi/*" 2>/dev/null || true)
+  -not -path "*/.wrangler/*" 2>/dev/null || true)
 
 if [ -z "$PUBLIC_FILES" ]; then
   echo "✅ No public files to scan"
@@ -56,9 +59,9 @@ else
   for phrase in "${FORBIDDEN[@]}"; do
     raw=$(echo "$PUBLIC_FILES" | xargs grep -Iil "$phrase" 2>/dev/null || true)
     [ -z "$raw" ] && continue
-    # Negation-aware: skip lines with "not a"/"is not"/"không phải"/"never" before the phrase
+    # Negation-aware: skip rule text like "no guaranteed return".
     bad=$(echo "$PUBLIC_FILES" | xargs grep -Ini "$phrase" 2>/dev/null \
-      | grep -ivE "(not a |is not |không phải |never )[^.]{0,40}${phrase}" || true)
+      | grep -ivE "(not a |is not |không phải |không |no |never )[^.]{0,40}${phrase}" || true)
     if [ -n "$bad" ]; then
       echo "❌ \"$phrase\""
       echo "$bad" | head -3 | sed 's/^/     /'
@@ -74,7 +77,7 @@ echo ""
 # 2. PALETTE TOKENS (v2.0 Voice & Place)
 # ─────────────────────────────────────────────────────────────
 echo "─── Palette tokens ───"
-CSS="$TARGET/apps/web/public/assets/site.css"
+CSS="$TARGET/apps/web/public/assets/ui.css"
 if [ -f "$CSS" ]; then
   # Azure primary
   if grep -qi "#3B7EFF" "$CSS"; then
@@ -100,7 +103,7 @@ if [ -f "$CSS" ]; then
   fi
 
   # Anti-collision: must NOT have heavy use of OMDALA cyan
-  cyan_count=$(grep -ci "#3de7ff" "$CSS" 2>/dev/null || echo 0)
+  cyan_count=$(grep -ci "#3de7ff" "$CSS" 2>/dev/null || true)
   if [ "$cyan_count" -gt 3 ]; then
     echo "⚠️  Heavy OMDALA cyan usage ($cyan_count refs) — risk of brand collision"
   else
@@ -108,18 +111,18 @@ if [ -f "$CSS" ]; then
   fi
 
   # Anti-collision: must NOT have heavy use of IAI violet
-  violet_count=$(grep -ci "#7C5CFF" "$CSS" 2>/dev/null || echo 0)
+  violet_count=$(grep -ci "#7C5CFF" "$CSS" 2>/dev/null || true)
   if [ "$violet_count" -gt 3 ]; then
     echo "⚠️  Heavy IAI violet usage ($violet_count refs) — risk of brand collision"
   else
     echo "✅ No IAI violet collision ($violet_count refs)"
   fi
 
-  # v2.0 animation: mn-voice-sweep
-  if grep -q "mn-voice-sweep" "$CSS"; then
-    echo "✅ v2.0 Voice & Place animation (mn-voice-sweep) present"
+  if grep -qi "Be Vietnam Pro" "$CSS"; then
+    echo "✅ Be Vietnam Pro typography fallback present"
   else
-    echo "⚠️  v2.0 animation (mn-voice-sweep) missing"
+    echo "❌ Be Vietnam Pro typography fallback missing"
+    FAILED=1
   fi
 else
   echo "⚠️  CSS file not found: $CSS"
@@ -130,7 +133,7 @@ echo ""
 # 3. ACCESSIBILITY
 # ─────────────────────────────────────────────────────────────
 echo "─── Accessibility ───"
-if grep -rq "prefers-reduced-motion" "$TARGET" --include="*.css" 2>/dev/null; then
+if [ -f "$CSS" ] && grep -q "prefers-reduced-motion" "$CSS"; then
   echo "✅ prefers-reduced-motion handled"
 else
   echo "⚠️  prefers-reduced-motion missing (required for motion-safe animations)"
@@ -142,7 +145,19 @@ fi
 echo ""
 
 # ─────────────────────────────────────────────────────────────
-# 4. BRAND CONSISTENCY (Muôn Nơi)
+# 4. LANGUAGE LABELS
+# ─────────────────────────────────────────────────────────────
+echo "─── Language labels ───"
+if echo "$PUBLIC_FILES" | xargs grep -InE ">[[:space:]]*(VI|EN|VI/EN)[[:space:]]*<|VI/EN toggle" 2>/dev/null; then
+  echo "❌ Short language labels detected in visible public surface"
+  FAILED=1
+else
+  echo "✅ No short VI/EN language labels in live public surface"
+fi
+echo ""
+
+# ─────────────────────────────────────────────────────────────
+# 5. BRAND CONSISTENCY (Muôn Nơi)
 # ─────────────────────────────────────────────────────────────
 echo "─── Brand consistency ───"
 INDEX="$TARGET/apps/web/public/index.html"

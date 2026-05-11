@@ -19,17 +19,19 @@ It unifies the old mobile package, the public launch package, the Life Quest OS 
 11. `docs/launch/MUONNOI_LIFE_QUEST_OS_INTEGRATED_MASTER_PLAN_2026.md`
 12. `docs/launch/MUONNOI_LIFE_QUEST_OS_MOBILE_EXECUTION_MASTER_PLAN_2026-05-11.md`
 13. `docs/launch/MUONNOI_DNS_AND_SUBDOMAIN_EXECUTION_STATUS_2026-05-11.md`
-14. `docs/security/INFRASTRUCTURE_HOSTING_STRATEGY.md`
-15. `docs/security/SECURITY_ARCHITECTURE_MUONNOI_2026.md`
-16. `docs/security/SOURCE_CODE_PROTECTION_POLICY.md`
-17. `docs/security/API_SECURITY_BASELINE_ASVS_5.md`
-18. `docs/security/DATA_PROTECTION_AND_RETENTION_POLICY.md`
-19. `docs/security/LIFE_QUEST_ANTI_FRAUD_AND_REWARD_SECURITY.md`
-20. `docs/security/MULTI_CLOUD_DISASTER_RECOVERY_PLAN.md`
-21. `docs/security/INCIDENT_RESPONSE_RUNBOOK.md`
+14. `docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`
+15. `docs/security/INFRASTRUCTURE_HOSTING_STRATEGY.md`
+16. `docs/security/SECURITY_ARCHITECTURE_MUONNOI_2026.md`
+17. `docs/security/SOURCE_CODE_PROTECTION_POLICY.md`
+18. `docs/security/API_SECURITY_BASELINE_ASVS_5.md`
+19. `docs/security/DATA_PROTECTION_AND_RETENTION_POLICY.md`
+20. `docs/security/LIFE_QUEST_ANTI_FRAUD_AND_REWARD_SECURITY.md`
+21. `docs/security/MULTI_CLOUD_DISASTER_RECOVERY_PLAN.md`
+22. `docs/security/INCIDENT_RESPONSE_RUNBOOK.md`
 
 ## Phase lock
 Payment and email operations remain the prerequisite lane before the public launch expansion below.
+Use `qa/release-gates/MUONNOI_PAYMENT_EMAIL_PRODUCTION_GATE_CHECKLIST_2026-05-12.md` as the API + Platform + QA closeout checklist.
 
 No team should publish new public claims, new subdomain homepages, or new investment wording until the relevant claim, route, DNS and legal checks are marked `PASS`.
 
@@ -37,5 +39,6 @@ No team should publish new public claims, new subdomain homepages, or new invest
 `FULL_DEV_MASTER_PACKAGE_CREATED`
 `BRANDPRO_ADOPTION_DOCS_CREATED`
 `PUBLIC_READY_AFTER_CLAIM_CLEANUP`
+`DNS_CUSTOM_DOMAIN_MATRIX_LOCKED_2026_05_12`
 `PAYMENT_EMAIL_GATE_STILL_FIRST`
 `RELEASE_READY_NOT_CLAIMED`

@@ -46,8 +46,19 @@ Re-run live URL matrix and capture evidence before calling release-ready.
 `DNS_EXECUTION_IN_PROGRESS`
 `PUBLIC_SHELL_LINK_HARDENING_APPLIED`
 `CLOUDFLARE_PAGES_PROJECT_LIST_CHECKED`
+`DNS_CUSTOM_DOMAIN_MATRIX_LOCKED_2026_05_12`
 `PAYMENT_EMAIL_GATE_STILL_FIRST`
 `RELEASE_READY_NOT_CLAIMED`
+
+## Locked matrix file
+Current evidence matrix:
+`docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`
+
+Use that file as the latest source of truth for:
+- Cloudflare Pages custom-domain evidence.
+- DNS evidence.
+- HTTPS route evidence.
+- which planned subdomains are allowed or blocked as primary public CTAs.
 
 ## Production route matrix checkpoint (2026-05-12 +07)
 DONE:
@@ -59,8 +70,9 @@ DONE:
 
 NEED:
 - Subdomain custom-domain evidence for planned domains that still route via ecosystem roadmap lane.
-- Worker-side `api.muonnoi.org` production verification after payment/email gate closeout.
+- Worker-side payment/email production verification after payment/email gate closeout.
+- Custom-domain source ownership for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
 
 NEXT:
-1. Platform locks DNS ownership evidence per planned subdomain.
+1. Platform resolves custom-domain source ownership for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
 2. API + Platform close payment/email production gate.

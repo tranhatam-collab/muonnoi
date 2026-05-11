@@ -62,7 +62,7 @@ Muon Noi is not built to keep people inside screens. It is built to bring people
 
 ```txt
 [MN logo]  Trang chủ · Quests · Hệ sinh thái · Lộ trình · Manifesto · Bảo mật · Hướng dẫn
-           [VI/EN] [Theme] [Vào ứng dụng]
+           [Tiếng Việt/English] [Theme] [Vào ứng dụng]
 ```
 
 ### Header URLs
@@ -999,7 +999,7 @@ Before publishing:
 - [ ] No “guaranteed earning” language.
 - [ ] No token or speculative reward language.
 - [ ] All pages use shared UI system.
-- [ ] VI/EN toggle works or is hidden until ready.
+- [ ] Tiếng Việt/English toggle works or is hidden until ready.
 - [ ] Dark/light theme works.
 - [ ] Mobile menu works.
 - [ ] Sitemap updated.

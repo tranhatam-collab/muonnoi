@@ -14,6 +14,7 @@ Do not open the next public launch phase until:
 - rollback path is documented
 - production secrets are stored outside the repo
 - monitoring owner is named
+- `qa/release-gates/MUONNOI_PAYMENT_EMAIL_PRODUCTION_GATE_CHECKLIST_2026-05-12.md` is fully checked by API, Platform and QA
 
 ## 3. Phase sequence
 ### Phase 0A - Brandpro Adoption And Brand Gate
@@ -189,14 +190,20 @@ DONE:
 - Deployed to Cloudflare Pages project `muonnoi`:
 `https://d4c10a26.muonnoi.pages.dev`
 - Brandpro adoption docs created under `docs/brand`.
+- Brandpro live-surface pass started on root public shell: brand subtitle, homepage metadata, palette tokens, typography fallback and reduced-motion handling.
+- DNS/custom-domain evidence matrix locked:
+`docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`
+- Payment/email gate checklist created:
+`qa/release-gates/MUONNOI_PAYMENT_EMAIL_PRODUCTION_GATE_CHECKLIST_2026-05-12.md`
 
 IN_PROGRESS:
 - Docs hub publishing consistency across `docs/launch`, `docs/public-launch`, `docs/dev-handoff`.
-- Subdomain DNS/custom-domain evidence lock for planned domains.
+- Custom-domain source ownership for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
+- Payment/email production evidence capture.
 
 BLOCKED:
 - `PAYMENT_EMAIL_REAL_OPERATION_PASS` is still pending; no phase advancement claim beyond gate 0.
 
 NEXT_30_MIN:
-- Update DNS/subdomain execution status and team command handoff.
-- Prepare payment/email gate closeout evidence checklist for API + Platform + QA.
+- Resolve `ai.muonnoi.org` and `lamviec.muonnoi.org` source/custom-domain ownership.
+- Attach payment/email transaction, webhook, email delivery, idempotency, rate-limit and rollback evidence.

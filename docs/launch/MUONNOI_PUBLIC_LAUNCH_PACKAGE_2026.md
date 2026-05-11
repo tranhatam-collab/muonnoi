@@ -75,7 +75,7 @@ File này chứa:
 │ HEADER (giữ nguyên)                              │
 │ MN logo | Trang chủ | Hệ sinh thái | Lộ trình  │
 │ Bảo mật | Hướng dẫn | Quests (NEW) | Admin     │
-│ Theme toggle | VI/EN                            │
+│ Theme toggle | Tiếng Việt/English                            │
 ├─────────────────────────────────────────────────┤
 │ SECTION 1: HERO (mở rộng nhẹ)                   │
 ├─────────────────────────────────────────────────┤
@@ -1591,7 +1591,7 @@ Founder direct (cho tier-1 press only): tam@muonnoi.org
 [MN logo]  Trang chủ · Quests · Hệ sinh thái · Lộ trình
            Manifesto · Bảo mật · Hướng dẫn
 
-           [VI/EN toggle]  [Theme toggle]  [Vào ứng dụng]
+           [Tiếng Việt/English toggle]  [Theme toggle]  [Vào ứng dụng]
 ```
 
 ### Footer chuẩn (mở rộng 4 cột)
@@ -1740,7 +1740,7 @@ apps/web/public/assets/ui.css                     [P0 — Week 1]
 
 apps/web/public/assets/ui.js                      [P0 — Week 1]
   - Thêm interaction: theme toggle persistence,
-    VI/EN toggle, mobile menu, accordion cho long pages
+    Tiếng Việt/English toggle, mobile menu, accordion cho long pages
 ```
 
 ### 17.3 Routing + Headers
@@ -2016,7 +2016,7 @@ help build the infrastructure for it — talk to us.
 ### File này dùng để
 
 1. **Team dev:** task list ở Section 17 — biết chính xác phải tạo/update files nào, theo thứ tự nào, trong tuần nào
-2. **Team content/copy:** copy hoàn chỉnh VI/EN cho mọi page — paste vào HTML hoặc dùng làm reference
+2. **Team content/copy:** copy hoàn chỉnh Tiếng Việt/English cho mọi page — paste vào HTML hoặc dùng làm reference
 3. **Team design:** structure rõ ràng để design wireframes
 4. **Founder:** language bank cho investor conversations
 5. **Marketing:** boilerplate sẵn sàng cho press inquiries

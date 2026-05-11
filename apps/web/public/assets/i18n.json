@@ -21,8 +21,8 @@
     "c1b": "CSP nghiêm ngặt, session HttpOnly, CORS allowlist, rate-limit D1, chống bot.",
     "c2": "Tối giản mà mạnh",
     "c2b": "Thiết kế module-first: thêm tính năng nhanh, không phá hệ thống.",
-    "c3": "Sẵn đường kiếm tiền",
-    "c3b": "Mỗi hồ sơ có “Cửa hàng số” để bán chương trình/tài liệu (bật dần theo mốc).",
+    "c3": "Sẵn đường mở dịch vụ",
+    "c3b": "Mỗi hồ sơ có thể mở tài liệu, chương trình hoặc dịch vụ số khi gate vận hành thật đã pass.",
     "road": "Lộ trình Social-first",
     "roadB": "Tập trung 1 triệu tài khoản trước. Chỉ mở rộng module lớn khi hệ lõi đủ mạnh.",
 
@@ -68,8 +68,8 @@
     "c1b": "Strict CSP, HttpOnly sessions, CORS allowlist, D1 rate limits, anti-bot.",
     "c2": "Minimal but strong",
     "c2b": "Module-first design: add fast without breaking the system.",
-    "c3": "Monetize-ready",
-    "c3b": "Each profile gets a minimal digital shop (enabled gradually).",
+    "c3": "Service-ready",
+    "c3b": "Each profile can open documents, programs, or digital services only after the real operations gate passes.",
     "road": "Social-first roadmap",
     "roadB": "Focus on 1M accounts first. Unlock big modules only after the core is strong.",
 

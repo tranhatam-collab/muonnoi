@@ -39,6 +39,30 @@ payment/email production evidence and rollback evidence.
 `/about/`, `/manifesto/`, `/press/`, `/newsletter/`.
 - Confirmed `200` on `www.muonnoi.org` for core and quest routes listed in sitemap.
 
+## 1.2 Checkpoint 2026-05-12 06:52 +07
+### Đã làm
+- Applied Brandpro live-surface token updates to the public shell:
+brand subtitle, homepage title/metadata, primary palette, typography fallback and reduced-motion handling.
+- Updated brand lint to scan the actual live public shell under `apps/web/public` instead of legacy clones or governance docs.
+- Locked DNS/custom-domain evidence in:
+`docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`.
+- Created payment/email closeout checklist in:
+`qa/release-gates/MUONNOI_PAYMENT_EMAIL_PRODUCTION_GATE_CHECKLIST_2026-05-12.md`.
+
+### Evidence
+- Cloudflare Pages list confirmed custom domains for:
+`muonnoi`, `app-muonnoi-org`, `docs-muonnoi-org`.
+- `https://www.muonnoi.org/` returned `200`.
+- `https://app.muonnoi.org/` returned `200`.
+- `https://docs.muonnoi.org/` returned `200`.
+- `https://ai.muonnoi.org/` returned `200`, but Pages custom-domain source was not visible in the current Pages project list.
+- `https://api.muonnoi.org/api/health` returned `200`; `/health` returned `404`, so `/api/health` is the canonical health check.
+
+### Cần làm
+- Resolve source ownership/custom-domain evidence for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
+- Keep `lqos`, `dautu`, `duan`, `family`, `dulich`, `hoctap`, `suckhoe`, `sangtao`, `congdong`, `trust`, `nhachung` as internal roadmap/quest links until Cloudflare custom-domain and HTTPS evidence pass.
+- Attach production or approved test-mode evidence for payment creation, webhook receipt, email delivery, idempotency, rate-limit and rollback.
+
 ## 2. Đã khóa
 ### Public shell
 - homepage direction
@@ -96,6 +120,7 @@ payment/email production evidence and rollback evidence.
 - proof layer / trust layer page continuity
 - mobile execution pack
 - DNS/subdomain execution lock and evidence refresh
+- payment/email production gate checklist execution
 
 ### Update 2026-05-11
 - public shell preview deploy completed:
@@ -122,8 +147,8 @@ payment/email production evidence and rollback evidence.
 
 ### Brand completeness check
 - Brand docs exist in `docs/brand`.
-- Brand is not yet fully applied to every live page asset.
-- Pending: logo asset pack, font lock, full copy audit and subdomain homepage audit.
+- Brand has been applied to the root public shell tokens and homepage messaging.
+- Pending: logo asset pack, full subdomain homepage audit and cross-subdomain live implementation.
 
 ## 5. Dependencies
 ### To ship mobile alpha
@@ -177,7 +202,7 @@ Yellow, contracts defined but implementation pending
 Yellow, gates/runbook defined but execution evidence pending
 
 ### Payment / Email
-Yellow, must pass before public launch expansion
+Yellow, gate checklist exists; production transaction, webhook, email delivery and rollback evidence still required before public launch expansion
 
 ### Security / Infra
 Green for planning, Yellow for implementation evidence

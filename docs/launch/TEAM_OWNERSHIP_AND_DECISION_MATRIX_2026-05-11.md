@@ -82,11 +82,14 @@ Web/Public:
 - DONE: linked announcement pages from homepage and ecosystem.
 - DONE: deployed new build on Cloudflare Pages `muonnoi`.
 - DONE: production-domain route matrix returned `200` for core, launch and quest routes in sitemap.
-- NEXT: metadata/copy claim-safe sweep on all public routes.
+- DONE: applied Brandpro live-surface copy/token updates to root public shell.
+- NEXT: complete metadata/copy claim-safe sweep on all public routes and subdomain homepages.
 
 Platform:
 - DONE: deployment path validated on existing project `muonnoi` without creating a new project.
-- NEXT: lock DNS/custom-domain evidence for remaining planned subdomains and API worker lane.
+- DONE: DNS/custom-domain matrix locked in `docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`.
+- NEXT: resolve source ownership/custom-domain evidence for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
+- NEXT: keep planned subdomains as internal roadmap/quest links until custom-domain and HTTPS evidence pass.
 
 Docs:
 - DONE: launch and handoff package files are present in `docs/launch`, `docs/public-launch`, `docs/dev-handoff`.
@@ -94,4 +97,5 @@ Docs:
 
 API/AI + QA/Trust:
 - BLOCKED_BY_GATE: payment/email production evidence not complete.
-- NEXT: close gate `PAYMENT_EMAIL_REAL_OPERATION_PASS` with rollback evidence and route-level verification.
+- DONE: closeout checklist created in `qa/release-gates/MUONNOI_PAYMENT_EMAIL_PRODUCTION_GATE_CHECKLIST_2026-05-12.md`.
+- NEXT: close gate `PAYMENT_EMAIL_REAL_OPERATION_PASS` with transaction, webhook, email delivery, idempotency, rate-limit and rollback evidence.
