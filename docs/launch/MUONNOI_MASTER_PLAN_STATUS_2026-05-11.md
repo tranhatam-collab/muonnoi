@@ -1,67 +1,136 @@
-# Muonnoi.org Master Plan Status
+# MUONNOI · MASTER PLAN STATUS · 2026-05-11
 
-Date: 2026-05-11
-Scope: Homepage stability + plan integrity + team execution map.
+## 1. Executive status
+Muôn Nơi hiện có 4 lớp đang hình thành rõ:
+- public shell
+- social/app layer
+- trust layer
+- life quest layer
 
-## Kết luận
+Mobile plan đã được thêm vào như execution layer, không thay đổi định nghĩa lõi.
 
-- Kế hoạch cũ được giữ nguyên, không xóa.
-- Trang chủ đã cập nhật theo LQOS nhưng vừa sửa lại lỗi menu chồng layout.
-- Trạng thái hiện tại là: homepage lane ổn định hơn, content-depth lane còn tiếp tục.
+## 2. Đã khóa
+### Public shell
+- homepage direction
+- ecosystem page direction
+- roadmap page direction
+- security page direction
+- guide page direction
+- verify page direction
 
-## Xác nhận kế hoạch còn nguyên
+### Life Quest OS
+- 7 systems defined
+- purposeful play
+- proof-based economy
+- flagship pilot direction
 
-- `docs/launch/MUONNOI_LQOS_HOMEPAGE_DEPLOY_PLAN_2026-05-11.md`
-- `docs/launch/MUONNOI_LQOS_CONTINUATION_PLAN_2026-05-11.md`
-- `docs/launch/MUONNOI_LIFE_QUEST_OS_MOBILE_EXECUTION_MASTER_PLAN_2026-05-11.md`
-- `docs/MUONNOI_V2_VOICE_AND_PLACE.md`
+### Mobile
+- iOS + Android plan
+- 30/90/180 roadmap
+- release gates
+- team ownership
+- KPI value-first
+- read order
+- ownership decision matrix
+- information architecture
+- screen/state map
+- API schema examples
+- offline/sync strategy
+- notification/event taxonomy
+- mobile design system lock
+- privacy/permissions matrix
+- store submission requirements
+- release runbook
+- incident response playbook
+- mobile scaffold
 
-Các file trên vẫn được giữ làm source of truth cho roadmap hiện tại.
+## 3. Đang làm
+- chuẩn hóa content public shell
+- chuẩn hóa handoff docs
+- proof layer / trust layer page continuity
+- mobile execution pack
 
-Kế hoạch mobile iOS/Android đã được hợp nhất vào bộ thực thi và là lane triển khai chính cho app.
+## 4. Chưa khóa hoàn toàn
+- feed/index page final production copy
+- complaints page final
+- admin public page final
+- status public page final
+- live API implementation behind mobile contracts
+- real store assets and signed builds
 
-## Sửa lỗi vừa áp dụng
+## 5. Dependencies
+### To ship mobile alpha
+Need:
+- stable auth/session
+- feed read shell
+- quest hub data
+- proof draft local queue
+- privacy/safety/support URLs live
 
-File sửa:
-- `apps/web/public/assets/ui.css`
+### To ship beta
+Need:
+- push notification baseline
+- proof upload retry
+- profile/trust shell
+- device QA baseline
 
-Nội dung sửa:
-- Chặn `mn-mainNav` xuống dòng gây đè hero.
-- Giảm kích thước pill menu desktop để giữ header gọn.
-- Bật breakpoint sớm (`1220px`) để ẩn desktop nav, dùng burger/mobile menu.
-- Ẩn `brand subline` và nút CTA topbar ở breakpoint trung gian để tránh tràn.
+### To ship public mobile RC
+Need:
+- store assets
+- policies published
+- release gates pass
+- crash and offline metrics acceptable
 
-## True state theo team
+## 6. Top open decisions
+1. Final mobile stack confirmation (recommended: React Native + Expo + TS)
+2. Auth mechanism final shape for mobile
+3. Proof upload media constraints
+4. Feature flags per quest vertical
+5. Store launch scope by geography
 
-Team 1 (Brand + Frontend):
-- DONE: homepage LQOS copy đã lên live.
-- IN_PROGRESS: hoàn thiện các trang sâu `manifesto/about/ecosystem/roadmap`.
-- NEXT: chuẩn hóa typography + metadata từng trang.
+## 7. Red lines
+- no tracker-based growth hacks
+- no token-first economy
+- no addictive feed design
+- no module explosion before core stability
 
-Team 2 (Platform/Web Ops):
-- DONE: deploy lane `apps/web/public` đã hoạt động.
-- IN_PROGRESS: chuẩn preflight route inventory trước deploy.
-- NEXT: chốt rollback checklist theo release.
+## 8. Status summary by lane
+### Product
+Green with clarifications needed
+### Public shell
+Yellow-green
+### Mobile
+Green for Sprint 0/Sprint 1 planning, Yellow for implementation
+### API
+Yellow, contracts defined but implementation pending
+### QA / Release
+Yellow, gates/runbook defined but execution evidence pending
 
-Team 3 (Product + Content):
-- DONE: route shell chính đã có.
-- IN_PROGRESS: nội dung thật cho `press/security/join/investors`.
-- NEXT: loại dead-link còn lại theo role-page.
+## 9. Mobile Sprint 0 / Sprint 1 execution pack
 
-Team 4 (QA + Reporting):
-- DONE: có deploy evidence cho homepage lane.
-- IN_PROGRESS: checklist đầy đủ theo section.
-- NEXT: ký `web-ready` từng section trước `release-ready`.
+Status: STRUCTURED_EXECUTION_READY
 
-## Blockers còn lại
+Team files:
+- `docs/launch/TEAM_READ_ORDER_2026-05-11.md`
+- `docs/launch/TEAM_OWNERSHIP_AND_DECISION_MATRIX_2026-05-11.md`
+- `apps/mobile/README.md`
+- `apps/mobile/MUONNOI_MOBILE_INFORMATION_ARCHITECTURE_2026-05-11.md`
+- `apps/mobile/MUONNOI_MOBILE_SCREEN_FLOW_AND_STATE_MAP_2026-05-11.md`
+- `apps/mobile/MUONNOI_NOTIFICATION_AND_EVENT_TAXONOMY_2026-05-11.md`
+- `apps/mobile/MUONNOI_MOBILE_DESIGN_SYSTEM_LOCK_2026-05-11.md`
+- `api/contracts/MUONNOI_MOBILE_API_SCHEMA_AND_EXAMPLES_2026-05-11.md`
+- `api/contracts/MUONNOI_SYNC_OFFLINE_CACHE_STRATEGY_2026-05-11.md`
+- `docs/launch/MUONNOI_PRIVACY_CONSENT_AND_PERMISSIONS_MATRIX_2026-05-11.md`
+- `docs/launch/MUONNOI_STORE_SUBMISSION_REQUIREMENTS_2026-05-11.md`
+- `qa/release-gates/MUONNOI_RELEASE_RUNBOOK_2026-05-11.md`
+- `qa/release-gates/MUONNOI_INCIDENT_RESPONSE_PLAYBOOK_2026-05-11.md`
 
-1. Content pages chưa đầy đủ chiều sâu.
-2. QA gate chưa hoàn tất theo từng section.
-3. Một số route đang là shell, chưa thể gọi là full publication-ready.
-
-## Next execution order
-
-1. Khóa nội dung thật cho `manifesto` và `about`.
-2. Hoàn thiện `ecosystem` và `roadmap`.
-3. Bổ sung `press/security/join`.
-4. Chạy gate report section-wise rồi mới công bố full web-ready.
+Scaffold:
+- `apps/mobile/app`
+- `apps/mobile/src/navigation`
+- `apps/mobile/src/screens`
+- `apps/mobile/src/features`
+- `apps/mobile/src/components`
+- `apps/mobile/src/lib`
+- `apps/mobile/src/theme`
+- `apps/mobile/src/contracts`
