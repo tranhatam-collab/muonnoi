@@ -9,6 +9,8 @@ Muôn Nơi hiện có 4 lớp đang hình thành rõ:
 
 Mobile plan đã được thêm vào như execution layer, không thay đổi định nghĩa lõi.
 
+Payment and email operations remain the first gate before the public launch/subdomain expansion work.
+
 ## 2. Đã khóa
 ### Public shell
 - homepage direction
@@ -44,6 +46,13 @@ Mobile plan đã được thêm vào như execution layer, không thay đổi đ
 - incident response playbook
 - mobile scaffold
 
+### Public Launch / Docs / Subdomains
+- public launch docs and subdomain package imported
+- public announcement file created with claim-safe wording
+- public page dev handoff created
+- unified next-phase master plan created
+- security and infrastructure baseline files created
+
 ## 3. Đang làm
 - chuẩn hóa content public shell
 - chuẩn hóa handoff docs
@@ -66,6 +75,9 @@ Mobile plan đã được thêm vào như execution layer, không thay đổi đ
 - live API implementation behind mobile contracts
 - real store assets and signed builds
 - full DNS evidence matrix for all announced subdomains
+- payment/email real-operation evidence
+- `/manifesto/`, `/about/`, `/press/`, `/newsletter/` public HTML routes
+- docs.muonnoi.org publishing collections for public launch, product, quests, ecosystem, trust-security, legal and dev-handoff
 
 ### Public content completeness check
 - missing placeholder pages in `apps/web/public`: none found by keyword scan (`TODO`, `TBD`, `placeholder`, `coming soon`, `đang cập nhật`).
@@ -100,6 +112,9 @@ Need:
 3. Proof upload media constraints
 4. Feature flags per quest vertical
 5. Store launch scope by geography
+6. Payment provider and receipt/email final production path
+7. Docs publishing structure for docs.muonnoi.org
+8. Secondary DNS and backup storage provider timing
 
 ## 7. Red lines
 - no tracker-based growth hacks
@@ -119,12 +134,42 @@ Yellow, contracts defined but implementation pending
 ### QA / Release
 Yellow, gates/runbook defined but execution evidence pending
 
+### Payment / Email
+Yellow, must pass before public launch expansion
+
+### Security / Infra
+Green for planning, Yellow for implementation evidence
+
+### Docs / Public Launch
+Green for package structure, Yellow for missing route implementation
+
 ## 10. DNS and public-link continuity
 Status file:
 - `docs/launch/MUONNOI_DNS_AND_SUBDOMAIN_EXECUTION_STATUS_2026-05-11.md`
 
 Latest action:
 - public shell links that pointed to not-yet-verified subdomains were redirected to safe internal routes (`/ecosystem/`, `/roadmap/`) to avoid dead-end user paths.
+
+## 11. Full Dev Master Package
+
+Status: `FULL_DEV_MASTER_PACKAGE_CREATED`
+
+New source files:
+- `docs/launch/README_INDEX_MUONNOI_FULL_DEV_MASTER_PACKAGE_2026-05-11.md`
+- `docs/launch/MUONNOI_UNIFIED_NEXT_PHASE_MASTER_PLAN_2026.md`
+- `docs/launch/MUONNOI_PUBLIC_LAUNCH_DOCS_AND_SUBDOMAIN_PACKAGE_2026.md`
+- `docs/launch/MUONNOI_PUBLIC_ANNOUNCEMENT_2026.md`
+- `docs/launch/DEV_HANDOFF_PUBLIC_PAGES_MUONNOI_2026.md`
+
+Security and infra files:
+- `docs/security/INFRASTRUCTURE_HOSTING_STRATEGY.md`
+- `docs/security/SECURITY_ARCHITECTURE_MUONNOI_2026.md`
+- `docs/security/SOURCE_CODE_PROTECTION_POLICY.md`
+- `docs/security/API_SECURITY_BASELINE_ASVS_5.md`
+- `docs/security/DATA_PROTECTION_AND_RETENTION_POLICY.md`
+- `docs/security/LIFE_QUEST_ANTI_FRAUD_AND_REWARD_SECURITY.md`
+- `docs/security/MULTI_CLOUD_DISASTER_RECOVERY_PLAN.md`
+- `docs/security/INCIDENT_RESPONSE_RUNBOOK.md`
 
 ## 9. Mobile Sprint 0 / Sprint 1 execution pack
 

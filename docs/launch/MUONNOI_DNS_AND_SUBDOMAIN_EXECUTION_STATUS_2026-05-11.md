@@ -16,9 +16,14 @@ This status file is the source of truth for subdomain routing and DNS execution 
 `docs.muonnoi.org/public/_redirects`
 
 ## Operational blockers
-1. Local DNS verification from this workspace is blocked by environment/network policy.
-2. Cloudflare account actions still require valid credential context for final DNS checks and deploy confirmation.
-3. `lamviec.muonnoi.org` has content and planning references, but no fully locked repo-side deployment mapping in this root repo yet.
+1. Cloudflare Pages project list was checked from this workspace on `2026-05-12 00:03 +07`.
+2. Confirmed Pages projects and custom domains:
+`muonnoi` -> `muonnoi.pages.dev`, `muonnoi.org`, `www.muonnoi.org`;
+`app-muonnoi-org` -> `app-muonnoi-org.pages.dev`, `app.muonnoi.org`, `www.app.muonnoi.org`;
+`docs-muonnoi-org` -> `docs-muonnoi-org.pages.dev`, `docs.muonnoi.org`, `www.docs.muonnoi.org`.
+3. `lamviec.muonnoi.org` has content and planning references, but no fully locked Pages custom-domain mapping was visible in the Pages project list from this check.
+4. `api.muonnoi.org` is a Worker/custom-domain lane, not a Pages project lane; verify separately before API deploy.
+5. Payment and email production evidence remain the first operational gate before public expansion.
 
 ## Team execution split
 1. Platform/DevOps:
@@ -40,4 +45,6 @@ Re-run live URL matrix and capture evidence before calling release-ready.
 ## Current true state
 `DNS_EXECUTION_IN_PROGRESS`
 `PUBLIC_SHELL_LINK_HARDENING_APPLIED`
+`CLOUDFLARE_PAGES_PROJECT_LIST_CHECKED`
+`PAYMENT_EMAIL_GATE_STILL_FIRST`
 `RELEASE_READY_NOT_CLAIMED`
