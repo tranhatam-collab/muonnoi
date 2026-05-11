@@ -99,4 +99,29 @@
     el.textContent = new Date().getFullYear();
   });
 
+  /* ── GLOBAL LINK CONSISTENCY ───────────────────────── */
+  (function () {
+    var footerRight = document.querySelector(".mn-footer__right");
+    if (!footerRight) return;
+
+    var required = [
+      { href: "/about/", label: "Giới thiệu" },
+      { href: "/manifesto/", label: "Tuyên ngôn" },
+      { href: "/press/", label: "Báo chí" },
+      { href: "/newsletter/", label: "Bản tin" }
+    ];
+
+    required.forEach(function (item) {
+      var exists = footerRight.querySelector('a[href="' + item.href + '"]');
+      if (exists) return;
+
+      var a = document.createElement("a");
+      a.className = "mn-footer__link";
+      a.setAttribute("href", item.href);
+      a.setAttribute("data-route", item.href);
+      a.textContent = item.label;
+      footerRight.appendChild(a);
+    });
+  })();
+
 })();
