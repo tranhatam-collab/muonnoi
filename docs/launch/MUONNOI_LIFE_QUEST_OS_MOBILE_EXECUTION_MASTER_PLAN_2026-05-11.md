@@ -1,229 +1,346 @@
-# MUONNOI Life Quest OS Mobile Execution Master Plan 2026
+# MUONNOI LIFE QUEST OS · MOBILE EXECUTION MASTER PLAN · 2026-05-11
 
-Date: 2026-05-11
-Scope: iOS + Android app execution plan on existing Muonnoi stack.
-Source baseline:
-- `lqos.muonnoi.org/MUONNOI_LIFE_QUEST_OS_INTEGRATED_MASTER_PLAN_2026.md`
-- `docs/MUONNOI_V2_VOICE_AND_PLACE.md`
-- Existing mobile shell at `app.muonnoi.org/mobile-shell`
+## 1. Mục tiêu file
+Khóa kế hoạch thực thi mobile app iOS + Android cho Muôn Nơi trên nền kiến trúc đã có của web/public shell, social core, trust layer và Life Quest OS.
 
-## 1. Final product direction
+File này không thay thế các plan cũ. Nó nối tiếp và hợp nhất:
+- public shell của `muonnoi.org`
+- app/social core của `app.muonnoi.org`
+- AI social + workflow của `ai.muonnoi.org`
+- Life Quest OS
+- Family / Nhà Chung / Làm Việc / Đầu Tư / Du Lịch về sau
 
-Muonnoi mobile is a real-life mission app, not a speculative game app.
+## 2. Định nghĩa sản phẩm mobile
+Muôn Nơi mobile app là:
+- ứng dụng đời sống số cho con người
+- social core trên điện thoại
+- trust-first by design
+- gateway vào các module đời sống
+- layer daily habit cho Life Quest OS
 
-Core principles:
-- social-first
-- privacy-first
-- module-first
-- purposeful play
-- no addictive feed
-- no tracker monetization
+Ứng dụng mobile không được là:
+- bản web nhét vào WebView
+- app chỉ để chat và feed
+- super app rối, nhiều tab nhưng không có lõi
+- game gây nghiện
 
-Operational translation on mobile:
-- User does quests in real life.
-- User submits proof.
-- AI assists review and next-step guidance.
-- Community and host validate trust.
-- Rewards follow real value only.
+## 3. Product statement
+Muôn Nơi mobile app phải giúp người dùng:
+- vào social core nhanh hơn
+- hoàn thành quest hàng ngày dễ hơn
+- chụp và nộp proof ngoài đời thực
+- nhận nhắc việc đúng lúc
+- giữ nhịp gia đình / sức khỏe / học tập / du lịch / cộng đồng
+- duy trì trust và safety trên mobile mạnh hơn web
 
-## 2. What already exists (starting point)
+## 4. Nguyên tắc khóa cứng
+### 4.1 Value-first
+Không tối ưu screen time. Tối ưu output thật.
 
-- Public homepage and LQOS narrative are live on `muonnoi.org`.
-- Existing mobile shell and bridge route structure are present.
-- Current baseline direction is strict security and no external tracker dependency.
-- Integrated master plan already locks 7 quest systems and priority order.
+### 4.2 Privacy-first
+Không third-party analytics kiểu thu behavioral profile sâu. Chỉ event telemetry tối thiểu để vận hành, bảo mật, crash, reliability.
 
-This plan upgrades from narrative readiness to delivery readiness.
+### 4.3 Module-first
+Mobile app có shell chung, nhưng từng vertical bật theo feature flags.
 
-## 3. Mobile scope definition
+### 4.4 Offline-aware
+Nhiều use case diễn ra ngoài đời. App phải chịu được mạng yếu, offline capture, upload lại sau.
 
-### In-scope
+### 4.5 Proof-native
+Camera, location, timestamp, local draft, consent flow là phần lõi của sản phẩm.
 
-1. One shared product for iOS + Android from the existing shell architecture.
-2. Quest lifecycle:
-   - discover quest
-   - join quest
-   - submit proof
-   - review state
-   - trust result
-3. Pilot modules for first release:
-   - `dulich.muonnoi.org` (priority 1)
-   - `hoctap.muonnoi.org` (priority 2)
-   - `family.muonnoi.org` (priority 3)
-4. Core mobile capabilities:
-   - auth/session continuity with `app.muonnoi.org`
-   - camera proof upload
-   - location proof (explicit consent)
-   - push notifications for mission state
-   - offline draft for proof submission
+## 5. Quyết định kiến trúc mobile
+### 5.1 Quyết định đề xuất
+Dùng **React Native + Expo + TypeScript** cho app mobile đầu tiên.
 
-### Out-of-scope for first release
+### 5.2 Lý do
+- gần hệ web nếu web/app hiện đi theo JS/TS
+- tốc độ ship iOS + Android nhanh hơn native đôi
+- dễ chia sẻ API types, validation schemas, auth flows
+- push OTA/update nhẹ trong giai đoạn đầu (nếu cần)
+- hệ quest và social core không yêu cầu low-level native quá nặng ở phase đầu
 
-- token economy
-- speculative marketplace
-- ad network integrations
-- deep social growth hacks
-- enterprise admin suite
+### 5.3 Khi nào mới tách native riêng
+Chỉ tách Swift/Kotlin riêng nếu 1 trong 4 điều xảy ra:
+- video/call real-time nặng cần native optimization
+- health/device integration sâu
+- large-scale offline database sync cần tuning vượt JS layer
+- app MAU đủ lớn và team mobile riêng đủ mạnh
 
-## 4. Architecture (mobile-first, existing stack aligned)
+## 6. Kiến trúc ứng dụng
+### 6.1 App shell
+- Onboarding
+- Auth / Verify state
+- Home / Feed
+- Quests
+- Submit proof
+- Rooms / Messages
+- Notifications
+- Profile / Trust / Family / Wallet / Settings
 
-### App layer
+### 6.2 Navigation chuẩn
+Bottom nav phase đầu:
+- Home
+- Quests
+- Rooms
+- Alerts
+- Profile
 
-- Single app shell codebase at `app.muonnoi.org/mobile-shell`.
-- Route-driven quest modules (each module keeps separate UI and API contract).
-- Shared design token system from Muonnoi brand v2.
+### 6.3 Deep links
+Phải hỗ trợ:
+- `muonnoi://quest/{id}`
+- `muonnoi://room/{id}`
+- `muonnoi://post/{id}`
+- `muonnoi://family/{id}`
+- universal links từ web/public pages
 
-### Backend/API layer
+## 7. Scope phase đầu
+### 7.1 In scope
+- auth session
+- profile shell
+- feed read/write cơ bản
+- quest list
+- quest detail
+- proof capture draft
+- proof upload retry
+- notification inbox
+- settings
+- language/theme sync
+- minimal trust cues
 
-- Keep API canonical host and strict contract routing.
-- Quest APIs separated by module domain role, unified trust schema.
-- Proof pipeline:
-  - upload endpoint
-  - AI pre-review endpoint
-  - host/community validation endpoint
-  - trust score update endpoint
+### 7.2 Not in scope phase đầu
+- full video call stack
+- advanced creator studio
+- full marketplace checkout logic
+- enterprise admin
+- heavy financial flows
 
-### Security/privacy layer
+## 8. User lanes
+### 8.1 New user
+- open app
+- understand Muôn Nơi quickly
+- read value promise
+- join first quest
+- save first proof draft
 
-- strict CSP/CORS alignment with canonical domains
-- session cookies and token boundaries already defined
-- no third-party trackers
-- data minimization per proof type
+### 8.2 Returning daily user
+- check feed
+- check quests
+- finish one action
+- upload proof
+- read reflection / trust signal
 
-## 5. Required mobile feature set by release phase
+### 8.3 Family user
+- view family mission
+- submit group proof
+- manage family streaks
 
-### Phase A (MVP 30 days)
+### 8.4 Host / local lead
+- accept quest participation
+- verify completion
+- handle local chat / schedule
 
-1. Auth and profile sync with `app.muonnoi.org`.
-2. Quest list and quest detail for `dulich` pilot.
-3. Proof submit (text + image + optional GPS).
-4. Proof status timeline:
-   - submitted
-   - AI pre-reviewed
-   - pending validation
-   - accepted/rejected
-5. Push notification for status updates.
-6. Trust badge and receipt view.
+## 9. Core mobile features by lane
+### Social Core
+- clean feed
+- no infinite manipulative scroll patterns
+- topic chips
+- useful / comment / save / AI help
 
-### Phase B (60-90 days)
+### Quest Layer
+- daily quests
+- city quests
+- family quests
+- learning quests
+- health quests
+- community quests
 
-1. Add `hoctap` module.
-2. Add family quest group mode.
-3. Add offline draft + retry queue.
-4. Add anti-fraud basic signals in client flow.
-5. Add in-app trust/complaint route bridge.
+### Proof Layer
+- capture photo/video/text
+- geotag optional with consent
+- local draft
+- offline queue
+- upload retry
+- proof review status
 
-### Phase C (90-180 days)
+### Trust Layer
+- verify badge state
+- complaint/report action
+- blocked user indicators
+- safety checklists for travel/family/community contexts
 
-1. Add learning streak and healthy retention mechanics.
-2. Add host mode for local mission verification.
-3. Add creator/community mission templates.
-4. Add full quest history portfolio export.
+## 10. App structure
+### Screens phase 1
+- Splash
+- Welcome
+- Sign in / Join
+- Feed Home
+- Quest Hub
+- Quest Detail
+- Submit Proof
+- My Proofs
+- Notifications
+- Room List
+- Room Detail
+- Profile
+- Settings
+- Safety & Support
 
-## 6. Team execution map
+## 11. Shared services
+- auth client
+- API client
+- session manager
+- upload manager
+- local cache
+- push notification service
+- feature flag service
+- telemetry service
+- crash logging
 
-### Team Product (Owner)
+## 12. Data and sync
+### Local storage
+- session token / cookie bridge metadata
+- theme
+- language
+- pending proof drafts
+- upload queue
+- cached feed slices
+- cached quest lists
 
-- lock quest definition and acceptance criteria per module
-- lock no-addiction UX constraints
-- lock value-first KPI interpretation
+### Sync strategy
+- stale-while-revalidate where possible
+- background refresh when app foregrounds
+- upload queue with exponential retry
+- conflict-safe proof status refresh
 
-### Team Mobile (iOS + Android)
+## 13. Security and privacy for mobile
+- secure keychain / keystore for session materials if token-based
+- certificate pinning optional in later stage
+- no third-party ad SDKs
+- granular permissions: camera, photos, location, notifications
+- explicit consent copy before geotag collection
+- no silent background surveillance
 
-- implement app shell routes and proof UX
-- implement native bridges (camera, location, push, local storage)
-- handle release pipelines (TestFlight/Internal testing)
+## 14. Mobile + web consistency
+Mobile must align with:
+- `muonnoi.org` public promise
+- `app.muonnoi.org` product shell
+- `ai.muonnoi.org` workflow and AI positioning
 
-### Team API/AI
+Do not let mobile drift into another tone or product definition.
 
-- finalize proof/trust endpoints and versioning
-- AI pre-review contract and fallback behavior
-- anti-fraud rule updates and audit logging
+## 15. 30 / 90 / 180 day roadmap
+### Day 0–30
+- finalize architecture
+- repo bootstrap
+- auth + session
+- feed read shell
+- quest hub shell
+- proof draft capture
+- build system + CI baseline
+- TestFlight/Internal Android builds
 
-### Team Platform/DevOps
+### Day 31–90
+- proof upload queue
+- notifications inbox
+- room list / room detail baseline
+- profile/trust views
+- deep link handling
+- travel/family/learn feature flags
+- beta testing loop
 
-- environment profiles (dev/staging/prod)
-- signing, release build, CI lane
-- observability and incident response lane
+### Day 91–180
+- daily quest loop polished
+- push notifications
+- family quest lane
+- health streak lane
+- host verification tools
+- better offline support
+- App Store / Play Store release candidate
 
-### Team QA/Trust
+## 16. Team ownership
+### Product
+- product definition
+- user journeys
+- launch sequencing
+- KPI selection
 
-- quest flow matrix (happy + rejection + edge cases)
-- privacy and permission checks
-- trust evidence and complaint replay tests
+### Mobile
+- app shell
+- navigation
+- local storage
+- upload queue
+- push notifications
 
-## 7. Release gates (must pass before public scale)
+### API
+- mobile auth contract
+- feed endpoints
+- quest endpoints
+- proof endpoints
+- notification endpoints
 
-1. Mobile build gate:
-   - iOS archive success
-   - Android release candidate build success
-2. Quest flow gate:
-   - complete mission lifecycle pass
-3. Proof integrity gate:
-   - proof tamper scenarios handled
-4. Privacy gate:
-   - permission prompts explicit and revocable
-5. Reliability gate:
-   - upload retry and offline recovery pass
-6. Trust gate:
-   - validation and complaint route consistent
+### Platform
+- CI/CD
+- secrets
+- crash logging
+- release automation
+- store signing pipeline
 
-No gate pass means no release claim.
+### QA
+- release gate verification
+- device matrix
+- offline tests
+- upload retry tests
+- permissions tests
 
-## 8. KPI framework (value-first, no short-term pressure)
+## 17. Release gates
+A build cannot ship if any of the following fail:
+- auth loop fails
+- proof draft can be created but not recovered
+- upload queue loses items
+- theme/lang regressions
+- deep links broken
+- report/block path absent
+- crash-free rate below threshold
+- store metadata incomplete
 
-North-star:
-- Real mission completion with accepted proof.
+## 18. KPIs
+### Value-first KPIs
+- quest completion rate
+- proof verified rate
+- 7-day repeat quest rate
+- host/family/team invite rate
+- push open rate for value reminders
+- crash free sessions
+- upload success rate
+- safety incident rate
 
-Primary KPIs:
-- D7 and D30 healthy retention by module
-- accepted-proof rate
-- trust dispute rate
-- host validation turnaround
-- mission-to-real-value conversion
+### Do not optimize
+- raw screen time
+- rage comment count
+- addictive infinite feed sessions
 
-Guardrail KPIs:
-- abuse/fraud attempt rate
-- rejection without clear reason rate
-- permission drop-off rate
-- crash-free sessions
+## 19. Risks and mitigation
+### Risk: mobile becomes feed-only app
+Mitigation: quest and proof flows are first-class, not secondary.
 
-## 9. Risk register and mitigation
+### Risk: proof uploads fail in poor network
+Mitigation: durable local queue + retry + visible status.
 
-1. Risk: proof abuse/fake submissions.
-   Mitigation: AI pre-review + host validation + random audit + trust penalty.
-2. Risk: mobile permission friction.
-   Mitigation: just-in-time prompts + clear reason copy + optional flow fallback.
-3. Risk: release blocked by infra credentials/signing.
-   Mitigation: preflight checklist and blocker escalation protocol.
-4. Risk: chasing growth too early.
-   Mitigation: scale only after trust and retention thresholds pass.
+### Risk: privacy contradiction
+Mitigation: no ad SDK, minimal telemetry, explicit permissions.
 
-## 10. 30-day execution board
+### Risk: too many modules too early
+Mitigation: feature flags + phased rollout.
 
-Week 1:
-- lock API contracts and quest MVP schema
-- finalize mobile navigation and proof submission UX
+### Risk: app store rejection from immature flows
+Mitigation: stage release candidate only after stable auth, support, policy pages.
 
-Week 2:
-- implement proof upload, status timeline, notification wiring
-- internal QA for pilot quest flow
+## 20. Required docs after this file
+- `MUONNOI_MOBILE_RELEASE_GATES_2026-05-11.md`
+- `MUONNOI_MOBILE_TEAM_HANDOFF_SPRINT_01_2026-05-11.md`
+- mobile API contract docs
+- app store metadata pack
 
-Week 3:
-- staging hardening, crash/permission fixes, trust path checks
-- pilot host validation loop
-
-Week 4:
-- release candidate build
-- pilot cohort rollout and evidence report
-
-## 11. Final alignment statement
-
-Muonnoi mobile does not optimize for screen addiction or speculative earning.
-It optimizes for real-life growth loops:
-- do real missions
-- prove real work
-- earn real trust
-- create real value
-
-That is the unified execution baseline for iOS and Android under the Muonnoi system.
+## 21. Final lock
+Muôn Nơi mobile app is not a second website. It is the daily-operating layer of the Muôn Nơi system on the phone.
