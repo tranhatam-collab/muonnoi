@@ -124,7 +124,7 @@ Planned routes for `cuocsong.muonnoi.org`:
 | `/hoc-tap/` | Learning and experience | `/song-o-nhieu-noi/`, `/da-lat/` | `NOT_STARTED` |
 | `/cong-dong/` | Community life | `nguoiviet.muonnoi.org`, `/nha-chung/` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 | `/cho-va-nhan/` | Value exchange | `trust.muonnoi.org` or safe internal fallback | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
-| `/ho-tro/` | Support directory | `/legal/disclaimer/`, `docs.muonnoi.org` | `NOT_STARTED` |
+| `/ho-tro/` | Support directory | `/legal/disclaimer/`, `docs.muonnoi.org` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 | `/nha-chung/` | Home/community pilot guide | `nhachung.muonnoi.org` only after verified | `NOT_STARTED` |
 | `/da-lat/` | Đà Lạt pilot continuity | `nguoiviet.muonnoi.org`, future `dulich` | `NOT_STARTED` |
 | `/cau-hoi/` | FAQ | all core routes | `NOT_STARTED` |
@@ -221,7 +221,7 @@ Exit gate:
 - No dead links.
 - No temporary draft content.
 - H1, metadata and language labels pass.
-- Current state: first local route set exists for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`, but metadata and internal-link evidence are still incomplete.
+- Current state: first local route set exists for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`; internal-link evidence is recorded, and `/legal/privacy/` plus `/legal/terms/` have received the legal-route metadata patch and are awaiting Team 8 recheck for Gate 5.
 
 ### Phase 2 — Static site source
 
