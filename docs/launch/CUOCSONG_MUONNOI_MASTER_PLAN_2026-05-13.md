@@ -117,21 +117,21 @@ Planned routes for `cuocsong.muonnoi.org`:
 
 | Route | Role | Primary internal links | Release status |
 |---|---|---|---|
-| `/` | Home and orientation | `muonnoi.org`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/` | `NOT_STARTED` |
-| `/gioi-thieu/` | What Cuộc Sống Muôn Nơi is | `/song-o-nhieu-noi/`, `nguoiviet.muonnoi.org` | `NOT_STARTED` |
-| `/song-o-nhieu-noi/` | Living across places | `/da-lat/`, `/cong-dong/`, `/legal/disclaimer/` | `NOT_STARTED` |
+| `/` | Home and orientation | `muonnoi.org`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
+| `/gioi-thieu/` | What Cuộc Sống Muôn Nơi is | `/song-o-nhieu-noi/`, `nguoiviet.muonnoi.org` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
+| `/song-o-nhieu-noi/` | Living across places | `/da-lat/`, `/cong-dong/`, `/legal/disclaimer/` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 | `/lam-viec/` | Work readiness | `lamviec.muonnoi.org` or safe internal fallback | `NOT_STARTED` |
 | `/hoc-tap/` | Learning and experience | `/song-o-nhieu-noi/`, `/da-lat/` | `NOT_STARTED` |
-| `/cong-dong/` | Community life | `nguoiviet.muonnoi.org`, `/nha-chung/` | `NOT_STARTED` |
-| `/cho-va-nhan/` | Value exchange | `trust.muonnoi.org` or safe internal fallback | `NOT_STARTED` |
+| `/cong-dong/` | Community life | `nguoiviet.muonnoi.org`, `/nha-chung/` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
+| `/cho-va-nhan/` | Value exchange | `trust.muonnoi.org` or safe internal fallback | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 | `/ho-tro/` | Support directory | `/legal/disclaimer/`, `docs.muonnoi.org` | `NOT_STARTED` |
 | `/nha-chung/` | Home/community pilot guide | `nhachung.muonnoi.org` only after verified | `NOT_STARTED` |
 | `/da-lat/` | Đà Lạt pilot continuity | `nguoiviet.muonnoi.org`, future `dulich` | `NOT_STARTED` |
 | `/cau-hoi/` | FAQ | all core routes | `NOT_STARTED` |
 | `/lien-he/` | Safe contact/intake | no payment CTA before gate | `NOT_STARTED` |
-| `/legal/privacy/` | Privacy | `docs.muonnoi.org` | `NOT_STARTED` |
-| `/legal/terms/` | Terms | `docs.muonnoi.org` | `NOT_STARTED` |
-| `/legal/disclaimer/` | Claim boundaries | `docs.muonnoi.org` | `NOT_STARTED` |
+| `/legal/privacy/` | Privacy | `docs.muonnoi.org` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
+| `/legal/terms/` | Terms | `docs.muonnoi.org` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
+| `/legal/disclaimer/` | Claim boundaries | `docs.muonnoi.org` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 
 ## Bilingual Rule
 
@@ -206,7 +206,7 @@ Exit gate:
 
 ### Phase 1 — Claim-safe public content
 
-Status: `NOT_STARTED`
+Status: `IN_PROGRESS`
 
 Work:
 
@@ -221,10 +221,11 @@ Exit gate:
 - No dead links.
 - No temporary draft content.
 - H1, metadata and language labels pass.
+- Current state: first local route set exists for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`, but metadata and internal-link evidence are still incomplete.
 
 ### Phase 2 — Static site source
 
-Status: `NOT_STARTED`
+Status: `IN_PROGRESS`
 
 Work:
 
@@ -237,6 +238,7 @@ Exit gate:
 - Local route smoke passes.
 - Brand lint passes.
 - Accessibility basic pass.
+- Current state: source tree exists locally with static infra files, but preview deploy has not started.
 
 ### Phase 3 — Cloudflare preview
 

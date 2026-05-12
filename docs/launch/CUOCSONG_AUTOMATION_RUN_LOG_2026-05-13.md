@@ -21,6 +21,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 01:50 | `:50` | Team 1 highest-priority safe task | `DONE` | Audited brand/language markers across implemented routes, recorded Gate 3 evidence in the QA checklist, and removed stale `(planned)` labels from `/cong-dong/` links in implemented pages |
 | 2026-05-13 01:55 | `:55` | Team 1 status sync | `DONE` | Synced current owner routing: Team 8 remains next for metadata and internal-link evidence; Team 7 preview and DNS work remain blocked pending that evidence |
 | 2026-05-13 02:00 | `:00` | Team 1 admin coordination | `DONE` | Added a current active handoff block to the execution plan so the next owner, next safe task, and current blockers are visible in one place without rereading multiple docs |
+| 2026-05-13 02:05 | `:05` | Team 2 | `DONE` | Updated the master plan route table and phase states to match the real local source: 5 public routes and 3 legal routes now exist as local drafts with partial QA rather than `NOT_STARTED` |
 
 ## Visibility note
 
