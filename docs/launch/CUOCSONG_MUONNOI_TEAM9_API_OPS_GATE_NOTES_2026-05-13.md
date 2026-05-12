@@ -49,12 +49,13 @@ Team 9 may start implementation only when all three gates are marked pass with d
 
 ## Current True State
 
-As of `2026-05-13 01:40 ICT`:
+As of `2026-05-13 02:40 ICT`:
 
 - `cuocsong.muonnoi.org` remains a local-only source lane with no public intake form.
 - Payment/email production gate is still blocked in the wider Muon Noi system.
 - No consent-approved intake field set is available for Team 9 to wire into production.
 - Team 9 must stay in contract-note mode only.
+- Team 6 metadata patch and Team 8 recheck are still ahead of any preview-stage workflow, so Team 9 remains off the active critical path.
 
 ## Next Owner And Unblock Order
 
