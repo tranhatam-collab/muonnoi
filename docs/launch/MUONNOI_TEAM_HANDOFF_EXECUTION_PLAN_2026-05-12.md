@@ -500,3 +500,42 @@ Release-ready claim enables mobile expansion:
 ---
 
 Generated: 2026-05-12 by Claude
+
+---
+
+## Parallel pha · independent workstream evidence · 2026-05-12 12:35 ICT
+
+Đã chạy xong các pha **không phụ thuộc payment/email gate**. Kết quả live:
+
+| Workstream | Status | Evidence |
+|------------|--------|----------|
+| Brand-lint (apps/web/public + docs.muonnoi.org/public) | ✅ PASS | `scripts/brand-lint-muonnoi.sh` — no forbidden phrases, palette/typography/a11y green |
+| Route audit (27 public routes) | ✅ PASS | `scripts/audit-routes.sh` — all routes return 200 |
+| DNS body parity (www.muonnoi.org) | ✅ PASS | `scripts/recheck-dns-body-parity.sh` — title + 3× brand text, 0 legacy |
+| Subdomain source matrix (18 hosts) | ✅ MATCHES MATRIX | `scripts/validate-subdomain-sources.sh` — 8 LIVE primary, 5 internal-only (000), aligns with DO_NOT_LINK decision |
+| Investment legal language | ✅ CLEAN | No `guaranteed return / fixed return / cam kết lợi nhuận` outside negation contexts |
+| Secrets in tracked content | ✅ CLEAN | No Stripe/SendGrid/AWS/GitHub tokens, no `.env` committed |
+
+### Fixes shipped this round
+
+**docs.muonnoi.org** repo (commit `261f300`):
+- Replaced legacy `"Social Operating System"` with `"Hạ tầng số cho đời sống thật"` / `"Voice & Place"` across 9 pages
+- Added canonical + og:title/description + twitter:card meta on legal + system pages
+- Replaced short `VI/EN/FR/JA/KO/ZH` option labels with full language names (matches main shell convention)
+
+**muonnoi.org** repo (commit `bd96d9e`):
+- `apps/web/public/about/index.html`: meta description now uses v2.0 wording
+- `scripts/brand-lint-muonnoi.sh`: scope extended to docs subdomain, `Social Operating System|Space` added to FORBIDDEN
+- `scripts/recheck-dns-body-parity.sh`: locale + grep fix (was false-negative on multibyte body)
+
+### What still gates release-ready claim
+
+| Blocker | Owner | Status |
+|---------|-------|--------|
+| API payment/webhook/email endpoints deployed | API team | NOT_DEPLOYED |
+| Worker deployment id + secrets storage locked | Platform team | NOT_DEPLOYED |
+| 10 test scenarios with redacted evidence | QA team | NOT_EXECUTED |
+| ai.muonnoi.org / lamviec.muonnoi.org Pages source locked | DNS/Platform | NOT_LOCKED |
+| iOS signing chain + Android Java setup | Mobile/Platform | EXTERNAL |
+
+Brand/DNS/route/security/legal workstreams are **closed for this gate cycle**. Next state change comes from API + Platform + QA real evidence.
