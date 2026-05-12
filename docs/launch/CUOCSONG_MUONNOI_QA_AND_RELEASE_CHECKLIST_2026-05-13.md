@@ -2,7 +2,7 @@
 
 ## Gate Status
 
-BLOCKED_BEFORE_IMPLEMENTATION
+IMPLEMENTATION_IN_PROGRESS_BLOCKED_ON_RELEASE_GATES
 
 This checklist is prepared for team use. It does not claim that `cuocsong.muonnoi.org` is ready.
 
@@ -10,21 +10,21 @@ This checklist is prepared for team use. It does not claim that `cuocsong.muonno
 
 | Item | Status | Evidence |
 |---|---|---|
-| Dedicated source tree | `MISSING` | No `cuocsong.muonnoi.org/` folder in repo |
+| Dedicated source tree | `CREATED_LOCAL_NOT_DEPLOYED` | `cuocsong.muonnoi.org/` with static routes, legal pages and static infra files created on 2026-05-13 |
 | DNS | `MISSING` | `dig +short cuocsong.muonnoi.org` returned no answer |
 | Cloudflare Pages project | `MISSING` | `wrangler pages project list | rg -i "cuoc|song|cuocsong"` returned no match |
 | Drive source | `FOUND` | 2 Google Docs in provided Drive folder |
-| Claim-safe public copy | `NOT_STARTED` | Source material requires rewrite |
-| Legal disclaimers | `NOT_STARTED` | Required before public route release |
+| Claim-safe public copy | `SPRINT1_DRAFT_CREATED` | `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/` drafted in VI/EN with no transaction CTA |
+| Legal disclaimers | `IMPLEMENTED_TEAM5_ROUTE_REVIEWED` | `/legal/disclaimer/`, `/legal/privacy/` and `/legal/terms/` exist; Team 5 reviewed implemented route set on 2026-05-13 |
 | Primary homepage CTA | `BLOCKED` | DNS/source/QA not ready |
 
 ## Required Gates Before Public Link
 
 ### Gate 1 — Source and ownership
 
-- [ ] Source path selected: `cuocsong.muonnoi.org/` or `apps/web/public/cuoc-song/`.
-- [ ] Source path committed to repo.
-- [ ] Owner recorded in `docs/launch/MUONNOI_PARALLEL_DEV_COORDINATION_PLAN_2026-05-12.md`.
+- [x] Source path selected: `cuocsong.muonnoi.org/` or `apps/web/public/cuoc-song/`.
+- [x] Source path committed to repo.
+- [x] Owner recorded in `docs/launch/MUONNOI_PARALLEL_DEV_COORDINATION_PLAN_2026-05-12.md`.
 - [ ] No unrelated legacy clone folders staged.
 
 Evidence command:
@@ -49,6 +49,17 @@ Pass condition:
 - [ ] Every future-state claim uses planned/under review wording.
 - [ ] Every regulated-topic page links to `/legal/disclaimer/`.
 
+Team 5 pre-implementation review (2026-05-13):
+- [x] Banned-claim taxonomy locked (visa/legal/finance/medical/psychology/free-accommodation/fixed-price/fundraising/guaranteed outcomes).
+- [x] Disclaimer wording baseline approved for `/legal/disclaimer/`.
+- [x] Safe wording baseline approved for Đà Lạt, Nhà Chung and support directory pages.
+- [x] Route-level claim scan and disclaimer-link verification for implemented routes completed on 2026-05-13 (intentional `guaranteed` matches appear only inside disclaimer boundaries).
+
+Implemented-route evidence:
+- Reviewed routes: `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`.
+- Claim scan found sensitive keywords only in disclaimer/boundary contexts, not as offered services or transaction CTAs.
+- Disclaimer path is present across the implemented route set.
+
 Suggested scan:
 
 ```bash
@@ -58,6 +69,7 @@ rg -n "visa|pháp lý|tài chính|đầu tư|vay|ngân hàng|y tế|tâm lý|tâ
 Pass condition:
 
 - Any match is intentionally reviewed and either removed or recorded with approval evidence.
+- Remaining unchecked boxes apply to routes that are still planned and not yet implemented.
 
 ### Gate 3 — Brand and language
 
@@ -80,21 +92,21 @@ Pass condition:
 
 ### Gate 4 — Route and link smoke
 
-- [ ] `/` returns `200`.
-- [ ] `/gioi-thieu/` returns `200`.
-- [ ] `/song-o-nhieu-noi/` returns `200`.
+- [x] `/` returns `200`.
+- [x] `/gioi-thieu/` returns `200`.
+- [x] `/song-o-nhieu-noi/` returns `200`.
 - [ ] `/lam-viec/` returns `200`.
 - [ ] `/hoc-tap/` returns `200`.
 - [ ] `/cong-dong/` returns `200`.
-- [ ] `/cho-va-nhan/` returns `200`.
+- [x] `/cho-va-nhan/` returns `200`.
 - [ ] `/ho-tro/` returns `200`.
 - [ ] `/nha-chung/` returns `200`.
 - [ ] `/da-lat/` returns `200`.
 - [ ] `/cau-hoi/` returns `200`.
 - [ ] `/lien-he/` returns `200`.
-- [ ] `/legal/privacy/` returns `200`.
-- [ ] `/legal/terms/` returns `200`.
-- [ ] `/legal/disclaimer/` returns `200`.
+- [x] `/legal/privacy/` returns `200`.
+- [x] `/legal/terms/` returns `200`.
+- [x] `/legal/disclaimer/` returns `200`.
 - [ ] All internal links return `200` or intentional redirect.
 
 Pass condition:

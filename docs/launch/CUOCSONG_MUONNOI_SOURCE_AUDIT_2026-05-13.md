@@ -110,8 +110,8 @@ Allowed rewrite direction:
 | Dedicated source tree | `NOT_CREATED` | No `cuocsong.muonnoi.org` source folder exists |
 | DNS | `NOT_CONFIGURED` | `dig +short cuocsong.muonnoi.org` returned no answer |
 | Cloudflare Pages project | `NOT_FOUND` | Pages list had no `cuoc/song/cuocsong` match |
-| Public content | `NEEDS_REWRITE` | Drive docs contain useful structure but unsafe old claims |
-| Legal/claim review | `REQUIRED` | Regulated-topic claims appear in source material |
+| Public content | `IMPLEMENTATION_IN_PROGRESS` | first route set exists locally; full route coverage and release evidence are still incomplete |
+| Legal/claim review | `IMPLEMENTED_ROUTE_SET_REVIEWED` | Team 5 reviewed the current implemented route set; full release still waits on remaining routes, preview and DNS evidence |
 | Primary public CTA | `BLOCKED` | No DNS, no source, no route QA, no claim gate |
 
 ## Decision
