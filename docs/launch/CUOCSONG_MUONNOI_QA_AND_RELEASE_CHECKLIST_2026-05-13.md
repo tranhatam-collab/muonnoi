@@ -59,6 +59,7 @@ Implemented-route evidence:
 - Reviewed routes: `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`.
 - Claim scan found sensitive keywords only in disclaimer/boundary contexts, not as offered services or transaction CTAs.
 - Disclaimer path is present across the implemented route set.
+- `/ho-tro/` is now implemented locally and keeps disclaimer-first routing with no transaction CTA.
 
 Suggested scan:
 
@@ -116,6 +117,7 @@ Pass condition:
 - Route smoke evidence is attached to the release note.
 - Local smoke evidence recorded on 2026-05-13 via `python3 -m http.server` + `curl -i http://127.0.0.1:43114/cong-dong/index.html` returning `HTTP/1.0 200 OK`.
 - Local smoke evidence recorded on 2026-05-13 via `python3 -m http.server` + `curl -i http://127.0.0.1:43115/ho-tro/index.html` returning `HTTP/1.0 200 OK`.
+- Internal-link audit on 2026-05-13 confirms implemented routes link correctly to existing local routes, assets and disclaimer paths; remaining missing local targets are intentional planned links only: `/nha-chung/`, `/lien-he/`, `/da-lat/`.
 
 ### Gate 5 — SEO and metadata
 
@@ -131,6 +133,9 @@ Pass condition:
 Pass condition:
 
 - Metadata audit shows no missing title, description, canonical or language link.
+- Team 8 metadata audit on 2026-05-13:
+  - `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/legal/disclaimer/` each have `title`, `description`, `canonical`, `hreflang vi`, `hreflang en`, `og:title`, `og:description`, and exactly one `h1`.
+  - `/legal/privacy/` and `/legal/terms/` still miss `hreflang` and `og:*` metadata, so Gate 5 remains `PARTIAL_NOT_PASS`.
 
 ### Gate 6 — Accessibility basic
 
@@ -207,6 +212,6 @@ Reason:
 | Blocker | Next owner | Next safe task |
 |---|---|---|
 | Brand and bilingual verification missing | `Team 4` | Audit naming, diacritics, `Tiếng Việt` / `English` labels and module wording on implemented pages |
-| Metadata and internal-link evidence missing | `Team 8` | Check H1, title, description, canonical, `hreflang`, OG and implemented-route links |
+| Metadata patch for legal routes missing | `Team 6` | Add `hreflang` and `og:*` metadata to `/legal/privacy/` and `/legal/terms/`, then hand back to Team 8 for recheck |
 | Preview deploy not allowed yet | `Team 7` | Wait for Team 8 evidence, then prepare Pages preview without attaching DNS |
 | Intake/email/proof integration blocked | `Team 9` | Stay in contract-note mode until payment, email and proof gates pass |
