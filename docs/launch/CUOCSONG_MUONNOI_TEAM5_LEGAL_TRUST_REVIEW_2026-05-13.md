@@ -77,6 +77,7 @@ Implemented routes reviewed:
 - `/song-o-nhieu-noi/`
 - `/cho-va-nhan/`
 - `/cong-dong/`
+- `/ho-tro/`
 - `/legal/disclaimer/`
 - `/legal/privacy/`
 - `/legal/terms/`
@@ -91,13 +92,18 @@ Route-level findings:
 
 Still pending:
 
-- Planned routes not yet implemented: `/lam-viec/`, `/hoc-tap/`, `/ho-tro/`, `/nha-chung/`, `/da-lat/`, `/cau-hoi/`, `/lien-he/`.
+- Planned routes not yet implemented: `/lam-viec/`, `/hoc-tap/`, `/nha-chung/`, `/da-lat/`, `/cau-hoi/`, `/lien-he/`.
 - Preview parity, DNS and live-host review.
 
 Incremental note on `2026-05-13 02:20 ICT`:
 
 - Re-scan of the implemented route set after recent copy edits still shows risk keywords only in disclaimer or prohibition contexts.
 - `/cong-dong/` is now part of the reviewed implemented route set.
+
+Incremental note on `2026-05-13 03:20 ICT`:
+
+- `/ho-tro/` is part of the reviewed implemented route set and remains disclaimer-first, non-transactional, and free of regulated-service promises.
+- `/gioi-thieu/` now includes `/ho-tro/` in its internal-link block; the added route remains within approved support-boundary framing and does not introduce contact, payment, or guaranteed-outcome claims.
 
 ## Gate Mapping
 

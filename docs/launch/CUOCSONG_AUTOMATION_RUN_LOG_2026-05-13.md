@@ -36,6 +36,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 03:05 | `:05` | Team 2 | `DONE` | Updated the public site content map so Sprint 1 now matches the real lane baseline: `/cong-dong/`, `/ho-tro/`, `/legal/privacy/`, and `/legal/terms/` are included alongside the original claim-safe routes |
 | 2026-05-13 03:10 | `:10` | Team 3 | `DONE` | Aligned `/gioi-thieu/` with the content map by adding the missing `/ho-tro/` internal link to the page's internal-link block, then verified the new target with `rg` |
 | 2026-05-13 03:15 | `:15` | Team 4 | `DONE` | Rechecked `/gioi-thieu/` after commit `5bdf21b`: the route still uses `Muôn Nơi · Cuộc Sống Muôn Nơi`, retains `Tiếng Việt` and `English`, and the new `/ho-tro/` link stays inside the approved brand and bilingual rules |
+| 2026-05-13 03:20 | `:20` | Team 5 | `DONE` | Refreshed the legal/trust review to match the real route set: `/ho-tro/` is now included as an implemented reviewed route, removed from the pending list, and the new `/gioi-thieu/` to `/ho-tro/` link is recorded as staying within approved support-boundary wording without contact, payment, or guaranteed-outcome claims |
 
 ## Visibility note
 
