@@ -24,11 +24,11 @@ This lane may create future source under:
 
 - `cuocsong.muonnoi.org/`
 
-or, if the team chooses to launch first under the root shell:
+Source path is locked by Team 1 on 2026-05-13:
 
-- `apps/web/public/cuoc-song/`
+- `cuocsong.muonnoi.org/`
 
-Only one source path may be selected before implementation. Do not create both unless the coordination plan explicitly approves a migration route.
+Do not create a parallel root-shell source unless the coordination plan explicitly approves a migration route.
 
 ## Content Source Rule
 
@@ -197,6 +197,11 @@ Acceptance:
 10. Update DNS/custom-domain matrix.
 11. Attach custom domain.
 12. Add root homepage link only after `LIVE_LINK_ALLOWED`.
+
+Current status:
+
+- Step 1 is done: source path is `cuocsong.muonnoi.org/`.
+- Step 2 is next.
 
 ## Commit Plan
 

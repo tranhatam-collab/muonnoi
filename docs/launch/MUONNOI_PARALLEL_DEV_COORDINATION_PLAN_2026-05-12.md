@@ -62,6 +62,7 @@ Cuoc Song:
 - `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`
 - `docs/superpowers/plans/2026-05-13-cuoc-song-muon-noi-subdomain.md`
 
 Brand:
@@ -102,6 +103,7 @@ Nguoi Viet:
 
 Cuoc Song:
 - Drive source is historical material and must not be copied directly to public routes.
+- Source path is locked as `cuocsong.muonnoi.org/`.
 - Product, Content and Legal/Trust must approve the first-sprint routes before Web creates source.
 - `cuocsong.muonnoi.org` has no DNS answer and no Cloudflare Pages project as of 2026-05-13.
 - Public homepage CTAs remain blocked until DNS matrix marks the host `LIVE_LINK_ALLOWED`.
@@ -141,6 +143,7 @@ Do not write vague states such as `almost done`, `ready enough`, `ok`, or `looks
 4. Re-run `scripts/qa-nguoiviet-smoke.sh https://nguoiviet-muonnoi-org.pages.dev`.
 5. Update this plan and `TEAM_READ_ORDER` with the final source-of-truth state.
 6. Product/Content/Legal review `docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md` and approve the first four Cuộc Sống routes before Web source work.
+7. Team 1 automation runs every 30 minutes as a single coordinator loop from `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`.
 
 ## Gate status
 

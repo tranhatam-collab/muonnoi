@@ -96,6 +96,7 @@ Cuoc Song:
 - Then read `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`.
 - Then read `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`.
 - Then read `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`.
+- Then read `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`.
 - Implementation workers must follow `docs/superpowers/plans/2026-05-13-cuoc-song-muon-noi-subdomain.md`.
 - Do not create DNS, Cloudflare custom domains or homepage CTAs for `cuocsong.muonnoi.org` until the QA checklist and DNS matrix both move it out of `DO_NOT_LINK_PRIMARY`.
 
@@ -146,7 +147,8 @@ DONE:
 `docs/launch/CUOCSONG_MUONNOI_MASTER_PLAN_2026-05-13.md`,
 `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`,
 `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`,
-`docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`.
+`docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`,
+`docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`.
 
 NEED:
 - Docs hub publishing synchronization on `docs.muonnoi.org`.

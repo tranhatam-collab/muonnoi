@@ -394,6 +394,7 @@ Every parallel team may proceed only in its owned lane. Release claims remain se
 - `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`
 - `docs/superpowers/plans/2026-05-13-cuoc-song-muon-noi-subdomain.md`
 
 ### Layer position
@@ -408,6 +409,8 @@ Every parallel team may proceed only in its owned lane. Release claims remain se
 - DNS state: `NOT_CONFIGURED`.
 - Cloudflare state: `NO_PROJECT_FOUND`.
 - Content state: `NEEDS_CLAIM_SAFE_REWRITE`.
+- Source path: `cuocsong.muonnoi.org/`.
+- Automation state: `SINGLE_30_MIN_COORDINATOR_LOOP_REQUESTED`.
 
 ### Next gates
 1. Product approves the route priority and source path.
