@@ -77,7 +77,12 @@ Tasks:
    - `/gioi-thieu/`
    - `/song-o-nhieu-noi/`
    - `/cho-va-nhan/`
+   - `/cong-dong/`
+   - `/ho-tro/`
+   - `/cau-hoi/`
    - `/legal/disclaimer/`
+   - `/legal/privacy/`
+   - `/legal/terms/`
 2. Confirm CTA rule:
    - No payment.
    - No donation.

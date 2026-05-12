@@ -44,6 +44,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 03:50 | `:50` | Team 1 highest-priority safe task | `DONE` | Updated the master plan so Phase 1, Phase 2, and Phase 3 now reflect the real post-Gate-5 state: `/cau-hoi/` is part of the implemented local route set, metadata passes on implemented routes, and Team 7 is the active next owner for preview-prep only |
 | 2026-05-13 03:55 | `:55` | Team 1 status sync | `DONE` | Confirmed no new tracked lane state changed after commit `341d2bf`: Team 7 remains the next owner for preview-prep documentation only, `cuocsong.muonnoi.org` still has no Pages project or DNS evidence, and Team 9 remains blocked by payment, email, and proof gates |
 | 2026-05-13 04:00 | `:00` | Team 1 admin coordination | `DONE` | Cleaned the release checklist wording so `DO_NOT_LINK_PRIMARY` now cites the real remaining blockers: no Pages project or preview evidence, no DNS/custom-domain evidence, incomplete accessibility evidence, and blocked payment/email/proof lanes. The implemented-route brand gate is now marked `PASS` instead of appearing as an open blocker |
+| 2026-05-13 04:05 | `:05` | Team 2 | `DONE` | Updated the Team 2 sprint-definition block in the execution plan so its “first sprint pages” list now matches the real implemented claim-safe baseline: `/cong-dong/`, `/ho-tro/`, `/cau-hoi/`, `/legal/privacy/`, and `/legal/terms/` are included alongside the earlier routes |
 
 ## Visibility note
 
