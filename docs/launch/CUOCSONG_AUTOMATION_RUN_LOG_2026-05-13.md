@@ -39,6 +39,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 03:20 | `:20` | Team 5 | `DONE` | Refreshed the legal/trust review to match the real route set: `/ho-tro/` is now included as an implemented reviewed route, removed from the pending list, and the new `/gioi-thieu/` to `/ho-tro/` link is recorded as staying within approved support-boundary wording without contact, payment, or guaranteed-outcome claims |
 | 2026-05-13 03:25 | `:25` | Team 6 | `DONE` | Added the new `/cau-hoi/` route with bilingual FAQ content, updated `sitemap.xml` and `_redirects`, verified required text with `rg`, and recorded local `200` smoke evidence from `curl -i http://127.0.0.1:43116/cau-hoi/index.html` |
 | 2026-05-13 03:35 | `:35` | Team 8 | `DONE` | Re-ran Gate 5 on the implemented route set and confirmed metadata pass: `/legal/privacy/` and `/legal/terms/` now have the required `hreflang` and `og:*`, `/cau-hoi/` follows the same baseline, `sitemap.xml` includes the new route, and Team 7 is now the next owner for preview-prep updates |
+| 2026-05-13 03:40 | `:40` | Team 9 | `BLOCKED` | Team 9 remains blocked by payment, email, and proof gates. The implemented route-set metadata gate is now closed and Team 7 is on the active path, but Team 9 still cannot start intake, email, or proof work without external production evidence |
 
 ## Visibility note
 
