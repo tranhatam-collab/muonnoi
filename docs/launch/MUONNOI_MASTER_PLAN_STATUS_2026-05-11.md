@@ -361,3 +361,20 @@ The ecosystem map now reads:
 
 ### Team handoff index
 - New doc: `docs/launch/MUONNOI_MOBILE_TEAM_HANDOFF_INDEX_2026-05-12.md` (consolidates 5 deliverable files + roles + sprint plan + approval gates).
+
+## Update 2026-05-12 — Parallel dev coordination locked
+
+### What changed
+- Created `docs/launch/MUONNOI_PARALLEL_DEV_COORDINATION_PLAN_2026-05-12.md` as the shared routing layer for API, Platform, QA, Web, Nguoi Viet, Mobile, Brand, Docs and Ops teams.
+- Updated `docs/launch/TEAM_READ_ORDER_2026-05-11.md` to include the 11-agent batch files, Nguoi Viet handoff and mobile 5-doc bundle.
+- Aligned `docs/launch/NGUOIVIET_TEAM_HANDOFF_2026-05-12.md` and `docs/launch/NGUOIVIET_QA_CHECKLIST_2026-05-12.md` with the actual shipped route structure in `nguoiviet.muonnoi.org/public/sitemap.xml`.
+- Moved the Nguoi Viet source-of-truth into the repo lane: `nguoiviet.muonnoi.org/`.
+
+### True state after coordination pass
+- Nguoi Viet preview source is ready for team development from the repo.
+- Canonical DNS remains blocked by manual CNAME swap from Wix to Cloudflare Pages.
+- Payment/email real-operation gate remains blocked by missing implementation, provider credentials, Cloudflare secrets and QA execution.
+- Mobile native implementation remains gated behind Travel Quest web pilot stability and mobile backend endpoint readiness.
+
+### Team rule
+Every parallel team may proceed only in its owned lane. Release claims remain sequential and must follow the gate evidence files.

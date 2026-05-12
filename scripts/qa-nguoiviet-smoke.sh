@@ -58,7 +58,7 @@ SYS_ROUTES=(
   "/robots.txt"
   "/manifest.json"
 )
-LEGAL_ROUTES=("/privacy/" "/terms/" "/cookie/" "/license/")
+LEGAL_ROUTES=("/privacy/" "/terms/" "/refund/" "/community-guidelines/")
 
 echo "─── Routes (${#MAIN_ROUTES[@]} main + ${#SYS_ROUTES[@]} system) ───"
 for r in "${MAIN_ROUTES[@]}" "${SYS_ROUTES[@]}"; do

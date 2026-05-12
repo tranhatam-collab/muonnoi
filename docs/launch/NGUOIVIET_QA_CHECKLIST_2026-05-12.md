@@ -2,6 +2,8 @@
 
 Target: rubric 100/100 trên `nguoiviet.muonnoi.org` trước Gate 5 (2026-05-26). 100 điểm chia thành 10 nhóm theo rubric trong master plan. Tick từng item bằng `[x]` khi verified, kèm evidence (output curl, link Lighthouse, screenshot) nếu cần.
 
+Canonical routes are the routes currently shipped in `nguoiviet.muonnoi.org/public/sitemap.xml`: `/`, `/manifesto/`, `/journeys/`, `/journeys/dalat/`, `/start/`, `/host/`, `/stories/`, `/partners/`, `/members/`, `/resources/`, `/contact/`, `/privacy/`, `/terms/`, `/refund/`, `/community-guidelines/`.
+
 Verification convention:
 - `curl -I <url>` để check status + headers.
 - `curl -s <url> | grep <pattern>` để check inline content.
@@ -11,30 +13,34 @@ Verification convention:
 ## 1. Technical & Routing (15 items)
 
 - [ ] `curl -I https://nguoiviet.muonnoi.org/` returns `200` and `cf-ray` header (Cloudflare edge).
-- [ ] `curl -I https://nguoiviet.muonnoi.org/about/` returns `200`.
-- [ ] `curl -I https://nguoiviet.muonnoi.org/journey/` returns `200`.
-- [ ] `curl -I https://nguoiviet.muonnoi.org/pilot/` returns `200`.
-- [ ] `curl -I https://nguoiviet.muonnoi.org/community/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/manifesto/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/journeys/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/journeys/dalat/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/start/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/host/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/stories/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/partners/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/members/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/resources/` returns `200`.
 - [ ] `curl -I https://nguoiviet.muonnoi.org/contact/` returns `200`.
-- [ ] `curl -I https://nguoiviet.muonnoi.org/legal/privacy/` returns `200`.
-- [ ] `curl -I https://nguoiviet.muonnoi.org/legal/terms/` returns `200`.
-- [ ] `curl -I https://nguoiviet.muonnoi.org/legal/refund/` returns `200`.
-- [ ] `curl -I https://nguoiviet.muonnoi.org/legal/community-guidelines/` returns `200`.
-- [ ] `curl -I https://nguoiviet.muonnoi.org/newsletter/` returns `200` (11th route).
-- [ ] `curl https://nguoiviet.muonnoi.org/sitemap.xml` returns `200 + application/xml`, contains all 11 routes.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/privacy/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/terms/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/refund/` returns `200`.
+- [ ] `curl -I https://nguoiviet.muonnoi.org/community-guidelines/` returns `200`.
+- [ ] `curl https://nguoiviet.muonnoi.org/sitemap.xml` returns `200 + application/xml`, contains all 15 canonical routes.
 - [ ] `curl https://nguoiviet.muonnoi.org/robots.txt` returns `200`, contains `Sitemap:` directive.
-- [ ] `curl https://nguoiviet.muonnoi.org/manifest.webmanifest` returns `200 + application/manifest+json`.
+- [ ] `curl https://nguoiviet.muonnoi.org/manifest.json` returns `200 + application/manifest+json`.
 - [ ] `_headers` + `_redirects` parse correctly in Cloudflare Pages build log; 404 page renders custom design (not default Cloudflare).
 
 ## 2. Content & UX (15 items)
 
-- [ ] Hero section renders headline VI + EN subtitle, primary CTA `/pilot/`.
+- [ ] Hero section renders headline VI + EN subtitle, primary CTA `/start/`.
 - [ ] Manifesto section presents 3-5 core principles, claim-safe wording (no income promises).
 - [ ] Journey Map section illustrates diaspora flow (đi - về - kết nối).
 - [ ] Quest grid links to all 7 quest verticals on `*.muonnoi.org`.
 - [ ] Trust strip displays partners/credentials with logos.
-- [ ] Pilot CTA section links to `/pilot/` form with quota counter.
-- [ ] Newsletter section integrates with `/newsletter/` route + double opt-in flow.
+- [ ] Pilot CTA section links to `/journeys/dalat/` and `/start/`.
+- [ ] Newsletter intent is present only when backed by a real route or safe contact path.
 - [ ] Ecosystem cross-links section points to `www.muonnoi.org` and sibling subdomains.
 - [ ] FAQ section answers 8-12 common questions.
 - [ ] Footer matches `www.muonnoi.org` structure (4 columns + legal links).
@@ -62,7 +68,7 @@ Verification convention:
 ## 4. SEO (10 items)
 
 - [ ] Every page has `<link rel="canonical">` pointing to its own URL.
-- [ ] Every page has `<meta property="og:image">` pointing to `/assets/img/og.png`.
+- [ ] Every page has `<meta property="og:image">` pointing to `/assets/og.png` after the raster asset is created.
 - [ ] Every page has `<meta name="twitter:card" content="summary_large_image">`.
 - [ ] Homepage contains JSON-LD `Organization` block with `name`, `url`, `logo`.
 - [ ] Homepage contains JSON-LD `WebSite` block with `potentialAction` (SearchAction).
@@ -74,10 +80,10 @@ Verification convention:
 
 ## 5. Trust & Legal (8 items)
 
-- [ ] `/legal/privacy/` exists, includes GDPR + CCPA + Luật An ninh mạng VN sections.
-- [ ] `/legal/terms/` exists, defines user obligations, liability limits.
-- [ ] `/legal/refund/` exists, defines refund window for pilot fees (if applicable).
-- [ ] `/legal/community-guidelines/` exists, defines behavior standards.
+- [ ] `/privacy/` exists, includes GDPR + CCPA + Luật An ninh mạng VN sections.
+- [ ] `/terms/` exists, defines user obligations, liability limits.
+- [ ] `/refund/` exists, defines refund window for pilot fees (if applicable).
+- [ ] `/community-guidelines/` exists, defines behavior standards.
 - [ ] No income/salary promises across all pages (grep for `lương`, `thu nhập`, `kiếm tiền`, `salary`, `income`).
 - [ ] Footer disclaimer present on all 11 routes: "Người Việt Muôn Nơi không cam kết thu nhập...".
 - [ ] Privacy page lists data controller contact email.
@@ -98,20 +104,21 @@ Verification convention:
 
 ## 7. Wix Migration (10 items)
 
-- [ ] Legacy Wix URL `/about` redirects 301 to `/about/`.
+- [ ] Legacy Wix URL `/about` redirects 301 to `/manifesto/`.
 - [ ] Legacy Wix URL `/contact` redirects 301 to `/contact/`.
-- [ ] Legacy Wix URL `/blog` redirects 301 to `/journey/`.
-- [ ] Legacy Wix URL `/dalat` redirects 301 to `/pilot/`.
-- [ ] Legacy Wix URL `/community` redirects 301 to `/community/`.
-- [ ] Legacy Wix URL `/services` redirects 301 to `/journey/` or appropriate target.
-- [ ] Legacy Wix URL `/news` redirects 301 to `/newsletter/`.
-- [ ] Legacy Wix URL `/events` redirects 301 to `/pilot/`.
-- [ ] Legacy Wix URL `/membership` redirects 301 to `/community/`.
-- [ ] Legacy Wix URL `/payment` redirects 301 to `/legal/refund/`.
-- [ ] Legacy Wix URL `/team` redirects 301 to `/about/`.
-- [ ] Legacy Wix URL `/policy` redirects 301 to `/legal/privacy/`.
-- [ ] Legacy Wix URL `/refund-policy` redirects 301 to `/legal/refund/`.
-- [ ] Archive doc `docs/launch/NGUOIVIET_WIX_MIGRATION_ARCHIVE.md` exists (capture of old URLs + content snapshot).
+- [ ] Legacy Wix URL `/blog` redirects 301 to `/stories/`.
+- [ ] Legacy Wix URL `/dalat` redirects 301 to `/journeys/dalat/`.
+- [ ] Legacy Wix URL `/cuoc-song-muon-noi` redirects 301 to `/journeys/`.
+- [ ] Legacy Wix URL `/hanh-trinh` redirects 301 to `/journeys/`.
+- [ ] Legacy Wix URL `/csmn` redirects 301 to `/journeys/`.
+- [ ] Legacy Wix URL `/tham-gia` redirects 301 to `/start/`.
+- [ ] Legacy Wix URL `/groups` redirects 301 to `/members/`.
+- [ ] Legacy Wix URL `/plans-pricing` redirects 301 to `/start/`.
+- [ ] Legacy Wix URL `/file-share` redirects 301 to `/resources/`.
+- [ ] Legacy Wix URL `/book-online` redirects 301 to `/start/`.
+- [ ] Legacy Wix URL `/policy` redirects 301 to `/privacy/`.
+- [ ] Legacy Wix URL `/refund-policy` redirects 301 to `/refund/`.
+- [ ] Archive docs exist under `nguoiviet.muonnoi.org/docs/wix-content-archive/`.
 - [ ] All 13 redirects verified with `curl -I` returning `301 + Location:` header.
 
 ## 8. Operations (10 items)

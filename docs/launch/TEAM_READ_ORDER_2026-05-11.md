@@ -27,55 +27,68 @@ This read order is mandatory before implementation starts.
 13. `docs/launch/MUONNOI_LIFE_QUEST_OS_INTEGRATED_MASTER_PLAN_2026.md`
 14. `docs/launch/MUONNOI_LIFE_QUEST_OS_MOBILE_EXECUTION_MASTER_PLAN_2026-05-11.md`
 15. `docs/launch/MUONNOI_MASTER_PLAN_STATUS_2026-05-11.md`
-16. `docs/launch/MUONNOI_DNS_AND_SUBDOMAIN_EXECUTION_STATUS_2026-05-11.md`
-17. `docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`
-18. `docs/security/INFRASTRUCTURE_HOSTING_STRATEGY.md`
-19. `docs/security/SECURITY_ARCHITECTURE_MUONNOI_2026.md`
-20. `docs/security/SOURCE_CODE_PROTECTION_POLICY.md`
-21. `docs/security/API_SECURITY_BASELINE_ASVS_5.md`
-22. `docs/security/DATA_PROTECTION_AND_RETENTION_POLICY.md`
-23. `docs/security/LIFE_QUEST_ANTI_FRAUD_AND_REWARD_SECURITY.md`
-24. `docs/security/MULTI_CLOUD_DISASTER_RECOVERY_PLAN.md`
-25. `docs/security/INCIDENT_RESPONSE_RUNBOOK.md`
-26. `apps/mobile/MUONNOI_MOBILE_TEAM_HANDOFF_SPRINT_01_2026-05-11.md`
-27. `apps/mobile/MUONNOI_MOBILE_INFORMATION_ARCHITECTURE_2026-05-11.md`
-28. `apps/mobile/MUONNOI_MOBILE_SCREEN_FLOW_AND_STATE_MAP_2026-05-11.md`
-29. `api/contracts/MUONNOI_MOBILE_API_SCHEMA_AND_EXAMPLES_2026-05-11.md`
-30. `api/contracts/MUONNOI_SYNC_OFFLINE_CACHE_STRATEGY_2026-05-11.md`
-31. `apps/mobile/MUONNOI_NOTIFICATION_AND_EVENT_TAXONOMY_2026-05-11.md`
-32. `apps/mobile/MUONNOI_MOBILE_DESIGN_SYSTEM_LOCK_2026-05-11.md`
-33. `docs/launch/MUONNOI_PRIVACY_CONSENT_AND_PERMISSIONS_MATRIX_2026-05-11.md`
-34. `docs/launch/MUONNOI_STORE_SUBMISSION_REQUIREMENTS_2026-05-11.md`
-35. `qa/release-gates/MUONNOI_MOBILE_RELEASE_GATES_2026-05-11.md`
-36. `qa/release-gates/MUONNOI_RELEASE_RUNBOOK_2026-05-11.md`
-37. `qa/release-gates/MUONNOI_INCIDENT_RESPONSE_PLAYBOOK_2026-05-11.md`
-38. `qa/release-gates/MUONNOI_PAYMENT_EMAIL_PRODUCTION_GATE_CHECKLIST_2026-05-12.md`
+16. `docs/launch/MUONNOI_PARALLEL_DEV_COORDINATION_PLAN_2026-05-12.md`
+17. `docs/launch/MUONNOI_DNS_AND_SUBDOMAIN_EXECUTION_STATUS_2026-05-11.md`
+18. `docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`
+19. `docs/launch/NGUOIVIET_TEAM_HANDOFF_2026-05-12.md`
+20. `docs/launch/NGUOIVIET_QA_CHECKLIST_2026-05-12.md`
+21. `docs/launch/MUONNOI_MOBILE_TEAM_HANDOFF_INDEX_2026-05-12.md`
+22. `docs/security/INFRASTRUCTURE_HOSTING_STRATEGY.md`
+23. `docs/security/SECURITY_ARCHITECTURE_MUONNOI_2026.md`
+24. `docs/security/SOURCE_CODE_PROTECTION_POLICY.md`
+25. `docs/security/API_SECURITY_BASELINE_ASVS_5.md`
+26. `docs/security/DATA_PROTECTION_AND_RETENTION_POLICY.md`
+27. `docs/security/LIFE_QUEST_ANTI_FRAUD_AND_REWARD_SECURITY.md`
+28. `docs/security/MULTI_CLOUD_DISASTER_RECOVERY_PLAN.md`
+29. `docs/security/INCIDENT_RESPONSE_RUNBOOK.md`
+30. `apps/mobile/MUONNOI_MOBILE_APP_PLAN_2026-05-12.md`
+31. `apps/mobile/MOBILE_API_ENDPOINTS_MUONNOI_2026-05-12.md`
+32. `apps/mobile/MOBILE_OFFLINE_SYNC_PROTOCOL_2026-05-12.md`
+33. `apps/mobile/MOBILE_PRIVACY_AND_STORE_COMPLIANCE_2026-05-12.md`
+34. `apps/mobile/MOBILE_QA_AND_RELEASE_CHECKLIST_2026-05-12.md`
+35. `apps/mobile/MUONNOI_MOBILE_TEAM_HANDOFF_SPRINT_01_2026-05-11.md`
+36. `apps/mobile/MUONNOI_MOBILE_INFORMATION_ARCHITECTURE_2026-05-11.md`
+37. `apps/mobile/MUONNOI_MOBILE_SCREEN_FLOW_AND_STATE_MAP_2026-05-11.md`
+38. `api/contracts/MUONNOI_MOBILE_API_SCHEMA_AND_EXAMPLES_2026-05-11.md`
+39. `api/contracts/MUONNOI_SYNC_OFFLINE_CACHE_STRATEGY_2026-05-11.md`
+40. `apps/mobile/MUONNOI_NOTIFICATION_AND_EVENT_TAXONOMY_2026-05-11.md`
+41. `apps/mobile/MUONNOI_MOBILE_DESIGN_SYSTEM_LOCK_2026-05-11.md`
+42. `docs/launch/MUONNOI_PRIVACY_CONSENT_AND_PERMISSIONS_MATRIX_2026-05-11.md`
+43. `docs/launch/MUONNOI_STORE_SUBMISSION_REQUIREMENTS_2026-05-11.md`
+44. `qa/release-gates/MUONNOI_MOBILE_RELEASE_GATES_2026-05-11.md`
+45. `qa/release-gates/MUONNOI_RELEASE_RUNBOOK_2026-05-11.md`
+46. `qa/release-gates/MUONNOI_INCIDENT_RESPONSE_PLAYBOOK_2026-05-11.md`
+47. `qa/release-gates/MUONNOI_PAYMENT_EMAIL_PRODUCTION_GATE_CHECKLIST_2026-05-12.md`
 
 ## Team-specific first reads
 
 Product:
-- Read files 1-16 first.
+- Read files 1-21 first.
 - Then lock acceptance criteria from public, Life Quest and mobile files.
 
 Mobile:
-- Read files 25-31 first after files 1-16.
+- Read files 21 and 30-41 first after files 1-18.
 - Then implement against API and release gate files.
 
 API/AI:
-- Read files 29-30, 18-25 and 38 first after files 1-17.
+- Read files 31-32, 38-39, 22-29 and 47 first after files 1-18.
 - Then align payment, email, proof, auth, notification and sync contracts.
 
 Platform:
-- Read files 16-25 and 35-38 first after files 1-11.
+- Read files 16-29 and 44-47 first after files 1-11.
 - Then lock Cloudflare, deploy, DNS, secrets, rollback and incident ownership.
 
 QA/Trust:
-- Read files 1-11, 16-25, 27-38 first.
+- Read files 1-11, 16-29, 34-47 first.
 - Then create route, claim, release, permission, proof, payment and email test matrices.
 
 Web/Public:
 - Read files 1-11 and all files in `docs/brand` before editing public pages.
 - Then run brand QA, character hygiene, route and metadata gates.
+
+Nguoi Viet:
+- Read files 16, 19, 20 and `nguoiviet.muonnoi.org/README.md` first.
+- Then edit only `nguoiviet.muonnoi.org/public`, `nguoiviet.muonnoi.org/docs` and the related launch QA files.
 
 ## Day-1 rule
 
@@ -116,16 +129,21 @@ DONE:
 - Payment/email support contracts, evidence templates, redaction guide and verification scripts created.
 - DNS/body parity recheck passed on `https://www.muonnoi.org/` with header `200`, current brand text in body, and no legacy `Social Operating Space` phrase.
 - Public route audit passed with `200` on 27 planned launch routes.
+- 11-agent planning batch landed on `main` through commit `fbbfecd`.
+- Mobile 5-doc bundle completed and indexed in `docs/launch/MUONNOI_MOBILE_TEAM_HANDOFF_INDEX_2026-05-12.md`.
+- Người Việt Muôn Nơi source and docs are now controlled by the coordination plan in `docs/launch/MUONNOI_PARALLEL_DEV_COORDINATION_PLAN_2026-05-12.md`.
 
 NEED:
 - Docs hub publishing synchronization on `docs.muonnoi.org`.
 - Production payment/email transaction, webhook, email delivery and rollback evidence.
 - Source ownership lock for `ai.muonnoi.org`, `lamviec.muonnoi.org` and every planned public subdomain before those hosts become primary CTAs.
+- Commit and maintain `nguoiviet.muonnoi.org` source so Web, SEO, Brand, Legal and Ops can work from the same tree.
 
 NEXT:
 1. Platform resolves custom-domain source ownership for `ai.muonnoi.org`, `lamviec.muonnoi.org`, `lqos.muonnoi.org`, `dautu.muonnoi.org`, `duan.muonnoi.org`, `family.muonnoi.org` and `dulich.muonnoi.org`.
 2. Docs publish synchronized launch collections.
 3. API/Platform close payment-email gate evidence.
+4. Người Việt team closes DNS swap, `og.png`, Search Console and Wix redirect gates.
 
 Route matrix note:
 - Production host validation completed on `2026-05-12 +07` with `200` on launch routes and sitemap core routes.
