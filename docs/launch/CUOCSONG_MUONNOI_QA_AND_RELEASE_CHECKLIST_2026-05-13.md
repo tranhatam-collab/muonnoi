@@ -89,6 +89,7 @@ rg -n ">\\s*(VI|EN)\\s*<|Vietnamese|Tiếng Việt|English" cuocsong.muonnoi.org
 Pass condition:
 
 - Language labels match the locked wording.
+- Implemented-route note on 2026-05-13: `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/` all use `Tiếng Việt` and `English`, present `Cuộc Sống Muôn Nơi` as a Muôn Nơi module, and show no `VI` / `EN` shorthand labels in the audited route set.
 
 ### Gate 4 — Route and link smoke
 

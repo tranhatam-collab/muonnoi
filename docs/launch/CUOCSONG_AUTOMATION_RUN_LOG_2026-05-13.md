@@ -18,6 +18,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 01:33 | `:30` bucket | Team 7 | `DONE` | Commit `df9c317` refreshed DNS/custom-domain matrix and coordination plan to record `SOURCE_LOCAL_PREVIEW_AND_DNS_NOT_CONFIGURED` |
 | 2026-05-13 01:40 | `:40` | Team 9 | `BLOCKED` | Updated Team 9 gate note with explicit current true state and unblock order; payment, email and proof lanes still have no pass evidence |
 | 2026-05-13 01:45 | `:45` | Team 1 cross-team unblock | `DONE` | Updated coordination and QA docs to route current blockers to Team 4, Team 8 and Team 7 in the correct sequence; fixed stale 30-minute automation note to 5-minute cadence |
+| 2026-05-13 01:50 | `:50` | Team 1 highest-priority safe task | `DONE` | Audited brand/language markers across implemented routes, recorded Gate 3 evidence in the QA checklist, and removed stale `(planned)` labels from `/cong-dong/` links in implemented pages |
 
 ## Visibility note
 
