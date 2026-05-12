@@ -410,7 +410,7 @@ Every parallel team may proceed only in its owned lane. Release claims remain se
 - Cloudflare state: `NO_PROJECT_FOUND`.
 - Content state: `NEEDS_CLAIM_SAFE_REWRITE`.
 - Source path: `cuocsong.muonnoi.org/`.
-- Automation state: `SINGLE_30_MIN_COORDINATOR_LOOP_REQUESTED`.
+- Automation state: `SINGLE_30_MIN_COORDINATOR_LOOP_ACTIVE` (`muonnoi-cuocsong-auto-dev-30m`).
 
 ### Next gates
 1. Product approves the route priority and source path.

@@ -240,12 +240,18 @@ Hard stop rules:
 
 ## Current Run State
 
-Status: `AUTOMATION_PLAN_CREATED`
+Status: `AUTOMATION_ACTIVE`
+
+Automation:
+- ID: `muonnoi-cuocsong-auto-dev-30m`
+- Type: single heartbeat coordinator loop
+- Cadence: every 30 minutes
+- Owner: Team 1 admin
 
 Done:
 - Team map created.
 - Source path locked as `cuocsong.muonnoi.org/`.
-- Single automation loop defined.
+- Single automation loop defined and activated.
 
 Next safe task:
 - Team 3 writes first-sprint Vietnamese and English route copy for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/` and `/legal/disclaimer/`.
