@@ -76,6 +76,7 @@ Implemented routes reviewed:
 - `/gioi-thieu/`
 - `/song-o-nhieu-noi/`
 - `/cho-va-nhan/`
+- `/cong-dong/`
 - `/legal/disclaimer/`
 - `/legal/privacy/`
 - `/legal/terms/`
@@ -90,8 +91,13 @@ Route-level findings:
 
 Still pending:
 
-- Planned routes not yet implemented: `/lam-viec/`, `/hoc-tap/`, `/cong-dong/`, `/ho-tro/`, `/nha-chung/`, `/da-lat/`, `/cau-hoi/`, `/lien-he/`.
+- Planned routes not yet implemented: `/lam-viec/`, `/hoc-tap/`, `/ho-tro/`, `/nha-chung/`, `/da-lat/`, `/cau-hoi/`, `/lien-he/`.
 - Preview parity, DNS and live-host review.
+
+Incremental note on `2026-05-13 02:20 ICT`:
+
+- Re-scan of the implemented route set after recent copy edits still shows risk keywords only in disclaimer or prohibition contexts.
+- `/cong-dong/` is now part of the reviewed implemented route set.
 
 ## Gate Mapping
 
