@@ -105,7 +105,7 @@ Cuoc Song:
 - Drive source is historical material and must not be copied directly to public routes.
 - Source path is locked as `cuocsong.muonnoi.org/`.
 - Product, Content and Legal/Trust must approve first-sprint routes before preview deployment and wider route expansion.
-- `cuocsong.muonnoi.org` now has a local source tree, but still has no DNS answer and no Cloudflare Pages project as of 2026-05-13.
+- `cuocsong.muonnoi.org` now has a local source tree, no DNS answer, no Cloudflare Pages project, and Gate 5 metadata passes on the implemented route set as of 2026-05-13.
 - Public homepage CTAs remain blocked until DNS matrix marks the host `LIVE_LINK_ALLOWED`.
 
 Mobile:
@@ -142,8 +142,8 @@ Do not write vague states such as `almost done`, `ready enough`, `ok`, or `looks
 3. Re-run `scripts/brand-lint-muonnoi.sh .`.
 4. Re-run `scripts/qa-nguoiviet-smoke.sh https://nguoiviet-muonnoi-org.pages.dev`.
 5. Update this plan and `TEAM_READ_ORDER` with the final source-of-truth state.
-6. Team 4 and Team 8 should audit the current Cuộc Sống route set for brand, metadata, language labels and internal-link evidence before any preview deploy attempt.
-7. Team 7 should stay in preview/DNS prep only until Team 8 records route and metadata evidence for the current Cuộc Sống pages, now including `/ho-tro/`.
+6. Team 4 and Team 8 route-level brand, metadata, language-label and internal-link evidence is now recorded for the implemented Cuộc Sống route set, including `/cau-hoi/`.
+7. Team 7 should stay in preview/DNS prep only and update its source-of-truth docs for the current Cuộc Sống route set, now including `/cau-hoi/`; do not attach DNS or claim preview/live readiness yet.
 8. Team 1 automation now runs every 5 minutes as a single coordinator loop from `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`.
 
 ## Gate status
@@ -155,7 +155,7 @@ Do not write vague states such as `almost done`, `ready enough`, `ok`, or `looks
 | Nguoi Viet preview | PASS | `bash scripts/qa-nguoiviet-smoke.sh https://nguoiviet-muonnoi-org.pages.dev` passed |
 | Nguoi Viet canonical DNS | BLOCKED | manual DNS swap required |
 | Cuoc Song planning | PASS | source audit, master plan, content map, dev handoff, QA checklist and implementation plan exist |
-| Cuoc Song source/DNS | BLOCKED | local source exists, but there is still no DNS answer, no Cloudflare Pages project and no preview evidence yet |
+| Cuoc Song source/DNS | BLOCKED | local source exists and Gate 5 passes on implemented routes, but there is still no DNS answer, no Cloudflare Pages project and no preview evidence yet |
 | Payment/email real operation | BLOCKED | no deployed endpoints, providers, secrets or QA evidence |
 | Mobile Sprint 0 planning | PASS | 5-doc mobile bundle complete |
 | Mobile native build | BLOCKED | gate requires web pilot stability and mobile backend endpoints |

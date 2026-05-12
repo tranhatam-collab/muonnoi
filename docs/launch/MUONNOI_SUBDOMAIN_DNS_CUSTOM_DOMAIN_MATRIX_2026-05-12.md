@@ -14,7 +14,7 @@ Evidence commands used:
 Additional evidence on `2026-05-13 +07`:
 - `dig +short cuocsong.muonnoi.org` returned no answer.
 - `wrangler pages project list | rg -i "cuoc|song|cuocsong"` returned no matching Pages project or custom-domain entry.
-- Local repo scan now confirms a dedicated `cuocsong.muonnoi.org/` source tree with local drafts for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, legal routes, `_headers`, `_redirects`, `robots.txt`, `sitemap.xml` and `wrangler.toml`, but the source set is still local-only and not yet attached to Cloudflare Pages.
+- Local repo scan now confirms a dedicated `cuocsong.muonnoi.org/` source tree with local drafts for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/cau-hoi/`, legal routes, `_headers`, `_redirects`, `robots.txt`, `sitemap.xml` and `wrangler.toml`, but the source set is still local-only and not yet attached to Cloudflare Pages.
 
 ## Cloudflare Pages projects confirmed
 | Project | Custom domains visible in Pages list | State |
@@ -48,7 +48,7 @@ Additional evidence on `2026-05-13 +07`:
 | `sangtao.muonnoi.org` | creation quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `congdong.muonnoi.org` | community quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `nguoiviet.muonnoi.org` | Vietnamese Global Journey layer (Người Việt Muôn Nơi) | currently CNAME `pointing.wixdns.net` (legacy Wix) | preview at `https://nguoiviet-muonnoi-org.pages.dev/` returned `200`; custom domain attached on 2026-05-12, status `pending` (CNAME not set) | `nguoiviet-muonnoi-org` Pages project includes custom domain row (pending DNS) | `PENDING_DNS_SWAP_FROM_WIX_TO_PAGES` |
-| `cuocsong.muonnoi.org` | living-practice layer (Cuộc Sống Muôn Nơi) | no DNS answer on 2026-05-13 | local-only route smoke exists for implemented pages including `/cong-dong/` and `/ho-tro/`; no live HTTPS probe because DNS is not configured | no Pages project or custom-domain row matched `cuoc/song/cuocsong`; dedicated local source tree now exists | `SOURCE_LOCAL_PREVIEW_AND_DNS_NOT_CONFIGURED` |
+| `cuocsong.muonnoi.org` | living-practice layer (Cuộc Sống Muôn Nơi) | no DNS answer on 2026-05-13 | local-only route smoke exists for implemented pages including `/cong-dong/`, `/ho-tro/`, and `/cau-hoi/`; Gate 5 metadata now passes on the implemented route set; no live HTTPS probe because DNS is not configured | no Pages project or custom-domain row matched `cuoc/song/cuocsong`; dedicated local source tree now exists | `SOURCE_LOCAL_PREVIEW_AND_DNS_NOT_CONFIGURED` |
 | `trust.muonnoi.org` | trust and complaints layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `nhachung.muonnoi.org` | housing/community layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `node.muonnoi.org` | node/technical lane | `104.21.93.187` | not probed in this run | `muonnoi-node` project includes node and www.node | `LIVE_BUT_NOT_PUBLIC_PRIMARY` |
@@ -97,7 +97,7 @@ Use internal routes instead until each host has Cloudflare custom-domain evidenc
 Platform:
 - resolve the source ownership for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
 - add Cloudflare Pages custom-domain evidence or Worker route evidence for each planned host before public linking.
-- keep `cuocsong.muonnoi.org` blocked from public linking until preview, DNS and HTTPS evidence exist, even though the local source tree now exists.
+- keep `cuocsong.muonnoi.org` blocked from public linking until preview, DNS and HTTPS evidence exist, even though the local source tree now exists and Gate 5 passes for the implemented route set.
 
 Web/Public:
 - keep planned but unverified subdomains as internal links.
