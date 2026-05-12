@@ -25,6 +25,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 02:10 | `:10` | Team 3 | `DONE` | Aligned homepage CTA copy and footer wording with the content map's bilingual direction, without changing route scope or adding any blocked CTA |
 | 2026-05-13 02:15 | `:15` | Team 4 | `DONE` | Recorded brand and bilingual QA evidence in Gate 3: implemented headers keep Muôn Nơi as master brand, use `Tiếng Việt` and `English`, and avoid `VI` / `EN` shorthand or separate-brand framing |
 | 2026-05-13 02:20 | `:20` | Team 5 | `DONE` | Refreshed legal/trust review after recent copy changes, added `/cong-dong/` to the reviewed implemented route set, and confirmed risk keywords still appear only in disclaimer or prohibition contexts |
+| 2026-05-13 02:25 | `:25` | Team 6 | `DONE` | Added `/ho-tro/` static route plus sitemap and redirect entries, then recorded local `200` smoke evidence for `/ho-tro/index.html` in the QA checklist |
 
 ## Visibility note
 
