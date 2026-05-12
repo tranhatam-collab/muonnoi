@@ -276,3 +276,88 @@ Scaffold:
 - `apps/mobile/src/lib`
 - `apps/mobile/src/theme`
 - `apps/mobile/src/contracts`
+
+## Update 2026-05-12 — Nguoiviet layer integrated
+
+### What changed
+- New Cloudflare Pages project `nguoiviet-muonnoi-org` deployed at `https://nguoiviet-muonnoi-org.pages.dev/`.
+- Subdomain `nguoiviet.muonnoi.org` registered, custom domain attached to the Pages project (DNS pending swap from Wix).
+- Main shell `www.muonnoi.org` homepage updated with an `infoCard` linking to Người Việt Muôn Nơi, integrating it into the public ecosystem entry surface.
+- DNS matrix updated (commit `75c3236`) to include the new subdomain alongside `dulich`, `hoctap`, `suckhoe`, `sangtao`, `congdong`, `lamviec`, `nhachung`, `dautu`, `duan`, `trust`.
+- Master plan for the Vietnamese Global Journey branch published at `nguoiviet.muonnoi.org/docs/NGUOIVIET_MUONNOI_MASTER_PLAN_2026-05-12.md` (rubric 92/100 at deploy time).
+
+### New layer position
+The ecosystem map now reads:
+
+- Layer 1 — Public shell: `www.muonnoi.org` (homepage, ecosystem, roadmap, manifesto, about, press, newsletter, security, guide, verify).
+- Layer 1b — Diaspora / Vietnamese Global Journey: `nguoiviet.muonnoi.org` (NEW; brand v2.0, Azure/Whisper/Gold tokens, Be Vietnam Pro). This sits beside the public shell and feeds into the quest layer for the Đà Lạt pilot intake.
+- Layer 2 — Social / app: `app.muonnoi.org`.
+- Layer 3 — Trust: `trust.muonnoi.org` (planned).
+- Layer 4 — Life Quest verticals: `dulich`, `hoctap`, `suckhoe`, `sangtao`, `congdong`, `lamviec`, `nhachung`, `dautu`, `duan`.
+- Docs/API: `docs.muonnoi.org`, `api.muonnoi.org`, `ai.muonnoi.org`.
+
+`nguoiviet.muonnoi.org` is the canonical surface for diaspora-facing content; legacy Wix site `nguoivietmuonnoi.com` will be redirected to it in Phase 5.
+
+### Migration context
+- Source: `nguoivietmuonnoi.com` (Wix, legacy).
+- Target: `nguoiviet.muonnoi.org` (Cloudflare Pages, brand v2.0).
+- Master plan: `nguoiviet.muonnoi.org/docs/NGUOIVIET_MUONNOI_MASTER_PLAN_2026-05-12.md`.
+- Rubric: 92/100 at deploy time, target 100/100 after DNS swap + assets + legal pages.
+
+### Next gates
+1. DNS swap (manual user step in the Cloudflare dashboard) to move `nguoiviet.muonnoi.org` off the Wix CNAME chain.
+2. `og.png` brand asset for OpenGraph/Twitter card sharing.
+3. Privacy, Terms and Refund pages published under `nguoiviet.muonnoi.org/legal/`.
+4. Wix to new redirect on the legacy `nguoivietmuonnoi.com` domain (Phase 5).
+5. Search Console submission for `nguoiviet.muonnoi.org` (property + sitemap).
+
+## Update 2026-05-12 — Mobile workstream rebooted (RN+Expo)
+
+### What changed
+- Mobile master plan v1.0 ban hành: `apps/mobile/MUONNOI_MOBILE_APP_PLAN_2026-05-12.md`.
+- Tech stack đổi từ Capacitor (legacy `app.muonnoi.org` mobile-shell) sang React Native + Expo (stable latest tại thời điểm triển khai, không khoá cứng SDK).
+- 4 file deliverable đi kèm (do agents khác viết song song): API endpoints, offline sync protocol, privacy + store compliance, QA + release checklist.
+- Trạng thái: PLANNED — build sau khi Travel Quest web pilot Đà Lạt ổn (gate dependency).
+
+### Tech stack lock
+- Framework: React Native + Expo (stable latest, không khoá SDK version)
+- Build: EAS Build
+- Updates: EAS Update (JS-only changes)
+- Navigation: Expo Router (file-based, universal links built-in)
+- State: Zustand (client) + TanStack Query v5 (server)
+- Auth: JWT SSO với `identity.muonnoi.org` + biometric local (Keychain/Keystore)
+- Backend: `api.muonnoi.org` existing Cloudflare Workers + D1 + R2 (mobile endpoints extension)
+- Crash/Perf: Sentry (minimal, no third-party analytics)
+- Push: APNs (iOS) + FCM messaging-only (Android, KHÔNG bật Firebase Analytics)
+
+### Nguyên tắc bất biến mobile (10 điều)
+1. Không tracking pixel.
+2. Không third-party analytics SDK (no Firebase Analytics, GA, Mixpanel, Amplitude, AppsFlyer, Adjust, Crashlytics).
+3. Không tối ưu time spent.
+4. Không infinite scroll gây nghiện.
+5. Camera/GPS chỉ dùng khi người dùng thực hiện proof.
+6. Dữ liệu tối thiểu, khai báo đúng App Store Privacy + Google Play Data Safety.
+7. Offline-first bắt buộc cho Travel Quest.
+8. Push notification mặc định opt-in, giới hạn tần suất (max 1 push/day per user).
+9. App đồng bộ với `muonnoi.org`, `app.muonnoi.org`, `dulich.muonnoi.org` và Life Quest OS.
+10. Link bền (universal links / deep links).
+
+### Gate dependencies
+1. Travel Quest web pilot ≥ 1 tháng stable trên `dulich.muonnoi.org`.
+2. Backend proof/reward endpoints có ≥ 100 receipt issued (real data, not test).
+3. 50+ Local Host onboarded (Đà Lạt pilot baseline).
+4. `api.muonnoi.org` extended với mobile-specific endpoints (`/api/mobile/*`).
+
+### Timeline target
+- MVP: Tháng 7-9 2026 (12 tuần sprint, sau Đà Lạt soft launch May-June 2026).
+- V1: Tháng 10-12 2026 (multi-quest: Học Đời + Family + chochoi hub + EN).
+- V2: Q1-Q2 2027 (full 7-quest ecosystem + AI tools + chat + VC receipt export).
+
+### Legacy Capacitor `app.muonnoi.org` mobile-shell
+- Status: deprecated cho mobile native app.
+- Vẫn giữ làm PWA bridge cho web/mobile fallback (không gỡ).
+- KHÔNG mở rộng feature trên Capacitor — feature mới đi vào RN+Expo plan.
+- Predecessor doc: `apps/mobile/MUONNOI_MOBILE_TEAM_HANDOFF_SPRINT_01_2026-05-11.md` (Capacitor era, superseded).
+
+### Team handoff index
+- New doc: `docs/launch/MUONNOI_MOBILE_TEAM_HANDOFF_INDEX_2026-05-12.md` (consolidates 5 deliverable files + roles + sprint plan + approval gates).

@@ -46,7 +46,13 @@ echo "─── Word filter (live public surface only) ───"
 PUBLIC_ROOTS=()
 [ -d "$TARGET/apps/web/public" ] && PUBLIC_ROOTS+=("$TARGET/apps/web/public")
 [ -d "$TARGET/docs.muonnoi.org/public" ] && PUBLIC_ROOTS+=("$TARGET/docs.muonnoi.org/public")
+[ -d "$TARGET/nguoiviet.muonnoi.org/public" ] && PUBLIC_ROOTS+=("$TARGET/nguoiviet.muonnoi.org/public")
 [ ${#PUBLIC_ROOTS[@]} -eq 0 ] && [ -d "$TARGET" ] && PUBLIC_ROOTS+=("$TARGET")
+
+# Log which public surfaces are being scanned
+for root in "${PUBLIC_ROOTS[@]}"; do
+  echo "  scanning: $root"
+done
 
 PUBLIC_FILES=$(find "${PUBLIC_ROOTS[@]}" -maxdepth 6 -type f \
   \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.json" -o -name "*.txt" \) \
