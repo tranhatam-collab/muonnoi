@@ -96,6 +96,10 @@ Pass condition:
   - `cuocsong.muonnoi.org/public/gioi-thieu/index.html` keeps `Muôn Nơi · Cuộc Sống Muôn Nơi` in the route header
   - the page still uses written language labels `Tiếng Việt` and `English`
   - the newly added `/ho-tro/` internal link fits the approved content map without introducing shorthand labels or separate-brand framing
+- Team 4 route recheck on 2026-05-13 after source commit `c57610e`:
+  - `cuocsong.muonnoi.org/public/cho-va-nhan/index.html` still keeps `Muôn Nơi · Cuộc Sống Muôn Nơi` in the route header
+  - the page still uses written language labels `Tiếng Việt` and `English`
+  - removing the stale `(planned)` label from `/ho-tro/` does not change brand framing, bilingual structure, or the approved non-transactional route role
 
 ### Gate 4 — Route and link smoke
 
