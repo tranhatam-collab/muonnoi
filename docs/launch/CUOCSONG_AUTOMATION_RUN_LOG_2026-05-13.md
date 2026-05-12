@@ -48,6 +48,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 04:10 | `:10` | Team 3 | `DONE` | Aligned `/cho-va-nhan/` with the implemented route set by removing the stale `(planned)` label from the `/ho-tro/` internal link, then verified the route still contains the expected related-links block and `/ho-tro/` target with `rg` |
 | 2026-05-13 04:15 | `:15` | Team 4 | `DONE` | Rechecked `/cho-va-nhan/` after commit `c57610e`: the route still uses `Muôn Nơi · Cuộc Sống Muôn Nơi`, keeps the written labels `Tiếng Việt` and `English`, and the `/ho-tro/` link update does not change brand framing or bilingual structure |
 | 2026-05-13 04:25 | `:25` | Team 6 | `DONE` | Added the new `/da-lat/` route, updated `sitemap.xml` and `_redirects`, removed the stale `(planned)` label from `/song-o-nhieu-noi/` now that `/da-lat/` exists locally, and recorded local `200` smoke evidence for `/da-lat/index.html` |
+| 2026-05-13 04:35 | `:35` | Team 8 | `DONE` | Rechecked `/da-lat/` after commit `18d8609`: the route meets the implemented metadata baseline, `sitemap.xml` includes `/da-lat/`, and the remaining missing local targets are still intentional planned links only: `/nha-chung/`, `/lien-he/`, `/hoc-tap/` |
 
 ## Visibility note
 

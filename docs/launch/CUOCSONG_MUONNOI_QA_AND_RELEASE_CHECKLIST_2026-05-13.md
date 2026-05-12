@@ -170,6 +170,11 @@ rg -n 'hreflang="vi"|hreflang="en"|og:title|og:description|og:image|og:url|twitt
   - `sitemap.xml` now includes `/cau-hoi/`
   - `robots.txt` remains present and intentional
   - Gate 5 now moves from `PARTIAL_NOT_PASS` to `IMPLEMENTED_ROUTE_SET_PASS`
+- Team 8 route-set refresh on 2026-05-13 after source commit `18d8609`:
+  - rechecked `/da-lat/` and confirmed `title`, `description`, `canonical`, `hreflang vi`, `hreflang en`, `og:title`, `og:description`, `og:image`, and one `h1`
+  - confirmed `sitemap.xml` now includes `/da-lat/`
+  - internal-link remainder stays intentionally planned only: `/nha-chung/`, `/lien-he/`, `/hoc-tap/`
+  - Gate 5 remains `IMPLEMENTED_ROUTE_SET_PASS`
 
 ### Gate 6 — Accessibility basic
 
