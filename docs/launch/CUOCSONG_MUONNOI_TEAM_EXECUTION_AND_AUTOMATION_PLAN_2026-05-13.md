@@ -27,7 +27,7 @@ Reason:
 | Team 3 | Content writing | Vietnamese and English page drafts, internal link logic | Yes | Blocks web source |
 | Team 4 | Brand and bilingual QA | Brandpro voice, names, language labels, UI wording | Yes | Blocks brand gate |
 | Team 5 | Legal, trust and claim safety | Disclaimers, banned claims, partner/regulated-topic boundary | Yes | Blocks public release |
-| Team 6 | Web implementation | `cuocsong.muonnoi.org/public/*`, sitemap, headers, redirects | After Team 2-5 first-sprint approval | Blocks preview |
+| Team 6 | Web implementation | `cuocsong.muonnoi.org/public/*`, sitemap, headers, redirects | Yes (no deploy/DNS actions before Team 4/5/8 gates) | Blocks preview |
 | Team 7 | Platform and DNS | Cloudflare Pages, preview deploy, custom domain, DNS evidence | After source and preview QA | Blocks live host |
 | Team 8 | QA, SEO and evidence | Route smoke, metadata, accessibility, claim scan, release checklist | Prep now, execute after source | Blocks homepage link |
 | Team 9 | API/Ops later phase | Intake, email receipt, proof/host integration | No | Blocked by payment/email/proof gates |
@@ -120,6 +120,7 @@ Output:
 Files:
 - `docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_TEAM5_LEGAL_TRUST_REVIEW_2026-05-13.md`
 - future legal pages.
 
 Tasks:
@@ -129,7 +130,7 @@ Tasks:
 4. Approve safe wording for Đà Lạt, Nhà Chung and support directory.
 
 Output:
-- Legal/trust pass or blocker note.
+- Legal/trust pass or blocker note in `docs/launch/CUOCSONG_MUONNOI_TEAM5_LEGAL_TRUST_REVIEW_2026-05-13.md`.
 
 ### Team 6 — Web Implementation
 
@@ -185,6 +186,9 @@ Output:
 
 Status: blocked.
 
+Files:
+- `docs/launch/CUOCSONG_MUONNOI_TEAM9_API_OPS_GATE_NOTES_2026-05-13.md`
+
 Blocked by:
 - Payment/email gate.
 - Email/contact evidence.
@@ -201,14 +205,36 @@ Not allowed now:
 - Email capture form.
 - Proof receipt claim.
 
+Output:
+- Team 9 contract/gate note stays updated until the three gates pass.
+
 ## Automation Loop
 
-Cadence: every 30 minutes.
+Cadence: every 5 minutes.
 
 Reason:
-- Fast enough for continuous progress.
-- Low enough load to avoid repeating the earlier RAM/background-process problem.
-- One coordinator loop can route work without spawning many live model jobs.
+- This matches the requested team staggering.
+- It keeps one active coordinator instead of many simultaneous background jobs.
+- It reduces idle gaps while still avoiding the RAM cost of multiple independent automations.
+
+## Team Slot Rotation
+
+One automation run happens every 5 minutes. Each run focuses on one team slot.
+
+| Minute slot | Team focus | Expected action |
+|---|---|---|
+| `:00` | Team 1 | Admin coordination, status sync, blocker routing |
+| `:05` | Team 2 | Product and route-priority confirmation |
+| `:10` | Team 3 | Content writing and copy refinement |
+| `:15` | Team 4 | Brand and bilingual QA |
+| `:20` | Team 5 | Legal/trust claim review |
+| `:25` | Team 6 | Web implementation |
+| `:30` | Team 7 | Platform, preview and DNS evidence prep |
+| `:35` | Team 8 | QA, SEO and release evidence |
+| `:40` | Team 9 | API/Ops gate notes only until unblocked |
+| `:45` | Team 1 | Cross-team unblock and checklist sync |
+| `:50` | Team 1 | Highest-priority safe task regardless of team |
+| `:55` | Team 1 | Final status sync before the next hourly cycle |
 
 Loop input files:
 - `docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md`
@@ -216,20 +242,25 @@ Loop input files:
 - `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_TEAM5_LEGAL_TRUST_REVIEW_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_TEAM9_API_OPS_GATE_NOTES_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`
 - `docs/launch/MUONNOI_PARALLEL_DEV_COORDINATION_PLAN_2026-05-12.md`
 - `docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`
 
 Loop decision order:
-1. If source path is not locked, lock it.
-2. If first-sprint content is not written, write or refine the next page.
-3. If legal disclaimer is missing, write it before regulated-topic pages.
-4. If source tree is missing, create source.
-5. If source exists but QA is missing, run local QA and update checklist.
-6. If local QA passes and no preview exists, deploy preview.
-7. If preview passes and DNS is approved, attach custom domain.
-8. If DNS/live checks pass, update homepage and DNS matrix.
-9. If all gates pass, pause the automation and report `CUOCSONG_MUONNOI_COMPLETE`.
+1. Resolve the current run's team slot from the minute bucket.
+2. Execute that team's highest-priority safe task first.
+3. If the slot team is blocked, Team 1 routes the blocker and uses the run for the next safest cross-team task.
+4. If source path is not locked, lock it.
+5. If first-sprint content is not written, write or refine the next page.
+6. If legal disclaimer is missing, write it before regulated-topic pages.
+7. If source tree is missing, create source.
+8. If source exists but QA is missing, run local QA and update checklist.
+9. If local QA passes and no preview exists, deploy preview.
+10. If preview passes and DNS is approved, attach custom domain.
+11. If DNS/live checks pass, update homepage and DNS matrix.
+12. If all gates pass, pause the automation and report `CUOCSONG_MUONNOI_COMPLETE`.
 
 Hard stop rules:
 - Do not deploy if claim scan fails.
@@ -245,13 +276,17 @@ Status: `AUTOMATION_ACTIVE`
 Automation:
 - ID: `muonnoi-cuocsong-auto-dev-30m`
 - Type: single heartbeat coordinator loop
-- Cadence: every 30 minutes
+- Cadence: every 5 minutes
 - Owner: Team 1 admin
 
 Done:
 - Team map created.
 - Source path locked as `cuocsong.muonnoi.org/`.
 - Single automation loop defined and activated.
+- Team 5 policy baseline reviewed and recorded in `docs/launch/CUOCSONG_MUONNOI_TEAM5_LEGAL_TRUST_REVIEW_2026-05-13.md`.
+- Automation prompt aligned to Team 6 web lane (`muonnoi-cuocsong-auto-dev-30m`).
+- Team 6 created static source tree in `cuocsong.muonnoi.org/` with first-sprint routes and legal baseline pages.
+- Local route smoke passed for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`.
 
 Next safe task:
-- Team 3 writes first-sprint Vietnamese and English route copy for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/` and `/legal/disclaimer/`.
+- Team 4 and Team 5 run route-level brand/legal signoff on implemented pages, then Team 8 executes internal-link and metadata audits before preview deploy gating.
