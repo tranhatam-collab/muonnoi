@@ -54,6 +54,15 @@ Team 1 must not claim:
 
 unless the evidence files show it.
 
+## Current Active Handoff
+
+As of `2026-05-13 02:00 ICT`:
+
+- Current next owner: `Team 8`
+- Current highest-priority safe task: metadata and internal-link evidence on the implemented route set
+- Current downstream blocker: `Team 7` must stay in preview/DNS prep only until Team 8 records that evidence
+- Current hard blocker: payment, email and proof gates remain closed for Team 9
+
 ## Parallel Work Allocation
 
 ### Team 2 — Product and Content Architecture
