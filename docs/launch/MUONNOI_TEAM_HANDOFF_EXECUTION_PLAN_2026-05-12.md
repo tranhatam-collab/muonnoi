@@ -2,6 +2,33 @@
 
 **Timeline**: 2026-05-12 to 2026-05-13 08:00 ICT (24 hours to release-ready claim)
 
+## Support toolkit update · 2026-05-12 08:18 ICT
+
+Status:
+- API contract templates are now created for payment and email.
+- Platform and QA evidence templates are now created, but real production evidence is still missing.
+- `scripts/verify-payment-email-gate.sh` confirms the gate is still `BLOCKED` until real evidence files are filled.
+- `scripts/recheck-dns-body-parity.sh` passed on `https://www.muonnoi.org/`: header `200`, body contains the current Muonnoi brand text, and the old `Social Operating Space` phrase is absent.
+- `scripts/audit-routes.sh` passed: all 27 audited public routes returned `200`.
+- `scripts/validate-subdomain-sources.sh` ran read-only against Cloudflare, DNS and HTTPS.
+
+New support files:
+- `docs/api/MUONNOI_PAYMENT_API_CONTRACT_V1.md`
+- `docs/api/MUONNOI_EMAIL_API_CONTRACT_V1.md`
+- `docs/platform/MUONNOI_API_DEPLOYMENT_EVIDENCE_TEMPLATE_2026-05-12.md`
+- `qa/release-gates/MUONNOI_PAYMENT_EMAIL_TEST_EVIDENCE_TEMPLATE_2026-05-12.md`
+- `qa/release-gates/MUONNOI_EVIDENCE_REDACTION_GUIDELINES_2026-05-12.md`
+- `scripts/verify-payment-email-gate.sh`
+- `scripts/recheck-dns-body-parity.sh`
+- `scripts/validate-subdomain-sources.sh`
+- `scripts/audit-routes.sh`
+
+Hard truth:
+- Do not claim `PAYMENT_EMAIL_REAL_OPERATION_PASS` yet.
+- Do not promote `lqos`, `dautu`, `duan`, `family` or `dulich` as primary live CTAs yet.
+- Current read-only probe saw `lqos`, `dautu`, `duan` and `family` resolving to `115.146.121.120` with HTTPS status `000`; `dulich` returned `NO_ANSWER`.
+- `ai.muonnoi.org`, `api.muonnoi.org`, `app.muonnoi.org`, `docs.muonnoi.org`, `lamviec.muonnoi.org`, `muonnoi.org`, `www.muonnoi.org` and `node.muonnoi.org` returned `200`, but source ownership still must be locked where the Pages/Worker source is not explicit.
+
 ---
 
 ## CRITICAL PATH: Payment/Email Gate (4–6 hours, sequential)
@@ -46,7 +73,7 @@ git log --all -p | grep -i "stripe_key\|sendgrid_key\|api_token" | wc -l # shoul
 ```
 
 **Assignee**: API team lead  
-**Status**: 🔴 BLOCKED_BY_DOCUMENTATION
+**Status**: 🟡 CONTRACT_TEMPLATES_READY__AWAITING_PROVIDER_AND_PRODUCTION_EVIDENCE
 
 ---
 
@@ -96,7 +123,7 @@ git log --all -p | grep -i "stripe_key\|sendgrid_key\|api_token" | wc -l # shoul
    - CORS test result
 
 **Assignee**: Platform/DevOps lead  
-**Status**: 🔴 BLOCKED_BY_VERIFICATION
+**Status**: 🟡 EVIDENCE_TEMPLATE_READY__BLOCKED_BY_DEPLOYMENT_PROOF
 
 ---
 
@@ -196,7 +223,7 @@ Result: ✅ PASS
 - Curl commands used (sanitized)
 
 **Assignee**: QA lead + test engineer  
-**Status**: 🔴 BLOCKED_BY_EXECUTION
+**Status**: 🟡 QA_TEMPLATE_READY__BLOCKED_BY_EXECUTION
 
 ---
 
@@ -240,6 +267,13 @@ curl -I https://lamviec.muonnoi.org/
 **Assignee**: Platform lead  
 **Status**: 🔴 BLOCKED_BY_VERIFICATION
 
+Latest probe summary:
+- `ai.muonnoi.org`: DNS resolved, HTTPS returned `200`, source lock still required.
+- `lamviec.muonnoi.org`: DNS resolved, HTTPS returned `200`, source lock still required.
+- `api.muonnoi.org/api/health`: DNS resolved, HTTPS returned `200`, Worker route evidence still required in the platform evidence file.
+- `lqos.muonnoi.org`, `dautu.muonnoi.org`, `duan.muonnoi.org`, `family.muonnoi.org`: DNS resolved to `115.146.121.120`, HTTPS returned `000`.
+- `dulich.muonnoi.org`: DNS returned `NO_ANSWER`, HTTPS returned `000`.
+
 ---
 
 ## DNS/BODY PARITY RECHECK (30 minutes, can start now)
@@ -273,10 +307,10 @@ curl -I https://lamviec.muonnoi.org/
    - All 5 routes status
    - Pass/fail verdict
 
-**When to run**: After 2026-05-12 12:00 ICT (6+ hours post-deploy for DNS propagation)
+**When to run**: Completed once at 2026-05-12 08:18 ICT. Re-run after any DNS, Pages or Worker change.
 
 **Assignee**: QA or web team  
-**Status**: ⏳ PENDING_DNS_STABILIZATION
+**Status**: ✅ PASS_ON_2026_05_12_0818_ICT
 
 ---
 
@@ -309,7 +343,7 @@ curl -I https://lamviec.muonnoi.org/
 **File**: `qa/MUONNOI_PUBLIC_ROUTES_AUDIT_2026-05-12.md`
 
 **Assignee**: Web team lead  
-**Status**: 🟡 IN_PROGRESS (no blockers)
+**Status**: ✅ ROUTE_AUDIT_PASS_ON_2026_05_12_0818_ICT
 
 ---
 

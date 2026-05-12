@@ -89,6 +89,19 @@ Brand rule:
 No team starts public expansion work until payment and email operations are marked `PAYMENT_EMAIL_REAL_OPERATION_PASS` in the master plan.
 The closeout checklist is `qa/release-gates/MUONNOI_PAYMENT_EMAIL_PRODUCTION_GATE_CHECKLIST_2026-05-12.md`.
 
+Payment/email support files:
+- `docs/api/MUONNOI_PAYMENT_API_CONTRACT_V1.md`
+- `docs/api/MUONNOI_EMAIL_API_CONTRACT_V1.md`
+- `docs/platform/MUONNOI_API_DEPLOYMENT_EVIDENCE_TEMPLATE_2026-05-12.md`
+- `qa/release-gates/MUONNOI_PAYMENT_EMAIL_TEST_EVIDENCE_TEMPLATE_2026-05-12.md`
+- `qa/release-gates/MUONNOI_EVIDENCE_REDACTION_GUIDELINES_2026-05-12.md`
+
+Verification scripts:
+- `scripts/verify-payment-email-gate.sh`
+- `scripts/recheck-dns-body-parity.sh`
+- `scripts/validate-subdomain-sources.sh`
+- `scripts/audit-routes.sh`
+
 ## Live progress update 2026-05-12
 DONE:
 - Public launch routes implemented and deployed:
@@ -100,14 +113,17 @@ DONE:
 - Payment/email production gate checklist created for API + Platform + QA.
 - Production deploy completed on Cloudflare Pages project `muonnoi`:
 `https://95e0ea23.muonnoi.pages.dev`
+- Payment/email support contracts, evidence templates, redaction guide and verification scripts created.
+- DNS/body parity recheck passed on `https://www.muonnoi.org/` with header `200`, current brand text in body, and no legacy `Social Operating Space` phrase.
+- Public route audit passed with `200` on 27 planned launch routes.
 
 NEED:
 - Docs hub publishing synchronization on `docs.muonnoi.org`.
 - Production payment/email transaction, webhook, email delivery and rollback evidence.
-- Follow-up body parity check on `https://www.muonnoi.org/` after DNS/edge propagation.
+- Source ownership lock for `ai.muonnoi.org`, `lamviec.muonnoi.org` and every planned public subdomain before those hosts become primary CTAs.
 
 NEXT:
-1. Platform resolves custom-domain source ownership for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
+1. Platform resolves custom-domain source ownership for `ai.muonnoi.org`, `lamviec.muonnoi.org`, `lqos.muonnoi.org`, `dautu.muonnoi.org`, `duan.muonnoi.org`, `family.muonnoi.org` and `dulich.muonnoi.org`.
 2. Docs publish synchronized launch collections.
 3. API/Platform close payment-email gate evidence.
 

@@ -15,6 +15,11 @@ Known evidence from this run:
 - `https://api.muonnoi.org/api/health` returned `200`.
 - `https://api.muonnoi.org/health` returned `404`; the valid health path is `/api/health`.
 - Cloudflare Worker route exists in `ai.muonnoi.org/workers/api/wrangler.toml` with `pattern = "api.muonnoi.org"` and `custom_domain = true`.
+- Payment and email API contract templates exist in `docs/api/`.
+- Platform and QA evidence templates exist, but the real evidence files without `TEMPLATE` in the filename are not attached yet.
+- `scripts/verify-payment-email-gate.sh` returned `BLOCKED` because real production evidence is incomplete.
+- `scripts/recheck-dns-body-parity.sh` passed on `https://www.muonnoi.org/`.
+- `scripts/audit-routes.sh` passed on the planned public launch routes.
 - Production payment/email transaction evidence is not attached in this repo.
 - Rollback evidence is not attached in this repo.
 
@@ -37,6 +42,8 @@ Required before API can mark `PASS`:
 API evidence to attach:
 - command output or screenshot for health route.
 - endpoint contract links.
+- `docs/api/MUONNOI_PAYMENT_API_CONTRACT_V1.md`.
+- `docs/api/MUONNOI_EMAIL_API_CONTRACT_V1.md`.
 - successful test payment or provider test-mode equivalent if real money is not approved yet.
 - webhook delivery log with sensitive fields redacted.
 - email delivery log with sensitive fields redacted.
@@ -58,6 +65,7 @@ Required before Platform can mark `PASS`:
 Platform evidence to attach:
 - Worker deploy id and timestamp.
 - `wrangler` route/custom-domain evidence.
+- `docs/platform/MUONNOI_API_DEPLOYMENT_EVIDENCE_2026-05-12.md`.
 - redacted secret list or provider environment screenshot.
 - rollback drill note or previous deployment id.
 - monitor/alert link.
@@ -79,6 +87,7 @@ Required before QA can mark `PASS`:
 QA evidence to attach:
 - route matrix.
 - payment/email test transcript with redacted user data.
+- `qa/release-gates/MUONNOI_PAYMENT_EMAIL_TEST_EVIDENCE_2026-05-12.md`.
 - webhook verification result.
 - rate-limit result.
 - rollback evidence.
@@ -101,6 +110,12 @@ Platform:
 QA:
 - build the payment/email route matrix from this checklist.
 - do not mark `PAYMENT_EMAIL_REAL_OPERATION_PASS` without fresh production or approved test-mode evidence.
+
+Scripts:
+- run `scripts/verify-payment-email-gate.sh` before requesting sign-off.
+- run `scripts/recheck-dns-body-parity.sh` before claiming custom-domain body parity.
+- run `scripts/validate-subdomain-sources.sh` before promoting any planned subdomain as a primary CTA.
+- run `scripts/audit-routes.sh` before public release reports.
 
 ## Hard stop
 Do not expand public subdomain CTAs, paid flows, receipt claims, host payment wording, investment lead capture or store submission copy if any API, Platform or QA checklist item above is still unchecked.
