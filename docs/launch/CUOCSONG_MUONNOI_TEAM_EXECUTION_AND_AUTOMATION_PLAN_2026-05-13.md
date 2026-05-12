@@ -56,11 +56,11 @@ unless the evidence files show it.
 
 ## Current Active Handoff
 
-As of `2026-05-13 02:40 ICT`:
+As of `2026-05-13 02:50 ICT`:
 
-- Current next owner: `Team 6`
-- Current highest-priority safe task: patch `hreflang` and `og:*` metadata for `/legal/privacy/` and `/legal/terms/`
-- Current downstream blocker: `Team 7` must stay in preview/DNS prep only until Team 8 rechecks the metadata patch and closes Gate 5
+- Current next owner: `Team 8`
+- Current highest-priority safe task: re-run Gate 5 metadata audit on `/legal/privacy/` and `/legal/terms/` after the legal-route metadata patch
+- Current downstream blocker: `Team 7` must stay in preview/DNS prep only until Team 8 confirms Gate 5 can move beyond `PARTIAL_NOT_PASS`
 - Current hard blocker: payment, email and proof gates remain closed for Team 9
 
 ## Parallel Work Allocation

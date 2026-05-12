@@ -141,6 +141,19 @@ Pass condition:
   - `cuocsong.muonnoi.org/public/legal/privacy/index.html` and `cuocsong.muonnoi.org/public/legal/terms/index.html` already contain `title`, `description`, and `canonical`
   - the only confirmed missing metadata items are `link rel="alternate" hreflang="vi"`, `link rel="alternate" hreflang="en"`, `meta property="og:title"`, `meta property="og:description"`, and `meta property="og:image"`
   - next narrow patch stays inside those two files only, then Team 8 re-runs Gate 5
+- Team 1 highest-priority safe task on 2026-05-13:
+  - added `hreflang vi`, `hreflang en`, `og:title`, `og:description`, `og:url`, `og:image`, and `twitter:card` to:
+    - `cuocsong.muonnoi.org/public/legal/privacy/index.html`
+    - `cuocsong.muonnoi.org/public/legal/terms/index.html`
+  - verification command:
+
+```bash
+rg -n 'hreflang="vi"|hreflang="en"|og:title|og:description|og:image|og:url|twitter:card' \
+  cuocsong.muonnoi.org/public/legal/privacy/index.html \
+  cuocsong.muonnoi.org/public/legal/terms/index.html
+```
+
+  - next owner is `Team 8` for Gate 5 recheck
 
 ### Gate 6 — Accessibility basic
 
@@ -217,6 +230,6 @@ Reason:
 | Blocker | Next owner | Next safe task |
 |---|---|---|
 | Brand and bilingual verification missing | `Team 4` | Audit naming, diacritics, `Tiếng Việt` / `English` labels and module wording on implemented pages |
-| Metadata patch for legal routes missing | `Team 6` | Add `hreflang` and `og:*` metadata to `/legal/privacy/` and `/legal/terms/`, then hand back to Team 8 for recheck |
+| Gate 5 metadata recheck pending | `Team 8` | Re-run metadata audit on `/legal/privacy/` and `/legal/terms/` after the Team 1 patch and decide whether Gate 5 can advance |
 | Preview deploy not allowed yet | `Team 7` | Wait for Team 8 evidence, then prepare Pages preview without attaching DNS |
 | Intake/email/proof integration blocked | `Team 9` | Stay in contract-note mode until payment, email and proof gates pass |

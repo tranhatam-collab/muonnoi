@@ -30,6 +30,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 02:35 | `:35` | Team 8 | `DONE` | Recorded metadata and internal-link audit for the implemented route set; Gate 5 remains partial because `/legal/privacy/` and `/legal/terms/` still lack `hreflang` and `og:*`, so next owner returns to Team 6 for a metadata patch |
 | 2026-05-13 02:40 | `:40` | Team 9 | `BLOCKED` | Team 9 remains blocked by payment, email and proof gates; updated active handoff so the current next owner is Team 6 for the legal-route metadata patch before Team 8 recheck |
 | 2026-05-13 02:45 | `:45` | Team 1 cross-team unblock | `DONE` | Narrowed Gate 5 recovery to a file-level patch: verified `/legal/privacy/` and `/legal/terms/` already have `title`, `description`, and `canonical`, and documented that Team 6 only needs to add `hreflang vi`, `hreflang en`, and `og:*` metadata before Team 8 recheck |
+| 2026-05-13 02:50 | `:50` | Team 1 highest-priority safe task | `DONE` | Added the missing `hreflang` and `og:*` metadata to `/legal/privacy/` and `/legal/terms/`, verified the new tags with `rg`, and handed Gate 5 back to Team 8 for recheck |
 
 ## Visibility note
 
