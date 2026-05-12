@@ -198,3 +198,12 @@ Reason:
 - Partial route QA only.
 - Partial claim-safe public copy only.
 - No Cloudflare custom-domain evidence.
+
+## Next Owner Routing
+
+| Blocker | Next owner | Next safe task |
+|---|---|---|
+| Brand and bilingual verification missing | `Team 4` | Audit naming, diacritics, `Tiếng Việt` / `English` labels and module wording on implemented pages |
+| Metadata and internal-link evidence missing | `Team 8` | Check H1, title, description, canonical, `hreflang`, OG and implemented-route links |
+| Preview deploy not allowed yet | `Team 7` | Wait for Team 8 evidence, then prepare Pages preview without attaching DNS |
+| Intake/email/proof integration blocked | `Team 9` | Stay in contract-note mode until payment, email and proof gates pass |

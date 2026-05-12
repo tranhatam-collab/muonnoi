@@ -142,8 +142,9 @@ Do not write vague states such as `almost done`, `ready enough`, `ok`, or `looks
 3. Re-run `scripts/brand-lint-muonnoi.sh .`.
 4. Re-run `scripts/qa-nguoiviet-smoke.sh https://nguoiviet-muonnoi-org.pages.dev`.
 5. Update this plan and `TEAM_READ_ORDER` with the final source-of-truth state.
-6. Product/Content/Legal review `docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md` and approve the first four Cuộc Sống routes before Web source work.
-7. Team 1 automation runs every 30 minutes as a single coordinator loop from `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`.
+6. Team 4 and Team 8 should audit the current Cuộc Sống route set for brand, metadata, language labels and internal-link evidence before any preview deploy attempt.
+7. Team 7 should stay in preview/DNS prep only until Team 8 records route and metadata evidence for the current Cuộc Sống pages.
+8. Team 1 automation now runs every 5 minutes as a single coordinator loop from `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`.
 
 ## Gate status
 
