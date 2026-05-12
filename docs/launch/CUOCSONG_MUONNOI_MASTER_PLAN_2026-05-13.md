@@ -221,7 +221,7 @@ Exit gate:
 - No dead links.
 - No temporary draft content.
 - H1, metadata and language labels pass.
-- Current state: first local route set exists for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`; internal-link evidence is recorded, and `/legal/privacy/` plus `/legal/terms/` have received the legal-route metadata patch and are awaiting Team 8 recheck for Gate 5.
+- Current state: first local route set exists for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/cau-hoi/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`; internal-link evidence is recorded, and Gate 5 metadata now passes for the implemented route set.
 
 ### Phase 2 — Static site source
 
@@ -238,7 +238,7 @@ Exit gate:
 - Local route smoke passes.
 - Brand lint passes.
 - Accessibility basic pass.
-- Current state: source tree exists locally with static infra files, but preview deploy has not started.
+- Current state: source tree exists locally with static infra files and the implemented route set now passes metadata baseline, but preview deploy has not started.
 
 ### Phase 3 — Cloudflare preview
 
@@ -255,6 +255,7 @@ Exit gate:
 - Preview URL returns `200`.
 - Sitemap and internal links pass.
 - Security headers present.
+- Current state: Team 7 is now the active next owner for preview-prep documentation only; no Pages project, preview URL, or custom-domain evidence exists yet.
 
 ### Phase 4 — DNS and canonical release
 
