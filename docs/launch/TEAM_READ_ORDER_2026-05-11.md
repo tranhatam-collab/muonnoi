@@ -98,10 +98,13 @@ DONE:
 - Brandpro gate applied to docs and live public tokens.
 - DNS/custom-domain matrix locked with Cloudflare Pages, DNS and HTTPS evidence.
 - Payment/email production gate checklist created for API + Platform + QA.
+- Production deploy completed on Cloudflare Pages project `muonnoi`:
+`https://95e0ea23.muonnoi.pages.dev`
 
 NEED:
 - Docs hub publishing synchronization on `docs.muonnoi.org`.
 - Production payment/email transaction, webhook, email delivery and rollback evidence.
+- Follow-up body parity check on `https://www.muonnoi.org/` after DNS/edge propagation.
 
 NEXT:
 1. Platform resolves custom-domain source ownership for `ai.muonnoi.org` and `lamviec.muonnoi.org`.

@@ -52,6 +52,12 @@ brand subtitle, homepage title/metadata, primary palette, typography fallback an
 ### Evidence
 - Cloudflare Pages list confirmed custom domains for:
 `muonnoi`, `app-muonnoi-org`, `docs-muonnoi-org`.
+- Cloudflare Pages production deployment completed:
+`https://95e0ea23.muonnoi.pages.dev`
+environment `Production`, branch `main`, source `4f73c35`.
+- Cloudflare Pages preview deployment completed:
+`https://e04b01ec.muonnoi.pages.dev`
+environment `Preview`, branch `brand/v2.0-voice-and-place`, source `4f73c35`.
 - `https://www.muonnoi.org/` returned `200`.
 - `https://app.muonnoi.org/` returned `200`.
 - `https://docs.muonnoi.org/` returned `200`.
@@ -59,6 +65,7 @@ brand subtitle, homepage title/metadata, primary palette, typography fallback an
 - `https://api.muonnoi.org/api/health` returned `200`; `/health` returned `404`, so `/api/health` is the canonical health check.
 
 ### Cần làm
+- Re-check `https://www.muonnoi.org/` body after DNS/edge propagation; local DNS briefly returned resolution failures during the immediate post-deploy check.
 - Resolve source ownership/custom-domain evidence for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
 - Keep `lqos`, `dautu`, `duan`, `family`, `dulich`, `hoctap`, `suckhoe`, `sangtao`, `congdong`, `trust`, `nhachung` as internal roadmap/quest links until Cloudflare custom-domain and HTTPS evidence pass.
 - Attach production or approved test-mode evidence for payment creation, webhook receipt, email delivery, idempotency, rate-limit and rollback.

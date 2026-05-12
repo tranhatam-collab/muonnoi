@@ -7,6 +7,7 @@ Evidence time: `2026-05-12 06:52 +07`
 
 Evidence commands used:
 - `wrangler pages project list`
+- `wrangler pages deployment list --project-name=muonnoi`
 - `dig +short <host>`
 - `curl -I -L --max-time 15 -s <url>`
 
@@ -43,6 +44,16 @@ Evidence commands used:
 | `trust.muonnoi.org` | trust and complaints layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `nhachung.muonnoi.org` | housing/community layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `node.muonnoi.org` | node/technical lane | `104.21.93.187` | not probed in this run | `muonnoi-node` project includes node and www.node | `LIVE_BUT_NOT_PUBLIC_PRIMARY` |
+
+## Latest root deployment evidence
+| Deployment | Environment | Branch | Source | Decision |
+|---|---|---|---|---|
+| `https://95e0ea23.muonnoi.pages.dev` | Production | `main` | `4f73c35` | `ROOT_PUBLIC_SHELL_PRODUCTION_DEPLOYED` |
+| `https://e04b01ec.muonnoi.pages.dev` | Preview | `brand/v2.0-voice-and-place` | `4f73c35` | `ROOT_PUBLIC_SHELL_PREVIEW_DEPLOYED` |
+
+Immediate post-deploy note:
+- `www.muonnoi.org` header check returned `200`.
+- body checks briefly hit local DNS resolution failures after production deploy; rerun body verification after edge/DNS propagation before claiming final custom-domain body parity.
 
 ## Public linking rule
 Allowed as primary public links now:
