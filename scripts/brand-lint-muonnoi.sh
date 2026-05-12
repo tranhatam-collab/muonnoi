@@ -24,6 +24,9 @@ declare -a FORBIDDEN=(
   "social network"
   "Facebook alternative"
   "Twitter alternative"
+  # Legacy v1 brand wording — replaced by Voice & Place v2.0
+  "Social Operating System"
+  "Social Operating Space"
   # Investment language (legal risk)
   "guaranteed return"
   "guaranteed profit"
@@ -38,13 +41,14 @@ declare -a FORBIDDEN=(
 )
 
 echo "─── Word filter (live public surface only) ───"
-# Scan the tracked live public shell. Do not scan legacy clones or governance docs
-# that intentionally list banned words as rules.
-PUBLIC_ROOT="$TARGET/apps/web/public"
-if [ ! -d "$PUBLIC_ROOT" ] && [ -d "$TARGET" ]; then
-  PUBLIC_ROOT="$TARGET"
-fi
-PUBLIC_FILES=$(find "$PUBLIC_ROOT" -maxdepth 5 -type f \
+# Scan tracked live public surfaces: main shell + docs subdomain.
+# Do not scan legacy clones or governance docs that list banned words as rules.
+PUBLIC_ROOTS=()
+[ -d "$TARGET/apps/web/public" ] && PUBLIC_ROOTS+=("$TARGET/apps/web/public")
+[ -d "$TARGET/docs.muonnoi.org/public" ] && PUBLIC_ROOTS+=("$TARGET/docs.muonnoi.org/public")
+[ ${#PUBLIC_ROOTS[@]} -eq 0 ] && [ -d "$TARGET" ] && PUBLIC_ROOTS+=("$TARGET")
+
+PUBLIC_FILES=$(find "${PUBLIC_ROOTS[@]}" -maxdepth 6 -type f \
   \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.json" -o -name "*.txt" \) \
   -not -path "*/node_modules/*" \
   -not -path "*/.git/*" \
