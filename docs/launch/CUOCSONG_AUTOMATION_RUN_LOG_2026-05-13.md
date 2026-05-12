@@ -1,0 +1,22 @@
+# CUOC SONG MUONNOI AUTOMATION RUN LOG · 2026-05-13
+
+This file records visible coordinator runs for the Cuộc Sống Muôn Nơi automation.
+
+## Active automation
+
+- Automation id: `muonnoi-cuocsong-auto-dev-30m`
+- Automation name: `muonnoi-cuocsong-auto-dev-5m`
+- Status: `ACTIVE`
+- Schedule: `FREQ=MINUTELY;INTERVAL=5`
+- Model behavior: one coordinator loop, not 9 separate background jobs
+
+## Run history
+
+| ICT time | Slot | Team focus | Result | Evidence |
+|---|---|---|---|---|
+| 2026-05-13 01:27 | `:25` | Team 6 | `DONE` | Commit `88a9614` added `/cong-dong/`, updated `sitemap.xml`, `_redirects`, and checklist with local `200` smoke evidence |
+| 2026-05-13 01:33 | `:30` bucket | Team 7 | `DONE` | Commit `df9c317` refreshed DNS/custom-domain matrix and coordination plan to record `SOURCE_LOCAL_PREVIEW_AND_DNS_NOT_CONFIGURED` |
+
+## Visibility note
+
+If the user expects to see one active scheduler per team, this setup will not show that. The current design keeps RAM and background load lower by running a single automation that rotates ownership by minute bucket.

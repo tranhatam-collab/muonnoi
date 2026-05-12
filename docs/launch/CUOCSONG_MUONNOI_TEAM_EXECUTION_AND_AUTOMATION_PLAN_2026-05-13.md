@@ -242,6 +242,7 @@ Loop input files:
 - `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`
+- `docs/launch/CUOCSONG_AUTOMATION_RUN_LOG_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_TEAM5_LEGAL_TRUST_REVIEW_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_TEAM9_API_OPS_GATE_NOTES_2026-05-13.md`
 - `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`
@@ -258,6 +259,19 @@ Loop decision order:
 7. If source tree is missing, create source.
 8. If source exists but QA is missing, run local QA and update checklist.
 9. If local QA passes and no preview exists, deploy preview.
+
+## Run visibility rule
+
+Each automation run must append or update a factual entry in:
+
+- `docs/launch/CUOCSONG_AUTOMATION_RUN_LOG_2026-05-13.md`
+
+The log must include:
+- ICT timestamp
+- slot bucket
+- effective team owner
+- `DONE` or `BLOCKED`
+- exact evidence such as commit id, checklist section or verification command
 10. If preview passes and DNS is approved, attach custom domain.
 11. If DNS/live checks pass, update homepage and DNS matrix.
 12. If all gates pass, pause the automation and report `CUOCSONG_MUONNOI_COMPLETE`.
