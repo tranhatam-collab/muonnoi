@@ -126,14 +126,14 @@ Pass condition:
 
 ### Gate 5 — SEO and metadata
 
-- [ ] One H1 per page.
-- [ ] Title present.
-- [ ] Description present.
-- [ ] Canonical present.
-- [ ] `hreflang` or equivalent language link present when bilingual pages ship.
-- [ ] OG title and image present.
-- [ ] Sitemap includes all routes.
-- [ ] Robots file is intentional.
+- [x] One H1 per page.
+- [x] Title present.
+- [x] Description present.
+- [x] Canonical present.
+- [x] `hreflang` or equivalent language link present when bilingual pages ship.
+- [x] OG title and image present.
+- [x] Sitemap includes all routes.
+- [x] Robots file is intentional.
 
 Pass condition:
 
@@ -159,6 +159,12 @@ rg -n 'hreflang="vi"|hreflang="en"|og:title|og:description|og:image|og:url|twitt
 ```
 
   - next owner is `Team 8` for Gate 5 recheck
+- Team 8 Gate 5 recheck on 2026-05-13:
+  - re-ran metadata scan across `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/cau-hoi/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`
+  - confirmed every implemented route now has `title`, `description`, `canonical`, `hreflang vi`, `hreflang en`, `og:title`, `og:description`, `og:image`, and one `h1`
+  - `sitemap.xml` now includes `/cau-hoi/`
+  - `robots.txt` remains present and intentional
+  - Gate 5 now moves from `PARTIAL_NOT_PASS` to `IMPLEMENTED_ROUTE_SET_PASS`
 
 ### Gate 6 — Accessibility basic
 
@@ -235,6 +241,6 @@ Reason:
 | Blocker | Next owner | Next safe task |
 |---|---|---|
 | Brand and bilingual verification missing | `Team 4` | Audit naming, diacritics, `Tiếng Việt` / `English` labels and module wording on implemented pages |
-| Gate 5 metadata recheck pending | `Team 8` | Re-run metadata audit on `/legal/privacy/` and `/legal/terms/` after the Team 1 patch and decide whether Gate 5 can advance |
+| Gate 5 metadata on implemented routes | `PASS` | Implemented route set now passes metadata baseline; Team 7 may continue preview prep without attaching DNS |
 | Preview deploy not allowed yet | `Team 7` | Wait for Team 8 evidence, then prepare Pages preview without attaching DNS |
 | Intake/email/proof integration blocked | `Team 9` | Stay in contract-note mode until payment, email and proof gates pass |

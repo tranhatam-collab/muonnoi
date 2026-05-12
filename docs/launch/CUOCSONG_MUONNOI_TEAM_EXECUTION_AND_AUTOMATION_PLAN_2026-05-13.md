@@ -56,11 +56,11 @@ unless the evidence files show it.
 
 ## Current Active Handoff
 
-As of `2026-05-13 02:50 ICT`:
+As of `2026-05-13 03:35 ICT`:
 
-- Current next owner: `Team 8`
-- Current highest-priority safe task: re-run Gate 5 metadata audit on `/legal/privacy/` and `/legal/terms/` after the legal-route metadata patch
-- Current downstream blocker: `Team 7` must stay in preview/DNS prep only until Team 8 confirms Gate 5 can move beyond `PARTIAL_NOT_PASS`
+- Current next owner: `Team 7`
+- Current highest-priority safe task: refresh preview and DNS prep docs so the current implemented route set now includes `/cau-hoi/` and Gate 5 is recorded as passed for the implemented local routes
+- Current downstream blocker: preview deploy and DNS attach still remain blocked until explicit Team 7 preview work starts; no custom-domain action is allowed yet
 - Current hard blocker: payment, email and proof gates remain closed for Team 9
 
 ## Parallel Work Allocation
