@@ -83,8 +83,8 @@ Brand:
 | Nguoi Viet content | Content team | Yes | Founder/legal copy decisions | `nguoiviet.muonnoi.org/docs/*` | route/page review and no claim drift |
 | Nguoi Viet DNS/SEO | Platform + SEO | After DNS owner action | manual DNS swap | DNS matrix, sitemap, robots | `dig`, `curl -I`, Search Console |
 | Cuoc Song planning | Product + Content + Legal/Trust | Yes | source-path decision, claim review | `docs/launch/CUOCSONG_MUONNOI_*` | source audit and QA checklist review |
-| Cuoc Song web | Web team | After first-sprint copy approval | no source tree yet | future `cuocsong.muonnoi.org/*` | local route smoke, claim scan, metadata audit |
-| Cuoc Song DNS/SEO | Platform + SEO | No | preview QA and Cloudflare source | DNS matrix, future sitemap | `dig`, `curl -I`, body parity |
+| Cuoc Song web | Web team | Yes | Team 4/5 route-level signoff and remaining route coverage | `cuocsong.muonnoi.org/*` | local route smoke, claim scan, metadata audit |
+| Cuoc Song DNS/SEO | Platform + SEO | Prep only | preview QA and Cloudflare source | DNS matrix, `cuocsong.muonnoi.org/wrangler.toml`, future preview evidence | `dig`, `curl -I`, body parity |
 | Mobile planning | Mobile team | Yes | none for Sprint 0 | `apps/mobile/*.md` | file-by-file acceptance review |
 | Mobile implementation | Mobile team | No | Travel Quest web pilot stable, API mobile endpoints | future app scaffold | Gate 1 approval |
 | Brand guardian | Brand team | Yes | none | `docs/brand/*`, live public files | `scripts/brand-lint-muonnoi.sh .` |
@@ -104,8 +104,8 @@ Nguoi Viet:
 Cuoc Song:
 - Drive source is historical material and must not be copied directly to public routes.
 - Source path is locked as `cuocsong.muonnoi.org/`.
-- Product, Content and Legal/Trust must approve the first-sprint routes before Web creates source.
-- `cuocsong.muonnoi.org` has no DNS answer and no Cloudflare Pages project as of 2026-05-13.
+- Product, Content and Legal/Trust must approve first-sprint routes before preview deployment and wider route expansion.
+- `cuocsong.muonnoi.org` now has a local source tree, but still has no DNS answer and no Cloudflare Pages project as of 2026-05-13.
 - Public homepage CTAs remain blocked until DNS matrix marks the host `LIVE_LINK_ALLOWED`.
 
 Mobile:
@@ -154,7 +154,7 @@ Do not write vague states such as `almost done`, `ready enough`, `ok`, or `looks
 | Nguoi Viet preview | PASS | `bash scripts/qa-nguoiviet-smoke.sh https://nguoiviet-muonnoi-org.pages.dev` passed |
 | Nguoi Viet canonical DNS | BLOCKED | manual DNS swap required |
 | Cuoc Song planning | PASS | source audit, master plan, content map, dev handoff, QA checklist and implementation plan exist |
-| Cuoc Song source/DNS | BLOCKED | no source tree, no DNS answer and no Cloudflare Pages project yet |
+| Cuoc Song source/DNS | BLOCKED | local source exists, but there is still no DNS answer, no Cloudflare Pages project and no preview evidence yet |
 | Payment/email real operation | BLOCKED | no deployed endpoints, providers, secrets or QA evidence |
 | Mobile Sprint 0 planning | PASS | 5-doc mobile bundle complete |
 | Mobile native build | BLOCKED | gate requires web pilot stability and mobile backend endpoints |
