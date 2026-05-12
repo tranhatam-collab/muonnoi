@@ -90,6 +90,15 @@ Nguoi Viet:
 - Read files 16, 19, 20 and `nguoiviet.muonnoi.org/README.md` first.
 - Then edit only `nguoiviet.muonnoi.org/public`, `nguoiviet.muonnoi.org/docs` and the related launch QA files.
 
+Cuoc Song:
+- Read `docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md` first.
+- Then read `docs/launch/CUOCSONG_MUONNOI_MASTER_PLAN_2026-05-13.md`.
+- Then read `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`.
+- Then read `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`.
+- Then read `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`.
+- Implementation workers must follow `docs/superpowers/plans/2026-05-13-cuoc-song-muon-noi-subdomain.md`.
+- Do not create DNS, Cloudflare custom domains or homepage CTAs for `cuocsong.muonnoi.org` until the QA checklist and DNS matrix both move it out of `DO_NOT_LINK_PRIMARY`.
+
 ## Day-1 rule
 
 No team starts coding from memory or chat notes. Every Sprint 0 task must reference one of the files above.
@@ -132,18 +141,27 @@ DONE:
 - 11-agent planning batch landed on `main` through commit `fbbfecd`.
 - Mobile 5-doc bundle completed and indexed in `docs/launch/MUONNOI_MOBILE_TEAM_HANDOFF_INDEX_2026-05-12.md`.
 - Người Việt Muôn Nơi source and docs are now controlled by the coordination plan in `docs/launch/MUONNOI_PARALLEL_DEV_COORDINATION_PLAN_2026-05-12.md`.
+- Cuộc Sống Muôn Nơi planning lane created from Drive source audit:
+`docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md`,
+`docs/launch/CUOCSONG_MUONNOI_MASTER_PLAN_2026-05-13.md`,
+`docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`,
+`docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`,
+`docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`.
 
 NEED:
 - Docs hub publishing synchronization on `docs.muonnoi.org`.
 - Production payment/email transaction, webhook, email delivery and rollback evidence.
 - Source ownership lock for `ai.muonnoi.org`, `lamviec.muonnoi.org` and every planned public subdomain before those hosts become primary CTAs.
 - Commit and maintain `nguoiviet.muonnoi.org` source so Web, SEO, Brand, Legal and Ops can work from the same tree.
+- Create approved source for `cuocsong.muonnoi.org` only after the first-sprint content map and claim boundaries are accepted.
+- Keep `cuocsong.muonnoi.org` out of primary homepage CTAs until DNS, Cloudflare preview, route QA, SEO and claim-safety gates pass.
 
 NEXT:
 1. Platform resolves custom-domain source ownership for `ai.muonnoi.org`, `lamviec.muonnoi.org`, `lqos.muonnoi.org`, `dautu.muonnoi.org`, `duan.muonnoi.org`, `family.muonnoi.org` and `dulich.muonnoi.org`.
 2. Docs publish synchronized launch collections.
 3. API/Platform close payment-email gate evidence.
 4. Người Việt team closes DNS swap, `og.png`, Search Console and Wix redirect gates.
+5. Product/Content/Legal review the Cuộc Sống Muôn Nơi source audit and approve the first four claim-safe routes before Web creates source.
 
 Route matrix note:
 - Production host validation completed on `2026-05-12 +07` with `200` on launch routes and sitemap core routes.

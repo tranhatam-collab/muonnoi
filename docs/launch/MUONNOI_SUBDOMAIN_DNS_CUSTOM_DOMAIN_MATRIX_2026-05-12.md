@@ -11,6 +11,11 @@ Evidence commands used:
 - `dig +short <host>`
 - `curl -I -L --max-time 15 -s <url>`
 
+Additional evidence on `2026-05-13 +07`:
+- `dig +short cuocsong.muonnoi.org` returned no answer.
+- `wrangler pages project list | rg -i "cuoc|song|cuocsong"` returned no matching Pages project or custom-domain entry.
+- Local repo scan found only legacy Người Việt archive references and no dedicated `cuocsong.muonnoi.org` source tree.
+
 ## Cloudflare Pages projects confirmed
 | Project | Custom domains visible in Pages list | State |
 |---|---|---|
@@ -43,6 +48,7 @@ Evidence commands used:
 | `sangtao.muonnoi.org` | creation quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `congdong.muonnoi.org` | community quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `nguoiviet.muonnoi.org` | Vietnamese Global Journey layer (Người Việt Muôn Nơi) | currently CNAME `pointing.wixdns.net` (legacy Wix) | preview at `https://nguoiviet-muonnoi-org.pages.dev/` returned `200`; custom domain attached on 2026-05-12, status `pending` (CNAME not set) | `nguoiviet-muonnoi-org` Pages project includes custom domain row (pending DNS) | `PENDING_DNS_SWAP_FROM_WIX_TO_PAGES` |
+| `cuocsong.muonnoi.org` | living-practice layer (Cuộc Sống Muôn Nơi) | no DNS answer on 2026-05-13 | not probed as live route because DNS is not configured | no Pages project or custom-domain row matched `cuoc/song/cuocsong` | `PLANNED_NOT_CONFIGURED` |
 | `trust.muonnoi.org` | trust and complaints layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `nhachung.muonnoi.org` | housing/community layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `node.muonnoi.org` | node/technical lane | `104.21.93.187` | not probed in this run | `muonnoi-node` project includes node and www.node | `LIVE_BUT_NOT_PUBLIC_PRIMARY` |
@@ -75,6 +81,7 @@ Not allowed as primary public CTA yet:
 - `https://suckhoe.muonnoi.org/`
 - `https://sangtao.muonnoi.org/`
 - `https://congdong.muonnoi.org/`
+- `https://cuocsong.muonnoi.org/`
 - `https://trust.muonnoi.org/`
 - `https://nhachung.muonnoi.org/`
 
@@ -90,10 +97,12 @@ Use internal routes instead until each host has Cloudflare custom-domain evidenc
 Platform:
 - resolve the source ownership for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
 - add Cloudflare Pages custom-domain evidence or Worker route evidence for each planned host before public linking.
+- keep `cuocsong.muonnoi.org` as `PLANNED_NOT_CONFIGURED` until source, preview, DNS and HTTPS evidence exist.
 
 Web/Public:
 - keep planned but unverified subdomains as internal links.
 - do not promote `dautu`, `duan`, `family`, `lqos`, `dulich`, `hoctap`, `suckhoe`, `sangtao`, `congdong`, `trust`, or `nhachung` as external CTAs yet.
+- do not promote `cuocsong.muonnoi.org` as an external CTA until the Cuộc Sống QA checklist and this DNS matrix both pass.
 
 QA:
 - rerun DNS + HTTPS matrix after any DNS/custom-domain change.

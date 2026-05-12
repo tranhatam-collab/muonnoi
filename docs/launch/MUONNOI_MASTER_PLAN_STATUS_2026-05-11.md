@@ -378,3 +378,40 @@ The ecosystem map now reads:
 
 ### Team rule
 Every parallel team may proceed only in its owned lane. Release claims remain sequential and must follow the gate evidence files.
+
+## Update 2026-05-13 — Cuộc Sống Muôn Nơi planning lane added
+
+### What changed
+- Checked local repo, DNS, Cloudflare Pages and the provided Drive folder for `cuocsong.muonnoi.org`.
+- No dedicated `cuocsong.muonnoi.org` source tree was found.
+- `dig +short cuocsong.muonnoi.org` returned no DNS answer.
+- `wrangler pages project list | rg -i "cuoc|song|cuocsong"` returned no matching Pages project or custom domain.
+- The Drive folder contains two legacy source documents for `Cuộc Sống Muôn Nơi`; they are useful for taxonomy and history, but not safe for direct public publishing.
+
+### New files
+- `docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_MASTER_PLAN_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`
+- `docs/superpowers/plans/2026-05-13-cuoc-song-muon-noi-subdomain.md`
+
+### Layer position
+`Cuộc Sống Muôn Nơi` is now defined as the living-practice layer:
+- It sits beside `nguoiviet.muonnoi.org`, which remains the Vietnamese Global Journey layer.
+- It routes into `dulich`, `lamviec`, `nhachung`, `hoctap`, `family`, `suckhoe`, `congdong` and `sangtao` only when those modules have link-safe evidence.
+- It must use the shared Muôn Nơi trust, brand, language, claim-safety and release-evidence gates.
+
+### True state
+- Status: `READY_FOR_TEAM_PLANNING`.
+- Release state: `NOT_RELEASE_READY`.
+- DNS state: `NOT_CONFIGURED`.
+- Cloudflare state: `NO_PROJECT_FOUND`.
+- Content state: `NEEDS_CLAIM_SAFE_REWRITE`.
+
+### Next gates
+1. Product approves the route priority and source path.
+2. Content writes the first four claim-safe routes plus the disclaimer page.
+3. Legal/Trust reviews blocked claims from the source audit.
+4. Web creates source only after the first content sprint is approved.
+5. Platform attaches Cloudflare preview and DNS only after route, brand, claim and SEO QA pass.

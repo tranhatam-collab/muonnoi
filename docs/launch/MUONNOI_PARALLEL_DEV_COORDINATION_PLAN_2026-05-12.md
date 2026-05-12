@@ -56,6 +56,14 @@ Nguoi Viet:
 - `nguoiviet.muonnoi.org/docs/NGUOIVIET_MUONNOI_MASTER_PLAN_2026-05-12.md`
 - `scripts/qa-nguoiviet-smoke.sh`
 
+Cuoc Song:
+- `docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_MASTER_PLAN_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_PUBLIC_SITE_CONTENT_MAP_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_DEV_HANDOFF_2026-05-13.md`
+- `docs/launch/CUOCSONG_MUONNOI_QA_AND_RELEASE_CHECKLIST_2026-05-13.md`
+- `docs/superpowers/plans/2026-05-13-cuoc-song-muon-noi-subdomain.md`
+
 Brand:
 - `docs/brand/MUONNOI_BRANDPRO_ADOPTION_PLAN_2026.md`
 - `docs/brand/MUONNOI_BRAND_STYLE_LOCK_2026.md`
@@ -73,6 +81,9 @@ Brand:
 | Nguoi Viet web | Web team | Yes | DNS only for canonical host | `nguoiviet.muonnoi.org/public/*` | `scripts/qa-nguoiviet-smoke.sh` |
 | Nguoi Viet content | Content team | Yes | Founder/legal copy decisions | `nguoiviet.muonnoi.org/docs/*` | route/page review and no claim drift |
 | Nguoi Viet DNS/SEO | Platform + SEO | After DNS owner action | manual DNS swap | DNS matrix, sitemap, robots | `dig`, `curl -I`, Search Console |
+| Cuoc Song planning | Product + Content + Legal/Trust | Yes | source-path decision, claim review | `docs/launch/CUOCSONG_MUONNOI_*` | source audit and QA checklist review |
+| Cuoc Song web | Web team | After first-sprint copy approval | no source tree yet | future `cuocsong.muonnoi.org/*` | local route smoke, claim scan, metadata audit |
+| Cuoc Song DNS/SEO | Platform + SEO | No | preview QA and Cloudflare source | DNS matrix, future sitemap | `dig`, `curl -I`, body parity |
 | Mobile planning | Mobile team | Yes | none for Sprint 0 | `apps/mobile/*.md` | file-by-file acceptance review |
 | Mobile implementation | Mobile team | No | Travel Quest web pilot stable, API mobile endpoints | future app scaffold | Gate 1 approval |
 | Brand guardian | Brand team | Yes | none | `docs/brand/*`, live public files | `scripts/brand-lint-muonnoi.sh .` |
@@ -88,6 +99,12 @@ Nguoi Viet:
 - Source must live in the repo before team changes begin.
 - DNS swap must happen before canonical SEO and Search Console work can be called complete.
 - `og.png` must exist before social-share readiness can be called complete.
+
+Cuoc Song:
+- Drive source is historical material and must not be copied directly to public routes.
+- Product, Content and Legal/Trust must approve the first-sprint routes before Web creates source.
+- `cuocsong.muonnoi.org` has no DNS answer and no Cloudflare Pages project as of 2026-05-13.
+- Public homepage CTAs remain blocked until DNS matrix marks the host `LIVE_LINK_ALLOWED`.
 
 Mobile:
 - React Native + Expo is the selected direction.
@@ -123,6 +140,7 @@ Do not write vague states such as `almost done`, `ready enough`, `ok`, or `looks
 3. Re-run `scripts/brand-lint-muonnoi.sh .`.
 4. Re-run `scripts/qa-nguoiviet-smoke.sh https://nguoiviet-muonnoi-org.pages.dev`.
 5. Update this plan and `TEAM_READ_ORDER` with the final source-of-truth state.
+6. Product/Content/Legal review `docs/launch/CUOCSONG_MUONNOI_SOURCE_AUDIT_2026-05-13.md` and approve the first four Cuộc Sống routes before Web source work.
 
 ## Gate status
 
@@ -132,6 +150,8 @@ Do not write vague states such as `almost done`, `ready enough`, `ok`, or `looks
 | Brand lint | PASS | `bash scripts/brand-lint-muonnoi.sh .` passed after Nguoi Viet source was added |
 | Nguoi Viet preview | PASS | `bash scripts/qa-nguoiviet-smoke.sh https://nguoiviet-muonnoi-org.pages.dev` passed |
 | Nguoi Viet canonical DNS | BLOCKED | manual DNS swap required |
+| Cuoc Song planning | PASS | source audit, master plan, content map, dev handoff, QA checklist and implementation plan exist |
+| Cuoc Song source/DNS | BLOCKED | no source tree, no DNS answer and no Cloudflare Pages project yet |
 | Payment/email real operation | BLOCKED | no deployed endpoints, providers, secrets or QA evidence |
 | Mobile Sprint 0 planning | PASS | 5-doc mobile bundle complete |
 | Mobile native build | BLOCKED | gate requires web pilot stability and mobile backend endpoints |
