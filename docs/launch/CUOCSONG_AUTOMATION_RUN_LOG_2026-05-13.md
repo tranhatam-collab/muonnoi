@@ -33,6 +33,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 02:50 | `:50` | Team 1 highest-priority safe task | `DONE` | Added the missing `hreflang` and `og:*` metadata to `/legal/privacy/` and `/legal/terms/`, verified the new tags with `rg`, and handed Gate 5 back to Team 8 for recheck |
 | 2026-05-13 02:55 | `:55` | Team 1 status sync | `DONE` | Confirmed no new tracked lane diff after commit `d6f28f6`; Team 8 remains the next owner for Gate 5 recheck, Team 7 stays blocked behind that evidence, and Team 9 remains blocked by payment, email, and proof gates |
 | 2026-05-13 03:00 | `:00` | Team 1 admin coordination | `DONE` | Updated the master plan to match the real local source and latest gate state: `/ho-tro/` is now marked as a local draft with partial QA, and Phase 1 notes that `/legal/privacy/` plus `/legal/terms/` already have the metadata patch and are awaiting Team 8 recheck |
+| 2026-05-13 03:05 | `:05` | Team 2 | `DONE` | Updated the public site content map so Sprint 1 now matches the real lane baseline: `/cong-dong/`, `/ho-tro/`, `/legal/privacy/`, and `/legal/terms/` are included alongside the original claim-safe routes |
 
 ## Visibility note
 

@@ -432,8 +432,17 @@ Sprint 1 pages:
 2. `/gioi-thieu/`
 3. `/song-o-nhieu-noi/`
 4. `/cho-va-nhan/`
-5. `/legal/disclaimer/`
+5. `/cong-dong/`
+6. `/ho-tro/`
+7. `/legal/disclaimer/`
+8. `/legal/privacy/`
+9. `/legal/terms/`
 
 Reason:
 
-- These pages define the layer, explain the source rewrite, and create the safety boundary before deeper pages mention work, travel, home, support or Đà Lạt.
+- These pages now define the layer, explain the source rewrite, add community and support boundaries, and establish the full legal baseline before deeper pages mention work, travel, home, Đà Lạt or contact intake.
+
+Current architecture note:
+
+- `/cong-dong/` and `/ho-tro/` are now inside the active Sprint 1 route set because they are already implemented locally and are required to explain safe community participation and support boundaries.
+- `/legal/privacy/` and `/legal/terms/` are part of the same baseline because the claim-safe launch lane now depends on the full legal trio, not disclaimer alone.
