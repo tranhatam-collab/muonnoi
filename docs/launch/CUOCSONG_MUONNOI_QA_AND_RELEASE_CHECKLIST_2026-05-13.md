@@ -136,6 +136,11 @@ Pass condition:
 - Team 8 metadata audit on 2026-05-13:
   - `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/legal/disclaimer/` each have `title`, `description`, `canonical`, `hreflang vi`, `hreflang en`, `og:title`, `og:description`, and exactly one `h1`.
   - `/legal/privacy/` and `/legal/terms/` still miss `hreflang` and `og:*` metadata, so Gate 5 remains `PARTIAL_NOT_PASS`.
+- Team 1 cross-team unblock note on 2026-05-13:
+  - verified file-level gap with `rg -n "hreflang|og:title|og:description|og:image|canonical|<title>|description" cuocsong.muonnoi.org/public/legal/privacy/index.html cuocsong.muonnoi.org/public/legal/terms/index.html`
+  - `cuocsong.muonnoi.org/public/legal/privacy/index.html` and `cuocsong.muonnoi.org/public/legal/terms/index.html` already contain `title`, `description`, and `canonical`
+  - the only confirmed missing metadata items are `link rel="alternate" hreflang="vi"`, `link rel="alternate" hreflang="en"`, `meta property="og:title"`, `meta property="og:description"`, and `meta property="og:image"`
+  - next narrow patch stays inside those two files only, then Team 8 re-runs Gate 5
 
 ### Gate 6 — Accessibility basic
 
