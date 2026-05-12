@@ -21,6 +21,7 @@ Evidence commands used:
 | `muonnoi-node` | `node.muonnoi.org`, `www.node.muonnoi.org`, `muonnoi-node.pages.dev` | `PASS_BUT_NOT_PUBLIC_PRIMARY` |
 | `visamuonnoi-org` | `visamuonnoi-org.pages.dev` only | `OUT_OF_SCOPE_FOR_CURRENT_PUBLIC_LINKS` |
 | `visamuonnoi-org-web` | `visamuonnoi-org-web.pages.dev` only | `OUT_OF_SCOPE_FOR_CURRENT_PUBLIC_LINKS` |
+| `nguoiviet-muonnoi-org` | `nguoiviet-muonnoi-org.pages.dev`; custom domain `nguoiviet.muonnoi.org` attached but pending DNS update from Wix → Pages | `LIVE_PAGES_PENDING_DNS_SWAP` |
 
 ## Host evidence matrix
 | Host | Planned role | DNS evidence | HTTP evidence | Pages custom-domain evidence | Current decision |
@@ -41,6 +42,7 @@ Evidence commands used:
 | `suckhoe.muonnoi.org` | health quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `sangtao.muonnoi.org` | creation quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `congdong.muonnoi.org` | community quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
+| `nguoiviet.muonnoi.org` | Vietnamese Global Journey layer (Người Việt Muôn Nơi) | currently CNAME `pointing.wixdns.net` (legacy Wix) | preview at `https://nguoiviet-muonnoi-org.pages.dev/` returned `200`; custom domain attached on 2026-05-12, status `pending` (CNAME not set) | `nguoiviet-muonnoi-org` Pages project includes custom domain row (pending DNS) | `PENDING_DNS_SWAP_FROM_WIX_TO_PAGES` |
 | `trust.muonnoi.org` | trust and complaints layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `nhachung.muonnoi.org` | housing/community layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `node.muonnoi.org` | node/technical lane | `104.21.93.187` | not probed in this run | `muonnoi-node` project includes node and www.node | `LIVE_BUT_NOT_PUBLIC_PRIMARY` |
