@@ -92,6 +92,10 @@ Pass condition:
 - Language labels match the locked wording.
 - Implemented-route note on 2026-05-13: `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/` all use `Tiếng Việt` and `English`, present `Cuộc Sống Muôn Nơi` as a Muôn Nơi module, and show no `VI` / `EN` shorthand labels in the audited route set.
 - Team 4 brand note on 2026-05-13: audited route headers consistently use `Muôn Nơi · Cuộc Sống Muôn Nơi`, English support copy remains descriptive rather than hype-driven, and no implemented page presents Cuộc Sống Muôn Nơi as an independent brand.
+- Team 4 route recheck on 2026-05-13 after source commit `5bdf21b`:
+  - `cuocsong.muonnoi.org/public/gioi-thieu/index.html` keeps `Muôn Nơi · Cuộc Sống Muôn Nơi` in the route header
+  - the page still uses written language labels `Tiếng Việt` and `English`
+  - the newly added `/ho-tro/` internal link fits the approved content map without introducing shorthand labels or separate-brand framing
 
 ### Gate 4 — Route and link smoke
 
