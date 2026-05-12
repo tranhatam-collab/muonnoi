@@ -231,16 +231,16 @@ Current decision:
 Reason:
 
 - No DNS.
-- No committed release source set.
-- Partial route QA only.
-- Partial claim-safe public copy only.
+- No Cloudflare Pages project or preview URL evidence.
 - No Cloudflare custom-domain evidence.
+- Accessibility evidence is still incomplete.
+- Payment/email/proof gates remain blocked for any later intake or operational claims.
 
 ## Next Owner Routing
 
 | Blocker | Next owner | Next safe task |
 |---|---|---|
-| Brand and bilingual verification missing | `Team 4` | Audit naming, diacritics, `Tiếng Việt` / `English` labels and module wording on implemented pages |
+| Brand and bilingual verification on implemented routes | `PASS` | Keep applying the recorded Team 4 rules to each newly added route before preview claims |
 | Gate 5 metadata on implemented routes | `PASS` | Implemented route set now passes metadata baseline; Team 7 may continue preview prep without attaching DNS |
 | Preview deploy not allowed yet | `Team 7` | Wait for Team 8 evidence, then prepare Pages preview without attaching DNS |
 | Intake/email/proof integration blocked | `Team 9` | Stay in contract-note mode until payment, email and proof gates pass |
