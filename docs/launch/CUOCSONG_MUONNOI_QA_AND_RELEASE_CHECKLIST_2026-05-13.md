@@ -112,7 +112,7 @@ Pass condition:
 - [x] `/cho-va-nhan/` returns `200`.
 - [x] `/ho-tro/` returns `200`.
 - [ ] `/nha-chung/` returns `200`.
-- [ ] `/da-lat/` returns `200`.
+- [x] `/da-lat/` returns `200`.
 - [x] `/cau-hoi/` returns `200`.
 - [ ] `/lien-he/` returns `200`.
 - [x] `/legal/privacy/` returns `200`.
@@ -126,7 +126,8 @@ Pass condition:
 - Local smoke evidence recorded on 2026-05-13 via `python3 -m http.server` + `curl -i http://127.0.0.1:43114/cong-dong/index.html` returning `HTTP/1.0 200 OK`.
 - Local smoke evidence recorded on 2026-05-13 via `python3 -m http.server` + `curl -i http://127.0.0.1:43115/ho-tro/index.html` returning `HTTP/1.0 200 OK`.
 - Local smoke evidence recorded on 2026-05-13 via `python3 -m http.server` + `curl -i http://127.0.0.1:43116/cau-hoi/index.html` returning `HTTP/1.0 200 OK`.
-- Internal-link audit on 2026-05-13 confirms implemented routes link correctly to existing local routes, assets and disclaimer paths; remaining missing local targets are intentional planned links only: `/nha-chung/`, `/lien-he/`, `/da-lat/`.
+- Local smoke evidence recorded on 2026-05-13 via `python3 -m http.server` + `curl -i http://127.0.0.1:43117/da-lat/index.html` returning `HTTP/1.0 200 OK`.
+- Internal-link audit on 2026-05-13 confirms implemented routes link correctly to existing local routes, assets and disclaimer paths; remaining missing local targets are intentional planned links only: `/nha-chung/`, `/lien-he/`, `/hoc-tap/`.
 
 ### Gate 5 — SEO and metadata
 

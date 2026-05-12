@@ -47,6 +47,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 04:05 | `:05` | Team 2 | `DONE` | Updated the Team 2 sprint-definition block in the execution plan so its “first sprint pages” list now matches the real implemented claim-safe baseline: `/cong-dong/`, `/ho-tro/`, `/cau-hoi/`, `/legal/privacy/`, and `/legal/terms/` are included alongside the earlier routes |
 | 2026-05-13 04:10 | `:10` | Team 3 | `DONE` | Aligned `/cho-va-nhan/` with the implemented route set by removing the stale `(planned)` label from the `/ho-tro/` internal link, then verified the route still contains the expected related-links block and `/ho-tro/` target with `rg` |
 | 2026-05-13 04:15 | `:15` | Team 4 | `DONE` | Rechecked `/cho-va-nhan/` after commit `c57610e`: the route still uses `Muôn Nơi · Cuộc Sống Muôn Nơi`, keeps the written labels `Tiếng Việt` and `English`, and the `/ho-tro/` link update does not change brand framing or bilingual structure |
+| 2026-05-13 04:25 | `:25` | Team 6 | `DONE` | Added the new `/da-lat/` route, updated `sitemap.xml` and `_redirects`, removed the stale `(planned)` label from `/song-o-nhieu-noi/` now that `/da-lat/` exists locally, and recorded local `200` smoke evidence for `/da-lat/index.html` |
 
 ## Visibility note
 

@@ -126,7 +126,7 @@ Planned routes for `cuocsong.muonnoi.org`:
 | `/cho-va-nhan/` | Value exchange | `trust.muonnoi.org` or safe internal fallback | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 | `/ho-tro/` | Support directory | `/legal/disclaimer/`, `docs.muonnoi.org` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 | `/nha-chung/` | Home/community pilot guide | `nhachung.muonnoi.org` only after verified | `NOT_STARTED` |
-| `/da-lat/` | Đà Lạt pilot continuity | `nguoiviet.muonnoi.org`, future `dulich` | `NOT_STARTED` |
+| `/da-lat/` | Đà Lạt pilot continuity | `nguoiviet.muonnoi.org`, future `dulich` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 | `/cau-hoi/` | FAQ | all core routes | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
 | `/lien-he/` | Safe contact/intake | no payment CTA before gate | `NOT_STARTED` |
 | `/legal/privacy/` | Privacy | `docs.muonnoi.org` | `LOCAL_DRAFT_WITH_QA_PARTIAL` |
