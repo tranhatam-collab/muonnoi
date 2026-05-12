@@ -14,7 +14,7 @@ This checklist is prepared for team use. It does not claim that `cuocsong.muonno
 | DNS | `MISSING` | `dig +short cuocsong.muonnoi.org` returned no answer |
 | Cloudflare Pages project | `MISSING` | `wrangler pages project list | rg -i "cuoc|song|cuocsong"` returned no match |
 | Drive source | `FOUND` | 2 Google Docs in provided Drive folder |
-| Claim-safe public copy | `SPRINT1_DRAFT_CREATED` | `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/` drafted in VI/EN with no transaction CTA |
+| Claim-safe public copy | `SPRINT1_DRAFT_CREATED` | `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/` drafted in VI/EN with no transaction CTA |
 | Legal disclaimers | `IMPLEMENTED_TEAM5_ROUTE_REVIEWED` | `/legal/disclaimer/`, `/legal/privacy/` and `/legal/terms/` exist; Team 5 reviewed implemented route set on 2026-05-13 |
 | Primary homepage CTA | `BLOCKED` | DNS/source/QA not ready |
 
@@ -56,7 +56,7 @@ Team 5 pre-implementation review (2026-05-13):
 - [x] Route-level claim scan and disclaimer-link verification for implemented routes completed on 2026-05-13 (intentional `guaranteed` matches appear only inside disclaimer boundaries).
 
 Implemented-route evidence:
-- Reviewed routes: `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`.
+- Reviewed routes: `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`.
 - Claim scan found sensitive keywords only in disclaimer/boundary contexts, not as offered services or transaction CTAs.
 - Disclaimer path is present across the implemented route set.
 
@@ -97,7 +97,7 @@ Pass condition:
 - [x] `/song-o-nhieu-noi/` returns `200`.
 - [ ] `/lam-viec/` returns `200`.
 - [ ] `/hoc-tap/` returns `200`.
-- [ ] `/cong-dong/` returns `200`.
+- [x] `/cong-dong/` returns `200`.
 - [x] `/cho-va-nhan/` returns `200`.
 - [ ] `/ho-tro/` returns `200`.
 - [ ] `/nha-chung/` returns `200`.
@@ -112,6 +112,7 @@ Pass condition:
 Pass condition:
 
 - Route smoke evidence is attached to the release note.
+- Local smoke evidence recorded on 2026-05-13 via `python3 -m http.server` + `curl -i http://127.0.0.1:43114/cong-dong/index.html` returning `HTTP/1.0 200 OK`.
 
 ### Gate 5 — SEO and metadata
 
@@ -193,7 +194,7 @@ Current decision:
 Reason:
 
 - No DNS.
-- No source tree.
-- No route QA.
-- No claim-safe public copy.
+- No committed release source set.
+- Partial route QA only.
+- Partial claim-safe public copy only.
 - No Cloudflare custom-domain evidence.
