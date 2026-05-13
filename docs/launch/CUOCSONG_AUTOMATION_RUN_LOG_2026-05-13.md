@@ -54,6 +54,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 07:20 | `:20` | Team 5 | `DONE` | Refreshed the legal/trust review to match the real implemented route set: `/da-lat/` and `/cau-hoi/` are now included as reviewed implemented routes, removed from the pending-route list, and recorded as pilot-context or FAQ-only surfaces with no accommodation, relocation, investment, intake, or guaranteed-support claims |
 | 2026-05-13 07:30 | `:30` | Team 7 | `DONE` | Refreshed preview-prep and DNS-prep source-of-truth docs so the current implemented route set now explicitly includes `/da-lat/` alongside `/cau-hoi/`; the lane remains local-only with no Pages project, no preview URL, and no custom-domain or DNS evidence yet |
 | 2026-05-13 07:35 | `:35` | Team 8 | `DONE` | Recorded an accessibility-baseline snapshot for the implemented route set: pages consistently expose `<main>`, labeled navigation, labeled brand/home links, and text CTA controls, while Gate 6 remains not-pass because keyboard traversal, contrast proof, and mobile overlap evidence are still missing |
+| 2026-05-13 07:40 | `:40` | Team 9 | `BLOCKED` | Synced Team 9 gate notes to the latest lane state: Gate 5 still passes for the implemented route set including `/da-lat/`, Team 7 remains preview-prep only, Gate 6 is recorded but still not-pass, and Team 9 remains blocked because preview, DNS, accessibility, payment, email and proof evidence are still incomplete |
 
 ## Visibility note
 
