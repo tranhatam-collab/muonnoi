@@ -59,7 +59,7 @@ unless the evidence files show it.
 As of `2026-05-13 03:45 ICT`:
 
 - Current next owner: `Team 7`
-- Current highest-priority safe task: refresh preview and DNS prep docs so the current implemented route set now includes `/cau-hoi/` and Gate 5 is recorded as passed for the implemented local routes
+- Current highest-priority safe task: refresh preview and DNS prep docs so the current implemented route set now includes `/cau-hoi/` and `/da-lat/`, while Gate 5 remains recorded as passed for the implemented local routes
 - Current downstream blocker: preview deploy and DNS attach still remain blocked until explicit Team 7 preview work starts; no custom-domain action is allowed yet
 - Current hard blocker: payment, email and proof gates remain closed for Team 9
 

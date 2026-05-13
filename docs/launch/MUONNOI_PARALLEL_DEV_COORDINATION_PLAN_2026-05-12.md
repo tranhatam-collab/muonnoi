@@ -105,7 +105,7 @@ Cuoc Song:
 - Drive source is historical material and must not be copied directly to public routes.
 - Source path is locked as `cuocsong.muonnoi.org/`.
 - Product, Content and Legal/Trust must approve first-sprint routes before preview deployment and wider route expansion.
-- `cuocsong.muonnoi.org` now has a local source tree, no DNS answer, no Cloudflare Pages project, and Gate 5 metadata passes on the implemented route set as of 2026-05-13.
+- `cuocsong.muonnoi.org` now has a local source tree, no DNS answer, no Cloudflare Pages project, and Gate 5 metadata passes on the implemented route set, now including `/da-lat/`, as of 2026-05-13.
 - Public homepage CTAs remain blocked until DNS matrix marks the host `LIVE_LINK_ALLOWED`.
 
 Mobile:
@@ -143,7 +143,7 @@ Do not write vague states such as `almost done`, `ready enough`, `ok`, or `looks
 4. Re-run `scripts/qa-nguoiviet-smoke.sh https://nguoiviet-muonnoi-org.pages.dev`.
 5. Update this plan and `TEAM_READ_ORDER` with the final source-of-truth state.
 6. Team 4 and Team 8 route-level brand, metadata, language-label and internal-link evidence is now recorded for the implemented Cuộc Sống route set, including `/cau-hoi/`.
-7. Team 7 should stay in preview/DNS prep only and update its source-of-truth docs for the current Cuộc Sống route set, now including `/cau-hoi/`; do not attach DNS or claim preview/live readiness yet.
+7. Team 7 should stay in preview/DNS prep only and update its source-of-truth docs for the current Cuộc Sống route set, now including `/cau-hoi/` and `/da-lat/`; do not attach DNS or claim preview/live readiness yet.
 8. Team 1 automation now runs every 5 minutes as a single coordinator loop from `docs/launch/CUOCSONG_MUONNOI_TEAM_EXECUTION_AND_AUTOMATION_PLAN_2026-05-13.md`.
 
 ## Gate status
