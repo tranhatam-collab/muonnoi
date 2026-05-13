@@ -55,7 +55,7 @@ Sensitive fields redacted from logs. Failure responses use safe machine codes.
 
 ### Gate Status
 
-**INFRA_DEPLOYED — SECRETS_PENDING**
+**INFRA_DEPLOYED — SECRETS_REQUIRED**
 
 Endpoints live. Migration applied. Build verified.  
 Gate blockers remaining:
