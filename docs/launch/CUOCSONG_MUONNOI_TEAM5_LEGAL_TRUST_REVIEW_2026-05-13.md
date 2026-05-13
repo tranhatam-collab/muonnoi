@@ -78,6 +78,8 @@ Implemented routes reviewed:
 - `/cho-va-nhan/`
 - `/cong-dong/`
 - `/ho-tro/`
+- `/da-lat/`
+- `/cau-hoi/`
 - `/legal/disclaimer/`
 - `/legal/privacy/`
 - `/legal/terms/`
@@ -92,7 +94,7 @@ Route-level findings:
 
 Still pending:
 
-- Planned routes not yet implemented: `/lam-viec/`, `/hoc-tap/`, `/nha-chung/`, `/da-lat/`, `/cau-hoi/`, `/lien-he/`.
+- Planned routes not yet implemented: `/lam-viec/`, `/hoc-tap/`, `/nha-chung/`, `/lien-he/`.
 - Preview parity, DNS and live-host review.
 
 Incremental note on `2026-05-13 02:20 ICT`:
@@ -105,11 +107,17 @@ Incremental note on `2026-05-13 03:20 ICT`:
 - `/ho-tro/` is part of the reviewed implemented route set and remains disclaimer-first, non-transactional, and free of regulated-service promises.
 - `/gioi-thieu/` now includes `/ho-tro/` in its internal-link block; the added route remains within approved support-boundary framing and does not introduce contact, payment, or guaranteed-outcome claims.
 
+Incremental note on `2026-05-13 07:20 ICT`:
+
+- `/da-lat/` is now part of the reviewed implemented route set and remains pilot-context only, with no accommodation, relocation, investment, or guaranteed-support claim.
+- `/cau-hoi/` is also part of the reviewed implemented route set and continues to deflect regulated assumptions instead of opening intake, payment, or service promises.
+- The implemented route set continues to route claim-sensitive guidance through `/legal/disclaimer/` and keeps remaining missing local targets limited to planned routes only.
+
 ## Gate Mapping
 
 | Gate | Team 5 status |
 |---|---|
-| Gate 2 (content and claim safety) | `IMPLEMENTED_ROUTES_REVIEWED_PENDING_FULL_ROUTE_COVERAGE` |
+| Gate 2 (content and claim safety) | `IMPLEMENTED_ROUTES_REVIEWED_PENDING_REMAINING_ROUTE_COVERAGE` |
 | Gate 4 (route smoke) | `PARTIAL_ROUTE_SET_EXISTS_PENDING_TEAM8_EVIDENCE` |
 | Gate 7 (preview claim parity) | `BLOCKED_BY_MISSING_PREVIEW_DEPLOY` |
 | Release decision | Keep `DO_NOT_LINK_PRIMARY` |
