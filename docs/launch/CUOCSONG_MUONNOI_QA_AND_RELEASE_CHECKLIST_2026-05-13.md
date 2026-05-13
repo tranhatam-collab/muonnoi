@@ -100,6 +100,10 @@ Pass condition:
   - `cuocsong.muonnoi.org/public/cho-va-nhan/index.html` still keeps `Muôn Nơi · Cuộc Sống Muôn Nơi` in the route header
   - the page still uses written language labels `Tiếng Việt` and `English`
   - removing the stale `(planned)` label from `/ho-tro/` does not change brand framing, bilingual structure, or the approved non-transactional route role
+- Team 4 route recheck on 2026-05-13 after source commit `18d8609`:
+  - `cuocsong.muonnoi.org/public/da-lat/index.html` still keeps `Muôn Nơi · Cuộc Sống Muôn Nơi` in the route header
+  - the page still uses written language labels `Tiếng Việt` and `English`
+  - the external handoff to `nguoiviet-muonnoi-org.pages.dev` and the remaining `/hoc-tap/ (planned)` link stay inside the approved module framing and do not introduce shorthand labels or separate-brand positioning
 
 ### Gate 4 — Route and link smoke
 

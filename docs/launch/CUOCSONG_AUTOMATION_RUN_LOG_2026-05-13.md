@@ -50,6 +50,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 04:25 | `:25` | Team 6 | `DONE` | Added the new `/da-lat/` route, updated `sitemap.xml` and `_redirects`, removed the stale `(planned)` label from `/song-o-nhieu-noi/` now that `/da-lat/` exists locally, and recorded local `200` smoke evidence for `/da-lat/index.html` |
 | 2026-05-13 04:35 | `:35` | Team 8 | `DONE` | Rechecked `/da-lat/` after commit `18d8609`: the route meets the implemented metadata baseline, `sitemap.xml` includes `/da-lat/`, and the remaining missing local targets are still intentional planned links only: `/nha-chung/`, `/lien-he/`, `/hoc-tap/` |
 | 2026-05-13 04:40 | `:40` | Team 9 | `BLOCKED` | Synced Team 9 gate notes to the latest lane state: `/da-lat/` is now part of the implemented route set, Team 7 is still the active owner for preview-prep documentation only, and Team 9 remains blocked because preview, DNS, accessibility, payment, email and proof evidence are still incomplete |
+| 2026-05-13 07:15 | `:15` | Team 4 | `DONE` | Rechecked `/da-lat/` after commit `18d8609`: the route still uses `Muôn Nơi · Cuộc Sống Muôn Nơi`, keeps the written labels `Tiếng Việt` and `English`, and the `nguoiviet` handoff plus `/hoc-tap/ (planned)` link remain inside the approved brand and bilingual framing |
 
 ## Visibility note
 
