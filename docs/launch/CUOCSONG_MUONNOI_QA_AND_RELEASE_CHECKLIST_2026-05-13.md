@@ -263,5 +263,6 @@ Reason:
 |---|---|---|
 | Brand and bilingual verification on implemented routes | `PASS` | Keep applying the recorded Team 4 rules to each newly added route before preview claims |
 | Gate 5 metadata on implemented routes | `PASS` | Implemented route set now passes metadata baseline; Team 7 may continue preview prep without attaching DNS |
-| Preview deploy not allowed yet | `Team 7` | Wait for Team 8 evidence, then prepare Pages preview without attaching DNS |
+| Gate 6 accessibility still open | `Team 8` | Record keyboard traversal, contrast proof, and mobile text-overlap evidence before any preview-readiness claim |
+| Preview deploy not allowed yet | `Team 7` | Stay in prep-only mode until Gate 6 is pass; do not deploy, attach DNS, or claim preview readiness |
 | Intake/email/proof integration blocked | `Team 9` | Stay in contract-note mode until payment, email and proof gates pass |
