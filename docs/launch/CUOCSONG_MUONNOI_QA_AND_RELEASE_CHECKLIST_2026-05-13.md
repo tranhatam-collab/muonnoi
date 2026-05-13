@@ -192,6 +192,13 @@ rg -n 'hreflang="vi"|hreflang="en"|og:title|og:description|og:image|og:url|twitt
 Pass condition:
 
 - Manual or automated accessibility evidence attached.
+- Team 8 accessibility baseline snapshot on 2026-05-13:
+  - implemented routes consistently include a semantic `<main>` region
+  - implemented routes with top navigation include `<nav aria-label="Điều hướng chính">`
+  - brand/home links use `aria-label="Cuộc Sống Muôn Nơi trang chủ"`
+  - CTA buttons are rendered as text links, not icon-only controls
+  - the current implemented route set contains no content `<img>` tags, so alt-text work is not yet a blocker on these pages
+  - Gate 6 remains `NOT_PASS` because keyboard traversal, contrast proof, and mobile text-overlap evidence have not yet been recorded
 
 ### Gate 7 — Cloudflare preview
 
