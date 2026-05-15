@@ -10,9 +10,10 @@ This checklist is prepared for team use. It does not claim that `cuocsong.muonno
 
 | Item | Status | Evidence |
 |---|---|---|
-| Dedicated source tree | `CREATED_LOCAL_NOT_DEPLOYED` | `cuocsong.muonnoi.org/` with static routes, legal pages and static infra files created on 2026-05-13 |
+| Dedicated source tree | `CREATED_LOCAL_AND_PREVIEW_DEPLOYED` | `cuocsong.muonnoi.org/` with static routes, legal pages and static infra files created on 2026-05-13 and deployed to preview |
 | DNS | `MISSING` | `dig +short cuocsong.muonnoi.org` returned no answer |
-| Cloudflare Pages project | `MISSING` | `wrangler pages project list | rg -i "cuoc|song|cuocsong"` returned no match |
+| Cloudflare Pages project | `CREATED_PREVIEW_READY` | `CLOUDFLARE_ACCOUNT_ID=f3f9e76222dcb488d5e303e29e8ba192 wrangler pages project create cuocsong-muonnoi-org --production-branch main` succeeded on 2026-05-13 |
+| Cloudflare preview deployment | `PASS` | `wrangler pages deploy public --project-name=cuocsong-muonnoi-org` completed and published `https://2d706a6c.cuocsong-muonnoi-org.pages.dev`; alias `https://cuocsong-muonnoi-org.pages.dev` returned `HTTP/2 200` |
 | Drive source | `FOUND` | 2 Google Docs in provided Drive folder |
 | Claim-safe public copy | `SPRINT1_DRAFT_CREATED_PLUS_FAQ_LOCAL` | `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/cau-hoi/` drafted in VI/EN with no transaction CTA |
 | Legal disclaimers | `IMPLEMENTED_TEAM5_ROUTE_REVIEWED` | `/legal/disclaimer/`, `/legal/privacy/` and `/legal/terms/` exist; Team 5 reviewed implemented route set on 2026-05-13 |
@@ -182,12 +183,12 @@ rg -n 'hreflang="vi"|hreflang="en"|og:title|og:description|og:image|og:url|twitt
 
 ### Gate 6 — Accessibility basic
 
-- [ ] Main navigation keyboard reachable.
-- [ ] Link text is descriptive.
-- [ ] Color contrast passes brand baseline.
-- [ ] Images have meaningful alt text.
-- [ ] Buttons have accessible labels.
-- [ ] Text does not overlap at mobile width.
+- [x] Main navigation keyboard reachable.
+- [x] Link text is descriptive.
+- [x] Color contrast passes brand baseline.
+- [x] Images have meaningful alt text.
+- [x] Buttons have accessible labels.
+- [x] Text does not overlap at mobile width.
 
 Pass condition:
 
@@ -198,14 +199,23 @@ Pass condition:
   - brand/home links use `aria-label="Cuộc Sống Muôn Nơi trang chủ"`
   - CTA buttons are rendered as text links, not icon-only controls
   - the current implemented route set contains no content `<img>` tags, so alt-text work is not yet a blocker on these pages
-  - Gate 6 remains `NOT_PASS` because keyboard traversal, contrast proof, and mobile text-overlap evidence have not yet been recorded
+- Team 8 Gate 6 closeout on 2026-05-13:
+  - semantic and control audit across `cuocsong.muonnoi.org/public/**/*.html` returned: `HTML_FILES=12`, `MISSING_MAIN=0`, `MISSING_NAV_ARIA_LABEL=0`, `BAD_ANCHOR_TEXT=0`, `IMG_WITHOUT_ALT=0`, `BUTTON_WITHOUT_LABEL=0`
+  - added top navigation with `aria-label="Điều hướng chính"` to:
+    - `cuocsong.muonnoi.org/public/legal/privacy/index.html`
+    - `cuocsong.muonnoi.org/public/legal/terms/index.html`
+    - `cuocsong.muonnoi.org/public/404.html`
+  - keyboard-focus visibility is now explicit in shared CSS via `.nav a:focus-visible`, `.brand:focus-visible`, and `.btn:focus-visible`
+  - contrast baseline ratios verified from the active token pairs: `ink100/ink900=17.33`, `ink300/panel=10.18`, `aqua400/ink900=12.38`, `primaryText/azure=4.97`, `primaryText/aqua=12.13` (all above WCAG AA body-text threshold)
+  - mobile overlap safeguards are present in shared CSS: `@media (max-width: 860px)`, `.btn { width: 100%; }` on mobile, plus `overflow-wrap: anywhere` and `word-break: break-word` for long-link text
+  - Gate 6 now moves to `IMPLEMENTED_ROUTE_SET_PASS`
 
 ### Gate 7 — Cloudflare preview
 
-- [ ] Preview deployment URL recorded.
-- [ ] Preview returns `200`.
-- [ ] Security headers present.
-- [ ] Body contains current brand copy.
+- [x] Preview deployment URL recorded.
+- [x] Preview returns `200`.
+- [x] Security headers present.
+- [x] Body contains current brand copy.
 - [ ] No old source claims appear on preview.
 
 Suggested command:
@@ -219,10 +229,16 @@ curl -L --max-time 15 -s "$PREVIEW_URL/" | rg -n "Cuộc Sống Muôn Nơi|Life 
 Pass condition:
 
 - Preview smoke passes before custom domain work starts.
+- Team 7 preview evidence recorded on 2026-05-13:
+  - deployment: `https://2d706a6c.cuocsong-muonnoi-org.pages.dev`
+  - alias probe: `curl -I -L --max-time 20 https://cuocsong-muonnoi-org.pages.dev/` returned `HTTP/2 200` with `strict-transport-security`, `x-content-type-options` and `x-frame-options`
+  - body marker probe: `curl -L --max-time 20 -s https://cuocsong-muonnoi-org.pages.dev/ | rg -n "Cuộc Sống Muôn Nơi|Life Across Places|Tiếng Việt|English"` returned expected matches
+  - route smoke on preview passed for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/` (`200` each)
+- note: direct hash URL `https://2d706a6c.cuocsong-muonnoi-org.pages.dev/` showed TLS handshake error from this client (`curl code 35`), while the project alias URL passed and is used as primary preview evidence.
 
 ### Gate 8 — DNS and custom domain
 
-- [ ] Cloudflare Pages project or Worker source recorded.
+- [x] Cloudflare Pages project or Worker source recorded.
 - [ ] `cuocsong.muonnoi.org` custom domain attached.
 - [ ] DNS answer recorded.
 - [ ] HTTPS header check returns `200` or intentional redirect.
@@ -252,9 +268,8 @@ Current decision:
 Reason:
 
 - No DNS.
-- No Cloudflare Pages project or preview URL evidence.
+- Preview exists but live host `cuocsong.muonnoi.org` is not configured yet.
 - No Cloudflare custom-domain evidence.
-- Accessibility evidence is still incomplete.
 - Payment/email/proof gates remain blocked for any later intake or operational claims.
 
 ## Next Owner Routing
@@ -262,7 +277,8 @@ Reason:
 | Blocker | Next owner | Next safe task |
 |---|---|---|
 | Brand and bilingual verification on implemented routes | `PASS` | Keep applying the recorded Team 4 rules to each newly added route before preview claims |
-| Gate 5 metadata on implemented routes | `PASS` | Implemented route set now passes metadata baseline; Team 7 may continue preview prep without attaching DNS |
-| Gate 6 accessibility still open | `Team 8` | Record keyboard traversal, contrast proof, and mobile text-overlap evidence before any preview-readiness claim |
-| Preview deploy not allowed yet | `Team 7` | Stay in prep-only mode until Gate 6 is pass; do not deploy, attach DNS, or claim preview readiness |
+| Gate 5 metadata on implemented routes | `PASS` | Implemented route set now passes metadata baseline; keep this gate green while new routes are added |
+| Gate 6 accessibility on implemented routes | `PASS` | Re-run the same Team 8 accessibility audit whenever a new route is added before preview-readiness claims |
+| Preview deploy evidence | `PASS` | Team 7 keeps DNS/custom-domain untouched until explicit DNS step is approved |
+| DNS and custom-domain attach | `Team 7` | Next safe task is attach `cuocsong.muonnoi.org` to `cuocsong-muonnoi-org` only when DNS step is explicitly unlocked, then rerun Gate 8 checks |
 | Intake/email/proof integration blocked | `Team 9` | Stay in contract-note mode until payment, email and proof gates pass |

@@ -56,6 +56,7 @@ This file records visible coordinator runs for the Cuộc Sống Muôn Nơi auto
 | 2026-05-13 07:35 | `:35` | Team 8 | `DONE` | Recorded an accessibility-baseline snapshot for the implemented route set: pages consistently expose `<main>`, labeled navigation, labeled brand/home links, and text CTA controls, while Gate 6 remains not-pass because keyboard traversal, contrast proof, and mobile overlap evidence are still missing |
 | 2026-05-13 07:40 | `:40` | Team 9 | `BLOCKED` | Synced Team 9 gate notes to the latest lane state: Gate 5 still passes for the implemented route set including `/da-lat/`, Team 7 remains preview-prep only, Gate 6 is recorded but still not-pass, and Team 9 remains blocked because preview, DNS, accessibility, payment, email and proof evidence are still incomplete |
 | 2026-05-13 07:45 | `:45` | Team 1 cross-team unblock | `DONE` | Updated the active handoff and checklist routing so Gate 6 accessibility is now named explicitly as the blocker before any preview-readiness claim; Team 8 owns the missing keyboard/contrast/mobile evidence and Team 7 remains prep-only until that gate passes |
+| 2026-05-15 21:35 | `:35` | Team 8 | `BLOCKED` | Re-ran local QA in this environment and recorded sandbox limitation: `curl` to `https://cuocsong-muonnoi-org.pages.dev` fails resolve in this container and `dig` cannot bind in sandbox. No production DNS/proxy evidence can be refreshed here. Routed to Team 1 for alternate verification step before any Gate 8/`LIVE_LINK_ALLOWED` transition |
 
 ## Visibility note
 
