@@ -28,6 +28,26 @@
 
 ---
 
+## 0. ENVIRONMENT SETUP
+
+### 0.1 System requirements (developer machine)
+
+| Component | Requirement | Status | Verified Date |
+|---|---|---|---|
+| Java Runtime (JDK) | 17+ | Java 21.0.11 LTS installed | 2026-05-17 |
+| Node.js | 18+ | Pending verification | — |
+| Xcode | 15.0+ | Pending verification | — |
+| Android SDK | API 26–34 | Pending verification | — |
+| Expo CLI | latest | Pending verification | — |
+
+**Action items:**
+- [ ] Verify Node.js version: `node -v`
+- [ ] Verify Xcode: `xcode-select -p && xcode-select -v`
+- [ ] Verify Android SDK: `$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --list --include_obsolete`
+- [ ] Install Expo CLI: `npm install -g expo-cli`
+
+---
+
 ## 1. QA STRATEGY
 
 ### 1.1 Test pyramid
