@@ -418,3 +418,75 @@ Every parallel team may proceed only in its owned lane. Release claims remain se
 3. Legal/Trust reviews blocked claims from the source audit.
 4. Web creates source only after the first content sprint is approved.
 5. Platform attaches Cloudflare preview and DNS only after route, brand, claim and SEO QA pass.
+
+## Update 2026-05-17 — Brand Identity System Design Brief completed
+
+### What changed
+- Comprehensive brand identity system design brief completed and delivered to design team.
+- File: `docs/brand/MUONNOI_BRAND_IDENTITY_SYSTEM_2026_DESIGN_BRIEF.md` (15,000+ words)
+- Scope: Master brand identity + NGƯỜI VIỆT sub-brand with detailed visual systems for 8 subdomains
+
+### Master brand identity specifications
+- **Color palette**: 
+  - Primary: Azure #3B7EFF, Whisper #7FE0E5, Gold #D4AF37
+  - Neutral: Charcoal #0a0f14, White #FFFFFF
+  - Semantic: Success #10B981, Warning #F59E0B, Error #EF4444
+- **Typography**: Inter/Roboto (body/display), JetBrains Mono (code), with Vietnamese diacritics support, 1.6 line height
+- **Logo system**: Circular badge (32px min digital, 10mm print), 5 lockup formats (horizontal, vertical, icon-only, monochrome, reversed)
+- **Voice & tone**: Evidence-led over hype, warm over distant, community-builder energy
+- **Component specifications**: Buttons, forms, cards, status indicators, navigation patterns with accessibility (WCAG 2.1 AA)
+
+### NGƯỜI VIỆT sub-brand identity
+- **Color extensions**: Vermillion #D84315 (cultural warmth), Teal #00897B (journey depth), Cream #FFFBF0 (traditional aesthetic)
+- **7-stage journey narrative**: Con người → Mắc kẹt → Môi trường → Va chạm → Trí tuệ → Hệ quả → Quay trở về
+- **8 subdomain visual systems**:
+  1. Root (người-việt.muonnoi.org): Hero + Vietnam map + journey visualization
+  2. Hành Trình (Journeys): Timeline vertical scroll, Vermillion→Azure→Teal gradient
+  3. Tìm Kiếm (Discovery): Search + map view interface
+  4. Cộng Đồng (Community): Hexagonal grid community groups layout
+  5. Câu Chuyện (Stories): Magazine-style full-bleed hero images
+  6. Tài Nguyên (Resources): Card grid color-coded by category
+  7. Bạn Trẻ (Mentorship): Profile cards + matching quiz + compatibility scoring
+  8. Điểm Dừng (Way-stations): Map-centric regional hubs with city accent colors
+
+### Responsive design & accessibility
+- Breakpoints: Mobile (<768px), Tablet (768–1279px), Desktop (1280px+)
+- Dark mode mapping and implementation rules
+- WCAG 2.1 AA compliance: 4.5:1 minimum contrast, Vietnamese diacritics support
+- 40+ design QA verification points
+
+### Design deliverables checklist
+**Tier 1 (Essential)**:
+- Figma component library (atoms, molecules, organisms)
+- CSS token export and design tokens documentation
+- Brand guidelines PDF (6-12 pages)
+
+**Tier 2 (NGƯỜI VIỆT specific)**:
+- Journey visualization interactive prototype
+- 8 subdomain layout templates
+- City-specific accent color palette for Way-stations
+
+**Tier 3 (Responsive & Accessibility)**:
+- Mobile-first responsive grid system
+- Dark mode color map + implementation guide
+- Accessibility audit report (WCAG 2.1 AA)
+
+**Tier 4 (Implementation)**:
+- React component examples (Hero, StoryCard, ProfileCard)
+- Tailwind CSS configuration with design tokens
+- Icon library (SVG source + React wrapper)
+
+### Sign-off criteria
+Design team approves when:
+- All Figma components match design brief specifications
+- CSS tokens export successfully with no missing values
+- 10 sample pages (5 light, 5 dark) pass accessibility audit
+- NGƯỜI VIỆT 8 subdomain layout templates render correctly across all breakpoints
+- Brand guidelines PDF matches visual delivery
+
+### Next gates
+1. Design team creates Figma library from design brief specifications
+2. CSS token export and Tailwind configuration
+3. React component development and storybook setup
+4. NGƯỜI VIỆT subdomain implementation begins after design approval
+5. Design QA validation on all 8 NGƯỜI VIỆT subdomains
