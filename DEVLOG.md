@@ -4,6 +4,58 @@ Cập nhật mới nhất ở đầu file.
 
 ---
 
+## 2026-05-19 — Full email system: 8 templates + payment emails + URL bug fix
+
+### Đã làm
+- **Bug fix: `MAIL_API_BASE_URL`** — `"https://mail.iai.one/v1"` → `"https://mail.iai.one/_mail/v1"`. Tất cả email trước bản này 404 silent do thiếu `/_mail` prefix.
+- **`src/lib/email.ts`** — Email service tập trung, hoàn toàn mới:
+  - `sendEmail()` + `fireEmail()` (fire-and-forget, không block)
+  - HTML wrapper chuẩn responsive, branding muonnoi.org
+  - 8 templates bilingual vi/en:
+    1. `buildWelcomeEmail` — đăng ký bằng mật khẩu
+    2. `buildWelcomeGoogleEmail` — đăng ký lần đầu bằng Google OAuth
+    3. `buildMagicLinkEmail` — link đăng nhập
+    4. `buildPaymentConfirmedEmail` — thanh toán thành công
+    5. `buildPaymentFailedEmail` — thanh toán thất bại
+    6. `buildSupportAckEmail` — xác nhận nhận yêu cầu hỗ trợ
+    7. `buildEmailVerifiedEmail` — xác minh email xong
+    8. `buildFlowNotificationEmail` — flow automation hoàn thành/thất bại
+- **`google-oauth-api.ts`** — `upsertGoogleUser` trả về `isNew: boolean`; `handleGoogleAuthCallback` gọi `buildWelcomeGoogleEmail` fire-and-forget cho user mới
+- **`magic-link-api.ts`** — thay `sendMagicLinkEmail` inline bằng `buildMagicLinkEmail` từ lib
+- **`payment-api.ts`** — `handlePaymentWebhook`:
+  - `payment.completed` / `payment.success` → lookup user → gửi `buildPaymentConfirmedEmail`
+  - `payment.failed` / `payment.error` → lookup user → gửi `buildPaymentFailedEmail`
+- **Deployed** `ai-muonnoi-api` version `5e130b71-4a22-42f5-8bfd-a8b82950e662` ✅
+
+### Email flows hoàn chỉnh (sau deploy này)
+| Flow | Trigger | Template | Status |
+|------|---------|----------|--------|
+| Magic link sign-in | POST /api/auth/magic-link/request | buildMagicLinkEmail | ✅ |
+| Welcome (password) | POST /api/auth/register | buildWelcomeEmail | ✅ (đã có trước) |
+| Welcome (Google OAuth) | GET /api/auth/google/callback (new user) | buildWelcomeGoogleEmail | ✅ MỚI |
+| Payment confirmed | POST /api/webhook/payment (completed) | buildPaymentConfirmedEmail | ✅ MỚI |
+| Payment failed | POST /api/webhook/payment (failed) | buildPaymentFailedEmail | ✅ MỚI |
+| Support ack | (gọi khi có contact form) | buildSupportAckEmail | ✅ sẵn sàng |
+| Email verified | (gọi sau verify flow) | buildEmailVerifiedEmail | ✅ sẵn sàng |
+| Flow notification | (gọi từ flow executor) | buildFlowNotificationEmail | ✅ sẵn sàng |
+
+### Cách dev team dùng
+```typescript
+import { buildPaymentConfirmedEmail, fireEmail } from "../lib/email"
+
+// Trong bất kỳ handler nào:
+fireEmail(env, buildPaymentConfirmedEmail(env, userEmail, {
+  name: user.name,
+  amount: 199000,
+  currency: "VND",
+  intentId: "pi_abc123",
+  purpose: "membership",
+}))
+// Không cần await — fire-and-forget, không block response
+```
+
+---
+
 ## 2026-05-19 — Phase A done: repo cleanup, DNS matrix, Cuộc Sống Gate 8
 
 ### Đã làm
