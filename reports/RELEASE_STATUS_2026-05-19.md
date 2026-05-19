@@ -7,7 +7,9 @@
 
 ---
 
-## TRUE COMPLETION: ~75% (NOT 100%, NOT "ready to ship")
+## TRUE COMPLETION: 22% (2/9 gates PASS, strict evidence-based scoring)
+
+> Trước đây tôi báo cáo 75–80%. Sai. Khi áp scoring nghiêm (gate evidence), thực tế là 2/9 = 22%. Các báo cáo cũ tính "infrastructure exists" thay vì "gate evidence". File này từ giờ dùng scoring 9-condition strict.
 
 ### ✅ Thật sự ĐÃ XONG (có evidence verify hôm nay)
 
@@ -102,3 +104,12 @@
 **Generated:** 2026-05-19  
 **Verified by:** Claude agent, with real verification commands run live.  
 **No claims without evidence.**
+
+---
+
+## Verification Ticks
+
+Mỗi tick là 1 lần cron `muonnoi-release-100-verifier` (cron ID `3d04bc7d`, mỗi :17 và :47 past hour) chạy 9 verify command thật. Định nghĩa PASS strict ở `docs/launch/DEV_TEAM_100_PERCENT_PLAN_2026-05-19.md`.
+
+- 2026-05-19 baseline — 2/9 PASS — failing: C2 (Payment/Email QA), C3 (iOS Team ID), C4 (Android SDK), C5 (OAuth E2E), C6 (DNS matrix file), C7 (Cuộc Sống Gate 8), C8 (repo dirty 7 files) — next: C2 (P0 blocker payment launch)
+
