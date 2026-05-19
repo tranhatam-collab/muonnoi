@@ -470,6 +470,18 @@ git push origin main
 
 ### C2 · Payment/Email QA — 10 scenario (2.5 giờ) — đóng condition C2
 
+> **Verified routes 2026-05-19 11:55 ICT** (qua live probe pay.iai.one):
+> - `POST /v1/checkout/sessions` — main payment (cần `provider` field, public route, signed bởi `x-api-key`)
+> - `POST /internal/checkout-session` — internal contract (cần `x-idempotency-key` + `x-site-key`)
+> - `POST /v1/refunds` — refunds (cần `x-idempotency-key`)
+> - `POST /v1/webhooks/payos/{webhook-id}` — webhook ingest (signature verified)
+> - `GET /v1/payments/search` — list payments
+> - `GET /v1/refunds/search` — list refunds
+> - `GET /openapi.json` — full schema
+> - `GET /docs` — HTML docs
+>
+> Routes `INTERNAL_CHECKOUT_ROUTE` = `/internal/checkout-session`, `VETUONGLAI_CHECKOUT_ROUTE` = `/api/v1/checkout/session`.
+
 **Cần trước:**
 - PayOS test credentials (hoặc dùng config đang có trên `pay.iai.one`)
 - Test email inbox accessible (vd: Mailtrap, hoặc real email)
@@ -493,13 +505,13 @@ cd qa/payment-email-evidence/2026-05-19
 
 **10 scenario — chạy từng scenario, lưu request + response:**
 
-**Scenario 1 — Happy path:**
+**Scenario 1 — Happy path (CORRECTED PATH: `/internal/checkout-session`):**
 ```bash
 IDEMP="$(uuidgen)"
-curl -s -X POST https://pay.iai.one/internal/checkout \
+curl -s -X POST https://pay.iai.one/internal/checkout-session \
   -H "Content-Type: application/json" \
   -H "x-idempotency-key: $IDEMP" \
-  -H "x-site-key: test-key-hash" \
+  -H "x-site-key: $TEST_SITE_KEY" \
   -d '{
     "tenant_code": "muonnoi",
     "site_code": "test",
@@ -510,6 +522,20 @@ curl -s -X POST https://pay.iai.one/internal/checkout \
     "return_url": "https://app.muonnoi.org/payment/success",
     "cancel_url": "https://app.muonnoi.org/payment/cancel",
     "customer": {"email": "test@muonnoi.org", "full_name": "Test User"}
+  }' | tee 01-happy-path.json | jq '.'
+```
+Hoặc dùng public route `/v1/checkout/sessions` (auth bằng `x-api-key`):
+```bash
+curl -s -X POST https://pay.iai.one/v1/checkout/sessions \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: $PAY_PUBLIC_API_KEY" \
+  -d '{
+    "provider": "payos",
+    "amount": 10000,
+    "currency": "VND",
+    "order_id": "test-'$(date +%s)'",
+    "return_url": "https://app.muonnoi.org/payment/success",
+    "cancel_url": "https://app.muonnoi.org/payment/cancel"
   }' | tee 01-happy-path.json | jq '.'
 ```
 **Expected:** HTTP 201 + `checkout_url`. PASS criterion: response has `"ok":true` AND `checkout_url` field.
