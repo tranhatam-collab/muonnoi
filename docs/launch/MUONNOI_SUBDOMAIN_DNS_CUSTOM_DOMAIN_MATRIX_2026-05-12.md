@@ -3,7 +3,14 @@
 ## Scope
 This file locks the current evidence matrix for planned Muonnoi domains before more public links or deployments are promoted.
 
-Evidence time: `2026-05-12 06:52 +07`
+Evidence time: `2026-05-12 06:52 +07` (last updated `2026-05-19`)
+
+## Update 2026-05-19
+- DNS + HTTP re-verified for cuocsong, nguoiviet, www.nguoiviet.
+- `cuocsong.muonnoi.org` → LIVE (dig Cloudflare HTTP 200) → status `LIVE_LINK_ALLOWED`.
+- `nguoiviet.muonnoi.org` → LIVE (dig Cloudflare HTTP 200, no longer Wix) → status `LIVE_LINK_ALLOWED`.
+- `www.nguoiviet.muonnoi.org` → DNS configured (Cloudflare 104.21.93.187) but origin 522 → status `DNS_CONFIGURED_ORIGIN_PENDING`.
+- Added nguoiviet + cuocsong to allowed primary public links.
 
 Evidence commands used:
 - `wrangler pages project list`
@@ -29,8 +36,8 @@ Additional evidence on `2026-05-13 +07`:
 | `muonnoi-node` | `node.muonnoi.org`, `www.node.muonnoi.org`, `muonnoi-node.pages.dev` | `PASS_BUT_NOT_PUBLIC_PRIMARY` |
 | `visamuonnoi-org` | `visamuonnoi-org.pages.dev` only | `OUT_OF_SCOPE_FOR_CURRENT_PUBLIC_LINKS` |
 | `visamuonnoi-org-web` | `visamuonnoi-org-web.pages.dev` only | `OUT_OF_SCOPE_FOR_CURRENT_PUBLIC_LINKS` |
-| `nguoiviet-muonnoi-org` | `nguoiviet-muonnoi-org.pages.dev`; custom domain `nguoiviet.muonnoi.org` attached but pending DNS update from Wix → Pages | `LIVE_PAGES_PENDING_DNS_SWAP` |
-| `cuocsong-muonnoi-org` | `cuocsong-muonnoi-org.pages.dev` only | `PREVIEW_DEPLOYED_CUSTOM_DOMAIN_PENDING` |
+| `nguoiviet-muonnoi-org` | `nguoiviet.muonnoi.org` → HTTP/2 200, Cloudflare IP `172.67.214.1`; `www.nguoiviet.muonnoi.org` → DNS configured (Cloudflare `104.21.93.187`) but origin 522 | `LIVE_LINK_ALLOWED` (nguoiviet), `DNS_CONFIGURED_ORIGIN_PENDING` (www) |
+| `cuocsong-muonnoi-org` | `cuocsong.muonnoi.org` → HTTP/2 200, Cloudflare IP `172.67.214.1`; custom domain attached and live | `LIVE_LINK_ALLOWED` |
 
 ## Host evidence matrix
 | Host | Planned role | DNS evidence | HTTP evidence | Pages custom-domain evidence | Current decision |
@@ -51,8 +58,9 @@ Additional evidence on `2026-05-13 +07`:
 | `suckhoe.muonnoi.org` | health quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `sangtao.muonnoi.org` | creation quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `congdong.muonnoi.org` | community quest layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
-| `nguoiviet.muonnoi.org` | Vietnamese Global Journey layer (Người Việt Muôn Nơi) | currently CNAME `pointing.wixdns.net` (legacy Wix) | preview at `https://nguoiviet-muonnoi-org.pages.dev/` returned `200`; custom domain attached on 2026-05-12, status `pending` (CNAME not set) | `nguoiviet-muonnoi-org` Pages project includes custom domain row (pending DNS) | `PENDING_DNS_SWAP_FROM_WIX_TO_PAGES` |
-| `cuocsong.muonnoi.org` | living-practice layer (Cuộc Sống Muôn Nơi) | no DNS answer on 2026-05-13 | preview alias `https://cuocsong-muonnoi-org.pages.dev/` returned `HTTP/2 200` and route smoke returned `200` for `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`; no live host probe because DNS is not configured | Cloudflare Pages project `cuocsong-muonnoi-org` created and preview deployed; custom domain `cuocsong.muonnoi.org` not attached yet | `PREVIEW_PASS_DNS_CUSTOM_DOMAIN_PENDING` |
+| `nguoiviet.muonnoi.org` | Vietnamese Global Journey layer (Người Việt Muôn Nơi) | Cloudflare IP `172.67.214.1` (verified 2026-05-19) | `https://nguoiviet.muonnoi.org/` returned `HTTP/2 200`, title "Người Việt Muôn Nơi · Đi Xa Để Quay Trở Về" | `nguoiviet-muonnoi-org` Pages project — custom domain active | `LIVE_LINK_ALLOWED` |
+| `www.nguoiviet.muonnoi.org` | www canonical for Người Việt Muôn Nơi | Cloudflare IP `104.21.93.187` (verified 2026-05-19) | `https://www.nguoiviet.muonnoi.org/` returned `HTTP 522` (origin connection timeout) | Not attached to any Pages project yet; DNS proxy enabled at Cloudflare with no responding origin | `DNS_CONFIGURED_ORIGIN_PENDING` |
+| `cuocsong.muonnoi.org` | living-practice layer (Cuộc Sống Muôn Nơi) | Cloudflare IP `172.67.214.1` (verified 2026-05-19) | `https://cuocsong.muonnoi.org/` returned `HTTP/2 200`, title "Cuộc Sống Muôn Nơi | Hướng dẫn đời sống thật trong hệ Muôn Nơi" | Cloudflare Pages project `cuocsong-muonnoi-org` — custom domain active | `LIVE_LINK_ALLOWED` |
 | `trust.muonnoi.org` | trust and complaints layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `nhachung.muonnoi.org` | housing/community layer | not yet checked in this run | not yet checked in this run | no Pages custom-domain row visible | `DO_NOT_LINK_PRIMARY` |
 | `node.muonnoi.org` | node/technical lane | `104.21.93.187` | not probed in this run | `muonnoi-node` project includes node and www.node | `LIVE_BUT_NOT_PUBLIC_PRIMARY` |
@@ -74,6 +82,8 @@ Allowed as primary public links now:
 - `https://docs.muonnoi.org/`
 - `https://ai.muonnoi.org/` only with note that custom-domain source still needs lock
 - `https://api.muonnoi.org/api/health` only for API health evidence
+- `https://cuocsong.muonnoi.org/` — verified HTTP 200 2026-05-19
+- `https://nguoiviet.muonnoi.org/` — verified HTTP 200 2026-05-19
 
 Not allowed as primary public CTA yet:
 - `https://lqos.muonnoi.org/`
@@ -85,9 +95,9 @@ Not allowed as primary public CTA yet:
 - `https://suckhoe.muonnoi.org/`
 - `https://sangtao.muonnoi.org/`
 - `https://congdong.muonnoi.org/`
-- `https://cuocsong.muonnoi.org/`
 - `https://trust.muonnoi.org/`
 - `https://nhachung.muonnoi.org/`
+- `https://www.nguoiviet.muonnoi.org/` — DNS configured (Cloudflare 104.21.93.187) but origin returns 522
 
 Use internal routes instead until each host has Cloudflare custom-domain evidence and a fresh `200` or intentional redirect result:
 - `/ecosystem/`

@@ -76,3 +76,17 @@ NEED:
 NEXT:
 1. Platform resolves custom-domain source ownership for `ai.muonnoi.org` and `lamviec.muonnoi.org`.
 2. API + Platform close payment/email production gate.
+
+---
+
+## Update 2026-05-19 — DNS verified for cuocsong + nguoiviet
+
+| Domain | DNS | HTTP | Status |
+|--------|:---:|:----:|--------|
+| `cuocsong.muonnoi.org` | ✅ Cloudflare `172.67.214.1` | ✅ `200` | `LIVE_LINK_ALLOWED` |
+| `nguoiviet.muonnoi.org` | ✅ Cloudflare `172.67.214.1` | ✅ `200` | `LIVE_LINK_ALLOWED` |
+| `www.nguoiviet.muonnoi.org` | ✅ Cloudflare `104.21.93.187` | ❌ `522` origin timeout | `DNS_CONFIGURED_ORIGIN_PENDING` |
+
+- DNS matrix file updated at `docs/launch/MUONNOI_SUBDOMAIN_DNS_CUSTOM_DOMAIN_MATRIX_2026-05-12.md`.
+- cuocsong and nguoiviet removed from "not allowed" list in public linking rule.
+- www.nguoiviet needs Cloudflare Pages project assignment to resolve origin 522.
