@@ -3,7 +3,9 @@
 > Supersedes `COMPLETION_REPORT_2026-05-18.md` và `INFRASTRUCTURE_READY_2026-05-18.md` ở những claim đã overstated. Mỗi dòng status đều có evidence verify command.
 
 **Last verified:** 2026-05-19 by Claude agent (live curl/dig/grep)
-**Detailed plan:** [`docs/launch/DEV_TEAM_100_PERCENT_PLAN_2026-05-19.md`](../docs/launch/DEV_TEAM_100_PERCENT_PLAN_2026-05-19.md)
+**Detailed plan (immutable spec):** [`docs/launch/DEV_TEAM_100_PERCENT_PLAN_2026-05-19.md`](../docs/launch/DEV_TEAM_100_PERCENT_PLAN_2026-05-19.md)
+**Master execution plan (final):** [`docs/launch/MUONNOI_FINAL_EXECUTION_PLAN_2026-05-19.md`](../docs/launch/MUONNOI_FINAL_EXECUTION_PLAN_2026-05-19.md)
+**Audit ownership:** Claude agent, per Founder authorization 2026-05-19 12:05 ICT
 
 ---
 
@@ -121,4 +123,5 @@ Mỗi tick là 1 lần cron `muonnoi-release-100-verifier` (cron ID `3d04bc7d`, 
 - 2026-05-19 10:50 ICT — 2/9 PASS — failing: C2,C3,C4,C5,C6,C7,C8 — next: C8 (idle 7 ticks)
 - 2026-05-19 11:20 ICT — 2/9 PASS — failing: C2,C3,C4,C5,C6,C7,C8 — next: C8 (idle 8 ticks)
 - 2026-05-19 11:50 ICT — 🎉 5/9 PASS (+3) — Phase A complete: C6 (DNS matrix), C7 (Cuộc Sống Gate 8), C8 (repo clean) all transitioned FAIL→PASS — failing: C2,C3,C4,C5 — next: C5 (OAuth E2E, lowest-effort remaining, no external credentials needed)
+- 2026-05-19 12:13 ICT — 5/9 PASS — Section 1.1 + 1.2 of master plan executed: email system v2 committed (ai.muonnoi.org 65d8737), post-deploy verify saved to qa/email-deploy-evidence/2026-05-19/post-deploy.txt — C8 maintained PASS through commit cycle — failing: C2,C3,C4,C5 — next: Section 1.3 (www.nguoiviet redirect, Founder Cloudflare action) + Section 2/3 (Android/OAuth no cred)
 
