@@ -7,7 +7,7 @@
 
 ---
 
-## TRUE COMPLETION: 22% (2/9 gates PASS, strict evidence-based scoring)
+## TRUE COMPLETION: 56% (5/9 gates PASS, strict evidence-based scoring)
 
 > Trước đây tôi báo cáo 75–80%. Sai. Khi áp scoring nghiêm (gate evidence), thực tế là 2/9 = 22%. Các báo cáo cũ tính "infrastructure exists" thay vì "gate evidence". File này từ giờ dùng scoring 9-condition strict.
 
@@ -120,4 +120,5 @@ Mỗi tick là 1 lần cron `muonnoi-release-100-verifier` (cron ID `3d04bc7d`, 
 - 2026-05-19 10:21 ICT — 2/9 PASS — failing: C2,C3,C4,C5,C6,C7,C8 — next: C8 (idle 6 ticks; Phase A1 (~40m) is lowest-effort first step)
 - 2026-05-19 10:50 ICT — 2/9 PASS — failing: C2,C3,C4,C5,C6,C7,C8 — next: C8 (idle 7 ticks)
 - 2026-05-19 11:20 ICT — 2/9 PASS — failing: C2,C3,C4,C5,C6,C7,C8 — next: C8 (idle 8 ticks)
+- 2026-05-19 11:50 ICT — 🎉 5/9 PASS (+3) — Phase A complete: C6 (DNS matrix), C7 (Cuộc Sống Gate 8), C8 (repo clean) all transitioned FAIL→PASS — failing: C2,C3,C4,C5 — next: C5 (OAuth E2E, lowest-effort remaining, no external credentials needed)
 
