@@ -1,5 +1,9 @@
 # Completion Report — 2026-05-18
 
+> ⚠️ **STATUS_SUPERSEDED_BY**: [`reports/RELEASE_STATUS_2026-05-19.md`](reports/RELEASE_STATUS_2026-05-19.md)
+> Báo cáo này overstated một số claim (đặc biệt "Conditional GO" và "production-ready" cho payment).
+> Đọc bản 2026-05-19 trước khi quyết định bất cứ gate nào.
+
 ## ✅ Work Completed This Session
 
 ### 1. Google Sign-In Deployment (5 sites)

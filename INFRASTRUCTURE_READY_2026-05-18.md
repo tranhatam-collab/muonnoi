@@ -1,5 +1,9 @@
 # Infrastructure Ready — 2026-05-18
 
+> ⚠️ **STATUS_SUPERSEDED_BY**: [`reports/RELEASE_STATUS_2026-05-19.md`](reports/RELEASE_STATUS_2026-05-19.md)
+> Báo cáo này dùng worker health-check để claim "production-ready" cho payment, nhưng QA evidence vẫn `NOT_YET_EXECUTED`. Sai phương pháp.
+> Đọc bản 2026-05-19 trước khi link bất kỳ CTA hoặc submit release nào.
+
 ## ✅ Complete Infrastructure Status
 
 ### 🔐 Authentication (✅ LIVE)

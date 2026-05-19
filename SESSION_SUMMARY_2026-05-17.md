@@ -1,4 +1,8 @@
 # Session Summary — 2026-05-17
+
+> ⚠️ **STATUS_SUPERSEDED_BY**: [`reports/RELEASE_STATUS_2026-05-19.md`](reports/RELEASE_STATUS_2026-05-19.md)
+> "Ready for 100%" trong báo cáo này đã overstated. Đọc bản 2026-05-19 cho status thật.
+
 ## Continuation: Release Cycle Completion (80% → Ready for 100%)
 
 ---
