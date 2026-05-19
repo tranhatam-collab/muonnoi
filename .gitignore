@@ -8,3 +8,8 @@ dist/
 .claude/
 .wrangler/
 *.corrupt-*/
+muonnoi-ai/
+muonnoi-ai-machine/
+muonnoi-app/
+muonnoi-node/
+docs/brand/*.zip
