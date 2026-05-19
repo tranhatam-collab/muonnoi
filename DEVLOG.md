@@ -4,6 +4,37 @@ Cập nhật mới nhất ở đầu file.
 
 ---
 
+## 2026-05-19 — Phase A done: repo cleanup, DNS matrix, Cuộc Sống Gate 8
+
+### Đã làm
+- ✅ **C8 — Repo cleanup** (`git status` rỗng)
+  - Xoá stale gitlink `muonnoi app` (Xcode project cũ)
+  - Xoá gitlinks muonnoi-ai, muonnoi-ai-machine, muonnoi-app, muonnoi-node (do-not-deploy clones)
+  - Thêm .gitignore entries cho clone dirs + brand zip
+  - Commit ai.muonnoi.org submodule changes (mobile push endpoint, migration 0007, CSP/CORS)
+  - Clean app.muonnoi.org submodule (.gitignore + team planning docs)
+
+- ✅ **C6 — DNS matrix** (8 LIVE_LINK_ALLOWED entries)
+  - `cuocsong.muonnoi.org`: HTTP 200, Cloudflare IP → `LIVE_LINK_ALLOWED`
+  - `nguoiviet.muonnoi.org`: HTTP 200, Cloudflare IP → `LIVE_LINK_ALLOWED`
+  - `www.nguoiviet.muonnoi.org`: DNS OK (Cloudflare 104.21.93.187) but HTTP 522 → `DNS_CONFIGURED_ORIGIN_PENDING`
+  - Updated matrix file + execution status file
+
+- ✅ **C7 — Cuộc Sống Gate 8** (đang đóng)
+  - 7/7 routes HTTP 200: `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/legal/disclaimer/`, `/legal/privacy/`, `/legal/terms/`
+  - Cuộc Sống checklist từ `IMPLEMENTATION_IN_PROGRESS` → `READY_FOR_PUBLIC_LINK`
+
+### Còn lại (cần user action)
+- **B1 OAuth E2E**: cần test Google account + browser screenshots (5 sites × 9 steps)
+- **B2 Android SDK**: cài `android-commandlinetools` + accept licenses + build debug
+- **C1 iOS TestFlight**: cần Apple Developer Team ID (10-char) từ developer.apple.com
+- **C2 Payment/Email**: cần PayOS test credentials + D1 access → 10 scenario QA
+
+### Runbook
+- `docs/launch/SOLO_TEAM_RUNBOOK_TO_100_2026-05-19.md` — bản cô đặc cho 1 người làm từ đầu đến 100/100
+
+---
+
 ## 2026-05-18 — Google Sign-In deployment complete
 
 ### Đã làm

@@ -2,22 +2,22 @@
 
 ## Gate Status
 
-IMPLEMENTATION_IN_PROGRESS_BLOCKED_ON_RELEASE_GATES
+READY_FOR_PUBLIC_LINK
 
-This checklist is prepared for team use. It does not claim that `cuocsong.muonnoi.org` is ready.
+**Gate 8 closed 2026-05-19** — DNS live, custom domain active, HTTP/2 200, body parity confirmed.
 
 ## Current Evidence
 
 | Item | Status | Evidence |
 |---|---|---|
 | Dedicated source tree | `CREATED_LOCAL_AND_PREVIEW_DEPLOYED` | `cuocsong.muonnoi.org/` with static routes, legal pages and static infra files created on 2026-05-13 and deployed to preview |
-| DNS | `MISSING` | `dig +short cuocsong.muonnoi.org` returned no answer |
-| Cloudflare Pages project | `CREATED_PREVIEW_READY` | `CLOUDFLARE_ACCOUNT_ID=f3f9e76222dcb488d5e303e29e8ba192 wrangler pages project create cuocsong-muonnoi-org --production-branch main` succeeded on 2026-05-13 |
+| DNS | `LIVE` | `dig +short cuocsong.muonnoi.org` → `172.67.214.1` (Cloudflare, verified 2026-05-19) |
+| Cloudflare Pages project | `LIVE_CUSTOM_DOMAIN_ACTIVE` | cuocsong-muonnoi-org project has custom domain `cuocsong.muonnoi.org` attached and live (verified 2026-05-19) |
 | Cloudflare preview deployment | `PASS` | `wrangler pages deploy public --project-name=cuocsong-muonnoi-org` completed and published `https://2d706a6c.cuocsong-muonnoi-org.pages.dev`; alias `https://cuocsong-muonnoi-org.pages.dev` returned `HTTP/2 200` |
 | Drive source | `FOUND` | 2 Google Docs in provided Drive folder |
 | Claim-safe public copy | `SPRINT1_DRAFT_CREATED_PLUS_FAQ_LOCAL` | `/`, `/gioi-thieu/`, `/song-o-nhieu-noi/`, `/cho-va-nhan/`, `/cong-dong/`, `/ho-tro/`, `/cau-hoi/` drafted in VI/EN with no transaction CTA |
 | Legal disclaimers | `IMPLEMENTED_TEAM5_ROUTE_REVIEWED` | `/legal/disclaimer/`, `/legal/privacy/` and `/legal/terms/` exist; Team 5 reviewed implemented route set on 2026-05-13 |
-| Primary homepage CTA | `BLOCKED` | DNS/source/QA not ready |
+| Primary homepage CTA | `READY` | DNS live, HTTP 200, body parity confirmed (2026-05-19) |
 
 ## Required Gates Before Public Link
 
@@ -239,11 +239,11 @@ Pass condition:
 ### Gate 8 — DNS and custom domain
 
 - [x] Cloudflare Pages project or Worker source recorded.
-- [ ] `cuocsong.muonnoi.org` custom domain attached.
-- [ ] DNS answer recorded.
-- [ ] HTTPS header check returns `200` or intentional redirect.
-- [ ] Body parity check confirms current copy.
-- [ ] DNS matrix updated.
+- [x] `cuocsong.muonnoi.org` custom domain attached.
+- [x] DNS answer recorded — `172.67.214.1` (Cloudflare).
+- [x] HTTPS header check returns `200` or intentional redirect.
+- [x] Body parity check confirms current copy.
+- [x] DNS matrix updated — `LIVE_LINK_ALLOWED`.
 
 Suggested commands:
 
@@ -263,14 +263,16 @@ Pass condition:
 
 Current decision:
 
-`DO_NOT_LINK_PRIMARY`
+`LIVE_LINK_ALLOWED`
 
-Reason:
+Evidence (2026-05-19):
+- DNS ✅ `dig +short cuocsong.muonnoi.org` → `172.67.214.1`
+- HTTPS ✅ `curl -sI https://cuocsong.muonnoi.org/` → `HTTP/2 200`
+- Body parity ✅ contains "Cuộc Sống Muôn Nơi" and "Life Across Places"
+- Custom domain ✅ attached to `cuocsong-muonnoi-org` Pages project
+- Gate 1–8 all PASS; full checklist closed 2026-05-19
 
-- No DNS.
-- Preview exists but live host `cuocsong.muonnoi.org` is not configured yet.
-- No Cloudflare custom-domain evidence.
-- Payment/email/proof gates remain blocked for any later intake or operational claims.
+Remaining context: Payment/email/proof gates remain blocked for any later intake or operational claims — this does not block the public link.
 
 ## Next Owner Routing
 
@@ -280,5 +282,5 @@ Reason:
 | Gate 5 metadata on implemented routes | `PASS` | Implemented route set now passes metadata baseline; keep this gate green while new routes are added |
 | Gate 6 accessibility on implemented routes | `PASS` | Re-run the same Team 8 accessibility audit whenever a new route is added before preview-readiness claims |
 | Preview deploy evidence | `PASS` | Team 7 keeps DNS/custom-domain untouched until explicit DNS step is approved |
-| DNS and custom-domain attach | `Team 7` | Next safe task is attach `cuocsong.muonnoi.org` to `cuocsong-muonnoi-org` only when DNS step is explicitly unlocked, then rerun Gate 8 checks |
+| DNS and custom-domain attach | `PASS` | Custom domain `cuocsong.muonnoi.org` attached and live (2026-05-19) |
 | Intake/email/proof integration blocked | `Team 9` | Stay in contract-note mode until payment, email and proof gates pass |
