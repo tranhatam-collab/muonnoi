@@ -3,42 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Tro choi 77</title>
+<title>Game 077</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
-  .placeholder-box { text-align:center; padding:2rem; background:#1e293b; border-radius:0.5rem; max-width:320px; }
-  .placeholder-box h1 { margin:0 0 0.5rem; font-size:1.5rem; }
-  .placeholder-box p { margin:0 0 1rem; color:#94a3b8; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .word-display { font-size:2rem; font-weight:bold; margin-bottom:1rem; letter-spacing:0.1em; }
+  .word-input { width:240px; padding:0.5rem; font-size:1.25rem; text-align:center; border:none; border-radius:0.375rem; background:#334155; color:#e2e8f0; }
+  #timer-bar { width:100%; height:6px; background:#334155; border-radius:3px; margin-top:0.75rem; overflow:hidden; }
+  #timer-fill { height:100%; background:#22c55e; width:100%; transition:width 0.1s linear; }
 </style>
 </head>
 <body data-game="game-077">
 
-<div class="placeholder-box">
-  <h1>Tro choi 77</h1>
-  <p>Tro choi dang phat trien.</p>
-  <p style="color:#64748b;font-size:0.875rem;">Trò chơi đang phát triển — sẽ ra mắt sớm!</p>
-  <button class="plays-btn plays-btn-primary" onclick="history.back()">Quay lại</button>
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="word-display" id="word-display">HELLO</div>
+  <input type="text" class="word-input" id="word-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <div id="timer-bar"><div id="timer-fill"></div></div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 077</h1>
+    <p>Gõ từ hiện ra càng nhanh càng tốt!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
 </div>
 
 <script src="../../plays-sdk.js"></script>
 <script>
-(function() {
+(function(){
   'use strict';
-  const GAME_ID = 'game-077';
-  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
-  const TUTORIAL_STEPS = {
-    vi: [
-      { title: 'Tro choi 77', desc: 'Tro choi dang phat trien.' },
-      { title: 'Sắp ra mắt', desc: 'Trò chơi này đang được phát triển. Hãy quay lại sau!' },
-    ],
-    en: [
-      { title: 'Game 77', desc: 'Game under development.' },
-      { title: 'Coming soon', desc: 'This game is under development. Please check back later!' },
-    ],
+  const GAME_ID='game-077';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Gõ Nhanh',desc:'Một từ sẽ hiện ra. Gõ đúng vào ô nhập liệu.'},{title:'Thời gian',desc:'Mỗi từ có thời gian giới hạn. Hết giờ là thua.'},{title:'Khó dần',desc:'Từ dài hơn và thời gian ngắn hơn ở các màn sau.'}],
+    en:[{title:'Type Fast',desc:'A word appears. Type it correctly into the input box.'},{title:'Timer',desc:'Each word has a time limit. Run out = game over.'},{title:'Harder',desc:'Longer words and less time in later levels.'}]
   };
-  // HUD not created for placeholder, but we keep the structure ready
-  // PlaysSDK.createHud('hud-root', { showLevel: true });
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const wordDisplay=document.getElementById('word-display');
+  const wordInput=document.getElementById('word-input');
+  const timerFill=document.getElementById('timer-fill');
+  const WORDS=['HELLO','WORLD','GAME','FAST','TYPE','QUICK','RAPID','SPEED','LIGHT','POWER','DREAM','SPACE','CANDY','PIZZA','MOUSE','KEYBOARD','SCREEN','PHONE','WATER','FIRE'];
+  let score=0,level=1,isPlaying=false,timeLeft=0,maxTime=0,timerId=null,currentWord='';
+
+  function startLevel(){
+    const cfg={max:4+Math.floor(level/2),time:Math.max(4,10-level*0.4)};
+    maxTime=cfg.time;timeLeft=maxTime;
+    const pool=WORDS.filter(w=>w.length<=cfg.max);
+    currentWord=pool[Math.floor(Math.random()*pool.length)];
+    wordDisplay.textContent=currentWord;
+    wordInput.value='';
+    timerFill.style.width='100%';timerFill.style.background='#22c55e';
+    clearInterval(timerId);
+    timerId=setInterval(()=>{if(!isPlaying)return;timeLeft-=0.1;const pct=Math.max(0,timeLeft/maxTime*100);timerFill.style.width=pct+'%';if(pct<30)timerFill.style.background='#ef4444';if(timeLeft<=0)endGame();},100);
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;hud.setScore(0);hud.setLevel(1);wordInput.focus();startLevel();}
+  function endGame(){isPlaying=false;clearInterval(timerId);wordInput.blur();PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  wordInput.addEventListener('input',()=>{
+    if(!isPlaying)return;
+    if(wordInput.value.trim().toUpperCase()===currentWord){
+      score+=Math.floor(timeLeft*5)+level*10;hud.setScore(score);level++;hud.setLevel(level);startLevel();wordInput.focus();
+    }
+  });
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
 })();
 </script>
 </body>
