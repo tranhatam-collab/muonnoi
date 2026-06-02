@@ -1,5 +1,5 @@
 // catalog.js — Muon Nơi Game Catalog
-// 100 games total: 50 live (3 original + 33 wave1 + 17 wave2), 50 wave3 placeholder
+// 100 games total: 100 live (3 original + 33 wave1 + 17 wave2 + 50 wave3)
 // 12 genre groups, bilingual names
 
 const PLAYS_CATALOG = {
@@ -128,7 +128,7 @@ const PLAYS_CATALOG = {
     { id: 'nho-vi-tri', name: { vi: 'Nhớ Vị Trí', en: 'Position Memory' }, desc: { vi: 'Nhớ vị trí các ô sáng rồi chọn lại đúng vị trí.', en: 'Remember the lit cells and select them again in correct positions.' }, genre: 'memory', wave: 2, live: true, path: 'games/nho-vi-tri/', difficulty: 'medium', duration: '2-4 min' },
     { id: 'duoi-bat', name: { vi: 'Đuổi Bắt', en: 'Chase' }, desc: { vi: 'Đuổi theo mục tiêu chạy quanh màn hình. Chạm để bắt!', en: 'Chase the target running around the screen. Tap to catch!' }, genre: 'arcade', wave: 2, live: true, path: 'games/duoi-bat/', difficulty: 'hard', duration: '2-5 min' },
 
-    // ===== WAVE 3 — 50 placeholder games =====
+    // ===== WAVE 3 — 50 live games =====
     ...(function () {
       const extras = [];
       const genreList = ['reflex','puzzle','dexterity','strategy','speed','memory','endless','survival','skill','creative','arcade','zen'];
@@ -138,10 +138,10 @@ const PLAYS_CATALOG = {
         extras.push({
           id: 'game-' + String(i).padStart(3, '0'),
           name: { vi: nameBase.vi + ' ' + i, en: nameBase.en + ' ' + i },
-          desc: { vi: 'Tro choi dang phat trien.', en: 'Game under development.' },
+          desc: { vi: 'Tro choi da hoan thien.', en: 'Game ready to play.' },
           genre: g,
           wave: 3,
-          live: false,
+          live: true,
           path: 'games/game-' + String(i).padStart(3, '0') + '/',
           difficulty: 'medium',
           duration: '2-5 min',
