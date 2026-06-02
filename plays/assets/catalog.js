@@ -39,10 +39,10 @@
   // ===== 33 GAME GIAI ĐOẠN 1 (7 nhóm) =====
   const PHASE1 = [
     // NHÓM 1 · MIND
-    { id:'me-cung-muon-loi', n:'Mê Cung Vô Tận', en:'Infinite Labyrinth', group:'mind', tier:1, status:'live', file:'games/me-cung-muon-loi.html',
+    { id:'me-cung-muon-loi', n:'Mê Cung Vô Tận', en:'Infinite Labyrinth', group:'mind', tier:1, status:'live', file:'games/me-cung-muon-loi.html', free:4,
       d:'Không mê cung nào giống nhau. Mỗi lối ra mở ra mê cung lớn hơn — vô tận.' },
     { id:'kien-truc-tri-nho', n:'Kiến Trúc Trí Nhớ', en:'Memory Architect', group:'mind', tier:1, status:'wave1' },
-    { id:'thuo-san-quy-luat', n:'Thợ Săn Quy Luật', en:'Pattern Hunter', group:'mind', tier:1, status:'live', file:'games/thuo-san-quy-luat.html',
+    { id:'thuo-san-quy-luat', n:'Thợ Săn Quy Luật', en:'Pattern Hunter', group:'mind', tier:1, status:'live', file:'games/thuo-san-quy-luat.html', free:4,
       d:'Tìm quy luật ẩn rồi đoán phần tử kế tiếp. Luật khó dần — không có đáp án cuối.' },
     { id:'du-doan-tuong-lai', n:'Dự Đoán Tương Lai', en:'Future Prediction', group:'mind', tier:2, status:'wave1' },
     { id:'cay-quyet-dinh', n:'Cây Quyết Định', en:'Decision Tree', group:'mind', tier:2, status:'wave1',
@@ -60,7 +60,7 @@
     { id:'ban-toan-cau', n:'Bạn Toàn Cầu', en:'Global Friend', group:'social', tier:3, status:'wave1' },
     { id:'nhiem-vu-gia-dinh', n:'Nhiệm Vụ Gia Đình', en:'Family Quest', group:'social', tier:3, status:'wave1', eco:'family.muonnoi.org' },
     { id:'thu-thach-cong-dong', n:'Thử Thách Cộng Đồng', en:'Community Challenge', group:'social', tier:3, status:'wave1', eco:'nhachung.muonnoi.org' },
-    { id:'chuoi-tu-te', n:'Chuỗi Tử Tế', en:'Kindness Chain', group:'social', tier:3, status:'live', file:'games/chuoi-tu-te.html',
+    { id:'chuoi-tu-te', n:'Chuỗi Tử Tế', en:'Kindness Chain', group:'social', tier:3, status:'live', file:'games/chuoi-tu-te.html', free:3,
       d:'Nguyên mẫu Tier 3: mỗi mắt xích là một việc tử tế THẬT bạn làm ngoài đời, rồi truyền tiếp.' },
 
     // NHÓM 4 · LIFE
@@ -110,9 +110,9 @@
 
   // ===== MICRO BONUS (arcade đã build từ P0, ngoài 33) =====
   const MICRO_BONUS = [
-    { id:'cham-vo-cuc', n:'Chạm Vô Cực', en:'Infinite Tap', group:'micro', tier:1, status:'live', file:'games/cham-vo-cuc.html',
+    { id:'cham-vo-cuc', n:'Chạm Vô Cực', en:'Infinite Tap', group:'micro', tier:1, status:'live', file:'games/cham-vo-cuc.html', free:5,
       d:'Phản xạ: chạm vòng sáng trước khi tắt. Tốc độ tăng vô hạn.' },
-    { id:'dinh-sisyphus', n:'Đỉnh Sisyphus', en:'Sisyphus Peak', group:'micro', tier:1, status:'live', file:'games/dinh-sisyphus.html',
+    { id:'dinh-sisyphus', n:'Đỉnh Sisyphus', en:'Sisyphus Peak', group:'micro', tier:1, status:'live', file:'games/dinh-sisyphus.html', free:5,
       d:'Canh nhịp đẩy đá lên dốc. Đỉnh núi không có thật.' },
   ];
 

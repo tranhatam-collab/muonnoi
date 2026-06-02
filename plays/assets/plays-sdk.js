@@ -23,6 +23,17 @@
   const LS_PREFIX = 'mnplays:';            // localStorage namespace cho khách
   const LS_POINTS = LS_PREFIX + '__points'; // điểm tạm của khách (không cộng dồn thật)
 
+  const TERMS_VERSION = '2026-06-02';      // đổi version => buộc đồng ý lại
+  const DEFAULT_FREE = 3;                  // lượt chơi miễn phí mặc định (game có thể đặt 3–5)
+
+  // Đường dẫn gốc của khu plays (suy ra từ vị trí file SDK) -> chạy đúng ở cả /plays/ lẫn /
+  let BASE = '';
+  try {
+    const s = (document.currentScript && document.currentScript.src) || '';
+    BASE = s.replace(/assets\/plays-sdk\.js.*$/, '');
+  } catch (_) {}
+  function pageUrl(name) { return BASE + name; }
+
   let _state = { loggedIn: false, user: null, ready: false };
   const _authCbs = [];
 
@@ -152,6 +163,91 @@
     return lsGet('__points', 0);
   }
 
+  // ---------- ĐỒNG Ý ĐIỀU KHOẢN + GIỚI HẠN LƯỢT MIỄN PHÍ ----------
+  // Mỗi game gọi:  const gate = await MNPlays.beginPlay(GAME_ID, freePlays);
+  //               if (!gate.allowed) return;   // SDK đã hiện modal phù hợp
+  function consentOk() { return lsGet('consent') === TERMS_VERSION; }
+  function playCount(g) { return lsGet('plays:' + g, 0) | 0; }
+
+  function playsLeft(gameId, free) {
+    free = free || DEFAULT_FREE;
+    if (_state.loggedIn) return Infinity;
+    return Math.max(0, free - playCount(gameId));
+  }
+
+  function ensureConsent() {
+    return new Promise((resolve) => {
+      if (consentOk()) return resolve(true);
+      showConsentModal(
+        () => { // đồng ý
+          lsSet('consent', TERMS_VERSION);
+          if (_state.loggedIn) { apiPost('plays/consent', { version: TERMS_VERSION }).catch(() => {}); }
+          resolve(true);
+        },
+        () => resolve(false) // từ chối
+      );
+    });
+  }
+
+  async function beginPlay(gameId, free) {
+    free = free || DEFAULT_FREE;
+    const consented = await ensureConsent();
+    if (!consented) return { allowed: false, reason: 'consent' };
+    if (_state.loggedIn) return { allowed: true, left: Infinity };
+    const c = playCount(gameId);
+    if (c >= free) { showRegisterModal(free); return { allowed: false, reason: 'register' }; }
+    lsSet('plays:' + gameId, c + 1);
+    return { allowed: true, left: free - (c + 1) };
+  }
+
+  // ---------- Modal UI ----------
+  function modal(html) {
+    const bg = document.createElement('div');
+    bg.className = 'mn-modal-bg';
+    bg.innerHTML = '<div class="mn-modal">' + html + '</div>';
+    document.body.appendChild(bg);
+    return bg;
+  }
+  function showConsentModal(onAgree, onDecline) {
+    const bg = modal(`
+      <h3>Trước khi chơi — Đồng ý điều khoản</h3>
+      <p>Trò chơi mang tính giải trí & rèn luyện. Bạn cần đọc và đồng ý <b>Điều khoản &amp; Miễn trừ trách nhiệm</b>
+         và <b>Quyền riêng tư</b> trước khi chơi.</p>
+      <div class="legal">
+        Tóm tắt: (1) Bạn tự nguyện tham gia và tự chịu trách nhiệm về việc chơi. (2) Điểm trong game
+        (Muôn Điểm) <b>không phải tiền</b>, không quy đổi tiền mặt. (3) Trong phạm vi pháp luật cho phép,
+        Muôn Nơi không chịu trách nhiệm cho thiệt hại phát sinh từ việc sử dụng trò chơi; điều này
+        <b>không loại trừ</b> các quyền không thể từ bỏ theo luật. (4) Trẻ vị thành niên cần sự đồng ý
+        của cha mẹ/người giám hộ. Xem đầy đủ:
+        <a href="${pageUrl('terms.html')}" target="_blank">Điều khoản</a> ·
+        <a href="${pageUrl('privacy.html')}" target="_blank">Quyền riêng tư</a>.
+      </div>
+      <label class="agree"><input type="checkbox" id="mnAgree"/>
+        <span>Tôi đã đọc và đồng ý Điều khoản, Miễn trừ trách nhiệm và Quyền riêng tư.
+        Nếu dưới tuổi quy định, tôi xác nhận có sự đồng ý của cha mẹ/người giám hộ.</span></label>
+      <div class="acts">
+        <button class="btn secondary" id="mnDecline">Quay lại</button>
+        <button class="btn" id="mnAgreeBtn" disabled>Đồng ý &amp; chơi</button>
+      </div>`);
+    const cb = bg.querySelector('#mnAgree');
+    const ok = bg.querySelector('#mnAgreeBtn');
+    cb.onchange = () => { ok.disabled = !cb.checked; };
+    ok.onclick = () => { document.body.removeChild(bg); onAgree && onAgree(); };
+    bg.querySelector('#mnDecline').onclick = () => { document.body.removeChild(bg); onDecline && onDecline(); };
+  }
+  function showRegisterModal(free) {
+    const bg = modal(`
+      <h3>Hết lượt chơi miễn phí</h3>
+      <p>Bạn đã dùng hết <b>${free} lượt chơi miễn phí</b> của trò này. Đăng ký thành viên (miễn phí) để
+         <b>chơi tiếp không giới hạn</b>, lưu lịch sử & tiến trình, và nhận <b>Muôn Điểm</b>.</p>
+      <div class="acts">
+        <button class="btn secondary" id="mnClose">Để sau</button>
+        <a class="btn" id="mnReg" href="${pageUrl('register.html')}" style="text-align:center;text-decoration:none">Đăng ký thành viên</a>
+      </div>
+      <p style="margin-top:10px">Đã có tài khoản? <a href="${loginUrl()}">Đăng nhập</a>.</p>`);
+    bg.querySelector('#mnClose').onclick = () => document.body.removeChild(bg);
+  }
+
   // ---------- misc ----------
   function isLoggedIn() { return _state.loggedIn; }
   function getUser() { return _state.user; }
@@ -165,9 +261,13 @@
     } catch (_) {}
     return '/app.html';
   }
+  function registerUrl() { return pageUrl('register.html'); }
+  function termsUrl() { return pageUrl('terms.html'); }
+  function privacyUrl() { return pageUrl('privacy.html'); }
 
   root.MNPlays = {
-    init, isLoggedIn, getUser, onAuthChange, loginUrl,
+    init, isLoggedIn, getUser, onAuthChange, loginUrl, registerUrl, termsUrl, privacyUrl,
     loadProgress, saveProgress, awardPoints, getBalance,
+    beginPlay, playsLeft, ensureConsent, TERMS_VERSION,
   };
 })(typeof window !== 'undefined' ? window : globalThis);

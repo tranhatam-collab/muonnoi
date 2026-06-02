@@ -43,6 +43,7 @@
   <script src="../assets/plays-sdk.js"></script>
   <script>
   const GAME_ID = 'cham-vo-cuc';
+  const FREE = 5; // lượt chơi miễn phí trước khi cần đăng ký
   const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
   const W = cv.width, H = cv.height;
   const $ = id => document.getElementById(id);
@@ -197,6 +198,8 @@
   cv.addEventListener('pointerdown', e=>{ e.preventDefault(); const p=evtPos(e); onTap(p.x,p.y); }, {passive:false});
 
   async function start(){
+    const gate = await MNPlays.beginPlay(GAME_ID, FREE);
+    if (!gate.allowed) return; // SDK đã hiện modal đồng ý / đăng ký
     cancelAnimationFrame(raf);
     game = newGame(); hud();
     $('overlay').classList.add('hidden');

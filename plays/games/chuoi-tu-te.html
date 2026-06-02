@@ -78,6 +78,7 @@
   <script src="../assets/plays-sdk.js"></script>
   <script>
   const GAME_ID='chuoi-tu-te';
+  const FREE=3; // số mắt xích miễn phí trước khi cần đăng ký
   const $=id=>document.getElementById(id);
   function toast(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1400);}
   function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
@@ -128,6 +129,8 @@
   async function add(){
     const text=($('act').value.trim()||selected).trim();
     if(!text){ toast('Hãy chọn hoặc viết một việc tử tế.'); return; }
+    const gate = await MNPlays.beginPlay(GAME_ID, FREE);
+    if (!gate.allowed) return; // SDK hiện modal đồng ý / đăng ký
     const passto=$('passto').value.trim();
     acts.push({text, passto, done:false, ts:Date.now()});
     $('act').value=''; $('passto').value=''; selected='';

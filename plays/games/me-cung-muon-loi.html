@@ -56,6 +56,7 @@
   <script src="../assets/plays-sdk.js"></script>
   <script>
   const GAME_ID = 'me-cung-muon-loi';
+  const FREE = 4; // lượt chơi miễn phí trước khi cần đăng ký
   const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
   const W = cv.width, H = cv.height;
   const $ = id => document.getElementById(id);
@@ -106,7 +107,9 @@
     };
   }
 
-  function startGame(){
+  async function startGame(){
+    const gate = await MNPlays.beginPlay(GAME_ID, FREE);
+    if (!gate.allowed) return;
     cancelAnimationFrame(raf);
     G = { running:true, score:0, level:1, lvl:newLevel(1), last:performance.now() };
     $('overlay').classList.add('hidden');

@@ -12,6 +12,10 @@ Nền tảng **Play Layer** của hệ sinh thái Muôn Nơi.
 - `PLAN-MOONSHOT.md` — 10 game **nguyên bản "moonshot"** (mọi lứa tuổi), cơ chế AI-native + hào Muôn Nơi; nhóm IP tham vọng Phase 2–3.
 - `PLAN-GENIUS.md` — 10 game **siêu trí tuệ** cho mọi người, đa dạng cách chơi (mỗi game một modality), AI adaptive giữ "flow".
 
+### Vận hành: truy cập · đồng ý · đăng ký · tuân thủ
+- `PLAN-ACCESS-COMPLIANCE.md` — luồng **đồng ý điều khoản → 3–5 lượt free → cổng đăng ký → thành viên**; điểm tích hợp code; **cờ tuân thủ pháp lý** (Nghị định 13/2023, trẻ em, miễn trừ trách nhiệm).
+- Trang: `terms.html` (Điều khoản & Miễn trừ), `privacy.html` (Quyền riêng tư), `register.html` (đăng ký: biệt danh/tuổi/giới tính/email/SĐT).
+
 ## Cấu trúc
 
 ```
