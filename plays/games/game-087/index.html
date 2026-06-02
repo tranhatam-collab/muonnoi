@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Tro choi 87</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  .placeholder-box { text-align:center; padding:2rem; background:#1e293b; border-radius:0.5rem; max-width:320px; }
+  .placeholder-box h1 { margin:0 0 0.5rem; font-size:1.5rem; }
+  .placeholder-box p { margin:0 0 1rem; color:#94a3b8; }
+</style>
+</head>
+<body data-game="game-087">
+
+<div class="placeholder-box">
+  <h1>Tro choi 87</h1>
+  <p>Tro choi dang phat trien.</p>
+  <p style="color:#64748b;font-size:0.875rem;">Trò chơi đang phát triển — sẽ ra mắt sớm!</p>
+  <button class="plays-btn plays-btn-primary" onclick="history.back()">Quay lại</button>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function() {
+  'use strict';
+  const GAME_ID = 'game-087';
+  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
+  const TUTORIAL_STEPS = {
+    vi: [
+      { title: 'Tro choi 87', desc: 'Tro choi dang phat trien.' },
+      { title: 'Sắp ra mắt', desc: 'Trò chơi này đang được phát triển. Hãy quay lại sau!' },
+    ],
+    en: [
+      { title: 'Game 87', desc: 'Game under development.' },
+      { title: 'Coming soon', desc: 'This game is under development. Please check back later!' },
+    ],
+  };
+  // HUD not created for placeholder, but we keep the structure ready
+  // PlaysSDK.createHud('hud-root', { showLevel: true });
+})();
+</script>
+</body>
+</html>
