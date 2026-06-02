@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Cham Vo Cuc — plays.muonnoi.org</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  #game-board {
+    display: grid;
+    gap: 4px;
+    margin: 1rem auto;
+    max-width: 90vw;
+    max-height: 60vh;
+    touch-action: manipulation;
+  }
+  .cell {
+    aspect-ratio: 1;
+    border-radius: 6px;
+    background: #1f2937;
+    border: 1px solid #374151;
+    transition: background 0.15s, transform 0.1s;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .cell.lit {
+    background: #f59e0b;
+    box-shadow: 0 0 8px #f59e0b66;
+  }
+  .cell.tapped {
+    background: #10b981;
+    transform: scale(0.92);
+  }
+  .cell.missed {
+    background: #ef4444;
+    animation: shake 0.3s;
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+  #start-overlay {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,0.85);
+    z-index: 50;
+  }
+  #start-overlay.hidden { display: none; }
+  .start-box {
+    text-align: center; padding: 2rem;
+    background: #111827; border-radius: 12px;
+    border: 1px solid #374151; max-width: 320px;
+  }
+  .start-box h1 { margin-bottom: 0.5rem; font-size: 1.5rem; }
+  .start-box p { color: #9ca3af; margin-bottom: 1.5rem; }
+</style>
+</head>
+<body data-game="cham-vo-cuc">
+
+<div id="hud-root"></div>
+
+<div id="game-board"></div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1 data-i18n="name">Cham Vo Cuc</h1>
+    <p data-i18n="desc">Cham cac o sang truoc khi chung bien mat. Do kho tang dan vo han.</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start" data-i18n="tapToStart">Nhan de bat dau</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial" data-i18n="tutorial">Huong dan</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function() {
+  'use strict';
+
+  const GAME_ID = 'cham-vo-cuc';
+  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
+
+  const TUTORIAL_STEPS = {
+    vi: [
+      { title: 'Cham Vo Cuc', desc: 'Cac o se sang len ngau nhien tren luoi. Nhiem vu cua ban la cham vao chung truoc khi chung tat di.' },
+      { title: 'Toc do tang', desc: 'Cang choi, cang nhieu o sang va chung tat cang nhanh. Tap trung!' },
+      { title: 'Luoi mo rong', desc: 'Sau moi 10 diem, luoi se lon hon 1 o. Khong gian cang rong, cang kho kiem soat.' },
+      { title: 'Ket thuc', desc: 'Neu ban de mat 3 o, tro choi ket thuc. Thu thach ky luc cua ban!' },
+    ],
+    en: [
+      { title: 'Infinite Touch', desc: 'Cells will light up randomly on the grid. Your task is to tap them before they fade.' },
+      { title: 'Speed Rises', desc: 'The longer you play, the more cells light up and the faster they fade. Stay focused!' },
+      { title: 'Grid Expands', desc: 'Every 10 points, the grid grows by 1 cell. More space, harder to control.' },
+      { title: 'Game Over', desc: 'Miss 3 cells and the game ends. Challenge your personal best!' },
+    ],
+  };
+
+  const hud = PlaysSDK.createHud('hud-root', { showLevel: true });
+
+  let board = document.getElementById('game-board');
+  let gridSize = 3;
+  let score = 0;
+  let level = 1;
+  let lives = 3;
+  let activeCells = new Map(); // cellIndex -> timeoutId
+  let isPlaying = false;
+  let isPaused = false;
+  let spawnInterval = 1200;
+  let fadeTime = 2000;
+  let spawnTimer = null;
+
+  function buildGrid(n) {
+    board.innerHTML = '';
+    board.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
+    for (let i = 0; i < n * n; i++) {
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+      cell.dataset.idx = i;
+      cell.setAttribute('role', 'button');
+      cell.setAttribute('aria-label', 'Cell ' + (i + 1));
+      cell.addEventListener('pointerdown', onTap);
+      board.appendChild(cell);
+    }
+  }
+
+  function onTap(e) {
+    if (!isPlaying || isPaused) return;
+    const cell = e.target;
+    const idx = +cell.dataset.idx;
+    if (!activeCells.has(idx)) return;
+
+    clearTimeout(activeCells.get(idx));
+    activeCells.delete(idx);
+    cell.classList.remove('lit');
+    cell.classList.add('tapped');
+    setTimeout(() => cell.classList.remove('tapped'), 200);
+
+    score++;
+    hud.setScore(score);
+
+    // Level up every 10 points -> grid expands
+    if (score % 10 === 0) {
+      level++;
+      gridSize = Math.min(gridSize + 1, 8);
+      buildGrid(gridSize);
+      hud.setLevel(level);
+      // Speed up
+      spawnInterval = Math.max(400, spawnInterval * 0.9);
+      fadeTime = Math.max(800, fadeTime * 0.92);
+    }
+  }
+
+  function spawnCell() {
+    if (!isPlaying || isPaused) return;
+    const cells = board.querySelectorAll('.cell');
+    const free = Array.from(cells).filter(c => !c.classList.contains('lit'));
+    if (!free.length) return;
+    const cell = free[Math.floor(Math.random() * free.length)];
+    const idx = +cell.dataset.idx;
+    cell.classList.add('lit');
+
+    const t = setTimeout(() => {
+      if (!isPlaying) return;
+      cell.classList.remove('lit');
+      cell.classList.add('missed');
+      setTimeout(() => cell.classList.remove('missed'), 300);
+      activeCells.delete(idx);
+      lives--;
+      if (lives <= 0) endGame();
+    }, fadeTime);
+    activeCells.set(idx, t);
+  }
+
+  function startGame() {
+    document.getElementById('start-overlay').classList.add('hidden');
+    gridSize = 3; score = 0; level = 1; lives = 3;
+    spawnInterval = 1200; fadeTime = 2000;
+    activeCells.clear();
+    buildGrid(gridSize);
+    hud.setScore(0); hud.setLevel(1);
+    isPlaying = true; isPaused = false;
+
+    spawnTimer = setInterval(() => {
+      if (isPlaying && !isPaused) spawnCell();
+    }, spawnInterval);
+  }
+
+  function endGame() {
+    isPlaying = false;
+    clearInterval(spawnTimer);
+    activeCells.forEach(t => clearTimeout(t));
+    activeCells.clear();
+
+    const prev = PlaysSDK.getGuestScores(GAME_ID);
+    const isNewBest = score > prev.best;
+    PlaysSDK.saveGuestScore(GAME_ID, score, level);
+
+    PlaysSDK.showGameOver({
+      gameId: GAME_ID,
+      score,
+      level,
+      best: Math.max(score, prev.best),
+      isNewBest,
+      token: null,
+      onRestart: () => {
+        document.querySelector('.plays-gameover-overlay')?.remove();
+        startGame();
+      },
+      onBack: () => {
+        location.href = '../../';
+      },
+    });
+  }
+
+  function togglePause() {
+    if (!isPlaying) return;
+    isPaused = !isPaused;
+    // Visual feedback could be added here
+  }
+
+  hud.onPause(togglePause);
+
+  document.getElementById('btn-start').addEventListener('click', startGame);
+  document.getElementById('btn-tutorial').addEventListener('click', () => {
+    const steps = TUTORIAL_STEPS[LANG] || TUTORIAL_STEPS.vi;
+    const tut = PlaysSDK.buildTutorial({
+      steps,
+      onFinish: () => {},
+      onClose: () => {},
+    });
+    tut.open();
+  });
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') togglePause();
+  });
+
+})();
+</script>
+</body>
+</html>

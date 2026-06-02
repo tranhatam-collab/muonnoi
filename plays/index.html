@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="plays.muonnoi.org — San choi vo cuc. 100 tro choi khong thang duoc, dua ky luc ca nhan.">
+<title>Plays.muonnoi.org — San choi vo cuc</title>
+<link rel="stylesheet" href="styles/plays.css">
+<link rel="canonical" href="https://plays.muonnoi.org/">
+</head>
+<body>
+
+<div class="plays-hub">
+  <header class="plays-hub-header">
+    <h1 class="plays-hub-title" data-i18n="hubTitle">San choi vo cuc</h1>
+    <p class="plays-hub-subtitle" data-i18n="hubSubtitle">100 tro choi khong co man cuoi. Dua ky luc ca nhan. Khach choi mien phi — Thanh vien luu vinh vien.</p>
+    <div class="plays-hub-stats">
+      <div class="plays-hub-stat"><span id="stat-total">0</span> tro choi</div>
+      <div class="plays-hub-stat"><span id="stat-live">0</span> dang choi</div>
+      <div class="plays-hub-stat"><span id="stat-wave1">0</span> sap ra mat</div>
+    </div>
+  </header>
+
+  <div class="plays-lang">
+    <button class="plays-lang-btn active" data-lang="vi">VI</button>
+    <button class="plays-lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <nav id="genre-filters" style="display:flex;gap:0.5rem;flex-wrap:wrap;justify-content:center;margin:1rem 0;">
+    <button class="plays-btn plays-btn-primary" data-filter="all">Tat ca</button>
+  </nav>
+
+  <main id="catalog-root" class="plays-catalog">
+    <!-- Catalog rendered by JS -->
+  </main>
+</div>
+
+<script src="catalog.js"></script>
+<script>
+(function() {
+  'use strict';
+  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
+  const catalog = PLAYS_CATALOG;
+
+  const ICONS = {
+    reflex: '⚡', puzzle: '🧩', dexterity: '🎯', strategy: '♟️',
+    speed: '💨', memory: '🧠', endless: '🏃', survival: '🛡️',
+    skill: '🔥', creative: '🎨', arcade: '👾', zen: '🌿',
+  };
+
+  function t(entry) {
+    if (typeof entry === 'string') return entry;
+    return entry[LANG] || entry.vi || entry.en || '';
+  }
+
+  function renderCatalog(filterGenre) {
+    const root = document.getElementById('catalog-root');
+    root.innerHTML = '';
+    const games = catalog.games.filter(g => !filterGenre || filterGenre === 'all' || g.genre === filterGenre);
+    games.forEach(g => {
+      const a = document.createElement('a');
+      a.className = 'plays-card' + (g.live ? ' live' : '');
+      a.href = g.path;
+      a.innerHTML = `
+        <div class="plays-card-icon">${ICONS[g.genre] || '🎮'}</div>
+        <div class="plays-card-name">${t(g.name)}</div>
+        <div class="plays-card-desc">${t(g.desc)}</div>
+        <div class="plays-card-badge">${g.live ? (LANG === 'vi' ? 'Dang choi' : 'Live') : (LANG === 'vi' ? 'Sap ra mat' : 'Coming')}</div>
+      `;
+      if (!g.live) {
+        a.style.opacity = '0.6';
+        a.href = '#';
+        a.addEventListener('click', e => { e.preventDefault(); alert(LANG === 'vi' ? 'Tro choi dang phat trien!' : 'Game under development!'); });
+      }
+      root.appendChild(a);
+    });
+  }
+
+  function renderGenres() {
+    const nav = document.getElementById('genre-filters');
+    catalog.genres.forEach(g => {
+      const btn = document.createElement('button');
+      btn.className = 'plays-btn plays-btn-ghost';
+      btn.textContent = t(g[LANG === 'vi' ? 'vi' : 'en'] ? { vi: g.vi, en: g.en } : g);
+      btn.dataset.filter = g.id;
+      btn.addEventListener('click', () => {
+        nav.querySelectorAll('button').forEach(b => b.classList.remove('plays-btn-primary', 'plays-btn-ghost'));
+        nav.querySelectorAll('button').forEach(b => b.classList.add('plays-btn-ghost'));
+        btn.classList.remove('plays-btn-ghost');
+        btn.classList.add('plays-btn-primary');
+        renderCatalog(g.id);
+      });
+      nav.appendChild(btn);
+    });
+  }
+
+  function updateStats() {
+    document.getElementById('stat-total').textContent = catalog.games.length;
+    document.getElementById('stat-live').textContent = catalog.games.filter(g => g.live).length;
+    document.getElementById('stat-wave1').textContent = catalog.games.filter(g => g.wave === 1 && !g.live).length;
+  }
+
+  // Lang switcher
+  document.querySelectorAll('.plays-lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const l = btn.dataset.lang;
+      document.documentElement.lang = l;
+      document.querySelectorAll('.plays-lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      location.reload();
+    });
+  });
+
+  renderGenres();
+  renderCatalog('all');
+  updateStats();
+})();
+</script>
+</body>
+</html>

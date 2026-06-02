@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Me Cung Muon Loi — plays.muonnoi.org</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  #maze-canvas {
+    display: block;
+    margin: 1rem auto;
+    max-width: 90vw;
+    max-height: 60vh;
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    touch-action: none;
+  }
+  .maze-controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .maze-controls button {
+    width: 48px; height: 48px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    background: #1f2937;
+    border: 1px solid #374151;
+    color: #e5e7eb;
+    display: flex; align-items: center; justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  .maze-controls button:active { background: #374151; transform: scale(0.95); }
+  #start-overlay {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,0.85);
+    z-index: 50;
+  }
+  #start-overlay.hidden { display: none; }
+  .start-box {
+    text-align: center; padding: 2rem;
+    background: #111827; border-radius: 12px;
+    border: 1px solid #374151; max-width: 320px;
+  }
+  .start-box h1 { margin-bottom: 0.5rem; font-size: 1.5rem; }
+  .start-box p { color: #9ca3af; margin-bottom: 1.5rem; }
+</style>
+</head>
+<body data-game="me-cung-muon-loi">
+
+<div id="hud-root"></div>
+
+<canvas id="maze-canvas" width="300" height="300" aria-label="Maze canvas"></canvas>
+
+<div class="maze-controls">
+  <button data-dir="up" aria-label="Move up">&#9650;</button>
+</div>
+<div class="maze-controls">
+  <button data-dir="left" aria-label="Move left">&#9664;</button>
+  <button data-dir="down" aria-label="Move down">&#9660;</button>
+  <button data-dir="right" aria-label="Move right">&#9654;</button>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1 data-i18n="name">Me Cung Muon Loi</h1>
+    <p data-i18n="desc">Tim loi ra trong me cung sinh ngau nhien. Moi me cung lon hon va co suong mu.</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start" data-i18n="tapToStart">Nhan de bat dau</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial" data-i18n="tutorial">Huong dan</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function() {
+  'use strict';
+  const GAME_ID = 'me-cung-muon-loi';
+  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
+
+  const TUTORIAL_STEPS = {
+    vi: [
+      { title: 'Me Cung Muon Loi', desc: 'Dung cac phim mui ten hoac nut dieu khien de di chuyen nhan vat den loi ra (o mau xanh la).' },
+      { title: 'Me cung ngau nhien', desc: 'Moi lan choi, me cung duoc sinh hoan toan ngau nhien. Khong co hai me cung nao giong nhau.' },
+      { title: 'Lon hon va suong mu', desc: 'Sau moi me cung, me cung tiep theo se lon hon 1 o va co them suong mu che khuat mot phan duong di.' },
+      { title: 'Tinh diem', desc: 'Diem = (kich thuoc me cung x 10) - (so buoc di). Cang it buoc, diem cang cao!' },
+    ],
+    en: [
+      { title: 'Maze of Many Paths', desc: 'Use arrow keys or on-screen buttons to move your character to the exit (green cell).' },
+      { title: 'Random Mazes', desc: 'Every play generates a completely random maze. No two mazes are alike.' },
+      { title: 'Bigger & Foggier', desc: 'After each maze, the next one is 1 cell larger and has more fog hiding part of the path.' },
+      { title: 'Scoring', desc: 'Score = (maze size x 10) - (steps taken). Fewer steps = higher score!' },
+    ],
+  };
+
+  const canvas = document.getElementById('maze-canvas');
+  const ctx = canvas.getContext('2d');
+  const hud = PlaysSDK.createHud('hud-root', { showLevel: true });
+
+  let size = 5; // grid size (5x5)
+  let maze = [];
+  let player = { x: 0, y: 0 };
+  let exit = { x: 0, y: 0 };
+  let level = 1;
+  let score = 0;
+  let totalScore = 0;
+  let steps = 0;
+  let fogRadius = 1000; // start: see all
+  let isPlaying = false;
+  let cellPx = 0;
+
+  function generateMaze(n) {
+    // Recursive backtracker
+    const m = [];
+    for (let y = 0; y < n; y++) {
+      const row = [];
+      for (let x = 0; x < n; x++) {
+        row.push({ x, y, visited: false, walls: { top: true, right: true, bottom: true, left: true } });
+      }
+      m.push(row);
+    }
+    const stack = [];
+    const start = m[0][0];
+    start.visited = true;
+    stack.push(start);
+
+    const dirs = [
+      { dx: 0, dy: -1, wall: 'top',  opp: 'bottom' },
+      { dx: 1,  dy: 0, wall: 'right', opp: 'left'   },
+      { dx: 0,  dy: 1, wall: 'bottom', opp: 'top'    },
+      { dx: -1, dy: 0, wall: 'left',  opp: 'right'  },
+    ];
+
+    while (stack.length) {
+      const curr = stack[stack.length - 1];
+      const neighbors = dirs.map(d => {
+        const nx = curr.x + d.dx, ny = curr.y + d.dy;
+        if (nx >= 0 && nx < n && ny >= 0 && ny < n && !m[ny][nx].visited) {
+          return { cell: m[ny][nx], dir: d };
+        }
+        return null;
+      }).filter(Boolean);
+
+      if (!neighbors.length) {
+        stack.pop();
+        continue;
+      }
+      const { cell: next, dir } = neighbors[Math.floor(Math.random() * neighbors.length)];
+      curr.walls[dir.wall] = false;
+      next.walls[dir.opp] = false;
+      next.visited = true;
+      stack.push(next);
+    }
+    return m;
+  }
+
+  function resizeCanvas() {
+    const maxW = Math.min(window.innerWidth * 0.9, 600);
+    const maxH = Math.min(window.innerHeight * 0.55, 600);
+    const dim = Math.floor(Math.min(maxW, maxH));
+    canvas.width = dim; canvas.height = dim;
+    cellPx = Math.floor(dim / size);
+  }
+
+  function drawMaze() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const wallColor = '#4b5563';
+    const pathColor = '#111827';
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = wallColor;
+    ctx.fillStyle = pathColor;
+
+    for (let y = 0; y < size; y++) {
+      for (let x = 0; x < size; x++) {
+        const c = maze[y][x];
+        const px = x * cellPx, py = y * cellPx;
+        ctx.fillRect(px, py, cellPx, cellPx);
+        if (c.walls.top)    { ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px + cellPx, py); ctx.stroke(); }
+        if (c.walls.right)  { ctx.beginPath(); ctx.moveTo(px + cellPx, py); ctx.lineTo(px + cellPx, py + cellPx); ctx.stroke(); }
+        if (c.walls.bottom) { ctx.beginPath(); ctx.moveTo(px, py + cellPx); ctx.lineTo(px + cellPx, py + cellPx); ctx.stroke(); }
+        if (c.walls.left)   { ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px, py + cellPx); ctx.stroke(); }
+      }
+    }
+
+    // Exit
+    ctx.fillStyle = '#10b981';
+    ctx.fillRect(exit.x * cellPx + 4, exit.y * cellPx + 4, cellPx - 8, cellPx - 8);
+
+    // Player
+    ctx.fillStyle = '#f59e0b';
+    ctx.beginPath();
+    ctx.arc(player.x * cellPx + cellPx / 2, player.y * cellPx + cellPx / 2, cellPx * 0.3, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Fog overlay
+    if (fogRadius < size * cellPx) {
+      const px = player.x * cellPx + cellPx / 2;
+      const py = player.y * cellPx + cellPx / 2;
+      const grad = ctx.createRadialGradient(px, py, cellPx * 0.8, px, py, fogRadius);
+      grad.addColorStop(0, 'rgba(0,0,0,0)');
+      grad.addColorStop(1, 'rgba(0,0,0,0.92)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+  }
+
+  function move(dx, dy) {
+    if (!isPlaying) return;
+    const c = maze[player.y][player.x];
+    if (dy === -1 && c.walls.top) return;
+    if (dx === 1  && c.walls.right) return;
+    if (dy === 1  && c.walls.bottom) return;
+    if (dx === -1 && c.walls.left) return;
+    player.x += dx; player.y += dy;
+    steps++;
+    drawMaze();
+    if (player.x === exit.x && player.y === exit.y) {
+      completeMaze();
+    }
+  }
+
+  function completeMaze() {
+    const mazeScore = Math.max(0, size * 10 - steps);
+    score = mazeScore;
+    totalScore += mazeScore;
+    hud.setScore(totalScore);
+
+    // Next level
+    level++;
+    size = Math.min(size + 1, 15);
+    steps = 0;
+    fogRadius = Math.max(cellPx * 2.5, (size * cellPx) * (1 - level * 0.03));
+    initLevel();
+    hud.setLevel(level);
+  }
+
+  function initLevel() {
+    maze = generateMaze(size);
+    player = { x: 0, y: 0 };
+    exit = { x: size - 1, y: size - 1 };
+    resizeCanvas();
+    drawMaze();
+  }
+
+  function startGame() {
+    document.getElementById('start-overlay').classList.add('hidden');
+    size = 5; level = 1; totalScore = 0; steps = 0; fogRadius = 1000;
+    hud.setScore(0); hud.setLevel(1);
+    isPlaying = true;
+    initLevel();
+  }
+
+  function endGame() {
+    isPlaying = false;
+    const prev = PlaysSDK.getGuestScores(GAME_ID);
+    const isNewBest = totalScore > prev.best;
+    PlaysSDK.saveGuestScore(GAME_ID, totalScore, level);
+    PlaysSDK.showGameOver({
+      gameId: GAME_ID,
+      score: totalScore,
+      level,
+      best: Math.max(totalScore, prev.best),
+      isNewBest,
+      token: null,
+      onRestart: () => { document.querySelector('.plays-gameover-overlay')?.remove(); startGame(); },
+      onBack: () => { location.href = '../../'; },
+    });
+  }
+
+  // Controls
+  document.querySelectorAll('.maze-controls button').forEach(b => {
+    b.addEventListener('pointerdown', (e) => {
+      e.preventDefault();
+      const d = e.target.dataset.dir;
+      if (d === 'up') move(0, -1);
+      if (d === 'down') move(0, 1);
+      if (d === 'left') move(-1, 0);
+      if (d === 'right') move(1, 0);
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!isPlaying) return;
+    if (e.key === 'ArrowUp' || e.key === 'w') move(0, -1);
+    if (e.key === 'ArrowDown' || e.key === 's') move(0, 1);
+    if (e.key === 'ArrowLeft' || e.key === 'a') move(-1, 0);
+    if (e.key === 'ArrowRight' || e.key === 'd') move(1, 0);
+  });
+
+  document.getElementById('btn-start').addEventListener('click', startGame);
+  document.getElementById('btn-tutorial').addEventListener('click', () => {
+    const steps = TUTORIAL_STEPS[LANG] || TUTORIAL_STEPS.vi;
+    PlaysSDK.buildTutorial({ steps, onFinish: () => {}, onClose: () => {} }).open();
+  });
+
+  window.addEventListener('resize', () => { if (isPlaying) { resizeCanvas(); drawMaze(); } });
+
+})();
+</script>
+</body>
+</html>

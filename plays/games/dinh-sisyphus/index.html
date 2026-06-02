@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinh Sisyphus — plays.muonnoi.org</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  #slope-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 50vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
+  .slope-meter { width: 80%; max-width: 400px; height: 24px; margin: 0.5rem auto; background: #1f2937; border: 1px solid #374151; border-radius: 12px; overflow: hidden; }
+  .slope-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #10b981, #f59e0b, #ef4444); border-radius: 12px; transition: width 0.05s linear; }
+  .slope-label { text-align: center; font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.25rem; }
+  #start-overlay { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.85); z-index: 50; }
+  #start-overlay.hidden { display: none; }
+  .start-box { text-align: center; padding: 2rem; background: #111827; border-radius: 12px; border: 1px solid #374151; max-width: 320px; }
+  .start-box h1 { margin-bottom: 0.5rem; font-size: 1.5rem; }
+  .start-box p { color: #9ca3af; margin-bottom: 1.5rem; }
+  .tap-zone { position: fixed; bottom: 0; left: 0; right: 0; height: 35vh; z-index: 10; }
+</style>
+</head>
+<body data-game="dinh-sisyphus">
+
+<div id="hud-root"></div>
+<div class="slope-label" id="power-label">Luc day: 0%</div>
+<div class="slope-meter"><div class="slope-fill" id="power-fill"></div></div>
+<canvas id="slope-canvas" width="320" height="240" aria-label="Slope canvas"></canvas>
+<div class="tap-zone" id="tap-zone" aria-label="Tap to push"></div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1 data-i18n="name">Dinh Sisyphus</h1>
+    <p data-i18n="desc">Canh nhiep day da len dinh. Doc dung dan, dinh tien dan vo cuc.</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start" data-i18n="tapToStart">Nhan de bat dau</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial" data-i18n="tutorial">Huong dan</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function() {
+  'use strict';
+  const GAME_ID = 'dinh-sisyphus';
+  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
+
+  const TUTORIAL_STEPS = {
+    vi: [
+      { title: 'Dinh Sisyphus', desc: 'Nhan giu man hinh de tich luc day. Tha ra de day hon da len doc. Nhieu luc hon da bay xa hon!' },
+      { title: 'Canh nhiep', desc: 'Tha ra khi thanh luc o mau xanh la (60-80%). Luc qua yeu -> da lan xuong. Luc qua manh -> da bay qua dinh!' },
+      { title: 'Doc dung dan', desc: 'Moi lan day thanh cong, doc tro nen dung hon. Hon da se lan nhanh hon va kho kiem soat hon.' },
+      { title: 'Dinh vo cuc', desc: 'Dinh khong bao gio dat duoc hoan toan — no chi tien dan. Muc tieu la day cang nhieu lan cang tot!' },
+    ],
+    en: [
+      { title: 'Peak of Sisyphus', desc: 'Hold to charge push power. Release to push the boulder uphill. More power = boulder flies further!' },
+      { title: 'Timing', desc: 'Release when the power bar is green (60-80%). Too weak -> boulder rolls back. Too strong -> boulder flies over!' },
+      { title: 'Steeper Slope', desc: 'Each successful push makes the slope steeper. The boulder rolls faster and becomes harder to control.' },
+      { title: 'Endless Peak', desc: 'The peak is never fully reached — it only approaches. Goal: push as many times as possible!' },
+    ],
+  };
+
+  const canvas = document.getElementById('slope-canvas');
+  const ctx = canvas.getContext('2d');
+  const hud = PlaysSDK.createHud('hud-root', { showLevel: true });
+  const powerFill = document.getElementById('power-fill');
+  const powerLabel = document.getElementById('power-label');
+
+  let isPlaying = false;
+  let slopeAngle = 15;
+  let boulderPos = 0;
+  let boulderVel = 0;
+  let power = 0;
+  let isCharging = false;
+  let pushes = 0;
+  let score = 0;
+  let level = 1;
+  let animId = null;
+
+  function resize() {
+    const maxW = Math.min(window.innerWidth * 0.9, 500);
+    const maxH = Math.min(window.innerHeight * 0.4, 280);
+    canvas.width = Math.floor(maxW);
+    canvas.height = Math.floor(maxH);
+  }
+
+  function draw() {
+    const w = canvas.width, h = canvas.height;
+    ctx.clearRect(0, 0, w, h);
+
+    const slopeLen = Math.min(w, h) * 0.82;
+    const rad = slopeAngle * Math.PI / 180;
+    const run = slopeLen * Math.cos(rad);
+    const rise = slopeLen * Math.sin(rad);
+    const sx = (w - run) / 2;
+    const sy = h - 20;
+    const ex = sx + run;
+    const ey = sy - rise;
+
+    // Ground
+    ctx.fillStyle = '#1f2937';
+    ctx.beginPath();
+    ctx.moveTo(sx, sy);
+    ctx.lineTo(ex, ey);
+    ctx.lineTo(ex, sy);
+    ctx.closePath();
+    ctx.fill();
+
+    // Slope line
+    ctx.strokeStyle = '#4b5563';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(sx, sy);
+    ctx.lineTo(ex, ey);
+    ctx.stroke();
+
+    // Peak marker
+    ctx.fillStyle = '#10b981';
+    ctx.beginPath();
+    ctx.moveTo(ex, ey);
+    ctx.lineTo(ex - 10, ey - 8);
+    ctx.lineTo(ex + 10, ey - 8);
+    ctx.closePath();
+    ctx.fill();
+
+    // Boulder
+    const t = boulderPos;
+    const bx = sx + t * run;
+    const by = sy - t * rise;
+    const br = Math.max(6, Math.min(14, w * 0.025));
+    ctx.fillStyle = '#9ca3af';
+    ctx.beginPath();
+    ctx.arc(bx, by - br, br, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = '#6b7280';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Stats text
+    ctx.fillStyle = '#9ca3af';
+    ctx.font = '12px sans-serif';
+    ctx.fillText('Doc: ' + slopeAngle.toFixed(1) + '°', 8, 18);
+    ctx.fillText('Day: ' + pushes, 8, 36);
+  }
+
+  function gameLoop() {
+    if (!isPlaying) return;
+    // Physics
+    const rad = slopeAngle * Math.PI / 180;
+    const g = 0.0018;
+    boulderVel -= g * Math.sin(rad);
+    boulderVel *= 0.995;
+    boulderPos += boulderVel;
+
+    if (boulderPos < 0) {
+      boulderPos = 0;
+      boulderVel = 0;
+      endGame('rolled-back');
+      return;
+    }
+    if (boulderPos > 1.05) {
+      endGame('overshot');
+      return;
+    }
+    if (boulderPos >= 0.95 && boulderPos <= 1.0 && Math.abs(boulderVel) < 0.005) {
+      // Success: boulder rests near peak
+      boulderPos = 0.0;
+      boulderVel = 0;
+      pushes++;
+      score += Math.max(10, 100 - slopeAngle * 2);
+      hud.setScore(score);
+
+      // Increase difficulty
+      slopeAngle = Math.min(45, slopeAngle + 2.5);
+      level = pushes + 1;
+      hud.setLevel(level);
+    }
+
+    // Charge power
+    if (isCharging) {
+      power = Math.min(100, power + 1.8);
+      powerFill.style.width = power + '%';
+      powerLabel.textContent = (LANG === 'vi' ? 'Luc day: ' : 'Power: ') + Math.floor(power) + '%';
+    }
+
+    draw();
+    animId = requestAnimationFrame(gameLoop);
+  }
+
+  function startGame() {
+    document.getElementById('start-overlay').classList.add('hidden');
+    slopeAngle = 15; boulderPos = 0; boulderVel = 0; power = 0;
+    isCharging = false; pushes = 0; score = 0; level = 1;
+    hud.setScore(0); hud.setLevel(1);
+    powerFill.style.width = '0%';
+    powerLabel.textContent = (LANG === 'vi' ? 'Luc day: ' : 'Power: ') + '0%';
+    isPlaying = true;
+    resize();
+    gameLoop();
+  }
+
+  function endGame(reason) {
+    isPlaying = false;
+    cancelAnimationFrame(animId);
+    const prev = PlaysSDK.getGuestScores(GAME_ID);
+    const isNewBest = score > prev.best;
+    PlaysSDK.saveGuestScore(GAME_ID, score, level);
+    PlaysSDK.showGameOver({
+      gameId: GAME_ID, score, level,
+      best: Math.max(score, prev.best), isNewBest, token: null,
+      onRestart: () => { document.querySelector('.plays-gameover-overlay')?.remove(); startGame(); },
+      onBack: () => { location.href = '../../'; },
+    });
+  }
+
+  function handleStart() { isCharging = true; }
+  function handleEnd() {
+    if (!isCharging || !isPlaying) return;
+    isCharging = false;
+    const push = power / 100 * 0.18;
+    boulderVel = push;
+    power = 0;
+    powerFill.style.width = '0%';
+    powerLabel.textContent = (LANG === 'vi' ? 'Luc day: ' : 'Power: ') + '0%';
+  }
+
+  const tapZone = document.getElementById('tap-zone');
+  tapZone.addEventListener('pointerdown', handleStart);
+  tapZone.addEventListener('pointerup', handleEnd);
+  tapZone.addEventListener('pointerleave', handleEnd);
+
+  document.getElementById('btn-start').addEventListener('click', startGame);
+  document.getElementById('btn-tutorial').addEventListener('click', () => {
+    const steps = TUTORIAL_STEPS[LANG] || TUTORIAL_STEPS.vi;
+    PlaysSDK.buildTutorial({ steps, onFinish: () => {}, onClose: () => {} }).open();
+  });
+
+  window.addEventListener('resize', () => { if (isPlaying) { resize(); draw(); } });
+})();
+</script>
+</body>
+</html>
