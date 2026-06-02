@@ -11,6 +11,7 @@
   <meta id="og-desc" property="og:description" content="Play Layer của Muôn Nơi — 102 trò chơi không có màn cuối."/>
   <meta property="og:image" content="https://plays.muonnoi.org/assets/og-plays.png"/>
   <meta name="twitter:card" content="summary"/>
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="assets/plays.css">
   <style>
     .detail-hero{display:flex;gap:20px;align-items:flex-start;margin:20px 0}
@@ -119,6 +120,11 @@
           ? `<a class="gcard" href="detail.html?id=${r.id}"><div class="thumb">${rIcon}</div><h3>${rName}</h3></a>`
           : `<div class="gcard locked"><div class="thumb">${rIcon}</div><h3>${rName}</h3></div>`;
       }).join('');
+    }
+
+    // Register Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
     }
   </script>
 </body>

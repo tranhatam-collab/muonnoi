@@ -6,6 +6,7 @@
   <title>Muôn Nơi · Plays — Mục lục trò chơi</title>
   <meta name="description" content="Play Layer của Muôn Nơi: 5 tầng game. Chơi 3–5 lượt miễn phí không cần tài khoản; đăng ký để chơi tiếp, lưu lịch sử và nhận Muôn Điểm."/>
   <link rel="stylesheet" href="assets/plays.css">
+  <link rel="manifest" href="manifest.json">
   <style>
     .rules{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
     .rules .chip{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);
@@ -233,6 +234,11 @@
       }
       paintProgress();
     })();
+
+    // Register Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
 
     // Random game button
     document.getElementById('btn-random').addEventListener('click', (e) => {
