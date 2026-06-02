@@ -5,25 +5,25 @@
 const PLAYS_CATALOG = {
   version: '1.0.0',
   genres: [
-    { id: 'reflex',    vi: 'Phan xa',     en: 'Reflex' },
-    { id: 'puzzle',    vi: 'Giai do',     en: 'Puzzle' },
-    { id: 'dexterity', vi: 'Kheo leo',   en: 'Dexterity' },
-    { id: 'strategy',  vi: 'Chien thuat', en: 'Strategy' },
+    { id: 'reflex',    vi: 'Phản xạ',     en: 'Reflex' },
+    { id: 'puzzle',    vi: 'Giải đố',     en: 'Puzzle' },
+    { id: 'dexterity', vi: 'Khéo léo',   en: 'Dexterity' },
+    { id: 'strategy',  vi: 'Chiến thuật', en: 'Strategy' },
     { id: 'speed',     vi: 'Nhanh tay',   en: 'Speed' },
-    { id: 'memory',    vi: 'Nho / Pattern', en: 'Memory' },
-    { id: 'endless',   vi: 'Toc do / Endless', en: 'Endless Runner' },
-    { id: 'survival',  vi: 'Sinh ton',    en: 'Survival' },
-    { id: 'skill',     vi: 'Luyen tap',   en: 'Skill Training' },
-    { id: 'creative',  vi: 'Sang tao',    en: 'Creative' },
-    { id: 'arcade',    vi: 'Chien dau / Arcade', en: 'Arcade' },
-    { id: 'zen',       vi: 'Thu gian',    en: 'Zen' },
+    { id: 'memory',    vi: 'Nhớ / Pattern', en: 'Memory' },
+    { id: 'endless',   vi: 'Tốc độ / Endless', en: 'Endless Runner' },
+    { id: 'survival',  vi: 'Sinh tồn',    en: 'Survival' },
+    { id: 'skill',     vi: 'Luyện tập',   en: 'Skill Training' },
+    { id: 'creative',  vi: 'Sáng tạo',    en: 'Creative' },
+    { id: 'arcade',    vi: 'Chiến đấu / Arcade', en: 'Arcade' },
+    { id: 'zen',       vi: 'Thư giãn',    en: 'Zen' },
   ],
   games: [
     // ===== LIVE (3 games) =====
     {
       id: 'cham-vo-cuc',
-      name: { vi: 'Cham Vo Cuc', en: 'Infinite Touch' },
-      desc: { vi: 'Cham cac o sang truoc khi chung bien mat. Do kho tang dan vo han.', en: 'Tap lit cells before they vanish. Difficulty rises asymptotically.' },
+      name: { vi: 'Chạm Vô Cực', en: 'Infinite Touch' },
+      desc: { vi: 'Chạm các ô sáng trước khi chúng biến mất. Độ khó tăng dần vô hạn.', en: 'Tap lit cells before they vanish. Difficulty rises asymptotically.' },
       genre: 'reflex',
       wave: 1,
       live: true,
@@ -33,8 +33,8 @@ const PLAYS_CATALOG = {
     },
     {
       id: 'me-cung-muon-loi',
-      name: { vi: 'Me Cung Muon Loi', en: 'Maze of Many Paths' },
-      desc: { vi: 'Tim loi ra trong me cung sinh ngau nhien. Moi me cung lon hon va co suong mu.', en: 'Find the exit in randomly generated mazes. Each maze is larger and foggier.' },
+      name: { vi: 'Mê Cung Muôn Lối', en: 'Maze of Many Paths' },
+      desc: { vi: 'Tìm lối ra trong mê cung sinh ngẫu nhiên. Mỗi mê cung lớn hơn và có sương mù.', en: 'Find the exit in randomly generated mazes. Each maze is larger and foggier.' },
       genre: 'puzzle',
       wave: 1,
       live: true,
@@ -44,8 +44,8 @@ const PLAYS_CATALOG = {
     },
     {
       id: 'dinh-sisyphus',
-      name: { vi: 'Dinh Sisyphus', en: 'Peak of Sisyphus' },
-      desc: { vi: 'Canh nhiep day da len dinh. Doc dung dan, dinh tien dan vo cuc.', en: 'Time your pushes to roll the boulder uphill. Steeper slopes, endless peak.' },
+      name: { vi: 'Đỉnh Sisyphus', en: 'Peak of Sisyphus' },
+      desc: { vi: 'Canh nhịp đẩy đá lên đỉnh. Dốc dựng dần, đỉnh tiến dần vô cực.', en: 'Time your pushes to roll the boulder uphill. Steeper slopes, endless peak.' },
       genre: 'dexterity',
       wave: 1,
       live: true,
@@ -56,58 +56,58 @@ const PLAYS_CATALOG = {
 
     // ===== WAVE 1 — 30 games (placeholder + ready to implement) =====
     // Group 1: Reflex (2 more)
-    { id: 'phan-xa-doi',    name: { vi: 'Phan Xa Doi',    en: 'Dual Reflex' },    desc: { vi: 'Phan xa voi hai mau khac nhau.', en: 'Two-color reflex challenge.' }, genre: 'reflex',    wave: 1, live: true, path: 'games/phan-xa-doi/',    difficulty: 'medium', duration: '2-5 min' },
-    { id: 'phan-xa-ba',     name: { vi: 'Phan Xa Ba',     en: 'Triple Reflex' },   desc: { vi: 'Ba cot, ba mau, toc do tang.', en: 'Three lanes, three colors, speeding up.' }, genre: 'reflex',    wave: 1, live: true, path: 'games/phan-xa-ba/',     difficulty: 'hard',   duration: '2-5 min' },
+    { id: 'phan-xa-doi',    name: { vi: 'Phản Xạ Đôi',    en: 'Dual Reflex' },    desc: { vi: 'Phản xạ với hai màu khác nhau.', en: 'Two-color reflex challenge.' }, genre: 'reflex',    wave: 1, live: true, path: 'games/phan-xa-doi/',    difficulty: 'medium', duration: '2-5 min' },
+    { id: 'phan-xa-ba',     name: { vi: 'Phản Xạ Ba',     en: 'Triple Reflex' },   desc: { vi: 'Ba cột, ba màu, tốc độ tăng.', en: 'Three lanes, three colors, speeding up.' }, genre: 'reflex',    wave: 1, live: true, path: 'games/phan-xa-ba/',     difficulty: 'hard',   duration: '2-5 min' },
 
     // Group 2: Puzzle (2 more)
-    { id: 'xoay-khoi',      name: { vi: 'Xoay Khoi',      en: 'Block Spin' },      desc: { vi: 'Xoay cac khoi de tao duong di.', en: 'Rotate blocks to make a path.' }, genre: 'puzzle',    wave: 1, live: true, path: 'games/xoay-khoi/',      difficulty: 'easy',   duration: '3-7 min' },
-    { id: 'noi-diem',       name: { vi: 'Noi Diem',       en: 'Connect Dots' },    desc: { vi: 'Noi cac diem ma khong cat nhau.', en: 'Connect dots without crossing.' }, genre: 'puzzle',    wave: 1, live: true, path: 'games/noi-diem/',       difficulty: 'medium', duration: '3-7 min' },
+    { id: 'xoay-khoi',      name: { vi: 'Xoay Khối',      en: 'Block Spin' },      desc: { vi: 'Xoay các khối để tạo đường đi.', en: 'Rotate blocks to make a path.' }, genre: 'puzzle',    wave: 1, live: true, path: 'games/xoay-khoi/',      difficulty: 'easy',   duration: '3-7 min' },
+    { id: 'noi-diem',       name: { vi: 'Nối Điểm',       en: 'Connect Dots' },    desc: { vi: 'Nối các điểm mà không cắt nhau.', en: 'Connect dots without crossing.' }, genre: 'puzzle',    wave: 1, live: true, path: 'games/noi-diem/',       difficulty: 'medium', duration: '3-7 min' },
 
     // Group 3: Dexterity / Timing (2 more)
-    { id: 'cat-day',        name: { vi: 'Cat Day',        en: 'String Cut' },      desc: { vi: 'Cat day dung luc.', en: 'Cut the string at the right moment.' }, genre: 'dexterity', wave: 1, live: true, path: 'games/cat-day/',        difficulty: 'easy',   duration: '1-3 min' },
-    { id: 'thap-can-bang',  name: { vi: 'Thap Can Bang',  en: 'Balance Tower' },   desc: { vi: 'Xep khoi len nhau ma khong do.', en: 'Stack blocks without toppling.' }, genre: 'dexterity', wave: 1, live: true, path: 'games/thap-can-bang/',  difficulty: 'medium', duration: '2-5 min' },
+    { id: 'cat-day',        name: { vi: 'Cắt Dây',        en: 'String Cut' },      desc: { vi: 'Cắt dây đúng lúc.', en: 'Cut the string at the right moment.' }, genre: 'dexterity', wave: 1, live: true, path: 'games/cat-day/',        difficulty: 'easy',   duration: '1-3 min' },
+    { id: 'thap-can-bang',  name: { vi: 'Tháp Cân Bằng',  en: 'Balance Tower' },   desc: { vi: 'Xếp khối lên nhau mà không đổ.', en: 'Stack blocks without toppling.' }, genre: 'dexterity', wave: 1, live: true, path: 'games/thap-can-bang/',  difficulty: 'medium', duration: '2-5 min' },
 
     // Group 4: Strategy (2)
-    { id: 'tuong-linh',     name: { vi: 'Tuong Linh',     en: 'Commander' },       desc: { vi: 'Dieu quan chien dau voi tai nguyen han che.', en: 'Command troops with limited resources.' }, genre: 'strategy',  wave: 1, live: true, path: 'games/tuong-linh/',     difficulty: 'hard',   duration: '5-15 min' },
-    { id: 'mo-rong-lanh-tho', name: { vi: 'Mo Rong Lanh Tho', en: 'Territory' },  desc: { vi: 'Chiem lanh tho tu doi thu AI.', en: 'Claim territory from AI opponents.' }, genre: 'strategy',  wave: 1, live: true, path: 'games/mo-rong-lanh-tho/', difficulty: 'medium', duration: '5-10 min' },
+    { id: 'tuong-linh',     name: { vi: 'Tướng Lĩnh',     en: 'Commander' },       desc: { vi: 'Điều quân chiến đấu với tài nguyên hạn chế.', en: 'Command troops with limited resources.' }, genre: 'strategy',  wave: 1, live: true, path: 'games/tuong-linh/',     difficulty: 'hard',   duration: '5-15 min' },
+    { id: 'mo-rong-lanh-tho', name: { vi: 'Mở Rộng Lãnh Thổ', en: 'Territory' },  desc: { vi: 'Chiếm lãnh thổ từ đối thủ AI.', en: 'Claim territory from AI opponents.' }, genre: 'strategy',  wave: 1, live: true, path: 'games/mo-rong-lanh-tho/', difficulty: 'medium', duration: '5-10 min' },
 
     // Group 5: Speed (3)
-    { id: 'go-chu',         name: { vi: 'Go Chu',         en: 'Type Rush' },       desc: { vi: 'Go chu nhanh hon toc do roi.', en: 'Type words faster than they fall.' }, genre: 'speed',     wave: 1, live: true, path: 'games/go-chu/',         difficulty: 'easy',   duration: '1-3 min' },
-    { id: 'ban-muc-tieu',   name: { vi: 'Ban Muc Tieu',   en: 'Target Shoot' },    desc: { vi: 'Ban cac muc tieu xuat hien ngau nhien.', en: 'Shoot randomly appearing targets.' }, genre: 'speed',     wave: 1, live: true, path: 'games/ban-muc-tieu/',   difficulty: 'medium', duration: '2-4 min' },
-    { id: 'an-bong',        name: { vi: 'An Bong',        en: 'Ball Snap' },       desc: { vi: 'Bat bong voi dung mau.', en: 'Catch balls of the right color.' }, genre: 'speed',     wave: 1, live: true, path: 'games/an-bong/',        difficulty: 'hard',   duration: '2-5 min' },
+    { id: 'go-chu',         name: { vi: 'Gõ Chữ',         en: 'Type Rush' },       desc: { vi: 'Gõ chữ nhanh hơn tốc độ rơi.', en: 'Type words faster than they fall.' }, genre: 'speed',     wave: 1, live: true, path: 'games/go-chu/',         difficulty: 'easy',   duration: '1-3 min' },
+    { id: 'ban-muc-tieu',   name: { vi: 'Bắn Mục Tiêu',   en: 'Target Shoot' },    desc: { vi: 'Bắn các mục tiêu xuất hiện ngẫu nhiên.', en: 'Shoot randomly appearing targets.' }, genre: 'speed',     wave: 1, live: true, path: 'games/ban-muc-tieu/',   difficulty: 'medium', duration: '2-4 min' },
+    { id: 'an-bong',        name: { vi: 'Ăn Bóng',        en: 'Ball Snap' },       desc: { vi: 'Bắt bóng với đúng màu.', en: 'Catch balls of the right color.' }, genre: 'speed',     wave: 1, live: true, path: 'games/an-bong/',        difficulty: 'hard',   duration: '2-5 min' },
 
     // Group 6: Memory / Pattern (2)
-    { id: 'nho-day',        name: { vi: 'Nho Day',        en: 'Sequence' },        desc: { vi: 'Lap lai day hieu ung.', en: 'Repeat the effect sequence.' }, genre: 'memory',    wave: 1, live: true, path: 'games/nho-day/',        difficulty: 'easy',   duration: '2-5 min' },
-    { id: 'tim-cap',        name: { vi: 'Tim Cap',        en: 'Match Pairs' },     desc: { vi: 'Tim cac cap the giong nhau.', en: 'Find matching card pairs.' }, genre: 'memory',    wave: 1, live: true, path: 'games/tim-cap/',        difficulty: 'medium', duration: '3-6 min' },
+    { id: 'nho-day',        name: { vi: 'Nhớ Dãy',        en: 'Sequence' },        desc: { vi: 'Lặp lại dãy hiệu ứng.', en: 'Repeat the effect sequence.' }, genre: 'memory',    wave: 1, live: true, path: 'games/nho-day/',        difficulty: 'easy',   duration: '2-5 min' },
+    { id: 'tim-cap',        name: { vi: 'Tìm Cặp',        en: 'Match Pairs' },     desc: { vi: 'Tìm các cặp thẻ giống nhau.', en: 'Find matching card pairs.' }, genre: 'memory',    wave: 1, live: true, path: 'games/tim-cap/',        difficulty: 'medium', duration: '3-6 min' },
 
     // Group 7: Endless Runner / Speed (2)
-    { id: 'chay-vo-tan',    name: { vi: 'Chay Vo Tan',    en: 'Infinite Run' },    desc: { vi: 'Nhay va ne chuong ngai vat khong ngung.', en: 'Jump and dodge endless obstacles.' }, genre: 'endless',   wave: 1, live: true, path: 'games/chay-vo-tan/',    difficulty: 'medium', duration: '2-5 min' },
-    { id: 'truot-duong',    name: { vi: 'Truot Duong',    en: 'Lane Slide' },      desc: { vi: 'Truot qua lai tranh va cham.', en: 'Slide left-right to avoid crashes.' }, genre: 'endless',   wave: 1, live: true, path: 'games/truot-duong/',    difficulty: 'hard',   duration: '2-5 min' },
+    { id: 'chay-vo-tan',    name: { vi: 'Chạy Vô Tận',    en: 'Infinite Run' },    desc: { vi: 'Nhảy và né chướng ngại vật không ngừng.', en: 'Jump and dodge endless obstacles.' }, genre: 'endless',   wave: 1, live: true, path: 'games/chay-vo-tan/',    difficulty: 'medium', duration: '2-5 min' },
+    { id: 'truot-duong',    name: { vi: 'Trượt Đường',    en: 'Lane Slide' },      desc: { vi: 'Trượt qua lại tránh va chạm.', en: 'Slide left-right to avoid crashes.' }, genre: 'endless',   wave: 1, live: true, path: 'games/truot-duong/',    difficulty: 'hard',   duration: '2-5 min' },
 
     // Group 8: Survival (3)
-    { id: 'song-sot',       name: { vi: 'Song Sot',       en: 'Survive' },         desc: { vi: 'Ton tai cang lau cang tot trong moi truong thu dich.', en: 'Survive as long as possible in hostile environment.' }, genre: 'survival',  wave: 1, live: true, path: 'games/song-sot/',       difficulty: 'hard',   duration: '3-10 min' },
-    { id: 'ne-laser',       name: { vi: 'Ne Laser',       en: 'Dodge Laser' },     desc: { vi: 'Ne cac chum laser ngay cang day.', en: 'Dodge increasingly dense laser beams.' }, genre: 'survival',  wave: 1, live: true, path: 'games/ne-laser/',       difficulty: 'medium', duration: '2-5 min' },
-    { id: 'tim-thuc-an',    name: { vi: 'Tim Thuc An',    en: 'Forage' },          desc: { vi: 'Thu thap thuc an ma khong bi bat.', en: 'Gather food without getting caught.' }, genre: 'survival',  wave: 1, live: true, path: 'games/tim-thuc-an/',    difficulty: 'easy',   duration: '3-7 min' },
+    { id: 'song-sot',       name: { vi: 'Sống Sót',       en: 'Survive' },         desc: { vi: 'Tồn tại càng lâu càng tốt trong môi trường thù địch.', en: 'Survive as long as possible in hostile environment.' }, genre: 'survival',  wave: 1, live: true, path: 'games/song-sot/',       difficulty: 'hard',   duration: '3-10 min' },
+    { id: 'ne-laser',       name: { vi: 'Né Laser',       en: 'Dodge Laser' },     desc: { vi: 'Né các chùm laser ngày càng dày.', en: 'Dodge increasingly dense laser beams.' }, genre: 'survival',  wave: 1, live: true, path: 'games/ne-laser/',       difficulty: 'medium', duration: '2-5 min' },
+    { id: 'tim-thuc-an',    name: { vi: 'Tìm Thức Ăn',    en: 'Forage' },          desc: { vi: 'Thu thập thức ăn mà không bị bắt.', en: 'Gather food without getting caught.' }, genre: 'survival',  wave: 1, live: true, path: 'games/tim-thuc-an/',    difficulty: 'easy',   duration: '3-7 min' },
 
     // Group 9: Skill Training (4)
-    { id: 'tinh-nham',      name: { vi: 'Tinh Nham',      en: 'Mental Math' },     desc: { vi: 'Giai phep tinh nhanh nhat co the.', en: 'Solve math problems as fast as possible.' }, genre: 'skill',     wave: 1, live: true, path: 'games/tinh-nham/',      difficulty: 'easy',   duration: '2-5 min' },
-    { id: 'phan-biet-mau',  name: { vi: 'Phan Biet Mau',  en: 'Color Match' },     desc: { vi: 'Chon mau dung voi chu cai.', en: 'Pick the color matching the word.' }, genre: 'skill',     wave: 1, live: true, path: 'games/phan-biet-mau/',  difficulty: 'easy',   duration: '1-3 min' },
-    { id: 'nhanh-mat',      name: { vi: 'Nhanh Mat',      en: 'Sharp Eye' },       desc: { vi: 'Tim diem khac biet trong thoi gian ngan.', en: 'Find the difference in short time.' }, genre: 'skill',     wave: 1, live: true, path: 'games/nhanh-mat/',      difficulty: 'medium', duration: '2-5 min' },
-    { id: 'phan-xa-nguoc',  name: { vi: 'Phan Xa Nguoc',  en: 'Reverse Reflex' },  desc: { vi: 'Lam nguoc lai voi phan xa tu nhien.', en: 'Do the opposite of natural reflex.' }, genre: 'skill',     wave: 1, live: true, path: 'games/phan-xa-nguoc/',  difficulty: 'hard',   duration: '2-5 min' },
+    { id: 'tinh-nham',      name: { vi: 'Tính Nhẩm',      en: 'Mental Math' },     desc: { vi: 'Giải phép tính nhanh nhất có thể.', en: 'Solve math problems as fast as possible.' }, genre: 'skill',     wave: 1, live: true, path: 'games/tinh-nham/',      difficulty: 'easy',   duration: '2-5 min' },
+    { id: 'phan-biet-mau',  name: { vi: 'Phân Biệt Màu',  en: 'Color Match' },     desc: { vi: 'Chọn màu đúng với chữ cái.', en: 'Pick the color matching the word.' }, genre: 'skill',     wave: 1, live: true, path: 'games/phan-biet-mau/',  difficulty: 'easy',   duration: '1-3 min' },
+    { id: 'nhanh-mat',      name: { vi: 'Nhanh Mắt',      en: 'Sharp Eye' },       desc: { vi: 'Tìm điểm khác biệt trong thời gian ngắn.', en: 'Find the difference in short time.' }, genre: 'skill',     wave: 1, live: true, path: 'games/nhanh-mat/',      difficulty: 'medium', duration: '2-5 min' },
+    { id: 'phan-xa-nguoc',  name: { vi: 'Phản Xạ Ngược',  en: 'Reverse Reflex' },  desc: { vi: 'Làm ngược lại với phản xạ tự nhiên.', en: 'Do the opposite of natural reflex.' }, genre: 'skill',     wave: 1, live: true, path: 'games/phan-xa-nguoc/',  difficulty: 'hard',   duration: '2-5 min' },
 
     // Group 10: Creative (3)
-    { id: 've-nhanh',       name: { vi: 'Ve Nhanh',       en: 'Quick Draw' },      desc: { vi: 'Ve theo yeu cau trong thoi gian.', en: 'Draw the requested shape in time.' }, genre: 'creative',  wave: 1, live: true, path: 'games/ve-nhanh/',       difficulty: 'easy',   duration: '2-5 min' },
-    { id: 'xep-hinh',       name: { vi: 'Xep Hinh',       en: 'Shape Builder' },   desc: { vi: 'Xep cac manh hinh vao khung.', en: 'Fit puzzle pieces into the frame.' }, genre: 'creative',  wave: 1, live: true, path: 'games/xep-hinh/',       difficulty: 'medium', duration: '3-8 min' },
-    { id: 'am-nhac',        name: { vi: 'Am Nhac',        en: 'Rhythm Tap' },      desc: { vi: 'Cham theo nhip dieu nhac.', en: 'Tap along to the music rhythm.' }, genre: 'creative',  wave: 1, live: true, path: 'games/am-nhac/',        difficulty: 'hard',   duration: '2-4 min' },
+    { id: 've-nhanh',       name: { vi: 'Vẽ Nhanh',       en: 'Quick Draw' },      desc: { vi: 'Vẽ theo yêu cầu trong thời gian.', en: 'Draw the requested shape in time.' }, genre: 'creative',  wave: 1, live: true, path: 'games/ve-nhanh/',       difficulty: 'easy',   duration: '2-5 min' },
+    { id: 'xep-hinh',       name: { vi: 'Xếp Hình',       en: 'Shape Builder' },   desc: { vi: 'Xếp các mảnh hình vào khung.', en: 'Fit puzzle pieces into the frame.' }, genre: 'creative',  wave: 1, live: true, path: 'games/xep-hinh/',       difficulty: 'medium', duration: '3-8 min' },
+    { id: 'am-nhac',        name: { vi: 'Âm Nhạc',        en: 'Rhythm Tap' },      desc: { vi: 'Chạm theo nhịp điệu nhạc.', en: 'Tap along to the music rhythm.' }, genre: 'creative',  wave: 1, live: true, path: 'games/am-nhac/',        difficulty: 'hard',   duration: '2-4 min' },
 
     // Group 11: Arcade / Combat (2)
-    { id: 'ban-sao-bang',   name: { vi: 'Ban Sao Bang',   en: 'Meteor Blaster' },  desc: { vi: 'Ban cac thien thach roi xuong.', en: 'Blast falling meteors.' }, genre: 'arcade',    wave: 1, live: true, path: 'games/ban-sao-bang/',   difficulty: 'medium', duration: '2-5 min' },
-    { id: 'chien-dau',      name: { vi: 'Chien Dau',      en: 'Combat' },          desc: { vi: 'Chien dau voi doi thu ngay cang manh.', en: 'Fight increasingly strong opponents.' }, genre: 'arcade',    wave: 1, live: true, path: 'games/chien-dau/',      difficulty: 'hard',   duration: '3-7 min' },
+    { id: 'ban-sao-bang',   name: { vi: 'Bắn Sao Băng',   en: 'Meteor Blaster' },  desc: { vi: 'Bắn các thiên thạch rơi xuống.', en: 'Blast falling meteors.' }, genre: 'arcade',    wave: 1, live: true, path: 'games/ban-sao-bang/',   difficulty: 'medium', duration: '2-5 min' },
+    { id: 'chien-dau',      name: { vi: 'Chiến Đấu',      en: 'Combat' },          desc: { vi: 'Chiến đấu với đối thủ ngày càng mạnh.', en: 'Fight increasingly strong opponents.' }, genre: 'arcade',    wave: 1, live: true, path: 'games/chien-dau/',      difficulty: 'hard',   duration: '3-7 min' },
 
     // Group 12: Zen (3)
-    { id: 'thoi-bong-bong', name: { vi: 'Thoi Bong Bong', en: 'Bubble Zen' },      desc: { vi: 'Thoi bong bong cang nhieu cang tot.', en: 'Blow as many bubbles as possible.' }, genre: 'zen',       wave: 1, live: true, path: 'games/thoi-bong-bong/', difficulty: 'easy',   duration: '1-3 min' },
-    { id: 'hai-sao',        name: { vi: 'Hai Sao',        en: 'Star Gather' },     desc: { vi: 'Hai cac vi sao roi tren man hinh.', en: 'Gather falling stars on screen.' }, genre: 'zen',       wave: 1, live: true, path: 'games/hai-sao/',        difficulty: 'easy',   duration: '2-5 min' },
-    { id: 'nuoi-cay',       name: { vi: 'Nuoi Cay',       en: 'Grow Tree' },       desc: { vi: 'Tuoi nuoc cho cay lon khong ngung.', en: 'Water a tree that grows endlessly.' }, genre: 'zen',       wave: 1, live: true, path: 'games/nuoi-cay/',       difficulty: 'easy',   duration: '3-8 min' },
+    { id: 'thoi-bong-bong', name: { vi: 'Thổi Bong Bóng', en: 'Bubble Zen' },      desc: { vi: 'Thổi bong bóng càng nhiều càng tốt.', en: 'Blow as many bubbles as possible.' }, genre: 'zen',       wave: 1, live: true, path: 'games/thoi-bong-bong/', difficulty: 'easy',   duration: '1-3 min' },
+    { id: 'hai-sao',        name: { vi: 'Hái Sao',        en: 'Star Gather' },     desc: { vi: 'Hái các vì sao rơi trên màn hình.', en: 'Gather falling stars on screen.' }, genre: 'zen',       wave: 1, live: true, path: 'games/hai-sao/',        difficulty: 'easy',   duration: '2-5 min' },
+    { id: 'nuoi-cay',       name: { vi: 'Nuôi Cây',       en: 'Grow Tree' },       desc: { vi: 'Tưới nước cho cây lớn không ngừng.', en: 'Water a tree that grows endlessly.' }, genre: 'zen',       wave: 1, live: true, path: 'games/nuoi-cay/',       difficulty: 'easy',   duration: '3-8 min' },
 
     // ===== WAVE 2+ — 67 placeholder games =====
     // Generated programmatically for catalog completeness

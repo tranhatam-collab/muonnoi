@@ -4,6 +4,26 @@ Cập nhật mới nhất ở đầu file.
 
 ---
 
+## 2026-05-19 — Section 1.3: www.nguoiviet redirect Worker deployed
+
+### Đã làm
+- **Worker `www-nguoiviet-redirect`** — deploy via `wrangler deploy` (wrangler.workers.dev):
+  `export default { fetch: req => Response.redirect("https://nguoiviet.muonnoi.org" + new URL(req.url).pathname + new URL(req.url).search, 301) }`
+- **Cloudflare Workers route** — `www.nguoiviet.muonnoi.org/*` → `www-nguoiviet-redirect` (route ID `fbd37061a00145a5b60741d8069f4d53`)
+- **HTTP 301 redirect confirmed** — `http://www.nguoiviet.muonnoi.org/` → `https://nguoiviet.muonnoi.org/` ✅ (`Cf-Ray: 9fe10d0eacf34b1f-LAX`)
+
+### Còn lại (cần user action)
+- **HTTPS cho `www.nguoiviet.muonnoi.org`** — SSL handshake fail vì Universal SSL chỉ cover `*.muonnoi.org` (1 wildcard level), không cover `www.nguoiviet.muonnoi.org` (3 levels). Fix options:
+  - (A) Cloudflare Advanced Certificate Manager → add `www.nguoiviet.muonnoi.org` hostname ($10/month)
+  - (B) Chấp nhận HTTP-only redirect — canonical URL là `nguoiviet.muonnoi.org` (no www), SEO không bị ảnh hưởng
+  - (C) Cloudflare dashboard → SSL/TLS → Edge Certificates → check "Universal SSL" settings
+
+### Status Section 1.3
+- HTTP redirect: ✅ LIVE
+- HTTPS redirect: ⚠️ SSL cert gap (third-level subdomain not covered by Universal SSL)
+
+---
+
 ## 2026-05-19 — Full email system: 8 templates + payment emails + URL bug fix
 
 ### Đã làm

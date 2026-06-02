@@ -26,9 +26,9 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Xoay Khoi</h1>
-    <p>Xoay cac khoi de tao duong di tu goc tren trai den goc duoi phai.</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <p>Xoay các khối để tạo đường đi từ góc trên trai đến góc dưới phai.</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -40,9 +40,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Xoay Khoi', desc: 'Moi o co mot doan duong. Nhan de xoay o 90 do. Noi cac doan thanh duong di lien mach.' },
-      { title: 'Gioi han thoi gian', desc: 'Ban co 30 giay cho moi me cung. Cang ve sau, me cung cang lon va phuc tap.' },
-      { title: 'Vo han', desc: 'Sang me cung moi sau khi hoan thanh. Khong bao gio het!' },
+      { title: 'Xoay Khoi', desc: 'Moi ô có một doan duong. Nhan để xoay ô 90 do. Noi các doan thanh duong di lien mach.' },
+      { title: 'Giới hạn thời gian', desc: 'Ban có 30 giây cho mỗi me cung. Càng về sau, me cung càng lớn va phức tạp.' },
+      { title: 'Vô hạn', desc: 'Sang me cung mỗi sáu khi hoan thanh. Khong bao giờ het!' },
     ],
     en: [
       { title: 'Block Spin', desc: 'Each cell has a path segment. Tap to rotate 90 degrees. Connect segments into a continuous path.' },

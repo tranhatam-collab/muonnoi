@@ -30,9 +30,9 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Phan Xa Nguoc</h1>
-    <p>Nhan NGUOC LAI voi phan xa tu nhien. DO = XANH, XANH = DO!</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <p>Nhấn NGƯỢC LẠI với phản xạ tự nhiên. ĐỎ = XANH, XANH = ĐỎ!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -44,9 +44,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Phan Xa Nguoc', desc: 'Mot nut se sang len. Neu DO thi ban phai nhan XANH. Neu XANH thi nhan DO. Lam nguoc lai voi ban nang!' },
-      { title: 'Toc do tang', desc: 'Cang ve sau toc do hien cang nhanh. Dung de nao tu dong dieu khien tay ban.' },
-      { title: 'Vo han', desc: 'Khong co gioi han. Tap luyen phan xa nguoc!' },
+      { title: 'Phan Xa Nguoc', desc: 'Một nút sẽ sáng lên. Nếu ĐỎ thì bạn phải nhấn XANH. Nếu XANH thì nhấn ĐỎ. Làm ngược lại với bản năng!' },
+      { title: 'Tốc độ tăng', desc: 'Càng về sáu toc đỏ hien càng nhanh. Đừng để não tự động điều khiển tay bạn.' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn. Tap luyen phản xạ nguoc!' },
     ],
     en: [
       { title: 'Reverse Reflex', desc: 'A button lights up. If RED, tap BLUE. If BLUE, tap RED. Override your instincts!' },
@@ -80,7 +80,7 @@
   function updateHint() {
     const c = COLORS[activeIdx];
     const target = COLORS[(activeIdx + 2) % COLORS.length];
-    hintEl.innerHTML = (LANG === 'vi' ? 'Neu <span style="color:' + c.hex + '">' + c.name + '</span> → nhan <span style="color:' + target.hex + '">' + target.name + '</span>' : 'If <span style="color:' + c.hex + '">' + c.en + '</span> → tap <span style="color:' + target.hex + '">' + target.en + '</span>');
+    hintEl.innerHTML = (LANG === 'vi' ? 'Neu <span style="color:' + c.hex + '">' + c.name + '</span> → nhấn <span style="color:' + target.hex + '">' + target.name + '</span>' : 'If <span style="color:' + c.hex + '">' + c.en + '</span> → tap <span style="color:' + target.hex + '">' + target.en + '</span>');
   }
 
   function flash() {

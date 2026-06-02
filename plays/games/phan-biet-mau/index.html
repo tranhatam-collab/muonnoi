@@ -26,9 +26,9 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Phan Biet Mau</h1>
-    <p>Chon mau CHU KHONG PHAI nghia cua tu. Dung bi danh lua!</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <p>Chon màu CHU KHONG PHAI nghia cua tu. Dung bi danh lua!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -40,9 +40,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Phan Biet Mau', desc: 'Tu viet "DO" nhung to mau XANH. Nhiem vu cua ban la chon MAU CHU (XANH), khong phai nghia (DO).' },
-      { title: 'Hieu ung Stroop', desc: 'Nao tu dong doc nghia tu. Ban phai ep nao bo qua nghia va chi tap trung vao mau sac.' },
-      { title: 'Vo han', desc: 'Khong co gioi han. Cang nhanh cang nhieu diem!' },
+      { title: 'Phân Biệt Màu', desc: 'Từ viết "ĐỎ" nhưng tô màu XANH. Nhiệm vụ của bạn là chọn MÀU CHỮ (XANH), không phải nghĩa (ĐỎ).' },
+      { title: 'Hiệu ứng Stroop', desc: 'Não tự động đọc nghĩa từ. Bạn phải ép não bỏ quá nghĩa và chỉ tập trúng vào màu sắc.' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn. Càng nhanh càng nhiều điểm!' },
     ],
     en: [
       { title: 'Color Match', desc: 'Word says "RED" but colored BLUE. Your task: pick the INK COLOR (BLUE), not the meaning (RED).' },
@@ -78,7 +78,7 @@
 
   function showProblem() {
     currentWordIdx = Math.floor(Math.random() * COLORS.length);
-    do { currentColorIdx = Math.floor(Math.random() * COLORS.length); } while (currentColorIdx === currentWordIdx);
+    đỏ { currentColorIdx = Math.floor(Math.random() * COLORS.length); } while (currentColorIdx === currentWordIdx);
     const c = COLORS[currentWordIdx];
     wordEl.textContent = LANG === 'vi' ? c.name : c.en;
     wordEl.style.color = COLORS[currentColorIdx].hex;

@@ -28,10 +28,10 @@
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1 data-i18n="name">Phan Xa Doi</h1>
-    <p data-i18n="desc">Hai mau, hai cot. Cham dung mau truoc khi bien mat.</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <h1 data-i18n="name">Phản Xạ Đôi</h1>
+    <p data-i18n="desc">Hai màu, hai cột. Chạm đúng màu trước khi biến mất.</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -43,9 +43,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Phan Xa Doi', desc: 'Cot TRAI chi co o DO. Cot PHAI chi co o XANH. Cham dung cot voi o dung mau.' },
-      { title: 'Toc do tang', desc: 'Cang choi, o xuat hien cang nhanh va bien mat cang som. Dung cham nham cot!' },
-      { title: 'Vo han', desc: 'Khong co man cuoi. Dua ky luc so lan cham dung lien tiep!' },
+      { title: 'Phản Xạ Đôi', desc: 'Cột TRÁI chỉ có ô ĐỎ. Cột PHẢI chỉ có ô XANH. Chạm đúng cột với ô đúng màu.' },
+      { title: 'Tốc độ tăng', desc: 'Càng chơi, ô xuất hiện càng nhanh và biến mất càng sớm. Đừng chạm nhầm cột!' },
+      { title: 'Vô hạn', desc: 'Không có màn cuối. Đua kỷ lục số lần chạm đúng liên tiếp!' },
     ],
     en: [
       { title: 'Dual Reflex', desc: 'LEFT column = RED only. RIGHT column = BLUE only. Tap the correct column for each colored cell.' },

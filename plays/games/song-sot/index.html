@@ -22,9 +22,9 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Song Sot</h1>
-    <p>Ton tai cang lau cang tot trong moi truong thu dich.</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <p>Ton tai càng lâu càng tốt trong môi trường thù địch.</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -36,9 +36,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Song Sot', desc: 'Keo nhan vat cua ban tren man hinh de tranh cac hinh tron do dich. Cang lau cang nhieu dich.' },
-      { title: 'Tien trien', desc: 'Dich se xuat hien cang nhieu va di chuyen cang nhanh. Thu thap cac hat vang de hoi mau.' },
-      { title: 'Vo han', desc: 'Khong co man cuoi. Ton tai lau nhat co the!' },
+      { title: 'Song Sot', desc: 'Keo nhấn vật cua bạn trên màn hinh để tranh các hình tròn đỏ dich. Cang lau càng nhiều dich.' },
+      { title: 'Tien trien', desc: 'Dich se xuất hiện càng nhiều va di chuyển càng nhanh. Thu thấp các hat vàng để hồi máu.' },
+      { title: 'Vô hạn', desc: 'Khong có màn cuoi. Ton tai lau nhat có thể!' },
     ],
     en: [
       { title: 'Survive', desc: 'Drag your character to avoid red enemy circles. More enemies spawn over time.' },
@@ -70,7 +70,7 @@
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     // Items
     ctx.fillStyle = '#f59e0b';
-    for (const it of items) { ctx.beginPath(); ctx.arc(it.x, it.y, it.r, 0, Math.PI * 2); ctx.fill(); }
+    for (const ít of items) { ctx.beginPath(); ctx.arc(it.x, it.y, it.r, 0, Math.PI * 2); ctx.fill(); }
     // Enemies
     ctx.fillStyle = '#ef4444';
     for (const e of enemies) { ctx.beginPath(); ctx.arc(e.x, e.y, e.r, 0, Math.PI * 2); ctx.fill(); }
@@ -95,7 +95,7 @@
     }
     // Items
     for (let i = items.length - 1; i >= 0; i--) {
-      const it = items[i];
+      const ít = items[i];
       const d = Math.sqrt((player.x - it.x) ** 2 + (player.y - it.y) ** 2);
       if (d < player.r + it.r) { items.splice(i, 1); player.hp = Math.min(100, player.hp + 15); score += 10; }
     }

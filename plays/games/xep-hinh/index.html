@@ -25,9 +25,9 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Xep Hinh</h1>
-    <p>Sap xep cac so theo thu tu tu 1 den N. Cang nhanh cang nhieu diem!</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <p>Sắp xếp các số theo thứ tự từ 1 đến N. Cang nhanh càng nhiều diem!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -39,9 +39,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Xep Hinh', desc: 'Mot o trong se bi trong. Nhan cac o gan o trong de doi cho. Sap xep cac so tu 1 den N theo thu tu.' },
-      { title: 'Kich thuoc tang', desc: 'Sang man moi, bang se lon hon (3x3 → 4x4 → 5x5). Cang lon cang kho!' },
-      { title: 'Vo han', desc: 'Khong co gioi han. Xep cang nhieu cang tot!' },
+      { title: 'Xếp Hình', desc: 'Một ô trống sẽ bị trống. Nhấn các ô gần ô trống để đổi chỗ. Sắp xếp các số từ 1 đến N theo thứ tự.' },
+      { title: 'Kích thước tăng', desc: 'Sang màn mới, bảng sẽ lớn hơn (3x3 → 4x4 → 5x5). Càng lớn càng khó!' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn. Xếp càng nhiều càng tốt!' },
     ],
     en: [
       { title: 'Shape Builder', desc: 'One empty cell. Tap adjacent cells to slide. Arrange numbers 1 to N in order.' },

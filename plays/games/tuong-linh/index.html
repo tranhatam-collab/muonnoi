@@ -28,9 +28,9 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Tuong Linh</h1>
-    <p>Dieu quan chien dau voi tai nguyen han che. Chiem dat, thu thach, chien thang.</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <p>Điều quân chiến đấu với tài nguyên hạn chế. Chiem dat, thử thach, chien thang.</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -42,9 +42,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Tuong Linh', desc: 'Luoi 6x6 voi cac o: dat trong (xanh duong), quan dich (do), tai nguyen (vang). Cham o xanh de chiem, cham o vang de thu thach.' },
-      { title: 'Han che', desc: 'Moi luot chi duoc chiem hoac thu thach 1 o. Quan dich se xuat hien ngau nhien sau moi luot.' },
-      { title: 'Vo han', desc: 'Khong co man cuoi. Cang choi quan dich cang nhieu. Song lau nhat co the!' },
+      { title: 'Tuong Linh', desc: 'Luoi 6x6 với các o: dat trong (xanh duong), quan địch (do), tai nguyen (vang). Cham ô xanh để chiem, chạm ô vàng để thử thach.' },
+      { title: 'Han che', desc: 'Moi lượt chi được chiếm hoặc thử thach 1 o. Quan địch se xuất hiện ngẫu nhiên sáu mỗi luot.' },
+      { title: 'Vô hạn', desc: 'Khong có màn cuoi. Cang choi quan địch càng nhiều. Song lau nhat có thể!' },
     ],
     en: [
       { title: 'Commander', desc: '6x6 grid: empty land (blue), enemy (red), resources (gold). Tap blue to claim, tap gold to harvest.' },

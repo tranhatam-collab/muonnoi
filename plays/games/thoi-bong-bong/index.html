@@ -22,9 +22,9 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Thoi Bong Bong</h1>
-    <p>Cham de thoi bong bong len. Cang lon cang nhieu diem, nhung dung de no vo!</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <p>Cham để thổi bong bóng len. Cang lớn càng nhiều diem, nhung đừng để nó vỡ!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -36,13 +36,13 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Thoi Bong Bong', desc: 'Cham giu de thoi bong bong. Nha ngon tay de dung lai truoc khi no vo. Bong cang lon diem cang nhieu.' },
-      { title: 'Gioi han', desc: 'Moi bong bong co gioi han kich thuoc khac nhau. Qua gioi han se no va mat diem.' },
-      { title: 'Vo han', desc: 'Khong co gioi han so bong. Thoi cang nhieu cang tot!' },
+      { title: 'Thoi Bong Bong', desc: 'Cham giu để thổi bong bóng. Nhả ngón tay để dừng lại trước khi nó vỡ. Bong càng lớn điểm càng nhiều.' },
+      { title: 'Giới hạn', desc: 'Mỗi bong bóng có giới hạn kích thước khác nhau. Quá giới hạn sẽ nổ va mất điểm.' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn số bong. Thoi càng nhiều càng tốt!' },
     ],
     en: [
-      { title: 'Blow Bubble', desc: 'Tap and hold to blow a bubble. Release before it pops. Bigger bubble = more points.' },
-      { title: 'Limit', desc: 'Each bubble has a different size limit. Exceed it and the bubble pops, losing points.' },
+      { title: 'Blow Bubble', desc: 'Tap and hold to blow a bubble. Release before ít pops. Bigger bubble = more points.' },
+      { title: 'Limit', desc: 'Each bubble has a different size limit. Exceed ít and the bubble pops, losing points.' },
       { title: 'Endless', desc: 'No bubble limit. Blow as many as you can!' },
     ],
   };

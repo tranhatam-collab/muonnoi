@@ -22,9 +22,9 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Noi Diem</h1>
-    <p>Noi cac diem theo thu tu tu 1 den N ma khong cat nhau.</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <p>Noi các điểm theo thử từ tu 1 đến N mà không cat nhau.</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -36,9 +36,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Noi Diem', desc: 'Cac diem duoc danh so tu 1 den N. Cham diem 1, roi diem 2, roi 3... Noi lien tiep khong duoc bo sot.' },
-      { title: 'Thoi gian gioi han', desc: 'Moi man co 20 giay. Cang ve sau co cang nhieu diem va vi tri phuc tap hon.' },
-      { title: 'Vo han', desc: 'Sang man moi sau khi hoan thanh. Thu thach gioi han cua ban!' },
+      { title: 'Nối Điểm', desc: 'Các điểm được đánh số từ 1 đến N. Chạm điểm 1, rồi điểm 2, rồi 3... Nối liên tiếp không được bỏ sót.' },
+      { title: 'Thời gian giới hạn', desc: 'Mỗi màn có 20 giây. Càng về sáu có càng nhiều điểm và vị trí phức tạp hơn.' },
+      { title: 'Vô hạn', desc: 'Sang màn mới sáu khi hoàn thành. Thử thách giới hạn của bạn!' },
     ],
     en: [
       { title: 'Connect Dots', desc: 'Dots numbered 1 to N. Tap dot 1, then 2, then 3... Connect sequentially without skipping.' },
