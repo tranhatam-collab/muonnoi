@@ -68,6 +68,11 @@
 
     <div class="filters" id="filters"></div>
 
+    <div class="section" id="recent" style="display:none">
+      <h2>🕒 Chơi gần đây</h2><span class="count" id="recentCount"></span>
+    </div>
+    <div class="games" id="recentGames"></div>
+
     <div class="section" id="sansang">
       <h2>✅ Sẵn sàng — chơi được ngay</h2><span class="count" id="liveCount"></span>
     </div>
@@ -184,6 +189,20 @@
     document.getElementById('p1Count').textContent = C.counts.live;
     document.getElementById('ipCount').textContent = Object.keys(C.groups).length;
     render();
+
+    // Recently played (from localStorage)
+    (function(){
+      try {
+        const recent = JSON.parse(localStorage.getItem('mn_recent_games') || '[]');
+        const recentIds = [...new Set(recent)].slice(0, 6);
+        const recentGames = recentIds.map(id => C.games.find(g => g.id === id)).filter(Boolean);
+        if (recentGames.length) {
+          document.getElementById('recent').style.display = '';
+          document.getElementById('recentCount').textContent = recentGames.length + ' game';
+          document.getElementById('recentGames').innerHTML = recentGames.map(card).join('');
+        }
+      } catch(e) {}
+    })();
 
     // Học viện — bộ sưu tập game đã lên kế hoạch
     (function(){

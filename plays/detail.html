@@ -122,6 +122,17 @@
       }).join('');
     }
 
+    // Track recently played
+    if (g) {
+      try {
+        const recent = JSON.parse(localStorage.getItem('mn_recent_games') || '[]');
+        const idx = recent.indexOf(g.id);
+        if (idx > -1) recent.splice(idx, 1);
+        recent.unshift(g.id);
+        localStorage.setItem('mn_recent_games', JSON.stringify(recent.slice(0, 20)));
+      } catch(e) {}
+    }
+
     // Register Service Worker
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});
