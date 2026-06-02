@@ -1,0 +1,51 @@
+# plays.muonnoi.org — Hướng dẫn dev nhanh
+
+Nền tảng game giải trí của hệ sinh thái Muôn Nơi. Xem **`PLAN.md`** cho kế hoạch đầy đủ (100 game · 33 công bố · cơ chế Muôn Điểm).
+
+## Cấu trúc
+
+```
+plays/
+├─ PLAN.md            # kế hoạch tổng thể
+├─ index.html         # Hub (liệt kê game theo catalog.js)
+├─ assets/
+│  ├─ plays.css       # design system
+│  ├─ catalog.js      # danh mục 100 game (nguồn sự thật cho hub)
+│  └─ plays-sdk.js    # MNPlays: đồng bộ tiến trình + điểm (guest/login)
+└─ games/             # mỗi game = 1 file .html độc lập
+   ├─ cham-vo-cuc.html        ✅ Phản xạ
+   ├─ me-cung-muon-loi.html   ✅ Giải đố
+   └─ dinh-sisyphus.html      ✅ Khéo léo/Timing
+
+scripts/plays-schema.sql      # bảng D1: plays_profiles / progress / sessions / point_ledger / catalog
+functions/api/plays/*.ts      # API: catalog, progress, points, link
+functions/api/util/auth.ts    # getSessionUser + ensureProfile (auto-link)
+```
+
+## Chạy thử local
+- Mở thẳng `plays/index.html` hoặc các file game bằng trình duyệt → chạy được ở **chế độ khách** (lưu localStorage).
+- Hoặc `wrangler pages dev .` để có cả API D1.
+
+## Bật backend (P1)
+1. Chạy `scripts/plays-schema.sql` trong D1 console (sau `scripts/schema.sql`).
+2. Đảm bảo **middleware auth** gắn `ctx.data.user` (xem `functions/_functions_disabled/_middleware.ts`).
+   - Không bắt buộc: `util/auth.ts` tự verify cookie nếu middleware chưa gắn user.
+3. Kiểm tra **base path API**: SDK gọi `/functions/api/...` (giống `admin.html`).
+   Nếu routing Pages của bạn dùng `/api/...`, sửa hằng `API` trong `plays/assets/plays-sdk.js`.
+
+## Thêm game mới
+1. Thêm 1 dòng vào `WAVE1`/`ROADMAP_NAMES` trong `catalog.js` (đổi `status` thành `live`, set `file`).
+2. Tạo `games/<id>.html` — copy khung từ 1 game có sẵn.
+3. Game chỉ cần gọi:
+   ```js
+   await MNPlays.init();
+   await MNPlays.loadProgress(GAME_ID);
+   await MNPlays.saveProgress(GAME_ID, { status, level, score, state });
+   await MNPlays.awardPoints(GAME_ID, amount, reason);
+   ```
+   SDK tự lo guest vs login, merge khi đăng nhập, offline fallback.
+
+## Nguyên tắc thiết kế (bắt buộc với mọi game)
+- **Không có màn cuối** — độ khó tăng tiệm cận vô hạn; người chơi đua kỷ lục cá nhân.
+- **Minh bạch**: màn mở đầu ghi rõ "trò chơi không có điểm kết thúc".
+- **Muôn Điểm**: không mua bằng tiền, không quy đổi tiền mặt. Server là nguồn sự thật điểm.

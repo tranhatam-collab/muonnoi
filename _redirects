@@ -1,0 +1,4 @@
+# Subdomain routing cho plays.muonnoi.org -> thư mục /plays
+# (Cloudflare Pages đọc file này ở thư mục output gốc)
+https://plays.muonnoi.org/  /plays/index.html  200
+https://plays.muonnoi.org/*  /plays/:splat  200
