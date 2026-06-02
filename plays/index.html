@@ -67,6 +67,9 @@
     </div>
 
     <div class="filters" id="filters"></div>
+    <div style="margin:12px 0">
+      <input type="search" id="search" placeholder="🔍 Tìm game..." style="width:100%;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px">
+    </div>
 
     <div class="section" id="recent" style="display:none">
       <h2>🕒 Chơi gần đây</h2><span class="count" id="recentCount"></span>
@@ -133,8 +136,17 @@
                   : `<div class="gcard locked">${inner}</div>`;
     }
 
+    let searchTerm = '';
     function render(){
-      const match = g => activeGroup === 'all' || g.group === activeGroup;
+      const match = g => {
+        if (activeGroup !== 'all' && g.group !== activeGroup) return false;
+        if (!searchTerm) return true;
+        const s = searchTerm.toLowerCase();
+        const nameVi = g.name ? g.name.vi : (g.n || '');
+        const nameEn = g.name ? g.name.en : (g.en || '');
+        const desc = g.desc ? g.desc.vi : (g.d || '');
+        return nameVi.toLowerCase().includes(s) || nameEn.toLowerCase().includes(s) || desc.toLowerCase().includes(s);
+      };
       const live = C.games.filter(g => g.status==='live' && match(g));
       document.getElementById('liveGames').innerHTML =
         live.length ? live.map(card).join('') : '<div class="small">Không có game sẵn sàng trong nhóm này.</div>';
@@ -162,6 +174,12 @@
       f.querySelectorAll('.pill').forEach(p => p.onclick = () => {
         activeGroup = p.dataset.g;
         f.querySelectorAll('.pill').forEach(x=>x.classList.toggle('active', x===p));
+        render();
+      });
+
+      const searchInput = document.getElementById('search');
+      searchInput.addEventListener('input', () => {
+        searchTerm = searchInput.value;
         render();
       });
     })();
