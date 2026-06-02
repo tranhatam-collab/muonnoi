@@ -21,10 +21,10 @@
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Thap Can Bang</h1>
-    <p>Xep cac khoi len nhau sao cho can bang. Khoi cang nho, cang kho!</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start">Nhan de bat dau</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Huong dan</button>
+    <h1>Tháp Cân Bằng</h1>
+    <p>Xếp các khối lên nhau sao cho cân bằng. Khối càng nhỏ, càng khó!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
 </div>
 
@@ -36,9 +36,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Thap Can Bang', desc: 'Khoi tren cung se di chuyen ngang qua man hinh. Nhan de tha roi no len cac khoi ben duoi.' },
-      { title: 'Can bang', desc: 'Neu khoi nam lech qua nhieu so voi khoi duoi, no se roi xuong va ban mat mang.' },
-      { title: 'Vo han', desc: 'Cang cao cang kho. Thu xem ban xep duoc bao nhieu tang!' },
+      { title: 'Tháp Cân Bằng', desc: 'Khối trên cùng sẽ di chuyển ngang qua màn hình. Nhấn để thả rơi nó lên các khối bên dưới.' },
+      { title: 'Cân bằng', desc: 'Nếu khối nằm lệch quá nhiều so với khối dưới, nó sẽ rơi xuống và bạn mất mạng.' },
+      { title: 'Vô hạn', desc: 'Càng cao càng khó. Thử xem bạn xếp được bao nhiêu tầng!' },
     ],
     en: [
       { title: 'Balance Tower', desc: 'The top block moves horizontally across the screen. Tap to drop it onto the blocks below.' },
