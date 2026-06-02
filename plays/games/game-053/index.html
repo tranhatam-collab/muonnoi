@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 053</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; height:400px; background:#1e293b; border-radius:0.5rem; position:relative; overflow:hidden; margin-bottom:1rem; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  #track { width:280px; height:24px; background:#334155; border-radius:12px; position:relative; overflow:hidden; }
+  #target-zone { position:absolute; left:40%; width:20%; height:100%; background:#22c55e; opacity:0.5; }
+  #bar { position:absolute; left:0; width:12px; height:100%; background:#eab308; border-radius:6px; }
+</style>
+</head>
+<body data-game="game-053">
+
+<div id="hud-root"></div>
+<div id="game-root">
+  <div id="track"><div id="target-zone"></div><div id="bar"></div></div>
+  <div style="margin-top:1rem;color:#94a3b8;font-size:0.875rem;">Nhấn để dừng thanh trong vùng xanh</div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 053</h1>
+    <p>Dừng thanh vàng đúng vùng xanh. Càng chính xác càng nhiều điểm!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-053';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Dừng Thanh',desc:'Thanh vàng di chuyển qua lại. Nhấn để dừng nó trong vùng xanh.'},{title:'Chính xác',desc:'Càng gần giữa vùng xanh càng nhiều điểm.'},{title:'Khó dần',desc:'Thanh di chuyển nhanh hơn mỗi màn.'}],
+    en:[{title:'Stop Bar',desc:'A yellow bar moves back and forth. Tap to stop it in the green zone.'},{title:'Accuracy',desc:'Closer to the center of the green zone = more points.'},{title:'Harder',desc:'The bar moves faster each round.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const bar=document.getElementById('bar');
+  const track=document.getElementById('track');
+  const targetZone=document.getElementById('target-zone');
+  let score=0,level=1,isPlaying=false,pos=0,dir=1,speed=2,animId=null;
+
+  function update(){
+    if(!isPlaying)return;
+    pos+=dir*speed;
+    if(pos<0||pos>track.clientWidth-bar.clientWidth)dir*=-1;
+    bar.style.left=pos+'px';
+    animId=requestAnimationFrame(update);
+  }
+  function startLevel(){
+    speed=1.5+level*0.4;
+    const zoneW=Math.max(30,80-level*4);
+    targetZone.style.width=zoneW+'px';
+    targetZone.style.left=(Math.random()*(track.clientWidth-zoneW))+'px';
+    pos=0;dir=1;update();
+  }
+  function startGame(){
+    document.getElementById('start-overlay').style.display='none';
+    score=0;level=1;isPlaying=true;
+    hud.setScore(0);hud.setLevel(1);
+    startLevel();
+  }
+  function endGame(){
+    isPlaying=false;cancelAnimationFrame(animId);
+    PlaysSDK.saveScore(GAME_ID,score,{level});
+    PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});
+  }
+  document.getElementById('game-root').addEventListener('pointerdown',()=>{
+    if(!isPlaying)return;
+    const barCenter=pos+bar.clientWidth/2;
+    const zoneLeft=parseFloat(targetZone.style.left);
+    const zoneRight=zoneLeft+parseFloat(targetZone.style.width);
+    const zoneCenter=(zoneLeft+zoneRight)/2;
+    const dist=Math.abs(barCenter-zoneCenter);
+    if(barCenter>=zoneLeft&&barCenter<=zoneRight){
+      score+=Math.max(10,100-Math.floor(dist*2));
+      hud.setScore(score);level++;hud.setLevel(level);
+      startLevel();
+    }else{endGame();}
+  });
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>

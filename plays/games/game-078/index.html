@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 078</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .num-display { font-size:2.5rem; font-weight:bold; margin-bottom:1rem; letter-spacing:0.2em; }
+  .num-input { width:240px; padding:0.5rem; font-size:1.25rem; text-align:center; border:none; border-radius:0.375rem; background:#334155; color:#e2e8f0; }
+  #status { margin-top:0.5rem; font-size:0.875rem; color:#94a3b8; }
+</style>
+</head>
+<body data-game="game-078">
+
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="num-display" id="num-display">123</div>
+  <input type="text" class="num-input" id="num-input" inputmode="numeric" pattern="[0-9]*" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="display:none;">
+  <div id="status">Quan sát...</div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 078</h1>
+    <p>Nhớ chuỗi số rồi nhập lại đúng!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-078';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Nhớ Số',desc:'Một chuỗi số sẽ hiện ra trong vài giây. Hãy nhớ nó.'},{title:'Nhập Lại',desc:'Sau đó nhập lại chuỗi số đúng.'},{title:'Khó dần',desc:'Chuỗi dài hơn ở các màn sau.'}],
+    en:[{title:'Remember Numbers',desc:'A number sequence appears for a few seconds. Memorize it.'},{title:'Type Back',desc:'Then type the exact sequence back.'},{title:'Harder',desc:'Sequences get longer in later levels.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const numDisplay=document.getElementById('num-display');
+  const numInput=document.getElementById('num-input');
+  const statusEl=document.getElementById('status');
+  let sequence='',score=0,level=1,isPlaying=false;
+
+  function startLevel(){
+    const len=2+level;
+    sequence='';
+    for(let i=0;i<len;i++)sequence+=Math.floor(Math.random()*10);
+    numDisplay.textContent=sequence;
+    numInput.style.display='none';
+    numInput.value='';
+    statusEl.textContent=LANG==='vi'?'Quan sát...':'Watch...';
+    const time=Math.max(1.5,3+level*0.3);
+    setTimeout(()=>{
+      if(!isPlaying)return;
+      numDisplay.textContent='?'.repeat(len);
+      numInput.style.display='block';
+      numInput.focus();
+      statusEl.textContent=LANG==='vi'?'Nhập lại...':'Type back...';
+    },time*1000);
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;hud.setScore(0);hud.setLevel(1);startLevel();}
+  function endGame(){isPlaying=false;numInput.blur();PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  numInput.addEventListener('input',()=>{
+    if(!isPlaying)return;
+    if(numInput.value===sequence){score+=level*20;hud.setScore(score);level++;hud.setLevel(level);startLevel();}
+    else if(numInput.value.length>=sequence.length){endGame();}
+  });
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>

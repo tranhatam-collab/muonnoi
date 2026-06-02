@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 073</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; height:400px; background:#1e293b; border-radius:0.5rem; position:relative; overflow:hidden; margin-bottom:1rem; }
+  .dot { position:absolute; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer; }
+</style>
+</head>
+<body data-game="game-073">
+
+<div id="hud-root"></div>
+<div id="game-root"></div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 073</h1>
+    <p>Chạm các chấm theo đúng thứ tự 1, 2...</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-073';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Chạm Thứ Tự',desc:'Các chấm số xuất hiện. Chạm đúng thứ tự 1, 2, 3...'},{title:'Nhanh',desc:'Chạm càng nhanh càng nhiều điểm.'},{title:'Sai là thua',desc:'Chạm sai thứ tự là kết thúc ngay.'}],
+    en:[{title:'Tap in Order',desc:'Numbered dots appear. Tap them in order 1, 2, 3...'},{title:'Fast',desc:'Faster tapping = more points.'},{title:'Wrong = Over',desc:'Tap out of order and the game ends immediately.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const root=document.getElementById('game-root');
+  let score=0,level=1,isPlaying=false,dots=[],current=1,timeLeft=0,maxTime=0,timerId=null;
+
+  function spawn(){
+    if(!isPlaying)return;
+    root.innerHTML='';
+    const count=2+level;
+    dots=[];current=1;
+    for(let i=1;i<=count;i++){
+      const d=document.createElement('div');
+      d.className='dot';
+      d.textContent=i;
+      d.style.background=i===1?'#22c55e':'#334155';
+      d.style.left=(10+Math.random()*(root.clientWidth-60))+'px';
+      d.style.top=(10+Math.random()*(root.clientHeight-60))+'px';
+      d.addEventListener('pointerdown',()=>{
+        if(!isPlaying)return;
+        if(i!==current){endGame();return;}
+        d.style.background='#22c55e';current++;
+        score+=10;hud.setScore(score);
+        if(current>count){level++;hud.setLevel(level);maxTime=Math.max(3,8-level*0.3);timeLeft=maxTime;spawn();}
+      });
+      root.appendChild(d);
+    }
+    maxTime=Math.max(3,8-level*0.3);timeLeft=maxTime;
+    clearInterval(timerId);
+    timerId=setInterval(()=>{if(!isPlaying)return;timeLeft-=0.1;if(timeLeft<=0)endGame();},100);
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;hud.setScore(0);hud.setLevel(1);spawn();}
+  function endGame(){isPlaying=false;clearInterval(timerId);PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>

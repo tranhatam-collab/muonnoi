@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 086</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .block-grid { display:grid; grid-template-columns:repeat(4,60px); grid-template-rows:repeat(6,40px); gap:2px; background:#475569; padding:4px; border-radius:0.375rem; }
+  .block-cell { background:#334155; border-radius:2px; }
+  .block-cell.active { background:#3b82f6; }
+  .controls { display:flex; gap:0.5rem; margin-top:0.5rem; }
+  .ctrl-btn { padding:0.25rem 0.5rem; background:#475569; border:none; border-radius:0.25rem; color:#e2e8f0; cursor:pointer; }
+</style>
+</head>
+<body data-game="game-086">
+
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="block-grid" id="block-grid"></div>
+  <div class="controls">
+    <button class="ctrl-btn" id="btn-left">←</button>
+    <button class="ctrl-btn" id="btn-rotate">↻</button>
+    <button class="ctrl-btn" id="btn-right">→</button>
+    <button class="ctrl-btn" id="btn-down">↓</button>
+  </div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 086</h1>
+    <p>Xếp các khối vào lưới. Đầy hàng để xóa!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-086';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Xếp Khối',desc:'Điều khiển khối rơi xuống. Xếp đầy hàng ngang để xóa.'},{title:'Điều khiển',desc:'Trái/phải di chuyển, xuống rơi nhanh, xoay để quay khối.'},{title:'Thua',desc:'Khối chạm đỉnh là thua.'}],
+    en:[{title:'Block Puzzle',desc:'Control falling blocks. Fill a horizontal line to clear it.'},{title:'Controls',desc:'Left/right to move, down to drop, rotate to spin.'},{title:'Lose',desc:'Blocks reach the top = game over.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const gridEl=document.getElementById('block-grid');
+  let board=[],score=0,level=1,isPlaying=false;
+  let piece=null,timerId=null,speed=800;
+  const SHAPES=[[[1,1],[1,1]],[[1,1,1,1]],[[1,1,1],[0,1,0]],[[1,1,0],[0,1,1]],[[0,1,1],[1,1,0]],[[1,1,1],[1,0,0]],[[1,1,1],[0,0,1]]];
+
+  function init(){board=new Array(24).fill(0);render();}
+  function render(){
+    gridEl.innerHTML='';
+    for(let r=0;r<6;r++)for(let c=0;c<4;c++){
+      const cell=document.createElement('div');
+      cell.className='block-cell'+(board[r*4+c]?' active':'');
+      gridEl.appendChild(cell);
+    }
+  }
+  function newPiece(){
+    const s=SHAPES[Math.floor(Math.random()*SHAPES.length)];
+    piece={x:1,y:0,shape:s};
+    if(collides()){endGame();}
+  }
+  function collides(){for(let r=0;r<piece.shape.length;r++)for(let c=0;c<piece.shape[r].length;c++)if(piece.shape[r][c]){const nr=piece.y+r,nc=piece.x+c;if(nr>=6||nc<0||nc>=4||board[nr*4+nc])return true;}return false;}
+  function place(){for(let r=0;r<piece.shape.length;r++)for(let c=0;c<piece.shape[r].length;c++)if(piece.shape[r][c])board[(piece.y+r)*4+(piece.x+c)]=1;}
+  function clearLines(){for(let r=5;r>=0;r--){if(board.slice(r*4,r*4+4).every(v=>v)){board.splice(r*4,4);board.unshift(0,0,0,0);score+=100;hud.setScore(score);if(score>=level*500){level++;hud.setLevel(level);speed=Math.max(200,800-level*100);clearInterval(timerId);timerId=setInterval(tick,speed);}}}}
+  function tick(){if(!isPlaying)return;piece.y++;if(collides()){piece.y--;place();clearLines();newPiece();render();}}
+  function move(dx){piece.x+=dx;if(collides())piece.x-=dx;render();}
+  function rotate(){const old=piece.shape;const rows=old.length,cols=old[0].length;const rotated=Array.from({length:cols},(_,c)=>Array.from({length:rows},(_,r)=>old[rows-1-r][c]));piece.shape=rotated;if(collides())piece.shape=old;render();}
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;init();newPiece();render();speed=800;timerId=setInterval(tick,speed);hud.setScore(0);hud.setLevel(1);}
+  function endGame(){isPlaying=false;clearInterval(timerId);PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  document.getElementById('btn-left').addEventListener('click',()=>{if(isPlaying&&piece)move(-1);});
+  document.getElementById('btn-right').addEventListener('click',()=>{if(isPlaying&&piece)move(1);});
+  document.getElementById('btn-down').addEventListener('click',()=>{if(isPlaying&&piece)tick();});
+  document.getElementById('btn-rotate').addEventListener('click',()=>{if(isPlaying&&piece)rotate();});
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>

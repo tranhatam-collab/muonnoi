@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 089</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .count-display { font-size:4rem; font-weight:bold; margin-bottom:1rem; }
+  .stop-btn { padding:1rem 2rem; font-size:1.25rem; border:none; border-radius:0.5rem; background:#ef4444; color:#fff; cursor:pointer; }
+  .stop-btn:active { background:#b91c1c; }
+  #status { margin-top:0.5rem; font-size:0.875rem; color:#94a3b8; }
+</style>
+</head>
+<body data-game="game-089">
+
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="count-display" id="count-display">10</div>
+  <button class="stop-btn" id="stop-btn">DỪNG</button>
+  <div id="status">Dừng đúng lúc số hiện 0</div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 089</h1>
+    <p>Số đếm ngược từ 10. Nhấn DỪNG đúng lúc số hiện 0!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-089';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Đếm Ngược',desc:'Số đếm ngược từ 10 đến 0 rồi quay lại.'},{title:'Dừng Đúng',desc:'Nhấn DỪNG khi số hiện đúng 0. Càng gần 0 càng nhiều điểm.'},{title:'Khó dần',desc:'Tốc độ đếm nhanh hơn ở các màn sau.'}],
+    en:[{title:'Countdown',desc:'Numbers count down from 10 to 0 and back.'},{title:'Stop Right',desc:'Tap STOP when the number is exactly 0. Closer = more points.'},{title:'Harder',desc:'Counting speed increases in later levels.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const countDisplay=document.getElementById('count-display');
+  const stopBtn=document.getElementById('stop-btn');
+  let score=0,level=1,isPlaying=false,value=10,dir=-1,speed=0.05,timerId=null;
+
+  function update(){
+    if(!isPlaying)return;
+    value+=dir*speed;
+    if(value<=0){value=0;dir=1;}
+    if(value>=10){value=10;dir=-1;}
+    countDisplay.textContent=Math.round(value);
+    requestAnimationFrame(update);
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;value=10;dir=-1;speed=0.05+level*0.02;hud.setScore(0);hud.setLevel(1);update();}
+  function endGame(){isPlaying=false;PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  stopBtn.addEventListener('click',()=>{
+    if(!isPlaying)return;
+    const dist=Math.abs(value);
+    if(dist<0.5){score+=Math.floor((0.5-dist)*200)+level*10;hud.setScore(score);level++;hud.setLevel(level);speed=0.05+level*0.02;value=10;dir=-1;}
+    else{endGame();}
+  });
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>

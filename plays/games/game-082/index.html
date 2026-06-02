@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 082</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .key-row { display:flex; gap:0.5rem; margin-bottom:0.5rem; }
+  .key-btn { width:60px; height:80px; border:none; border-radius:0.5rem; font-size:0.875rem; cursor:pointer; color:#fff; }
+  .key-btn:active { opacity:0.8; transform:scale(0.95); }
+</style>
+</head>
+<body data-game="game-082">
+
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="key-row"><button class="key-btn" data-freq="261.63" style="background:#ef4444">Do</button><button class="key-btn" data-freq="293.66" style="background:#f97316">Re</button><button class="key-btn" data-freq="329.63" style="background:#eab308">Mi</button></div>
+  <div class="key-row"><button class="key-btn" data-freq="349.23" style="background:#22c55e">Fa</button><button class="key-btn" data-freq="392.00" style="background:#3b82f6">Sol</button><button class="key-btn" data-freq="440.00" style="background:#a855f7">La</button></div>
+  <div class="key-row"><button class="key-btn" data-freq="493.88" style="background:#ec4899">Si</button><button class="key-btn" data-freq="523.25" style="background:#64748b">Do+</button></div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 082</h1>
+    <p>Nhấn các phím để tạo âm thanh. Thư giãn và sáng tạo!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-082';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Âm Nhạc',desc:'Nhấn các phím màu để phát nốt nhạc.'},{title:'Thư giãn',desc:'Không có điểm hay thua cuộc. Chỉ để thư giãn.'},{title:'Sáng tạo',desc:'Tự do tạo giai điệu theo ý thích.'}],
+    en:[{title:'Music Maker',desc:'Tap colored keys to play notes.'},{title:'Relax',desc:'No score or game over. Just relax.'},{title:'Create',desc:'Freely create melodies as you like.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:false});
+  const ctxAudio=new (window.AudioContext||window.webkitAudioContext)();
+  function playTone(freq){
+    const o=ctxAudio.createOscillator();const g=ctxAudio.createGain();
+    o.type='sine';o.frequency.value=freq;g.gain.value=0.3;
+    o.connect(g);g.connect(ctxAudio.destination);o.start();
+    setTimeout(()=>{o.stop();},300);
+  }
+  document.querySelectorAll('.key-btn').forEach(btn=>{
+    btn.addEventListener('pointerdown',()=>{
+      const f=parseFloat(btn.dataset.freq);if(f)playTone(f);
+    });
+  });
+  document.getElementById('btn-start').addEventListener('click',()=>{document.getElementById('start-overlay').style.display='none';hud.setScore(0);});
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>

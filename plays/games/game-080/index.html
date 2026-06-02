@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 080</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; height:400px; background:#1e293b; border-radius:0.5rem; position:relative; overflow:hidden; margin-bottom:1rem; }
+  canvas { display:block; width:100%; height:100%; }
+</style>
+</head>
+<body data-game="game-080">
+
+<div id="hud-root"></div>
+<div id="game-root">
+  <canvas id="game-canvas" width="320" height="400"></canvas>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 080</h1>
+    <p>Di chuyển né các cơn bão đang tiến đến!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-080';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Né Bão',desc:'Các cơn bão xoáy di chuyển ngẫu nhiên. Giữ nhân vật né chúng.'},{title:'Di chuyển',desc:'Dùng chuột hoặc chạm để di chuyển.'},{title:'Khó dần',desc:'Bão nhiều hơn và lớn hơn theo thời gian.'}],
+    en:[{title:'Dodge Storms',desc:'Swirling storms move randomly. Keep your character away from them.'},{title:'Move',desc:'Use mouse or touch to move.'},{title:'Harder',desc:'More and larger storms appear over time.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const canvas=document.getElementById('game-canvas');
+  const ctx=canvas.getContext('2d');
+  let score=0,level=1,isPlaying=false;
+  let player={x:160,y:200,r:8};
+  let storms=[],spawnTimer=null,speed=1;
+
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle='#3b82f6';ctx.beginPath();ctx.arc(player.x,player.y,player.r,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#64748b';
+    storms.forEach(s=>{ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();});
+  }
+  function update(){
+    if(!isPlaying)return;
+    storms.forEach(s=>{s.x+=Math.cos(s.angle)*speed;s.y+=Math.sin(s.angle)*speed;s.angle+=0.02;if(s.x<0||s.x>canvas.width||s.y<0||s.y>canvas.height)s.angle+=Math.PI;});
+    for(const s of storms){const dx=player.x-s.x,dy=player.y-s.y;if(Math.sqrt(dx*dx+dy*dy)<s.r+player.r){endGame();return;}}
+    score++;if(score%400===0){level++;hud.setLevel(level);speed+=0.3;}
+    hud.setScore(score);draw();requestAnimationFrame(update);
+  }
+  function spawn(){if(!isPlaying)return;storms.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:15+Math.random()*15,angle:Math.random()*Math.PI*2});}
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;player={x:160,y:200,r:8};storms=[];speed=1;hud.setScore(0);hud.setLevel(1);update();spawnTimer=setInterval(spawn,2000);}
+  function endGame(){isPlaying=false;clearInterval(spawnTimer);PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  function movePlayer(x,y){const rect=canvas.getBoundingClientRect();player.x=(x-rect.left)*(canvas.width/rect.width);player.y=(y-rect.top)*(canvas.height/rect.height);}
+  canvas.addEventListener('pointermove',e=>{if(isPlaying)movePlayer(e.clientX,e.clientY);});
+  canvas.addEventListener('pointerdown',e=>{if(isPlaying)movePlayer(e.clientX,e.clientY);});
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>

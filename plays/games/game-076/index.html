@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 076</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .go-grid { display:grid; grid-template-columns:repeat(5,50px); grid-template-rows:repeat(5,50px); gap:4px; background:#475569; padding:4px; border-radius:0.375rem; }
+  .go-cell { background:#334155; display:flex; align-items:center; justify-content:center; font-size:1.5rem; cursor:pointer; user-select:none; border-radius:4px; }
+  .go-cell.p1 { color:#3b82f6; }
+  .go-cell.p2 { color:#ef4444; }
+  #status { margin-top:0.5rem; font-size:0.875rem; color:#94a3b8; }
+</style>
+</head>
+<body data-game="game-076">
+
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="go-grid" id="go-grid"></div>
+  <div id="status">Bạn là ●</div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 076</h1>
+    <p>Chiếm lãnh trên lưới 5x5. Chiếm nhiều hơn thắng!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-076';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Chiếm Lãnh',desc:'Lần lượt đặt quân lên lưới. Ô liền kề đối thủ bị chiếm.'},{title:'Luật',desc:'Đặt quân cạnh quân đối thủ để biến đổi chúng thành quân của bạn.'},{title:'Thắng',desc:'Sau 25 nước, ai nhiều quân hơn thì thắng.'}],
+    en:[{title:'Territory',desc:'Take turns placing stones. Adjacent enemy stones flip to your color.'},{title:'Rule',desc:'Place next to enemy stones to convert them.'},{title:'Win',desc:'After 25 moves, more stones = winner.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const gridEl=document.getElementById('go-grid');
+  const statusEl=document.getElementById('status');
+  let board=[],turn='p1',score=0,level=1,isPlaying=false,moves=0;
+
+  function init(){board=new Array(25).fill(null);turn='p1';moves=0;render();}
+  function render(){
+    gridEl.innerHTML='';
+    for(let i=0;i<25;i++){
+      const cell=document.createElement('div');
+      cell.className='go-cell'+(board[i]==='p1'?' p1':board[i]==='p2'?' p2':'');
+      cell.textContent=board[i]==='p1'?'●':board[i]==='p2'?'○':'';
+      cell.addEventListener('click',()=>onClick(i));
+      gridEl.appendChild(cell);
+    }
+  }
+  function onClick(i){
+    if(!isPlaying||board[i]||turn!=='p1')return;
+    board[i]='p1';
+    const r=Math.floor(i/5),c=i%5;
+    [[-1,0],[1,0],[0,-1],[0,1]].forEach(([dr,dc])=>{const nr=r+dr,nc=c+dc;if(nr>=0&&nr<5&&nc>=0&&nc<5){const ni=nr*5+nc;if(board[ni]==='p2')board[ni]='p1';}});
+    moves++;if(moves===25){endGame();return;}
+    turn='p2';statusEl.textContent='AI...';setTimeout(aiMove,400);
+    render();
+  }
+  function aiMove(){
+    if(!isPlaying)return;
+    const empties=board.map((v,i)=>v?-1:i).filter(i=>i!==-1);
+    let best=-1,bestScore=-1;
+    empties.forEach(i=>{
+      const r=Math.floor(i/5),c=i%5;let gain=0;
+      [[-1,0],[1,0],[0,-1],[0,1]].forEach(([dr,dc])=>{const nr=r+dr,nc=c+dc;if(nr>=0&&nr<5&&nc>=0&&nc<5){const ni=nr*5+nc;if(board[ni]==='p1')gain++;}});
+      if(gain>bestScore){bestScore=gain;best=i;}
+    });
+    if(best===-1)best=empties[Math.floor(Math.random()*empties.length)];
+    board[best]='p2';
+    const r=Math.floor(best/5),c=best%5;
+    [[-1,0],[1,0],[0,-1],[0,1]].forEach(([dr,dc])=>{const nr=r+dr,nc=c+dc;if(nr>=0&&nr<5&&nc>=0&&nc<5){const ni=nr*5+nc;if(board[ni]==='p1')board[ni]='p2';}});
+    moves++;if(moves===25){endGame();return;}
+    turn='p1';statusEl.textContent=LANG==='vi'?'Lượt bạn':'Your turn';render();
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;hud.setScore(0);hud.setLevel(1);init();statusEl.textContent='Bạn là ●';}
+  function endGame(){
+    isPlaying=false;
+    const p1=board.filter(v=>v==='p1').length;
+    const p2=board.filter(v=>v==='p2').length;
+    if(p1>p2)score+=level*50;
+    hud.setScore(score);
+    PlaysSDK.saveScore(GAME_ID,score,{level});
+    PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{if(p1>p2){level++;hud.setLevel(level);init();}else{location.reload();}});
+  }
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>

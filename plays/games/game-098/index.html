@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Game 098</title>
+<link rel="stylesheet" href="../../styles/plays.css">
+<style>
+  body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .tower-row { display:flex; gap:1rem; margin-bottom:0.5rem; }
+  .tower { display:flex; flex-direction:column-reverse; align-items:center; min-height:120px; width:60px; background:#334155; border-radius:0.375rem; padding:4px; }
+  .disk { height:16px; border-radius:4px; margin-bottom:2px; }
+  .controls { display:flex; gap:0.5rem; }
+  .ctrl-btn { padding:0.25rem 0.5rem; background:#475569; border:none; border-radius:0.25rem; color:#e2e8f0; cursor:pointer; }
+  #status { margin-top:0.5rem; font-size:0.875rem; color:#94a3b8; }
+</style>
+</head>
+<body data-game="game-098">
+
+<div id="hud-root"></div>
+<div id="game-root">
+  <div id="towers"></div>
+  <div class="controls">
+    <button class="ctrl-btn" id="btn-a-b">A→B</button>
+    <button class="ctrl-btn" id="btn-a-c">A→C</button>
+    <button class="ctrl-btn" id="btn-b-c">B→C</button>
+    <button class="ctrl-btn" id="btn-b-a">B→A</button>
+    <button class="ctrl-btn" id="btn-c-a">C→A</button>
+    <button class="ctrl-btn" id="btn-c-b">C→B</button>
+  </div>
+  <div id="status">Di chuyển tất cả đĩa sang cột C</div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 098</h1>
+    <p>Di chuyển các đĩa từ cột A sang cột C. Đĩa lớn không được đặt lên đĩa nhỏ!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
+</div>
+
+<script src="../../plays-sdk.js"></script>
+<script>
+(function(){
+  'use strict';
+  const GAME_ID='game-098';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Tháp Hà Nội',desc:'Di chuyển tất cả đĩa từ cột A sang cột C.'},{title:'Luật',desc:'Mỗi lần chỉ di chuyển 1 đĩa. Không đặt đĩa lớn lên đĩa nhỏ.'},{title:'Thắng',desc:'Hoàn thành trong ít bước nhất để ghi nhiều điểm.'}],
+    en:[{title:'Tower of Hanoi',desc:'Move all disks from column A to column C.'},{title:'Rule',desc:'Move one disk at a time. Never place a larger disk on a smaller one.'},{title:'Win',desc:'Complete in fewest moves for max points.'}]
+  };
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const towersEl=document.getElementById('towers');
+  const statusEl=document.getElementById('status');
+  let pegs=[[],[],[]],moves=0,level=1,score=0,isPlaying=false;
+
+  function init(){pegs=[[],[],[]];const count=2+level;for(let i=count;i>0;i--)pegs[0].push({size:i,color:['#ef4444','#f97316','#eab308','#22c55e','#3b82f6'][i%5]});moves=0;render();}
+  function render(){
+    towersEl.innerHTML='';
+    pegs.forEach((peg,pi)=>{
+      const col=document.createElement('div');col.className='tower';
+      peg.forEach(d=>{const disk=document.createElement('div');disk.className='disk';disk.style.width=(d.size*10+20)+'px';disk.style.background=d.color;col.appendChild(disk);});
+      towersEl.appendChild(col);
+    });
+    statusEl.textContent=(LANG==='vi'?'Bước: ':'Moves: ')+moves;
+  }
+  function move(from,to){if(!isPlaying||pegs[from].length===0)return;const disk=pegs[from][pegs[from].length-1];if(pegs[to].length>0&&pegs[to][pegs[to].length-1].size<disk.size)return;pegs[to].push(pegs[from].pop());moves++;render();if(pegs[2].length===2+level){score+=Math.max(10,100-moves)*level;hud.setScore(score);level++;hud.setLevel(level);setTimeout(init,500);}}
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;hud.setScore(0);hud.setLevel(1);init();}
+  document.getElementById('btn-a-b').addEventListener('click',()=>move(0,1));
+  document.getElementById('btn-a-c').addEventListener('click',()=>move(0,2));
+  document.getElementById('btn-b-c').addEventListener('click',()=>move(1,2));
+  document.getElementById('btn-b-a').addEventListener('click',()=>move(1,0));
+  document.getElementById('btn-c-a').addEventListener('click',()=>move(2,0));
+  document.getElementById('btn-c-b').addEventListener('click',()=>move(2,1));
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
+})();
+</script>
+</body>
+</html>
