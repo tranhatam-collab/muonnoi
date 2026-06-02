@@ -56,24 +56,24 @@ const PLAYS_CATALOG = {
 
     // ===== WAVE 1 — 30 games (placeholder + ready to implement) =====
     // Group 1: Reflex (2 more)
-    { id: 'phan-xa-doi',    name: { vi: 'Phan Xa Doi',    en: 'Dual Reflex' },    desc: { vi: 'Phan xa voi hai mau khac nhau.', en: 'Two-color reflex challenge.' }, genre: 'reflex',    wave: 1, live: false, path: 'games/phan-xa-doi/',    difficulty: 'medium', duration: '2-5 min' },
-    { id: 'phan-xa-ba',     name: { vi: 'Phan Xa Ba',     en: 'Triple Reflex' },   desc: { vi: 'Ba cot, ba mau, toc do tang.', en: 'Three lanes, three colors, speeding up.' }, genre: 'reflex',    wave: 1, live: false, path: 'games/phan-xa-ba/',     difficulty: 'hard',   duration: '2-5 min' },
+    { id: 'phan-xa-doi',    name: { vi: 'Phan Xa Doi',    en: 'Dual Reflex' },    desc: { vi: 'Phan xa voi hai mau khac nhau.', en: 'Two-color reflex challenge.' }, genre: 'reflex',    wave: 1, live: true, path: 'games/phan-xa-doi/',    difficulty: 'medium', duration: '2-5 min' },
+    { id: 'phan-xa-ba',     name: { vi: 'Phan Xa Ba',     en: 'Triple Reflex' },   desc: { vi: 'Ba cot, ba mau, toc do tang.', en: 'Three lanes, three colors, speeding up.' }, genre: 'reflex',    wave: 1, live: true, path: 'games/phan-xa-ba/',     difficulty: 'hard',   duration: '2-5 min' },
 
     // Group 2: Puzzle (2 more)
-    { id: 'xoay-khoi',      name: { vi: 'Xoay Khoi',      en: 'Block Spin' },      desc: { vi: 'Xoay cac khoi de tao duong di.', en: 'Rotate blocks to make a path.' }, genre: 'puzzle',    wave: 1, live: false, path: 'games/xoay-khoi/',      difficulty: 'easy',   duration: '3-7 min' },
-    { id: 'noi-diem',       name: { vi: 'Noi Diem',       en: 'Connect Dots' },    desc: { vi: 'Noi cac diem ma khong cat nhau.', en: 'Connect dots without crossing.' }, genre: 'puzzle',    wave: 1, live: false, path: 'games/noi-diem/',       difficulty: 'medium', duration: '3-7 min' },
+    { id: 'xoay-khoi',      name: { vi: 'Xoay Khoi',      en: 'Block Spin' },      desc: { vi: 'Xoay cac khoi de tao duong di.', en: 'Rotate blocks to make a path.' }, genre: 'puzzle',    wave: 1, live: true, path: 'games/xoay-khoi/',      difficulty: 'easy',   duration: '3-7 min' },
+    { id: 'noi-diem',       name: { vi: 'Noi Diem',       en: 'Connect Dots' },    desc: { vi: 'Noi cac diem ma khong cat nhau.', en: 'Connect dots without crossing.' }, genre: 'puzzle',    wave: 1, live: true, path: 'games/noi-diem/',       difficulty: 'medium', duration: '3-7 min' },
 
     // Group 3: Dexterity / Timing (2 more)
-    { id: 'cat-day',        name: { vi: 'Cat Day',        en: 'String Cut' },      desc: { vi: 'Cat day dung luc.', en: 'Cut the string at the right moment.' }, genre: 'dexterity', wave: 1, live: false, path: 'games/cat-day/',        difficulty: 'easy',   duration: '1-3 min' },
-    { id: 'thap-can-bang',  name: { vi: 'Thap Can Bang',  en: 'Balance Tower' },   desc: { vi: 'Xep khoi len nhau ma khong do.', en: 'Stack blocks without toppling.' }, genre: 'dexterity', wave: 1, live: false, path: 'games/thap-can-bang/',  difficulty: 'medium', duration: '2-5 min' },
+    { id: 'cat-day',        name: { vi: 'Cat Day',        en: 'String Cut' },      desc: { vi: 'Cat day dung luc.', en: 'Cut the string at the right moment.' }, genre: 'dexterity', wave: 1, live: true, path: 'games/cat-day/',        difficulty: 'easy',   duration: '1-3 min' },
+    { id: 'thap-can-bang',  name: { vi: 'Thap Can Bang',  en: 'Balance Tower' },   desc: { vi: 'Xep khoi len nhau ma khong do.', en: 'Stack blocks without toppling.' }, genre: 'dexterity', wave: 1, live: true, path: 'games/thap-can-bang/',  difficulty: 'medium', duration: '2-5 min' },
 
     // Group 4: Strategy (2)
-    { id: 'tuong-linh',     name: { vi: 'Tuong Linh',     en: 'Commander' },       desc: { vi: 'Dieu quan chien dau voi tai nguyen han che.', en: 'Command troops with limited resources.' }, genre: 'strategy',  wave: 1, live: false, path: 'games/tuong-linh/',     difficulty: 'hard',   duration: '5-15 min' },
-    { id: 'mo-rong-lanh-tho', name: { vi: 'Mo Rong Lanh Tho', en: 'Territory' },  desc: { vi: 'Chiem lanh tho tu doi thu AI.', en: 'Claim territory from AI opponents.' }, genre: 'strategy',  wave: 1, live: false, path: 'games/mo-rong-lanh-tho/', difficulty: 'medium', duration: '5-10 min' },
+    { id: 'tuong-linh',     name: { vi: 'Tuong Linh',     en: 'Commander' },       desc: { vi: 'Dieu quan chien dau voi tai nguyen han che.', en: 'Command troops with limited resources.' }, genre: 'strategy',  wave: 1, live: true, path: 'games/tuong-linh/',     difficulty: 'hard',   duration: '5-15 min' },
+    { id: 'mo-rong-lanh-tho', name: { vi: 'Mo Rong Lanh Tho', en: 'Territory' },  desc: { vi: 'Chiem lanh tho tu doi thu AI.', en: 'Claim territory from AI opponents.' }, genre: 'strategy',  wave: 1, live: true, path: 'games/mo-rong-lanh-tho/', difficulty: 'medium', duration: '5-10 min' },
 
     // Group 5: Speed (3)
-    { id: 'go-chu',         name: { vi: 'Go Chu',         en: 'Type Rush' },       desc: { vi: 'Go chu nhanh hon toc do roi.', en: 'Type words faster than they fall.' }, genre: 'speed',     wave: 1, live: false, path: 'games/go-chu/',         difficulty: 'easy',   duration: '1-3 min' },
-    { id: 'ban-muc-tieu',   name: { vi: 'Ban Muc Tieu',   en: 'Target Shoot' },    desc: { vi: 'Ban cac muc tieu xuat hien ngau nhien.', en: 'Shoot randomly appearing targets.' }, genre: 'speed',     wave: 1, live: false, path: 'games/ban-muc-tieu/',   difficulty: 'medium', duration: '2-4 min' },
+    { id: 'go-chu',         name: { vi: 'Go Chu',         en: 'Type Rush' },       desc: { vi: 'Go chu nhanh hon toc do roi.', en: 'Type words faster than they fall.' }, genre: 'speed',     wave: 1, live: true, path: 'games/go-chu/',         difficulty: 'easy',   duration: '1-3 min' },
+    { id: 'ban-muc-tieu',   name: { vi: 'Ban Muc Tieu',   en: 'Target Shoot' },    desc: { vi: 'Ban cac muc tieu xuat hien ngau nhien.', en: 'Shoot randomly appearing targets.' }, genre: 'speed',     wave: 1, live: true, path: 'games/ban-muc-tieu/',   difficulty: 'medium', duration: '2-4 min' },
     { id: 'an-bong',        name: { vi: 'An Bong',        en: 'Ball Snap' },       desc: { vi: 'Bat bong voi dung mau.', en: 'Catch balls of the right color.' }, genre: 'speed',     wave: 1, live: false, path: 'games/an-bong/',        difficulty: 'hard',   duration: '2-5 min' },
 
     // Group 6: Memory / Pattern (2)
