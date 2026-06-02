@@ -3,42 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Tro choi 97</title>
+<title>Game 097</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
-  .placeholder-box { text-align:center; padding:2rem; background:#1e293b; border-radius:0.5rem; max-width:320px; }
-  .placeholder-box h1 { margin:0 0 0.5rem; font-size:1.5rem; }
-  .placeholder-box p { margin:0 0 1rem; color:#94a3b8; }
+  #game-root { width:320px; height:400px; background:#1e293b; border-radius:0.5rem; position:relative; overflow:hidden; margin-bottom:1rem; }
+  canvas { display:block; width:100%; height:100%; }
 </style>
 </head>
 <body data-game="game-097">
 
-<div class="placeholder-box">
-  <h1>Tro choi 97</h1>
-  <p>Tro choi dang phat trien.</p>
-  <p style="color:#64748b;font-size:0.875rem;">Trò chơi đang phát triển — sẽ ra mắt sớm!</p>
-  <button class="plays-btn plays-btn-primary" onclick="history.back()">Quay lại</button>
+<div id="hud-root"></div>
+<div id="game-root">
+  <canvas id="game-canvas" width="320" height="400"></canvas>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 097</h1>
+    <p>Chuyển màu để khớp với rào cản đang đến!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
 </div>
 
 <script src="../../plays-sdk.js"></script>
 <script>
-(function() {
+(function(){
   'use strict';
-  const GAME_ID = 'game-097';
-  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
-  const TUTORIAL_STEPS = {
-    vi: [
-      { title: 'Tro choi 97', desc: 'Tro choi dang phat trien.' },
-      { title: 'Sắp ra mắt', desc: 'Trò chơi này đang được phát triển. Hãy quay lại sau!' },
-    ],
-    en: [
-      { title: 'Game 97', desc: 'Game under development.' },
-      { title: 'Coming soon', desc: 'This game is under development. Please check back later!' },
-    ],
+  const GAME_ID='game-097';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Chuyển Màu',desc:'Nhấn để đổi màu nhân vật sao cho khớp với rào cản.'},{title:'Rào cản',desc:'Các rào cản có màu khác nhau. Chỉ xuyên qua khi màu khớp.'},{title:'Tốc độ',desc:'Rào cản di chuyển nhanh hơn theo thời gian.'}],
+    en:[{title:'Switch Color',desc:'Tap to switch your character color to match the barrier.'},{title:'Barriers',desc:'Barriers have different colors. Pass only when colors match.'},{title:'Speed',desc:'Barriers move faster over time.'}]
   };
-  // HUD not created for placeholder, but we keep the structure ready
-  // PlaysSDK.createHud('hud-root', { showLevel: true });
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const canvas=document.getElementById('game-canvas');
+  const ctx=canvas.getContext('2d');
+  const COLORS=['#ef4444','#22c55e','#3b82f6','#eab308'];
+  let score=0,level=1,isPlaying=false;
+  let player={x:50,y:200,r:15,colorIdx:0};
+  let barriers=[],speed=2;
+
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle=COLORS[player.colorIdx];ctx.beginPath();ctx.arc(player.x,player.y,player.r,0,Math.PI*2);ctx.fill();
+    barriers.forEach(b=>{ctx.fillStyle=COLORS[b.colorIdx];ctx.fillRect(b.x,b.y,b.w,b.h);});
+  }
+  function update(){
+    if(!isPlaying)return;
+    barriers.forEach(b=>b.x-=speed);barriers=barriers.filter(b=>b.x+b.w>0);
+    if(Math.random()<0.015){const h=60+Math.random()*80;barriers.push({x:canvas.width,y:Math.random()*(canvas.height-h),w:20,h:h,colorIdx:Math.floor(Math.random()*4)});}
+    for(const b of barriers){
+      if(player.x+player.r>b.x&&player.x-player.r<b.x+b.w&&player.y+player.r>b.y&&player.y-player.r<b.y+b.h){
+        if(player.colorIdx!==b.colorIdx){endGame();return;}
+      }
+    }
+    score++;if(score%400===0){level++;hud.setLevel(level);speed+=0.5;}
+    hud.setScore(score);draw();requestAnimationFrame(update);
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;player={x:50,y:200,r:15,colorIdx:0};barriers=[];speed=2;hud.setScore(0);hud.setLevel(1);update();}
+  function endGame(){isPlaying=false;PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  canvas.addEventListener('pointerdown',()=>{if(!isPlaying)return;player.colorIdx=(player.colorIdx+1)%4;});
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
 })();
 </script>
 </body>

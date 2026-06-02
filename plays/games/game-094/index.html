@@ -3,42 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Tro choi 94</title>
+<title>Game 094</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
-  .placeholder-box { text-align:center; padding:2rem; background:#1e293b; border-radius:0.5rem; max-width:320px; }
-  .placeholder-box h1 { margin:0 0 0.5rem; font-size:1.5rem; }
-  .placeholder-box p { margin:0 0 1rem; color:#94a3b8; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .mosaic-grid { display:grid; grid-template-columns:repeat(8,30px); grid-template-rows:repeat(8,30px); gap:2px; background:#475569; padding:4px; border-radius:0.375rem; }
+  .mosaic-cell { width:30px; height:30px; background:#334155; cursor:pointer; border-radius:2px; }
+  .palette { display:flex; gap:0.5rem; margin-top:0.75rem; }
+  .color-btn { width:30px; height:30px; border:2px solid transparent; border-radius:50%; cursor:pointer; }
+  .color-btn.active { border-color:#e2e8f0; }
 </style>
 </head>
 <body data-game="game-094">
 
-<div class="placeholder-box">
-  <h1>Tro choi 94</h1>
-  <p>Tro choi dang phat trien.</p>
-  <p style="color:#64748b;font-size:0.875rem;">Trò chơi đang phát triển — sẽ ra mắt sớm!</p>
-  <button class="plays-btn plays-btn-primary" onclick="history.back()">Quay lại</button>
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="mosaic-grid" id="mosaic-grid"></div>
+  <div class="palette" id="palette"></div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 094</h1>
+    <p>Chọn màu và tô các ô để tạo tranh mosaic!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
 </div>
 
 <script src="../../plays-sdk.js"></script>
 <script>
-(function() {
+(function(){
   'use strict';
-  const GAME_ID = 'game-094';
-  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
-  const TUTORIAL_STEPS = {
-    vi: [
-      { title: 'Tro choi 94', desc: 'Tro choi dang phat trien.' },
-      { title: 'Sắp ra mắt', desc: 'Trò chơi này đang được phát triển. Hãy quay lại sau!' },
-    ],
-    en: [
-      { title: 'Game 94', desc: 'Game under development.' },
-      { title: 'Coming soon', desc: 'This game is under development. Please check back later!' },
-    ],
+  const GAME_ID='game-094';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Mosaic',desc:'Chọn màu từ bảng màu, sau đó chạm ô để tô.'},{title:'Sáng tạo',desc:'Không có điểm hay thua cuộc. Tự do sáng tạo.'},{title:'Xóa',desc:'Chọn màu xám để xóa màu ô.'}],
+    en:[{title:'Mosaic',desc:'Pick a color from the palette, then tap cells to paint.'},{title:'Create',desc:'No score or game over. Free to create.'},{title:'Erase',desc:'Pick gray to erase cell color.'}]
   };
-  // HUD not created for placeholder, but we keep the structure ready
-  // PlaysSDK.createHud('hud-root', { showLevel: true });
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:false});
+  const gridEl=document.getElementById('mosaic-grid');
+  const paletteEl=document.getElementById('palette');
+  const COLORS=['#ef4444','#f97316','#eab308','#22c55e','#3b82f6','#a855f7','#ec4899','#334155'];
+  let activeColor=COLORS[0];
+
+  for(let i=0;i<64;i++){
+    const cell=document.createElement('div');cell.className='mosaic-cell';
+    cell.addEventListener('pointerdown',()=>{cell.style.background=activeColor;});
+    gridEl.appendChild(cell);
+  }
+  COLORS.forEach(c=>{
+    const btn=document.createElement('div');btn.className='color-btn'+(c===activeColor?' active':'');btn.style.background=c;
+    btn.addEventListener('click',()=>{activeColor=c;document.querySelectorAll('.color-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');});
+    paletteEl.appendChild(btn);
+  });
+  document.getElementById('btn-start').addEventListener('click',()=>{document.getElementById('start-overlay').style.display='none';hud.setScore(0);});
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
 })();
 </script>
 </body>

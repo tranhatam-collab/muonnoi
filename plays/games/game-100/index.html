@@ -3,42 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Tro choi 100</title>
+<title>Game 100</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
-  .placeholder-box { text-align:center; padding:2rem; background:#1e293b; border-radius:0.5rem; max-width:320px; }
-  .placeholder-box h1 { margin:0 0 0.5rem; font-size:1.5rem; }
-  .placeholder-box p { margin:0 0 1rem; color:#94a3b8; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .checkers-grid { display:grid; grid-template-columns:repeat(6,45px); grid-template-rows:repeat(6,45px); gap:1px; background:#475569; padding:4px; border-radius:0.375rem; }
+  .checkers-cell { width:45px; height:45px; display:flex; align-items:center; justify-content:center; font-size:1.5rem; cursor:pointer; user-select:none; }
+  .checkers-cell.dark { background:#334155; }
+  .checkers-cell.light { background:#64748b; }
+  .checkers-cell.selected { outline:2px solid #eab308; }
+  #status { margin-top:0.5rem; font-size:0.875rem; color:#94a3b8; }
 </style>
 </head>
 <body data-game="game-100">
 
-<div class="placeholder-box">
-  <h1>Tro choi 100</h1>
-  <p>Tro choi dang phat trien.</p>
-  <p style="color:#64748b;font-size:0.875rem;">Trò chơi đang phát triển — sẽ ra mắt sớm!</p>
-  <button class="plays-btn plays-btn-primary" onclick="history.back()">Quay lại</button>
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="checkers-grid" id="checkers-grid"></div>
+  <div id="status">Lượt bạn (🔴)</div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 100</h1>
+    <p>Di chuyển quân cờ để ăn quân đối thủ. Ăn hết hoặc chặn đường đi là thắng!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
 </div>
 
 <script src="../../plays-sdk.js"></script>
 <script>
-(function() {
+(function(){
   'use strict';
-  const GAME_ID = 'game-100';
-  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
-  const TUTORIAL_STEPS = {
-    vi: [
-      { title: 'Tro choi 100', desc: 'Tro choi dang phat trien.' },
-      { title: 'Sắp ra mắt', desc: 'Trò chơi này đang được phát triển. Hãy quay lại sau!' },
-    ],
-    en: [
-      { title: 'Game 100', desc: 'Game under development.' },
-      { title: 'Coming soon', desc: 'This game is under development. Please check back later!' },
-    ],
+  const GAME_ID='game-100';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Cờ Đam Mini',desc:'Di chuyển quân cờ chéo 1 ô. Ăn quân đối thủ bằng cách nhảy qua.'},{title:'Luật',desc:'Chỉ đi trên ô tối. Không đi lùi.'},{title:'Thắng',desc:'Ăn hết quân đối thủ hoặc chặn đường đi là thắng.'}],
+    en:[{title:'Mini Checkers',desc:'Move pieces diagonally 1 square. Jump over enemies to capture.'},{title:'Rule',desc:'Only move on dark squares. No backward moves.'},{title:'Win',desc:'Capture all enemy pieces or block all moves.'}]
   };
-  // HUD not created for placeholder, but we keep the structure ready
-  // PlaysSDK.createHud('hud-root', { showLevel: true });
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const gridEl=document.getElementById('checkers-grid');
+  const statusEl=document.getElementById('status');
+  let board=[],turn='p1',score=0,level=1,isPlaying=false,selected=null;
+
+  function init(){
+    board=new Array(36).fill(null);
+    for(let i=0;i<36;i++){const r=Math.floor(i/6),c=i%6;if((r+c)%2===1){if(r<2)board[i]='p2';if(r>3)board[i]='p1';}}
+    turn='p1';selected=null;render();
+  }
+  function render(){
+    gridEl.innerHTML='';
+    for(let i=0;i<36;i++){
+      const cell=document.createElement('div');
+      cell.className='checkers-cell '+((Math.floor(i/6)+i%6)%2===0?'light':'dark')+(selected===i?' selected':'');
+      cell.textContent=board[i]==='p1'?'🔴':board[i]==='p2'?'🔵':'';
+      cell.addEventListener('click',()=>onClick(i));
+      gridEl.appendChild(cell);
+    }
+    statusEl.textContent=turn==='p1'?(LANG==='vi'?'Lượt bạn (🔴)':'Your turn (🔴)'):(LANG==='vi'?'AI (🔵)':'AI (🔵)');
+  }
+  function onClick(i){
+    if(!isPlaying||turn!=='p1')return;
+    const r=Math.floor(i/6),c=i%6;
+    if(board[i]==='p1'){selected=i;render();return;}
+    if(selected!==null&&board[i]===null){
+      const sr=Math.floor(selected/6),sc=selected%6;
+      if(Math.abs(r-sr)===1&&Math.abs(c-sc)===1&&r<sr){board[i]='p1';board[selected]=null;selected=null;render();setTimeout(aiMove,500);return;}
+      if(Math.abs(r-sr)===2&&Math.abs(c-sc)===2){const mr=(r+sr)/2,mc=(c+sc)/2,mi=mr*6+mc;if(board[mi]==='p2'){board[i]='p1';board[selected]=null;board[mi]=null;score+=20;hud.setScore(score);selected=null;render();if(checkWin())return;setTimeout(aiMove,500);return;}}
+    }
+  }
+  function aiMove(){
+    if(!isPlaying)return;
+    const moves=[];
+    for(let i=0;i<36;i++)if(board[i]==='p2'){
+      const r=Math.floor(i/6),c=i%6;
+      [[1,-1],[1,1]].forEach(([dr,dc])=>{const nr=r+dr,nc=c+dc;if(nr>=0&&nr<6&&nc>=0&&nc<6&&board[nr*6+nc]===null)moves.push({from:i,to:nr*6+nc});});
+      [[2,-2],[2,2]].forEach(([dr,dc])=>{const nr=r+dr,nc=c+dc;if(nr>=0&&nr<6&&nc>=0&&nc<6&&board[nr*6+nc]===null){const mr=(r+nr)/2,mc=(c+nc)/2;if(board[mr*6+mc]==='p1')moves.push({from:i,to:nr*6+nc,cap:mr*6+mc});}});
+    }
+    if(moves.length===0){checkWin();return;}
+    const capMoves=moves.filter(m=>m.cap!==undefined);
+    const move=capMoves.length>0?capMoves[Math.floor(Math.random()*capMoves.length)]:moves[Math.floor(Math.random()*moves.length)];
+    board[move.to]='p2';board[move.from]=null;
+    if(move.cap!==undefined){board[move.cap]=null;}
+    turn='p1';render();checkWin();
+  }
+  function checkWin(){
+    const p1Count=board.filter(v=>v==='p1').length;
+    const p2Count=board.filter(v=>v==='p2').length;
+    if(p2Count===0){score+=level*50;hud.setScore(score);level++;hud.setLevel(level);setTimeout(init,500);return true;}
+    if(p1Count===0){isPlaying=false;PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});return true;}
+    return false;
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;hud.setScore(0);hud.setLevel(1);init();}
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
 })();
 </script>
 </body>

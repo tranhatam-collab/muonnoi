@@ -3,42 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Tro choi 95</title>
+<title>Game 095</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
-  .placeholder-box { text-align:center; padding:2rem; background:#1e293b; border-radius:0.5rem; max-width:320px; }
-  .placeholder-box h1 { margin:0 0 0.5rem; font-size:1.5rem; }
-  .placeholder-box p { margin:0 0 1rem; color:#94a3b8; }
+  #game-root { width:320px; height:400px; background:#1e293b; border-radius:0.5rem; position:relative; overflow:hidden; margin-bottom:1rem; }
+  canvas { display:block; width:100%; height:100%; }
 </style>
 </head>
 <body data-game="game-095">
 
-<div class="placeholder-box">
-  <h1>Tro choi 95</h1>
-  <p>Tro choi dang phat trien.</p>
-  <p style="color:#64748b;font-size:0.875rem;">Trò chơi đang phát triển — sẽ ra mắt sớm!</p>
-  <button class="plays-btn plays-btn-primary" onclick="history.back()">Quay lại</button>
+<div id="hud-root"></div>
+<div id="game-root">
+  <canvas id="game-canvas" width="320" height="400"></canvas>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 095</h1>
+    <p>Đánh bóng bằng thanh ngang. Không để bóng rơi!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
 </div>
 
 <script src="../../plays-sdk.js"></script>
 <script>
-(function() {
+(function(){
   'use strict';
-  const GAME_ID = 'game-095';
-  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
-  const TUTORIAL_STEPS = {
-    vi: [
-      { title: 'Tro choi 95', desc: 'Tro choi dang phat trien.' },
-      { title: 'Sắp ra mắt', desc: 'Trò chơi này đang được phát triển. Hãy quay lại sau!' },
-    ],
-    en: [
-      { title: 'Game 95', desc: 'Game under development.' },
-      { title: 'Coming soon', desc: 'This game is under development. Please check back later!' },
-    ],
+  const GAME_ID='game-095';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Đánh Bóng',desc:'Di chuyển thanh ngang để đánh bóng lên.'},{title:'Gạch',desc:'Phá các viên gạch bằng cách đánh bóng vào chúng.'},{title:'Thua',desc:'Để bóng rơi xuống dưới thanh là thua.'}],
+    en:[{title:'Paddle Ball',desc:'Move the paddle horizontally to hit the ball.'},{title:'Bricks',desc:'Break bricks by hitting them with the ball.'},{title:'Lose',desc:'Let the ball fall below the paddle = game over.'}]
   };
-  // HUD not created for placeholder, but we keep the structure ready
-  // PlaysSDK.createHud('hud-root', { showLevel: true });
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const canvas=document.getElementById('game-canvas');
+  const ctx=canvas.getContext('2d');
+  let score=0,level=1,isPlaying=false;
+  let paddle={x:110,w:100,y:380,h:10},ball={x:160,y:360,vx:3,vy:-3,r:6};
+  let bricks=[],speed=1;
+
+  function init(){
+    bricks=[];
+    const cols=5,rows=3+level;
+    for(let r=0;r<rows;r++)for(let c=0;c<cols;c++)bricks.push({x:20+c*60,y:30+r*25,w:50,h:18});
+  }
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle='#3b82f6';ctx.fillRect(paddle.x,paddle.y,paddle.w,paddle.h);
+    ctx.fillStyle='#eab308';ctx.beginPath();ctx.arc(ball.x,ball.y,ball.r,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#ef4444';
+    bricks.forEach(b=>ctx.fillRect(b.x,b.y,b.w,b.h));
+  }
+  function update(){
+    if(!isPlaying)return;
+    ball.x+=ball.vx*speed;ball.y+=ball.vy*speed;
+    if(ball.x<ball.r||ball.x>canvas.width-ball.r)ball.vx*=-1;
+    if(ball.y<ball.r)ball.vy*=-1;
+    if(ball.y+ball.r>paddle.y&&ball.x>paddle.x&&ball.x<paddle.x+paddle.w)ball.vy=-Math.abs(ball.vy);
+    if(ball.y>canvas.height){endGame();return;}
+    for(let i=bricks.length-1;i>=0;i--){
+      const b=bricks[i];
+      if(ball.x+ball.r>b.x&&ball.x-ball.r<b.x+b.w&&ball.y+ball.r>b.y&&ball.y-ball.r<b.y+b.h){bricks.splice(i,1);score+=10;hud.setScore(score);ball.vy*=-1;break;}
+    }
+    if(bricks.length===0){level++;hud.setLevel(level);init();speed+=0.2;}
+    draw();requestAnimationFrame(update);
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;paddle={x:110,w:100,y:380,h:10};ball={x:160,y:360,vx:3,vy:-3,r:6};speed=1;hud.setScore(0);hud.setLevel(1);init();update();}
+  function endGame(){isPlaying=false;PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  function movePaddle(cx){const rect=canvas.getBoundingClientRect();paddle.x=(cx-rect.left)*(canvas.width/rect.width)-paddle.w/2;paddle.x=Math.max(0,Math.min(canvas.width-paddle.w,paddle.x));}
+  canvas.addEventListener('pointermove',e=>{if(isPlaying)movePaddle(e.clientX);});
+  canvas.addEventListener('pointerdown',e=>{if(isPlaying)movePaddle(e.clientX);});
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
 })();
 </script>
 </body>
