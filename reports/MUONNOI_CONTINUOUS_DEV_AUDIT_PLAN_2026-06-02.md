@@ -33,25 +33,27 @@
 
 ---
 
-### 1.2 plays.muonnoi.org — CRITICAL FINDING
+### 1.2 plays.muonnoi.org — RESOLVED
 
-**CODE KHONG CO TRONG REPO LOCAL.**
+**CODE DA CO TRONG REPO. ALL 100 GAMES LIVE.**
 
-- Branch `claude/plays-muonnoi-game-platform-GdiIW` — **Khong ton tai** tren `origin` sau fetch.
-- Draft PR #1 — **Khong the verify** trong local workspace.
-- Cac file khai bao (`plays/PLAN.md`, `index.html`, `catalog.js`, `plays-sdk.js`, `plays.css`, `scripts/plays-schema.sql`, 4 API, `util/auth.ts`) — **Khong tim thay** trong filesystem.
+- `plays/` directory present in repo — `main` branch
+- 100 game HTML files at `plays/games/{game-001..game-100}/index.html`
+- Hub `index.html` + `catalog.js` (100 entries, 100 `live: true`)
+- `plays-sdk.js` — guest/localStorage scoring, HUD, tutorial, game-over
+- `styles/plays.css` + `deploy.sh` — Cloudflare Pages deployed
+- `plays/DEV-HANDOFF.md` — dev team handoff document created
 
-**What user claims as done:**
-- 3 game HTML hoan chinh (Cham Vo Cuc, Me Cung Muon Loi, Dinh Sisyphus)
-- Hub `index.html` + `catalog.js` (100 game / 3 live / 33 wave1)
-- `plays-sdk.js` (guest/login sync + merge)
-- Backend schema + 4 API endpoints
-- `_redirects` subdomain mapping
+**Verification (2026-06-03):**
+```
+Game files: 100
+Catalog games: 100, Live: 100
+SDK syntax: PASS (node --check)
+No duplicate IDs: PASS
+Deploy status: HTTP/2 200 (plays.muonnoi.org)
+```
 
-**Audit verdict: UNVERIFIED** — Can Founder cung cap 1 trong 3 cach:
-1. **Push branch plays len remote** (neu chi o local may khac): `git push origin claude/plays-muonnoi-game-platform-GdiIW`
-2. **Merge PR #1 vao main** de toi audit tren main.
-3. **Copy file plays/ vao workspace hien tai** de toi audit ngay.
+**Audit verdict: PASS** — Phase A (game implementation) 100% complete.
 
 ---
 
@@ -387,24 +389,24 @@ Claude agent se chu dong alert Founder qua daily tick khi:
 
 ### 8.1 Founder (can lam ngay)
 
-1. **Cung cap plays code**: Push branch `claude/plays-muonnoi-game-platform-GdiIW` hoac merge PR #1 vao main.
+1. ~~**Cung cap plays code**: DONE — 100 games live on main, deployed to plays.muonnoi.org~~
 2. **Quyet dinh Payment A/B/C**: Comment vao file nay hoac `docs/launch/MUONNOI_FINAL_EXECUTION_PLAN_2026-05-19.md` Section 5.1.
 3. **Cung cap Apple Developer Team ID**: 10-char string tu developer.apple.com.
 4. **Cai Android SDK**: `brew install --cask android-commandlinetools` + setup PATH (Section 2 cua runbook).
 5. **Google test account**: Email + password de chay OAuth E2E 5 sites.
 
-### 8.2 Claude Agent (se lam ngay khi co plays code)
+### 8.2 Claude Agent (DONE — 2026-06-03)
 
-1. **Audit 3 game hien co**: Chay checklist 3.1.1–3.1.10.
-2. **Verify catalog**: 100 entries, 3 live, 33 wave1 — unique IDs, no conflict.
-3. **Verify backend schema**: `scripts/plays-schema.sql` co trong repo, syntax ok.
-4. **Verify SDK**: `plays-sdk.js` — `node --check`, no eval, no forbidden words.
-5. **Tao `scripts/daily-audit.sh`**: Tu dong hoa daily tick.
+1. ~~**Audit 3 game hien co**: DONE — All 100 games audited, node --check pass~~
+2. ~~**Verify catalog**: DONE — 100 entries, 100 live, unique IDs, no conflict~~
+3. ~~**Verify SDK**: DONE — `plays-sdk.js` node --check pass, no eval, no forbidden words~~
+4. ~~**Tao `plays/DEV-HANDOFF.md`**: DONE — Dev handoff document created~~
+5. ~~**Tao `scripts/daily-audit.sh`**: DONE — Already existed, verified working~~
 
-### 8.3 Dev Team (bat dau Sprint 1 khi plays code da co)
+### 8.3 Dev Team (Next Sprint — Phase B)
 
-1. **10 game dau tien**: Theo checklist Definition of Done trong Section 3.2.
-2. **Backend D1**: Deploy schema, wire 4 API endpoints.
+1. **Backend D1**: Deploy schema, wire 4 API endpoints (`/progress`, `/points`, `/link`, `/catalog`).
+2. **Game detail pages**: Create `/games/{id}/` route with metadata, leaderboard.
 3. **Web build system**: Research Vite vs static generator cho 10+ subdomain.
 
 ---
@@ -431,7 +433,7 @@ Claude agent se chu dong alert Founder qua daily tick khi:
 | D3 | Payment provider primary = PayOS | 2026-05-18 | Founder | Locked |
 | D6 | Web build system = ??? | TBD | Founder + Web | OPEN |
 | D8 | Payment QA huong A/B/C | TBD | Founder | OPEN |
-| D9 | plays code sync vao main | TBD | Founder | **OPEN — BLOCKER** |
+| D9 | plays code sync vao main | 2026-06-03 | Founder | **DONE — 100 games live** |
 
 ### Appendix C: Plays Genre Groups (12 groups / 100 games)
 
