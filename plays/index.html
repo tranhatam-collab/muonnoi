@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Muôn Nơi · Plays — 33 game, đi mãi không hết</title>
-  <meta name="description" content="33 game giải trí nhỏ, 100% code, chơi miễn phí không cần tài khoản. Đăng nhập để lưu tiến trình và nhận Muôn Điểm."/>
+  <title>Muôn Nơi · Plays — Play Layer đưa con người ra đời thật</title>
+  <meta name="description" content="Play Layer của Muôn Nơi: 5 tầng game từ giải trí nhanh tới kiến tạo cộng đồng thật. Chơi miễn phí không cần tài khoản; đăng nhập để lưu tiến trình và nhận Muôn Điểm."/>
   <link rel="stylesheet" href="assets/plays.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="mark"></div>
         <div>
           <h1>Muôn Nơi · Plays</h1>
-          <div class="small">plays.muonnoi.org</div>
+          <div class="small">plays.muonnoi.org · Play Layer</div>
         </div>
       </div>
       <div class="nav">
@@ -25,12 +25,13 @@
     </div>
 
     <div class="hero">
-      <div class="tag">Trò chơi để đi, không phải để thắng</div>
+      <div class="tag">Game đưa con người ra khỏi màn hình</div>
       <h2>Đỉnh núi không có thật. Nhưng mỗi bước chân thì có.</h2>
       <p class="small">
-        Bộ sưu tập game giải trí nhỏ — tạo 100% bằng code. Mỗi game <b>không có màn cuối</b>:
-        độ khó tăng vô hạn, bạn chỉ đua với chính kỷ lục của mình. Chơi <b>miễn phí, không cần đăng ký</b>.
-        Đăng nhập tài khoản <b>muonnoi.org</b> để lưu lại toàn bộ lịch sử (đã chơi · đang chơi · chưa chơi) và nhận <b>Muôn Điểm</b>.
+        Không phải Steam, Roblox hay Poki. Đây là <b>Play Layer</b> của Muôn Nơi — 5 tầng game từ
+        <b>giải trí nhanh</b> tới <b>kiến tạo cộng đồng thật</b>. Mỗi game <b>không có màn cuối</b>:
+        bạn đua với chính mình. Chơi <b>miễn phí, không cần đăng ký</b>. Đăng nhập tài khoản
+        <b>muonnoi.org</b> để lưu toàn bộ lịch sử và nhận <b>Muôn Điểm</b>.
       </p>
     </div>
 
@@ -41,18 +42,11 @@
     </div>
     <div class="games" id="liveGames"></div>
 
-    <div class="section">
-      <h2>33 game giai đoạn 1</h2><span class="count" id="waveCount"></span>
-    </div>
-    <div class="games" id="waveGames"></div>
-
-    <div class="section">
-      <h2>Lộ trình tới 100 game</h2><span class="count" id="roadCount"></span>
-    </div>
-    <div class="games" id="roadGames"></div>
+    <div id="tierSections"></div>
 
     <div class="footer">
       Muôn Điểm là điểm thưởng nội bộ — <b>không mua bằng tiền, không quy đổi ra tiền mặt</b>.<br/>
+      Lộ trình <span id="planCount"></span> game · Giai đoạn 1: <span id="p1Count"></span> game.<br/>
       © Muôn Nơi · Muôn Nói — proof-first, privacy-first.
     </div>
   </div>
@@ -61,68 +55,79 @@
   <script src="assets/plays-sdk.js"></script>
   <script>
     const C = window.MN_CATALOG;
-    const G = C.genres;
-    const emoji = { reflex:'⚡', memory:'🧠', puzzle:'🧩', dodge:'🛸', timing:'⏱️',
-      rhythm:'🥁', skill:'🎯', strategy:'♟️', math:'➗', observe:'👁️', zen:'🕯️', luck:'🎲' };
+    const TIERS = C.tiers, GROUPS = C.groups;
+    let activeGroup = 'all';
 
-    let activeGenre = 'all';
-
+    function badgeFor(g){
+      if (g.status === 'live')  return '<span class="badge live">CHƠI ĐƯỢC</span>';
+      if (g.status === 'newip') return '<span class="badge">IP MỚI</span>';
+      if (g.status === 'wave1') return '<span class="badge soon">SẮP RA MẮT</span>';
+      return '<span class="badge">LỘ TRÌNH</span>';
+    }
     function card(g){
       const live = g.status === 'live';
-      const wave = g.status === 'wave1';
-      const badge = live ? '<span class="badge live">CHƠI ĐƯỢC</span>'
-                  : wave ? '<span class="badge soon">SẮP RA MẮT</span>'
-                  : '<span class="badge">LỘ TRÌNH</span>';
+      const eco = g.eco ? `<div class="genre">↔ ${g.eco}</div>` : '';
       const inner = `
-        <div class="thumb">${emoji[g.g]||'🎮'}</div>
-        ${badge}
+        <div class="thumb">${(GROUPS[g.group]||{}).icon||'🎮'}</div>
+        ${badgeFor(g)}
         <h3>${g.n}</h3>
-        <div class="genre">${(G[g.g]||{}).vi||g.g}</div>
+        <div class="genre">${g.en} · Tầng ${g.tier}</div>
+        ${eco}
         ${g.d?`<div class="desc">${g.d}</div>`:''}
         ${live?'<div class="pg" data-pg="'+g.id+'"></div>':''}`;
-      if (live) return `<a class="gcard" href="${g.file}">${inner}</a>`;
-      return `<div class="gcard locked">${inner}</div>`;
+      return live ? `<a class="gcard" href="${g.file}">${inner}</a>`
+                  : `<div class="gcard locked">${inner}</div>`;
     }
 
     function render(){
-      const match = g => activeGenre === 'all' || g.g === activeGenre;
+      const match = g => activeGroup === 'all' || g.group === activeGroup;
+
+      // live trên cùng
       const live = C.games.filter(g => g.status==='live' && match(g));
-      const wave = C.games.filter(g => g.status==='wave1' && match(g));
-      const road = C.games.filter(g => g.status==='roadmap' && match(g));
-      document.getElementById('liveGames').innerHTML = live.map(card).join('');
-      document.getElementById('waveGames').innerHTML = wave.map(card).join('');
-      document.getElementById('roadGames').innerHTML = road.map(card).join('');
+      document.getElementById('liveGames').innerHTML =
+        live.length ? live.map(card).join('') : '<div class="small">Không có game live trong nhóm này.</div>';
       document.getElementById('liveCount').textContent = live.length + ' game';
-      document.getElementById('waveCount').textContent = (C.counts.wave1) + ' game công bố · ' + wave.length + ' hiển thị';
-      document.getElementById('roadCount').textContent = C.counts.total + ' game tổng · ' + road.length + ' hiển thị';
+
+      // các tầng 1..5
+      const host = document.getElementById('tierSections');
+      host.innerHTML = '';
+      for (const t of [1,2,3,4,5]){
+        const list = C.games.filter(g => g.tier===t && match(g));
+        if (!list.length) continue;
+        const T = TIERS[t];
+        host.innerHTML += `
+          <div class="section"><h2>Tầng ${t} · ${T.vi}</h2><span class="count">${T.note} · ${list.length} game</span></div>
+          <div class="games">${list.map(card).join('')}</div>`;
+      }
       paintProgress();
     }
 
-    // filters
+    // filters theo nhóm
     (function(){
       const f = document.getElementById('filters');
-      const all = ['all'].concat(Object.keys(G));
-      f.innerHTML = all.map(k => `<span class="pill ${k==='all'?'active':''}" data-g="${k}">${k==='all'?'Tất cả':(emoji[k]+' '+G[k].vi)}</span>`).join('');
+      const keys = ['all'].concat(Object.keys(GROUPS));
+      f.innerHTML = keys.map(k => `<span class="pill ${k==='all'?'active':''}" data-g="${k}">${k==='all'?'Tất cả':(GROUPS[k].icon+' '+GROUPS[k].vi)}</span>`).join('');
       f.querySelectorAll('.pill').forEach(p => p.onclick = () => {
-        activeGenre = p.dataset.g;
+        activeGroup = p.dataset.g;
         f.querySelectorAll('.pill').forEach(x=>x.classList.toggle('active', x===p));
         render();
       });
     })();
 
     async function paintProgress(){
-      // chỉ hiển thị cho game live
       for (const g of C.games.filter(x=>x.status==='live')){
         const el = document.querySelector(`[data-pg="${g.id}"]`);
         if (!el) continue;
         const p = await MNPlays.loadProgress(g.id);
         if (p && (p.level || p.score)) {
           const st = p.status==='played'?'Đã chơi':p.status==='playing'?'Đang chơi':'';
-          el.textContent = `${st?st+' · ':''}Level ${p.level||0} · ${p.score||0}đ`;
+          el.textContent = `${st?st+' · ':''}Mức ${p.level||0} · ${p.score||0}đ`;
         } else el.textContent = 'Chưa chơi';
       }
     }
 
+    document.getElementById('planCount').textContent = C.counts.plan;
+    document.getElementById('p1Count').textContent = C.counts.phase1;
     render();
 
     // auth + points
@@ -133,7 +138,7 @@
       if (loggedIn) {
         ap.textContent = '✓ ' + (user.email ? user.email.split('@')[0] : 'Thành viên');
         ap.classList.add('active');
-        pp.textContent = '◇ ' + (await MNPlays.getBalance()) + ' MĐ';
+        pp.textContent = '◇ ' + (await MNPlays.getBalance()) + ' ' + C.currency.code;
       } else {
         ap.textContent = 'Đăng nhập để lưu';
         ap.style.cursor = 'pointer';
