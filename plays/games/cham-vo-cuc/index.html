@@ -1,241 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Cham Vo Cuc — plays.muonnoi.org</title>
-<link rel="stylesheet" href="../../styles/plays.css">
-<style>
-  #game-board {
-    display: grid;
-    gap: 4px;
-    margin: 1rem auto;
-    max-width: 90vw;
-    max-height: 60vh;
-    touch-action: manipulation;
-  }
-  .cell {
-    aspect-ratio: 1;
-    border-radius: 6px;
-    background: #1f2937;
-    border: 1px solid #374151;
-    transition: background 0.15s, transform 0.1s;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .cell.lit {
-    background: #f59e0b;
-    box-shadow: 0 0 8px #f59e0b66;
-  }
-  .cell.tapped {
-    background: #10b981;
-    transform: scale(0.92);
-  }
-  .cell.missed {
-    background: #ef4444;
-    animation: shake 0.3s;
-  }
-  @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-4px); }
-    75% { transform: translateX(4px); }
-  }
-  #start-overlay {
-    position: fixed; inset: 0;
-    display: flex; align-items: center; justify-content: center;
-    background: rgba(0,0,0,0.85);
-    z-index: 50;
-  }
-  #start-overlay.hidden { display: none; }
-  .start-box {
-    text-align: center; padding: 2rem;
-    background: #111827; border-radius: 12px;
-    border: 1px solid #374151; max-width: 320px;
-  }
-  .start-box h1 { margin-bottom: 0.5rem; font-size: 1.5rem; }
-  .start-box p { color: #9ca3af; margin-bottom: 1.5rem; }
-</style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <title>Chạm Vô Cực · Muôn Nơi Plays</title>
+  <link rel="stylesheet" href="../../assets/plays.css">
 </head>
-<body data-game="cham-vo-cuc">
+<body>
+  <div class="game-shell">
+    <div class="game-top">
+      <a class="back" href="../../index.html">‹ Tất cả game</a>
+      <div class="brand"><div class="mark"></div><b>Chạm Vô Cực</b></div>
+    </div>
 
-<div id="hud-root"></div>
+    <div class="hud">
+      <div class="stat"><div class="k">Level</div><div class="v" id="hLevel">1</div></div>
+      <div class="stat"><div class="k">Điểm</div><div class="v" id="hScore">0</div></div>
+      <div class="stat"><div class="k">Combo</div><div class="v" id="hCombo">0</div></div>
+      <div class="stat"><div class="k">Tim</div><div class="v" id="hLives">♥♥♥</div></div>
+    </div>
 
-<div id="game-board"></div>
+    <div class="stage" id="stage">
+      <canvas id="cv" width="360" height="420"></canvas>
+      <div class="overlay" id="overlay">
+        <h2 id="ovTitle">Chạm Vô Cực</h2>
+        <p class="small" id="ovText">
+          Chạm vào vòng sáng <b>trước khi nó tắt</b>. Mỗi level tốc độ nhanh hơn.
+          Trò chơi <b>không có màn cuối</b> — hãy phá kỷ lục của chính bạn.
+        </p>
+        <div class="note" id="ovBest"></div>
+        <button class="btn" id="startBtn">Bắt đầu</button>
+        <div class="small" id="ovAuth"></div>
+      </div>
+    </div>
 
-<div id="start-overlay">
-  <div class="start-box">
-    <h1 data-i18n="name">Cham Vo Cuc</h1>
-    <p data-i18n="desc">Chạm các ô sáng trước khi chúng biến mất. Độ khó tăng dần vo han.</p>
-    <button class="plays-btn plays-btn-primary" id="btn-start" data-i18n="tapToStart">Nhấn để bắt đầu</button>
-    <button class="plays-btn plays-btn-ghost" id="btn-tutorial" data-i18n="tutorial">Hướng dẫn</button>
+    <div class="row" style="margin-top:12px">
+      <button class="btn secondary full" id="howBtn">Cách chơi</button>
+    </div>
   </div>
-</div>
+  <div class="toast" id="toast"></div>
 
-<script src="../../plays-sdk.js"></script>
-<script>
-(function() {
-  'use strict';
-
+  <script src="../../assets/plays-sdk.js"></script>
+  <script>
   const GAME_ID = 'cham-vo-cuc';
-  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
+  const FREE = 5; // lượt chơi miễn phí trước khi cần đăng ký
+  const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+  const W = cv.width, H = cv.height;
+  const $ = id => document.getElementById(id);
 
-  const TUTORIAL_STEPS = {
-    vi: [
-      { title: 'Chạm Vô Cực', desc: 'Các ô sẽ sáng lên ngẫu nhiên trên lưới. Nhiệm vụ của bạn là chạm vào chúng trước khi chúng tắt đi.' },
-      { title: 'Tốc độ tăng', desc: 'Càng chơi, càng nhiều ô sáng và chúng tắt càng nhanh. Tập trung!' },
-      { title: 'Lưới mở rộng', desc: 'Sau mỗi 10 điểm, lưới sẽ lớn hơn 1 ô. Không gian càng rộng, càng khó kiểm soát.' },
-      { title: 'Kết thúc', desc: 'Nếu bạn để mất 3 ô, trò chơi kết thúc. Thử thách kỷ lục của bạn!' },
-    ],
-    en: [
-      { title: 'Infinite Touch', desc: 'Cells will light up randomly on the grid. Your task is to tap them before they fade.' },
-      { title: 'Speed Rises', desc: 'The longer you play, the more cells light up and the faster they fade. Stay focused!' },
-      { title: 'Grid Expands', desc: 'Every 10 points, the grid grows by 1 cell. More space, harder to control.' },
-      { title: 'Game Over', desc: 'Miss 3 cells and the game ends. Challenge your personal best!' },
-    ],
-  };
+  let best = { level: 0, score: 0 };
+  let game = null, raf = 0;
 
-  const hud = PlaysSDK.createHud('hud-root', { showLevel: true });
+  // ----- helpers -----
+  function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('show'),1200); }
+  function hearts(n){ return '♥'.repeat(Math.max(0,n)) + '♡'.repeat(Math.max(0,3-n)); }
 
-  let board = document.getElementById('game-board');
-  let gridSize = 3;
-  let score = 0;
-  let level = 1;
-  let lives = 3;
-  let activeCells = new Map(); // cellIndex -> timeoutId
-  let isPlaying = false;
-  let isPaused = false;
-  let spawnInterval = 1200;
-  let fadeTime = 2000;
-  let spawnTimer = null;
+  function cellRect(grid, idx){
+    const cols = grid, rows = grid;
+    const pad = 14, gap = 10;
+    const cw = (W - pad*2 - gap*(cols-1)) / cols;
+    const ch = (H - pad*2 - gap*(rows-1)) / rows;
+    const c = idx % cols, r = Math.floor(idx / cols);
+    return { x: pad + c*(cw+gap), y: pad + r*(ch+gap), w: cw, h: ch };
+  }
 
-  function buildGrid(n) {
-    board.innerHTML = '';
-    board.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
-    for (let i = 0; i < n * n; i++) {
-      const cell = document.createElement('div');
-      cell.className = 'cell';
-      cell.dataset.idx = i;
-      cell.setAttribute('role', 'button');
-      cell.setAttribute('aria-label', 'Cell ' + (i + 1));
-      cell.addEventListener('pointerdown', onTap);
-      board.appendChild(cell);
+  function newGame(){
+    return {
+      running:true, level:1, score:0, combo:0, lives:3,
+      hits:0, grid:3, targets:[], spawnTimer:0, spawnEvery:1100,
+      life:1500, concurrent:1, t:0, last:performance.now(),
+    };
+  }
+  function levelParams(lvl){
+    const grid = Math.min(3 + Math.floor((lvl-1)/4), 6);            // 3x3 -> 6x6
+    const life = Math.max(420, 1500 * Math.pow(0.94, lvl-1));        // thời gian sống của ô (ms)
+    const spawnEvery = Math.max(360, 1100 * Math.pow(0.95, lvl-1));  // nhịp xuất hiện
+    const concurrent = Math.min(1 + Math.floor((lvl-1)/6), 4);       // số ô cùng lúc
+    return { grid, life, spawnEvery, concurrent };
+  }
+
+  function spawn(){
+    const g = game;
+    const occupied = new Set(g.targets.map(t=>t.idx));
+    const total = g.grid*g.grid;
+    if (occupied.size >= total) return;
+    let idx; do { idx = (Math.random()*total)|0; } while(occupied.has(idx));
+    g.targets.push({ idx, age:0, life:g.life, hit:false });
+  }
+
+  function loop(now){
+    const g = game; if(!g || !g.running) return;
+    const dt = Math.min(50, now - g.last); g.last = now; g.t += dt;
+
+    // spawn
+    g.spawnTimer += dt;
+    if (g.spawnTimer >= g.spawnEvery && g.targets.length < g.concurrent){
+      g.spawnTimer = 0; spawn();
+    }
+    // age targets, miss = mất tim
+    for (const tt of g.targets){
+      tt.age += dt;
+      if (tt.age >= tt.life && !tt.hit){ tt.dead = true; g.lives--; g.combo = 0; flash('#ff453a'); }
+    }
+    g.targets = g.targets.filter(t => !t.dead && !(t.hit && t.age - t.hitAt > 160));
+
+    if (g.lives <= 0){ return gameOver(); }
+    draw();
+    raf = requestAnimationFrame(loop);
+  }
+
+  let flashColor = null, flashAt = 0;
+  function flash(c){ flashColor = c; flashAt = performance.now(); }
+
+  function draw(){
+    const g = game;
+    ctx.clearRect(0,0,W,H);
+    // grid hint
+    const total = g.grid*g.grid;
+    for (let i=0;i<total;i++){
+      const r = cellRect(g.grid, i);
+      ctx.fillStyle = 'rgba(255,255,255,.025)';
+      roundRect(r.x,r.y,r.w,r.h,10); ctx.fill();
+    }
+    // targets
+    for (const tt of g.targets){
+      const r = cellRect(g.grid, tt.idx);
+      const cx = r.x + r.w/2, cy = r.y + r.h/2;
+      const rad = Math.min(r.w,r.h)/2 - 4;
+      const rem = Math.max(0, 1 - tt.age/tt.life);
+      if (tt.hit){
+        const k = Math.min(1,(tt.age - tt.hitAt)/160);
+        ctx.globalAlpha = 1-k;
+        ctx.fillStyle = '#30d158';
+        circle(cx,cy,rad*(1+k*0.5)); ctx.fill();
+        ctx.globalAlpha = 1; continue;
+      }
+      // glow
+      const grad = ctx.createRadialGradient(cx,cy,rad*0.2,cx,cy,rad);
+      grad.addColorStop(0,'#a98bff'); grad.addColorStop(1,'#7c5cff');
+      ctx.fillStyle = grad; circle(cx,cy,rad*(0.7+0.3*rem)); ctx.fill();
+      // shrinking ring = time left
+      ctx.strokeStyle = rem>0.4?'#22d3ee':'#ffd60a'; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(cx,cy,rad-1,-Math.PI/2, -Math.PI/2 + Math.PI*2*rem); ctx.stroke();
+    }
+    // flash overlay
+    if (flashColor){
+      const k = Math.max(0, 1 - (performance.now()-flashAt)/220);
+      if (k>0){ ctx.fillStyle = flashColor; ctx.globalAlpha = k*0.25; ctx.fillRect(0,0,W,H); ctx.globalAlpha=1; }
+      else flashColor = null;
+    }
+  }
+  function roundRect(x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+  function circle(x,y,r){ ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.closePath(); }
+
+  function hud(){
+    $('hLevel').textContent = game.level;
+    $('hScore').textContent = game.score;
+    $('hCombo').textContent = game.combo;
+    $('hLives').textContent = hearts(game.lives);
+  }
+
+  function onTap(px,py){
+    const g = game; if(!g||!g.running) return;
+    // tìm target trúng
+    let hitT = null;
+    for (const tt of g.targets){
+      if (tt.hit) continue;
+      const r = cellRect(g.grid, tt.idx);
+      const cx=r.x+r.w/2, cy=r.y+r.h/2, rad=Math.min(r.w,r.h)/2;
+      if ((px-cx)**2 + (py-cy)**2 <= rad*rad){ hitT = tt; break; }
+    }
+    if (hitT){
+      hitT.hit = true; hitT.hitAt = hitT.age;
+      g.combo++; g.hits++;
+      const gain = 10 + g.combo*2 + (g.level-1)*2;
+      g.score += gain;
+      // level up mỗi 10 hit
+      if (g.hits % 10 === 0){
+        g.level++;
+        const p = levelParams(g.level);
+        g.grid=p.grid; g.life=p.life; g.spawnEvery=p.spawnEvery; g.concurrent=p.concurrent;
+        flash('#22d3ee'); toast('Level ' + g.level + '! Nhanh hơn nào ⚡');
+      }
+      hud();
+    } else {
+      g.combo = 0; hud(); // chạm hụt = mất combo
     }
   }
 
-  function onTap(e) {
-    if (!isPlaying || isPaused) return;
-    const cell = e.target;
-    const idx = +cell.dataset.idx;
-    if (!activeCells.has(idx)) return;
+  // pointer mapping
+  function evtPos(e){
+    const rect = cv.getBoundingClientRect();
+    const cx = (e.touches?e.touches[0].clientX:e.clientX) - rect.left;
+    const cy = (e.touches?e.touches[0].clientY:e.clientY) - rect.top;
+    return { x: cx * (W/rect.width), y: cy * (H/rect.height) };
+  }
+  cv.addEventListener('pointerdown', e=>{ e.preventDefault(); const p=evtPos(e); onTap(p.x,p.y); }, {passive:false});
 
-    clearTimeout(activeCells.get(idx));
-    activeCells.delete(idx);
-    cell.classList.remove('lit');
-    cell.classList.add('tapped');
-    setTimeout(() => cell.classList.remove('tapped'), 200);
-
-    score++;
-    hud.setScore(score);
-
-    // Level up every 10 points -> grid expands
-    if (score % 10 === 0) {
-      level++;
-      gridSize = Math.min(gridSize + 1, 8);
-      buildGrid(gridSize);
-      hud.setLevel(level);
-      // Speed up
-      spawnInterval = Math.max(400, spawnInterval * 0.9);
-      fadeTime = Math.max(800, fadeTime * 0.92);
-    }
+  async function start(){
+    const gate = await MNPlays.beginPlay(GAME_ID, FREE);
+    if (!gate.allowed) return; // SDK đã hiện modal đồng ý / đăng ký
+    cancelAnimationFrame(raf);
+    game = newGame(); hud();
+    $('overlay').classList.add('hidden');
+    await MNPlays.saveProgress(GAME_ID, { status:'playing', level:1, score:0 });
+    game.last = performance.now();
+    raf = requestAnimationFrame(loop);
   }
 
-  function spawnCell() {
-    if (!isPlaying || isPaused) return;
-    const cells = board.querySelectorAll('.cell');
-    const free = Array.from(cells).filter(c => !c.classList.contains('lit'));
-    if (!free.length) return;
-    const cell = free[Math.floor(Math.random() * free.length)];
-    const idx = +cell.dataset.idx;
-    cell.classList.add('lit');
-
-    const t = setTimeout(() => {
-      if (!isPlaying) return;
-      cell.classList.remove('lit');
-      cell.classList.add('missed');
-      setTimeout(() => cell.classList.remove('missed'), 300);
-      activeCells.delete(idx);
-      lives--;
-      if (lives <= 0) endGame();
-    }, fadeTime);
-    activeCells.set(idx, t);
+  async function gameOver(){
+    game.running = false; cancelAnimationFrame(raf);
+    const newBestLvl = Math.max(best.level, game.level);
+    const newBestScore = Math.max(best.score, game.score);
+    const isPB = game.score > best.score;
+    best = { level:newBestLvl, score:newBestScore };
+    await MNPlays.saveProgress(GAME_ID, { status:'played', level:newBestLvl, score:newBestScore });
+    const pts = Math.floor(game.score/10) + game.level*2;
+    const res = await MNPlays.awardPoints(GAME_ID, pts, 'cham-vo-cuc');
+    $('ovTitle').textContent = isPB ? 'Kỷ lục mới! 🎉' : 'Hết tim';
+    $('ovText').innerHTML = `Bạn đạt <b>Level ${game.level}</b> · <b>${game.score} điểm</b>.<br/>`
+      + (res ? `Nhận <b>+${pts} Muôn Điểm</b>${res.guest?' (tạm — đăng nhập để giữ lại)':''}.` : '')
+      + `<br/><span class="small">Không ai "phá đảo" được trò này. Lần sau xa hơn nhé.</span>`;
+    $('ovBest').textContent = `Kỷ lục: Level ${best.level} · ${best.score} điểm`;
+    $('startBtn').textContent = 'Chơi lại';
+    $('overlay').classList.remove('hidden');
+    refreshAuthLine();
   }
 
-  function startGame() {
-    document.getElementById('start-overlay').classList.add('hidden');
-    gridSize = 3; score = 0; level = 1; lives = 3;
-    spawnInterval = 1200; fadeTime = 2000;
-    activeCells.clear();
-    buildGrid(gridSize);
-    hud.setScore(0); hud.setLevel(1);
-    isPlaying = true; isPaused = false;
+  // ----- boot -----
+  $('startBtn').onclick = start;
+  $('howBtn').onclick = ()=> toast('Chạm vòng sáng trước khi tắt. Combo càng cao điểm càng nhiều.');
 
-    spawnTimer = setInterval(() => {
-      if (isPlaying && !isPaused) spawnCell();
-    }, spawnInterval);
+  function refreshAuthLine(){
+    $('ovAuth').innerHTML = MNPlays.isLoggedIn()
+      ? '✓ Tiến trình & điểm được lưu vào tài khoản.'
+      : '<a href="'+MNPlays.loginUrl()+'" style="color:var(--brand2)">Đăng nhập</a> để lưu tiến trình & nhận Muôn Điểm.';
   }
 
-  function endGame() {
-    isPlaying = false;
-    clearInterval(spawnTimer);
-    activeCells.forEach(t => clearTimeout(t));
-    activeCells.clear();
-
-    const prev = PlaysSDK.getGuestScores(GAME_ID);
-    const isNewBest = score > prev.best;
-    PlaysSDK.saveGuestScore(GAME_ID, score, level);
-
-    PlaysSDK.showGameOver({
-      gameId: GAME_ID,
-      score,
-      level,
-      best: Math.max(score, prev.best),
-      isNewBest,
-      token: null,
-      onRestart: () => {
-        document.querySelector('.plays-gameover-overlay')?.remove();
-        startGame();
-      },
-      onBack: () => {
-        location.href = '../../';
-      },
-    });
-  }
-
-  function togglePause() {
-    if (!isPlaying) return;
-    isPaused = !isPaused;
-    // Visual feedback could be added here
-  }
-
-  hud.onPause(togglePause);
-
-  document.getElementById('btn-start').addEventListener('click', startGame);
-  document.getElementById('btn-tutorial').addEventListener('click', () => {
-    const steps = TUTORIAL_STEPS[LANG] || TUTORIAL_STEPS.vi;
-    const tut = PlaysSDK.buildTutorial({
-      steps,
-      onFinish: () => {},
-      onClose: () => {},
-    });
-    tut.open();
-  });
-
-  // Keyboard shortcuts
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') togglePause();
-  });
-
-})();
-</script>
+  (async ()=>{
+    await MNPlays.init();
+    const p = await MNPlays.loadProgress(GAME_ID);
+    if (p){ best = { level:p.level||0, score:p.score||0 }; }
+    if (best.score) $('ovBest').textContent = `Kỷ lục: Level ${best.level} · ${best.score} điểm`;
+    refreshAuthLine();
+    // vẽ nền tĩnh
+    game = newGame(); draw();
+  })();
+  </script>
 </body>
 </html>
