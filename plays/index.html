@@ -107,16 +107,20 @@
       const live = g.status === 'live';
       const eco = g.eco ? `<div class="genre">↔ ${g.eco}</div>` : '';
       const free = live ? `<div class="free" data-free="${g.id}">${g.free||3} lượt miễn phí</div>` : '';
+      const nameVi = g.name ? g.name.vi : (g.n || g.id);
+      const nameEn = g.name ? g.name.en : (g.en || '');
+      const desc = g.desc ? g.desc.vi : (g.d || '');
+      const path = g.path || g.file || '#';
       const inner = `
         <div class="thumb">${(GROUPS[g.group]||{}).icon||'🎮'}</div>
         ${badgeFor(g)}
-        <h3>${g.n}</h3>
-        <div class="genre">${g.en} · Tầng ${g.tier}</div>
+        <h3>${nameVi}</h3>
+        <div class="genre">${nameEn} · Tầng ${g.tier}</div>
         ${eco}
-        ${g.d?`<div class="desc">${g.d}</div>`:''}
+        ${desc?`<div class="desc">${desc}</div>`:''}
         ${live?'<div class="pg" data-pg="'+g.id+'"></div>':''}
         ${free}`;
-      return live ? `<a class="gcard" href="${g.file}">${inner}</a>`
+      return live ? `<a class="gcard" href="${path}">${inner}</a>`
                   : `<div class="gcard locked">${inner}</div>`;
     }
 
@@ -172,9 +176,9 @@
       }
     }
 
-    document.getElementById('planCount').textContent = C.counts.plan;
-    document.getElementById('p1Count').textContent = C.counts.phase1;
-    document.getElementById('ipCount').textContent = C.counts.newip;
+    document.getElementById('planCount').textContent = C.counts.total;
+    document.getElementById('p1Count').textContent = C.counts.live;
+    document.getElementById('ipCount').textContent = Object.keys(C.groups).length;
     render();
 
     // Học viện — bộ sưu tập game đã lên kế hoạch
