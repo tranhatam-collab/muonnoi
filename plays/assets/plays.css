@@ -32,8 +32,41 @@ a{color:inherit;text-decoration:none}
 .hero h2{margin:0 0 8px;font-size:22px}
 .hero .tag{font-size:12px;color:var(--brand2);letter-spacing:1px;text-transform:uppercase}
 
+/* menu điều hướng (sticky) */
+.menu{position:sticky;top:0;z-index:40;display:flex;gap:6px;flex-wrap:wrap;align-items:center;
+  padding:10px 0;margin:8px 0 4px;background:linear-gradient(180deg,var(--bg) 70%,transparent);
+  backdrop-filter:blur(6px)}
+.menu a{font-size:13px;color:var(--muted);padding:7px 12px;border-radius:999px;border:1px solid var(--line)}
+.menu a:hover{color:var(--text);border-color:var(--line2)}
+.menu a.brandlink{color:var(--text);border-color:var(--brand)}
+
 /* filters */
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+
+/* bộ sưu tập (collections / học viện) */
+.cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.col{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.col .head{display:flex;gap:12px;align-items:flex-start;padding:16px;cursor:pointer;
+  background:radial-gradient(120% 120% at 0% 0%, rgba(124,92,255,.12), transparent 60%)}
+.col .head:hover{background:radial-gradient(120% 120% at 0% 0%, rgba(124,92,255,.2), transparent 60%)}
+.col .ic{width:46px;height:46px;flex:0 0 46px;border-radius:13px;display:flex;align-items:center;
+  justify-content:center;font-size:24px;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+.col h3{margin:0 0 3px;font-size:15px}
+.col .meta{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.col .tag2{font-size:10px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.col .tag2.bi{color:var(--brand2);border-color:rgba(34,211,238,.35)}
+.col .tag2.age{color:var(--warn);border-color:rgba(255,214,10,.35)}
+.col .d{font-size:12px;color:var(--muted);line-height:1.5}
+.col .chev{margin-left:auto;color:var(--muted);font-size:13px;align-self:center}
+.col .body{display:none;border-top:1px solid var(--line);padding:8px 16px 14px}
+.col.open .body{display:block}
+.col.open .chev{transform:rotate(180deg)}
+.col .glist{list-style:none;margin:8px 0 0;padding:0;columns:2;column-gap:18px}
+@media (max-width:520px){ .col .glist{columns:1} }
+.col .glist li{break-inside:avoid;padding:5px 0;font-size:12.5px;border-bottom:1px solid var(--line)}
+.col .glist li b{display:block;font-weight:600}
+.col .glist li span{color:var(--muted);font-size:11px}
+.col .doclink{display:inline-block;margin-top:10px;font-size:12px;color:var(--brand2)}
 
 /* grid of games */
 .games{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}

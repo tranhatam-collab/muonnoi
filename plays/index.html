@@ -44,8 +44,19 @@
       </p>
     </div>
 
+    <!-- Menu điều hướng -->
+    <nav class="menu">
+      <a class="brandlink" href="#sansang">✅ Sẵn sàng</a>
+      <a href="#mucluc">🗂️ Theo tầng</a>
+      <a href="#hocvien">🎓 Học viện</a>
+      <a href="#quydinh">📋 Quy định</a>
+      <a href="register.html">✍️ Đăng ký</a>
+      <a href="terms.html">⚖️ Điều khoản</a>
+      <a href="privacy.html">🔒 Quyền riêng tư</a>
+    </nav>
+
     <!-- Quy định nhanh -->
-    <div class="rules">
+    <div class="rules" id="quydinh">
       <div class="chip"><b>🎮 Chơi thử miễn phí</b><span>Mỗi trò cho <b>3–5 lượt miễn phí</b>, không cần tài khoản. Tiến trình chỉ lưu tạm trên trình duyệt.</span></div>
       <div class="chip"><b>✓ Đăng ký để chơi tiếp</b><span>Hết lượt miễn phí, <a href="register.html" style="color:var(--brand2)">đăng ký thành viên</a> để chơi không giới hạn, lưu lịch sử &amp; nhận Muôn Điểm.</span></div>
       <div class="chip"><b>🔒 Đồng ý trước khi chơi</b><span>Khi bắt đầu, bạn cần đồng ý <a href="terms.html" style="color:var(--brand2)">Điều khoản &amp; Miễn trừ trách nhiệm</a> và <a href="privacy.html" style="color:var(--brand2)">Quyền riêng tư</a>.</span></div>
@@ -53,19 +64,24 @@
 
     <div class="filters" id="filters"></div>
 
-    <div class="section">
+    <div class="section" id="sansang">
       <h2>✅ Sẵn sàng — chơi được ngay</h2><span class="count" id="liveCount"></span>
     </div>
     <div class="games" id="liveGames"></div>
 
-    <div class="section"><h2>🗂️ Mục lục theo tầng</h2><span class="count">Nhấn để xem nhanh</span></div>
+    <div class="section" id="mucluc"><h2>🗂️ Mục lục theo tầng</h2><span class="count">Nhấn để xem nhanh</span></div>
     <div class="toc" id="toc"></div>
 
     <div id="tierSections"></div>
 
+    <div class="section" id="hocvien"><h2>🎓 Học viện Muôn Nơi — bộ game đã lên kế hoạch</h2><span class="count" id="colCount"></span></div>
+    <p class="small" style="margin:-4px 0 12px">Các bộ game chuyên đề (song ngữ Anh–Việt). Nhấn để xem 10 trò trong mỗi bộ &amp; đọc kế hoạch chi tiết.</p>
+    <div class="cols" id="collections"></div>
+
     <div class="footer">
       Muôn Điểm là điểm thưởng nội bộ — <b>không mua bằng tiền, không quy đổi ra tiền mặt</b>.<br/>
       Lộ trình <span id="planCount"></span> game · Giai đoạn 1: <span id="p1Count"></span> game · IP mới: <span id="ipCount"></span> game.<br/>
+      Học viện: <span id="colFoot"></span> — tất cả song ngữ Anh–Việt.<br/>
       <a href="terms.html">Điều khoản &amp; Miễn trừ trách nhiệm</a> ·
       <a href="privacy.html">Quyền riêng tư &amp; Bảo mật</a> ·
       <a href="register.html">Đăng ký thành viên</a><br/>
@@ -74,6 +90,7 @@
   </div>
 
   <script src="assets/catalog.js"></script>
+  <script src="assets/collections.js"></script>
   <script src="assets/plays-sdk.js"></script>
   <script>
     const C = window.MN_CATALOG;
@@ -159,6 +176,39 @@
     document.getElementById('p1Count').textContent = C.counts.phase1;
     document.getElementById('ipCount').textContent = C.counts.newip;
     render();
+
+    // Học viện — bộ sưu tập game đã lên kế hoạch
+    (function(){
+      const CO = window.MN_COLLECTIONS;
+      const host = document.getElementById('collections');
+      document.getElementById('colCount').textContent = CO.counts.sets + ' bộ · ' + CO.counts.games + ' game';
+      document.getElementById('colFoot').textContent = CO.counts.sets + ' bộ · ' + CO.counts.games + ' game';
+      host.innerHTML = CO.collections.map(c => {
+        const ageTag = c.minAge >= 12 ? `<span class="tag2 age">≥ ${c.minAge} tuổi</span>` : '';
+        const games = c.games.map(g => `<li><b>${g[0]}</b><span>${g[1]}</span></li>`).join('');
+        return `<div class="col" data-id="${c.id}">
+          <div class="head">
+            <div class="ic">${c.icon}</div>
+            <div>
+              <h3>${c.vi} · ${c.en}</h3>
+              <div class="meta">
+                <span class="tag2">${c.games.length} game</span>
+                <span class="tag2 bi">Song ngữ EN–VI</span>
+                <span class="tag2">${c.audience}</span>
+                ${ageTag}
+              </div>
+              <div class="d">${c.desc}</div>
+            </div>
+            <div class="chev">▾</div>
+          </div>
+          <div class="body">
+            <ul class="glist">${games}</ul>
+            <a class="doclink" href="${c.doc}" target="_blank">Đọc kế hoạch chi tiết →</a>
+          </div>
+        </div>`;
+      }).join('');
+      host.querySelectorAll('.col .head').forEach(h => h.onclick = () => h.parentElement.classList.toggle('open'));
+    })();
 
     (async () => {
       const { loggedIn, user } = await MNPlays.init();
