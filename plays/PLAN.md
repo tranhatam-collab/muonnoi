@@ -1,3 +1,5 @@
+> ⬆️ **Đã có bản chiến lược mới: [`PLAN-V2.md`](./PLAN-V2.md)** (Play Layer 5 tầng, game đưa con người ra đời thật, audit hệ sinh thái). Tài liệu V1 dưới đây giữ cho chi tiết kỹ thuật P0; mâu thuẫn → ưu tiên V2.
+
 # Kế hoạch tổng thể — `plays.muonnoi.org`
 
 > Nền tảng game giải trí nhỏ trong hệ sinh thái **Muôn Nơi / Muôn Nói**.

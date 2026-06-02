@@ -1,6 +1,9 @@
 # plays.muonnoi.org — Hướng dẫn dev nhanh
 
-Nền tảng game giải trí của hệ sinh thái Muôn Nơi. Xem **`PLAN.md`** cho kế hoạch đầy đủ (100 game · 33 công bố · cơ chế Muôn Điểm).
+Nền tảng **Play Layer** của hệ sinh thái Muôn Nơi.
+
+- 📌 **`PLAN-V2.md`** — **nguồn sự thật CHIẾN LƯỢC** (5 tầng game · 33 game/7 nhóm · game 34–40 · AI Layer · audit hệ sinh thái · sửa 522/SSO · sprint dev). **Đọc trước.**
+- `PLAN.md` — kế hoạch kỹ thuật V1 (P0: 3 game · SDK · schema · API). Vẫn đúng ở tầng kỹ thuật.
 
 ## Cấu trúc
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Muôn Nơi · Plays — 33 game, đi mãi không hết</title>
   <meta name="description" content="33 game giải trí nhỏ, 100% code, chơi miễn phí không cần tài khoản. Đăng nhập để lưu tiến trình và nhận Muôn Điểm."/>
-  <link rel="stylesheet" href="/plays/assets/plays.css">
+  <link rel="stylesheet" href="assets/plays.css">
 </head>
 <body>
   <div class="container">
@@ -20,7 +20,7 @@
       <div class="nav">
         <span class="pill" id="authPill">Đang kiểm tra…</span>
         <span class="pill" id="pointsPill" title="Muôn Điểm">◇ —</span>
-        <a class="pill" href="/">muonnoi.org</a>
+        <a class="pill" href="https://muonnoi.org">muonnoi.org</a>
       </div>
     </div>
 
@@ -57,8 +57,8 @@
     </div>
   </div>
 
-  <script src="/plays/assets/catalog.js"></script>
-  <script src="/plays/assets/plays-sdk.js"></script>
+  <script src="assets/catalog.js"></script>
+  <script src="assets/plays-sdk.js"></script>
   <script>
     const C = window.MN_CATALOG;
     const G = C.genres;
@@ -80,7 +80,7 @@
         <div class="genre">${(G[g.g]||{}).vi||g.g}</div>
         ${g.d?`<div class="desc">${g.d}</div>`:''}
         ${live?'<div class="pg" data-pg="'+g.id+'"></div>':''}`;
-      if (live) return `<a class="gcard" href="/plays/${g.file}">${inner}</a>`;
+      if (live) return `<a class="gcard" href="${g.file}">${inner}</a>`;
       return `<div class="gcard locked">${inner}</div>`;
     }
 

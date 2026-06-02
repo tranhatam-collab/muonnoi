@@ -156,7 +156,15 @@
   function isLoggedIn() { return _state.loggedIn; }
   function getUser() { return _state.user; }
   function onAuthChange(cb) { if (typeof cb === 'function') { _authCbs.push(cb); if (_state.ready) cb(_state); } }
-  function loginUrl() { return '/app.html'; } // trang đăng nhập magic-email hiện có
+  function loginUrl() {
+    // Trang đăng nhập magic-email nằm ở apex (muonnoi.org). Nếu đang ở subdomain
+    // plays.* thì trỏ về apex để dùng chung phiên đăng nhập.
+    try {
+      const h = location.hostname;
+      if (h.startsWith('plays.')) return location.protocol + '//' + h.slice('plays.'.length) + '/app.html';
+    } catch (_) {}
+    return '/app.html';
+  }
 
   root.MNPlays = {
     init, isLoggedIn, getUser, onAuthChange, loginUrl,
