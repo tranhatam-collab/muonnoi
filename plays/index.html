@@ -120,7 +120,7 @@
         ${desc?`<div class="desc">${desc}</div>`:''}
         ${live?'<div class="pg" data-pg="'+g.id+'"></div>':''}
         ${free}`;
-      return live ? `<a class="gcard" href="${path}">${inner}</a>`
+      return live ? `<a class="gcard" href="detail.html?id=${g.id}">${inner}</a>`
                   : `<div class="gcard locked">${inner}</div>`;
     }
 

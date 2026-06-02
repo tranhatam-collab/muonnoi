@@ -18,20 +18,19 @@ if [ ! -f "index.html" ]; then
   echo "ERROR: index.html not found in $(pwd)"
   exit 1
 fi
-if [ ! -f "catalog.js" ]; then
-  echo "ERROR: catalog.js not found"
+if [ ! -f "assets/catalog.js" ]; then
+  echo "ERROR: assets/catalog.js not found"
   exit 1
 fi
-if [ ! -f "plays-sdk.js" ]; then
-  echo "ERROR: plays-sdk.js not found"
+if [ ! -f "assets/plays-sdk.js" ]; then
+  echo "ERROR: assets/plays-sdk.js not found"
   exit 1
 fi
 
-# Verify catalog has 33 live games
-LIVE_COUNT=$(node -e "const c=require('./catalog.js'); console.log(c.games.filter(g=>g.live).length)")
-if [ "$LIVE_COUNT" -ne 33 ]; then
-  echo "WARNING: Expected 33 live games, found $LIVE_COUNT"
-fi
+# Verify catalog has games
+LIVE_COUNT=$(node -e "const c=require('./assets/catalog.js'); console.log(c.games.filter(g=>g.status==='live').length)")
+TOTAL_COUNT=$(node -e "const c=require('./assets/catalog.js'); console.log(c.games.length)")
+echo "Catalog: $LIVE_COUNT live / $TOTAL_COUNT total games"
 
 echo "Files verified. Starting deploy..."
 npx wrangler pages deploy . \
