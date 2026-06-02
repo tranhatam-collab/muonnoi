@@ -5,6 +5,11 @@ Nền tảng **Play Layer** của hệ sinh thái Muôn Nơi.
 - 📌 **`PLAN-V2.md`** — **nguồn sự thật CHIẾN LƯỢC** (5 tầng game · 33 game/7 nhóm · game 34–40 · AI Layer · audit hệ sinh thái · sửa 522/SSO · sprint dev). **Đọc trước.**
 - `PLAN.md` — kế hoạch kỹ thuật V1 (P0: 3 game · SDK · schema · API). Vẫn đúng ở tầng kỹ thuật.
 
+### Thiết kế bộ game giáo dục/sáng tạo (thuyết minh, chưa code)
+- `PLAN-EDU-BILINGUAL.md` — 10 game học **từ vựng song ngữ Anh–Việt** (trẻ 5–18), thang 10 cấp.
+- `PLAN-EDU-ADULT.md` — 10 game **người lớn**: giao tiếp đối thoại + tư duy logic, căn bản → chuyên sâu.
+- `PLAN-KIDS-CREATIVE.md` — 10 game **sáng tạo & vẽ tự do** cho trẻ, ưu tiên điện thoại, dễ → tự do.
+
 ## Cấu trúc
 
 ```
