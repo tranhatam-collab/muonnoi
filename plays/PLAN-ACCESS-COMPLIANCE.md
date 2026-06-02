@@ -48,6 +48,23 @@ Mở game → bấm "Bắt đầu"
 - **Quốc tế**: nếu có người dùng EU/US → cân nhắc GDPR/COPPA.
 - ❗ Các tài liệu `terms.html`/`privacy.html` là **bản thảo vận hành, không thay thế tư vấn pháp lý** — pháp chế cần duyệt.
 
+## 4b. Cổng tuổi (Age Gate) — đã hiện thực trong SDK
+
+- Gọi: `await MNPlays.beginPlay(gameId, free, minAge)`.
+  - `minAge = 0` → không hỏi tuổi (game phổ thông hiện tại).
+  - `minAge = 12` → **game người lớn/doanh nhân**: bắt buộc hỏi tuổi; **chặn nếu < 12** (modal "Chưa đủ tuổi · Age restricted", song ngữ).
+  - **Game trẻ em** "phải hỏi số tuổi": truyền `minAge = 1` (hỏi tuổi, không chặn) hoặc gọi `MNPlays.ensureAge(1)` trước khi chơi để cá nhân hoá nội dung.
+- Tuổi lưu `mnplays:age` (localStorage, khách). Với thành viên, dev nên lấy tuổi từ hồ sơ (đăng ký đã thu thập) thay vì hỏi lại.
+- **Quy ước cấu hình khi game lên `live`:** đặt `minAge` trong `catalog.js` (thêm trường `minAge`) và truyền vào `beginPlay`:
+  - Bộ **Doanh nhân** (`PLAN-EDU-ENTREPRENEUR.md`), bộ **Người lớn** (`PLAN-EDU-ADULT.md`) → `minAge: 12`.
+  - Bộ **Trẻ em** (song ngữ, sáng tạo/vẽ) → hỏi tuổi (`minAge: 1`) để cá nhân hoá.
+- Modal cổng tuổi & chặn tuổi **song ngữ EN–VI** sẵn trong `plays-sdk.js`.
+
+## 4c. Nguyên tắc SONG NGỮ (bắt buộc toàn Play Layer)
+
+- **Mọi trò chơi phải song ngữ Anh–Việt** (nội dung, nút, phản hồi AI). Bộ doanh nhân/luật hiển thị **thuật ngữ chuyên ngành song song** để học từ vựng.
+- Khuyến nghị kỹ thuật: mỗi chuỗi văn bản có cặp `{vi, en}` + nút chuyển ngôn ngữ; lưu lựa chọn ở `mnplays:lang`. (Sẽ bổ sung tiện ích i18n nhẹ trong SDK ở bước sau.)
+
 ## 5. Checklist trước khi rời "draft"
 
 - [ ] Chạy `plays-schema-v2.sql` trên D1.

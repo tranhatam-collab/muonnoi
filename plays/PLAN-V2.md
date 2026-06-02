@@ -42,6 +42,10 @@ Ba trụ kế thừa từ `muonnoi.org` (proof-first · privacy-first · no ads/
 
 > Nguyên tắc "không thắng được" được **chuẩn hóa**: **Infinite Games — không có *trạng thái thắng cuối cùng*, KHÔNG phải *người chơi luôn thua*.** (Như Cờ vua, Cờ vây, Tetris, Minecraft, Duolingo.) Mỗi game luôn có level/thử thách/leaderboard/AI-màn-mới.
 
+> **Nguyên tắc bắt buộc bổ sung (V2.1):**
+> 1. **Song ngữ Anh–Việt cho MỌI trò chơi** — nội dung, nút, phản hồi AI đều có EN + VI; có nút chuyển ngôn ngữ.
+> 2. **Cổng tuổi:** game trẻ em **hỏi số tuổi** (cá nhân hoá); game **người lớn/doanh nhân yêu cầu ≥ 12 tuổi** (chặn dưới 12). Đã hiện thực trong SDK (`beginPlay(gameId, free, minAge)`) — xem `PLAN-ACCESS-COMPLIANCE.md`.
+
 ---
 
 ## 2. ĐỊNH VỊ KHÁC BIỆT

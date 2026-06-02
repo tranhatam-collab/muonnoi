@@ -189,10 +189,28 @@
     });
   }
 
-  async function beginPlay(gameId, free) {
+  // Cổng tuổi: trẻ em -> hỏi tuổi; game người lớn/doanh nhân -> chặn dưới minAge (mặc định 12 nếu minAge>0).
+  function getAge() { return lsGet('age', 0) | 0; }
+  function ensureAge(minAge) {
+    return new Promise((resolve) => {
+      const a = getAge();
+      if (a) { if (a >= minAge) return resolve(true); showAgeBlock(minAge); return resolve(false); }
+      showAgeModal(
+        (age) => { lsSet('age', age); if (age >= minAge) resolve(true); else { showAgeBlock(minAge); resolve(false); } },
+        () => resolve(false)
+      );
+    });
+  }
+
+  // beginPlay(gameId, free, minAge)
+  //  - minAge > 0  => bắt buộc hỏi tuổi & chặn nếu nhỏ hơn (vd game doanh nhân: 12)
+  //  - askAge=true (qua minAge nhỏ, vd 1) => game trẻ em vẫn hỏi tuổi để cá nhân hoá
+  async function beginPlay(gameId, free, minAge) {
     free = free || DEFAULT_FREE;
+    minAge = minAge || 0;
     const consented = await ensureConsent();
     if (!consented) return { allowed: false, reason: 'consent' };
+    if (minAge > 0) { const okAge = await ensureAge(minAge); if (!okAge) return { allowed: false, reason: 'age' }; }
     if (_state.loggedIn) return { allowed: true, left: Infinity };
     const c = playCount(gameId);
     if (c >= free) { showRegisterModal(free); return { allowed: false, reason: 'register' }; }
@@ -247,6 +265,36 @@
       <p style="margin-top:10px">Đã có tài khoản? <a href="${loginUrl()}">Đăng nhập</a>.</p>`);
     bg.querySelector('#mnClose').onclick = () => document.body.removeChild(bg);
   }
+  function showAgeModal(onOk, onCancel) {
+    const bg = modal(`
+      <h3>Bạn bao nhiêu tuổi? · How old are you?</h3>
+      <p>Chúng tôi hỏi tuổi để hiển thị nội dung phù hợp và tuân thủ quy định bảo vệ trẻ em.<br/>
+         <span style="opacity:.8">We ask your age to show age-appropriate content and comply with child-safety rules.</span></p>
+      <div class="field" style="margin:10px 0">
+        <input id="mnAge" type="number" min="3" max="120" inputmode="numeric" placeholder="Tuổi · Age" />
+      </div>
+      <div class="acts">
+        <button class="btn secondary" id="mnAgeCancel">Quay lại · Back</button>
+        <button class="btn" id="mnAgeOk">Tiếp tục · Continue</button>
+      </div>`);
+    bg.querySelector('#mnAgeOk').onclick = () => {
+      const v = parseInt(bg.querySelector('#mnAge').value, 10);
+      if (!v || v < 3 || v > 120) { bg.querySelector('#mnAge').focus(); return; }
+      document.body.removeChild(bg); onOk && onOk(v);
+    };
+    bg.querySelector('#mnAgeCancel').onclick = () => { document.body.removeChild(bg); onCancel && onCancel(); };
+  }
+  function showAgeBlock(minAge) {
+    const bg = modal(`
+      <h3>Chưa đủ tuổi · Age restricted</h3>
+      <p>Trò chơi này dành cho người từ <b>${minAge} tuổi</b> trở lên.<br/>
+         <span style="opacity:.8">This game is for players aged <b>${minAge}+</b>.</span></p>
+      <p>Hãy khám phá các trò chơi phù hợp lứa tuổi của bạn nhé.<br/>
+         <span style="opacity:.8">Explore games suitable for your age instead.</span></p>
+      <div class="acts">
+        <a class="btn" href="${pageUrl('index.html')}" style="text-align:center;text-decoration:none">Về mục lục · Browse games</a>
+      </div>`);
+  }
 
   // ---------- misc ----------
   function isLoggedIn() { return _state.loggedIn; }
@@ -268,6 +316,6 @@
   root.MNPlays = {
     init, isLoggedIn, getUser, onAuthChange, loginUrl, registerUrl, termsUrl, privacyUrl,
     loadProgress, saveProgress, awardPoints, getBalance,
-    beginPlay, playsLeft, ensureConsent, TERMS_VERSION,
+    beginPlay, playsLeft, ensureConsent, ensureAge, getAge, TERMS_VERSION,
   };
 })(typeof window !== 'undefined' ? window : globalThis);
