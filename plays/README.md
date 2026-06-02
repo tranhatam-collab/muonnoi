@@ -9,6 +9,7 @@ Nền tảng **Play Layer** của hệ sinh thái Muôn Nơi.
 - `PLAN-EDU-BILINGUAL.md` — 10 game học **từ vựng song ngữ Anh–Việt** (trẻ 5–18), thang 10 cấp.
 - `PLAN-EDU-ADULT.md` — 10 game **người lớn**: giao tiếp đối thoại + tư duy logic, căn bản → chuyên sâu.
 - `PLAN-KIDS-CREATIVE.md` — 10 game **sáng tạo & vẽ tự do** cho trẻ, ưu tiên điện thoại, dễ → tự do.
+- `PLAN-MOONSHOT.md` — 10 game **nguyên bản "moonshot"** (mọi lứa tuổi), cơ chế AI-native + hào Muôn Nơi; nhóm IP tham vọng Phase 2–3.
 
 ## Cấu trúc
 
