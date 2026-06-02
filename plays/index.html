@@ -42,6 +42,9 @@
         Play Layer của Muôn Nơi — 5 tầng game từ <b>giải trí nhanh</b> tới <b>kiến tạo cộng đồng thật</b>.
         Mỗi game <b>không có màn cuối</b>: bạn đua với chính mình.
       </p>
+      <p style="margin-top:12px">
+        <a class="pill" href="#" id="btn-random" style="background:var(--brand2);color:#fff;padding:10px 20px">🎲 Chơi ngẫu nhiên</a>
+      </p>
     </div>
 
     <!-- Menu điều hướng -->
@@ -230,6 +233,16 @@
       }
       paintProgress();
     })();
+
+    // Random game button
+    document.getElementById('btn-random').addEventListener('click', (e) => {
+      e.preventDefault();
+      const live = C.games.filter(g => g.status === 'live');
+      if (live.length) {
+        const pick = live[Math.floor(Math.random() * live.length)];
+        location.href = 'detail.html?id=' + pick.id;
+      }
+    });
   </script>
 </body>
 </html>
