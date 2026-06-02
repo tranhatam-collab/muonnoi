@@ -3,42 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Tro choi 55</title>
+<title>Game 055</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   body { background:#0f172a; color:#e2e8f0; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:sans-serif; }
-  .placeholder-box { text-align:center; padding:2rem; background:#1e293b; border-radius:0.5rem; max-width:320px; }
-  .placeholder-box h1 { margin:0 0 0.5rem; font-size:1.5rem; }
-  .placeholder-box p { margin:0 0 1rem; color:#94a3b8; }
+  #game-root { width:320px; min-height:360px; background:#1e293b; border-radius:0.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:1rem; position:relative; overflow:hidden; padding:1rem; }
+  .word { font-size:2.5rem; font-weight:bold; margin-bottom:1rem; }
+  .btn-row { display:flex; gap:0.5rem; }
+  .color-btn { width:70px; height:50px; border:none; border-radius:0.375rem; font-weight:bold; cursor:pointer; color:#fff; }
 </style>
 </head>
 <body data-game="game-055">
 
-<div class="placeholder-box">
-  <h1>Tro choi 55</h1>
-  <p>Tro choi dang phat trien.</p>
-  <p style="color:#64748b;font-size:0.875rem;">Trò chơi đang phát triển — sẽ ra mắt sớm!</p>
-  <button class="plays-btn plays-btn-primary" onclick="history.back()">Quay lại</button>
+<div id="hud-root"></div>
+<div id="game-root">
+  <div class="word" id="word">RED</div>
+  <div class="btn-row" id="btn-row"></div>
+</div>
+
+<div id="start-overlay">
+  <div class="start-box">
+    <h1>Game 055</h1>
+    <p>Chọn đúng màu của chữ, không phải nghĩa của chữ!</p>
+    <button class="plays-btn plays-btn-primary" id="btn-start">Bắt đầu</button>
+    <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
+  </div>
 </div>
 
 <script src="../../plays-sdk.js"></script>
 <script>
-(function() {
+(function(){
   'use strict';
-  const GAME_ID = 'game-055';
-  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
-  const TUTORIAL_STEPS = {
-    vi: [
-      { title: 'Tro choi 55', desc: 'Tro choi dang phat trien.' },
-      { title: 'Sắp ra mắt', desc: 'Trò chơi này đang được phát triển. Hãy quay lại sau!' },
-    ],
-    en: [
-      { title: 'Game 55', desc: 'Game under development.' },
-      { title: 'Coming soon', desc: 'This game is under development. Please check back later!' },
-    ],
+  const GAME_ID='game-055';
+  const LANG=document.documentElement.lang==='en'?'en':'vi';
+  const TUTORIAL_STEPS={
+    vi:[{title:'Màu Chữ',desc:'Chữ sẽ hiện ra với màu sắc khác nghĩa. Chọn đúng màu của chữ.'},{title:'Ví dụ',desc:'Chữ "RED" nhưng màu xanh → chọn nút xanh.'},{title:'Nhanh',desc:'Mỗi màn có thời gian giới hạn. Sai là thua!'}],
+    en:[{title:'Color Word',desc:'A word appears in a different color than its meaning. Pick the actual color.'},{title:'Example',desc:'The word "RED" in blue text → pick the blue button.'},{title:'Fast',desc:'Each round has a time limit. Wrong = game over!'}]
   };
-  // HUD not created for placeholder, but we keep the structure ready
-  // PlaysSDK.createHud('hud-root', { showLevel: true });
+  const hud=PlaysSDK.createHud('hud-root',{showLevel:true});
+  const wordEl=document.getElementById('word');
+  const btnRow=document.getElementById('btn-row');
+  const COLORS=[{name:'RED',color:'#ef4444'},{name:'BLUE',color:'#3b82f6'},{name:'GREEN',color:'#22c55e'},{name:'YELLOW',color:'#eab308'}];
+  let score=0,level=1,isPlaying=false,timeLeft=0,maxTime=0,timerId=null;
+
+  function startLevel(){
+    maxTime=Math.max(3,8-level*0.5);timeLeft=maxTime;
+    const correct=COLORS[Math.floor(Math.random()*COLORS.length)];
+    const textPick=COLORS[Math.floor(Math.random()*COLORS.length)];
+    wordEl.textContent=textPick.name;
+    wordEl.style.color=correct.color;
+    btnRow.innerHTML='';
+    const shuffled=[...COLORS].sort(()=>Math.random()-0.5);
+    shuffled.forEach(c=>{
+      const btn=document.createElement('button');
+      btn.className='color-btn';
+      btn.style.background=c.color;
+      btn.textContent=c.name;
+      btn.addEventListener('click',()=>{
+        if(!isPlaying)return;
+        if(c.name===correct.name){score+=Math.floor(timeLeft*10);hud.setScore(score);level++;hud.setLevel(level);startLevel();}else{endGame();}
+      });
+      btnRow.appendChild(btn);
+    });
+    clearInterval(timerId);
+    timerId=setInterval(()=>{if(!isPlaying)return;timeLeft-=0.1;if(timeLeft<=0)endGame();},100);
+  }
+  function startGame(){document.getElementById('start-overlay').style.display='none';score=0;level=1;isPlaying=true;hud.setScore(0);hud.setLevel(1);startLevel();}
+  function endGame(){isPlaying=false;clearInterval(timerId);PlaysSDK.saveScore(GAME_ID,score,{level});PlaysSDK.showGameOver(GAME_ID,score,{level},()=>{location.reload();});}
+  document.getElementById('btn-start').addEventListener('click',startGame);
+  document.getElementById('btn-tutorial').addEventListener('click',()=>PlaysSDK.showTutorial(GAME_ID,TUTORIAL_STEPS[LANG]));
 })();
 </script>
 </body>
