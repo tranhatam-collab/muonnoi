@@ -39275,6 +39275,2547 @@
   "genre": "math",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "clozapine",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Clozapine",
+    "en": "Clozapine"
+  },
+  "desc": {
+    "vi": "Học clozapine sedation.",
+    "en": "Learn clozapine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/clozapine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sertindole",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Sertindole",
+    "en": "Sertindole"
+  },
+  "desc": {
+    "vi": "Học sertindole sedation.",
+    "en": "Learn sertindole sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sertindole/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sulpiride",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Sulpiride",
+    "en": "Sulpiride"
+  },
+  "desc": {
+    "vi": "Học sulpiride sedation.",
+    "en": "Learn sulpiride sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sulpiride/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "amisulpride",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Amisulpride",
+    "en": "Amisulpride"
+  },
+  "desc": {
+    "vi": "Học amisulpride sedation.",
+    "en": "Learn amisulpride sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/amisulpride/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "levosulpiride",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Levosulpiride",
+    "en": "Levosulpiride"
+  },
+  "desc": {
+    "vi": "Học levosulpiride sedation.",
+    "en": "Learn levosulpiride sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/levosulpiride/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tiapride",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Tiapride",
+    "en": "Tiapride"
+  },
+  "desc": {
+    "vi": "Học tiapride sedation.",
+    "en": "Learn tiapride sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tiapride/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "veralipride",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Veralipride",
+    "en": "Veralipride"
+  },
+  "desc": {
+    "vi": "Học veralipride sedation.",
+    "en": "Learn veralipride sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/veralipride/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sultopride",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Sultopride",
+    "en": "Sultopride"
+  },
+  "desc": {
+    "vi": "Học sultopride sedation.",
+    "en": "Learn sultopride sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sultopride/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "carpipramine",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Carpipramine",
+    "en": "Carpipramine"
+  },
+  "desc": {
+    "vi": "Học carpipramine sedation.",
+    "en": "Learn carpipramine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/carpipramine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "clocapramine",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Clocapramine",
+    "en": "Clocapramine"
+  },
+  "desc": {
+    "vi": "Học clocapramine sedation.",
+    "en": "Learn clocapramine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/clocapramine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mosapramine",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Mosapramine",
+    "en": "Mosapramine"
+  },
+  "desc": {
+    "vi": "Học mosapramine sedation.",
+    "en": "Learn mosapramine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mosapramine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zotepine",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Zotepine",
+    "en": "Zotepine"
+  },
+  "desc": {
+    "vi": "Học zotepine sedation.",
+    "en": "Learn zotepine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zotepine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "blonanserin",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Blonanserin",
+    "en": "Blonanserin"
+  },
+  "desc": {
+    "vi": "Học blonanserin sedation.",
+    "en": "Learn blonanserin sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/blonanserin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nemonoxacin",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Nemonoxacin",
+    "en": "Nemonoxacin"
+  },
+  "desc": {
+    "vi": "Học nemonoxacin sedation.",
+    "en": "Learn nemonoxacin sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nemonoxacin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lithium-carbonate",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Lithium Carbonate",
+    "en": "Lithium Carbonate"
+  },
+  "desc": {
+    "vi": "Học lithium carbonate.",
+    "en": "Learn lithium carbonate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lithium-carbonate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lithium-citrate",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Lithium Citrate",
+    "en": "Lithium Citrate"
+  },
+  "desc": {
+    "vi": "Học lithium citrate.",
+    "en": "Learn lithium citrate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lithium-citrate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "valproate",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Valproate",
+    "en": "Valproate"
+  },
+  "desc": {
+    "vi": "Học valproate.",
+    "en": "Learn valproate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/valproate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "carbamazepine",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Carbamazepine",
+    "en": "Carbamazepine"
+  },
+  "desc": {
+    "vi": "Học carbamazepine.",
+    "en": "Learn carbamazepine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/carbamazepine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "oxcarbazepine",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Oxcarbazepine",
+    "en": "Oxcarbazepine"
+  },
+  "desc": {
+    "vi": "Học oxcarbazepine.",
+    "en": "Learn oxcarbazepine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/oxcarbazepine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eslicarbazepine",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Eslicarbazepine",
+    "en": "Eslicarbazepine"
+  },
+  "desc": {
+    "vi": "Học eslicarbazepine.",
+    "en": "Learn eslicarbazepine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eslicarbazepine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lamotrigine",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Lamotrigine",
+    "en": "Lamotrigine"
+  },
+  "desc": {
+    "vi": "Học lamotrigine.",
+    "en": "Learn lamotrigine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lamotrigine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "topiramate",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Topiramate",
+    "en": "Topiramate"
+  },
+  "desc": {
+    "vi": "Học topiramate.",
+    "en": "Learn topiramate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/topiramate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gabapentin",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Gabapentin",
+    "en": "Gabapentin"
+  },
+  "desc": {
+    "vi": "Học gabapentin.",
+    "en": "Learn gabapentin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gabapentin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pregabalin",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Pregabalin",
+    "en": "Pregabalin"
+  },
+  "desc": {
+    "vi": "Học pregabalin.",
+    "en": "Learn pregabalin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pregabalin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "levetiracetam",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Levetiracetam",
+    "en": "Levetiracetam"
+  },
+  "desc": {
+    "vi": "Học levetiracetam.",
+    "en": "Learn levetiracetam."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/levetiracetam/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "phenytoin",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Phenytoin",
+    "en": "Phenytoin"
+  },
+  "desc": {
+    "vi": "Học phenytoin.",
+    "en": "Learn phenytoin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/phenytoin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fosphenytoin",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Fosphenytoin",
+    "en": "Fosphenytoin"
+  },
+  "desc": {
+    "vi": "Học fosphenytoin.",
+    "en": "Learn fosphenytoin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fosphenytoin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "phenobarbital",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Phenobarbital",
+    "en": "Phenobarbital"
+  },
+  "desc": {
+    "vi": "Học phenobarbital.",
+    "en": "Learn phenobarbital."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/phenobarbital/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "primidone",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Primidone",
+    "en": "Primidone"
+  },
+  "desc": {
+    "vi": "Học primidone.",
+    "en": "Learn primidone."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/primidone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ethosuximide",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Ethosuximide",
+    "en": "Ethosuximide"
+  },
+  "desc": {
+    "vi": "Học ethosuximide.",
+    "en": "Learn ethosuximide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ethosuximide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "methsuximide",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Methsuximide",
+    "en": "Methsuximide"
+  },
+  "desc": {
+    "vi": "Học methsuximide.",
+    "en": "Learn methsuximide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/methsuximide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zonisamide",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Zonisamide",
+    "en": "Zonisamide"
+  },
+  "desc": {
+    "vi": "Học zonisamide.",
+    "en": "Learn zonisamide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zonisamide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tiagabine",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Tiagabine",
+    "en": "Tiagabine"
+  },
+  "desc": {
+    "vi": "Học tiagabine.",
+    "en": "Learn tiagabine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tiagabine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vigabatrin",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Vigabatrin",
+    "en": "Vigabatrin"
+  },
+  "desc": {
+    "vi": "Học vigabatrin.",
+    "en": "Learn vigabatrin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vigabatrin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "felbamate",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Felbamate",
+    "en": "Felbamate"
+  },
+  "desc": {
+    "vi": "Học felbamate.",
+    "en": "Learn felbamate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/felbamate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rufinamide",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Rufinamide",
+    "en": "Rufinamide"
+  },
+  "desc": {
+    "vi": "Học rufinamide.",
+    "en": "Learn rufinamide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rufinamide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lacosamide",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Lacosamide",
+    "en": "Lacosamide"
+  },
+  "desc": {
+    "vi": "Học lacosamide.",
+    "en": "Learn lacosamide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lacosamide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eslicarbazepine-acetate",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Eslicarbazepine Acetate",
+    "en": "Eslicarbazepine Acetate"
+  },
+  "desc": {
+    "vi": "Học eslicarbazepine acetate.",
+    "en": "Learn eslicarbazepine acetate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eslicarbazepine-acetate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "brivaracetam",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Brivaracetam",
+    "en": "Brivaracetam"
+  },
+  "desc": {
+    "vi": "Học brivaracetam.",
+    "en": "Learn brivaracetam."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/brivaracetam/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "perampanel",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Perampanel",
+    "en": "Perampanel"
+  },
+  "desc": {
+    "vi": "Học perampanel.",
+    "en": "Learn perampanel."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/perampanel/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cenobamate",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Cenobamate",
+    "en": "Cenobamate"
+  },
+  "desc": {
+    "vi": "Học cenobamate.",
+    "en": "Learn cenobamate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cenobamate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stiripentol",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Stiripentol",
+    "en": "Stiripentol"
+  },
+  "desc": {
+    "vi": "Học stiripentol.",
+    "en": "Learn stiripentol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stiripentol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cannabidiol",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Cannabidiol",
+    "en": "Cannabidiol"
+  },
+  "desc": {
+    "vi": "Học cannabidiol.",
+    "en": "Learn cannabidiol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cannabidiol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fenfluramine",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Fenfluramine",
+    "en": "Fenfluramine"
+  },
+  "desc": {
+    "vi": "Học fenfluramine.",
+    "en": "Learn fenfluramine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fenfluramine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "everolimus",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Everolimus",
+    "en": "Everolimus"
+  },
+  "desc": {
+    "vi": "Học everolimus.",
+    "en": "Learn everolimus."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/everolimus/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sirolimus",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Sirolimus",
+    "en": "Sirolimus"
+  },
+  "desc": {
+    "vi": "Học sirolimus.",
+    "en": "Learn sirolimus."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sirolimus/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tacrolimus",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Tacrolimus",
+    "en": "Tacrolimus"
+  },
+  "desc": {
+    "vi": "Học tacrolimus.",
+    "en": "Learn tacrolimus."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tacrolimus/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cyclosporine",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Cyclosporine",
+    "en": "Cyclosporine"
+  },
+  "desc": {
+    "vi": "Học cyclosporine.",
+    "en": "Learn cyclosporine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cyclosporine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mycophenolate",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Mycophenolate",
+    "en": "Mycophenolate"
+  },
+  "desc": {
+    "vi": "Học mycophenolate.",
+    "en": "Learn mycophenolate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mycophenolate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "azathioprine",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Azathioprine",
+    "en": "Azathioprine"
+  },
+  "desc": {
+    "vi": "Học azathioprine.",
+    "en": "Learn azathioprine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/azathioprine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "methotrexate",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Methotrexate",
+    "en": "Methotrexate"
+  },
+  "desc": {
+    "vi": "Học methotrexate.",
+    "en": "Learn methotrexate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/methotrexate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "leflunomide",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Leflunomide",
+    "en": "Leflunomide"
+  },
+  "desc": {
+    "vi": "Học leflunomide.",
+    "en": "Learn leflunomide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/leflunomide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sulfasalazine",
+  "gameId": "game-053",
+  "name": {
+    "vi": "Sulfasalazine",
+    "en": "Sulfasalazine"
+  },
+  "desc": {
+    "vi": "Học sulfasalazine.",
+    "en": "Learn sulfasalazine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sulfasalazine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hydroxychloroquine",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Hydroxychloroquine",
+    "en": "Hydroxychloroquine"
+  },
+  "desc": {
+    "vi": "Học hydroxychloroquine.",
+    "en": "Learn hydroxychloroquine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hydroxychloroquine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chloroquine",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Chloroquine",
+    "en": "Chloroquine"
+  },
+  "desc": {
+    "vi": "Học chloroquine.",
+    "en": "Learn chloroquine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chloroquine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quinine",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Quinine",
+    "en": "Quinine"
+  },
+  "desc": {
+    "vi": "Học quinine.",
+    "en": "Learn quinine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quinine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "artemisinin",
+  "gameId": "game-057",
+  "name": {
+    "vi": "Artemisinin",
+    "en": "Artemisinin"
+  },
+  "desc": {
+    "vi": "Học artemisinin.",
+    "en": "Learn artemisinin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/artemisinin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lumefantrine",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Lumefantrine",
+    "en": "Lumefantrine"
+  },
+  "desc": {
+    "vi": "Học lumefantrine.",
+    "en": "Learn lumefantrine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lumefantrine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mefloquine",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Mefloquine",
+    "en": "Mefloquine"
+  },
+  "desc": {
+    "vi": "Học mefloquine.",
+    "en": "Learn mefloquine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mefloquine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "atovaquone",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Atovaquone",
+    "en": "Atovaquone"
+  },
+  "desc": {
+    "vi": "Học atovaquone.",
+    "en": "Learn atovaquone."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/atovaquone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "proguanil",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Proguanil",
+    "en": "Proguanil"
+  },
+  "desc": {
+    "vi": "Học proguanil.",
+    "en": "Learn proguanil."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/proguanil/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pyrimethamine",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Pyrimethamine",
+    "en": "Pyrimethamine"
+  },
+  "desc": {
+    "vi": "Học pyrimethamine.",
+    "en": "Learn pyrimethamine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pyrimethamine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sulfadoxine",
+  "gameId": "game-063",
+  "name": {
+    "vi": "Sulfadoxine",
+    "en": "Sulfadoxine"
+  },
+  "desc": {
+    "vi": "Học sulfadoxine.",
+    "en": "Learn sulfadoxine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sulfadoxine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "amodiaquine",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Amodiaquine",
+    "en": "Amodiaquine"
+  },
+  "desc": {
+    "vi": "Học amodiaquine.",
+    "en": "Learn amodiaquine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/amodiaquine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "piperaquine",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Piperaquine",
+    "en": "Piperaquine"
+  },
+  "desc": {
+    "vi": "Học piperaquine.",
+    "en": "Learn piperaquine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/piperaquine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dihydroartemisinin",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Dihydroartemisinin",
+    "en": "Dihydroartemisinin"
+  },
+  "desc": {
+    "vi": "Học dihydroartemisinin.",
+    "en": "Learn dihydroartemisinin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dihydroartemisinin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "artesunate",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Artesunate",
+    "en": "Artesunate"
+  },
+  "desc": {
+    "vi": "Học artesunate.",
+    "en": "Learn artesunate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/artesunate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "artemether",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Artemether",
+    "en": "Artemether"
+  },
+  "desc": {
+    "vi": "Học artemether.",
+    "en": "Learn artemether."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/artemether/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "arteether",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Arteether",
+    "en": "Arteether"
+  },
+  "desc": {
+    "vi": "Học arteether.",
+    "en": "Learn arteether."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/arteether/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "artelinic-acid",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Artelinic Acid",
+    "en": "Artelinic Acid"
+  },
+  "desc": {
+    "vi": "Học artelinic acid.",
+    "en": "Learn artelinic acid."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/artelinic-acid/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "arterolane",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Arterolane",
+    "en": "Arterolane"
+  },
+  "desc": {
+    "vi": "Học arterolane.",
+    "en": "Learn arterolane."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/arterolane/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ozonide",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Ozonide",
+    "en": "Ozonide"
+  },
+  "desc": {
+    "vi": "Học ozonide.",
+    "en": "Learn ozonide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ozonide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trioxane",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Trioxane",
+    "en": "Trioxane"
+  },
+  "desc": {
+    "vi": "Học trioxane.",
+    "en": "Learn trioxane."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trioxane/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tafenoquine",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Tafenoquine",
+    "en": "Tafenoquine"
+  },
+  "desc": {
+    "vi": "Học tafenoquine.",
+    "en": "Learn tafenoquine."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tafenoquine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ganaplacide",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Ganaplacide",
+    "en": "Ganaplacide"
+  },
+  "desc": {
+    "vi": "Học ganaplacide.",
+    "en": "Learn ganaplacide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ganaplacide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cipargamin",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Cipargamin",
+    "en": "Cipargamin"
+  },
+  "desc": {
+    "vi": "Học cipargamin.",
+    "en": "Learn cipargamin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cipargamin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kaf156",
+  "gameId": "game-077",
+  "name": {
+    "vi": "KAF156",
+    "en": "KAF156"
+  },
+  "desc": {
+    "vi": "Học KAF156.",
+    "en": "Learn KAF156."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kaf156/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dsm265",
+  "gameId": "game-078",
+  "name": {
+    "vi": "DSM265",
+    "en": "DSM265"
+  },
+  "desc": {
+    "vi": "Học DSM265.",
+    "en": "Learn DSM265."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dsm265/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mmv390048",
+  "gameId": "game-079",
+  "name": {
+    "vi": "MMV390048",
+    "en": "MMV390048"
+  },
+  "desc": {
+    "vi": "Học MMV390048.",
+    "en": "Learn MMV390048."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mmv390048/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sj733",
+  "gameId": "game-080",
+  "name": {
+    "vi": "SJ733",
+    "en": "SJ733"
+  },
+  "desc": {
+    "vi": "Học SJ733.",
+    "en": "Learn SJ733."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sj733/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "umff-001",
+  "gameId": "game-081",
+  "name": {
+    "vi": "UMFF-001",
+    "en": "UMFF-001"
+  },
+  "desc": {
+    "vi": "Học UMFF-001.",
+    "en": "Learn UMFF-001."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/umff-001/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dq-661",
+  "gameId": "game-082",
+  "name": {
+    "vi": "DQ-661",
+    "en": "DQ-661"
+  },
+  "desc": {
+    "vi": "Học DQ-661.",
+    "en": "Learn DQ-661."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dq-661/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym004",
+  "gameId": "game-083",
+  "name": {
+    "vi": "SYM004",
+    "en": "SYM004"
+  },
+  "desc": {
+    "vi": "Học SYM004.",
+    "en": "Learn SYM004."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym004/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym007",
+  "gameId": "game-084",
+  "name": {
+    "vi": "SYM007",
+    "en": "SYM007"
+  },
+  "desc": {
+    "vi": "Học SYM007.",
+    "en": "Learn SYM007."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym007/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym010",
+  "gameId": "game-085",
+  "name": {
+    "vi": "SYM010",
+    "en": "SYM010"
+  },
+  "desc": {
+    "vi": "Học SYM010.",
+    "en": "Learn SYM010."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym010/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym015",
+  "gameId": "game-086",
+  "name": {
+    "vi": "SYM015",
+    "en": "SYM015"
+  },
+  "desc": {
+    "vi": "Học SYM015.",
+    "en": "Learn SYM015."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym015/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym016",
+  "gameId": "game-087",
+  "name": {
+    "vi": "SYM016",
+    "en": "SYM016"
+  },
+  "desc": {
+    "vi": "Học SYM016.",
+    "en": "Learn SYM016."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym016/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym017",
+  "gameId": "game-088",
+  "name": {
+    "vi": "SYM017",
+    "en": "SYM017"
+  },
+  "desc": {
+    "vi": "Học SYM017.",
+    "en": "Learn SYM017."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym017/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym018",
+  "gameId": "game-089",
+  "name": {
+    "vi": "SYM018",
+    "en": "SYM018"
+  },
+  "desc": {
+    "vi": "Học SYM018.",
+    "en": "Learn SYM018."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym018/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym019",
+  "gameId": "game-090",
+  "name": {
+    "vi": "SYM019",
+    "en": "SYM019"
+  },
+  "desc": {
+    "vi": "Học SYM019.",
+    "en": "Learn SYM019."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym019/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym020",
+  "gameId": "game-091",
+  "name": {
+    "vi": "SYM020",
+    "en": "SYM020"
+  },
+  "desc": {
+    "vi": "Học SYM020.",
+    "en": "Learn SYM020."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym020/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym021",
+  "gameId": "game-092",
+  "name": {
+    "vi": "SYM021",
+    "en": "SYM021"
+  },
+  "desc": {
+    "vi": "Học SYM021.",
+    "en": "Learn SYM021."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym021/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym022",
+  "gameId": "game-093",
+  "name": {
+    "vi": "SYM022",
+    "en": "SYM022"
+  },
+  "desc": {
+    "vi": "Học SYM022.",
+    "en": "Learn SYM022."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym022/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym023",
+  "gameId": "game-094",
+  "name": {
+    "vi": "SYM023",
+    "en": "SYM023"
+  },
+  "desc": {
+    "vi": "Học SYM023.",
+    "en": "Learn SYM023."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym023/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym024",
+  "gameId": "game-095",
+  "name": {
+    "vi": "SYM024",
+    "en": "SYM024"
+  },
+  "desc": {
+    "vi": "Học SYM024.",
+    "en": "Learn SYM024."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym024/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym025",
+  "gameId": "game-096",
+  "name": {
+    "vi": "SYM025",
+    "en": "SYM025"
+  },
+  "desc": {
+    "vi": "Học SYM025.",
+    "en": "Learn SYM025."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym025/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym026",
+  "gameId": "game-097",
+  "name": {
+    "vi": "SYM026",
+    "en": "SYM026"
+  },
+  "desc": {
+    "vi": "Học SYM026.",
+    "en": "Learn SYM026."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym026/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym027",
+  "gameId": "game-098",
+  "name": {
+    "vi": "SYM027",
+    "en": "SYM027"
+  },
+  "desc": {
+    "vi": "Học SYM027.",
+    "en": "Learn SYM027."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym027/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym028",
+  "gameId": "game-099",
+  "name": {
+    "vi": "SYM028",
+    "en": "SYM028"
+  },
+  "desc": {
+    "vi": "Học SYM028.",
+    "en": "Learn SYM028."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym028/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym029",
+  "gameId": "game-100",
+  "name": {
+    "vi": "SYM029",
+    "en": "SYM029"
+  },
+  "desc": {
+    "vi": "Học SYM029.",
+    "en": "Learn SYM029."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym029/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym030",
+  "gameId": "game-101",
+  "name": {
+    "vi": "SYM030",
+    "en": "SYM030"
+  },
+  "desc": {
+    "vi": "Học SYM030.",
+    "en": "Learn SYM030."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym030/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym031",
+  "gameId": "game-102",
+  "name": {
+    "vi": "SYM031",
+    "en": "SYM031"
+  },
+  "desc": {
+    "vi": "Học SYM031.",
+    "en": "Learn SYM031."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym031/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym032",
+  "gameId": "game-103",
+  "name": {
+    "vi": "SYM032",
+    "en": "SYM032"
+  },
+  "desc": {
+    "vi": "Học SYM032.",
+    "en": "Learn SYM032."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym032/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym033",
+  "gameId": "game-104",
+  "name": {
+    "vi": "SYM033",
+    "en": "SYM033"
+  },
+  "desc": {
+    "vi": "Học SYM033.",
+    "en": "Learn SYM033."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym033/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym034",
+  "gameId": "game-105",
+  "name": {
+    "vi": "SYM034",
+    "en": "SYM034"
+  },
+  "desc": {
+    "vi": "Học SYM034.",
+    "en": "Learn SYM034."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym034/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym035",
+  "gameId": "game-106",
+  "name": {
+    "vi": "SYM035",
+    "en": "SYM035"
+  },
+  "desc": {
+    "vi": "Học SYM035.",
+    "en": "Learn SYM035."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym035/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym036",
+  "gameId": "game-107",
+  "name": {
+    "vi": "SYM036",
+    "en": "SYM036"
+  },
+  "desc": {
+    "vi": "Học SYM036.",
+    "en": "Learn SYM036."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym036/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym037",
+  "gameId": "game-108",
+  "name": {
+    "vi": "SYM037",
+    "en": "SYM037"
+  },
+  "desc": {
+    "vi": "Học SYM037.",
+    "en": "Learn SYM037."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym037/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym038",
+  "gameId": "game-109",
+  "name": {
+    "vi": "SYM038",
+    "en": "SYM038"
+  },
+  "desc": {
+    "vi": "Học SYM038.",
+    "en": "Learn SYM038."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym038/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym039",
+  "gameId": "game-110",
+  "name": {
+    "vi": "SYM039",
+    "en": "SYM039"
+  },
+  "desc": {
+    "vi": "Học SYM039.",
+    "en": "Learn SYM039."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym039/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym040",
+  "gameId": "game-111",
+  "name": {
+    "vi": "SYM040",
+    "en": "SYM040"
+  },
+  "desc": {
+    "vi": "Học SYM040.",
+    "en": "Learn SYM040."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym040/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym041",
+  "gameId": "game-112",
+  "name": {
+    "vi": "SYM041",
+    "en": "SYM041"
+  },
+  "desc": {
+    "vi": "Học SYM041.",
+    "en": "Learn SYM041."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym041/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym042",
+  "gameId": "game-113",
+  "name": {
+    "vi": "SYM042",
+    "en": "SYM042"
+  },
+  "desc": {
+    "vi": "Học SYM042.",
+    "en": "Learn SYM042."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym042/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym043",
+  "gameId": "game-114",
+  "name": {
+    "vi": "SYM043",
+    "en": "SYM043"
+  },
+  "desc": {
+    "vi": "Học SYM043.",
+    "en": "Learn SYM043."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym043/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym044",
+  "gameId": "game-115",
+  "name": {
+    "vi": "SYM044",
+    "en": "SYM044"
+  },
+  "desc": {
+    "vi": "Học SYM044.",
+    "en": "Learn SYM044."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym044/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym045",
+  "gameId": "game-116",
+  "name": {
+    "vi": "SYM045",
+    "en": "SYM045"
+  },
+  "desc": {
+    "vi": "Học SYM045.",
+    "en": "Learn SYM045."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym045/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym046",
+  "gameId": "game-117",
+  "name": {
+    "vi": "SYM046",
+    "en": "SYM046"
+  },
+  "desc": {
+    "vi": "Học SYM046.",
+    "en": "Learn SYM046."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym046/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym047",
+  "gameId": "game-118",
+  "name": {
+    "vi": "SYM047",
+    "en": "SYM047"
+  },
+  "desc": {
+    "vi": "Học SYM047.",
+    "en": "Learn SYM047."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym047/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym048",
+  "gameId": "game-119",
+  "name": {
+    "vi": "SYM048",
+    "en": "SYM048"
+  },
+  "desc": {
+    "vi": "Học SYM048.",
+    "en": "Learn SYM048."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym048/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym049",
+  "gameId": "game-120",
+  "name": {
+    "vi": "SYM049",
+    "en": "SYM049"
+  },
+  "desc": {
+    "vi": "Học SYM049.",
+    "en": "Learn SYM049."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym049/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym050",
+  "gameId": "game-121",
+  "name": {
+    "vi": "SYM050",
+    "en": "SYM050"
+  },
+  "desc": {
+    "vi": "Học SYM050.",
+    "en": "Learn SYM050."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym050/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
 }
 ];
 
