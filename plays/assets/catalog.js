@@ -7250,6 +7250,1098 @@
   "genre": "puzzle",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "blackjack-lite",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Xì Dách Nhẹ",
+    "en": "Blackjack Lite"
+  },
+  "desc": {
+    "vi": "Xì dách 21 điểm đơn giản.",
+    "en": "Simple blackjack 21."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/blackjack-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "card",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "solitaire-klondike",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Solitaire",
+    "en": "Solitaire Klondike"
+  },
+  "desc": {
+    "vi": "Xếp bài Solitaire cổ điển.",
+    "en": "Classic Klondike solitaire."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/solitaire-klondike/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "card",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "freecell-lite",
+  "gameId": "game-003",
+  "name": {
+    "vi": "FreeCell Nhẹ",
+    "en": "FreeCell Lite"
+  },
+  "desc": {
+    "vi": "FreeCell đơn giản.",
+    "en": "Simple FreeCell."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/freecell-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "card",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spider-solitaire",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Solitaire Nhện",
+    "en": "Spider Solitaire"
+  },
+  "desc": {
+    "vi": "Xếp bài Spider.",
+    "en": "Spider solitaire."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spider-solitaire/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "card",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hearts-lite",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Hearts Nhẹ",
+    "en": "Hearts Lite"
+  },
+  "desc": {
+    "vi": "Tránh bài Hearts.",
+    "en": "Avoid hearts card game."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hearts-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "card",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "memory-cards",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Thẻ Nhớ",
+    "en": "Memory Cards"
+  },
+  "desc": {
+    "vi": "Lật thẻ tìm cặp.",
+    "en": "Flip cards to find pairs."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/memory-cards/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "speed-cards",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Tốc Độ Bài",
+    "en": "Speed Cards"
+  },
+  "desc": {
+    "vi": "Đánh bài nhanh Speed.",
+    "en": "Fast Speed card game."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/speed-cards/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "crazy-eights",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Tám Điên",
+    "en": "Crazy Eights"
+  },
+  "desc": {
+    "vi": "Đánh bài tám điên.",
+    "en": "Crazy eights card game."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crazy-eights/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "card",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "go-fish",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Câu Cá",
+    "en": "Go Fish"
+  },
+  "desc": {
+    "vi": "Câu cá bài đối.",
+    "en": "Go fish card game."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/go-fish/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "card",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "war-cards",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Chiến Tranh Bài",
+    "en": "War Cards"
+  },
+  "desc": {
+    "vi": "Đấu bài cao thấp.",
+    "en": "High-low card war."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/war-cards/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "luck",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bingo-lite",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Bingo Nhẹ",
+    "en": "Bingo Lite"
+  },
+  "desc": {
+    "vi": "Bingo đơn giản.",
+    "en": "Simple bingo game."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bingo-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "luck",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yahtzee-lite",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Yahtzee Nhẹ",
+    "en": "Yahtzee Lite"
+  },
+  "desc": {
+    "vi": "Xúc xắc Yahtzee.",
+    "en": "Yahtzee dice game."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yahtzee-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "luck",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "battleship-lite",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Chiến Hạm Nhẹ",
+    "en": "Battleship Lite"
+  },
+  "desc": {
+    "vi": "Đánh chìm tàu đơn giản.",
+    "en": "Simple battleship."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/battleship-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mastermind-lite",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Mastermind Nhẹ",
+    "en": "Mastermind Lite"
+  },
+  "desc": {
+    "vi": "Đoán mã màu Mastermind.",
+    "en": "Guess Mastermind color code."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mastermind-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "minesweeper-lite",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Dò Mìn Nhẹ",
+    "en": "Minesweeper Lite"
+  },
+  "desc": {
+    "vi": "Dò mìn đơn giản.",
+    "en": "Simple minesweeper."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/minesweeper-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "snake-lite",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Rắn Nhẹ",
+    "en": "Snake Lite"
+  },
+  "desc": {
+    "vi": "Rắn săn mồi đơn giản.",
+    "en": "Simple snake game."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/snake-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tetris-lite",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Tetris Nhẹ",
+    "en": "Tetris Lite"
+  },
+  "desc": {
+    "vi": "Xếp gạch Tetris đơn giản.",
+    "en": "Simple Tetris blocks."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tetris-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "breakout-lite",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Bóng Nhẹ",
+    "en": "Breakout Lite"
+  },
+  "desc": {
+    "vi": "Đập gạch đơn giản.",
+    "en": "Simple brick breaker."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/breakout-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pong-lite",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Pong Nhẹ",
+    "en": "Pong Lite"
+  },
+  "desc": {
+    "vi": "Pong tennis đơn giản.",
+    "en": "Simple Pong tennis."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pong-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "flappy-lite",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Bay Nhẹ",
+    "en": "Flappy Lite"
+  },
+  "desc": {
+    "vi": "Bay qua chướng ngại đơn giản.",
+    "en": "Simple flap through obstacles."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/flappy-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "doodle-jump-lite",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Nhảy Nhẹ",
+    "en": "Doodle Jump Lite"
+  },
+  "desc": {
+    "vi": "Nhảy lên nền tảng đơn giản.",
+    "en": "Simple platform jumping."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/doodle-jump-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "jetpack-lite",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Ba Lô Nhẹ",
+    "en": "Jetpack Lite"
+  },
+  "desc": {
+    "vi": "Bay ba lô tránh vật cản.",
+    "en": "Jetpack dodge obstacles."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/jetpack-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "runner-lite",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Chạy Nhẹ",
+    "en": "Runner Lite"
+  },
+  "desc": {
+    "vi": "Chạy vượt chướng ngại.",
+    "en": "Run and dodge obstacles."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/runner-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "jump-rope",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Nhảy Dây",
+    "en": "Jump Rope"
+  },
+  "desc": {
+    "vi": "Nhảy dây đếm số.",
+    "en": "Jump rope counter."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/jump-rope/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "shadow-boxing",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Đánh Bóng",
+    "en": "Shadow Boxing"
+  },
+  "desc": {
+    "vi": "Tập đánh bóng tưởng tượng.",
+    "en": "Shadow boxing workout."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/shadow-boxing/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ball-bounce",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Bóng Nảy",
+    "en": "Ball Bounce"
+  },
+  "desc": {
+    "vi": "Giữ bóng nảy trên thanh.",
+    "en": "Keep ball bouncing on paddle."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ball-bounce/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "catcher",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Bắt Rơi",
+    "en": "Catcher"
+  },
+  "desc": {
+    "vi": "Bắt vật phẩm rơi.",
+    "en": "Catch falling items."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/catcher/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "whack-mole",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Đập Chuột",
+    "en": "Whack Mole"
+  },
+  "desc": {
+    "vi": "Đập chuột chũi lên.",
+    "en": "Whack popping moles."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/whack-mole/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fruit-ninja-lite",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Chém Hoa Quả Nhẹ",
+    "en": "Fruit Ninja Lite"
+  },
+  "desc": {
+    "vi": "Chém hoa quả bay.",
+    "en": "Slice flying fruits."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fruit-ninja-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bubble-shooter-lite",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Bắn Bóng Nhẹ",
+    "en": "Bubble Shooter Lite"
+  },
+  "desc": {
+    "vi": "Bắn bóng cùng màu.",
+    "en": "Shoot same-color bubbles."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bubble-shooter-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "match-three-lite",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Xếp 3 Nhẹ",
+    "en": "Match Three Lite"
+  },
+  "desc": {
+    "vi": "Xếp 3 vật cùng màu.",
+    "en": "Match three same items."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/match-three-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "jewel-swap",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Hoán Đổi Đá Quý",
+    "en": "Jewel Swap"
+  },
+  "desc": {
+    "vi": "Hoán đổi đá quý tạo hàng.",
+    "en": "Swap jewels to make lines."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/jewel-swap/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "candy-crush-lite",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Kẹo Nhẹ",
+    "en": "Candy Crush Lite"
+  },
+  "desc": {
+    "vi": "Xếp kẹo cùng màu.",
+    "en": "Match same-color candies."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/candy-crush-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "block-blast-lite",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Nổ Khối Nhẹ",
+    "en": "Block Blast Lite"
+  },
+  "desc": {
+    "vi": "Xếp khối xóa hàng.",
+    "en": "Fit blocks to clear lines."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/block-blast-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "2048-lite",
+  "gameId": "game-035",
+  "name": {
+    "vi": "2048 Nhẹ",
+    "en": "2048 Lite"
+  },
+  "desc": {
+    "vi": "Ghép số đến 2048.",
+    "en": "Merge numbers to 2048."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/2048-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "threes-lite",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Threes Nhẹ",
+    "en": "Threes Lite"
+  },
+  "desc": {
+    "vi": "Ghép bội số của 3.",
+    "en": "Merge multiples of three."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/threes-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "drop-seven",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Thả Bảy",
+    "en": "Drop Seven"
+  },
+  "desc": {
+    "vi": "Thả khối tạo tổng 7.",
+    "en": "Drop blocks summing to 7."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/drop-seven/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sum-zero",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Tổng Không",
+    "en": "Sum Zero"
+  },
+  "desc": {
+    "vi": "Cân bằng tổng về 0.",
+    "en": "Balance sum to zero."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sum-zero/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "number-merge",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Ghép Số",
+    "en": "Number Merge"
+  },
+  "desc": {
+    "vi": "Ghép số tạo số lớn.",
+    "en": "Merge numbers to grow."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/number-merge/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prime-hunter",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Săn Số Nguyên Tố",
+    "en": "Prime Hunter"
+  },
+  "desc": {
+    "vi": "Tìm số nguyên tố nhanh.",
+    "en": "Find primes quickly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prime-hunter/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "factor-frenzy",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Điên Thừa Số",
+    "en": "Factor Frenzy"
+  },
+  "desc": {
+    "vi": "Tìm thừa số nhanh.",
+    "en": "Find factors fast."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/factor-frenzy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fraction-match",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Ghép Phân Số",
+    "en": "Fraction Match"
+  },
+  "desc": {
+    "vi": "Ghép phân số tương đương.",
+    "en": "Match equivalent fractions."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fraction-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "decimal-dash",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Thập Phân",
+    "en": "Decimal Dash"
+  },
+  "desc": {
+    "vi": "So sánh & sắp xếp thập phân.",
+    "en": "Compare & sort decimals."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/decimal-dash/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "percent-panic",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Phần Trăm",
+    "en": "Percent Panic"
+  },
+  "desc": {
+    "vi": "Tính phần trăm nhanh.",
+    "en": "Calculate percents fast."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/percent-panic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ratio-race",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Tỷ Lệ",
+    "en": "Ratio Race"
+  },
+  "desc": {
+    "vi": "Tìm tỷ lệ đúng nhanh.",
+    "en": "Find correct ratios fast."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ratio-race/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "geometry-dash",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Hình Học",
+    "en": "Geometry Dash"
+  },
+  "desc": {
+    "vi": "Nhận diện hình học nhanh.",
+    "en": "Recognize shapes fast."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/geometry-dash/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "angle-attack",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Góc",
+    "en": "Angle Attack"
+  },
+  "desc": {
+    "vi": "Đoán độ góc chính xác.",
+    "en": "Guess angle degrees accurately."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/angle-attack/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "area-warrior",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Diện Tích",
+    "en": "Area Warrior"
+  },
+  "desc": {
+    "vi": "Tính diện tích nhanh.",
+    "en": "Calculate area quickly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/area-warrior/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "volume-viking",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Thể Tích",
+    "en": "Volume Viking"
+  },
+  "desc": {
+    "vi": "Tính thể tích nhanh.",
+    "en": "Calculate volume quickly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/volume-viking/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "perimeter-pirate",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Chu Vi",
+    "en": "Perimeter Pirate"
+  },
+  "desc": {
+    "vi": "Tính chu vi nhanh.",
+    "en": "Calculate perimeter quickly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/perimeter-pirate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "symmetry-sage",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Đối Xứng",
+    "en": "Symmetry Sage"
+  },
+  "desc": {
+    "vi": "Tìm trục đối xứng.",
+    "en": "Find symmetry axes."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/symmetry-sage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "transformation-titan",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Biến Đổi",
+    "en": "Transformation Titan"
+  },
+  "desc": {
+    "vi": "Nhận diện phép biến đổi.",
+    "en": "Identify transformations."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/transformation-titan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
 }
 ];
 
