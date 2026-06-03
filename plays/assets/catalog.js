@@ -2087,6 +2087,21 @@
     "genre": "education",
     "wave": 4,
     "free": 5
+  },
+  {
+    "id": "tho-san-nghia",
+    "gameId": "game-102",
+    "name": { "vi": "Thợ Săn Nghĩa", "en": "Meaning Hunter" },
+    "desc": { "vi": "Chọn nghĩa đúng cho từ tiếng Anh. Càng nhanh, càng nhiều điểm!", "en": "Pick the correct meaning for English words. Faster = more points!" },
+    "group": "mind",
+    "tier": 1,
+    "status": "live",
+    "path": "games/tho-san-nghia/index.html",
+    "difficulty": "easy",
+    "duration": "2-5 min",
+    "genre": "education",
+    "wave": 4,
+    "free": 5
   }
 ];
 
