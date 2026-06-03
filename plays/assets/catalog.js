@@ -2132,6 +2132,21 @@
     "genre": "education",
     "wave": 4,
     "free": 5
+  },
+  {
+    "id": "to-mau-than-ky",
+    "gameId": "game-105",
+    "name": { "vi": "Tô Màu Thần Kỳ", "en": "Magic Coloring" },
+    "desc": { "vi": "Vẽ & tô màu tự do trên canvas. Lưu bức vẽ để nhận điểm!", "en": "Draw & color freely on canvas. Save artwork to earn points!" },
+    "group": "creator",
+    "tier": 1,
+    "status": "live",
+    "path": "games/to-mau-than-ky/index.html",
+    "difficulty": "easy",
+    "duration": "5-10 min",
+    "genre": "creative",
+    "wave": 4,
+    "free": 5
   }
 ];
 
