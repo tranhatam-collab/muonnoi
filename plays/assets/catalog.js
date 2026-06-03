@@ -34067,6 +34067,2232 @@
   "genre": "math",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "ct-scan",
+  "gameId": "game-001",
+  "name": {
+    "vi": "CT Scan",
+    "en": "CT Scan"
+  },
+  "desc": {
+    "vi": "Học CT scan analysis.",
+    "en": "Learn CT scan analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ct-scan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mri-scan",
+  "gameId": "game-002",
+  "name": {
+    "vi": "MRI Scan",
+    "en": "MRI Scan"
+  },
+  "desc": {
+    "vi": "Học MRI analysis.",
+    "en": "Learn MRI analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mri-scan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "xray-classify",
+  "gameId": "game-003",
+  "name": {
+    "vi": "XRay Classify",
+    "en": "XRay Classify"
+  },
+  "desc": {
+    "vi": "Học X-ray classification.",
+    "en": "Learn X-ray classification."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/xray-classify/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ultrasound",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Ultrasound",
+    "en": "Ultrasound"
+  },
+  "desc": {
+    "vi": "Học ultrasound analysis.",
+    "en": "Learn ultrasound analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ultrasound/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mammography",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Mammography",
+    "en": "Mammography"
+  },
+  "desc": {
+    "vi": "Học mammography.",
+    "en": "Learn mammography."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mammography/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dermoscopy",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Dermoscopy",
+    "en": "Dermoscopy"
+  },
+  "desc": {
+    "vi": "Học dermoscopy.",
+    "en": "Learn dermoscopy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dermoscopy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pathology",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Pathology",
+    "en": "Pathology"
+  },
+  "desc": {
+    "vi": "Học digital pathology.",
+    "en": "Learn digital pathology."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pathology/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "histology",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Histology",
+    "en": "Histology"
+  },
+  "desc": {
+    "vi": "Học histology.",
+    "en": "Learn histology."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/histology/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cytology",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Cytology",
+    "en": "Cytology"
+  },
+  "desc": {
+    "vi": "Học cytology.",
+    "en": "Learn cytology."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cytology/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "endoscopy",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Endoscopy",
+    "en": "Endoscopy"
+  },
+  "desc": {
+    "vi": "Học endoscopy.",
+    "en": "Learn endoscopy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/endoscopy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "colonoscopy",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Colonoscopy",
+    "en": "Colonoscopy"
+  },
+  "desc": {
+    "vi": "Học colonoscopy.",
+    "en": "Learn colonoscopy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/colonoscopy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "retinal-scan",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Retinal Scan",
+    "en": "Retinal Scan"
+  },
+  "desc": {
+    "vi": "Học retinal scan.",
+    "en": "Learn retinal scan."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/retinal-scan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "oct-scan",
+  "gameId": "game-013",
+  "name": {
+    "vi": "OCT Scan",
+    "en": "OCT Scan"
+  },
+  "desc": {
+    "vi": "Học OCT analysis.",
+    "en": "Learn OCT analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/oct-scan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fundus-photo",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Fundus Photo",
+    "en": "Fundus Photo"
+  },
+  "desc": {
+    "vi": "Học fundus photography.",
+    "en": "Learn fundus photography."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fundus-photo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ecg-interpret",
+  "gameId": "game-015",
+  "name": {
+    "vi": "ECG Interpret",
+    "en": "ECG Interpret"
+  },
+  "desc": {
+    "vi": "Học ECG interpretation.",
+    "en": "Learn ECG interpretation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ecg-interpret/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eeg-interpret",
+  "gameId": "game-016",
+  "name": {
+    "vi": "EEG Interpret",
+    "en": "EEG Interpret"
+  },
+  "desc": {
+    "vi": "Học EEG interpretation.",
+    "en": "Learn EEG interpretation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eeg-interpret/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eeg-seizure",
+  "gameId": "game-017",
+  "name": {
+    "vi": "EEG Seizure",
+    "en": "EEG Seizure"
+  },
+  "desc": {
+    "vi": "Học EEG seizure detection.",
+    "en": "Learn EEG seizure detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eeg-seizure/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sleep-stage",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Sleep Stage",
+    "en": "Sleep Stage"
+  },
+  "desc": {
+    "vi": "Học sleep staging.",
+    "en": "Learn sleep staging."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sleep-stage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "respiratory",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Respiratory",
+    "en": "Respiratory"
+  },
+  "desc": {
+    "vi": "Học respiratory analysis.",
+    "en": "Learn respiratory analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/respiratory/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "copd-detect",
+  "gameId": "game-020",
+  "name": {
+    "vi": "COPD Detect",
+    "en": "COPD Detect"
+  },
+  "desc": {
+    "vi": "Học COPD detection.",
+    "en": "Learn COPD detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/copd-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pneumonia-detect",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Pneumonia Detect",
+    "en": "Pneumonia Detect"
+  },
+  "desc": {
+    "vi": "Học pneumonia detection.",
+    "en": "Learn pneumonia detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pneumonia-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tuberculosis",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Tuberculosis",
+    "en": "Tuberculosis"
+  },
+  "desc": {
+    "vi": "Học TB detection.",
+    "en": "Learn TB detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tuberculosis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "covid-detect",
+  "gameId": "game-023",
+  "name": {
+    "vi": "COVID Detect",
+    "en": "COVID Detect"
+  },
+  "desc": {
+    "vi": "Học COVID detection.",
+    "en": "Learn COVID detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/covid-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lung-cancer",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Lung Cancer",
+    "en": "Lung Cancer"
+  },
+  "desc": {
+    "vi": "Học lung cancer detection.",
+    "en": "Learn lung cancer detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lung-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "skin-cancer",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Skin Cancer",
+    "en": "Skin Cancer"
+  },
+  "desc": {
+    "vi": "Học skin cancer detection.",
+    "en": "Learn skin cancer detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/skin-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "melanoma",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Melanoma",
+    "en": "Melanoma"
+  },
+  "desc": {
+    "vi": "Học melanoma detection.",
+    "en": "Learn melanoma detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/melanoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "brain-tumor",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Brain Tumor",
+    "en": "Brain Tumor"
+  },
+  "desc": {
+    "vi": "Học brain tumor detection.",
+    "en": "Learn brain tumor detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/brain-tumor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "alzheimer",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Alzheimer",
+    "en": "Alzheimer"
+  },
+  "desc": {
+    "vi": "Học Alzheimer detection.",
+    "en": "Learn Alzheimer detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/alzheimer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "parkinson",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Parkinson",
+    "en": "Parkinson"
+  },
+  "desc": {
+    "vi": "Học Parkinson detection.",
+    "en": "Learn Parkinson detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/parkinson/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stroke-detect",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Stroke Detect",
+    "en": "Stroke Detect"
+  },
+  "desc": {
+    "vi": "Học stroke detection.",
+    "en": "Learn stroke detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stroke-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "diabetic-retinopathy",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Diabetic Retinopathy",
+    "en": "Diabetic Retinopathy"
+  },
+  "desc": {
+    "vi": "Học diabetic retinopathy.",
+    "en": "Learn diabetic retinopathy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/diabetic-retinopathy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "glaucoma",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Glaucoma",
+    "en": "Glaucoma"
+  },
+  "desc": {
+    "vi": "Học glaucoma detection.",
+    "en": "Learn glaucoma detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/glaucoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cataract",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Cataract",
+    "en": "Cataract"
+  },
+  "desc": {
+    "vi": "Học cataract detection.",
+    "en": "Learn cataract detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cataract/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "osteoporosis",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Osteoporosis",
+    "en": "Osteoporosis"
+  },
+  "desc": {
+    "vi": "Học osteoporosis detection.",
+    "en": "Learn osteoporosis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/osteoporosis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fracture-detect",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Fracture Detect",
+    "en": "Fracture Detect"
+  },
+  "desc": {
+    "vi": "Học fracture detection.",
+    "en": "Learn fracture detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fracture-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kidney-stone",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Kidney Stone",
+    "en": "Kidney Stone"
+  },
+  "desc": {
+    "vi": "Học kidney stone detection.",
+    "en": "Learn kidney stone detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kidney-stone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "liver-cirrhosis",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Liver Cirrhosis",
+    "en": "Liver Cirrhosis"
+  },
+  "desc": {
+    "vi": "Học liver cirrhosis.",
+    "en": "Learn liver cirrhosis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/liver-cirrhosis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hepatitis",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Hepatitis",
+    "en": "Hepatitis"
+  },
+  "desc": {
+    "vi": "Học hepatitis detection.",
+    "en": "Learn hepatitis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hepatitis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cirrhosis",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Cirrhosis",
+    "en": "Cirrhosis"
+  },
+  "desc": {
+    "vi": "Học cirrhosis detection.",
+    "en": "Learn cirrhosis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cirrhosis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fibrosis",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Fibrosis",
+    "en": "Fibrosis"
+  },
+  "desc": {
+    "vi": "Học fibrosis detection.",
+    "en": "Learn fibrosis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fibrosis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fatty-liver",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Fatty Liver",
+    "en": "Fatty Liver"
+  },
+  "desc": {
+    "vi": "Học fatty liver detection.",
+    "en": "Learn fatty liver detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fatty-liver/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pancreatitis",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Pancreatitis",
+    "en": "Pancreatitis"
+  },
+  "desc": {
+    "vi": "Học pancreatitis detection.",
+    "en": "Learn pancreatitis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pancreatitis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "appendicitis",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Appendicitis",
+    "en": "Appendicitis"
+  },
+  "desc": {
+    "vi": "Học appendicitis detection.",
+    "en": "Learn appendicitis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/appendicitis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "diverticulitis",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Diverticulitis",
+    "en": "Diverticulitis"
+  },
+  "desc": {
+    "vi": "Học diverticulitis detection.",
+    "en": "Learn diverticulitis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/diverticulitis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "crohn-disease",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Crohn Disease",
+    "en": "Crohn Disease"
+  },
+  "desc": {
+    "vi": "Học Crohn's disease.",
+    "en": "Learn Crohn's disease."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crohn-disease/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ulcerative-colitis",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Ulcerative Colitis",
+    "en": "Ulcerative Colitis"
+  },
+  "desc": {
+    "vi": "Học ulcerative colitis.",
+    "en": "Learn ulcerative colitis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ulcerative-colitis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "celiac-disease",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Celiac Disease",
+    "en": "Celiac Disease"
+  },
+  "desc": {
+    "vi": "Học celiac disease.",
+    "en": "Learn celiac disease."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/celiac-disease/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ibs",
+  "gameId": "game-048",
+  "name": {
+    "vi": "IBS",
+    "en": "IBS"
+  },
+  "desc": {
+    "vi": "Học IBS detection.",
+    "en": "Learn IBS detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ibs/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gerd",
+  "gameId": "game-049",
+  "name": {
+    "vi": "GERD",
+    "en": "GERD"
+  },
+  "desc": {
+    "vi": "Học GERD detection.",
+    "en": "Learn GERD detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gerd/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "peptic-ulcer",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Peptic Ulcer",
+    "en": "Peptic Ulcer"
+  },
+  "desc": {
+    "vi": "Học peptic ulcer.",
+    "en": "Learn peptic ulcer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/peptic-ulcer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gastritis",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Gastritis",
+    "en": "Gastritis"
+  },
+  "desc": {
+    "vi": "Học gastritis detection.",
+    "en": "Learn gastritis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gastritis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "esophagitis",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Esophagitis",
+    "en": "Esophagitis"
+  },
+  "desc": {
+    "vi": "Học esophagitis detection.",
+    "en": "Learn esophagitis detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/esophagitis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "barrett-esophagus",
+  "gameId": "game-053",
+  "name": {
+    "vi": "Barrett Esophagus",
+    "en": "Barrett Esophagus"
+  },
+  "desc": {
+    "vi": "Học Barrett's esophagus.",
+    "en": "Learn Barrett's esophagus."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/barrett-esophagus/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "esophageal-cancer",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Esophageal Cancer",
+    "en": "Esophageal Cancer"
+  },
+  "desc": {
+    "vi": "Học esophageal cancer.",
+    "en": "Learn esophageal cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/esophageal-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gastric-cancer",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Gastric Cancer",
+    "en": "Gastric Cancer"
+  },
+  "desc": {
+    "vi": "Học gastric cancer.",
+    "en": "Learn gastric cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gastric-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "colorectal-cancer",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Colorectal Cancer",
+    "en": "Colorectal Cancer"
+  },
+  "desc": {
+    "vi": "Học colorectal cancer.",
+    "en": "Learn colorectal cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/colorectal-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pancreatic-cancer",
+  "gameId": "game-057",
+  "name": {
+    "vi": "Pancreatic Cancer",
+    "en": "Pancreatic Cancer"
+  },
+  "desc": {
+    "vi": "Học pancreatic cancer.",
+    "en": "Learn pancreatic cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pancreatic-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prostate-cancer",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Prostate Cancer",
+    "en": "Prostate Cancer"
+  },
+  "desc": {
+    "vi": "Học prostate cancer.",
+    "en": "Learn prostate cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prostate-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "breast-cancer",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Breast Cancer",
+    "en": "Breast Cancer"
+  },
+  "desc": {
+    "vi": "Học breast cancer detection.",
+    "en": "Learn breast cancer detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/breast-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ovarian-cancer",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Ovarian Cancer",
+    "en": "Ovarian Cancer"
+  },
+  "desc": {
+    "vi": "Học ovarian cancer.",
+    "en": "Learn ovarian cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ovarian-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cervical-cancer",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Cervical Cancer",
+    "en": "Cervical Cancer"
+  },
+  "desc": {
+    "vi": "Học cervical cancer.",
+    "en": "Learn cervical cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cervical-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "endometrial-cancer",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Endometrial Cancer",
+    "en": "Endometrial Cancer"
+  },
+  "desc": {
+    "vi": "Học endometrial cancer.",
+    "en": "Learn endometrial cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/endometrial-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "thyroid-cancer",
+  "gameId": "game-063",
+  "name": {
+    "vi": "Thyroid Cancer",
+    "en": "Thyroid Cancer"
+  },
+  "desc": {
+    "vi": "Học thyroid cancer.",
+    "en": "Learn thyroid cancer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/thyroid-cancer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "leukemia",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Leukemia",
+    "en": "Leukemia"
+  },
+  "desc": {
+    "vi": "Học leukemia detection.",
+    "en": "Learn leukemia detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/leukemia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lymphoma",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Lymphoma",
+    "en": "Lymphoma"
+  },
+  "desc": {
+    "vi": "Học lymphoma detection.",
+    "en": "Learn lymphoma detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lymphoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "multiple-myeloma",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Multiple Myeloma",
+    "en": "Multiple Myeloma"
+  },
+  "desc": {
+    "vi": "Học multiple myeloma.",
+    "en": "Learn multiple myeloma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/multiple-myeloma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sarcoma",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Sarcoma",
+    "en": "Sarcoma"
+  },
+  "desc": {
+    "vi": "Học sarcoma detection.",
+    "en": "Learn sarcoma detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sarcoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "neuroblastoma",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Neuroblastoma",
+    "en": "Neuroblastoma"
+  },
+  "desc": {
+    "vi": "Học neuroblastoma.",
+    "en": "Learn neuroblastoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/neuroblastoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "glioblastoma",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Glioblastoma",
+    "en": "Glioblastoma"
+  },
+  "desc": {
+    "vi": "Học glioblastoma.",
+    "en": "Learn glioblastoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/glioblastoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "meningioma",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Meningioma",
+    "en": "Meningioma"
+  },
+  "desc": {
+    "vi": "Học meningioma.",
+    "en": "Learn meningioma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/meningioma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pituitary-adenoma",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Pituitary Adenoma",
+    "en": "Pituitary Adenoma"
+  },
+  "desc": {
+    "vi": "Học pituitary adenoma.",
+    "en": "Learn pituitary adenoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pituitary-adenoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "acoustic-neuroma",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Acoustic Neuroma",
+    "en": "Acoustic Neuroma"
+  },
+  "desc": {
+    "vi": "Học acoustic neuroma.",
+    "en": "Learn acoustic neuroma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/acoustic-neuroma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "craniopharyngioma",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Craniopharyngioma",
+    "en": "Craniopharyngioma"
+  },
+  "desc": {
+    "vi": "Học craniopharyngioma.",
+    "en": "Learn craniopharyngioma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/craniopharyngioma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ependymoma",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Ependymoma",
+    "en": "Ependymoma"
+  },
+  "desc": {
+    "vi": "Học ependymoma.",
+    "en": "Learn ependymoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ependymoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "medulloblastoma",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Medulloblastoma",
+    "en": "Medulloblastoma"
+  },
+  "desc": {
+    "vi": "Học medulloblastoma.",
+    "en": "Learn medulloblastoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/medulloblastoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "oligodendroglioma",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Oligodendroglioma",
+    "en": "Oligodendroglioma"
+  },
+  "desc": {
+    "vi": "Học oligodendroglioma.",
+    "en": "Learn oligodendroglioma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/oligodendroglioma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "astrocytoma",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Astrocytoma",
+    "en": "Astrocytoma"
+  },
+  "desc": {
+    "vi": "Học astrocytoma.",
+    "en": "Learn astrocytoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/astrocytoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ependymal-tumor",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Ependymal Tumor",
+    "en": "Ependymal Tumor"
+  },
+  "desc": {
+    "vi": "Học ependymal tumor.",
+    "en": "Learn ependymal tumor."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ependymal-tumor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pineal-tumor",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Pineal Tumor",
+    "en": "Pineal Tumor"
+  },
+  "desc": {
+    "vi": "Học pineal tumor.",
+    "en": "Learn pineal tumor."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pineal-tumor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "choroid-plexus",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Choroid Plexus",
+    "en": "Choroid Plexus"
+  },
+  "desc": {
+    "vi": "Học choroid plexus tumor.",
+    "en": "Learn choroid plexus tumor."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/choroid-plexus/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pineocytoma",
+  "gameId": "game-081",
+  "name": {
+    "vi": "Pineocytoma",
+    "en": "Pineocytoma"
+  },
+  "desc": {
+    "vi": "Học pineocytoma.",
+    "en": "Learn pineocytoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pineocytoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pineoblastoma",
+  "gameId": "game-082",
+  "name": {
+    "vi": "Pineoblastoma",
+    "en": "Pineoblastoma"
+  },
+  "desc": {
+    "vi": "Học pineoblastoma.",
+    "en": "Learn pineoblastoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pineoblastoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "papillary-tumor",
+  "gameId": "game-083",
+  "name": {
+    "vi": "Papillary Tumor",
+    "en": "Papillary Tumor"
+  },
+  "desc": {
+    "vi": "Học papillary tumor.",
+    "en": "Learn papillary tumor."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/papillary-tumor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "atypical-teratoid",
+  "gameId": "game-084",
+  "name": {
+    "vi": "Atypical Teratoid",
+    "en": "Atypical Teratoid"
+  },
+  "desc": {
+    "vi": "Học atypical teratoid.",
+    "en": "Learn atypical teratoid."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/atypical-teratoid/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rhabdoid-tumor",
+  "gameId": "game-085",
+  "name": {
+    "vi": "Rhabdoid Tumor",
+    "en": "Rhabdoid Tumor"
+  },
+  "desc": {
+    "vi": "Học rhabdoid tumor.",
+    "en": "Learn rhabdoid tumor."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rhabdoid-tumor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hemangioblastoma",
+  "gameId": "game-086",
+  "name": {
+    "vi": "Hemangioblastoma",
+    "en": "Hemangioblastoma"
+  },
+  "desc": {
+    "vi": "Học hemangioblastoma.",
+    "en": "Learn hemangioblastoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hemangioblastoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "schwannoma",
+  "gameId": "game-087",
+  "name": {
+    "vi": "Schwannoma",
+    "en": "Schwannoma"
+  },
+  "desc": {
+    "vi": "Học schwannoma.",
+    "en": "Learn schwannoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/schwannoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "neurofibroma",
+  "gameId": "game-088",
+  "name": {
+    "vi": "Neurofibroma",
+    "en": "Neurofibroma"
+  },
+  "desc": {
+    "vi": "Học neurofibroma.",
+    "en": "Learn neurofibroma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/neurofibroma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ganglioglioma",
+  "gameId": "game-089",
+  "name": {
+    "vi": "Ganglioglioma",
+    "en": "Ganglioglioma"
+  },
+  "desc": {
+    "vi": "Học ganglioglioma.",
+    "en": "Learn ganglioglioma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ganglioglioma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dysembryoplastic",
+  "gameId": "game-090",
+  "name": {
+    "vi": "Dysembryoplastic",
+    "en": "Dysembryoplastic"
+  },
+  "desc": {
+    "vi": "Học dysembryoplastic.",
+    "en": "Learn dysembryoplastic."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dysembryoplastic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "central-neurocytoma",
+  "gameId": "game-091",
+  "name": {
+    "vi": "Central Neurocytoma",
+    "en": "Central Neurocytoma"
+  },
+  "desc": {
+    "vi": "Học central neurocytoma.",
+    "en": "Learn central neurocytoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/central-neurocytoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "subependymal-giant",
+  "gameId": "game-092",
+  "name": {
+    "vi": "Subependymal Giant",
+    "en": "Subependymal Giant"
+  },
+  "desc": {
+    "vi": "Học subependymal giant cell.",
+    "en": "Learn subependymal giant cell."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/subependymal-giant/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "desmoplastic-infantile",
+  "gameId": "game-093",
+  "name": {
+    "vi": "Desmoplastic Infantile",
+    "en": "Desmoplastic Infantile"
+  },
+  "desc": {
+    "vi": "Học desmoplastic infantile.",
+    "en": "Learn desmoplastic infantile."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/desmoplastic-infantile/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pleomorphic-xantho",
+  "gameId": "game-094",
+  "name": {
+    "vi": "Pleomorphic Xantho",
+    "en": "Pleomorphic Xantho"
+  },
+  "desc": {
+    "vi": "Học pleomorphic xanthoastrocytoma.",
+    "en": "Learn pleomorphic xanthoastrocytoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pleomorphic-xantho/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "papillary-glioneuronal",
+  "gameId": "game-095",
+  "name": {
+    "vi": "Papillary Glioneuronal",
+    "en": "Papillary Glioneuronal"
+  },
+  "desc": {
+    "vi": "Học papillary glioneuronal.",
+    "en": "Learn papillary glioneuronal."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/papillary-glioneuronal/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rosette-forming",
+  "gameId": "game-096",
+  "name": {
+    "vi": "Rosette Forming",
+    "en": "Rosette Forming"
+  },
+  "desc": {
+    "vi": "Học rosette forming.",
+    "en": "Learn rosette forming."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rosette-forming/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "diffuse-leptomeningeal",
+  "gameId": "game-097",
+  "name": {
+    "vi": "Diffuse Leptomeningeal",
+    "en": "Diffuse Leptomeningeal"
+  },
+  "desc": {
+    "vi": "Học diffuse leptomeningeal.",
+    "en": "Learn diffuse leptomeningeal."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/diffuse-leptomeningeal/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "disseminated-astrocytic",
+  "gameId": "game-098",
+  "name": {
+    "vi": "Disseminated Astrocytic",
+    "en": "Disseminated Astrocytic"
+  },
+  "desc": {
+    "vi": "Học disseminated astrocytic.",
+    "en": "Learn disseminated astrocytic."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/disseminated-astrocytic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gliomatosis-cerebri",
+  "gameId": "game-099",
+  "name": {
+    "vi": "Gliomatosis Cerebri",
+    "en": "Gliomatosis Cerebri"
+  },
+  "desc": {
+    "vi": "Học gliomatosis cerebri.",
+    "en": "Learn gliomatosis cerebri."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gliomatosis-cerebri/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "diffuse-midline",
+  "gameId": "game-100",
+  "name": {
+    "vi": "Diffuse Midline",
+    "en": "Diffuse Midline"
+  },
+  "desc": {
+    "vi": "Học diffuse midline glioma.",
+    "en": "Learn diffuse midline glioma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/diffuse-midline/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "diffuse-astrocytoma",
+  "gameId": "game-101",
+  "name": {
+    "vi": "Diffuse Astrocytoma",
+    "en": "Diffuse Astrocytoma"
+  },
+  "desc": {
+    "vi": "Học diffuse astrocytoma.",
+    "en": "Learn diffuse astrocytoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/diffuse-astrocytoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "anaplastic-astrocytoma",
+  "gameId": "game-102",
+  "name": {
+    "vi": "Anaplastic Astrocytoma",
+    "en": "Anaplastic Astrocytoma"
+  },
+  "desc": {
+    "vi": "Học anaplastic astrocytoma.",
+    "en": "Learn anaplastic astrocytoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/anaplastic-astrocytoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gliosarcoma",
+  "gameId": "game-103",
+  "name": {
+    "vi": "Gliosarcoma",
+    "en": "Gliosarcoma"
+  },
+  "desc": {
+    "vi": "Học gliosarcoma.",
+    "en": "Learn gliosarcoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gliosarcoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "astroblastoma",
+  "gameId": "game-104",
+  "name": {
+    "vi": "Astroblastoma",
+    "en": "Astroblastoma"
+  },
+  "desc": {
+    "vi": "Học astroblastoma.",
+    "en": "Learn astroblastoma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/astroblastoma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chordoid-glioma",
+  "gameId": "game-105",
+  "name": {
+    "vi": "Chordoid Glioma",
+    "en": "Chordoid Glioma"
+  },
+  "desc": {
+    "vi": "Học chordoid glioma.",
+    "en": "Learn chordoid glioma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chordoid-glioma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "angiocentric-glioma",
+  "gameId": "game-106",
+  "name": {
+    "vi": "Angiocentric Glioma",
+    "en": "Angiocentric Glioma"
+  },
+  "desc": {
+    "vi": "Học angiocentric glioma.",
+    "en": "Learn angiocentric glioma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/angiocentric-glioma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
 }
 ];
 
