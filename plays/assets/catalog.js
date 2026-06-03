@@ -2882,6 +2882,426 @@
   "genre": "simulation",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "ma-tran-giai-phap",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Ma Trận Giải Pháp",
+    "en": "Solution Matrix"
+  },
+  "desc": {
+    "vi": "Đánh giá & chọn giải pháp tối ưu.",
+    "en": "Evaluate & pick optimal solutions."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ma-tran-giai-phap/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ban-co-thi-truong",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Bàn Cờ Thị Trường",
+    "en": "Market Board"
+  },
+  "desc": {
+    "vi": "Chiến lược thị trường trên bàn cờ.",
+    "en": "Market strategy board game."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ban-co-thi-truong/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kien-truc-ke-hoach",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Kiến Trúc Kế Hoạch",
+    "en": "Plan Architect"
+  },
+  "desc": {
+    "vi": "Xây dựng kế hoạch chi tiết.",
+    "en": "Build detailed plans."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kien-truc-ke-hoach/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mo-hinh-kinh-doanh",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Mô Hình Kinh Doanh",
+    "en": "Model Canvas"
+  },
+  "desc": {
+    "vi": "Thiết kế mô hình kinh doanh.",
+    "en": "Design business models."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mo-hinh-kinh-doanh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dau-truong-goi-von",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Đấu Trường Gọi Vốn",
+    "en": "Pitch Arena"
+  },
+  "desc": {
+    "vi": "Thi gọi vốn đầu tư.",
+    "en": "Pitch competition."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dau-truong-goi-von/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "phong-lab-dinh-gia",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Phòng Lab Định Giá",
+    "en": "Pricing Lab"
+  },
+  "desc": {
+    "vi": "Thử nghiệm định giá sản phẩm.",
+    "en": "Pricing experiments."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/phong-lab-dinh-gia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cay-quyet-dinh-kinh-doanh",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Cây Quyết Định Kinh Doanh",
+    "en": "Decision Tree"
+  },
+  "desc": {
+    "vi": "Phân tích quyết định kinh doanh.",
+    "en": "Business decision trees."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cay-quyet-dinh-kinh-doanh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ly-luan-sang-tao",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Lý Luận Sáng Tạo",
+    "en": "Creative Reasoning"
+  },
+  "desc": {
+    "vi": "Suy luận sáng tạo giải quyết vấn đề.",
+    "en": "Creative problem reasoning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ly-luan-sang-tao/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "luat-kinh-doanh",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Luật Kinh Doanh",
+    "en": "Business Law Quest"
+  },
+  "desc": {
+    "vi": "Học luật qua tình huống thực tế.",
+    "en": "Learn law through real cases."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/luat-kinh-doanh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mo-phong-van-hanh",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Mô Phỏng Vận Hành",
+    "en": "Operations Sim"
+  },
+  "desc": {
+    "vi": "Mô phỏng vận hành doanh nghiệp.",
+    "en": "Business operations sim."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mo-phong-van-hanh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dong-thuan",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Đồng Thuận",
+    "en": "Consensus"
+  },
+  "desc": {
+    "vi": "Tìm tiếng nói chung trong nhóm.",
+    "en": "Find group consensus."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dong-thuan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nguoi-gac-su-that",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Người Gác Sự Thật",
+    "en": "Proof Keepers"
+  },
+  "desc": {
+    "vi": "Bảo vệ & kiểm chứng sự thật.",
+    "en": "Protect & verify truth."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nguoi-gac-su-that/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ban-giao-huong-dam-dong",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Bản Giao Hưởng Của Đám Đông",
+    "en": "Living Symphony"
+  },
+  "desc": {
+    "vi": "Phối hợp như dàn nhạc sống.",
+    "en": "Coordinate like a living symphony."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ban-giao-huong-dam-dong/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kham-ky-uc",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Khảm Ký Ức",
+    "en": "Memory Mosaic"
+  },
+  "desc": {
+    "vi": "Xếp ký ức thành tranh khảm.",
+    "en": "Piece memories into mosaic."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kham-ky-uc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "he-qua",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Hệ Quả",
+    "en": "Ripple"
+  },
+  "desc": {
+    "vi": "Quan sát hệ quả lan tỏa.",
+    "en": "Observe rippling consequences."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/he-qua/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nguoi-phien-dich-van-vat",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Người Phiên Dịch Vạn Vật",
+    "en": "Translator of All Things"
+  },
+  "desc": {
+    "vi": "Dịch ngôn ngữ vạn vật.",
+    "en": "Translate the language of things."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nguoi-phien-dich-van-vat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tro-choi-cau-hoi",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Trò Chơi Câu Hỏi",
+    "en": "The Question Game"
+  },
+  "desc": {
+    "vi": "Đặt câu hỏi để khám phá.",
+    "en": "Ask questions to discover."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tro-choi-cau-hoi/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "exploration",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "khu-vuon-chung",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Khu Vườn Chung",
+    "en": "The Commons"
+  },
+  "desc": {
+    "vi": "Quản lý nguồn lực chung.",
+    "en": "Manage shared resources."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/khu-vuon-chung/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tam-guong",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Tấm Gương",
+    "en": "The Mirror"
+  },
+  "desc": {
+    "vi": "Soi chiếu bản thân qua game.",
+    "en": "Self-reflection through play."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tam-guong/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflection",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "doi-vai",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Đổi Vai",
+    "en": "Walk In My Shoes"
+  },
+  "desc": {
+    "vi": "Trải nghiệm góc nhìn người khác.",
+    "en": "Experience another perspective."
+  },
+  "group": "exclusive",
+  "tier": 1,
+  "status": "live",
+  "path": "games/doi-vai/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
 }
 ];
 
