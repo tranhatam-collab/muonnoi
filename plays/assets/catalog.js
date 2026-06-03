@@ -19115,6 +19115,1980 @@
   "genre": "education",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "llm-prompt",
+  "gameId": "game-001",
+  "name": {
+    "vi": "LLM Prompt",
+    "en": "LLM Prompt"
+  },
+  "desc": {
+    "vi": "Tối ưu prompt cho LLM.",
+    "en": "Optimize LLM prompts."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/llm-prompt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prompt-engineer",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Prompt Engineer",
+    "en": "Prompt Engineer"
+  },
+  "desc": {
+    "vi": "Kỹ thuật prompt engineering.",
+    "en": "Prompt engineering techniques."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prompt-engineer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rag-builder",
+  "gameId": "game-003",
+  "name": {
+    "vi": "RAG Builder",
+    "en": "RAG Builder"
+  },
+  "desc": {
+    "vi": "Xây dựng hệ thống RAG.",
+    "en": "Build RAG systems."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rag-builder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "embed-search",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Embed Search",
+    "en": "Embed Search"
+  },
+  "desc": {
+    "vi": "Tìm kiếm vector embedding.",
+    "en": "Vector embedding search."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/embed-search/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fine-tune",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Fine Tune",
+    "en": "Fine Tune"
+  },
+  "desc": {
+    "vi": "Fine-tune mô hình.",
+    "en": "Fine-tune models."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fine-tune/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "model-eval",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Model Eval",
+    "en": "Model Eval"
+  },
+  "desc": {
+    "vi": "Đánh giá mô hình.",
+    "en": "Evaluate models."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/model-eval/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bias-audit",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Bias Audit",
+    "en": "Bias Audit"
+  },
+  "desc": {
+    "vi": "Kiểm tra thiên lệch mô hình.",
+    "en": "Audit model bias."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bias-audit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "safety-redteam",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Safety Redteam",
+    "en": "Safety Redteam"
+  },
+  "desc": {
+    "vi": "Redteam đánh giá an toàn.",
+    "en": "Safety redteam evaluation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/safety-redteam/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "agent-design",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Agent Design",
+    "en": "Agent Design"
+  },
+  "desc": {
+    "vi": "Thiết kế AI agent.",
+    "en": "Design AI agents."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/agent-design/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tool-use",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Tool Use",
+    "en": "Tool Use"
+  },
+  "desc": {
+    "vi": "AI sử dụng công cụ.",
+    "en": "AI tool use."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tool-use/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "memory-design",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Memory Design",
+    "en": "Memory Design"
+  },
+  "desc": {
+    "vi": "Thiết kế bộ nhớ agent.",
+    "en": "Design agent memory."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/memory-design/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "planning-loop",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Planning Loop",
+    "en": "Planning Loop"
+  },
+  "desc": {
+    "vi": "Vòng lặp lập kế hoạch agent.",
+    "en": "Agent planning loop."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/planning-loop/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "reflection-pattern",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Reflection Pattern",
+    "en": "Reflection Pattern"
+  },
+  "desc": {
+    "vi": "Pattern phản chiếu agent.",
+    "en": "Agent reflection patterns."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/reflection-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "multi-agent",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Multi Agent",
+    "en": "Multi Agent"
+  },
+  "desc": {
+    "vi": "Thiết kế hệ thống multi-agent.",
+    "en": "Design multi-agent systems."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/multi-agent/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "swarm-intel",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Swarm Intel",
+    "en": "Swarm Intel"
+  },
+  "desc": {
+    "vi": "Thiết kế swarm intelligence.",
+    "en": "Design swarm intelligence."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/swarm-intel/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "consensus-algo",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Consensus Algo",
+    "en": "Consensus Algo"
+  },
+  "desc": {
+    "vi": "Thuật toán đồng thuận agent.",
+    "en": "Agent consensus algorithms."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/consensus-algo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "orchestration",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Orchestration",
+    "en": "Orchestration"
+  },
+  "desc": {
+    "vi": "Orchestrate agent workflows.",
+    "en": "Orchestrate agent workflows."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/orchestration/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eval-framework",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Eval Framework",
+    "en": "Eval Framework"
+  },
+  "desc": {
+    "vi": "Xây dựng framework đánh giá.",
+    "en": "Build evaluation framework."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eval-framework/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "benchmark-run",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Benchmark Run",
+    "en": "Benchmark Run"
+  },
+  "desc": {
+    "vi": "Chạy benchmark mô hình.",
+    "en": "Run model benchmarks."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/benchmark-run/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dataset-curate",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Dataset Curate",
+    "en": "Dataset Curate"
+  },
+  "desc": {
+    "vi": "Curation dữ liệu huấn luyện.",
+    "en": "Curate training data."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dataset-curate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "synthetic-data",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Synthetic Data",
+    "en": "Synthetic Data"
+  },
+  "desc": {
+    "vi": "Tạo dữ liệu tổng hợp.",
+    "en": "Generate synthetic data."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/synthetic-data/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "data-augment",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Data Augment",
+    "en": "Data Augment"
+  },
+  "desc": {
+    "vi": "Tăng cường dữ liệu.",
+    "en": "Data augmentation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/data-augment/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "feature-engineer",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Feature Engineer",
+    "en": "Feature Engineer"
+  },
+  "desc": {
+    "vi": "Kỹ thuật feature engineering.",
+    "en": "Feature engineering."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/feature-engineer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "model-compress",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Model Compress",
+    "en": "Model Compress"
+  },
+  "desc": {
+    "vi": "Nén mô hình.",
+    "en": "Compress models."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/model-compress/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quantization",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Quantization",
+    "en": "Quantization"
+  },
+  "desc": {
+    "vi": "Lượng tử hóa mô hình.",
+    "en": "Quantize models."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quantization/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "distillation",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Distillation",
+    "en": "Distillation"
+  },
+  "desc": {
+    "vi": "Distill knowledge.",
+    "en": "Knowledge distillation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/distillation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pruning",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Pruning",
+    "en": "Pruning"
+  },
+  "desc": {
+    "vi": "Cắt tỉa mô hình.",
+    "en": "Prune models."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pruning/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "onnx-export",
+  "gameId": "game-028",
+  "name": {
+    "vi": "ONNX Export",
+    "en": "ONNX Export"
+  },
+  "desc": {
+    "vi": "Export sang ONNX.",
+    "en": "Export to ONNX."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/onnx-export/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tensorrt-opt",
+  "gameId": "game-029",
+  "name": {
+    "vi": "TensorRT Opt",
+    "en": "TensorRT Opt"
+  },
+  "desc": {
+    "vi": "Tối ưu TensorRT.",
+    "en": "Optimize TensorRT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tensorrt-opt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vllm-serve",
+  "gameId": "game-030",
+  "name": {
+    "vi": "vLLM Serve",
+    "en": "vLLM Serve"
+  },
+  "desc": {
+    "vi": "Serve mô hình vLLM.",
+    "en": "Serve models with vLLM."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vllm-serve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "triton-infer",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Triton Infer",
+    "en": "Triton Infer"
+  },
+  "desc": {
+    "vi": "Inference với Triton.",
+    "en": "Inference with Triton."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/triton-infer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "batch-infer",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Batch Infer",
+    "en": "Batch Infer"
+  },
+  "desc": {
+    "vi": "Batch inference.",
+    "en": "Batch inference."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/batch-infer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "streaming-gen",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Streaming Gen",
+    "en": "Streaming Gen"
+  },
+  "desc": {
+    "vi": "Streaming text generation.",
+    "en": "Streaming text generation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/streaming-gen/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spec-decode",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Spec Decode",
+    "en": "Spec Decode"
+  },
+  "desc": {
+    "vi": "Speculative decoding.",
+    "en": "Speculative decoding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spec-decode/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prompt-cache",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Prompt Cache",
+    "en": "Prompt Cache"
+  },
+  "desc": {
+    "vi": "Cache prompt.",
+    "en": "Prompt caching."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prompt-cache/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kv-cache",
+  "gameId": "game-036",
+  "name": {
+    "vi": "KV Cache",
+    "en": "KV Cache"
+  },
+  "desc": {
+    "vi": "KV cache optimization.",
+    "en": "KV cache optimization."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kv-cache/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "continuous-batch",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Continuous Batch",
+    "en": "Continuous Batch"
+  },
+  "desc": {
+    "vi": "Continuous batching.",
+    "en": "Continuous batching."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/continuous-batch/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prefix-caching",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Prefix Caching",
+    "en": "Prefix Caching"
+  },
+  "desc": {
+    "vi": "Prefix caching.",
+    "en": "Prefix caching."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prefix-caching/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chunk-prefill",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Chunk Prefill",
+    "en": "Chunk Prefill"
+  },
+  "desc": {
+    "vi": "Chunked prefill.",
+    "en": "Chunked prefill."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chunk-prefill/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tensor-parallel",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Tensor Parallel",
+    "en": "Tensor Parallel"
+  },
+  "desc": {
+    "vi": "Tensor parallelism.",
+    "en": "Tensor parallelism."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tensor-parallel/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pipeline-parallel",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Pipeline Parallel",
+    "en": "Pipeline Parallel"
+  },
+  "desc": {
+    "vi": "Pipeline parallelism.",
+    "en": "Pipeline parallelism."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pipeline-parallel/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sequence-parallel",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Sequence Parallel",
+    "en": "Sequence Parallel"
+  },
+  "desc": {
+    "vi": "Sequence parallelism.",
+    "en": "Sequence parallelism."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sequence-parallel/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "expert-parallel",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Expert Parallel",
+    "en": "Expert Parallel"
+  },
+  "desc": {
+    "vi": "Expert parallelism.",
+    "en": "Expert parallelism."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/expert-parallel/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dp-parallel",
+  "gameId": "game-044",
+  "name": {
+    "vi": "DP Parallel",
+    "en": "DP Parallel"
+  },
+  "desc": {
+    "vi": "Data parallelism.",
+    "en": "Data parallelism."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dp-parallel/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fsdp",
+  "gameId": "game-045",
+  "name": {
+    "vi": "FSDP",
+    "en": "FSDP"
+  },
+  "desc": {
+    "vi": "Fully sharded data parallelism.",
+    "en": "Fully sharded data parallelism."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fsdp/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "deepspeed",
+  "gameId": "game-046",
+  "name": {
+    "vi": "DeepSpeed",
+    "en": "DeepSpeed"
+  },
+  "desc": {
+    "vi": "DeepSpeed training.",
+    "en": "DeepSpeed training."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/deepspeed/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "megatron",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Megatron",
+    "en": "Megatron"
+  },
+  "desc": {
+    "vi": "Megatron-LM training.",
+    "en": "Megatron-LM training."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/megatron/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "colossal-ai",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Colossal AI",
+    "en": "Colossal AI"
+  },
+  "desc": {
+    "vi": "Colossal-AI training.",
+    "en": "Colossal-AI training."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/colossal-ai/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "accelerate",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Accelerate",
+    "en": "Accelerate"
+  },
+  "desc": {
+    "vi": "Hugging Face Accelerate.",
+    "en": "Hugging Face Accelerate."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/accelerate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "peft-lora",
+  "gameId": "game-050",
+  "name": {
+    "vi": "PEFT LoRA",
+    "en": "PEFT LoRA"
+  },
+  "desc": {
+    "vi": "LoRA fine-tuning.",
+    "en": "LoRA fine-tuning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/peft-lora/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "peft-qlora",
+  "gameId": "game-051",
+  "name": {
+    "vi": "PEFT QLoRA",
+    "en": "PEFT QLoRA"
+  },
+  "desc": {
+    "vi": "QLoRA fine-tuning.",
+    "en": "QLoRA fine-tuning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/peft-qlora/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ia3",
+  "gameId": "game-052",
+  "name": {
+    "vi": "IA3",
+    "en": "IA3"
+  },
+  "desc": {
+    "vi": "IA3 fine-tuning.",
+    "en": "IA3 fine-tuning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ia3/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "adalora",
+  "gameId": "game-053",
+  "name": {
+    "vi": "AdaLoRA",
+    "en": "AdaLoRA"
+  },
+  "desc": {
+    "vi": "AdaLoRA fine-tuning.",
+    "en": "AdaLoRA fine-tuning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/adalora/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prompt-tuning",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Prompt Tuning",
+    "en": "Prompt Tuning"
+  },
+  "desc": {
+    "vi": "Prompt tuning.",
+    "en": "Prompt tuning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prompt-tuning/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "p-tuning",
+  "gameId": "game-055",
+  "name": {
+    "vi": "P-Tuning",
+    "en": "P-Tuning"
+  },
+  "desc": {
+    "vi": "P-tuning v2.",
+    "en": "P-tuning v2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/p-tuning/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prefix-tuning",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Prefix Tuning",
+    "en": "Prefix Tuning"
+  },
+  "desc": {
+    "vi": "Prefix tuning.",
+    "en": "Prefix tuning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prefix-tuning/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bitfit",
+  "gameId": "game-057",
+  "name": {
+    "vi": "BitFit",
+    "en": "BitFit"
+  },
+  "desc": {
+    "vi": "BitFit fine-tuning.",
+    "en": "BitFit fine-tuning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bitfit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "diff-privacy",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Diff Privacy",
+    "en": "Diff Privacy"
+  },
+  "desc": {
+    "vi": "Differential privacy.",
+    "en": "Differential privacy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/diff-privacy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "federated-train",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Federated Train",
+    "en": "Federated Train"
+  },
+  "desc": {
+    "vi": "Federated learning.",
+    "en": "Federated learning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/federated-train/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "homomorphic",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Homomorphic",
+    "en": "Homomorphic"
+  },
+  "desc": {
+    "vi": "Homomorphic encryption.",
+    "en": "Homomorphic encryption."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/homomorphic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zk-ml",
+  "gameId": "game-061",
+  "name": {
+    "vi": "ZK-ML",
+    "en": "ZK-ML"
+  },
+  "desc": {
+    "vi": "Zero-knowledge ML.",
+    "en": "Zero-knowledge ML."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zk-ml/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tee-ml",
+  "gameId": "game-062",
+  "name": {
+    "vi": "TEE-ML",
+    "en": "TEE-ML"
+  },
+  "desc": {
+    "vi": "Trusted execution environment ML.",
+    "en": "TEE ML."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tee-ml/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mpc-ml",
+  "gameId": "game-063",
+  "name": {
+    "vi": "MPC-ML",
+    "en": "MPC-ML"
+  },
+  "desc": {
+    "vi": "Multi-party computation ML.",
+    "en": "MPC ML."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mpc-ml/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "model-watermark",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Model Watermark",
+    "en": "Model Watermark"
+  },
+  "desc": {
+    "vi": "Watermark mô hình.",
+    "en": "Model watermarking."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/model-watermark/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "model-fingerprint",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Model Fingerprint",
+    "en": "Model Fingerprint"
+  },
+  "desc": {
+    "vi": "Fingerprint mô hình.",
+    "en": "Model fingerprinting."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/model-fingerprint/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "membership-infer",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Membership Infer",
+    "en": "Membership Infer"
+  },
+  "desc": {
+    "vi": "Membership inference attack.",
+    "en": "Membership inference attack."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/membership-infer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "model-extraction",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Model Extraction",
+    "en": "Model Extraction"
+  },
+  "desc": {
+    "vi": "Model extraction attack.",
+    "en": "Model extraction attack."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/model-extraction/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "poison-detect",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Poison Detect",
+    "en": "Poison Detect"
+  },
+  "desc": {
+    "vi": "Phát hiện data poisoning.",
+    "en": "Detect data poisoning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/poison-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "backdoor-detect",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Backdoor Detect",
+    "en": "Backdoor Detect"
+  },
+  "desc": {
+    "vi": "Phát hiện backdoor.",
+    "en": "Detect backdoors."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/backdoor-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trojan-detect",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Trojan Detect",
+    "en": "Trojan Detect"
+  },
+  "desc": {
+    "vi": "Phát hiện trojan.",
+    "en": "Detect trojans."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trojan-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "adversarial-robust",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Adversarial Robust",
+    "en": "Adversarial Robust"
+  },
+  "desc": {
+    "vi": "Adversarial robustness.",
+    "en": "Adversarial robustness."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/adversarial-robust/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "certified-defense",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Certified Defense",
+    "en": "Certified Defense"
+  },
+  "desc": {
+    "vi": "Certified defenses.",
+    "en": "Certified defenses."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/certified-defense/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "randomized-smooth",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Randomized Smooth",
+    "en": "Randomized Smooth"
+  },
+  "desc": {
+    "vi": "Randomized smoothing.",
+    "en": "Randomized smoothing."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/randomized-smooth/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "input-validation",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Input Validation",
+    "en": "Input Validation"
+  },
+  "desc": {
+    "vi": "Input validation.",
+    "en": "Input validation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/input-validation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "output-filter",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Output Filter",
+    "en": "Output Filter"
+  },
+  "desc": {
+    "vi": "Output filtering.",
+    "en": "Output filtering."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/output-filter/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "guardrails",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Guardrails",
+    "en": "Guardrails"
+  },
+  "desc": {
+    "vi": "AI guardrails.",
+    "en": "AI guardrails."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/guardrails/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "content-policy",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Content Policy",
+    "en": "Content Policy"
+  },
+  "desc": {
+    "vi": "Content policy design.",
+    "en": "Content policy design."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/content-policy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "moderation-pipeline",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Moderation Pipeline",
+    "en": "Moderation Pipeline"
+  },
+  "desc": {
+    "vi": "Moderation pipeline.",
+    "en": "Moderation pipeline."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/moderation-pipeline/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "human-in-loop",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Human In Loop",
+    "en": "Human In Loop"
+  },
+  "desc": {
+    "vi": "Human-in-the-loop.",
+    "en": "Human-in-the-loop."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/human-in-loop/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "constitutional-ai",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Constitutional AI",
+    "en": "Constitutional AI"
+  },
+  "desc": {
+    "vi": "Constitutional AI.",
+    "en": "Constitutional AI."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/constitutional-ai/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rlhf",
+  "gameId": "game-081",
+  "name": {
+    "vi": "RLHF",
+    "en": "RLHF"
+  },
+  "desc": {
+    "vi": "Reinforcement learning from human feedback.",
+    "en": "RLHF."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rlhf/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dpo",
+  "gameId": "game-082",
+  "name": {
+    "vi": "DPO",
+    "en": "DPO"
+  },
+  "desc": {
+    "vi": "Direct preference optimization.",
+    "en": "Direct preference optimization."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dpo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ipo",
+  "gameId": "game-083",
+  "name": {
+    "vi": "IPO",
+    "en": "IPO"
+  },
+  "desc": {
+    "vi": "Identity preference optimization.",
+    "en": "Identity preference optimization."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ipo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kto",
+  "gameId": "game-084",
+  "name": {
+    "vi": "KTO",
+    "en": "KTO"
+  },
+  "desc": {
+    "vi": "Kahneman-Tversky optimization.",
+    "en": "Kahneman-Tversky optimization."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kto/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ppo",
+  "gameId": "game-085",
+  "name": {
+    "vi": "PPO",
+    "en": "PPO"
+  },
+  "desc": {
+    "vi": "Proximal policy optimization.",
+    "en": "Proximal policy optimization."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ppo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "grpo",
+  "gameId": "game-086",
+  "name": {
+    "vi": "GRPO",
+    "en": "GRPO"
+  },
+  "desc": {
+    "vi": "Group relative policy optimization.",
+    "en": "Group relative policy optimization."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/grpo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rejection-sample",
+  "gameId": "game-087",
+  "name": {
+    "vi": "Rejection Sample",
+    "en": "Rejection Sample"
+  },
+  "desc": {
+    "vi": "Rejection sampling.",
+    "en": "Rejection sampling."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rejection-sample/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "best-of-n",
+  "gameId": "game-088",
+  "name": {
+    "vi": "Best Of N",
+    "en": "Best Of N"
+  },
+  "desc": {
+    "vi": "Best-of-N sampling.",
+    "en": "Best-of-N sampling."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/best-of-n/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mcts-decoding",
+  "gameId": "game-089",
+  "name": {
+    "vi": "MCTS Decoding",
+    "en": "MCTS Decoding"
+  },
+  "desc": {
+    "vi": "MCTS decoding.",
+    "en": "MCTS decoding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mcts-decoding/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lookahead-decoding",
+  "gameId": "game-090",
+  "name": {
+    "vi": "Lookahead Decoding",
+    "en": "Lookahead Decoding"
+  },
+  "desc": {
+    "vi": "Lookahead decoding.",
+    "en": "Lookahead decoding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lookahead-decoding/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "medusa-decoding",
+  "gameId": "game-091",
+  "name": {
+    "vi": "Medusa Decoding",
+    "en": "Medusa Decoding"
+  },
+  "desc": {
+    "vi": "Medusa decoding.",
+    "en": "Medusa decoding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/medusa-decoding/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eagle-spec",
+  "gameId": "game-092",
+  "name": {
+    "vi": "Eagle Spec",
+    "en": "Eagle Spec"
+  },
+  "desc": {
+    "vi": "Eagle speculative decoding.",
+    "en": "Eagle speculative decoding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eagle-spec/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prompt-lookup",
+  "gameId": "game-093",
+  "name": {
+    "vi": "Prompt Lookup",
+    "en": "Prompt Lookup"
+  },
+  "desc": {
+    "vi": "Prompt lookup decoding.",
+    "en": "Prompt lookup decoding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prompt-lookup/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rest-decoding",
+  "gameId": "game-094",
+  "name": {
+    "vi": "Rest Decoding",
+    "en": "Rest Decoding"
+  },
+  "desc": {
+    "vi": "REST decoding.",
+    "en": "REST decoding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rest-decoding/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "ai",
+  "wave": 4,
+  "free": 5
 }
 ];
 
