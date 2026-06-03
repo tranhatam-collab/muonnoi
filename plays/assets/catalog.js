@@ -21089,6 +21089,2337 @@
   "genre": "ai",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "rust-basic",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Rust Cơ Bản",
+    "en": "Rust Basic"
+  },
+  "desc": {
+    "vi": "Học Rust cơ bản.",
+    "en": "Learn Rust basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rust-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "go-basic",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Go Cơ Bản",
+    "en": "Go Basic"
+  },
+  "desc": {
+    "vi": "Học Go cơ bản.",
+    "en": "Learn Go basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/go-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "swift-basic",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Swift Cơ Bản",
+    "en": "Swift Basic"
+  },
+  "desc": {
+    "vi": "Học Swift cơ bản.",
+    "en": "Learn Swift basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/swift-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kotlin-basic",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Kotlin Cơ Bản",
+    "en": "Kotlin Basic"
+  },
+  "desc": {
+    "vi": "Học Kotlin cơ bản.",
+    "en": "Learn Kotlin basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kotlin-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "scala-basic",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Scala Cơ Bản",
+    "en": "Scala Basic"
+  },
+  "desc": {
+    "vi": "Học Scala cơ bản.",
+    "en": "Learn Scala basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/scala-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "elixir-basic",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Elixir Cơ Bản",
+    "en": "Elixir Basic"
+  },
+  "desc": {
+    "vi": "Học Elixir cơ bản.",
+    "en": "Learn Elixir basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/elixir-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "haskell-basic",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Haskell Cơ Bản",
+    "en": "Haskell Basic"
+  },
+  "desc": {
+    "vi": "Học Haskell cơ bản.",
+    "en": "Learn Haskell basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/haskell-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ocaml-basic",
+  "gameId": "game-008",
+  "name": {
+    "vi": "OCaml Cơ Bản",
+    "en": "OCaml Basic"
+  },
+  "desc": {
+    "vi": "Học OCaml cơ bản.",
+    "en": "Learn OCaml basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ocaml-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "clojure-basic",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Clojure Cơ Bản",
+    "en": "Clojure Basic"
+  },
+  "desc": {
+    "vi": "Học Clojure cơ bản.",
+    "en": "Learn Clojure basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/clojure-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fsharp-basic",
+  "gameId": "game-010",
+  "name": {
+    "vi": "F# Cơ Bản",
+    "en": "F# Basic"
+  },
+  "desc": {
+    "vi": "Học F# cơ bản.",
+    "en": "Learn F# basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fsharp-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nim-basic",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Nim Cơ Bản",
+    "en": "Nim Basic"
+  },
+  "desc": {
+    "vi": "Học Nim cơ bản.",
+    "en": "Learn Nim basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nim-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "crystal-basic",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Crystal Cơ Bản",
+    "en": "Crystal Basic"
+  },
+  "desc": {
+    "vi": "Học Crystal cơ bản.",
+    "en": "Learn Crystal basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crystal-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "v-basic",
+  "gameId": "game-013",
+  "name": {
+    "vi": "V Cơ Bản",
+    "en": "V Basic"
+  },
+  "desc": {
+    "vi": "Học V language cơ bản.",
+    "en": "Learn V language basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/v-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gleam-basic",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Gleam Cơ Bản",
+    "en": "Gleam Basic"
+  },
+  "desc": {
+    "vi": "Học Gleam cơ bản.",
+    "en": "Learn Gleam basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gleam-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "carbon-lang",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Carbon",
+    "en": "Carbon Lang"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Carbon language.",
+    "en": "Learn Carbon language."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/carbon-lang/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cpp-basic",
+  "gameId": "game-016",
+  "name": {
+    "vi": "C++ Cơ Bản",
+    "en": "C++ Basic"
+  },
+  "desc": {
+    "vi": "Học C++ cơ bản.",
+    "en": "Learn C++ basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cpp-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "docker-basic",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Docker Cơ Bản",
+    "en": "Docker Basic"
+  },
+  "desc": {
+    "vi": "Học Docker cơ bản.",
+    "en": "Learn Docker basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/docker-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kubernetes-basic",
+  "gameId": "game-018",
+  "name": {
+    "vi": "K8s Cơ Bản",
+    "en": "K8s Basic"
+  },
+  "desc": {
+    "vi": "Học Kubernetes cơ bản.",
+    "en": "Learn Kubernetes basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kubernetes-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "terraform-basic",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Terraform Cơ Bản",
+    "en": "Terraform Basic"
+  },
+  "desc": {
+    "vi": "Học Terraform cơ bản.",
+    "en": "Learn Terraform basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/terraform-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ansible-basic",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Ansible Cơ Bản",
+    "en": "Ansible Basic"
+  },
+  "desc": {
+    "vi": "Học Ansible cơ bản.",
+    "en": "Learn Ansible basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ansible-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pulumi-basic",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Pulumi Cơ Bản",
+    "en": "Pulumi Basic"
+  },
+  "desc": {
+    "vi": "Học Pulumi cơ bản.",
+    "en": "Learn Pulumi basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pulumi-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "serverless-basic",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Serverless Cơ Bản",
+    "en": "Serverless Basic"
+  },
+  "desc": {
+    "vi": "Học serverless cơ bản.",
+    "en": "Learn serverless basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/serverless-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cloudflare-worker",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Cloudflare Worker",
+    "en": "Cloudflare Worker"
+  },
+  "desc": {
+    "vi": "Học Cloudflare Workers.",
+    "en": "Learn Cloudflare Workers."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cloudflare-worker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "supabase-db",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Supabase DB",
+    "en": "Supabase DB"
+  },
+  "desc": {
+    "vi": "Học Supabase database.",
+    "en": "Learn Supabase database."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/supabase-db/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prisma-orm",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Prisma ORM",
+    "en": "Prisma ORM"
+  },
+  "desc": {
+    "vi": "Học Prisma ORM.",
+    "en": "Learn Prisma ORM."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prisma-orm/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mongodb-basic",
+  "gameId": "game-026",
+  "name": {
+    "vi": "MongoDB Cơ Bản",
+    "en": "MongoDB Basic"
+  },
+  "desc": {
+    "vi": "Học MongoDB cơ bản.",
+    "en": "Learn MongoDB basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mongodb-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "redis-basic",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Redis Cơ Bản",
+    "en": "Redis Basic"
+  },
+  "desc": {
+    "vi": "Học Redis cơ bản.",
+    "en": "Learn Redis basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/redis-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kafka-basic",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Kafka Cơ Bản",
+    "en": "Kafka Basic"
+  },
+  "desc": {
+    "vi": "Học Kafka cơ bản.",
+    "en": "Learn Kafka basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kafka-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "grpc-basic",
+  "gameId": "game-029",
+  "name": {
+    "vi": "gRPC Cơ Bản",
+    "en": "gRPC Basic"
+  },
+  "desc": {
+    "vi": "Học gRPC cơ bản.",
+    "en": "Learn gRPC basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/grpc-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "graphql-basic",
+  "gameId": "game-030",
+  "name": {
+    "vi": "GraphQL Cơ Bản",
+    "en": "GraphQL Basic"
+  },
+  "desc": {
+    "vi": "Học GraphQL cơ bản.",
+    "en": "Learn GraphQL basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/graphql-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rest-api",
+  "gameId": "game-031",
+  "name": {
+    "vi": "REST API",
+    "en": "REST API"
+  },
+  "desc": {
+    "vi": "Học thiết kế REST API.",
+    "en": "Learn REST API design."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rest-api/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "openapi-spec",
+  "gameId": "game-032",
+  "name": {
+    "vi": "OpenAPI Spec",
+    "en": "OpenAPI Spec"
+  },
+  "desc": {
+    "vi": "Học OpenAPI specification.",
+    "en": "Learn OpenAPI spec."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/openapi-spec/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "clickhouse-query",
+  "gameId": "game-033",
+  "name": {
+    "vi": "ClickHouse Query",
+    "en": "ClickHouse Query"
+  },
+  "desc": {
+    "vi": "Học ClickHouse.",
+    "en": "Learn ClickHouse."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/clickhouse-query/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "duckdb-query",
+  "gameId": "game-034",
+  "name": {
+    "vi": "DuckDB Query",
+    "en": "DuckDB Query"
+  },
+  "desc": {
+    "vi": "Học DuckDB.",
+    "en": "Learn DuckDB."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/duckdb-query/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prometheus-query",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Prometheus Query",
+    "en": "Prometheus Query"
+  },
+  "desc": {
+    "vi": "Học Prometheus.",
+    "en": "Learn Prometheus."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prometheus-query/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "grafana-dash",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Grafana Dash",
+    "en": "Grafana Dash"
+  },
+  "desc": {
+    "vi": "Học Grafana dashboards.",
+    "en": "Learn Grafana dashboards."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/grafana-dash/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "opentelemetry",
+  "gameId": "game-037",
+  "name": {
+    "vi": "OpenTelemetry",
+    "en": "OpenTelemetry"
+  },
+  "desc": {
+    "vi": "Học OpenTelemetry.",
+    "en": "Learn OpenTelemetry."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/opentelemetry/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sentry-error",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Sentry Error",
+    "en": "Sentry Error"
+  },
+  "desc": {
+    "vi": "Học Sentry error tracking.",
+    "en": "Learn Sentry."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sentry-error/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chaos-engineer",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Chaos Engineer",
+    "en": "Chaos Engineer"
+  },
+  "desc": {
+    "vi": "Học Chaos Engineering.",
+    "en": "Learn Chaos Engineering."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chaos-engineer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "circuit-breaker",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Circuit Breaker",
+    "en": "Circuit Breaker"
+  },
+  "desc": {
+    "vi": "Thiết kế circuit breaker.",
+    "en": "Design circuit breakers."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/circuit-breaker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "event-driven",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Event Driven",
+    "en": "Event Driven"
+  },
+  "desc": {
+    "vi": "Thiết kế event-driven architecture.",
+    "en": "Design event-driven architecture."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/event-driven/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cqrs-pattern",
+  "gameId": "game-042",
+  "name": {
+    "vi": "CQRS Pattern",
+    "en": "CQRS Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế CQRS.",
+    "en": "Design CQRS pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cqrs-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "microservices",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Microservices",
+    "en": "Microservices"
+  },
+  "desc": {
+    "vi": "Thiết kế microservices.",
+    "en": "Design microservices."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/microservices/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "service-mesh",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Service Mesh",
+    "en": "Service Mesh"
+  },
+  "desc": {
+    "vi": "Thiết kế service mesh.",
+    "en": "Design service mesh."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/service-mesh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "api-gateway",
+  "gameId": "game-045",
+  "name": {
+    "vi": "API Gateway",
+    "en": "API Gateway"
+  },
+  "desc": {
+    "vi": "Thiết kế API gateway.",
+    "en": "Design API gateway."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/api-gateway/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sidecar-pattern",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Sidecar Pattern",
+    "en": "Sidecar Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế sidecar.",
+    "en": "Design sidecar pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sidecar-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": " ambassador-pattern",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Ambassador Pattern",
+    "en": "Ambassador Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế ambassador.",
+    "en": "Design ambassador pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ ambassador-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "adapter-pattern",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Adapter Pattern",
+    "en": "Adapter Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế adapter.",
+    "en": "Design adapter pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/adapter-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "decorator-pattern",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Decorator Pattern",
+    "en": "Decorator Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế decorator.",
+    "en": "Design decorator pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/decorator-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "facade-pattern",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Facade Pattern",
+    "en": "Facade Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế facade.",
+    "en": "Design facade pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/facade-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "proxy-pattern",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Proxy Pattern",
+    "en": "Proxy Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế proxy.",
+    "en": "Design proxy pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/proxy-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "composite-pattern",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Composite Pattern",
+    "en": "Composite Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế composite.",
+    "en": "Design composite pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/composite-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "flyweight-pattern",
+  "gameId": "game-053",
+  "name": {
+    "vi": "Flyweight Pattern",
+    "en": "Flyweight Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế flyweight.",
+    "en": "Design flyweight pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/flyweight-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bridge-pattern",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Bridge Pattern",
+    "en": "Bridge Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế bridge.",
+    "en": "Design bridge pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bridge-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "strategy-pattern",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Strategy Pattern",
+    "en": "Strategy Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế strategy.",
+    "en": "Design strategy pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/strategy-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "observer-pattern",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Observer Pattern",
+    "en": "Observer Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế observer.",
+    "en": "Design observer pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/observer-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "state-pattern",
+  "gameId": "game-057",
+  "name": {
+    "vi": "State Pattern",
+    "en": "State Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế state.",
+    "en": "Design state pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/state-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "command-pattern",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Command Pattern",
+    "en": "Command Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế command.",
+    "en": "Design command pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/command-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chain-responsibility",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Chain Responsibility",
+    "en": "Chain Responsibility"
+  },
+  "desc": {
+    "vi": "Thiết kế chain of responsibility.",
+    "en": "Design chain of responsibility."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chain-responsibility/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "visitor-pattern",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Visitor Pattern",
+    "en": "Visitor Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế visitor.",
+    "en": "Design visitor pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/visitor-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "iterator-pattern",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Iterator Pattern",
+    "en": "Iterator Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế iterator.",
+    "en": "Design iterator pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/iterator-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "memento-pattern",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Memento Pattern",
+    "en": "Memento Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế memento.",
+    "en": "Design memento pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/memento-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mediator-pattern",
+  "gameId": "game-063",
+  "name": {
+    "vi": "Mediator Pattern",
+    "en": "Mediator Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế mediator.",
+    "en": "Design mediator pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mediator-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "template-method",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Template Method",
+    "en": "Template Method"
+  },
+  "desc": {
+    "vi": "Thiết kế template method.",
+    "en": "Design template method."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/template-method/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "factory-method",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Factory Method",
+    "en": "Factory Method"
+  },
+  "desc": {
+    "vi": "Thiết kế factory method.",
+    "en": "Design factory method."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/factory-method/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "abstract-factory",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Abstract Factory",
+    "en": "Abstract Factory"
+  },
+  "desc": {
+    "vi": "Thiết kế abstract factory.",
+    "en": "Design abstract factory."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/abstract-factory/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "builder-pattern",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Builder Pattern",
+    "en": "Builder Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế builder.",
+    "en": "Design builder pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/builder-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prototype-pattern",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Prototype Pattern",
+    "en": "Prototype Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế prototype.",
+    "en": "Design prototype pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prototype-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "singleton-pattern",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Singleton Pattern",
+    "en": "Singleton Pattern"
+  },
+  "desc": {
+    "vi": "Thiết kế singleton.",
+    "en": "Design singleton pattern."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/singleton-pattern/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dependency-inject",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Dependency Inject",
+    "en": "Dependency Inject"
+  },
+  "desc": {
+    "vi": "Thiết kế dependency injection.",
+    "en": "Design dependency injection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dependency-inject/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "inversion-control",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Inversion Control",
+    "en": "Inversion Control"
+  },
+  "desc": {
+    "vi": "Thiết kế inversion of control.",
+    "en": "Design inversion of control."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/inversion-control/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "solid-principles",
+  "gameId": "game-072",
+  "name": {
+    "vi": "SOLID Principles",
+    "en": "SOLID Principles"
+  },
+  "desc": {
+    "vi": "Học SOLID principles.",
+    "en": "Learn SOLID principles."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/solid-principles/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dry-principle",
+  "gameId": "game-073",
+  "name": {
+    "vi": "DRY Principle",
+    "en": "DRY Principle"
+  },
+  "desc": {
+    "vi": "Học DRY principle.",
+    "en": "Learn DRY principle."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dry-principle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kiss-principle",
+  "gameId": "game-074",
+  "name": {
+    "vi": "KISS Principle",
+    "en": "KISS Principle"
+  },
+  "desc": {
+    "vi": "Học KISS principle.",
+    "en": "Learn KISS principle."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kiss-principle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yagni-principle",
+  "gameId": "game-075",
+  "name": {
+    "vi": "YAGNI Principle",
+    "en": "YAGNI Principle"
+  },
+  "desc": {
+    "vi": "Học YAGNI principle.",
+    "en": "Learn YAGNI principle."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yagni-principle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "separation-concerns",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Separation Concerns",
+    "en": "Separation Concerns"
+  },
+  "desc": {
+    "vi": "Học separation of concerns.",
+    "en": "Learn separation of concerns."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/separation-concerns/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "law-demeter",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Law Demeter",
+    "en": "Law Demeter"
+  },
+  "desc": {
+    "vi": "Học Law of Demeter.",
+    "en": "Learn Law of Demeter."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/law-demeter/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "composition-inherit",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Composition Inherit",
+    "en": "Composition Inherit"
+  },
+  "desc": {
+    "vi": "Học composition over inheritance.",
+    "en": "Learn composition over inheritance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/composition-inherit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "interface-segregate",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Interface Segregate",
+    "en": "Interface Segregate"
+  },
+  "desc": {
+    "vi": "Học interface segregation.",
+    "en": "Learn interface segregation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/interface-segregate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "liskov-substitute",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Liskov Substitute",
+    "en": "Liskov Substitute"
+  },
+  "desc": {
+    "vi": "Học Liskov substitution.",
+    "en": "Learn Liskov substitution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/liskov-substitute/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "open-closed",
+  "gameId": "game-081",
+  "name": {
+    "vi": "Open Closed",
+    "en": "Open Closed"
+  },
+  "desc": {
+    "vi": "Học open/closed principle.",
+    "en": "Learn open/closed principle."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/open-closed/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "single-responsibility",
+  "gameId": "game-082",
+  "name": {
+    "vi": "Single Responsibility",
+    "en": "Single Responsibility"
+  },
+  "desc": {
+    "vi": "Học single responsibility.",
+    "en": "Learn single responsibility."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/single-responsibility/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "clean-code",
+  "gameId": "game-083",
+  "name": {
+    "vi": "Clean Code",
+    "en": "Clean Code"
+  },
+  "desc": {
+    "vi": "Học clean code.",
+    "en": "Learn clean code."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/clean-code/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "refactoring",
+  "gameId": "game-084",
+  "name": {
+    "vi": "Refactoring",
+    "en": "Refactoring"
+  },
+  "desc": {
+    "vi": "Học refactoring.",
+    "en": "Learn refactoring."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/refactoring/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pair-programming",
+  "gameId": "game-085",
+  "name": {
+    "vi": "Pair Programming",
+    "en": "Pair Programming"
+  },
+  "desc": {
+    "vi": "Học pair programming.",
+    "en": "Learn pair programming."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pair-programming/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mob-programming",
+  "gameId": "game-086",
+  "name": {
+    "vi": "Mob Programming",
+    "en": "Mob Programming"
+  },
+  "desc": {
+    "vi": "Học mob programming.",
+    "en": "Learn mob programming."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mob-programming/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trunk-based",
+  "gameId": "game-087",
+  "name": {
+    "vi": "Trunk Based",
+    "en": "Trunk Based"
+  },
+  "desc": {
+    "vi": "Học trunk-based development.",
+    "en": "Learn trunk-based development."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trunk-based/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "feature-toggle",
+  "gameId": "game-088",
+  "name": {
+    "vi": "Feature Toggle",
+    "en": "Feature Toggle"
+  },
+  "desc": {
+    "vi": "Học feature toggles.",
+    "en": "Learn feature toggles."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/feature-toggle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "blue-green-deploy",
+  "gameId": "game-089",
+  "name": {
+    "vi": "Blue Green Deploy",
+    "en": "Blue Green Deploy"
+  },
+  "desc": {
+    "vi": "Học blue-green deployment.",
+    "en": "Learn blue-green deployment."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/blue-green-deploy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "canary-release",
+  "gameId": "game-090",
+  "name": {
+    "vi": "Canary Release",
+    "en": "Canary Release"
+  },
+  "desc": {
+    "vi": "Học canary release.",
+    "en": "Learn canary release."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/canary-release/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dark-launch",
+  "gameId": "game-091",
+  "name": {
+    "vi": "Dark Launch",
+    "en": "Dark Launch"
+  },
+  "desc": {
+    "vi": "Học dark launch.",
+    "en": "Learn dark launch."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dark-launch/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "a-b-test-deploy",
+  "gameId": "game-092",
+  "name": {
+    "vi": "A/B Test Deploy",
+    "en": "A/B Test Deploy"
+  },
+  "desc": {
+    "vi": "Học A/B testing deployment.",
+    "en": "Learn A/B testing deployment."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/a-b-test-deploy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "feature-flag",
+  "gameId": "game-093",
+  "name": {
+    "vi": "Feature Flag",
+    "en": "Feature Flag"
+  },
+  "desc": {
+    "vi": "Học feature flags.",
+    "en": "Learn feature flags."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/feature-flag/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "git-flow",
+  "gameId": "game-094",
+  "name": {
+    "vi": "Git Flow",
+    "en": "Git Flow"
+  },
+  "desc": {
+    "vi": "Học Git Flow.",
+    "en": "Learn Git Flow."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/git-flow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "github-flow",
+  "gameId": "game-095",
+  "name": {
+    "vi": "GitHub Flow",
+    "en": "GitHub Flow"
+  },
+  "desc": {
+    "vi": "Học GitHub Flow.",
+    "en": "Learn GitHub Flow."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/github-flow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gitlab-flow",
+  "gameId": "game-096",
+  "name": {
+    "vi": "GitLab Flow",
+    "en": "GitLab Flow"
+  },
+  "desc": {
+    "vi": "Học GitLab Flow.",
+    "en": "Learn GitLab Flow."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gitlab-flow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "one-flow",
+  "gameId": "game-097",
+  "name": {
+    "vi": "One Flow",
+    "en": "One Flow"
+  },
+  "desc": {
+    "vi": "Học One Flow.",
+    "en": "Learn One Flow."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/one-flow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "semantic-version",
+  "gameId": "game-098",
+  "name": {
+    "vi": "Semantic Version",
+    "en": "Semantic Version"
+  },
+  "desc": {
+    "vi": "Học semantic versioning.",
+    "en": "Learn semantic versioning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/semantic-version/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "conventional-commit",
+  "gameId": "game-099",
+  "name": {
+    "vi": "Conventional Commit",
+    "en": "Conventional Commit"
+  },
+  "desc": {
+    "vi": "Học conventional commits.",
+    "en": "Learn conventional commits."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/conventional-commit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "monorepo",
+  "gameId": "game-100",
+  "name": {
+    "vi": "Monorepo",
+    "en": "Monorepo"
+  },
+  "desc": {
+    "vi": "Học monorepo.",
+    "en": "Learn monorepo."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/monorepo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "polyrepo",
+  "gameId": "game-101",
+  "name": {
+    "vi": "Polyrepo",
+    "en": "Polyrepo"
+  },
+  "desc": {
+    "vi": "Học polyrepo.",
+    "en": "Learn polyrepo."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/polyrepo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nx-build",
+  "gameId": "game-102",
+  "name": {
+    "vi": "Nx Build",
+    "en": "Nx Build"
+  },
+  "desc": {
+    "vi": "Học Nx build system.",
+    "en": "Learn Nx build system."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nx-build/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "turborepo",
+  "gameId": "game-103",
+  "name": {
+    "vi": "Turborepo",
+    "en": "Turborepo"
+  },
+  "desc": {
+    "vi": "Học Turborepo.",
+    "en": "Learn Turborepo."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/turborepo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pnpm-workspace",
+  "gameId": "game-104",
+  "name": {
+    "vi": "pnpm Workspace",
+    "en": "pnpm Workspace"
+  },
+  "desc": {
+    "vi": "Học pnpm workspaces.",
+    "en": "Learn pnpm workspaces."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pnpm-workspace/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lerna-manage",
+  "gameId": "game-105",
+  "name": {
+    "vi": "Lerna Manage",
+    "en": "Lerna Manage"
+  },
+  "desc": {
+    "vi": "Học Lerna.",
+    "en": "Learn Lerna."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lerna-manage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "changeset-version",
+  "gameId": "game-106",
+  "name": {
+    "vi": "Changeset Version",
+    "en": "Changeset Version"
+  },
+  "desc": {
+    "vi": "Học changesets.",
+    "en": "Learn changesets."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/changeset-version/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "release-please",
+  "gameId": "game-107",
+  "name": {
+    "vi": "Release Please",
+    "en": "Release Please"
+  },
+  "desc": {
+    "vi": "Học release-please.",
+    "en": "Learn release-please."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/release-please/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "semantic-release",
+  "gameId": "game-108",
+  "name": {
+    "vi": "Semantic Release",
+    "en": "Semantic Release"
+  },
+  "desc": {
+    "vi": "Học semantic-release.",
+    "en": "Learn semantic-release."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/semantic-release/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "standard-version",
+  "gameId": "game-109",
+  "name": {
+    "vi": "Standard Version",
+    "en": "Standard Version"
+  },
+  "desc": {
+    "vi": "Học standard-version.",
+    "en": "Learn standard-version."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/standard-version/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "coventional-changelog",
+  "gameId": "game-110",
+  "name": {
+    "vi": "Conventional Changelog",
+    "en": "Conventional Changelog"
+  },
+  "desc": {
+    "vi": "Học conventional changelog.",
+    "en": "Learn conventional changelog."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/coventional-changelog/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "auto-changelog",
+  "gameId": "game-111",
+  "name": {
+    "vi": "Auto Changelog",
+    "en": "Auto Changelog"
+  },
+  "desc": {
+    "vi": "Học auto-changelog.",
+    "en": "Learn auto-changelog."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/auto-changelog/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "code",
+  "wave": 4,
+  "free": 5
 }
 ];
 
