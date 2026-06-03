@@ -3827,6 +3827,279 @@
   "genre": "wellness",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "typing-sprint",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Đua Gõ Chữ",
+    "en": "Typing Sprint"
+  },
+  "desc": {
+    "vi": "Gõ đoạn văn nhanh nhất có thể.",
+    "en": "Type paragraphs as fast as you can."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/typing-sprint/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dot-connect",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Nối Điểm",
+    "en": "Dot Connect"
+  },
+  "desc": {
+    "vi": "Nối các điểm cùng màu.",
+    "en": "Connect dots of same color."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dot-connect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "jigsaw-vi",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Ghép Hình",
+    "en": "Jigsaw VI"
+  },
+  "desc": {
+    "vi": "Ghép tranh từ các mảnh.",
+    "en": "Assemble pictures from pieces."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/jigsaw-vi/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "speed-math",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Toán Tốc Độ Cao",
+    "en": "Speed Math"
+  },
+  "desc": {
+    "vi": "Giải 100 phép toán nhanh.",
+    "en": "Solve 100 math problems fast."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/speed-math/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "focus-cursor",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Con Trỏ Tập Trung",
+    "en": "Focus Cursor"
+  },
+  "desc": {
+    "vi": "Theo dõi con trỏ biến mất.",
+    "en": "Track disappearing cursor."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/focus-cursor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "word-chain",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Chuỗi Từ",
+    "en": "Word Chain"
+  },
+  "desc": {
+    "vi": "Tạo chuỗi từ nối tiếp.",
+    "en": "Build word chains."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/word-chain/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "shadow-match",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Bóng Đổ",
+    "en": "Shadow Match"
+  },
+  "desc": {
+    "vi": "Ghép vật với bóng đúng.",
+    "en": "Match objects to shadows."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/shadow-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sequence-memory",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Chuỗi Ký Ức",
+    "en": "Sequence Memory"
+  },
+  "desc": {
+    "vi": "Nhớ & lặp chuỗi hình.",
+    "en": "Remember & repeat shape sequences."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sequence-memory/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "calm-ocean",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Đại Dương Yên Bình",
+    "en": "Calm Ocean"
+  },
+  "desc": {
+    "vi": "Thư giãn với đại dương ảo.",
+    "en": "Relax with virtual ocean."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/calm-ocean/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pomodoro-game",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Pomodoro",
+    "en": "Pomodoro Game"
+  },
+  "desc": {
+    "vi": "Game hóa kỹ thuật Pomodoro.",
+    "en": "Gamified Pomodoro technique."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pomodoro-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "habit-tracker",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Theo Dõi Thói Quen",
+    "en": "Habit Tracker"
+  },
+  "desc": {
+    "vi": "Đánh dấu thói quen hàng ngày.",
+    "en": "Track daily habits."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/habit-tracker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "energy-match",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Năng Lượng",
+    "en": "Energy Match"
+  },
+  "desc": {
+    "vi": "Ghép năng lượng tiêu cực/thành tích cực.",
+    "en": "Match energy to transform."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/energy-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "story-seeds",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Hạt Giống Truyện",
+    "en": "Story Seeds"
+  },
+  "desc": {
+    "vi": "Gieo hạt giống cho câu chuyện.",
+    "en": "Plant seeds for stories."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/story-seeds/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
 }
 ];
 
