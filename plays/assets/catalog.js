@@ -6725,6 +6725,531 @@
   "genre": "wellness",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "rock-paper-scissors",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Kéo Búa Bao",
+    "en": "Rock Paper Scissors"
+  },
+  "desc": {
+    "vi": "Oẳn tù tì cổ điển.",
+    "en": "Classic rock paper scissors."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rock-paper-scissors/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tic-tac-toe",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Cờ Caro",
+    "en": "Tic Tac Toe"
+  },
+  "desc": {
+    "vi": "Cờ caro 3x3 đơn giản.",
+    "en": "Simple 3x3 tic tac toe."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tic-tac-toe/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hangman-en",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Treo Cờ Tiếng Anh",
+    "en": "Hangman EN"
+  },
+  "desc": {
+    "vi": "Đoán từ tiếng Anh.",
+    "en": "Guess English words."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hangman-en/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "word-scramble",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Xáo Từ",
+    "en": "Word Scramble"
+  },
+  "desc": {
+    "vi": "Sắp xếp lại chữ cái.",
+    "en": "Rearrange scrambled letters."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/word-scramble/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "math-match",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Toán Ghép",
+    "en": "Math Match"
+  },
+  "desc": {
+    "vi": "Ghép phép toán với đáp án.",
+    "en": "Match equations to answers."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/math-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "shape-matcher",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Ghép Hình",
+    "en": "Shape Matcher"
+  },
+  "desc": {
+    "vi": "Ghép hình với tên đúng.",
+    "en": "Match shapes to names."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/shape-matcher/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "color-sequence",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Chuỗi Màu",
+    "en": "Color Sequence"
+  },
+  "desc": {
+    "vi": "Nhớ & lặp chuỗi màu.",
+    "en": "Remember & repeat color sequence."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/color-sequence/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sound-memory",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Âm Thanh Ký Ức",
+    "en": "Sound Memory"
+  },
+  "desc": {
+    "vi": "Nhớ & lặp chuỗi âm thanh.",
+    "en": "Remember & repeat sound sequence."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sound-memory/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spot-difference",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Tìm Khác Biệt",
+    "en": "Spot Difference"
+  },
+  "desc": {
+    "vi": "Tìm điểm khác trong hai hình.",
+    "en": "Spot differences between images."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spot-difference/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "maze-solver",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Giải Mê Cung",
+    "en": "Maze Solver"
+  },
+  "desc": {
+    "vi": "Tìm đường qua mê cung ngẫu nhiên.",
+    "en": "Find path through random maze."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/maze-solver/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sliding-puzzle",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Trượt Ô Số",
+    "en": "Sliding Puzzle"
+  },
+  "desc": {
+    "vi": "Xếp số theo thứ tự bằng trượt.",
+    "en": "Slide tiles to order numbers."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sliding-puzzle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tower-hanoi",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Tháp Hà Nội",
+    "en": "Tower Hanoi"
+  },
+  "desc": {
+    "vi": "Di chuyển tháp theo quy tắc.",
+    "en": "Move tower following rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tower-hanoi/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nim-game",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Nim",
+    "en": "Nim Game"
+  },
+  "desc": {
+    "vi": "Chiến thuật lấy que Nim.",
+    "en": "Nim stick strategy game."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nim-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "connect-four",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Xếp 4",
+    "en": "Connect Four"
+  },
+  "desc": {
+    "vi": "Xếp 4 quân liên tiếp.",
+    "en": "Connect four in a row."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/connect-four/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "checkers-lite",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Cờ Đam Nhẹ",
+    "en": "Checkers Lite"
+  },
+  "desc": {
+    "vi": "Cờ đam đơn giản.",
+    "en": "Simple checkers game."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/checkers-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chess-puzzle",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Thế Cờ",
+    "en": "Chess Puzzle"
+  },
+  "desc": {
+    "vi": "Giải thế cờ.",
+    "en": "Solve chess puzzles."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chess-puzzle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sudoku-6x6",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Sudoku 6x6",
+    "en": "Sudoku 6x6"
+  },
+  "desc": {
+    "vi": "Sudoku 6x6 đơn giản.",
+    "en": "Simple 6x6 Sudoku."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sudoku-6x6/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kakuro-lite",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Kakuro Nhẹ",
+    "en": "Kakuro Lite"
+  },
+  "desc": {
+    "vi": "Kakuro đơn giản.",
+    "en": "Simple Kakuro puzzle."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kakuro-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kenken-lite",
+  "gameId": "game-019",
+  "name": {
+    "vi": "KenKen Nhẹ",
+    "en": "KenKen Lite"
+  },
+  "desc": {
+    "vi": "KenKen đơn giản.",
+    "en": "Simple KenKen puzzle."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kenken-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "futoshiki",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Futoshiki",
+    "en": "Futoshiki"
+  },
+  "desc": {
+    "vi": "Giải Futoshiki bất đẳng thức.",
+    "en": "Solve Futoshiki inequalities."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/futoshiki/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "str8ts-lite",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Str8ts Nhẹ",
+    "en": "Str8ts Lite"
+  },
+  "desc": {
+    "vi": "Str8ts đơn giản.",
+    "en": "Simple Str8ts puzzle."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/str8ts-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "binary-puzzle",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Nhị Phân",
+    "en": "Binary Puzzle"
+  },
+  "desc": {
+    "vi": "Giải mã nhị phân.",
+    "en": "Solve binary puzzle."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/binary-puzzle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nonogram-lite",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Nonogram Nhẹ",
+    "en": "Nonogram Lite"
+  },
+  "desc": {
+    "vi": "Giải tranh chấm Nonogram.",
+    "en": "Solve Nonogram picture."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nonogram-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "picross-lite",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Picross Nhẹ",
+    "en": "Picross Lite"
+  },
+  "desc": {
+    "vi": "Giải Picross đơn giản.",
+    "en": "Simple Picross puzzle."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/picross-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "griddler",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Griddler",
+    "en": "Griddler"
+  },
+  "desc": {
+    "vi": "Giải Griddler logic.",
+    "en": "Solve Griddler logic."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/griddler/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
 }
 ];
 
