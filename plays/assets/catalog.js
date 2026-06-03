@@ -4625,6 +4625,531 @@
   "genre": "creative",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "color-harmony",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Hòa Sắc",
+    "en": "Color Harmony"
+  },
+  "desc": {
+    "vi": "Tạo bảng màu hài hòa.",
+    "en": "Create harmonious color palettes."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/color-harmony/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "font-pairing",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Ghép Font",
+    "en": "Font Pairing"
+  },
+  "desc": {
+    "vi": "Ghép cặp font chữ đẹp.",
+    "en": "Pair beautiful fonts."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/font-pairing/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "logo-sketch",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Phác Thảo Logo",
+    "en": "Logo Sketch"
+  },
+  "desc": {
+    "vi": "Phác thảo logo nhanh.",
+    "en": "Sketch logos quickly."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/logo-sketch/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pitch-deck",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Bài Trình Bày",
+    "en": "Pitch Deck"
+  },
+  "desc": {
+    "vi": "Tạo slide pitch đơn giản.",
+    "en": "Create simple pitch slides."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pitch-deck/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "swot-game",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Trò SWOT",
+    "en": "SWOT Game"
+  },
+  "desc": {
+    "vi": "Phân tích SWOT tương tác.",
+    "en": "Interactive SWOT analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/swot-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "customer-journey",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Hành Trình Khách",
+    "en": "Customer Journey"
+  },
+  "desc": {
+    "vi": "Vẽ hành trình khách hàng.",
+    "en": "Map customer journey."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/customer-journey/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "value-proposition",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Giá Trị Cốt Lõi",
+    "en": "Value Proposition"
+  },
+  "desc": {
+    "vi": "Xác định giá trị cốt lõi.",
+    "en": "Define value proposition."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/value-proposition/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "competitor-map",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Bản Đồ Đối Thủ",
+    "en": "Competitor Map"
+  },
+  "desc": {
+    "vi": "Vẽ bản đồ đối thủ cạnh tranh.",
+    "en": "Map competitors."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/competitor-map/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "user-persona",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Chân Dung Người Dùng",
+    "en": "User Persona"
+  },
+  "desc": {
+    "vi": "Tạo chân dung người dùng.",
+    "en": "Create user personas."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/user-persona/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "feature-priority",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Ưu Tiên Tính Năng",
+    "en": "Feature Priority"
+  },
+  "desc": {
+    "vi": "Sắp xếp tính năng theo giá trị.",
+    "en": "Prioritize features by value."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/feature-priority/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "retro-board",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Bảng Hồi Tưởng",
+    "en": "Retro Board"
+  },
+  "desc": {
+    "vi": "Bảng retrospective đơn giản.",
+    "en": "Simple retro board."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/retro-board/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mood-board",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Bảng Cảm Xúc",
+    "en": "Mood Board"
+  },
+  "desc": {
+    "vi": "Tạo bảng cảm xúc thiết kế.",
+    "en": "Create design mood boards."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mood-board/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "style-guide",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Hướng Dẫn Phong Cách",
+    "en": "Style Guide"
+  },
+  "desc": {
+    "vi": "Tạo hướng dẫn phong cách.",
+    "en": "Create style guides."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/style-guide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "wireframe-kit",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Bộ Khung",
+    "en": "Wireframe Kit"
+  },
+  "desc": {
+    "vi": "Vẽ wireframe nhanh.",
+    "en": "Quick wireframe sketching."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/wireframe-kit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sprint-planner",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Lập Kế Hoạch Sprint",
+    "en": "Sprint Planner"
+  },
+  "desc": {
+    "vi": "Lập kế hoạch sprint đơn giản.",
+    "en": "Simple sprint planning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sprint-planner/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "okr-tracker",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Theo Dõi OKR",
+    "en": "OKR Tracker"
+  },
+  "desc": {
+    "vi": "Theo dõi mục tiêu OKR.",
+    "en": "Track OKR goals."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/okr-tracker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kanban-flow",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Kanban",
+    "en": "Kanban Flow"
+  },
+  "desc": {
+    "vi": "Bảng kanban tương tác.",
+    "en": "Interactive kanban board."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kanban-flow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "time-block",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Khối Thời Gian",
+    "en": "Time Block"
+  },
+  "desc": {
+    "vi": "Lập lịch khối thời gian.",
+    "en": "Time block scheduling."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/time-block/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "deep-work",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Làm Sâu",
+    "en": "Deep Work"
+  },
+  "desc": {
+    "vi": "Hẹn giờ làm việc sâu.",
+    "en": "Deep work timer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/deep-work/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "distraction-log",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Nhật Ký Xao Nhãng",
+    "en": "Distraction Log"
+  },
+  "desc": {
+    "vi": "Ghi chép & quản lý xao nhãng.",
+    "en": "Log & manage distractions."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/distraction-log/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "energy-diary",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Nhật Ký Năng Lượng",
+    "en": "Energy Diary"
+  },
+  "desc": {
+    "vi": "Theo dõi năng lượng cả ngày.",
+    "en": "Track energy levels."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/energy-diary/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sleep-tracker",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Theo Dõi Giấc Ngủ",
+    "en": "Sleep Tracker"
+  },
+  "desc": {
+    "vi": "Ghi nhận thói quen ngủ.",
+    "en": "Track sleep habits."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sleep-tracker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hydration-reminder",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Nhắc Uống Nước",
+    "en": "Hydration Reminder"
+  },
+  "desc": {
+    "vi": "Nhắc uống nước đều đặn.",
+    "en": "Hydration reminders."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hydration-reminder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stretch-timer",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Hẹn Giờ Giãn Cơ",
+    "en": "Stretch Timer"
+  },
+  "desc": {
+    "vi": "Hẹn giờ giãn cơ làm việc.",
+    "en": "Stretch break timer."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stretch-timer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eye-rest",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Nghỉ Mắt",
+    "en": "Eye Rest"
+  },
+  "desc": {
+    "vi": "Nhắc nghỉ mắt theo 20-20-20.",
+    "en": "20-20-20 eye rest reminder."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eye-rest/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
 }
 ];
 
