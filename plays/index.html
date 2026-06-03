@@ -5,8 +5,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Muôn Nơi · Plays — Mục lục trò chơi</title>
   <meta name="description" content="Play Layer của Muôn Nơi: 5 tầng game. Chơi 3–5 lượt miễn phí không cần tài khoản; đăng ký để chơi tiếp, lưu lịch sử và nhận Muôn Điểm."/>
+  <link rel="canonical" href="https://plays.muonnoi.org/"/>
+  <link rel="alternate" hreflang="vi" href="https://plays.muonnoi.org/"/>
+  <link rel="alternate" hreflang="en" href="https://plays.muonnoi.org/?lang=en"/>
+  <link rel="alternate" hreflang="x-default" href="https://plays.muonnoi.org/"/>
   <link rel="stylesheet" href="assets/plays.css">
   <link rel="manifest" href="manifest.json">
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Muôn Nơi · Plays",
+    "alternateName":"Muon Noi Plays",
+    "url":"https://plays.muonnoi.org/",
+    "description":"102 trò chơi không có màn cuối — từ Micro Games đến Civilization Games. Chơi thử miễn phí, không quảng cáo.",
+    "inLanguage":["vi","en"],
+    "publisher":{"@type":"Organization","name":"Muôn Nơi · Muôn Nói","url":"https://muonnoi.org"},
+    "potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://plays.muonnoi.org/?search={search_term_string}"},"query-input":"required name=search_term_string"}
+  }</script>
   <style>
     .rules{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
     .rules .chip{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);
@@ -32,6 +47,7 @@
       <div class="nav">
         <span class="pill" id="authPill">Đang kiểm tra…</span>
         <span class="pill" id="pointsPill" title="Muôn Điểm">◇ —</span>
+        <span class="pill" id="langToggle" style="cursor:pointer" title="Ngôn ngữ / Language">🇻🇳 VI</span>
         <a class="pill" href="https://muonnoi.org">muonnoi.org</a>
       </div>
     </div>
@@ -109,26 +125,50 @@
     const C = window.MN_CATALOG;
     const TIERS = C.tiers, GROUPS = C.groups;
     let activeGroup = 'all';
+    let lang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('mn_lang') || 'vi';
+    function t(obj) { return obj[lang] || obj.vi || obj.en || ''; }
+    function setLang(l) {
+      lang = l; localStorage.setItem('mn_lang', l);
+      document.documentElement.lang = l;
+      document.getElementById('langToggle').textContent = l==='vi'?'🇻🇳 VI':'🇬🇧 EN';
+      render(); updateHero();
+    }
+    function updateHero(){
+      const hero = {
+        vi: { tag:'Game đưa con người ra khỏi màn hình', h2:'Mục lục trò chơi — Đỉnh núi không có thật, nhưng mỗi bước chân thì có.', p:'Play Layer của Muôn Nơi — 5 tầng game từ <b>giải trí nhanh</b> tới <b>kiến tạo cộng đồng thật</b>. Mỗi game <b>không có màn cuối</b>: bạn đua với chính mình.', btn:'🎲 Chơi ngẫu nhiên', search:'🔍 Tìm game...' },
+        en: { tag:'Games that bring people off-screen', h2:'Game Catalog — The summit is not real, but every step is.', p:'Play Layer of Muon Noi — 5 tiers from <b>quick entertainment</b> to <b>real community building</b>. Every game <b>has no final level</b>: you compete with yourself.', btn:'🎲 Random game', search:'🔍 Search game...' }
+      };
+      const h = hero[lang]||hero.vi;
+      document.querySelector('.hero .tag').textContent = h.tag;
+      document.querySelector('.hero h2').textContent = h.h2;
+      document.querySelector('.hero p.small').innerHTML = h.p;
+      document.getElementById('btn-random').textContent = h.btn;
+      document.getElementById('search').placeholder = h.search;
+    }
 
+    const BADGES = {
+      vi: { live:'CHƠI ĐƯỢC', newip:'IP MỚI', wave1:'ĐANG LÊN KẾ HOẠCH', roadmap:'LỘ TRÌNH' },
+      en: { live:'PLAYABLE', newip:'NEW IP', wave1:'PLANNED', roadmap:'ROADMAP' }
+    };
+    const FREE_LABELS = { vi:'lượt miễn phí', en:'free plays' };
+    const TIER_LABELS = { vi:'Tầng', en:'Tier' };
     function badgeFor(g){
-      if (g.status === 'live')  return '<span class="badge live">CHƠI ĐƯỢC</span>';
-      if (g.status === 'newip') return '<span class="badge">IP MỚI</span>';
-      if (g.status === 'wave1') return '<span class="badge soon">ĐANG LÊN KẾ HOẠCH</span>';
-      return '<span class="badge">LỘ TRÌNH</span>';
+      const b = BADGES[lang] || BADGES.vi;
+      return `<span class="badge ${g.status==='live'?'live':g.status==='wave1'?'soon':''}">${b[g.status]||b.roadmap}</span>`;
     }
     function card(g){
       const live = g.status === 'live';
       const eco = g.eco ? `<div class="genre">↔ ${g.eco}</div>` : '';
-      const free = live ? `<div class="free" data-free="${g.id}">${g.free||3} lượt miễn phí</div>` : '';
-      const nameVi = g.name ? g.name.vi : (g.n || g.id);
-      const nameEn = g.name ? g.name.en : (g.en || '');
-      const desc = g.desc ? g.desc.vi : (g.d || '');
+      const free = live ? `<div class="free" data-free="${g.id}">${g.free||3} ${FREE_LABELS[lang]||FREE_LABELS.vi}</div>` : '';
+      const name = t(g.name || {});
+      const desc = t(g.desc || {});
+      const groupLabel = t(GROUPS[g.group] || {});
       const path = g.path || g.file || '#';
       const inner = `
         <div class="thumb">${(GROUPS[g.group]||{}).icon||'🎮'}</div>
         ${badgeFor(g)}
-        <h3>${nameVi}</h3>
-        <div class="genre">${nameEn} · Tầng ${g.tier}</div>
+        <h3>${name}</h3>
+        <div class="genre">${groupLabel} · ${TIER_LABELS[lang]||TIER_LABELS.vi} ${g.tier}</div>
         ${eco}
         ${desc?`<div class="desc">${desc}</div>`:''}
         ${live?'<div class="pg" data-pg="'+g.id+'"></div>':''}
@@ -160,9 +200,9 @@
         const list = C.games.filter(g => g.tier===t && match(g));
         if (!list.length) continue;
         const T = TIERS[t];
-        toc.innerHTML += `<a href="#tier${t}">Tầng ${t} · ${T.vi} (${list.length})</a>`;
+        toc.innerHTML += `<a href="#tier${t}">${TIER_LABELS[lang]||'Tầng'} ${t} · ${t(T)} (${list.length})</a>`;
         host.innerHTML += `
-          <div class="section" id="tier${t}"><h2>Tầng ${t} · ${T.vi}</h2><span class="count">${T.note} · ${list.length} game</span></div>
+          <div class="section" id="tier${t}"><h2>${TIER_LABELS[lang]||'Tầng'} ${t} · ${t(T)}</h2><span class="count">${T.note} · ${list.length} game</span></div>
           <div class="games">${list.map(card).join('')}</div>`;
       }
       paintProgress();
@@ -171,7 +211,8 @@
     (function(){
       const f = document.getElementById('filters');
       const keys = ['all'].concat(Object.keys(GROUPS));
-      f.innerHTML = keys.map(k => `<span class="pill ${k==='all'?'active':''}" data-g="${k}">${k==='all'?'Tất cả':(GROUPS[k].icon+' '+GROUPS[k].vi)}</span>`).join('');
+      const ALL_LABEL = { vi:'Tất cả', en:'All' };
+      f.innerHTML = keys.map(k => `<span class="pill ${k==='all'?'active':''}" data-g="${k}">${k==='all'?(ALL_LABEL[lang]||'Tất cả'):(GROUPS[k].icon+' '+t(GROUPS[k]))}</span>`).join('');
       f.querySelectorAll('.pill').forEach(p => p.onclick = () => {
         activeGroup = p.dataset.g;
         f.querySelectorAll('.pill').forEach(x=>x.classList.toggle('active', x===p));
@@ -287,6 +328,10 @@
         location.href = 'detail.html?id=' + pick.id;
       }
     });
+
+    // Language toggle
+    document.getElementById('langToggle').addEventListener('click', () => setLang(lang==='vi'?'en':'vi'));
+    setLang(lang);
   </script>
 </body>
 </html>

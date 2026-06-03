@@ -2147,7 +2147,742 @@
     "genre": "creative",
     "wave": 4,
     "free": 5
-  }
+  },
+{
+  "id": "cay-tu-vung",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Cây Từ Vựng",
+    "en": "Vocabulary Tree"
+  },
+  "desc": {
+    "vi": "Xây dựng cây từ vựng theo chủ đề.",
+    "en": "Build vocabulary trees by topic."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cay-tu-vung/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "phan-loai-than-toc",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Phân Loại Thần Tốc",
+    "en": "Quick Sort"
+  },
+  "desc": {
+    "vi": "Phân loại từ vào đúng nhóm.",
+    "en": "Sort words into correct groups."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/phan-loai-than-toc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "duong-ong-nghia",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Đường Ống Nghĩa",
+    "en": "Meaning Pipes"
+  },
+  "desc": {
+    "vi": "Nối từ với nghĩa qua đường ống.",
+    "en": "Connect words to meanings through pipes."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/duong-ong-nghia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "suy-luan-ngu-canh",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Suy Luận Ngữ Cảnh",
+    "en": "Context Detective"
+  },
+  "desc": {
+    "vi": "Đoán từ từ ngữ cảnh.",
+    "en": "Guess words from context clues."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/suy-luan-ngu-canh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "doi-chu",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Đối Chữ",
+    "en": "Word Duel"
+  },
+  "desc": {
+    "vi": "Thi đấu từ vựng hai người.",
+    "en": "Vocabulary duel for two players."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/doi-chu/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ban-do-tu",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Bản Đồ Từ",
+    "en": "Word Map"
+  },
+  "desc": {
+    "vi": "Tạo bản đồ từ liên quan.",
+    "en": "Create maps of related words."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ban-do-tu/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "noi-cham",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Nối Chấm",
+    "en": "Connect the Dots"
+  },
+  "desc": {
+    "vi": "Nối các chấm theo thứ tự.",
+    "en": "Connect dots in order."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/noi-cham/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "do-theo-net-mo",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Đồ Theo Nét Mờ",
+    "en": "Trace & Fade"
+  },
+  "desc": {
+    "vi": "Tập vẽ theo nét mờ.",
+    "en": "Trace fading outlines."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/do-theo-net-mo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ghep-hinh-sang-tao",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Ghép Hình Sáng Tạo",
+    "en": "Shape Maker"
+  },
+  "desc": {
+    "vi": "Ghép hình từ các khối cơ bản.",
+    "en": "Build shapes from basic blocks."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ghep-hinh-sang-tao/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "doi-xung-ky-dieu",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Đối Xứng Kỳ Diệu",
+    "en": "Symmetry Mirror"
+  },
+  "desc": {
+    "vi": "Vẽ đối xứng qua gương.",
+    "en": "Draw with symmetry mirror."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/doi-xung-ky-dieu/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ve-hoan-thanh",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Vẽ Hoàn Thành",
+    "en": "Finish the Drawing"
+  },
+  "desc": {
+    "vi": "Hoàn thành bức vẽ dở.",
+    "en": "Finish incomplete drawings."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ve-hoan-thanh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ke-chuyen-bang-tranh",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Kể Chuyện Bằng Tranh",
+    "en": "Draw a Story"
+  },
+  "desc": {
+    "vi": "Vẽ tranh kể một câu chuyện.",
+    "en": "Draw a comic story."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ke-chuyen-bang-tranh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ve-theo-cam-xuc",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Vẽ Theo Cảm Xúc",
+    "en": "Draw the Feeling"
+  },
+  "desc": {
+    "vi": "Vẽ cảm xúc qua màu sắc.",
+    "en": "Draw feelings through colors."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ve-theo-cam-xuc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "phong-tranh-song",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Phòng Tranh Sống",
+    "en": "Animate It"
+  },
+  "desc": {
+    "vi": "Tạo hình động đơn giản.",
+    "en": "Create simple animations."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/phong-tranh-song/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "xuong-sang-tao-tu-do",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Xưởng Sáng Tạo Tự Do",
+    "en": "Free Studio"
+  },
+  "desc": {
+    "vi": "Studio sáng tạo tự do.",
+    "en": "Free creativity studio."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/xuong-sang-tao-tu-do/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "thap-ky-uc",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Tháp Ký Ức",
+    "en": "Mind Stack"
+  },
+  "desc": {
+    "vi": "Xếp tháp ký ức theo thứ tự.",
+    "en": "Stack memories in order."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/thap-ky-uc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "khoi-xoay-trong-dau",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Khối Xoay Trong Đầu",
+    "en": "MindCube"
+  },
+  "desc": {
+    "vi": "Xoay khối 3D trong đầu.",
+    "en": "Rotate 3D cubes mentally."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/khoi-xoay-trong-dau/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "co-tien-tri",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Cờ Tiên Tri",
+    "en": "Foresight"
+  },
+  "desc": {
+    "vi": "Dự đoán nước cờ đối thủ.",
+    "en": "Predict opponent moves."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/co-tien-tri/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tia-chop-y",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Tia Chớp Ý",
+    "en": "Sparks"
+  },
+  "desc": {
+    "vi": "Nối ý tưởng nhanh nhất.",
+    "en": "Connect ideas fastest."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tia-chop-y/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reaction",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "truc-giac-xac-suat",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Trực Giác Xác Suất",
+    "en": "Hunch"
+  },
+  "desc": {
+    "vi": "Đoán xác suất chính xác.",
+    "en": "Guess probabilities accurately."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/truc-giac-xac-suat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dong-thac-chu-y",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Dòng Thác Chú Ý",
+    "en": "Flow"
+  },
+  "desc": {
+    "vi": "Duy trì tập trung qua thử thách.",
+    "en": "Maintain focus through challenges."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dong-thac-chu-y/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cam-quy-luat",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Cảm Quy Luật",
+    "en": "Aha"
+  },
+  "desc": {
+    "vi": "Tìm quy luật ẩn nhanh chóng.",
+    "en": "Find hidden patterns quickly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cam-quy-luat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nguoi-mo-phong",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Người Mô Phỏng",
+    "en": "Simulor"
+  },
+  "desc": {
+    "vi": "Mô phỏng kết quả các sự kiện.",
+    "en": "Simulate event outcomes."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nguoi-mo-phong/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cung-dien-ky-uc",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Cung Điện Ký Ức",
+    "en": "Memory Palace"
+  },
+  "desc": {
+    "vi": "Xây cung điện ký ức.",
+    "en": "Build memory palaces."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cung-dien-ky-uc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tri-tue-tu-soi",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Trí Tuệ Tự Soi",
+    "en": "Metamind"
+  },
+  "desc": {
+    "vi": "Phân tích cách bạn suy nghĩ.",
+    "en": "Analyze your own thinking."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tri-tue-tu-soi/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflection",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "san-khau-tinh-huong",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Sân Khấu Tình Huống",
+    "en": "Role-play Studio"
+  },
+  "desc": {
+    "vi": "Nhập vai xử lý tình huống.",
+    "en": "Role-play situation handling."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/san-khau-tinh-huong/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dau-truong-tan-gau",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Đấu Trường Tán Gẫu",
+    "en": "Small Talk Arena"
+  },
+  "desc": {
+    "vi": "Luyện giao tiếp xã giao.",
+    "en": "Practice small talk skills."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dau-truong-tan-gau/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lang-nghe-chu-dong",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Lắng Nghe Chủ Động",
+    "en": "Active Listening"
+  },
+  "desc": {
+    "vi": "Luyện kỹ năng lắng nghe.",
+    "en": "Practice active listening."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lang-nghe-chu-dong/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sac-thai-van-phong",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Sắc Thái & Văn Phong",
+    "en": "Tone & Register"
+  },
+  "desc": {
+    "vi": "Nhận biết sắc thái lời nói.",
+    "en": "Recognize tone & register."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sac-thai-van-phong/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dau-thuyet-phuc",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Đấu Thuyết Phục",
+    "en": "Persuasion Duel"
+  },
+  "desc": {
+    "vi": "Thi thuyết phục đối phương.",
+    "en": "Persuasion duel."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dau-thuyet-phuc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "suy-luan-luoi",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Suy Luận Lưới",
+    "en": "Logic Grid"
+  },
+  "desc": {
+    "vi": "Giải lưới suy luận logic.",
+    "en": "Solve logic grid puzzles."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/suy-luan-luoi/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tho-san-nguy-bien",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Thợ Săn Ngụy Biện",
+    "en": "Fallacy Hunter"
+  },
+  "desc": {
+    "vi": "Tìm lỗi ngụy biện.",
+    "en": "Hunt logical fallacies."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tho-san-nguy-bien/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kien-truc-lap-luan",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Kiến Trúc Lập Luận",
+    "en": "Argument Architect"
+  },
+  "desc": {
+    "vi": "Xây dựng lập luận vững.",
+    "en": "Build solid arguments."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kien-truc-lap-luan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "phong-thi-nghiem-quyet-dinh",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Phòng Thí Nghiệm Quyết Định",
+    "en": "Decision Lab"
+  },
+  "desc": {
+    "vi": "Thử nghiệm quyết định.",
+    "en": "Test decision-making."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/phong-thi-nghiem-quyet-dinh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mo-phong-dam-phan",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Mô Phỏng Đàm Phán",
+    "en": "Negotiation Sim"
+  },
+  "desc": {
+    "vi": "Mô phỏng đàm phán.",
+    "en": "Negotiation simulation."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mo-phong-dam-phan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+}
 ];
 
   const CATALOG = {
