@@ -36293,6 +36293,2988 @@
   "genre": "math",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "chemotherapy",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Chemotherapy",
+    "en": "Chemotherapy"
+  },
+  "desc": {
+    "vi": "Học chemotherapy protocols.",
+    "en": "Learn chemotherapy protocols."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chemotherapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "radiation-therapy",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Radiation Therapy",
+    "en": "Radiation Therapy"
+  },
+  "desc": {
+    "vi": "Học radiation therapy.",
+    "en": "Learn radiation therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/radiation-therapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "immunotherapy",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Immunotherapy",
+    "en": "Immunotherapy"
+  },
+  "desc": {
+    "vi": "Học immunotherapy.",
+    "en": "Learn immunotherapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/immunotherapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "targeted-therapy",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Targeted Therapy",
+    "en": "Targeted Therapy"
+  },
+  "desc": {
+    "vi": "Học targeted therapy.",
+    "en": "Learn targeted therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/targeted-therapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hormone-therapy",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Hormone Therapy",
+    "en": "Hormone Therapy"
+  },
+  "desc": {
+    "vi": "Học hormone therapy.",
+    "en": "Learn hormone therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hormone-therapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stem-cell",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Stem Cell",
+    "en": "Stem Cell"
+  },
+  "desc": {
+    "vi": "Học stem cell transplant.",
+    "en": "Learn stem cell transplant."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stem-cell/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bone-marrow",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Bone Marrow",
+    "en": "Bone Marrow"
+  },
+  "desc": {
+    "vi": "Học bone marrow transplant.",
+    "en": "Learn bone marrow transplant."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bone-marrow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "car-t-cell",
+  "gameId": "game-008",
+  "name": {
+    "vi": "CAR-T Cell",
+    "en": "CAR-T Cell"
+  },
+  "desc": {
+    "vi": "Học CAR-T cell therapy.",
+    "en": "Learn CAR-T cell therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/car-t-cell/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gene-therapy",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Gene Therapy",
+    "en": "Gene Therapy"
+  },
+  "desc": {
+    "vi": "Học gene therapy.",
+    "en": "Learn gene therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gene-therapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "crispr-therapy",
+  "gameId": "game-010",
+  "name": {
+    "vi": "CRISPR Therapy",
+    "en": "CRISPR Therapy"
+  },
+  "desc": {
+    "vi": "Học CRISPR therapy.",
+    "en": "Learn CRISPR therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crispr-therapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "viral-therapy",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Viral Therapy",
+    "en": "Viral Therapy"
+  },
+  "desc": {
+    "vi": "Học oncolytic viral therapy.",
+    "en": "Learn oncolytic viral therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/viral-therapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "photodynamic",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Photodynamic",
+    "en": "Photodynamic"
+  },
+  "desc": {
+    "vi": "Học photodynamic therapy.",
+    "en": "Learn photodynamic therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/photodynamic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hyperthermia",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Hyperthermia",
+    "en": "Hyperthermia"
+  },
+  "desc": {
+    "vi": "Học hyperthermia.",
+    "en": "Learn hyperthermia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hyperthermia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cryotherapy",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Cryotherapy",
+    "en": "Cryotherapy"
+  },
+  "desc": {
+    "vi": "Học cryotherapy.",
+    "en": "Learn cryotherapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cryotherapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "radiofrequency",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Radiofrequency",
+    "en": "Radiofrequency"
+  },
+  "desc": {
+    "vi": "Học radiofrequency ablation.",
+    "en": "Learn radiofrequency ablation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/radiofrequency/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "microwave-ablation",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Microwave Ablation",
+    "en": "Microwave Ablation"
+  },
+  "desc": {
+    "vi": "Học microwave ablation.",
+    "en": "Learn microwave ablation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/microwave-ablation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "proton-therapy",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Proton Therapy",
+    "en": "Proton Therapy"
+  },
+  "desc": {
+    "vi": "Học proton therapy.",
+    "en": "Learn proton therapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/proton-therapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "brachytherapy",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Brachytherapy",
+    "en": "Brachytherapy"
+  },
+  "desc": {
+    "vi": "Học brachytherapy.",
+    "en": "Learn brachytherapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/brachytherapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stereotactic-radiosurgery",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Stereotactic Radiosurgery",
+    "en": "Stereotactic Radiosurgery"
+  },
+  "desc": {
+    "vi": "Học stereotactic radiosurgery.",
+    "en": "Learn stereotactic radiosurgery."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stereotactic-radiosurgery/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gamma-knife",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Gamma Knife",
+    "en": "Gamma Knife"
+  },
+  "desc": {
+    "vi": "Học Gamma Knife.",
+    "en": "Learn Gamma Knife."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gamma-knife/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cyberknife",
+  "gameId": "game-021",
+  "name": {
+    "vi": "CyberKnife",
+    "en": "CyberKnife"
+  },
+  "desc": {
+    "vi": "Học CyberKnife.",
+    "en": "Learn CyberKnife."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cyberknife/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tomotherapy",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Tomotherapy",
+    "en": "Tomotherapy"
+  },
+  "desc": {
+    "vi": "Học tomotherapy.",
+    "en": "Learn tomotherapy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tomotherapy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rapidarc",
+  "gameId": "game-023",
+  "name": {
+    "vi": "RapidArc",
+    "en": "RapidArc"
+  },
+  "desc": {
+    "vi": "Học RapidArc.",
+    "en": "Learn RapidArc."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rapidarc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vmat",
+  "gameId": "game-024",
+  "name": {
+    "vi": "VMAT",
+    "en": "VMAT"
+  },
+  "desc": {
+    "vi": "Học VMAT.",
+    "en": "Learn VMAT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vmat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "imrt",
+  "gameId": "game-025",
+  "name": {
+    "vi": "IMRT",
+    "en": "IMRT"
+  },
+  "desc": {
+    "vi": "Học IMRT.",
+    "en": "Learn IMRT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/imrt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "igrt",
+  "gameId": "game-026",
+  "name": {
+    "vi": "IGRT",
+    "en": "IGRT"
+  },
+  "desc": {
+    "vi": "Học IGRT.",
+    "en": "Learn IGRT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/igrt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sbrt",
+  "gameId": "game-027",
+  "name": {
+    "vi": "SBRT",
+    "en": "SBRT"
+  },
+  "desc": {
+    "vi": "Học SBRT.",
+    "en": "Learn SBRT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sbrt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "srs",
+  "gameId": "game-028",
+  "name": {
+    "vi": "SRS",
+    "en": "SRS"
+  },
+  "desc": {
+    "vi": "Học SRS.",
+    "en": "Learn SRS."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/srs/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chop-protocol",
+  "gameId": "game-029",
+  "name": {
+    "vi": "CHOP Protocol",
+    "en": "CHOP Protocol"
+  },
+  "desc": {
+    "vi": "Học CHOP protocol.",
+    "en": "Learn CHOP protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chop-protocol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "r-chop",
+  "gameId": "game-030",
+  "name": {
+    "vi": "R-CHOP",
+    "en": "R-CHOP"
+  },
+  "desc": {
+    "vi": "Học R-CHOP protocol.",
+    "en": "Learn R-CHOP protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/r-chop/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "r-epoch",
+  "gameId": "game-031",
+  "name": {
+    "vi": "R-EPOCH",
+    "en": "R-EPOCH"
+  },
+  "desc": {
+    "vi": "Học R-EPOCH protocol.",
+    "en": "Learn R-EPOCH protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/r-epoch/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "abvd",
+  "gameId": "game-032",
+  "name": {
+    "vi": "ABVD",
+    "en": "ABVD"
+  },
+  "desc": {
+    "vi": "Học ABVD protocol.",
+    "en": "Learn ABVD protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/abvd/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "beacopp",
+  "gameId": "game-033",
+  "name": {
+    "vi": "BEACOPP",
+    "en": "BEACOPP"
+  },
+  "desc": {
+    "vi": "Học BEACOPP protocol.",
+    "en": "Learn BEACOPP protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/beacopp/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "folfirinox",
+  "gameId": "game-034",
+  "name": {
+    "vi": "FOLFIRINOX",
+    "en": "FOLFIRINOX"
+  },
+  "desc": {
+    "vi": "Học FOLFIRINOX protocol.",
+    "en": "Learn FOLFIRINOX protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/folfirinox/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gemcitabine",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Gemcitabine",
+    "en": "Gemcitabine"
+  },
+  "desc": {
+    "vi": "Học gemcitabine protocol.",
+    "en": "Learn gemcitabine protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gemcitabine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "folfox",
+  "gameId": "game-036",
+  "name": {
+    "vi": "FOLFOX",
+    "en": "FOLFOX"
+  },
+  "desc": {
+    "vi": "Học FOLFOX protocol.",
+    "en": "Learn FOLFOX protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/folfox/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "folfiri",
+  "gameId": "game-037",
+  "name": {
+    "vi": "FOLFIRI",
+    "en": "FOLFIRI"
+  },
+  "desc": {
+    "vi": "Học FOLFIRI protocol.",
+    "en": "Learn FOLFIRI protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/folfiri/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "capox",
+  "gameId": "game-038",
+  "name": {
+    "vi": "CAPOX",
+    "en": "CAPOX"
+  },
+  "desc": {
+    "vi": "Học CAPOX protocol.",
+    "en": "Learn CAPOX protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/capox/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "xelox",
+  "gameId": "game-039",
+  "name": {
+    "vi": "XELOX",
+    "en": "XELOX"
+  },
+  "desc": {
+    "vi": "Học XELOX protocol.",
+    "en": "Learn XELOX protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/xelox/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gcsf",
+  "gameId": "game-040",
+  "name": {
+    "vi": "G-CSF",
+    "en": "G-CSF"
+  },
+  "desc": {
+    "vi": "Học G-CSF support.",
+    "en": "Learn G-CSF support."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gcsf/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "transfusion",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Transfusion",
+    "en": "Transfusion"
+  },
+  "desc": {
+    "vi": "Học transfusion support.",
+    "en": "Learn transfusion support."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/transfusion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "platelet-transfusion",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Platelet Transfusion",
+    "en": "Platelet Transfusion"
+  },
+  "desc": {
+    "vi": "Học platelet transfusion.",
+    "en": "Learn platelet transfusion."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/platelet-transfusion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "antibiotic-prophylaxis",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Antibiotic Prophylaxis",
+    "en": "Antibiotic Prophylaxis"
+  },
+  "desc": {
+    "vi": "Học antibiotic prophylaxis.",
+    "en": "Learn antibiotic prophylaxis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/antibiotic-prophylaxis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "antifungal-prophylaxis",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Antifungal Prophylaxis",
+    "en": "Antifungal Prophylaxis"
+  },
+  "desc": {
+    "vi": "Học antifungal prophylaxis.",
+    "en": "Learn antifungal prophylaxis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/antifungal-prophylaxis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "antiviral-prophylaxis",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Antiviral Prophylaxis",
+    "en": "Antiviral Prophylaxis"
+  },
+  "desc": {
+    "vi": "Học antiviral prophylaxis.",
+    "en": "Learn antiviral prophylaxis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/antiviral-prophylaxis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pneumocystis-prophylaxis",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Pneumocystis Prophylaxis",
+    "en": "Pneumocystis Prophylaxis"
+  },
+  "desc": {
+    "vi": "Học Pneumocystis prophylaxis.",
+    "en": "Learn Pneumocystis prophylaxis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pneumocystis-prophylaxis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "toxoplasmosis-prophylaxis",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Toxoplasmosis Prophylaxis",
+    "en": "Toxoplasmosis Prophylaxis"
+  },
+  "desc": {
+    "vi": "Học Toxoplasmosis prophylaxis.",
+    "en": "Learn Toxoplasmosis prophylaxis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/toxoplasmosis-prophylaxis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cmv-prophylaxis",
+  "gameId": "game-048",
+  "name": {
+    "vi": "CMV Prophylaxis",
+    "en": "CMV Prophylaxis"
+  },
+  "desc": {
+    "vi": "Học CMV prophylaxis.",
+    "en": "Learn CMV prophylaxis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cmv-prophylaxis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vaccination-schedule",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Vaccination Schedule",
+    "en": "Vaccination Schedule"
+  },
+  "desc": {
+    "vi": "Học vaccination schedule.",
+    "en": "Learn vaccination schedule."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vaccination-schedule/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chemo-induced-nausea",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Chemo Induced Nausea",
+    "en": "Chemo Induced Nausea"
+  },
+  "desc": {
+    "vi": "Học CINV management.",
+    "en": "Learn CINV management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chemo-induced-nausea/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "neutropenia",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Neutropenia",
+    "en": "Neutropenia"
+  },
+  "desc": {
+    "vi": "Học neutropenia management.",
+    "en": "Learn neutropenia management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/neutropenia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "febrile-neutropenia",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Febrile Neutropenia",
+    "en": "Febrile Neutropenia"
+  },
+  "desc": {
+    "vi": "Học febrile neutropenia.",
+    "en": "Learn febrile neutropenia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/febrile-neutropenia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "thrombocytopenia",
+  "gameId": "game-053",
+  "name": {
+    "vi": "Thrombocytopenia",
+    "en": "Thrombocytopenia"
+  },
+  "desc": {
+    "vi": "Học thrombocytopenia management.",
+    "en": "Learn thrombocytopenia management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/thrombocytopenia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "anemia",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Anemia",
+    "en": "Anemia"
+  },
+  "desc": {
+    "vi": "Học anemia management.",
+    "en": "Learn anemia management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/anemia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fatigue",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Fatigue",
+    "en": "Fatigue"
+  },
+  "desc": {
+    "vi": "Học cancer-related fatigue.",
+    "en": "Learn cancer-related fatigue."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fatigue/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pain-management",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Pain Management",
+    "en": "Pain Management"
+  },
+  "desc": {
+    "vi": "Học cancer pain management.",
+    "en": "Learn cancer pain management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pain-management/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "neuropathic-pain",
+  "gameId": "game-057",
+  "name": {
+    "vi": "Neuropathic Pain",
+    "en": "Neuropathic Pain"
+  },
+  "desc": {
+    "vi": "Học neuropathic pain management.",
+    "en": "Learn neuropathic pain management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/neuropathic-pain/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "breakthrough-pain",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Breakthrough Pain",
+    "en": "Breakthrough Pain"
+  },
+  "desc": {
+    "vi": "Học breakthrough pain management.",
+    "en": "Learn breakthrough pain management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/breakthrough-pain/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "opioid-conversion",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Opioid Conversion",
+    "en": "Opioid Conversion"
+  },
+  "desc": {
+    "vi": "Học opioid conversion.",
+    "en": "Learn opioid conversion."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/opioid-conversion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pca-pump",
+  "gameId": "game-060",
+  "name": {
+    "vi": "PCA Pump",
+    "en": "PCA Pump"
+  },
+  "desc": {
+    "vi": "Học PCA pump management.",
+    "en": "Learn PCA pump management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pca-pump/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "epidural-analgesia",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Epidural Analgesia",
+    "en": "Epidural Analgesia"
+  },
+  "desc": {
+    "vi": "Học epidural analgesia.",
+    "en": "Learn epidural analgesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/epidural-analgesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spinal-analgesia",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Spinal Analgesia",
+    "en": "Spinal Analgesia"
+  },
+  "desc": {
+    "vi": "Học spinal analgesia.",
+    "en": "Learn spinal analgesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spinal-analgesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nerve-block",
+  "gameId": "game-063",
+  "name": {
+    "vi": "Nerve Block",
+    "en": "Nerve Block"
+  },
+  "desc": {
+    "vi": "Học nerve block.",
+    "en": "Learn nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nerve-block/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "radiofrequency-ablation-pain",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Radiofrequency Ablation Pain",
+    "en": "Radiofrequency Ablation Pain"
+  },
+  "desc": {
+    "vi": "Học radiofrequency ablation for pain.",
+    "en": "Learn radiofrequency ablation for pain."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/radiofrequency-ablation-pain/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spinal-cord-stimulator",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Spinal Cord Stimulator",
+    "en": "Spinal Cord Stimulator"
+  },
+  "desc": {
+    "vi": "Học spinal cord stimulation.",
+    "en": "Learn spinal cord stimulation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spinal-cord-stimulator/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "intrathecal-pump",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Intrathecal Pump",
+    "en": "Intrathecal Pump"
+  },
+  "desc": {
+    "vi": "Học intrathecal pump.",
+    "en": "Learn intrathecal pump."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/intrathecal-pump/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "celiac-plexus-block",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Celiac Plexus Block",
+    "en": "Celiac Plexus Block"
+  },
+  "desc": {
+    "vi": "Học celiac plexus block.",
+    "en": "Learn celiac plexus block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/celiac-plexus-block/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lumbar-sympathetic",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Lumbar Sympathetic",
+    "en": "Lumbar Sympathetic"
+  },
+  "desc": {
+    "vi": "Học lumbar sympathetic block.",
+    "en": "Learn lumbar sympathetic block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lumbar-sympathetic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "femoral-nerve",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Femoral Nerve",
+    "en": "Femoral Nerve"
+  },
+  "desc": {
+    "vi": "Học femoral nerve block.",
+    "en": "Learn femoral nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/femoral-nerve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sciatic-nerve",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Sciatic Nerve",
+    "en": "Sciatic Nerve"
+  },
+  "desc": {
+    "vi": "Học sciatic nerve block.",
+    "en": "Learn sciatic nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sciatic-nerve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "radial-nerve",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Radial Nerve",
+    "en": "Radial Nerve"
+  },
+  "desc": {
+    "vi": "Học radial nerve block.",
+    "en": "Learn radial nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/radial-nerve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "median-nerve",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Median Nerve",
+    "en": "Median Nerve"
+  },
+  "desc": {
+    "vi": "Học median nerve block.",
+    "en": "Learn median nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/median-nerve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ulnar-nerve",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Ulnar Nerve",
+    "en": "Ulnar Nerve"
+  },
+  "desc": {
+    "vi": "Học ulnar nerve block.",
+    "en": "Learn ulnar nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ulnar-nerve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "axillary-nerve",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Axillary Nerve",
+    "en": "Axillary Nerve"
+  },
+  "desc": {
+    "vi": "Học axillary nerve block.",
+    "en": "Learn axillary nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/axillary-nerve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "suprascapular-nerve",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Suprascapular Nerve",
+    "en": "Suprascapular Nerve"
+  },
+  "desc": {
+    "vi": "Học suprascapular nerve block.",
+    "en": "Learn suprascapular nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/suprascapular-nerve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "interscalene",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Interscalene",
+    "en": "Interscalene"
+  },
+  "desc": {
+    "vi": "Học interscalene block.",
+    "en": "Learn interscalene block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/interscalene/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "greater-occipital",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Greater Occipital",
+    "en": "Greater Occipital"
+  },
+  "desc": {
+    "vi": "Học greater occipital nerve block.",
+    "en": "Learn greater occipital nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/greater-occipital/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trigeminal-nerve",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Trigeminal Nerve",
+    "en": "Trigeminal Nerve"
+  },
+  "desc": {
+    "vi": "Học trigeminal nerve block.",
+    "en": "Learn trigeminal nerve block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trigeminal-nerve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sphenopalatine",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Sphenopalatine",
+    "en": "Sphenopalatine"
+  },
+  "desc": {
+    "vi": "Học sphenopalatine ganglion block.",
+    "en": "Learn sphenopalatine ganglion block."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sphenopalatine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "conscious-sedation",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Conscious Sedation",
+    "en": "Conscious Sedation"
+  },
+  "desc": {
+    "vi": "Học conscious sedation.",
+    "en": "Learn conscious sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/conscious-sedation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "monitored-anesthesia",
+  "gameId": "game-081",
+  "name": {
+    "vi": "Monitored Anesthesia",
+    "en": "Monitored Anesthesia"
+  },
+  "desc": {
+    "vi": "Học monitored anesthesia care.",
+    "en": "Learn monitored anesthesia care."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/monitored-anesthesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "total-intravenous",
+  "gameId": "game-082",
+  "name": {
+    "vi": "Total Intravenous",
+    "en": "Total Intravenous"
+  },
+  "desc": {
+    "vi": "Học TIVA.",
+    "en": "Learn TIVA."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/total-intravenous/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "balanced-anesthesia",
+  "gameId": "game-083",
+  "name": {
+    "vi": "Balanced Anesthesia",
+    "en": "Balanced Anesthesia"
+  },
+  "desc": {
+    "vi": "Học balanced anesthesia.",
+    "en": "Learn balanced anesthesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/balanced-anesthesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "inhalational-anesthesia",
+  "gameId": "game-084",
+  "name": {
+    "vi": "Inhalational Anesthesia",
+    "en": "Inhalational Anesthesia"
+  },
+  "desc": {
+    "vi": "Học inhalational anesthesia.",
+    "en": "Learn inhalational anesthesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/inhalational-anesthesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "regional-anesthesia",
+  "gameId": "game-085",
+  "name": {
+    "vi": "Regional Anesthesia",
+    "en": "Regional Anesthesia"
+  },
+  "desc": {
+    "vi": "Học regional anesthesia.",
+    "en": "Learn regional anesthesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/regional-anesthesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "neuraxial-anesthesia",
+  "gameId": "game-086",
+  "name": {
+    "vi": "Neuraxial Anesthesia",
+    "en": "Neuraxial Anesthesia"
+  },
+  "desc": {
+    "vi": "Học neuraxial anesthesia.",
+    "en": "Learn neuraxial anesthesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/neuraxial-anesthesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spinal-anesthesia",
+  "gameId": "game-087",
+  "name": {
+    "vi": "Spinal Anesthesia",
+    "en": "Spinal Anesthesia"
+  },
+  "desc": {
+    "vi": "Học spinal anesthesia.",
+    "en": "Learn spinal anesthesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spinal-anesthesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "epidural-anesthesia",
+  "gameId": "game-088",
+  "name": {
+    "vi": "Epidural Anesthesia",
+    "en": "Epidural Anesthesia"
+  },
+  "desc": {
+    "vi": "Học epidural anesthesia.",
+    "en": "Learn epidural anesthesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/epidural-anesthesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "caudal-anesthesia",
+  "gameId": "game-089",
+  "name": {
+    "vi": "Caudal Anesthesia",
+    "en": "Caudal Anesthesia"
+  },
+  "desc": {
+    "vi": "Học caudal anesthesia.",
+    "en": "Learn caudal anesthesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/caudal-anesthesia/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "combined-spinal-epidural",
+  "gameId": "game-090",
+  "name": {
+    "vi": "Combined Spinal Epidural",
+    "en": "Combined Spinal Epidural"
+  },
+  "desc": {
+    "vi": "Học combined spinal-epidural.",
+    "en": "Learn combined spinal-epidural."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/combined-spinal-epidural/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "patient-controlled",
+  "gameId": "game-091",
+  "name": {
+    "vi": "Patient Controlled",
+    "en": "Patient Controlled"
+  },
+  "desc": {
+    "vi": "Học patient-controlled analgesia.",
+    "en": "Learn patient-controlled analgesia."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/patient-controlled/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nerve-stimulator",
+  "gameId": "game-092",
+  "name": {
+    "vi": "Nerve Stimulator",
+    "en": "Nerve Stimulator"
+  },
+  "desc": {
+    "vi": "Học nerve stimulator guidance.",
+    "en": "Learn nerve stimulator guidance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nerve-stimulator/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ultrasound-guidance",
+  "gameId": "game-093",
+  "name": {
+    "vi": "Ultrasound Guidance",
+    "en": "Ultrasound Guidance"
+  },
+  "desc": {
+    "vi": "Học ultrasound guidance.",
+    "en": "Learn ultrasound guidance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ultrasound-guidance/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fluoroscopy-guidance",
+  "gameId": "game-094",
+  "name": {
+    "vi": "Fluoroscopy Guidance",
+    "en": "Fluoroscopy Guidance"
+  },
+  "desc": {
+    "vi": "Học fluoroscopy guidance.",
+    "en": "Learn fluoroscopy guidance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fluoroscopy-guidance/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ct-guidance",
+  "gameId": "game-095",
+  "name": {
+    "vi": "CT Guidance",
+    "en": "CT Guidance"
+  },
+  "desc": {
+    "vi": "Học CT guidance.",
+    "en": "Learn CT guidance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ct-guidance/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mri-guidance",
+  "gameId": "game-096",
+  "name": {
+    "vi": "MRI Guidance",
+    "en": "MRI Guidance"
+  },
+  "desc": {
+    "vi": "Học MRI guidance.",
+    "en": "Learn MRI guidance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mri-guidance/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "electromyography",
+  "gameId": "game-097",
+  "name": {
+    "vi": "Electromyography",
+    "en": "Electromyography"
+  },
+  "desc": {
+    "vi": "Học EMG guidance.",
+    "en": "Learn EMG guidance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/electromyography/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "evoked-potentials",
+  "gameId": "game-098",
+  "name": {
+    "vi": "Evoked Potentials",
+    "en": "Evoked Potentials"
+  },
+  "desc": {
+    "vi": "Học evoked potentials.",
+    "en": "Learn evoked potentials."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/evoked-potentials/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bispectral-index",
+  "gameId": "game-099",
+  "name": {
+    "vi": "Bispectral Index",
+    "en": "Bispectral Index"
+  },
+  "desc": {
+    "vi": "Học BIS monitoring.",
+    "en": "Learn BIS monitoring."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bispectral-index/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "entropy-monitor",
+  "gameId": "game-100",
+  "name": {
+    "vi": "Entropy Monitor",
+    "en": "Entropy Monitor"
+  },
+  "desc": {
+    "vi": "Học entropy monitoring.",
+    "en": "Learn entropy monitoring."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/entropy-monitor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nociception-monitor",
+  "gameId": "game-101",
+  "name": {
+    "vi": "Nociception Monitor",
+    "en": "Nociception Monitor"
+  },
+  "desc": {
+    "vi": "Học nociception monitoring.",
+    "en": "Learn nociception monitoring."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nociception-monitor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "analgosedation",
+  "gameId": "game-102",
+  "name": {
+    "vi": "Analgosedation",
+    "en": "Analgosedation"
+  },
+  "desc": {
+    "vi": "Học analgosedation.",
+    "en": "Learn analgosedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/analgosedation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dexmedetomidine",
+  "gameId": "game-103",
+  "name": {
+    "vi": "Dexmedetomidine",
+    "en": "Dexmedetomidine"
+  },
+  "desc": {
+    "vi": "Học dexmedetomidine sedation.",
+    "en": "Learn dexmedetomidine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dexmedetomidine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "remifentanil",
+  "gameId": "game-104",
+  "name": {
+    "vi": "Remifentanil",
+    "en": "Remifentanil"
+  },
+  "desc": {
+    "vi": "Học remifentanil infusion.",
+    "en": "Learn remifentanil infusion."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/remifentanil/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "propofol-infusion",
+  "gameId": "game-105",
+  "name": {
+    "vi": "Propofol Infusion",
+    "en": "Propofol Infusion"
+  },
+  "desc": {
+    "vi": "Học propofol infusion.",
+    "en": "Learn propofol infusion."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/propofol-infusion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ketamine-infusion",
+  "gameId": "game-106",
+  "name": {
+    "vi": "Ketamine Infusion",
+    "en": "Ketamine Infusion"
+  },
+  "desc": {
+    "vi": "Học ketamine infusion.",
+    "en": "Learn ketamine infusion."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ketamine-infusion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "midazolam-sedation",
+  "gameId": "game-107",
+  "name": {
+    "vi": "Midazolam Sedation",
+    "en": "Midazolam Sedation"
+  },
+  "desc": {
+    "vi": "Học midazolam sedation.",
+    "en": "Learn midazolam sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/midazolam-sedation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lorazepam-sedation",
+  "gameId": "game-108",
+  "name": {
+    "vi": "Lorazepam Sedation",
+    "en": "Lorazepam Sedation"
+  },
+  "desc": {
+    "vi": "Học lorazepam sedation.",
+    "en": "Learn lorazepam sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lorazepam-sedation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "diazepam-sedation",
+  "gameId": "game-109",
+  "name": {
+    "vi": "Diazepam Sedation",
+    "en": "Diazepam Sedation"
+  },
+  "desc": {
+    "vi": "Học diazepam sedation.",
+    "en": "Learn diazepam sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/diazepam-sedation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "clonazepam-sedation",
+  "gameId": "game-110",
+  "name": {
+    "vi": "Clonazepam Sedation",
+    "en": "Clonazepam Sedation"
+  },
+  "desc": {
+    "vi": "Học clonazepam sedation.",
+    "en": "Learn clonazepam sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/clonazepam-sedation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "alprazolam-sedation",
+  "gameId": "game-111",
+  "name": {
+    "vi": "Alprazolam Sedation",
+    "en": "Alprazolam Sedation"
+  },
+  "desc": {
+    "vi": "Học alprazolam sedation.",
+    "en": "Learn alprazolam sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/alprazolam-sedation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zolpidem-sedation",
+  "gameId": "game-112",
+  "name": {
+    "vi": "Zolpidem Sedation",
+    "en": "Zolpidem Sedation"
+  },
+  "desc": {
+    "vi": "Học zolpidem sedation.",
+    "en": "Learn zolpidem sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zolpidem-sedation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eszopiclone",
+  "gameId": "game-113",
+  "name": {
+    "vi": "Eszopiclone",
+    "en": "Eszopiclone"
+  },
+  "desc": {
+    "vi": "Học eszopiclone sedation.",
+    "en": "Learn eszopiclone sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eszopiclone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zaleplon",
+  "gameId": "game-114",
+  "name": {
+    "vi": "Zaleplon",
+    "en": "Zaleplon"
+  },
+  "desc": {
+    "vi": "Học zaleplon sedation.",
+    "en": "Learn zaleplon sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zaleplon/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ramelteon",
+  "gameId": "game-115",
+  "name": {
+    "vi": "Ramelteon",
+    "en": "Ramelteon"
+  },
+  "desc": {
+    "vi": "Học ramelteon sedation.",
+    "en": "Learn ramelteon sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ramelteon/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tasimelteon",
+  "gameId": "game-116",
+  "name": {
+    "vi": "Tasimelteon",
+    "en": "Tasimelteon"
+  },
+  "desc": {
+    "vi": "Học tasimelteon sedation.",
+    "en": "Learn tasimelteon sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tasimelteon/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "suvorexant",
+  "gameId": "game-117",
+  "name": {
+    "vi": "Suvorexant",
+    "en": "Suvorexant"
+  },
+  "desc": {
+    "vi": "Học suvorexant sedation.",
+    "en": "Learn suvorexant sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/suvorexant/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lemborexant",
+  "gameId": "game-118",
+  "name": {
+    "vi": "Lemborexant",
+    "en": "Lemborexant"
+  },
+  "desc": {
+    "vi": "Học lemborexant sedation.",
+    "en": "Learn lemborexant sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lemborexant/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "daridorexant",
+  "gameId": "game-119",
+  "name": {
+    "vi": "Daridorexant",
+    "en": "Daridorexant"
+  },
+  "desc": {
+    "vi": "Học daridorexant sedation.",
+    "en": "Learn daridorexant sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/daridorexant/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "melatonin",
+  "gameId": "game-120",
+  "name": {
+    "vi": "Melatonin",
+    "en": "Melatonin"
+  },
+  "desc": {
+    "vi": "Học melatonin sedation.",
+    "en": "Learn melatonin sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/melatonin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "diphenhydramine",
+  "gameId": "game-121",
+  "name": {
+    "vi": "Diphenhydramine",
+    "en": "Diphenhydramine"
+  },
+  "desc": {
+    "vi": "Học diphenhydramine sedation.",
+    "en": "Learn diphenhydramine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/diphenhydramine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "doxylamine",
+  "gameId": "game-122",
+  "name": {
+    "vi": "Doxylamine",
+    "en": "Doxylamine"
+  },
+  "desc": {
+    "vi": "Học doxylamine sedation.",
+    "en": "Learn doxylamine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/doxylamine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "promethazine",
+  "gameId": "game-123",
+  "name": {
+    "vi": "Promethazine",
+    "en": "Promethazine"
+  },
+  "desc": {
+    "vi": "Học promethazine sedation.",
+    "en": "Learn promethazine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/promethazine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hydroxyzine",
+  "gameId": "game-124",
+  "name": {
+    "vi": "Hydroxyzine",
+    "en": "Hydroxyzine"
+  },
+  "desc": {
+    "vi": "Học hydroxyzine sedation.",
+    "en": "Learn hydroxyzine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hydroxyzine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chlorpromazine",
+  "gameId": "game-125",
+  "name": {
+    "vi": "Chlorpromazine",
+    "en": "Chlorpromazine"
+  },
+  "desc": {
+    "vi": "Học chlorpromazine sedation.",
+    "en": "Learn chlorpromazine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chlorpromazine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "thioridazine",
+  "gameId": "game-126",
+  "name": {
+    "vi": "Thioridazine",
+    "en": "Thioridazine"
+  },
+  "desc": {
+    "vi": "Học thioridazine sedation.",
+    "en": "Learn thioridazine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/thioridazine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fluphenazine",
+  "gameId": "game-127",
+  "name": {
+    "vi": "Fluphenazine",
+    "en": "Fluphenazine"
+  },
+  "desc": {
+    "vi": "Học fluphenazine sedation.",
+    "en": "Learn fluphenazine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fluphenazine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "perphenazine",
+  "gameId": "game-128",
+  "name": {
+    "vi": "Perphenazine",
+    "en": "Perphenazine"
+  },
+  "desc": {
+    "vi": "Học perphenazine sedation.",
+    "en": "Learn perphenazine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/perphenazine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trifluoperazine",
+  "gameId": "game-129",
+  "name": {
+    "vi": "Trifluoperazine",
+    "en": "Trifluoperazine"
+  },
+  "desc": {
+    "vi": "Học trifluoperazine sedation.",
+    "en": "Learn trifluoperazine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trifluoperazine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "haloperidol",
+  "gameId": "game-130",
+  "name": {
+    "vi": "Haloperidol",
+    "en": "Haloperidol"
+  },
+  "desc": {
+    "vi": "Học haloperidol sedation.",
+    "en": "Learn haloperidol sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/haloperidol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "droperidol",
+  "gameId": "game-131",
+  "name": {
+    "vi": "Droperidol",
+    "en": "Droperidol"
+  },
+  "desc": {
+    "vi": "Học droperidol sedation.",
+    "en": "Learn droperidol sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/droperidol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "risperidone",
+  "gameId": "game-132",
+  "name": {
+    "vi": "Risperidone",
+    "en": "Risperidone"
+  },
+  "desc": {
+    "vi": "Học risperidone sedation.",
+    "en": "Learn risperidone sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/risperidone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "olanzapine",
+  "gameId": "game-133",
+  "name": {
+    "vi": "Olanzapine",
+    "en": "Olanzapine"
+  },
+  "desc": {
+    "vi": "Học olanzapine sedation.",
+    "en": "Learn olanzapine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/olanzapine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quetiapine",
+  "gameId": "game-134",
+  "name": {
+    "vi": "Quetiapine",
+    "en": "Quetiapine"
+  },
+  "desc": {
+    "vi": "Học quetiapine sedation.",
+    "en": "Learn quetiapine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quetiapine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ziprasidone",
+  "gameId": "game-135",
+  "name": {
+    "vi": "Ziprasidone",
+    "en": "Ziprasidone"
+  },
+  "desc": {
+    "vi": "Học ziprasidone sedation.",
+    "en": "Learn ziprasidone sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ziprasidone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "aripiprazole",
+  "gameId": "game-136",
+  "name": {
+    "vi": "Aripiprazole",
+    "en": "Aripiprazole"
+  },
+  "desc": {
+    "vi": "Học aripiprazole sedation.",
+    "en": "Learn aripiprazole sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/aripiprazole/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "brexpiprazole",
+  "gameId": "game-137",
+  "name": {
+    "vi": "Brexpiprazole",
+    "en": "Brexpiprazole"
+  },
+  "desc": {
+    "vi": "Học brexpiprazole sedation.",
+    "en": "Learn brexpiprazole sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/brexpiprazole/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cariprazine",
+  "gameId": "game-138",
+  "name": {
+    "vi": "Cariprazine",
+    "en": "Cariprazine"
+  },
+  "desc": {
+    "vi": "Học cariprazine sedation.",
+    "en": "Learn cariprazine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cariprazine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lurasidone",
+  "gameId": "game-139",
+  "name": {
+    "vi": "Lurasidone",
+    "en": "Lurasidone"
+  },
+  "desc": {
+    "vi": "Học lurasidone sedation.",
+    "en": "Learn lurasidone sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lurasidone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "asenapine",
+  "gameId": "game-140",
+  "name": {
+    "vi": "Asenapine",
+    "en": "Asenapine"
+  },
+  "desc": {
+    "vi": "Học asenapine sedation.",
+    "en": "Learn asenapine sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/asenapine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "iloperidone",
+  "gameId": "game-141",
+  "name": {
+    "vi": "Iloperidone",
+    "en": "Iloperidone"
+  },
+  "desc": {
+    "vi": "Học iloperidone sedation.",
+    "en": "Learn iloperidone sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/iloperidone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "paliperidone",
+  "gameId": "game-142",
+  "name": {
+    "vi": "Paliperidone",
+    "en": "Paliperidone"
+  },
+  "desc": {
+    "vi": "Học paliperidone sedation.",
+    "en": "Learn paliperidone sedation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/paliperidone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
 }
 ];
 
