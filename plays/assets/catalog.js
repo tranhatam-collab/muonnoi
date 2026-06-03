@@ -16,15 +16,15 @@
   };
 
   const GROUPS = {
-    mind:        { vi: 'Mind Games',       icon: '🧠' },
-    creator:     { vi: 'Creator Games',    icon: '🎨' },
-    social:      { vi: 'Social Games',     icon: '🤝' },
-    life:        { vi: 'Life Games',       icon: '🌱' },
-    exploration: { vi: 'Exploration',      icon: '🧭' },
-    work:        { vi: 'Work Games',       icon: '💼' },
-    exclusive:   { vi: 'Muônnoi Exclusive', icon: '🌌' },
-    newip:       { vi: 'IP Mới',           icon: '✨' },
-    micro:       { vi: 'Micro (bonus)',    icon: '⚡' },
+    mind:        { vi: 'Trí tuệ',      en: 'Mind Games',       icon: '🧠' },
+    creator:     { vi: 'Sáng tạo',     en: 'Creator Games',    icon: '🎨' },
+    social:      { vi: 'Xã hội',       en: 'Social Games',     icon: '🤝' },
+    life:        { vi: 'Đời sống',     en: 'Life Games',       icon: '🌱' },
+    exploration: { vi: 'Khám phá',     en: 'Exploration',      icon: '🧭' },
+    work:        { vi: 'Công việc',    en: 'Work Games',       icon: '💼' },
+    exclusive:   { vi: 'Muôn Nơi Độc Quyền', en: 'Muonnoi Exclusive', icon: '🌌' },
+    newip:       { vi: 'IP Mới',       en: 'New IP',           icon: '✨' },
+    micro:       { vi: 'Micro (bonus)',en: 'Micro (bonus)',    icon: '⚡' },
   };
 
   const GAMES = [
@@ -2072,6 +2072,21 @@
     "duration": "2-5 min",
     "genre": "strategy",
     "wave": 3
+  },
+  {
+    "id": "cau-tu-doi",
+    "gameId": "game-101",
+    "name": { "vi": "Cầu Từ Đôi", "en": "Word Bridge" },
+    "desc": { "vi": "Nối từ tiếng Việt với nghĩa tiếng Anh đúng. Streak càng cao, điểm càng nhiều!", "en": "Match Vietnamese words to their English meanings. Higher streak, more points!" },
+    "group": "mind",
+    "tier": 1,
+    "status": "live",
+    "path": "games/cau-tu-doi/index.html",
+    "difficulty": "easy",
+    "duration": "2-5 min",
+    "genre": "education",
+    "wave": 4,
+    "free": 5
   }
 ];
 
