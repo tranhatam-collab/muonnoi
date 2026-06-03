@@ -6200,6 +6200,531 @@
   "genre": "strategy",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "coin-flip",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Tung Đồng Xu",
+    "en": "Coin Flip"
+  },
+  "desc": {
+    "vi": "Tung đồng xu may rủi.",
+    "en": "Flip a coin for luck."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/coin-flip/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "luck",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dice-roll",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Xúc Xắc",
+    "en": "Dice Roll"
+  },
+  "desc": {
+    "vi": "Tung xúc xắc 6 mặt.",
+    "en": "Roll a six-sided die."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dice-roll/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "luck",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "random-name",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Tên Ngẫu Nhiên",
+    "en": "Random Name"
+  },
+  "desc": {
+    "vi": "Tạo tên nhân vật ngẫu nhiên.",
+    "en": "Generate random character names."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/random-name/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "insult-generator",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Máy Chế Giễu Nhẹ",
+    "en": "Insult Generator"
+  },
+  "desc": {
+    "vi": "Chế giễu nhẹ nhàng hài hước.",
+    "en": "Light humorous roasts."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/insult-generator/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "compliment-generator",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Máy Khen Ngợi",
+    "en": "Compliment Generator"
+  },
+  "desc": {
+    "vi": "Tạo lời khen chân thành.",
+    "en": "Generate sincere compliments."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/compliment-generator/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fortune-cookie",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Bánh May Mắn",
+    "en": "Fortune Cookie"
+  },
+  "desc": {
+    "vi": "Mở bánh may mắn.",
+    "en": "Open a fortune cookie."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fortune-cookie/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tarot-lite",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Tarot Nhẹ",
+    "en": "Tarot Lite"
+  },
+  "desc": {
+    "vi": "Rút một lá bài Tarot.",
+    "en": "Draw a Tarot card."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tarot-lite/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chakra-check",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Kiểm Tra Chakra",
+    "en": "Chakra Check"
+  },
+  "desc": {
+    "vi": "Đánh giá 7 luân xa.",
+    "en": "Assess 7 chakras."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chakra-check/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "aura-color",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Màu Hào Quang",
+    "en": "Aura Color"
+  },
+  "desc": {
+    "vi": "Xác định màu hào quang.",
+    "en": "Determine aura color."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/aura-color/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spirit-animal",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Thú Tổng Hợp",
+    "en": "Spirit Animal"
+  },
+  "desc": {
+    "vi": "Tìm thú tổng hợp của bạn.",
+    "en": "Find your spirit animal."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spirit-animal/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "birth-chart-lite",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Lá Số Nhẹ",
+    "en": "Birth Chart Lite"
+  },
+  "desc": {
+    "vi": "Lá số tử vi đơn giản.",
+    "en": "Simple birth chart."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/birth-chart-lite/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "name-meaning",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Ý Nghĩa Tên",
+    "en": "Name Meaning"
+  },
+  "desc": {
+    "vi": "Tìm ý nghĩa tên.",
+    "en": "Find name meaning."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/name-meaning/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "compatibility-check",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Kiểm Tra Hợp Nhau",
+    "en": "Compatibility Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra độ tương thích.",
+    "en": "Check compatibility."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/compatibility-check/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "love-language",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Ngôn Ngữ Yêu Thương",
+    "en": "Love Language"
+  },
+  "desc": {
+    "vi": "Xác định ngôn ngữ yêu thương.",
+    "en": "Determine love language."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/love-language/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "attachment-style",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Kiểu Gắn Bó",
+    "en": "Attachment Style"
+  },
+  "desc": {
+    "vi": "Xác định kiểu gắn bó.",
+    "en": "Determine attachment style."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/attachment-style/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "enneagram-lite",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Enneagram Nhẹ",
+    "en": "Enneagram Lite"
+  },
+  "desc": {
+    "vi": "Trắc nghiệm Enneagram đơn giản.",
+    "en": "Simple Enneagram test."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/enneagram-lite/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mbti-lite",
+  "gameId": "game-017",
+  "name": {
+    "vi": "MBTI Nhẹ",
+    "en": "MBTI Lite"
+  },
+  "desc": {
+    "vi": "Trắc nghiệm MBTI nhanh.",
+    "en": "Quick MBTI test."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mbti-lite/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "big-five-lite",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Big Five Nhẹ",
+    "en": "Big Five Lite"
+  },
+  "desc": {
+    "vi": "Trắc nghiệm Big Five nhanh.",
+    "en": "Quick Big Five test."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/big-five-lite/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "love-tank",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Bình Yêu Thương",
+    "en": "Love Tank"
+  },
+  "desc": {
+    "vi": "Đo mức bình yêu thương.",
+    "en": "Measure love tank level."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/love-tank/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "apology-language",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Ngôn Ngữ Xin Lỗi",
+    "en": "Apology Language"
+  },
+  "desc": {
+    "vi": "Xác định cách xin lỗi.",
+    "en": "Determine apology language."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/apology-language/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "anger-style",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Kiểu Tức Giận",
+    "en": "Anger Style"
+  },
+  "desc": {
+    "vi": "Xác định cách xử lý giận.",
+    "en": "Determine anger style."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/anger-style/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stress-signals",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Tín Hiệu Căng Thẳng",
+    "en": "Stress Signals"
+  },
+  "desc": {
+    "vi": "Nhận diện dấu hiệu căng thẳng.",
+    "en": "Recognize stress signals."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stress-signals/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "burnout-check",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Kiểm Tra Kiệt Sức",
+    "en": "Burnout Check"
+  },
+  "desc": {
+    "vi": "Đánh giá mức độ kiệt sức.",
+    "en": "Assess burnout level."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/burnout-check/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "flow-check",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Kiểm Tra Dòng Chảy",
+    "en": "Flow Check"
+  },
+  "desc": {
+    "vi": "Đánh giá khả năng vào flow.",
+    "en": "Assess flow state ability."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/flow-check/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "resilience-scale",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Thang Phục Hồi",
+    "en": "Resilience Scale"
+  },
+  "desc": {
+    "vi": "Đo lường khả năng phục hồi.",
+    "en": "Measure resilience level."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/resilience-scale/index.html",
+  "difficulty": "easy",
+  "duration": "1-2 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
 }
 ];
 
