@@ -28754,6 +28754,2526 @@
   "genre": "math",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "mobilenetv2",
+  "gameId": "game-001",
+  "name": {
+    "vi": "MobileNetV2",
+    "en": "MobileNetV2"
+  },
+  "desc": {
+    "vi": "Học MobileNetV2.",
+    "en": "Learn MobileNetV2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mobilenetv2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mobilenetv3",
+  "gameId": "game-002",
+  "name": {
+    "vi": "MobileNetV3",
+    "en": "MobileNetV3"
+  },
+  "desc": {
+    "vi": "Học MobileNetV3.",
+    "en": "Learn MobileNetV3."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mobilenetv3/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ghostnet",
+  "gameId": "game-003",
+  "name": {
+    "vi": "GhostNet",
+    "en": "GhostNet"
+  },
+  "desc": {
+    "vi": "Học GhostNet.",
+    "en": "Learn GhostNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ghostnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "shufflenet",
+  "gameId": "game-004",
+  "name": {
+    "vi": "ShuffleNet",
+    "en": "ShuffleNet"
+  },
+  "desc": {
+    "vi": "Học ShuffleNet.",
+    "en": "Learn ShuffleNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/shufflenet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "squeezenet",
+  "gameId": "game-005",
+  "name": {
+    "vi": "SqueezeNet",
+    "en": "SqueezeNet"
+  },
+  "desc": {
+    "vi": "Học SqueezeNet.",
+    "en": "Learn SqueezeNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/squeezenet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mnasnet",
+  "gameId": "game-006",
+  "name": {
+    "vi": "MNASNet",
+    "en": "MNASNet"
+  },
+  "desc": {
+    "vi": "Học MNASNet.",
+    "en": "Learn MNASNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mnasnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fbnet",
+  "gameId": "game-007",
+  "name": {
+    "vi": "FBNet",
+    "en": "FBNet"
+  },
+  "desc": {
+    "vi": "Học FBNet.",
+    "en": "Learn FBNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fbnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "proxylessnas",
+  "gameId": "game-008",
+  "name": {
+    "vi": "ProxylessNAS",
+    "en": "ProxylessNAS"
+  },
+  "desc": {
+    "vi": "Học ProxylessNAS.",
+    "en": "Learn ProxylessNAS."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/proxylessnas/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "efficientnetv2",
+  "gameId": "game-009",
+  "name": {
+    "vi": "EfficientNetV2",
+    "en": "EfficientNetV2"
+  },
+  "desc": {
+    "vi": "Học EfficientNetV2.",
+    "en": "Learn EfficientNetV2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/efficientnetv2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "regnet",
+  "gameId": "game-010",
+  "name": {
+    "vi": "RegNet",
+    "en": "RegNet"
+  },
+  "desc": {
+    "vi": "Học RegNet.",
+    "en": "Learn RegNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/regnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "repvgg",
+  "gameId": "game-011",
+  "name": {
+    "vi": "RepVGG",
+    "en": "RepVGG"
+  },
+  "desc": {
+    "vi": "Học RepVGG.",
+    "en": "Learn RepVGG."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/repvgg/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vanilla-cnn",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Vanilla CNN",
+    "en": "Vanilla CNN"
+  },
+  "desc": {
+    "vi": "Học vanilla CNN.",
+    "en": "Learn vanilla CNN."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vanilla-cnn/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "alexnet",
+  "gameId": "game-013",
+  "name": {
+    "vi": "AlexNet",
+    "en": "AlexNet"
+  },
+  "desc": {
+    "vi": "Học AlexNet.",
+    "en": "Learn AlexNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/alexnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vggnet",
+  "gameId": "game-014",
+  "name": {
+    "vi": "VGGNet",
+    "en": "VGGNet"
+  },
+  "desc": {
+    "vi": "Học VGGNet.",
+    "en": "Learn VGGNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vggnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zfnet",
+  "gameId": "game-015",
+  "name": {
+    "vi": "ZFNet",
+    "en": "ZFNet"
+  },
+  "desc": {
+    "vi": "Học ZFNet.",
+    "en": "Learn ZFNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zfnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "googlenet",
+  "gameId": "game-016",
+  "name": {
+    "vi": "GoogLeNet",
+    "en": "GoogLeNet"
+  },
+  "desc": {
+    "vi": "Học GoogLeNet.",
+    "en": "Learn GoogLeNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/googlenet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "resnext",
+  "gameId": "game-017",
+  "name": {
+    "vi": "ResNeXt",
+    "en": "ResNeXt"
+  },
+  "desc": {
+    "vi": "Học ResNeXt.",
+    "en": "Learn ResNeXt."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/resnext/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "senet",
+  "gameId": "game-018",
+  "name": {
+    "vi": "SENet",
+    "en": "SENet"
+  },
+  "desc": {
+    "vi": "Học SENet.",
+    "en": "Learn SENet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/senet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sknet",
+  "gameId": "game-019",
+  "name": {
+    "vi": "SKNet",
+    "en": "SKNet"
+  },
+  "desc": {
+    "vi": "Học SKNet.",
+    "en": "Learn SKNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sknet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cbam",
+  "gameId": "game-020",
+  "name": {
+    "vi": "CBAM",
+    "en": "CBAM"
+  },
+  "desc": {
+    "vi": "Học CBAM.",
+    "en": "Learn CBAM."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cbam/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ecanet",
+  "gameId": "game-021",
+  "name": {
+    "vi": "ECANet",
+    "en": "ECANet"
+  },
+  "desc": {
+    "vi": "Học ECANet.",
+    "en": "Learn ECANet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ecanet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "coordatt",
+  "gameId": "game-022",
+  "name": {
+    "vi": "CoordAtt",
+    "en": "CoordAtt"
+  },
+  "desc": {
+    "vi": "Học CoordAtt.",
+    "en": "Learn CoordAtt."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/coordatt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bam",
+  "gameId": "game-023",
+  "name": {
+    "vi": "BAM",
+    "en": "BAM"
+  },
+  "desc": {
+    "vi": "Học BAM.",
+    "en": "Learn BAM."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bam/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dual-attention",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Dual Attention",
+    "en": "Dual Attention"
+  },
+  "desc": {
+    "vi": "Học Dual Attention.",
+    "en": "Learn Dual Attention."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dual-attention/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "criss-cross",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Criss-Cross",
+    "en": "Criss-Cross"
+  },
+  "desc": {
+    "vi": "Học Criss-Cross Attention.",
+    "en": "Learn Criss-Cross Attention."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/criss-cross/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "axial-attention",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Axial Attention",
+    "en": "Axial Attention"
+  },
+  "desc": {
+    "vi": "Học Axial Attention.",
+    "en": "Learn Axial Attention."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/axial-attention/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stand-alone",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Stand-Alone",
+    "en": "Stand-Alone"
+  },
+  "desc": {
+    "vi": "Học Stand-Alone Self-Attention.",
+    "en": "Learn Stand-Alone Self-Attention."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stand-alone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lambda-network",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Lambda Network",
+    "en": "Lambda Network"
+  },
+  "desc": {
+    "vi": "Học LambdaNetworks.",
+    "en": "Learn LambdaNetworks."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lambda-network/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "involution",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Involution",
+    "en": "Involution"
+  },
+  "desc": {
+    "vi": "Học Involution.",
+    "en": "Learn Involution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/involution/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dynamic-conv",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Dynamic Conv",
+    "en": "Dynamic Conv"
+  },
+  "desc": {
+    "vi": "Học Dynamic Convolution.",
+    "en": "Learn Dynamic Convolution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dynamic-conv/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "condconv",
+  "gameId": "game-031",
+  "name": {
+    "vi": "CondConv",
+    "en": "CondConv"
+  },
+  "desc": {
+    "vi": "Học CondConv.",
+    "en": "Learn CondConv."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/condconv/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mixconv",
+  "gameId": "game-032",
+  "name": {
+    "vi": "MixConv",
+    "en": "MixConv"
+  },
+  "desc": {
+    "vi": "Học MixConv.",
+    "en": "Learn MixConv."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mixconv/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "depthwise-sep",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Depthwise Sep",
+    "en": "Depthwise Sep"
+  },
+  "desc": {
+    "vi": "Học Depthwise Separable Convolution.",
+    "en": "Learn Depthwise Separable Conv."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/depthwise-sep/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "grouped-conv",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Grouped Conv",
+    "en": "Grouped Conv"
+  },
+  "desc": {
+    "vi": "Học Grouped Convolution.",
+    "en": "Learn Grouped Convolution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/grouped-conv/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dilated-conv",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Dilated Conv",
+    "en": "Dilated Conv"
+  },
+  "desc": {
+    "vi": "Học Dilated Convolution.",
+    "en": "Learn Dilated Convolution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dilated-conv/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "deformable-conv",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Deformable Conv",
+    "en": "Deformable Conv"
+  },
+  "desc": {
+    "vi": "Học Deformable Convolution.",
+    "en": "Learn Deformable Convolution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/deformable-conv/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "active-rotate",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Active Rotate",
+    "en": "Active Rotate"
+  },
+  "desc": {
+    "vi": "Học Active Rotating Filters.",
+    "en": "Learn Active Rotating Filters."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/active-rotate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "octave-conv",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Octave Conv",
+    "en": "Octave Conv"
+  },
+  "desc": {
+    "vi": "Học Octave Convolution.",
+    "en": "Learn Octave Convolution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/octave-conv/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hetconv",
+  "gameId": "game-039",
+  "name": {
+    "vi": "HetConv",
+    "en": "HetConv"
+  },
+  "desc": {
+    "vi": "Học HetConv.",
+    "en": "Learn HetConv."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hetconv/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "acnet",
+  "gameId": "game-040",
+  "name": {
+    "vi": "ACNet",
+    "en": "ACNet"
+  },
+  "desc": {
+    "vi": "Học ACNet.",
+    "en": "Learn ACNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/acnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "repvgg-a0",
+  "gameId": "game-041",
+  "name": {
+    "vi": "RepVGG-A0",
+    "en": "RepVGG-A0"
+  },
+  "desc": {
+    "vi": "Học RepVGG-A0.",
+    "en": "Learn RepVGG-A0."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/repvgg-a0/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "repvgg-a1",
+  "gameId": "game-042",
+  "name": {
+    "vi": "RepVGG-A1",
+    "en": "RepVGG-A1"
+  },
+  "desc": {
+    "vi": "Học RepVGG-A1.",
+    "en": "Learn RepVGG-A1."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/repvgg-a1/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "repvgg-a2",
+  "gameId": "game-043",
+  "name": {
+    "vi": "RepVGG-A2",
+    "en": "RepVGG-A2"
+  },
+  "desc": {
+    "vi": "Học RepVGG-A2.",
+    "en": "Learn RepVGG-A2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/repvgg-a2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "repvgg-b0",
+  "gameId": "game-044",
+  "name": {
+    "vi": "RepVGG-B0",
+    "en": "RepVGG-B0"
+  },
+  "desc": {
+    "vi": "Học RepVGG-B0.",
+    "en": "Learn RepVGG-B0."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/repvgg-b0/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "repvgg-b1",
+  "gameId": "game-045",
+  "name": {
+    "vi": "RepVGG-B1",
+    "en": "RepVGG-B1"
+  },
+  "desc": {
+    "vi": "Học RepVGG-B1.",
+    "en": "Learn RepVGG-B1."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/repvgg-b1/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "repvgg-b2",
+  "gameId": "game-046",
+  "name": {
+    "vi": "RepVGG-B2",
+    "en": "RepVGG-B2"
+  },
+  "desc": {
+    "vi": "Học RepVGG-B2.",
+    "en": "Learn RepVGG-B2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/repvgg-b2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "repvgg-b3",
+  "gameId": "game-047",
+  "name": {
+    "vi": "RepVGG-B3",
+    "en": "RepVGG-B3"
+  },
+  "desc": {
+    "vi": "Học RepVGG-B3.",
+    "en": "Learn RepVGG-B3."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/repvgg-b3/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "res2net",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Res2Net",
+    "en": "Res2Net"
+  },
+  "desc": {
+    "vi": "Học Res2Net.",
+    "en": "Learn Res2Net."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/res2net/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "res2net-v1b",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Res2Net-v1b",
+    "en": "Res2Net-v1b"
+  },
+  "desc": {
+    "vi": "Học Res2Net-v1b.",
+    "en": "Learn Res2Net-v1b."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/res2net-v1b/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hrnet",
+  "gameId": "game-050",
+  "name": {
+    "vi": "HRNet",
+    "en": "HRNet"
+  },
+  "desc": {
+    "vi": "Học HRNet.",
+    "en": "Learn HRNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hrnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hrnetv2",
+  "gameId": "game-051",
+  "name": {
+    "vi": "HRNetV2",
+    "en": "HRNetV2"
+  },
+  "desc": {
+    "vi": "Học HRNetV2.",
+    "en": "Learn HRNetV2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hrnetv2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hrnetv2p",
+  "gameId": "game-052",
+  "name": {
+    "vi": "HRNetV2p",
+    "en": "HRNetV2p"
+  },
+  "desc": {
+    "vi": "Học HRNetV2p.",
+    "en": "Learn HRNetV2p."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hrnetv2p/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "darknet",
+  "gameId": "game-053",
+  "name": {
+    "vi": "DarkNet",
+    "en": "DarkNet"
+  },
+  "desc": {
+    "vi": "Học DarkNet.",
+    "en": "Learn DarkNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/darknet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cspdarknet",
+  "gameId": "game-054",
+  "name": {
+    "vi": "CSPDarkNet",
+    "en": "CSPDarkNet"
+  },
+  "desc": {
+    "vi": "Học CSPDarkNet.",
+    "en": "Learn CSPDarkNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cspdarknet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yolov3",
+  "gameId": "game-055",
+  "name": {
+    "vi": "YOLOv3",
+    "en": "YOLOv3"
+  },
+  "desc": {
+    "vi": "Học YOLOv3.",
+    "en": "Learn YOLOv3."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yolov3/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yolov4",
+  "gameId": "game-056",
+  "name": {
+    "vi": "YOLOv4",
+    "en": "YOLOv4"
+  },
+  "desc": {
+    "vi": "Học YOLOv4.",
+    "en": "Learn YOLOv4."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yolov4/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yolov5",
+  "gameId": "game-057",
+  "name": {
+    "vi": "YOLOv5",
+    "en": "YOLOv5"
+  },
+  "desc": {
+    "vi": "Học YOLOv5.",
+    "en": "Learn YOLOv5."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yolov5/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yolov6",
+  "gameId": "game-058",
+  "name": {
+    "vi": "YOLOv6",
+    "en": "YOLOv6"
+  },
+  "desc": {
+    "vi": "Học YOLOv6.",
+    "en": "Learn YOLOv6."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yolov6/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yolov7",
+  "gameId": "game-059",
+  "name": {
+    "vi": "YOLOv7",
+    "en": "YOLOv7"
+  },
+  "desc": {
+    "vi": "Học YOLOv7.",
+    "en": "Learn YOLOv7."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yolov7/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yolov8",
+  "gameId": "game-060",
+  "name": {
+    "vi": "YOLOv8",
+    "en": "YOLOv8"
+  },
+  "desc": {
+    "vi": "Học YOLOv8.",
+    "en": "Learn YOLOv8."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yolov8/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yolov9",
+  "gameId": "game-061",
+  "name": {
+    "vi": "YOLOv9",
+    "en": "YOLOv9"
+  },
+  "desc": {
+    "vi": "Học YOLOv9.",
+    "en": "Learn YOLOv9."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yolov9/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yolov10",
+  "gameId": "game-062",
+  "name": {
+    "vi": "YOLOv10",
+    "en": "YOLOv10"
+  },
+  "desc": {
+    "vi": "Học YOLOv10.",
+    "en": "Learn YOLOv10."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yolov10/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pp-yolo",
+  "gameId": "game-063",
+  "name": {
+    "vi": "PP-YOLO",
+    "en": "PP-YOLO"
+  },
+  "desc": {
+    "vi": "Học PP-YOLO.",
+    "en": "Learn PP-YOLO."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pp-yolo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pp-yoloe",
+  "gameId": "game-064",
+  "name": {
+    "vi": "PP-YOLOE",
+    "en": "PP-YOLOE"
+  },
+  "desc": {
+    "vi": "Học PP-YOLOE.",
+    "en": "Learn PP-YOLOE."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pp-yoloe/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ppyoloe-plus",
+  "gameId": "game-065",
+  "name": {
+    "vi": "PPYOLOE+",
+    "en": "PPYOLOE+"
+  },
+  "desc": {
+    "vi": "Học PPYOLOE+.",
+    "en": "Learn PPYOLOE+."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ppyoloe-plus/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rtmdet",
+  "gameId": "game-066",
+  "name": {
+    "vi": "RTMDet",
+    "en": "RTMDet"
+  },
+  "desc": {
+    "vi": "Học RTMDet.",
+    "en": "Learn RTMDet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rtmdet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "detectors",
+  "gameId": "game-067",
+  "name": {
+    "vi": "DetectoRS",
+    "en": "DetectoRS"
+  },
+  "desc": {
+    "vi": "Học DetectoRS.",
+    "en": "Learn DetectoRS."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/detectors/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "htc",
+  "gameId": "game-068",
+  "name": {
+    "vi": "HTC",
+    "en": "HTC"
+  },
+  "desc": {
+    "vi": "Học HTC.",
+    "en": "Learn HTC."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/htc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "scnet-detect",
+  "gameId": "game-069",
+  "name": {
+    "vi": "SCNet Detect",
+    "en": "SCNet Detect"
+  },
+  "desc": {
+    "vi": "Học SCNet detection.",
+    "en": "Learn SCNet detection."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/scnet-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gcnet",
+  "gameId": "game-070",
+  "name": {
+    "vi": "GCNet",
+    "en": "GCNet"
+  },
+  "desc": {
+    "vi": "Học GCNet.",
+    "en": "Learn GCNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gcnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "empirical-attention",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Empirical Attention",
+    "en": "Empirical Attention"
+  },
+  "desc": {
+    "vi": "Học Empirical Attention.",
+    "en": "Learn Empirical Attention."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/empirical-attention/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nonlocal-net",
+  "gameId": "game-072",
+  "name": {
+    "vi": "NonLocal Net",
+    "en": "NonLocal Net"
+  },
+  "desc": {
+    "vi": "Học NonLocal Net.",
+    "en": "Learn NonLocal Net."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nonlocal-net/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gnnet",
+  "gameId": "game-073",
+  "name": {
+    "vi": "GNNET",
+    "en": "GNNET"
+  },
+  "desc": {
+    "vi": "Học GNNET.",
+    "en": "Learn GNNET."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gnnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dcnv2",
+  "gameId": "game-074",
+  "name": {
+    "vi": "DCNv2",
+    "en": "DCNv2"
+  },
+  "desc": {
+    "vi": "Học DCNv2.",
+    "en": "Learn DCNv2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dcnv2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dcnv3",
+  "gameId": "game-075",
+  "name": {
+    "vi": "DCNv3",
+    "en": "DCNv3"
+  },
+  "desc": {
+    "vi": "Học DCNv3.",
+    "en": "Learn DCNv3."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dcnv3/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "poolformer-v2",
+  "gameId": "game-076",
+  "name": {
+    "vi": "PoolFormer V2",
+    "en": "PoolFormer V2"
+  },
+  "desc": {
+    "vi": "Học PoolFormer V2.",
+    "en": "Learn PoolFormer V2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/poolformer-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "uniformer",
+  "gameId": "game-077",
+  "name": {
+    "vi": "UniFormer",
+    "en": "UniFormer"
+  },
+  "desc": {
+    "vi": "Học UniFormer.",
+    "en": "Learn UniFormer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/uniformer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "uniformer-v2",
+  "gameId": "game-078",
+  "name": {
+    "vi": "UniFormer V2",
+    "en": "UniFormer V2"
+  },
+  "desc": {
+    "vi": "Học UniFormer V2.",
+    "en": "Learn UniFormer V2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/uniformer-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "maxvit",
+  "gameId": "game-079",
+  "name": {
+    "vi": "MaxViT",
+    "en": "MaxViT"
+  },
+  "desc": {
+    "vi": "Học MaxViT.",
+    "en": "Learn MaxViT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/maxvit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "coatnet",
+  "gameId": "game-080",
+  "name": {
+    "vi": "CoaTNet",
+    "en": "CoaTNet"
+  },
+  "desc": {
+    "vi": "Học CoaTNet.",
+    "en": "Learn CoaTNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/coatnet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "crossvit",
+  "gameId": "game-081",
+  "name": {
+    "vi": "CrossViT",
+    "en": "CrossViT"
+  },
+  "desc": {
+    "vi": "Học CrossViT.",
+    "en": "Learn CrossViT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crossvit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pit",
+  "gameId": "game-082",
+  "name": {
+    "vi": "PiT",
+    "en": "PiT"
+  },
+  "desc": {
+    "vi": "Học Pooling-based Vision Transformer.",
+    "en": "Learn PiT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cvt",
+  "gameId": "game-083",
+  "name": {
+    "vi": "CvT",
+    "en": "CvT"
+  },
+  "desc": {
+    "vi": "Học Convolutional Vision Transformer.",
+    "en": "Learn CvT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cvt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cvt-w24",
+  "gameId": "game-084",
+  "name": {
+    "vi": "CvT-W24",
+    "en": "CvT-W24"
+  },
+  "desc": {
+    "vi": "Học CvT-W24.",
+    "en": "Learn CvT-W24."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cvt-w24/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "levit",
+  "gameId": "game-085",
+  "name": {
+    "vi": "LeViT",
+    "en": "LeViT"
+  },
+  "desc": {
+    "vi": "Học LeViT.",
+    "en": "Learn LeViT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/levit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mobilevit",
+  "gameId": "game-086",
+  "name": {
+    "vi": "MobileViT",
+    "en": "MobileViT"
+  },
+  "desc": {
+    "vi": "Học MobileViT.",
+    "en": "Learn MobileViT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mobilevit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mobilevit-v2",
+  "gameId": "game-087",
+  "name": {
+    "vi": "MobileViT V2",
+    "en": "MobileViT V2"
+  },
+  "desc": {
+    "vi": "Học MobileViT V2.",
+    "en": "Learn MobileViT V2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mobilevit-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mobilevit-v3",
+  "gameId": "game-088",
+  "name": {
+    "vi": "MobileViT V3",
+    "en": "MobileViT V3"
+  },
+  "desc": {
+    "vi": "Học MobileViT V3.",
+    "en": "Learn MobileViT V3."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mobilevit-v3/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "efficientformer",
+  "gameId": "game-089",
+  "name": {
+    "vi": "EfficientFormer",
+    "en": "EfficientFormer"
+  },
+  "desc": {
+    "vi": "Học EfficientFormer.",
+    "en": "Learn EfficientFormer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/efficientformer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "efficientformer-v2",
+  "gameId": "game-090",
+  "name": {
+    "vi": "EfficientFormer V2",
+    "en": "EfficientFormer V2"
+  },
+  "desc": {
+    "vi": "Học EfficientFormer V2.",
+    "en": "Learn EfficientFormer V2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/efficientformer-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "swiftformer",
+  "gameId": "game-091",
+  "name": {
+    "vi": "SwiftFormer",
+    "en": "SwiftFormer"
+  },
+  "desc": {
+    "vi": "Học SwiftFormer.",
+    "en": "Learn SwiftFormer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/swiftformer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "edgenext",
+  "gameId": "game-092",
+  "name": {
+    "vi": "EdgeNeXt",
+    "en": "EdgeNeXt"
+  },
+  "desc": {
+    "vi": "Học EdgeNeXt.",
+    "en": "Learn EdgeNeXt."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/edgenext/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nextvit",
+  "gameId": "game-093",
+  "name": {
+    "vi": "NextViT",
+    "en": "NextViT"
+  },
+  "desc": {
+    "vi": "Học NextViT.",
+    "en": "Learn NextViT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nextvit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fastvit",
+  "gameId": "game-094",
+  "name": {
+    "vi": "FastViT",
+    "en": "FastViT"
+  },
+  "desc": {
+    "vi": "Học FastViT.",
+    "en": "Learn FastViT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fastvit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "replknet",
+  "gameId": "game-095",
+  "name": {
+    "vi": "RepLKNet",
+    "en": "RepLKNet"
+  },
+  "desc": {
+    "vi": "Học RepLKNet.",
+    "en": "Learn RepLKNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/replknet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "slak",
+  "gameId": "game-096",
+  "name": {
+    "vi": "SLaK",
+    "en": "SLaK"
+  },
+  "desc": {
+    "vi": "Học SLaK.",
+    "en": "Learn SLaK."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/slak/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hornet",
+  "gameId": "game-097",
+  "name": {
+    "vi": "HorNet",
+    "en": "HorNet"
+  },
+  "desc": {
+    "vi": "Học HorNet.",
+    "en": "Learn HorNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hornet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "horformer",
+  "gameId": "game-098",
+  "name": {
+    "vi": "HorFormer",
+    "en": "HorFormer"
+  },
+  "desc": {
+    "vi": "Học HorFormer.",
+    "en": "Learn HorFormer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/horformer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "internimage",
+  "gameId": "game-099",
+  "name": {
+    "vi": "InternImage",
+    "en": "InternImage"
+  },
+  "desc": {
+    "vi": "Học InternImage.",
+    "en": "Learn InternImage."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/internimage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "van",
+  "gameId": "game-100",
+  "name": {
+    "vi": "VAN",
+    "en": "VAN"
+  },
+  "desc": {
+    "vi": "Học Visual Attention Network.",
+    "en": "Learn VAN."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/van/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pvt",
+  "gameId": "game-101",
+  "name": {
+    "vi": "PVT",
+    "en": "PVT"
+  },
+  "desc": {
+    "vi": "Học Pyramid Vision Transformer.",
+    "en": "Learn PVT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pvt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pvt-v2",
+  "gameId": "game-102",
+  "name": {
+    "vi": "PVTv2",
+    "en": "PVTv2"
+  },
+  "desc": {
+    "vi": "Học PVTv2.",
+    "en": "Learn PVTv2."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pvt-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cait",
+  "gameId": "game-103",
+  "name": {
+    "vi": "CaiT",
+    "en": "CaiT"
+  },
+  "desc": {
+    "vi": "Học Class-Attention in Image Transformers.",
+    "en": "Learn CaiT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cait/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "xcit",
+  "gameId": "game-104",
+  "name": {
+    "vi": "XCiT",
+    "en": "XCiT"
+  },
+  "desc": {
+    "vi": "Học XCiT.",
+    "en": "Learn XCiT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/xcit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "twins",
+  "gameId": "game-105",
+  "name": {
+    "vi": "Twins",
+    "en": "Twins"
+  },
+  "desc": {
+    "vi": "Học Twins.",
+    "en": "Learn Twins."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/twins/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "regionvit",
+  "gameId": "game-106",
+  "name": {
+    "vi": "RegionViT",
+    "en": "RegionViT"
+  },
+  "desc": {
+    "vi": "Học RegionViT.",
+    "en": "Learn RegionViT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/regionvit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "focal-transformer",
+  "gameId": "game-107",
+  "name": {
+    "vi": "Focal Transformer",
+    "en": "Focal Transformer"
+  },
+  "desc": {
+    "vi": "Học Focal Transformer.",
+    "en": "Learn Focal Transformer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/focal-transformer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nat",
+  "gameId": "game-108",
+  "name": {
+    "vi": "NAT",
+    "en": "NAT"
+  },
+  "desc": {
+    "vi": "Học Neighborhood Attention Transformer.",
+    "en": "Learn NAT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dinat",
+  "gameId": "game-109",
+  "name": {
+    "vi": "DiNAT",
+    "en": "DiNAT"
+  },
+  "desc": {
+    "vi": "Học Dilated Neighborhood Attention.",
+    "en": "Learn DiNAT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dinat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "shift-win",
+  "gameId": "game-110",
+  "name": {
+    "vi": "ShiftWin",
+    "en": "ShiftWin"
+  },
+  "desc": {
+    "vi": "Học Shifted Window Transformer.",
+    "en": "Learn ShiftWin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/shift-win/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hilo-transformer",
+  "gameId": "game-111",
+  "name": {
+    "vi": "Hilo Transformer",
+    "en": "Hilo Transformer"
+  },
+  "desc": {
+    "vi": "Học HiLo Transformer.",
+    "en": "Learn HiLo Transformer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hilo-transformer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "transnext",
+  "gameId": "game-112",
+  "name": {
+    "vi": "TransNeXt",
+    "en": "TransNeXt"
+  },
+  "desc": {
+    "vi": "Học TransNeXt.",
+    "en": "Learn TransNeXt."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/transnext/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "iformer",
+  "gameId": "game-113",
+  "name": {
+    "vi": "iFormer",
+    "en": "iFormer"
+  },
+  "desc": {
+    "vi": "Học iFormer.",
+    "en": "Learn iFormer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/iformer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "moga",
+  "gameId": "game-114",
+  "name": {
+    "vi": "MogaNet",
+    "en": "MogaNet"
+  },
+  "desc": {
+    "vi": "Học MogaNet.",
+    "en": "Learn MogaNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/moga/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "efficientvim",
+  "gameId": "game-115",
+  "name": {
+    "vi": "EfficientViM",
+    "en": "EfficientViM"
+  },
+  "desc": {
+    "vi": "Học EfficientViM.",
+    "en": "Learn EfficientViM."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/efficientvim/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vim",
+  "gameId": "game-116",
+  "name": {
+    "vi": "Vim",
+    "en": "Vim"
+  },
+  "desc": {
+    "vi": "Học Vision Mamba.",
+    "en": "Learn Vision Mamba."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vim/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vmamba",
+  "gameId": "game-117",
+  "name": {
+    "vi": "VMamba",
+    "en": "VMamba"
+  },
+  "desc": {
+    "vi": "Học VMamba.",
+    "en": "Learn VMamba."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vmamba/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "plainmamba",
+  "gameId": "game-118",
+  "name": {
+    "vi": "PlainMamba",
+    "en": "PlainMamba"
+  },
+  "desc": {
+    "vi": "Học PlainMamba.",
+    "en": "Learn PlainMamba."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/plainmamba/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "localmamba",
+  "gameId": "game-119",
+  "name": {
+    "vi": "LocalMamba",
+    "en": "LocalMamba"
+  },
+  "desc": {
+    "vi": "Học LocalMamba.",
+    "en": "Learn LocalMamba."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/localmamba/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "serp-mamba",
+  "gameId": "game-120",
+  "name": {
+    "vi": "Serp Mamba",
+    "en": "Serp Mamba"
+  },
+  "desc": {
+    "vi": "Học Serp Mamba.",
+    "en": "Learn Serp Mamba."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/serp-mamba/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
 }
 ];
 
