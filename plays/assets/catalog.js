@@ -2117,6 +2117,21 @@
     "genre": "education",
     "wave": 4,
     "free": 5
+  },
+  {
+    "id": "mat-ma-chu",
+    "gameId": "game-104",
+    "name": { "vi": "Mật Mã Chữ", "en": "Word Cipher" },
+    "desc": { "vi": "Giải mã từ tiếng Anh bị xáo trộn. Càng nhanh, điểm càng cao!", "en": "Unscramble English words. Faster = more points!" },
+    "group": "mind",
+    "tier": 1,
+    "status": "live",
+    "path": "games/mat-ma-chu/index.html",
+    "difficulty": "easy",
+    "duration": "2-5 min",
+    "genre": "education",
+    "wave": 4,
+    "free": 5
   }
 ];
 
