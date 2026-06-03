@@ -13256,6 +13256,1812 @@
   "genre": "simulation",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "habit-stack",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Xếp Thói Quen",
+    "en": "Habit Stack"
+  },
+  "desc": {
+    "vi": "Xếp thói quen theo chuỗi.",
+    "en": "Stack habits in sequence."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/habit-stack/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "temptation-bundle",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Gói Cám Dỗ",
+    "en": "Temptation Bundle"
+  },
+  "desc": {
+    "vi": "Kết hợp việc cần & thích.",
+    "en": "Bundle wants with needs."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/temptation-bundle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "implementation-intention",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Ý Định Thực Hiện",
+    "en": "Implementation Intention"
+  },
+  "desc": {
+    "vi": "Viết kế hoạch if-then.",
+    "en": "Write if-then plans."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/implementation-intention/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "habit-tracker-v2",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Theo Dõi Thói Quen 2",
+    "en": "Habit Tracker V2"
+  },
+  "desc": {
+    "vi": "Theo dõi thói quen nâng cao.",
+    "en": "Advanced habit tracking."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/habit-tracker-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "streak-freeze",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Đóng Băng Chuỗi",
+    "en": "Streak Freeze"
+  },
+  "desc": {
+    "vi": "Bảo vệ chuỗi ngày.",
+    "en": "Protect streak days."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/streak-freeze/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "identity-based",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Dựa Trên Nhận Dạng",
+    "en": "Identity Based"
+  },
+  "desc": {
+    "vi": "Xây dựng thói quen từ nhận dạng.",
+    "en": "Build habits from identity."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/identity-based/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "environment-design",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Thiết Kế Môi Trường",
+    "en": "Environment Design"
+  },
+  "desc": {
+    "vi": "Thiết kế môi trường hỗ trợ thói quen.",
+    "en": "Design habit-supporting environment."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/environment-design/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "friction-remove",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Loại Bỏ Ma Sát",
+    "en": "Friction Remove"
+  },
+  "desc": {
+    "vi": "Loại bỏ ma sát thói quen xấu.",
+    "en": "Remove bad habit friction."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/friction-remove/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cue-obvious",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Gợi Ý Hiển Nhiên",
+    "en": "Cue Obvious"
+  },
+  "desc": {
+    "vi": "Làm gợi ý thói quen hiển nhiên.",
+    "en": "Make habit cues obvious."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cue-obvious/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "craving-attractive",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Khao Khát Hấp Dẫn",
+    "en": "Craving Attractive"
+  },
+  "desc": {
+    "vi": "Làm thói quen hấp dẫn.",
+    "en": "Make habits attractive."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/craving-attractive/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "response-easy",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Phản Hồi Dễ Dàng",
+    "en": "Response Easy"
+  },
+  "desc": {
+    "vi": "Làm thói quen dễ thực hiện.",
+    "en": "Make habits easy to do."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/response-easy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "reward-satisfying",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Phần Thưởng Thỏa Mãn",
+    "en": "Reward Satisfying"
+  },
+  "desc": {
+    "vi": "Làm phần thưởng thỏa mãn.",
+    "en": "Make rewards satisfying."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/reward-satisfying/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "habit-scorecard",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Thẻ Điểm Thói Quen",
+    "en": "Habit Scorecard"
+  },
+  "desc": {
+    "vi": "Đánh giá thói quen hiện tại.",
+    "en": "Score current habits."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/habit-scorecard/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pointing-calling",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Chỉ Và Gọi",
+    "en": "Pointing Calling"
+  },
+  "desc": {
+    "vi": "Kỹ thuật chỉ & gọi an toàn.",
+    "en": "Point & call safety technique."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pointing-calling/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "never-miss-twice",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Không Bỏ Lỡ Hai Lần",
+    "en": "Never Miss Twice"
+  },
+  "desc": {
+    "vi": "Quy tắc không bỏ lỡ hai lần.",
+    "en": "Never miss twice rule."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/never-miss-twice/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "two-minute-rule",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Quy Tắc Hai Phút",
+    "en": "Two Minute Rule"
+  },
+  "desc": {
+    "vi": "Thói quen bắt đầu từ 2 phút.",
+    "en": "Start habits in 2 minutes."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/two-minute-rule/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "habit-shaping",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Định Hình Thói Quen",
+    "en": "Habit Shaping"
+  },
+  "desc": {
+    "vi": "Tạo thói quen từng chút.",
+    "en": "Shape habits gradually."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/habit-shaping/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "recovery-protocol",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Giao Thức Phục Hồi",
+    "en": "Recovery Protocol"
+  },
+  "desc": {
+    "vi": "Kế hoạch phục hồi khi thất bại.",
+    "en": "Recovery plan after failure."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/recovery-protocol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "accountability-partner",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Đối Tác Trách Nhiệm",
+    "en": "Accountability Partner"
+  },
+  "desc": {
+    "vi": "Tìm đối tác giữ trách nhiệm.",
+    "en": "Find accountability partner."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/accountability-partner/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "social-commitment",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Cam Kết Xã Hội",
+    "en": "Social Commitment"
+  },
+  "desc": {
+    "vi": "Cam kết công khai thói quen.",
+    "en": "Public habit commitment."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/social-commitment/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "habit-contract",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Hợp Đồng Thói Quen",
+    "en": "Habit Contract"
+  },
+  "desc": {
+    "vi": "Viết hợp đồng thói quen.",
+    "en": "Write habit contract."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/habit-contract/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "progress-photo",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Ảnh Tiến Bộ",
+    "en": "Progress Photo"
+  },
+  "desc": {
+    "vi": "Chụp ảnh tiến bộ thói quen.",
+    "en": "Take habit progress photos."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/progress-photo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "habit-journal",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Nhật Ký Thói Quen",
+    "en": "Habit Journal"
+  },
+  "desc": {
+    "vi": "Ghi nhận thói quen hàng ngày.",
+    "en": "Daily habit journaling."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/habit-journal/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "weekly-review-v2",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Tổng Kết Tuần 2",
+    "en": "Weekly Review V2"
+  },
+  "desc": {
+    "vi": "Tổng kết tuần nâng cao.",
+    "en": "Advanced weekly review."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/weekly-review-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "monthly-review-v2",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Tổng Kết Tháng 2",
+    "en": "Monthly Review V2"
+  },
+  "desc": {
+    "vi": "Tổng kết tháng nâng cao.",
+    "en": "Advanced monthly review."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/monthly-review-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quarterly-review",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Tổng Kết Quý",
+    "en": "Quarterly Review"
+  },
+  "desc": {
+    "vi": "Tổng kết quý & điều chỉnh.",
+    "en": "Quarterly review & adjust."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quarterly-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "annual-review",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Tổng Kết Năm",
+    "en": "Annual Review"
+  },
+  "desc": {
+    "vi": "Tổng kết năm & lập kế hoạch.",
+    "en": "Annual review & planning."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/annual-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "decade-review",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Tổng Kết Thập Kỷ",
+    "en": "Decade Review"
+  },
+  "desc": {
+    "vi": "Nhìn lại & lập kế hoạch thập kỷ.",
+    "en": "Decade review & plan."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/decade-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "life-calendar",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Lịch Cuộc Đời",
+    "en": "Life Calendar"
+  },
+  "desc": {
+    "vi": "Hiển thị tuần trong đời.",
+    "en": "Display weeks in life."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/life-calendar/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "death-clock",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Đồng Hồ Cuộc Đời",
+    "en": "Death Clock"
+  },
+  "desc": {
+    "vi": "Tính thời gian còn lại ước tính.",
+    "en": "Estimate remaining time."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/death-clock/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "regret-minimization",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Giảm Thiểu Hối Tiếc",
+    "en": "Regret Minimization"
+  },
+  "desc": {
+    "vi": "Ma trận giảm thiểu hối tiếc.",
+    "en": "Regret minimization framework."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/regret-minimization/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fear-setting-v2",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Đặt Nỗi Sợ 2",
+    "en": "Fear Setting V2"
+  },
+  "desc": {
+    "vi": "Fear setting nâng cao.",
+    "en": "Advanced fear setting."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fear-setting-v2/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "optionality",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Linh Hoạt",
+    "en": "Optionality"
+  },
+  "desc": {
+    "vi": "Xây dựng sự linh hoạt trong cuộc sống.",
+    "en": "Build life optionality."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/optionality/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "career-capital",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Vốn Nghề Nghiệp",
+    "en": "Career Capital"
+  },
+  "desc": {
+    "vi": "Xây dựng vốn nghề nghiệp hiếm & có giá trị.",
+    "en": "Build rare & valuable career capital."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/career-capital/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mission-mesh",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Sứ Mệnh Phù Hợp",
+    "en": "Mission Mesh"
+  },
+  "desc": {
+    "vi": "Tìm điểm giao sứ mệnh.",
+    "en": "Find mission overlap."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mission-mesh/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "adjacent-possible",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Khả Năng Liền Kề",
+    "en": "Adjacent Possible"
+  },
+  "desc": {
+    "vi": "Khám phá khả năng liền kề.",
+    "en": "Explore adjacent possibilities."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/adjacent-possible/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "deliberate-practice",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Luyện Tập Có Chủ Đích",
+    "en": "Deliberate Practice"
+  },
+  "desc": {
+    "vi": "Thiết kế luyện tập có chủ đích.",
+    "en": "Design deliberate practice."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/deliberate-practice/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "feedback-loop",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Vòng Phản Hồi",
+    "en": "Feedback Loop"
+  },
+  "desc": {
+    "vi": "Xây dựng vòng phản hồi nhanh.",
+    "en": "Build fast feedback loops."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/feedback-loop/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spaced-repetition",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Lặp Lại Ngắt Quãng",
+    "en": "Spaced Repetition"
+  },
+  "desc": {
+    "vi": "Hệ thống lặp lại ngắt quãng.",
+    "en": "Spaced repetition system."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spaced-repetition/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "active-recall",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Gợi Nhớ Chủ Động",
+    "en": "Active Recall"
+  },
+  "desc": {
+    "vi": "Luyện gợi nhớ chủ động.",
+    "en": "Practice active recall."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/active-recall/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "interleaving",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Xen Kẽ",
+    "en": "Interleaving"
+  },
+  "desc": {
+    "vi": "Luyện xen kẽ các kỹ năng.",
+    "en": "Practice interleaving skills."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/interleaving/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "elaboration",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Giải Thích Chi Tiết",
+    "en": "Elaboration"
+  },
+  "desc": {
+    "vi": "Giải thích & liên kết kiến thức.",
+    "en": "Elaborate & connect knowledge."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/elaboration/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dual-coding",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Mã Hóa Kép",
+    "en": "Dual Coding"
+  },
+  "desc": {
+    "vi": "Kết hợp hình ảnh & lời nói.",
+    "en": "Combine visuals & words."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dual-coding/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "concrete-example",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Ví Dụ Cụ Thể",
+    "en": "Concrete Example"
+  },
+  "desc": {
+    "vi": "Tạo ví dụ cụ thể cho khái niệm.",
+    "en": "Create concrete examples."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/concrete-example/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "retrieval-practice",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Luyện Truy Xuất",
+    "en": "Retrieval Practice"
+  },
+  "desc": {
+    "vi": "Luyện truy xuất thông tin.",
+    "en": "Practice information retrieval."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/retrieval-practice/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "generation-effect",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Hiệu Ứng Tạo Ra",
+    "en": "Generation Effect"
+  },
+  "desc": {
+    "vi": "Tự tạo câu trả lời thay vì đọc lại.",
+    "en": "Generate answers vs re-reading."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/generation-effect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "testing-effect",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Hiệu Ứng Kiểm Tra",
+    "en": "Testing Effect"
+  },
+  "desc": {
+    "vi": "Kiểm tra để học tốt hơn.",
+    "en": "Test to learn better."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/testing-effect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "desirable-difficulty",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Khó Khăn Mong Muốn",
+    "en": "Desirable Difficulty"
+  },
+  "desc": {
+    "vi": "Thêm khó khăn để học sâu.",
+    "en": "Add desirable difficulty."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/desirable-difficulty/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "variation-practice",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Luyện Biến Thể",
+    "en": "Variation Practice"
+  },
+  "desc": {
+    "vi": "Luyện với nhiều biến thể.",
+    "en": "Practice with variation."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/variation-practice/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "whole-part-whole",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Toàn Bộ-Phần-Toàn Bộ",
+    "en": "Whole Part Whole"
+  },
+  "desc": {
+    "vi": "Học toàn bộ rồi chi tiết.",
+    "en": "Learn whole then parts."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/whole-part-whole/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": " mental-model",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Mô Hình Tư Duy",
+    "en": "Mental Model"
+  },
+  "desc": {
+    "vi": "Xây dựng mô hình tư duy.",
+    "en": "Build mental models."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ mental-model/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "second-order-thinking",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Tư Duy Bậc Hai",
+    "en": "Second Order Thinking"
+  },
+  "desc": {
+    "vi": "Suy nghĩ đến hệ quả bậc hai.",
+    "en": "Think second-order effects."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/second-order-thinking/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "inversion-thinking",
+  "gameId": "game-053",
+  "name": {
+    "vi": "Tư Duy Đảo Ngược",
+    "en": "Inversion Thinking"
+  },
+  "desc": {
+    "vi": "Giải quyết vấn đề bằng đảo ngược.",
+    "en": "Solve by inversion."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/inversion-thinking/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "occams-razor",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Dao Cạo Occam",
+    "en": "Occams Razor"
+  },
+  "desc": {
+    "vi": "Áp dụng dao cạo Occam.",
+    "en": "Apply Occam's razor."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/occams-razor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hanlons-razor",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Dao Cạo Hanlon",
+    "en": "Hanlons Razor"
+  },
+  "desc": {
+    "vi": "Áp dụng dao cạo Hanlon.",
+    "en": "Apply Hanlon's razor."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hanlons-razor/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "map-territory",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Bản Đồ & Lãnh Thổ",
+    "en": "Map Territory"
+  },
+  "desc": {
+    "vi": "Phân biệt bản đồ & lãnh thổ.",
+    "en": "Distinguish map & territory."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/map-territory/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "thought-experiment",
+  "gameId": "game-057",
+  "name": {
+    "vi": "Thí Nghiệm Tưởng Tượng",
+    "en": "Thought Experiment"
+  },
+  "desc": {
+    "vi": "Thiết kế thí nghiệm tưởng tượng.",
+    "en": "Design thought experiments."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/thought-experiment/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "red-team",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Đội Đỏ",
+    "en": "Red Team"
+  },
+  "desc": {
+    "vi": "Tấn công ý tưởng của chính mình.",
+    "en": "Attack your own ideas."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/red-team/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pre-mortem",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Phân Tích Trước",
+    "en": "Pre Mortem"
+  },
+  "desc": {
+    "vi": "Phân tích thất bại trước khi xảy ra.",
+    "en": "Pre-mortem analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pre-mortem/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "post-mortem",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Phân Tích Sau",
+    "en": "Post Mortem"
+  },
+  "desc": {
+    "vi": "Phân tích sau sự kiện.",
+    "en": "Post-mortem analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/post-mortem/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "after-action-review",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Rút Kinh Nghiệm",
+    "en": "After Action Review"
+  },
+  "desc": {
+    "vi": "Rút kinh nghiệm sau hành động.",
+    "en": "After action review."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/after-action-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hot-wash",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Rút Kinh Nghiệm Nóng",
+    "en": "Hot Wash"
+  },
+  "desc": {
+    "vi": "Rút kinh nghiệm ngay sau sự kiện.",
+    "en": "Hot wash review."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hot-wash/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lessons-capture",
+  "gameId": "game-063",
+  "name": {
+    "vi": "Bắt Bài Học",
+    "en": "Lessons Capture"
+  },
+  "desc": {
+    "vi": "Bắt & lưu trữ bài học.",
+    "en": "Capture & store lessons."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lessons-capture/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "knowledge-transfer",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Chuyển Giao Tri Thức",
+    "en": "Knowledge Transfer"
+  },
+  "desc": {
+    "vi": "Thiết kế chuyển giao tri thức.",
+    "en": "Design knowledge transfer."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/knowledge-transfer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "expert-debrief",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Rút Kinh Nghiệm Chuyên Gia",
+    "en": "Expert Debrief"
+  },
+  "desc": {
+    "vi": "Rút kinh nghiệm với chuyên gia.",
+    "en": "Debrief with experts."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/expert-debrief/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "peer-review",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Đánh Giá Đồng Đẳng",
+    "en": "Peer Review"
+  },
+  "desc": {
+    "vi": "Thiết kế đánh giá đồng đẳng.",
+    "en": "Design peer review."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/peer-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "360-feedback",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Phản Hồi 360",
+    "en": "360 Feedback"
+  },
+  "desc": {
+    "vi": "Thiết kế phản hồi 360 độ.",
+    "en": "Design 360 feedback."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/360-feedback/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stay-interview",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Phỏng Vấn Ở Lại",
+    "en": "Stay Interview"
+  },
+  "desc": {
+    "vi": "Thiết kế phỏng vấn giữ chân.",
+    "en": "Design stay interview."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stay-interview/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "skip-level",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Gặp Gỡ Cấp Trên",
+    "en": "Skip Level"
+  },
+  "desc": {
+    "vi": "Thiết kế gặp gỡ skip-level.",
+    "en": "Design skip-level meeting."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/skip-level/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "one-on-one",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Gặp Riêng",
+    "en": "One on One"
+  },
+  "desc": {
+    "vi": "Thiết kế cuộc gặp 1-1.",
+    "en": "Design 1-on-1 meeting."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/one-on-one/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "team-retro",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Retro Nhóm",
+    "en": "Team Retro"
+  },
+  "desc": {
+    "vi": "Thiết kế retrospective nhóm.",
+    "en": "Design team retro."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/team-retro/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sprint-review",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Xem Xét Sprint",
+    "en": "Sprint Review"
+  },
+  "desc": {
+    "vi": "Thiết kế sprint review.",
+    "en": "Design sprint review."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sprint-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sprint-planning",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Lập Kế Hoạch Sprint",
+    "en": "Sprint Planning"
+  },
+  "desc": {
+    "vi": "Thiết kế sprint planning.",
+    "en": "Design sprint planning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sprint-planning/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "daily-standup",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Họp Hàng Ngày",
+    "en": "Daily Standup"
+  },
+  "desc": {
+    "vi": "Thiết kế daily standup.",
+    "en": "Design daily standup."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/daily-standup/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "backlog-refine",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Tinh Chỉnh Backlog",
+    "en": "Backlog Refine"
+  },
+  "desc": {
+    "vi": "Thiết kế backlog refinement.",
+    "en": "Design backlog refinement."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/backlog-refine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "estimation-game",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Ước Lượng",
+    "en": "Estimation Game"
+  },
+  "desc": {
+    "vi": "Thiết kế trò chơi ước lượng.",
+    "en": "Design estimation game."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/estimation-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "velocity-track",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Theo Dõi Tốc Độ",
+    "en": "Velocity Track"
+  },
+  "desc": {
+    "vi": "Theo dõi velocity nhóm.",
+    "en": "Track team velocity."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/velocity-track/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "burndown-chart",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Biểu Đồ Burndown",
+    "en": "Burndown Chart"
+  },
+  "desc": {
+    "vi": "Tạo biểu đồ burndown.",
+    "en": "Create burndown chart."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/burndown-chart/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "burnup-chart",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Biểu Đồ Burnup",
+    "en": "Burnup Chart"
+  },
+  "desc": {
+    "vi": "Tạo biểu đồ burnup.",
+    "en": "Create burnup chart."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/burnup-chart/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cumulative-flow",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Dòng Tích Lũy",
+    "en": "Cumulative Flow"
+  },
+  "desc": {
+    "vi": "Tạo biểu đồ dòng tích lũy.",
+    "en": "Create cumulative flow."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cumulative-flow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "control-chart",
+  "gameId": "game-081",
+  "name": {
+    "vi": "Biểu Đồ Kiểm Soát",
+    "en": "Control Chart"
+  },
+  "desc": {
+    "vi": "Tạo biểu đồ kiểm soát.",
+    "en": "Create control chart."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/control-chart/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "scatter-plot",
+  "gameId": "game-082",
+  "name": {
+    "vi": "Biểu Đồ Phân Tán",
+    "en": "Scatter Plot"
+  },
+  "desc": {
+    "vi": "Phân tích biểu đồ phân tán.",
+    "en": "Analyze scatter plot."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/scatter-plot/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "histogram",
+  "gameId": "game-083",
+  "name": {
+    "vi": "Biểu Đồ Tần Suất",
+    "en": "Histogram"
+  },
+  "desc": {
+    "vi": "Phân tích histogram.",
+    "en": "Analyze histogram."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/histogram/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pareto-chart",
+  "gameId": "game-084",
+  "name": {
+    "vi": "Biểu Đồ Pareto",
+    "en": "Pareto Chart"
+  },
+  "desc": {
+    "vi": "Tạo biểu đồ Pareto.",
+    "en": "Create Pareto chart."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pareto-chart/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "box-plot",
+  "gameId": "game-085",
+  "name": {
+    "vi": "Biểu Đồ Hộp",
+    "en": "Box Plot"
+  },
+  "desc": {
+    "vi": "Phân tích box plot.",
+    "en": "Analyze box plot."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/box-plot/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "run-chart",
+  "gameId": "game-086",
+  "name": {
+    "vi": "Biểu Đồ Chạy",
+    "en": "Run Chart"
+  },
+  "desc": {
+    "vi": "Tạo biểu đồ chạy.",
+    "en": "Create run chart."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/run-chart/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
 }
 ];
 
