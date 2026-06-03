@@ -41816,6 +41816,2106 @@
   "genre": "math",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "sym051",
+  "gameId": "game-001",
+  "name": {
+    "vi": "SYM051",
+    "en": "SYM051"
+  },
+  "desc": {
+    "vi": "Học SYM051.",
+    "en": "Learn SYM051."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym051/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym052",
+  "gameId": "game-002",
+  "name": {
+    "vi": "SYM052",
+    "en": "SYM052"
+  },
+  "desc": {
+    "vi": "Học SYM052.",
+    "en": "Learn SYM052."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym052/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym053",
+  "gameId": "game-003",
+  "name": {
+    "vi": "SYM053",
+    "en": "SYM053"
+  },
+  "desc": {
+    "vi": "Học SYM053.",
+    "en": "Learn SYM053."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym053/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym054",
+  "gameId": "game-004",
+  "name": {
+    "vi": "SYM054",
+    "en": "SYM054"
+  },
+  "desc": {
+    "vi": "Học SYM054.",
+    "en": "Learn SYM054."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym054/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym055",
+  "gameId": "game-005",
+  "name": {
+    "vi": "SYM055",
+    "en": "SYM055"
+  },
+  "desc": {
+    "vi": "Học SYM055.",
+    "en": "Learn SYM055."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym055/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym056",
+  "gameId": "game-006",
+  "name": {
+    "vi": "SYM056",
+    "en": "SYM056"
+  },
+  "desc": {
+    "vi": "Học SYM056.",
+    "en": "Learn SYM056."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym056/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym057",
+  "gameId": "game-007",
+  "name": {
+    "vi": "SYM057",
+    "en": "SYM057"
+  },
+  "desc": {
+    "vi": "Học SYM057.",
+    "en": "Learn SYM057."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym057/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym058",
+  "gameId": "game-008",
+  "name": {
+    "vi": "SYM058",
+    "en": "SYM058"
+  },
+  "desc": {
+    "vi": "Học SYM058.",
+    "en": "Learn SYM058."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym058/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym059",
+  "gameId": "game-009",
+  "name": {
+    "vi": "SYM059",
+    "en": "SYM059"
+  },
+  "desc": {
+    "vi": "Học SYM059.",
+    "en": "Learn SYM059."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym059/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym060",
+  "gameId": "game-010",
+  "name": {
+    "vi": "SYM060",
+    "en": "SYM060"
+  },
+  "desc": {
+    "vi": "Học SYM060.",
+    "en": "Learn SYM060."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym060/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym061",
+  "gameId": "game-011",
+  "name": {
+    "vi": "SYM061",
+    "en": "SYM061"
+  },
+  "desc": {
+    "vi": "Học SYM061.",
+    "en": "Learn SYM061."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym061/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym062",
+  "gameId": "game-012",
+  "name": {
+    "vi": "SYM062",
+    "en": "SYM062"
+  },
+  "desc": {
+    "vi": "Học SYM062.",
+    "en": "Learn SYM062."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym062/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym063",
+  "gameId": "game-013",
+  "name": {
+    "vi": "SYM063",
+    "en": "SYM063"
+  },
+  "desc": {
+    "vi": "Học SYM063.",
+    "en": "Learn SYM063."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym063/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym064",
+  "gameId": "game-014",
+  "name": {
+    "vi": "SYM064",
+    "en": "SYM064"
+  },
+  "desc": {
+    "vi": "Học SYM064.",
+    "en": "Learn SYM064."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym064/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym065",
+  "gameId": "game-015",
+  "name": {
+    "vi": "SYM065",
+    "en": "SYM065"
+  },
+  "desc": {
+    "vi": "Học SYM065.",
+    "en": "Learn SYM065."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym065/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym066",
+  "gameId": "game-016",
+  "name": {
+    "vi": "SYM066",
+    "en": "SYM066"
+  },
+  "desc": {
+    "vi": "Học SYM066.",
+    "en": "Learn SYM066."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym066/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym067",
+  "gameId": "game-017",
+  "name": {
+    "vi": "SYM067",
+    "en": "SYM067"
+  },
+  "desc": {
+    "vi": "Học SYM067.",
+    "en": "Learn SYM067."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym067/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym068",
+  "gameId": "game-018",
+  "name": {
+    "vi": "SYM068",
+    "en": "SYM068"
+  },
+  "desc": {
+    "vi": "Học SYM068.",
+    "en": "Learn SYM068."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym068/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym069",
+  "gameId": "game-019",
+  "name": {
+    "vi": "SYM069",
+    "en": "SYM069"
+  },
+  "desc": {
+    "vi": "Học SYM069.",
+    "en": "Learn SYM069."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym069/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym070",
+  "gameId": "game-020",
+  "name": {
+    "vi": "SYM070",
+    "en": "SYM070"
+  },
+  "desc": {
+    "vi": "Học SYM070.",
+    "en": "Learn SYM070."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym070/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym071",
+  "gameId": "game-021",
+  "name": {
+    "vi": "SYM071",
+    "en": "SYM071"
+  },
+  "desc": {
+    "vi": "Học SYM071.",
+    "en": "Learn SYM071."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym071/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym072",
+  "gameId": "game-022",
+  "name": {
+    "vi": "SYM072",
+    "en": "SYM072"
+  },
+  "desc": {
+    "vi": "Học SYM072.",
+    "en": "Learn SYM072."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym072/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym073",
+  "gameId": "game-023",
+  "name": {
+    "vi": "SYM073",
+    "en": "SYM073"
+  },
+  "desc": {
+    "vi": "Học SYM073.",
+    "en": "Learn SYM073."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym073/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym074",
+  "gameId": "game-024",
+  "name": {
+    "vi": "SYM074",
+    "en": "SYM074"
+  },
+  "desc": {
+    "vi": "Học SYM074.",
+    "en": "Learn SYM074."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym074/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym075",
+  "gameId": "game-025",
+  "name": {
+    "vi": "SYM075",
+    "en": "SYM075"
+  },
+  "desc": {
+    "vi": "Học SYM075.",
+    "en": "Learn SYM075."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym075/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym076",
+  "gameId": "game-026",
+  "name": {
+    "vi": "SYM076",
+    "en": "SYM076"
+  },
+  "desc": {
+    "vi": "Học SYM076.",
+    "en": "Learn SYM076."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym076/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym077",
+  "gameId": "game-027",
+  "name": {
+    "vi": "SYM077",
+    "en": "SYM077"
+  },
+  "desc": {
+    "vi": "Học SYM077.",
+    "en": "Learn SYM077."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym077/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym078",
+  "gameId": "game-028",
+  "name": {
+    "vi": "SYM078",
+    "en": "SYM078"
+  },
+  "desc": {
+    "vi": "Học SYM078.",
+    "en": "Learn SYM078."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym078/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym079",
+  "gameId": "game-029",
+  "name": {
+    "vi": "SYM079",
+    "en": "SYM079"
+  },
+  "desc": {
+    "vi": "Học SYM079.",
+    "en": "Learn SYM079."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym079/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym080",
+  "gameId": "game-030",
+  "name": {
+    "vi": "SYM080",
+    "en": "SYM080"
+  },
+  "desc": {
+    "vi": "Học SYM080.",
+    "en": "Learn SYM080."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym080/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym081",
+  "gameId": "game-031",
+  "name": {
+    "vi": "SYM081",
+    "en": "SYM081"
+  },
+  "desc": {
+    "vi": "Học SYM081.",
+    "en": "Learn SYM081."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym081/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym082",
+  "gameId": "game-032",
+  "name": {
+    "vi": "SYM082",
+    "en": "SYM082"
+  },
+  "desc": {
+    "vi": "Học SYM082.",
+    "en": "Learn SYM082."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym082/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym083",
+  "gameId": "game-033",
+  "name": {
+    "vi": "SYM083",
+    "en": "SYM083"
+  },
+  "desc": {
+    "vi": "Học SYM083.",
+    "en": "Learn SYM083."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym083/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym084",
+  "gameId": "game-034",
+  "name": {
+    "vi": "SYM084",
+    "en": "SYM084"
+  },
+  "desc": {
+    "vi": "Học SYM084.",
+    "en": "Learn SYM084."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym084/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym085",
+  "gameId": "game-035",
+  "name": {
+    "vi": "SYM085",
+    "en": "SYM085"
+  },
+  "desc": {
+    "vi": "Học SYM085.",
+    "en": "Learn SYM085."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym085/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym086",
+  "gameId": "game-036",
+  "name": {
+    "vi": "SYM086",
+    "en": "SYM086"
+  },
+  "desc": {
+    "vi": "Học SYM086.",
+    "en": "Learn SYM086."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym086/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym087",
+  "gameId": "game-037",
+  "name": {
+    "vi": "SYM087",
+    "en": "SYM087"
+  },
+  "desc": {
+    "vi": "Học SYM087.",
+    "en": "Learn SYM087."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym087/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym088",
+  "gameId": "game-038",
+  "name": {
+    "vi": "SYM088",
+    "en": "SYM088"
+  },
+  "desc": {
+    "vi": "Học SYM088.",
+    "en": "Learn SYM088."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym088/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym089",
+  "gameId": "game-039",
+  "name": {
+    "vi": "SYM089",
+    "en": "SYM089"
+  },
+  "desc": {
+    "vi": "Học SYM089.",
+    "en": "Learn SYM089."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym089/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym090",
+  "gameId": "game-040",
+  "name": {
+    "vi": "SYM090",
+    "en": "SYM090"
+  },
+  "desc": {
+    "vi": "Học SYM090.",
+    "en": "Learn SYM090."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym090/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym091",
+  "gameId": "game-041",
+  "name": {
+    "vi": "SYM091",
+    "en": "SYM091"
+  },
+  "desc": {
+    "vi": "Học SYM091.",
+    "en": "Learn SYM091."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym091/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym092",
+  "gameId": "game-042",
+  "name": {
+    "vi": "SYM092",
+    "en": "SYM092"
+  },
+  "desc": {
+    "vi": "Học SYM092.",
+    "en": "Learn SYM092."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym092/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym093",
+  "gameId": "game-043",
+  "name": {
+    "vi": "SYM093",
+    "en": "SYM093"
+  },
+  "desc": {
+    "vi": "Học SYM093.",
+    "en": "Learn SYM093."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym093/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym094",
+  "gameId": "game-044",
+  "name": {
+    "vi": "SYM094",
+    "en": "SYM094"
+  },
+  "desc": {
+    "vi": "Học SYM094.",
+    "en": "Learn SYM094."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym094/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym095",
+  "gameId": "game-045",
+  "name": {
+    "vi": "SYM095",
+    "en": "SYM095"
+  },
+  "desc": {
+    "vi": "Học SYM095.",
+    "en": "Learn SYM095."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym095/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym096",
+  "gameId": "game-046",
+  "name": {
+    "vi": "SYM096",
+    "en": "SYM096"
+  },
+  "desc": {
+    "vi": "Học SYM096.",
+    "en": "Learn SYM096."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym096/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym097",
+  "gameId": "game-047",
+  "name": {
+    "vi": "SYM097",
+    "en": "SYM097"
+  },
+  "desc": {
+    "vi": "Học SYM097.",
+    "en": "Learn SYM097."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym097/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym098",
+  "gameId": "game-048",
+  "name": {
+    "vi": "SYM098",
+    "en": "SYM098"
+  },
+  "desc": {
+    "vi": "Học SYM098.",
+    "en": "Learn SYM098."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym098/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym099",
+  "gameId": "game-049",
+  "name": {
+    "vi": "SYM099",
+    "en": "SYM099"
+  },
+  "desc": {
+    "vi": "Học SYM099.",
+    "en": "Learn SYM099."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym099/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym100",
+  "gameId": "game-050",
+  "name": {
+    "vi": "SYM100",
+    "en": "SYM100"
+  },
+  "desc": {
+    "vi": "Học SYM100.",
+    "en": "Learn SYM100."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym100/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym101",
+  "gameId": "game-051",
+  "name": {
+    "vi": "SYM101",
+    "en": "SYM101"
+  },
+  "desc": {
+    "vi": "Học SYM101.",
+    "en": "Learn SYM101."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym101/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym102",
+  "gameId": "game-052",
+  "name": {
+    "vi": "SYM102",
+    "en": "SYM102"
+  },
+  "desc": {
+    "vi": "Học SYM102.",
+    "en": "Learn SYM102."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym102/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym103",
+  "gameId": "game-053",
+  "name": {
+    "vi": "SYM103",
+    "en": "SYM103"
+  },
+  "desc": {
+    "vi": "Học SYM103.",
+    "en": "Learn SYM103."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym103/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym104",
+  "gameId": "game-054",
+  "name": {
+    "vi": "SYM104",
+    "en": "SYM104"
+  },
+  "desc": {
+    "vi": "Học SYM104.",
+    "en": "Learn SYM104."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym104/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym105",
+  "gameId": "game-055",
+  "name": {
+    "vi": "SYM105",
+    "en": "SYM105"
+  },
+  "desc": {
+    "vi": "Học SYM105.",
+    "en": "Learn SYM105."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym105/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym106",
+  "gameId": "game-056",
+  "name": {
+    "vi": "SYM106",
+    "en": "SYM106"
+  },
+  "desc": {
+    "vi": "Học SYM106.",
+    "en": "Learn SYM106."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym106/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym107",
+  "gameId": "game-057",
+  "name": {
+    "vi": "SYM107",
+    "en": "SYM107"
+  },
+  "desc": {
+    "vi": "Học SYM107.",
+    "en": "Learn SYM107."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym107/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym108",
+  "gameId": "game-058",
+  "name": {
+    "vi": "SYM108",
+    "en": "SYM108"
+  },
+  "desc": {
+    "vi": "Học SYM108.",
+    "en": "Learn SYM108."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym108/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym109",
+  "gameId": "game-059",
+  "name": {
+    "vi": "SYM109",
+    "en": "SYM109"
+  },
+  "desc": {
+    "vi": "Học SYM109.",
+    "en": "Learn SYM109."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym109/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym110",
+  "gameId": "game-060",
+  "name": {
+    "vi": "SYM110",
+    "en": "SYM110"
+  },
+  "desc": {
+    "vi": "Học SYM110.",
+    "en": "Learn SYM110."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym110/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym111",
+  "gameId": "game-061",
+  "name": {
+    "vi": "SYM111",
+    "en": "SYM111"
+  },
+  "desc": {
+    "vi": "Học SYM111.",
+    "en": "Learn SYM111."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym111/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym112",
+  "gameId": "game-062",
+  "name": {
+    "vi": "SYM112",
+    "en": "SYM112"
+  },
+  "desc": {
+    "vi": "Học SYM112.",
+    "en": "Learn SYM112."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym112/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym113",
+  "gameId": "game-063",
+  "name": {
+    "vi": "SYM113",
+    "en": "SYM113"
+  },
+  "desc": {
+    "vi": "Học SYM113.",
+    "en": "Learn SYM113."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym113/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym114",
+  "gameId": "game-064",
+  "name": {
+    "vi": "SYM114",
+    "en": "SYM114"
+  },
+  "desc": {
+    "vi": "Học SYM114.",
+    "en": "Learn SYM114."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym114/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym115",
+  "gameId": "game-065",
+  "name": {
+    "vi": "SYM115",
+    "en": "SYM115"
+  },
+  "desc": {
+    "vi": "Học SYM115.",
+    "en": "Learn SYM115."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym115/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym116",
+  "gameId": "game-066",
+  "name": {
+    "vi": "SYM116",
+    "en": "SYM116"
+  },
+  "desc": {
+    "vi": "Học SYM116.",
+    "en": "Learn SYM116."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym116/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym117",
+  "gameId": "game-067",
+  "name": {
+    "vi": "SYM117",
+    "en": "SYM117"
+  },
+  "desc": {
+    "vi": "Học SYM117.",
+    "en": "Learn SYM117."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym117/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym118",
+  "gameId": "game-068",
+  "name": {
+    "vi": "SYM118",
+    "en": "SYM118"
+  },
+  "desc": {
+    "vi": "Học SYM118.",
+    "en": "Learn SYM118."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym118/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym119",
+  "gameId": "game-069",
+  "name": {
+    "vi": "SYM119",
+    "en": "SYM119"
+  },
+  "desc": {
+    "vi": "Học SYM119.",
+    "en": "Learn SYM119."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym119/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym120",
+  "gameId": "game-070",
+  "name": {
+    "vi": "SYM120",
+    "en": "SYM120"
+  },
+  "desc": {
+    "vi": "Học SYM120.",
+    "en": "Learn SYM120."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym120/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym121",
+  "gameId": "game-071",
+  "name": {
+    "vi": "SYM121",
+    "en": "SYM121"
+  },
+  "desc": {
+    "vi": "Học SYM121.",
+    "en": "Learn SYM121."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym121/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym122",
+  "gameId": "game-072",
+  "name": {
+    "vi": "SYM122",
+    "en": "SYM122"
+  },
+  "desc": {
+    "vi": "Học SYM122.",
+    "en": "Learn SYM122."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym122/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym123",
+  "gameId": "game-073",
+  "name": {
+    "vi": "SYM123",
+    "en": "SYM123"
+  },
+  "desc": {
+    "vi": "Học SYM123.",
+    "en": "Learn SYM123."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym123/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym124",
+  "gameId": "game-074",
+  "name": {
+    "vi": "SYM124",
+    "en": "SYM124"
+  },
+  "desc": {
+    "vi": "Học SYM124.",
+    "en": "Learn SYM124."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym124/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym125",
+  "gameId": "game-075",
+  "name": {
+    "vi": "SYM125",
+    "en": "SYM125"
+  },
+  "desc": {
+    "vi": "Học SYM125.",
+    "en": "Learn SYM125."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym125/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym126",
+  "gameId": "game-076",
+  "name": {
+    "vi": "SYM126",
+    "en": "SYM126"
+  },
+  "desc": {
+    "vi": "Học SYM126.",
+    "en": "Learn SYM126."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym126/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym127",
+  "gameId": "game-077",
+  "name": {
+    "vi": "SYM127",
+    "en": "SYM127"
+  },
+  "desc": {
+    "vi": "Học SYM127.",
+    "en": "Learn SYM127."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym127/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym128",
+  "gameId": "game-078",
+  "name": {
+    "vi": "SYM128",
+    "en": "SYM128"
+  },
+  "desc": {
+    "vi": "Học SYM128.",
+    "en": "Learn SYM128."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym128/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym129",
+  "gameId": "game-079",
+  "name": {
+    "vi": "SYM129",
+    "en": "SYM129"
+  },
+  "desc": {
+    "vi": "Học SYM129.",
+    "en": "Learn SYM129."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym129/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym130",
+  "gameId": "game-080",
+  "name": {
+    "vi": "SYM130",
+    "en": "SYM130"
+  },
+  "desc": {
+    "vi": "Học SYM130.",
+    "en": "Learn SYM130."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym130/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym131",
+  "gameId": "game-081",
+  "name": {
+    "vi": "SYM131",
+    "en": "SYM131"
+  },
+  "desc": {
+    "vi": "Học SYM131.",
+    "en": "Learn SYM131."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym131/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym132",
+  "gameId": "game-082",
+  "name": {
+    "vi": "SYM132",
+    "en": "SYM132"
+  },
+  "desc": {
+    "vi": "Học SYM132.",
+    "en": "Learn SYM132."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym132/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym133",
+  "gameId": "game-083",
+  "name": {
+    "vi": "SYM133",
+    "en": "SYM133"
+  },
+  "desc": {
+    "vi": "Học SYM133.",
+    "en": "Learn SYM133."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym133/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym134",
+  "gameId": "game-084",
+  "name": {
+    "vi": "SYM134",
+    "en": "SYM134"
+  },
+  "desc": {
+    "vi": "Học SYM134.",
+    "en": "Learn SYM134."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym134/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym135",
+  "gameId": "game-085",
+  "name": {
+    "vi": "SYM135",
+    "en": "SYM135"
+  },
+  "desc": {
+    "vi": "Học SYM135.",
+    "en": "Learn SYM135."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym135/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym136",
+  "gameId": "game-086",
+  "name": {
+    "vi": "SYM136",
+    "en": "SYM136"
+  },
+  "desc": {
+    "vi": "Học SYM136.",
+    "en": "Learn SYM136."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym136/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym137",
+  "gameId": "game-087",
+  "name": {
+    "vi": "SYM137",
+    "en": "SYM137"
+  },
+  "desc": {
+    "vi": "Học SYM137.",
+    "en": "Learn SYM137."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym137/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym138",
+  "gameId": "game-088",
+  "name": {
+    "vi": "SYM138",
+    "en": "SYM138"
+  },
+  "desc": {
+    "vi": "Học SYM138.",
+    "en": "Learn SYM138."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym138/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym139",
+  "gameId": "game-089",
+  "name": {
+    "vi": "SYM139",
+    "en": "SYM139"
+  },
+  "desc": {
+    "vi": "Học SYM139.",
+    "en": "Learn SYM139."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym139/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym140",
+  "gameId": "game-090",
+  "name": {
+    "vi": "SYM140",
+    "en": "SYM140"
+  },
+  "desc": {
+    "vi": "Học SYM140.",
+    "en": "Learn SYM140."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym140/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym141",
+  "gameId": "game-091",
+  "name": {
+    "vi": "SYM141",
+    "en": "SYM141"
+  },
+  "desc": {
+    "vi": "Học SYM141.",
+    "en": "Learn SYM141."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym141/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym142",
+  "gameId": "game-092",
+  "name": {
+    "vi": "SYM142",
+    "en": "SYM142"
+  },
+  "desc": {
+    "vi": "Học SYM142.",
+    "en": "Learn SYM142."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym142/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym143",
+  "gameId": "game-093",
+  "name": {
+    "vi": "SYM143",
+    "en": "SYM143"
+  },
+  "desc": {
+    "vi": "Học SYM143.",
+    "en": "Learn SYM143."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym143/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym144",
+  "gameId": "game-094",
+  "name": {
+    "vi": "SYM144",
+    "en": "SYM144"
+  },
+  "desc": {
+    "vi": "Học SYM144.",
+    "en": "Learn SYM144."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym144/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym145",
+  "gameId": "game-095",
+  "name": {
+    "vi": "SYM145",
+    "en": "SYM145"
+  },
+  "desc": {
+    "vi": "Học SYM145.",
+    "en": "Learn SYM145."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym145/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym146",
+  "gameId": "game-096",
+  "name": {
+    "vi": "SYM146",
+    "en": "SYM146"
+  },
+  "desc": {
+    "vi": "Học SYM146.",
+    "en": "Learn SYM146."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym146/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym147",
+  "gameId": "game-097",
+  "name": {
+    "vi": "SYM147",
+    "en": "SYM147"
+  },
+  "desc": {
+    "vi": "Học SYM147.",
+    "en": "Learn SYM147."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym147/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym148",
+  "gameId": "game-098",
+  "name": {
+    "vi": "SYM148",
+    "en": "SYM148"
+  },
+  "desc": {
+    "vi": "Học SYM148.",
+    "en": "Learn SYM148."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym148/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym149",
+  "gameId": "game-099",
+  "name": {
+    "vi": "SYM149",
+    "en": "SYM149"
+  },
+  "desc": {
+    "vi": "Học SYM149.",
+    "en": "Learn SYM149."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym149/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sym150",
+  "gameId": "game-100",
+  "name": {
+    "vi": "SYM150",
+    "en": "SYM150"
+  },
+  "desc": {
+    "vi": "Học SYM150.",
+    "en": "Learn SYM150."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sym150/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
 }
 ];
 
