@@ -5675,6 +5675,531 @@
   "genre": "strategy",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "morning-pages",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Trang Sáng",
+    "en": "Morning Pages"
+  },
+  "desc": {
+    "vi": "Viết 3 trang tự do buổi sáng.",
+    "en": "Write 3 free pages each morning."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/morning-pages/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "evening-review",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Tổng Kết Tối",
+    "en": "Evening Review"
+  },
+  "desc": {
+    "vi": "Tổng kết ngày trước khi ngủ.",
+    "en": "Review day before sleep."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/evening-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "week-preview",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Xem Trước Tuần",
+    "en": "Week Preview"
+  },
+  "desc": {
+    "vi": "Lập kế hoạch tuần tới.",
+    "en": "Plan next week ahead."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/week-preview/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "month-reflection",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Nhìn Lại Tháng",
+    "en": "Month Reflection"
+  },
+  "desc": {
+    "vi": "Tổng kết & rút kinh nghiệm tháng.",
+    "en": "Monthly reflection."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/month-reflection/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "year-in-pixels",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Năm Qua Pixel",
+    "en": "Year in Pixels"
+  },
+  "desc": {
+    "vi": "Tô màu tâm trạng cả năm.",
+    "en": "Color mood for entire year."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/year-in-pixels/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bucket-list",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Danh Sách Ước Mơ",
+    "en": "Bucket List"
+  },
+  "desc": {
+    "vi": "Liệt kê & theo dõi ước mơ.",
+    "en": "Track bucket list dreams."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bucket-list/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "life-wheel",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Bánh Xe Cuộc Sống",
+    "en": "Life Wheel"
+  },
+  "desc": {
+    "vi": "Đánh giá 8 lĩnh vực cuộc sống.",
+    "en": "Rate 8 life areas."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/life-wheel/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "core-values",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Giá Trị Cốt Lõi",
+    "en": "Core Values"
+  },
+  "desc": {
+    "vi": "Xác định 5 giá trị cốt lõi.",
+    "en": "Identify top 5 values."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/core-values/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "personal-mission",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Sứ Mệnh Cá Nhân",
+    "en": "Personal Mission"
+  },
+  "desc": {
+    "vi": "Viết tuyên bố sứ mệnh.",
+    "en": "Write personal mission statement."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/personal-mission/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "legacy-letter",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Thư Di Sản",
+    "en": "Legacy Letter"
+  },
+  "desc": {
+    "vi": "Viết thư cho tương lai.",
+    "en": "Write letter to future self."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/legacy-letter/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gratitude-map",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Bản Đồ Biết Ơn",
+    "en": "Gratitude Map"
+  },
+  "desc": {
+    "vi": "Vẽ bản đồ người & việc biết ơn.",
+    "en": "Map gratitude people & things."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gratitude-map/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kindness-chain",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Chuỗi Tử Tế",
+    "en": "Kindness Chain"
+  },
+  "desc": {
+    "vi": "Theo dõi chuỗi hành động tử tế.",
+    "en": "Track kindness chain."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kindness-chain/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "forgiveness-list",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Danh Sách Tha Thứ",
+    "en": "Forgiveness List"
+  },
+  "desc": {
+    "vi": "Viết & buông bỏ để tha thứ.",
+    "en": "Write & release to forgive."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/forgiveness-list/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fear-setting",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Đặt Nỗi Sợ",
+    "en": "Fear Setting"
+  },
+  "desc": {
+    "vi": "Phân tích & đối mặt nỗi sợ.",
+    "en": "Analyze & face fears."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fear-setting/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "comfort-zone",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Vùng An Toàn",
+    "en": "Comfort Zone"
+  },
+  "desc": {
+    "vi": "Vẽ & mở rộng vùng an toàn.",
+    "en": "Map & expand comfort zone."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/comfort-zone/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "strength-finder",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Tìm Điểm Mạnh",
+    "en": "Strength Finder"
+  },
+  "desc": {
+    "vi": "Khám phá điểm mạnh bản thân.",
+    "en": "Discover personal strengths."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/strength-finder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ikigai-game",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Ikigai",
+    "en": "Ikigai Game"
+  },
+  "desc": {
+    "vi": "Tìm lý do thức dậy mỗi sáng.",
+    "en": "Find your reason for being."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ikigai-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "golden-circle",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Vòng Tròn Vàng",
+    "en": "Golden Circle"
+  },
+  "desc": {
+    "vi": "Xác định Why-How-What.",
+    "en": "Define Why-How-What."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/golden-circle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "value-ladder",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Thang Giá Trị",
+    "en": "Value Ladder"
+  },
+  "desc": {
+    "vi": "Thiết kế thang giá trị khách hàng.",
+    "en": "Design customer value ladder."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/value-ladder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hook-model",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Mô Hình Hook",
+    "en": "Hook Model"
+  },
+  "desc": {
+    "vi": "Phân tích vòng lặp thói quen.",
+    "en": "Analyze habit loop."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hook-model/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "flywheel-game",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Bánh Xe Bay",
+    "en": "Flywheel Game"
+  },
+  "desc": {
+    "vi": "Xây dựng vòng xoáy tăng trưởng.",
+    "en": "Build growth flywheel."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/flywheel-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "north-star",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Sao Bắc Đẩu",
+    "en": "North Star"
+  },
+  "desc": {
+    "vi": "Xác định chỉ số sao bắc đẩu.",
+    "en": "Define North Star metric."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/north-star/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "aha-moment",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Khoảnh Khắc Aha",
+    "en": "Aha Moment"
+  },
+  "desc": {
+    "vi": "Ghi lại & phân tích insight.",
+    "en": "Record & analyze insights."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/aha-moment/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pattern-library",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Thư Viện Mẫu",
+    "en": "Pattern Library"
+  },
+  "desc": {
+    "vi": "Thu thập & phân loại mẫu.",
+    "en": "Collect & categorize patterns."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pattern-library/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trend-radar",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Radar Xu Hướng",
+    "en": "Trend Radar"
+  },
+  "desc": {
+    "vi": "Theo dõi & đánh giá xu hướng.",
+    "en": "Track & assess trends."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trend-radar/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
 }
 ];
 
