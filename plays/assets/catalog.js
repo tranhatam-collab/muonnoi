@@ -8342,6 +8342,2064 @@
   "genre": "math",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "grammar-fix",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Sửa Ngữ Pháp",
+    "en": "Grammar Fix"
+  },
+  "desc": {
+    "vi": "Sửa lỗi ngữ pháp tiếng Anh.",
+    "en": "Fix English grammar errors."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/grammar-fix/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spelling-bee",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Đánh Vần",
+    "en": "Spelling Bee"
+  },
+  "desc": {
+    "vi": "Đánh vần từ tiếng Anh.",
+    "en": "Spell English words."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spelling-bee/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "phonics-match",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Phonics Ghép",
+    "en": "Phonics Match"
+  },
+  "desc": {
+    "vi": "Ghép âm với chữ cái.",
+    "en": "Match sounds to letters."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/phonics-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rhyme-time",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Vần Điệu",
+    "en": "Rhyme Time"
+  },
+  "desc": {
+    "vi": "Tìm từ vần điệu.",
+    "en": "Find rhyming words."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rhyme-time/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "syllable-count",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Đếm Âm Tiết",
+    "en": "Syllable Count"
+  },
+  "desc": {
+    "vi": "Đếm âm tiết từ.",
+    "en": "Count word syllables."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/syllable-count/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "antonym-hunt",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Săn Trái Nghĩa",
+    "en": "Antonym Hunt"
+  },
+  "desc": {
+    "vi": "Tìm trái nghĩa nhanh.",
+    "en": "Find antonyms fast."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/antonym-hunt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "synonym-match",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Ghép Đồng Nghĩa",
+    "en": "Synonym Match"
+  },
+  "desc": {
+    "vi": "Ghép từ đồng nghĩa.",
+    "en": "Match synonyms."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/synonym-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "homophone-game",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Đồng Âm",
+    "en": "Homophone Game"
+  },
+  "desc": {
+    "vi": "Phân biệt từ đồng âm.",
+    "en": "Distinguish homophones."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/homophone-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prefix-suffix",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Tiền Tố Hậu Tố",
+    "en": "Prefix Suffix"
+  },
+  "desc": {
+    "vi": "Nhận diện tiền tố hậu tố.",
+    "en": "Identify prefixes/suffixes."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prefix-suffix/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "root-word",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Gốc Từ",
+    "en": "Root Word"
+  },
+  "desc": {
+    "vi": "Tìm gốc từ Latin/Greek.",
+    "en": "Find Latin/Greek roots."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/root-word/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "idiom-match",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Ghép Thành Ngữ",
+    "en": "Idiom Match"
+  },
+  "desc": {
+    "vi": "Ghép thành ngữ với nghĩa.",
+    "en": "Match idioms to meanings."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/idiom-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "proverb-game",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Tục Ngữ",
+    "en": "Proverb Game"
+  },
+  "desc": {
+    "vi": "Đoán tục ngữ từ gợi ý.",
+    "en": "Guess proverb from hint."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/proverb-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tongue-twister",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Chữ Chiết",
+    "en": "Tongue Twister"
+  },
+  "desc": {
+    "vi": "Luyện chữ chiết nhanh.",
+    "en": "Practice tongue twisters."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tongue-twister/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "palindrome-check",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Đối Xứng Chữ",
+    "en": "Palindrome Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra từ đối xứng.",
+    "en": "Check palindrome words."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/palindrome-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "anagram-race",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Đua Anagram",
+    "en": "Anagram Race"
+  },
+  "desc": {
+    "vi": "Giải anagram nhanh.",
+    "en": "Solve anagrams fast."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/anagram-race/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "crossword-lite",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Ô Chữ Nhẹ",
+    "en": "Crossword Lite"
+  },
+  "desc": {
+    "vi": "Giải ô chữ đơn giản.",
+    "en": "Simple crossword puzzle."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crossword-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "word-ladder",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Thang Từ",
+    "en": "Word Ladder"
+  },
+  "desc": {
+    "vi": "Biến đổi từ A sang B.",
+    "en": "Transform word A to B."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/word-ladder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "crypto-quote",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Mật Mã Trích Dẫn",
+    "en": "Crypto Quote"
+  },
+  "desc": {
+    "vi": "Giải mã trích dẫn nổi tiếng.",
+    "en": "Decode famous quotes."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crypto-quote/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "acronym-game",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Từ Viết Tắt",
+    "en": "Acronym Game"
+  },
+  "desc": {
+    "vi": "Đoán từ viết tắt.",
+    "en": "Guess acronyms."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/acronym-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "oxford-comma",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Dấu Phẩy Oxford",
+    "en": "Oxford Comma"
+  },
+  "desc": {
+    "vi": "Luyện dấu phẩy Oxford.",
+    "en": "Practice Oxford comma."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/oxford-comma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "active-passive",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Chủ Động Bị Động",
+    "en": "Active Passive"
+  },
+  "desc": {
+    "vi": "Chuyển câu chủ động/bị động.",
+    "en": "Convert active/passive voice."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/active-passive/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tense-timeline",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Dòng Thời Gian",
+    "en": "Tense Timeline"
+  },
+  "desc": {
+    "vi": "Sắp xếp thì đúng.",
+    "en": "Arrange tenses correctly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tense-timeline/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "conditional-clauses",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Mệnh Đề Điều Kiện",
+    "en": "Conditional Clauses"
+  },
+  "desc": {
+    "vi": "Nhận diện mệnh đề điều kiện.",
+    "en": "Identify conditional clauses."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/conditional-clauses/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "reported-speech",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Lời Nói Gián Tiếp",
+    "en": "Reported Speech"
+  },
+  "desc": {
+    "vi": "Chuyển lời nói gián tiếp.",
+    "en": "Convert to reported speech."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/reported-speech/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "relative-clauses",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Mệnh Đề Quan Hệ",
+    "en": "Relative Clauses"
+  },
+  "desc": {
+    "vi": "Nhận diện mệnh đề quan hệ.",
+    "en": "Identify relative clauses."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/relative-clauses/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "article-game",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Mạo Từ",
+    "en": "Article Game"
+  },
+  "desc": {
+    "vi": "Chọn mạo từ a/an/the đúng.",
+    "en": "Choose correct articles."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/article-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "preposition-place",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Giới Từ Chỉ Nơi",
+    "en": "Preposition Place"
+  },
+  "desc": {
+    "vi": "Chọn giới từ chỉ nơi chốn.",
+    "en": "Choose place prepositions."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/preposition-place/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "preposition-time",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Giới Từ Chỉ Thời Gian",
+    "en": "Preposition Time"
+  },
+  "desc": {
+    "vi": "Chọn giới từ chỉ thời gian.",
+    "en": "Choose time prepositions."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/preposition-time/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "phrasal-verb",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Động Từ Ghép",
+    "en": "Phrasal Verb"
+  },
+  "desc": {
+    "vi": "Ghép động từ với giới từ.",
+    "en": "Match verbs with prepositions."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/phrasal-verb/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "collocation-match",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Ghép Cụm Từ",
+    "en": "Collocation Match"
+  },
+  "desc": {
+    "vi": "Ghép cụm từ thông dụng.",
+    "en": "Match common collocations."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/collocation-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "formal-informal",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Trang Trọng & Thân Mật",
+    "en": "Formal Informal"
+  },
+  "desc": {
+    "vi": "Phân biệt văn phong.",
+    "en": "Distinguish formal/informal."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/formal-informal/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "register-shift",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Chuyển Văn Phong",
+    "en": "Register Shift"
+  },
+  "desc": {
+    "vi": "Chuyển đổi văn phong phù hợp.",
+    "en": "Shift register appropriately."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/register-shift/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cohesion-game",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Liên Kết Văn Bản",
+    "en": "Cohesion Game"
+  },
+  "desc": {
+    "vi": "Tìm từ nối liên kết.",
+    "en": "Find cohesive devices."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cohesion-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "thesis-hunt",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Săn Luận Điểm",
+    "en": "Thesis Hunt"
+  },
+  "desc": {
+    "vi": "Tìm luận điểm chính.",
+    "en": "Find main thesis statements."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/thesis-hunt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "evidence-match",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Ghép Bằng Chứng",
+    "en": "Evidence Match"
+  },
+  "desc": {
+    "vi": "Ghép bằng chứng với luận điểm.",
+    "en": "Match evidence to claims."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/evidence-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fallacy-spot",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Tìm Lỗi Logic",
+    "en": "Fallacy Spot"
+  },
+  "desc": {
+    "vi": "Nhận diện lỗi logic.",
+    "en": "Spot logical fallacies."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fallacy-spot/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bias-detect",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Phát Hiện Thiên Lệch",
+    "en": "Bias Detect"
+  },
+  "desc": {
+    "vi": "Phát hiện thiên lệch trong văn.",
+    "en": "Detect bias in text."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bias-detect/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "source-check",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Kiểm Tra Nguồn",
+    "en": "Source Check"
+  },
+  "desc": {
+    "vi": "Đánh giá độ tin cậy nguồn.",
+    "en": "Assess source credibility."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/source-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "citation-fix",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Sửa Trích Dẫn",
+    "en": "Citation Fix"
+  },
+  "desc": {
+    "vi": "Sửa lỗi trích dẫn APA/MLA.",
+    "en": "Fix APA/MLA citations."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/citation-fix/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "plagiarism-check",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Kiểm Tra Đạo Văn",
+    "en": "Plagiarism Check"
+  },
+  "desc": {
+    "vi": "So sánh & phát hiện đạo văn.",
+    "en": "Compare & detect plagiarism."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/plagiarism-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "summary-skill",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Tóm Tắt",
+    "en": "Summary Skill"
+  },
+  "desc": {
+    "vi": "Tóm tắt văn bản ngắn gọn.",
+    "en": "Summarize text concisely."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/summary-skill/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "paraphrase-pro",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Diễn Giải",
+    "en": "Paraphrase Pro"
+  },
+  "desc": {
+    "vi": "Diễn giải lại câu văn.",
+    "en": "Paraphrase sentences."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/paraphrase-pro/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "outline-builder",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Xây Dựng Dàn Ý",
+    "en": "Outline Builder"
+  },
+  "desc": {
+    "vi": "Tạo dàn ý cho bài viết.",
+    "en": "Create essay outlines."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/outline-builder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hook-writer",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Viết Mở Bài",
+    "en": "Hook Writer"
+  },
+  "desc": {
+    "vi": "Viết câu mở bài hấp dẫn.",
+    "en": "Write engaging hooks."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hook-writer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "conclusion-craft",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Kết Bài",
+    "en": "Conclusion Craft"
+  },
+  "desc": {
+    "vi": "Viết kết bài mạnh mẽ.",
+    "en": "Craft strong conclusions."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/conclusion-craft/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "transition-smooth",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Câu Nối",
+    "en": "Transition Smooth"
+  },
+  "desc": {
+    "vi": "Thêm câu nối mượt mà.",
+    "en": "Add smooth transitions."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/transition-smooth/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tone-adjuster",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Điều Chỉnh Giọng Điệu",
+    "en": "Tone Adjuster"
+  },
+  "desc": {
+    "vi": "Thay đổi giọng điệu văn bản.",
+    "en": "Adjust text tone."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tone-adjuster/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "audience-adapt",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Thích Ứng Đối Tượng",
+    "en": "Audience Adapt"
+  },
+  "desc": {
+    "vi": "Viết cho đối tượng khác nhau.",
+    "en": "Write for different audiences."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/audience-adapt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "purpose-clarify",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Làm Rõ Mục Đích",
+    "en": "Purpose Clarify"
+  },
+  "desc": {
+    "vi": "Xác định mục đích văn bản.",
+    "en": "Clarify writing purpose."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/purpose-clarify/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "parallel-structure",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Song Song",
+    "en": "Parallel Structure"
+  },
+  "desc": {
+    "vi": "Sửa cấu trúc song song.",
+    "en": "Fix parallel structure."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/parallel-structure/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "modifier-placement",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Vị Trí Bổ Ngữ",
+    "en": "Modifier Placement"
+  },
+  "desc": {
+    "vi": "Đặt bổ ngữ đúng vị trí.",
+    "en": "Place modifiers correctly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/modifier-placement/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dangling-modifier",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Bổ Ngữ Treo",
+    "en": "Dangling Modifier"
+  },
+  "desc": {
+    "vi": "Sửa bổ ngữ treo.",
+    "en": "Fix dangling modifiers."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dangling-modifier/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "split-infinitive",
+  "gameId": "game-053",
+  "name": {
+    "vi": "Nguyên Mẫu Chia",
+    "en": "Split Infinitive"
+  },
+  "desc": {
+    "vi": "Quyết định chia nguyên mẫu.",
+    "en": "Decide split infinitives."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/split-infinitive/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "subjunctive-mood",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Thể Giả Định",
+    "en": "Subjunctive Mood"
+  },
+  "desc": {
+    "vi": "Sử dụng thể giả định.",
+    "en": "Use subjunctive mood."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/subjunctive-mood/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "inversion-game",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Đảo Ngữ",
+    "en": "Inversion Game"
+  },
+  "desc": {
+    "vi": "Đảo ngữ trong văn viết.",
+    "en": "Practice inversion."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/inversion-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cleft-sentence",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Câu Chia",
+    "en": "Cleft Sentence"
+  },
+  "desc": {
+    "vi": "Viết câu chia nhấn mạnh.",
+    "en": "Write cleft sentences."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cleft-sentence/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "emphatic-do",
+  "gameId": "game-057",
+  "name": {
+    "vi": "Do Nhấn Mạnh",
+    "en": "Emphatic Do"
+  },
+  "desc": {
+    "vi": "Sử dụng do nhấn mạnh.",
+    "en": "Use emphatic do."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/emphatic-do/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ellipsis-game",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Lược Bỏ",
+    "en": "Ellipsis Game"
+  },
+  "desc": {
+    "vi": "Lược bỏ đúng trong câu.",
+    "en": "Use ellipsis correctly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ellipsis-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "apostrophe-rules",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Dấu Nháy Đơn",
+    "en": "Apostrophe Rules"
+  },
+  "desc": {
+    "vi": "Quy tắc dấu nháy đơn.",
+    "en": "Apostrophe rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/apostrophe-rules/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "semicolon-game",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Dấu Chấm Phẩy",
+    "en": "Semicolon Game"
+  },
+  "desc": {
+    "vi": "Sử dụng dấu chấm phẩy.",
+    "en": "Use semicolons correctly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/semicolon-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "colon-game",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Dấu Hai Chấm",
+    "en": "Colon Game"
+  },
+  "desc": {
+    "vi": "Sử dụng dấu hai chấm.",
+    "en": "Use colons correctly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/colon-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dash-game",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Dấu Gạch Ngang",
+    "en": "Dash Game"
+  },
+  "desc": {
+    "vi": "Sử dụng dấu gạch ngang.",
+    "en": "Use dashes correctly."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dash-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hyphen-rules",
+  "gameId": "game-063",
+  "name": {
+    "vi": "Dấu Gạch Nối",
+    "en": "Hyphen Rules"
+  },
+  "desc": {
+    "vi": "Quy tắc dấu gạch nối.",
+    "en": "Hyphenation rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hyphen-rules/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "capitalization",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Viết Hoa",
+    "en": "Capitalization"
+  },
+  "desc": {
+    "vi": "Quy tắc viết hoa.",
+    "en": "Capitalization rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/capitalization/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "number-style",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Viết Số",
+    "en": "Number Style"
+  },
+  "desc": {
+    "vi": "Quy tắc viết số trong văn.",
+    "en": "Number writing rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/number-style/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "italics-rules",
+  "gameId": "game-066",
+  "name": {
+    "vi": "In Nghiêng",
+    "en": "Italics Rules"
+  },
+  "desc": {
+    "vi": "Quy tắc in nghiêng.",
+    "en": "Italics usage rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/italics-rules/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quotation-marks",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Dấu Ngoặc Kép",
+    "en": "Quotation Marks"
+  },
+  "desc": {
+    "vi": "Quy tắc dấu ngoặc kép.",
+    "en": "Quotation mark rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quotation-marks/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bracket-rules",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Dấu Ngoặc Đơn",
+    "en": "Bracket Rules"
+  },
+  "desc": {
+    "vi": "Quy tắc dấu ngoặc đơn.",
+    "en": "Bracket usage rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bracket-rules/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ampersand-rules",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Dấu Và",
+    "en": "Ampersand Rules"
+  },
+  "desc": {
+    "vi": "Quy tắc sử dụng &.",
+    "en": "Ampersand usage rules."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ampersand-rules/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "email-etiquette",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Email Lịch Sự",
+    "en": "Email Etiquette"
+  },
+  "desc": {
+    "vi": "Viết email lịch sự.",
+    "en": "Write polite emails."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/email-etiquette/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "memo-writing",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Viết Memo",
+    "en": "Memo Writing"
+  },
+  "desc": {
+    "vi": "Viết memo ngắn gọn.",
+    "en": "Write concise memos."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/memo-writing/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "report-writing",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Viết Báo Cáo",
+    "en": "Report Writing"
+  },
+  "desc": {
+    "vi": "Viết báo cáo chuyên nghiệp.",
+    "en": "Write professional reports."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/report-writing/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "proposal-writing",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Viết Đề Xuất",
+    "en": "Proposal Writing"
+  },
+  "desc": {
+    "vi": "Viết đề xuất thuyết phục.",
+    "en": "Write persuasive proposals."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/proposal-writing/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "resume-builder",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Xây Dựng Sơ Yếu",
+    "en": "Resume Builder"
+  },
+  "desc": {
+    "vi": "Tạo sơ yếu lý lịch.",
+    "en": "Build resumes."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/resume-builder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cover-letter",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Thư Xin Việc",
+    "en": "Cover Letter"
+  },
+  "desc": {
+    "vi": "Viết thư xin việc.",
+    "en": "Write cover letters."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cover-letter/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "linkedin-profile",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Hồ Sơ LinkedIn",
+    "en": "LinkedIn Profile"
+  },
+  "desc": {
+    "vi": "Tối ưu hồ sơ LinkedIn.",
+    "en": "Optimize LinkedIn profile."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/linkedin-profile/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "portfolio-builder",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Xây Dựng Portfolio",
+    "en": "Portfolio Builder"
+  },
+  "desc": {
+    "vi": "Tạo portfolio nghề nghiệp.",
+    "en": "Build career portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/portfolio-builder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "interview-prep",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Chuẩn Bị Phỏng Vấn",
+    "en": "Interview Prep"
+  },
+  "desc": {
+    "vi": "Luyện phỏng vấn.",
+    "en": "Practice interviews."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/interview-prep/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "salary-negotiate",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Đàm Phán Lương",
+    "en": "Salary Negotiate"
+  },
+  "desc": {
+    "vi": "Luyện đàm phán lương.",
+    "en": "Practice salary negotiation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/salary-negotiate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "networking-game",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Kết Nối",
+    "en": "Networking Game"
+  },
+  "desc": {
+    "vi": "Luyện kết nối chuyên nghiệp.",
+    "en": "Practice professional networking."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/networking-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "elevator-pitch",
+  "gameId": "game-081",
+  "name": {
+    "vi": "Pitch 30 Giây",
+    "en": "Elevator Pitch"
+  },
+  "desc": {
+    "vi": "Luyện pitch ngắn.",
+    "en": "Practice 30-second pitch."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/elevator-pitch/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "personal-brand",
+  "gameId": "game-082",
+  "name": {
+    "vi": "Thương Hiệu Cá Nhân",
+    "en": "Personal Brand"
+  },
+  "desc": {
+    "vi": "Xây dựng thương hiệu cá nhân.",
+    "en": "Build personal brand."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/personal-brand/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "time-management",
+  "gameId": "game-083",
+  "name": {
+    "vi": "Quản Lý Thời Gian",
+    "en": "Time Management"
+  },
+  "desc": {
+    "vi": "Lập kế hoạch quản lý thời gian.",
+    "en": "Plan time management."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/time-management/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "meeting-facilitate",
+  "gameId": "game-084",
+  "name": {
+    "vi": "Điều Phối Họp",
+    "en": "Meeting Facilitate"
+  },
+  "desc": {
+    "vi": "Luyện điều phối cuộc họp.",
+    "en": "Practice meeting facilitation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/meeting-facilitate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "conflict-resolve",
+  "gameId": "game-085",
+  "name": {
+    "vi": "Giải Quyết Xung Đột",
+    "en": "Conflict Resolve"
+  },
+  "desc": {
+    "vi": "Luyện giải quyết xung đột.",
+    "en": "Practice conflict resolution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/conflict-resolve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "feedback-give",
+  "gameId": "game-086",
+  "name": {
+    "vi": "Cho Phản Hồi",
+    "en": "Feedback Give"
+  },
+  "desc": {
+    "vi": "Luyện cho phản hồi xây dựng.",
+    "en": "Practice giving feedback."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/feedback-give/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "feedback-receive",
+  "gameId": "game-087",
+  "name": {
+    "vi": "Nhận Phản Hồi",
+    "en": "Feedback Receive"
+  },
+  "desc": {
+    "vi": "Luyện nhận phản hồi.",
+    "en": "Practice receiving feedback."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/feedback-receive/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "delegation-game",
+  "gameId": "game-088",
+  "name": {
+    "vi": "Ủy Thác",
+    "en": "Delegation Game"
+  },
+  "desc": {
+    "vi": "Luyện ủy thác công việc.",
+    "en": "Practice delegation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/delegation-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "coaching-lite",
+  "gameId": "game-089",
+  "name": {
+    "vi": "Huấn Luyện Nhẹ",
+    "en": "Coaching Lite"
+  },
+  "desc": {
+    "vi": "Luyện kỹ năng coaching.",
+    "en": "Practice coaching skills."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/coaching-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mentorship-match",
+  "gameId": "game-090",
+  "name": {
+    "vi": "Ghép Mentor",
+    "en": "Mentorship Match"
+  },
+  "desc": {
+    "vi": "Tìm mentor/mentee phù hợp.",
+    "en": "Find mentor/mentee match."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mentorship-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "team-role",
+  "gameId": "game-091",
+  "name": {
+    "vi": "Vai Trò Nhóm",
+    "en": "Team Role"
+  },
+  "desc": {
+    "vi": "Xác định vai trò trong nhóm.",
+    "en": "Determine team role."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/team-role/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "leadership-style",
+  "gameId": "game-092",
+  "name": {
+    "vi": "Phong Cách Lãnh Đạo",
+    "en": "Leadership Style"
+  },
+  "desc": {
+    "vi": "Xác định phong cách lãnh đạo.",
+    "en": "Determine leadership style."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/leadership-style/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "decision-style",
+  "gameId": "game-093",
+  "name": {
+    "vi": "Phong Cách Quyết Định",
+    "en": "Decision Style"
+  },
+  "desc": {
+    "vi": "Xác định cách ra quyết định.",
+    "en": "Determine decision style."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/decision-style/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "communication-style",
+  "gameId": "game-094",
+  "name": {
+    "vi": "Phong Cách Giao Tiếp",
+    "en": "Communication Style"
+  },
+  "desc": {
+    "vi": "Xác định phong cách giao tiếp.",
+    "en": "Determine communication style."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/communication-style/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "learning-style",
+  "gameId": "game-095",
+  "name": {
+    "vi": "Phong Cách Học",
+    "en": "Learning Style"
+  },
+  "desc": {
+    "vi": "Xác định phong cách học.",
+    "en": "Determine learning style."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/learning-style/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "motivation-drive",
+  "gameId": "game-096",
+  "name": {
+    "vi": "Động Lực",
+    "en": "Motivation Drive"
+  },
+  "desc": {
+    "vi": "Xác định nguồn động lực.",
+    "en": "Determine motivation drivers."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/motivation-drive/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stress-style",
+  "gameId": "game-097",
+  "name": {
+    "vi": "Ứng Phó Stress",
+    "en": "Stress Style"
+  },
+  "desc": {
+    "vi": "Xác định cách ứng phó stress.",
+    "en": "Determine stress coping style."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stress-style/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "work-life-balance",
+  "gameId": "game-098",
+  "name": {
+    "vi": "Cân Bằng Công Việc",
+    "en": "Work Life Balance"
+  },
+  "desc": {
+    "vi": "Đánh giá cân bằng công-việc-sống.",
+    "en": "Assess work-life balance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/work-life-balance/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
 }
 ];
 
