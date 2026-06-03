@@ -16826,6 +16826,2295 @@
   "genre": "math",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "crypto-basic",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Tiền Mã Hóa Cơ Bản",
+    "en": "Crypto Basic"
+  },
+  "desc": {
+    "vi": "Tìm hiểu cơ bản về crypto.",
+    "en": "Learn crypto basics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crypto-basic/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "blockchain-explorer",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Khám Phá Blockchain",
+    "en": "Blockchain Explorer"
+  },
+  "desc": {
+    "vi": "Khám phá cách blockchain hoạt động.",
+    "en": "Explore blockchain mechanics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/blockchain-explorer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mining-sim",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Khai Thác Giả Lập",
+    "en": "Mining Sim"
+  },
+  "desc": {
+    "vi": "Mô phỏng khai thác tiền mã hóa.",
+    "en": "Simulate crypto mining."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mining-sim/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "wallet-security",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Bảo Mật Ví",
+    "en": "Wallet Security"
+  },
+  "desc": {
+    "vi": "Học cách bảo mật ví crypto.",
+    "en": "Learn wallet security."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/wallet-security/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "defi-yield",
+  "gameId": "game-005",
+  "name": {
+    "vi": "DeFi Yield",
+    "en": "DeFi Yield"
+  },
+  "desc": {
+    "vi": "Tính toán lợi suất DeFi.",
+    "en": "Calculate DeFi yield."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/defi-yield/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "liquidity-pool",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Hợp Đồng Thanh Khoản",
+    "en": "Liquidity Pool"
+  },
+  "desc": {
+    "vi": "Phân tích liquidity pool.",
+    "en": "Analyze liquidity pools."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/liquidity-pool/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "impermanent-loss",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Tổn Thất Tạm Thời",
+    "en": "Impermanent Loss"
+  },
+  "desc": {
+    "vi": "Tính tổn thất tạm thời.",
+    "en": "Calculate impermanent loss."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/impermanent-loss/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "staking-calc",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Staking",
+    "en": "Staking Calc"
+  },
+  "desc": {
+    "vi": "Tính phần thưởng staking.",
+    "en": "Calculate staking rewards."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/staking-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gas-fee-est",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Phí Gas",
+    "en": "Gas Fee Est"
+  },
+  "desc": {
+    "vi": "Ước tính phí gas.",
+    "en": "Estimate gas fees."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gas-fee-est/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nft-valuation",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Định Giá NFT",
+    "en": "NFT Valuation"
+  },
+  "desc": {
+    "vi": "Định giá tài sản NFT.",
+    "en": "Value NFT assets."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nft-valuation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "smart-contract-audit",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Kiểm Tra Hợp Đồng",
+    "en": "Smart Contract Audit"
+  },
+  "desc": {
+    "vi": "Kiểm tra lỗi smart contract.",
+    "en": "Audit smart contracts."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/smart-contract-audit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tokenomics",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Tokenomics",
+    "en": "Tokenomics"
+  },
+  "desc": {
+    "vi": "Phân tích tokenomics.",
+    "en": "Analyze tokenomics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tokenomics/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vesting-schedule",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Lịch Vesting",
+    "en": "Vesting Schedule"
+  },
+  "desc": {
+    "vi": "Tính lịch vesting token.",
+    "en": "Calculate token vesting schedule."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vesting-schedule/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "airdrop-hunt",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Săn Airdrop",
+    "en": "Airdrop Hunt"
+  },
+  "desc": {
+    "vi": "Tìm & đánh giá airdrop.",
+    "en": "Find & evaluate airdrops."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/airdrop-hunt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dao-governance",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Quản Trị DAO",
+    "en": "DAO Governance"
+  },
+  "desc": {
+    "vi": "Tham gia quản trị DAO.",
+    "en": "Participate in DAO governance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dao-governance/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "protocol-upgrade",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Nâng Cấp Giao Thức",
+    "en": "Protocol Upgrade"
+  },
+  "desc": {
+    "vi": "Lập kế hoạch nâng cấp giao thức.",
+    "en": "Plan protocol upgrades."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/protocol-upgrade/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cross-chain-bridge",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Cầu Nối Chuỗi",
+    "en": "Cross Chain Bridge"
+  },
+  "desc": {
+    "vi": "Thiết kế cầu nối cross-chain.",
+    "en": "Design cross-chain bridges."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cross-chain-bridge/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "layer2-rollup",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Layer2 Rollup",
+    "en": "Layer2 Rollup"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Layer2 rollup.",
+    "en": "Learn Layer2 rollups."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/layer2-rollup/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zero-knowledge",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Zero Knowledge",
+    "en": "Zero Knowledge"
+  },
+  "desc": {
+    "vi": "Tìm hiểu zero-knowledge proofs.",
+    "en": "Learn ZK proofs."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zero-knowledge/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mpc-wallet",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Ví MPC",
+    "en": "MPC Wallet"
+  },
+  "desc": {
+    "vi": "Tìm hiểu ví MPC.",
+    "en": "Learn MPC wallets."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mpc-wallet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "multisig-wallet",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Ví Đa Chữ Ký",
+    "en": "Multisig Wallet"
+  },
+  "desc": {
+    "vi": "Thiết lập ví đa chữ ký.",
+    "en": "Setup multisig wallet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/multisig-wallet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "social-recovery",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Khôi Phục Xã Hội",
+    "en": "Social Recovery"
+  },
+  "desc": {
+    "vi": "Thiết kế khôi phục xã hội.",
+    "en": "Design social recovery."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/social-recovery/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "account-abstraction",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Trừu Tượng Hóa Tài Khoản",
+    "en": "Account Abstraction"
+  },
+  "desc": {
+    "vi": "Tìm hiểu account abstraction.",
+    "en": "Learn account abstraction."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/account-abstraction/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "paymaster",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Paymaster",
+    "en": "Paymaster"
+  },
+  "desc": {
+    "vi": "Thiết kế paymaster.",
+    "en": "Design paymaster."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/paymaster/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "session-key",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Khóa Phiên",
+    "en": "Session Key"
+  },
+  "desc": {
+    "vi": "Thiết kế khóa phiên.",
+    "en": "Design session keys."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/session-key/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "aa-wallet",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Ví AA",
+    "en": "AA Wallet"
+  },
+  "desc": {
+    "vi": "Thiết kế ví smart contract.",
+    "en": "Design smart contract wallet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/aa-wallet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bundler",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Bundler",
+    "en": "Bundler"
+  },
+  "desc": {
+    "vi": "Tìm hiểu bundler ERC-4337.",
+    "en": "Learn ERC-4337 bundler."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bundler/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "entry-point",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Entry Point",
+    "en": "Entry Point"
+  },
+  "desc": {
+    "vi": "Tìm hiểu entry point.",
+    "en": "Learn entry point."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/entry-point/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "user-operation",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Thao Tác Người Dùng",
+    "en": "User Operation"
+  },
+  "desc": {
+    "vi": "Tạo user operation.",
+    "en": "Create user operations."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/user-operation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "paymaster-rules",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Quy Tắc Paymaster",
+    "en": "Paymaster Rules"
+  },
+  "desc": {
+    "vi": "Thiết lập quy tắc paymaster.",
+    "en": "Setup paymaster rules."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/paymaster-rules/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gas-sponsorship",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Tài Trợ Gas",
+    "en": "Gas Sponsorship"
+  },
+  "desc": {
+    "vi": "Thiết kế tài trợ gas.",
+    "en": "Design gas sponsorship."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gas-sponsorship/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "signature-aggregation",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Tổng Hợp Chữ Ký",
+    "en": "Signature Aggregation"
+  },
+  "desc": {
+    "vi": "Tổng hợp chữ ký BLS.",
+    "en": "Aggregate BLS signatures."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/signature-aggregation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "erc-20",
+  "gameId": "game-033",
+  "name": {
+    "vi": "ERC-20",
+    "en": "ERC-20"
+  },
+  "desc": {
+    "vi": "Tạo token ERC-20.",
+    "en": "Create ERC-20 token."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/erc-20/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "erc-721",
+  "gameId": "game-034",
+  "name": {
+    "vi": "ERC-721",
+    "en": "ERC-721"
+  },
+  "desc": {
+    "vi": "Tạo NFT ERC-721.",
+    "en": "Create ERC-721 NFT."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/erc-721/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "erc-1155",
+  "gameId": "game-035",
+  "name": {
+    "vi": "ERC-1155",
+    "en": "ERC-1155"
+  },
+  "desc": {
+    "vi": "Tạo token đa năng ERC-1155.",
+    "en": "Create ERC-1155 multi-token."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/erc-1155/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "erc-4626",
+  "gameId": "game-036",
+  "name": {
+    "vi": "ERC-4626",
+    "en": "ERC-4626"
+  },
+  "desc": {
+    "vi": "Tạo vault ERC-4626.",
+    "en": "Create ERC-4626 vault."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/erc-4626/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "erc-4337",
+  "gameId": "game-037",
+  "name": {
+    "vi": "ERC-4337",
+    "en": "ERC-4337"
+  },
+  "desc": {
+    "vi": "Triển khai ERC-4337.",
+    "en": "Implement ERC-4337."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/erc-4337/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "erc-6900",
+  "gameId": "game-038",
+  "name": {
+    "vi": "ERC-6900",
+    "en": "ERC-6900"
+  },
+  "desc": {
+    "vi": "Tìm hiểu ERC-6900.",
+    "en": "Learn ERC-6900."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/erc-6900/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eip-1559",
+  "gameId": "game-039",
+  "name": {
+    "vi": "EIP-1559",
+    "en": "EIP-1559"
+  },
+  "desc": {
+    "vi": "Tìm hiểu EIP-1559.",
+    "en": "Learn EIP-1559."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eip-1559/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eip-4844",
+  "gameId": "game-040",
+  "name": {
+    "vi": "EIP-4844",
+    "en": "EIP-4844"
+  },
+  "desc": {
+    "vi": "Tìm hiểu proto-danksharding.",
+    "en": "Learn proto-danksharding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eip-4844/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "danksharding",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Danksharding",
+    "en": "Danksharding"
+  },
+  "desc": {
+    "vi": "Tìm hiểu danksharding.",
+    "en": "Learn danksharding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/danksharding/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "proto-danksharding",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Proto Danksharding",
+    "en": "Proto Danksharding"
+  },
+  "desc": {
+    "vi": "Tìm hiểu proto-danksharding.",
+    "en": "Learn proto-danksharding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/proto-danksharding/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "data-availability",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Dữ Liệu Khả Dụng",
+    "en": "Data Availability"
+  },
+  "desc": {
+    "vi": "Đánh giá data availability.",
+    "en": "Assess data availability."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/data-availability/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "validium",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Validium",
+    "en": "Validium"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Validium.",
+    "en": "Learn Validium."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/validium/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "volition",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Volition",
+    "en": "Volition"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Volition.",
+    "en": "Learn Volition."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/volition/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "optimistic-rollup",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Optimistic Rollup",
+    "en": "Optimistic Rollup"
+  },
+  "desc": {
+    "vi": "Tìm hiểu optimistic rollup.",
+    "en": "Learn optimistic rollup."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/optimistic-rollup/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zk-rollup",
+  "gameId": "game-047",
+  "name": {
+    "vi": "ZK Rollup",
+    "en": "ZK Rollup"
+  },
+  "desc": {
+    "vi": "Tìm hiểu ZK rollup.",
+    "en": "Learn ZK rollup."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zk-rollup/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "starknet",
+  "gameId": "game-048",
+  "name": {
+    "vi": "StarkNet",
+    "en": "StarkNet"
+  },
+  "desc": {
+    "vi": "Tìm hiểu StarkNet.",
+    "en": "Learn StarkNet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/starknet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cairo-lang",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Cairo",
+    "en": "Cairo Lang"
+  },
+  "desc": {
+    "vi": "Tìm hiểu ngôn ngữ Cairo.",
+    "en": "Learn Cairo language."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cairo-lang/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "starkex",
+  "gameId": "game-050",
+  "name": {
+    "vi": "StarkEx",
+    "en": "StarkEx"
+  },
+  "desc": {
+    "vi": "Tìm hiểu StarkEx.",
+    "en": "Learn StarkEx."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/starkex/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "polygon-cdk",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Polygon CDK",
+    "en": "Polygon CDK"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Polygon CDK.",
+    "en": "Learn Polygon CDK."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/polygon-cdk/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "arbitrum-stylus",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Arbitrum Stylus",
+    "en": "Arbitrum Stylus"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Arbitrum Stylus.",
+    "en": "Learn Arbitrum Stylus."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/arbitrum-stylus/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "op-stack",
+  "gameId": "game-053",
+  "name": {
+    "vi": "OP Stack",
+    "en": "OP Stack"
+  },
+  "desc": {
+    "vi": "Tìm hiểu OP Stack.",
+    "en": "Learn OP Stack."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/op-stack/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "superchain",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Superchain",
+    "en": "Superchain"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Superchain.",
+    "en": "Learn Superchain."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/superchain/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "base-chain",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Base",
+    "en": "Base Chain"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Base.",
+    "en": "Learn Base."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/base-chain/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zora-network",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Zora",
+    "en": "Zora Network"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Zora Network.",
+    "en": "Learn Zora Network."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zora-network/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mode-network",
+  "gameId": "game-057",
+  "name": {
+    "vi": "Mode",
+    "en": "Mode Network"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Mode Network.",
+    "en": "Learn Mode Network."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mode-network/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mantle-network",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Mantle",
+    "en": "Mantle Network"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Mantle Network.",
+    "en": "Learn Mantle Network."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mantle-network/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "metis-andromeda",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Metis",
+    "en": "Metis Andromeda"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Metis Andromeda.",
+    "en": "Learn Metis Andromeda."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/metis-andromeda/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "scroll-zkvm",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Scroll",
+    "en": "Scroll zkVM"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Scroll zkVM.",
+    "en": "Learn Scroll zkVM."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/scroll-zkvm/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "taiko-zk",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Taiko",
+    "en": "Taiko ZK"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Taiko ZK-EVM.",
+    "en": "Learn Taiko ZK-EVM."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/taiko-zk/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "linea-zk",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Linea",
+    "en": "Linea ZK"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Linea ZK.",
+    "en": "Learn Linea ZK."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/linea-zk/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zksync-era",
+  "gameId": "game-063",
+  "name": {
+    "vi": "zkSync",
+    "en": "zkSync Era"
+  },
+  "desc": {
+    "vi": "Tìm hiểu zkSync Era.",
+    "en": "Learn zkSync Era."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zksync-era/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "loopring-dex",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Loopring",
+    "en": "Loopring DEX"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Loopring DEX.",
+    "en": "Learn Loopring DEX."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/loopring-dex/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "immutable-x",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Immutable X",
+    "en": "Immutable X"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Immutable X.",
+    "en": "Learn Immutable X."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/immutable-x/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sorare-fantasy",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Sorare",
+    "en": "Sorare Fantasy"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Sorare fantasy football.",
+    "en": "Learn Sorare fantasy football."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sorare-fantasy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "guild-xyz",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Guild",
+    "en": "Guild XYZ"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Guild.xyz.",
+    "en": "Learn Guild.xyz."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/guild-xyz/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lens-protocol",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Lens",
+    "en": "Lens Protocol"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Lens Protocol.",
+    "en": "Learn Lens Protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lens-protocol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "farcaster",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Farcaster",
+    "en": "Farcaster"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Farcaster.",
+    "en": "Learn Farcaster."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/farcaster/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "warpcast",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Warpcast",
+    "en": "Warpcast"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Warpcast.",
+    "en": "Learn Warpcast."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/warpcast/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "frames",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Frames",
+    "en": "Frames"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Farcaster Frames.",
+    "en": "Learn Farcaster Frames."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/frames/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "channel-nft",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Channel NFT",
+    "en": "Channel NFT"
+  },
+  "desc": {
+    "vi": "Tìm hiểu channel NFT.",
+    "en": "Learn channel NFTs."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/channel-nft/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "degen-token",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Degen",
+    "en": "Degen Token"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Degen token.",
+    "en": "Learn Degen token."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/degen-token/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rare-shop",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Rare Shop",
+    "en": "Rare Shop"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Rare Shop.",
+    "en": "Learn Rare Shop."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rare-shop/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "paragraph",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Paragraph",
+    "en": "Paragraph"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Paragraph.xyz.",
+    "en": "Learn Paragraph.xyz."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/paragraph/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mirror-blog",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Mirror",
+    "en": "Mirror Blog"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Mirror.xyz.",
+    "en": "Learn Mirror.xyz."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mirror-blog/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "zora-mint",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Zora Mint",
+    "en": "Zora Mint"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Zora mint.",
+    "en": "Learn Zora minting."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zora-mint/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "manifold-studio",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Manifold",
+    "en": "Manifold Studio"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Manifold Studio.",
+    "en": "Learn Manifold Studio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/manifold-studio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "thirdweb-deploy",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Thirdweb",
+    "en": "Thirdweb Deploy"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Thirdweb deploy.",
+    "en": "Learn Thirdweb deploy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/thirdweb-deploy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "alchemy-rpc",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Alchemy",
+    "en": "Alchemy RPC"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Alchemy RPC.",
+    "en": "Learn Alchemy RPC."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/alchemy-rpc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "infura-ipfs",
+  "gameId": "game-081",
+  "name": {
+    "vi": "Infura",
+    "en": "Infura IPFS"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Infura IPFS.",
+    "en": "Learn Infura IPFS."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/infura-ipfs/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pinata-pin",
+  "gameId": "game-082",
+  "name": {
+    "vi": "Pinata",
+    "en": "Pinata Pin"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Pinata pinning.",
+    "en": "Learn Pinata pinning."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pinata-pin/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "nft-storage",
+  "gameId": "game-083",
+  "name": {
+    "vi": "NFT Storage",
+    "en": "NFT Storage"
+  },
+  "desc": {
+    "vi": "Tìm hiểu NFT Storage.",
+    "en": "Learn NFT Storage."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/nft-storage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "arweave-perm",
+  "gameId": "game-084",
+  "name": {
+    "vi": "Arweave",
+    "en": "Arweave Perm"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Arweave permanent storage.",
+    "en": "Learn Arweave storage."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/arweave-perm/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "irys-bundler",
+  "gameId": "game-085",
+  "name": {
+    "vi": "Irys",
+    "en": "Irys Bundler"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Irys bundler.",
+    "en": "Learn Irys bundler."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/irys-bundler/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lit-protocol",
+  "gameId": "game-086",
+  "name": {
+    "vi": "Lit",
+    "en": "Lit Protocol"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Lit Protocol.",
+    "en": "Learn Lit Protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lit-protocol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ceramic-stream",
+  "gameId": "game-087",
+  "name": {
+    "vi": "Ceramic",
+    "en": "Ceramic Stream"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Ceramic stream.",
+    "en": "Learn Ceramic stream."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ceramic-stream/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tableland-sql",
+  "gameId": "game-088",
+  "name": {
+    "vi": "Tableland",
+    "en": "Tableland SQL"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Tableland SQL.",
+    "en": "Learn Tableland SQL."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tableland-sql/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "weave-db",
+  "gameId": "game-089",
+  "name": {
+    "vi": "WeaveDB",
+    "en": "Weave DB"
+  },
+  "desc": {
+    "vi": "Tìm hiểu WeaveDB.",
+    "en": "Learn WeaveDB."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/weave-db/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fluence-compute",
+  "gameId": "game-090",
+  "name": {
+    "vi": "Fluence",
+    "en": "Fluence Compute"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Fluence compute.",
+    "en": "Learn Fluence compute."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fluence-compute/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "filecoin-store",
+  "gameId": "game-091",
+  "name": {
+    "vi": "Filecoin",
+    "en": "Filecoin Store"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Filecoin storage.",
+    "en": "Learn Filecoin storage."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/filecoin-store/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "storj-cloud",
+  "gameId": "game-092",
+  "name": {
+    "vi": "Storj",
+    "en": "Storj Cloud"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Storj cloud storage.",
+    "en": "Learn Storj storage."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/storj-cloud/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sia-skynet",
+  "gameId": "game-093",
+  "name": {
+    "vi": "Sia",
+    "en": "Sia Skynet"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Sia Skynet.",
+    "en": "Learn Sia Skynet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sia-skynet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "maidsafe",
+  "gameId": "game-094",
+  "name": {
+    "vi": "MaidSafe",
+    "en": "MaidSafe"
+  },
+  "desc": {
+    "vi": "Tìm hiểu MaidSafe.",
+    "en": "Learn MaidSafe."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/maidsafe/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "holochain",
+  "gameId": "game-095",
+  "name": {
+    "vi": "Holochain",
+    "en": "Holochain"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Holochain.",
+    "en": "Learn Holochain."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/holochain/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ocean-protocol",
+  "gameId": "game-096",
+  "name": {
+    "vi": "Ocean",
+    "en": "Ocean Protocol"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Ocean Protocol.",
+    "en": "Learn Ocean Protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ocean-protocol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fetch-ai",
+  "gameId": "game-097",
+  "name": {
+    "vi": "Fetch.ai",
+    "en": "Fetch AI"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Fetch.ai.",
+    "en": "Learn Fetch.ai."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fetch-ai/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "singularitynet",
+  "gameId": "game-098",
+  "name": {
+    "vi": "SingularityNET",
+    "en": "SingularityNET"
+  },
+  "desc": {
+    "vi": "Tìm hiểu SingularityNET.",
+    "en": "Learn SingularityNET."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/singularitynet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "numeraire",
+  "gameId": "game-099",
+  "name": {
+    "vi": "Numeraire",
+    "en": "Numeraire"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Numeraire.",
+    "en": "Learn Numeraire."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/numeraire/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chainlink-vrf",
+  "gameId": "game-100",
+  "name": {
+    "vi": "Chainlink VRF",
+    "en": "Chainlink VRF"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Chainlink VRF.",
+    "en": "Learn Chainlink VRF."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chainlink-vrf/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chainlink-keeper",
+  "gameId": "game-101",
+  "name": {
+    "vi": "Chainlink Keeper",
+    "en": "Chainlink Keeper"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Chainlink Keepers.",
+    "en": "Learn Chainlink Keepers."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chainlink-keeper/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chainlink-ccip",
+  "gameId": "game-102",
+  "name": {
+    "vi": "Chainlink CCIP",
+    "en": "Chainlink CCIP"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Chainlink CCIP.",
+    "en": "Learn Chainlink CCIP."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chainlink-ccip/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "chainlink-data",
+  "gameId": "game-103",
+  "name": {
+    "vi": "Chainlink Data",
+    "en": "Chainlink Data"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Chainlink Data Streams.",
+    "en": "Learn Chainlink Data Streams."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/chainlink-data/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "api3-dao",
+  "gameId": "game-104",
+  "name": {
+    "vi": "API3",
+    "en": "API3 DAO"
+  },
+  "desc": {
+    "vi": "Tìm hiểu API3 DAO.",
+    "en": "Learn API3 DAO."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/api3-dao/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "umbrella-network",
+  "gameId": "game-105",
+  "name": {
+    "vi": "Umbrella",
+    "en": "Umbrella Network"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Umbrella Network.",
+    "en": "Learn Umbrella Network."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/umbrella-network/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "redstone-oracle",
+  "gameId": "game-106",
+  "name": {
+    "vi": "RedStone",
+    "en": "RedStone Oracle"
+  },
+  "desc": {
+    "vi": "Tìm hiểu RedStone oracle.",
+    "en": "Learn RedStone oracle."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/redstone-oracle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pyth-network",
+  "gameId": "game-107",
+  "name": {
+    "vi": "Pyth",
+    "en": "Pyth Network"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Pyth Network.",
+    "en": "Learn Pyth Network."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pyth-network/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "band-protocol",
+  "gameId": "game-108",
+  "name": {
+    "vi": "Band",
+    "en": "Band Protocol"
+  },
+  "desc": {
+    "vi": "Tìm hiểu Band Protocol.",
+    "en": "Learn Band Protocol."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/band-protocol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dia-oracle",
+  "gameId": "game-109",
+  "name": {
+    "vi": "DIA",
+    "en": "DIA Oracle"
+  },
+  "desc": {
+    "vi": "Tìm hiểu DIA oracle.",
+    "en": "Learn DIA oracle."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dia-oracle/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
 }
 ];
 
