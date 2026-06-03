@@ -2102,6 +2102,21 @@
     "genre": "education",
     "wave": 4,
     "free": 5
+  },
+  {
+    "id": "xay-cau",
+    "gameId": "game-103",
+    "name": { "vi": "Xây Câu", "en": "Sentence Builder" },
+    "desc": { "vi": "Sắp xếp các từ để tạo thành câu tiếng Anh đúng. Càng nhiều câu, điểm càng cao!", "en": "Arrange words to form correct English sentences. More sentences, more points!" },
+    "group": "mind",
+    "tier": 1,
+    "status": "live",
+    "path": "games/xay-cau/index.html",
+    "difficulty": "easy",
+    "duration": "2-5 min",
+    "genre": "education",
+    "wave": 4,
+    "free": 5
   }
 ];
 
