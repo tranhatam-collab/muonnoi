@@ -3302,6 +3302,531 @@
   "genre": "social",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "click-champion",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Vua Click",
+    "en": "Click Champion"
+  },
+  "desc": {
+    "vi": "Click nhanh trong 10 giây.",
+    "en": "Speed click in 10 seconds."
+  },
+  "group": "micro",
+  "tier": 1,
+  "status": "live",
+  "path": "games/click-champion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "number-rush",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Cuộc Đua Số",
+    "en": "Number Rush"
+  },
+  "desc": {
+    "vi": "Tìm số theo thứ tự nhanh nhất.",
+    "en": "Find numbers in order fastest."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/number-rush/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "color-match",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Màu Đúng",
+    "en": "Color Match"
+  },
+  "desc": {
+    "vi": "Chọn màu đúng theo yêu cầu.",
+    "en": "Pick the correct color."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/color-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "shape-sort",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Sắp Xếp Hình",
+    "en": "Shape Sort"
+  },
+  "desc": {
+    "vi": "Sắp xếp hình theo thứ tự.",
+    "en": "Sort shapes in order."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/shape-sort/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "word-race",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Đua Từ",
+    "en": "Word Race"
+  },
+  "desc": {
+    "vi": "Gõ từ tiếng Anh nhanh nhất.",
+    "en": "Type English words fastest."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/word-race/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "memory-match",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Ghi Nhớ",
+    "en": "Memory Match"
+  },
+  "desc": {
+    "vi": "Lật thẻ tìm cặp giống nhau.",
+    "en": "Flip cards to find pairs."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/memory-match/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "math-blitz",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Toán Tốc Độ",
+    "en": "Math Blitz"
+  },
+  "desc": {
+    "vi": "Giải toán nhanh trong 60 giây.",
+    "en": "Solve math fast in 60 seconds."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/math-blitz/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "reaction-time",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Phản Xạ",
+    "en": "Reaction Time"
+  },
+  "desc": {
+    "vi": "Đo thời gian phản xạ.",
+    "en": "Measure reaction time."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/reaction-time/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pattern-repeat",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Lặp Mẫu",
+    "en": "Pattern Repeat"
+  },
+  "desc": {
+    "vi": "Nhớ & lặp lại chuỗi mẫu.",
+    "en": "Remember & repeat pattern."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pattern-repeat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "memory",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "balloon-pop",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Bắn Bóng",
+    "en": "Balloon Pop"
+  },
+  "desc": {
+    "vi": "Bắn bóng bay theo màu.",
+    "en": "Pop balloons by color."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/balloon-pop/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "maze-runner",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Chạy Mê Cung",
+    "en": "Maze Runner"
+  },
+  "desc": {
+    "vi": "Tìm đường ra khỏi mê cung.",
+    "en": "Find way out of maze."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/maze-runner/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tile-slide",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Trượt Ô",
+    "en": "Tile Slide"
+  },
+  "desc": {
+    "vi": "Sắp xếp ô số theo thứ tự.",
+    "en": "Slide tiles into order."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tile-slide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hangman-vi",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Treo Cờ",
+    "en": "Hangman VI"
+  },
+  "desc": {
+    "vi": "Đoán từ tiếng Việt.",
+    "en": "Guess Vietnamese words."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hangman-vi/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trivia-vi",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Đố Vui",
+    "en": "Trivia VI"
+  },
+  "desc": {
+    "vi": "Trả lời câu hỏi đố vui.",
+    "en": "Answer trivia questions."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trivia-vi/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "quiz",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "balance-scale",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Cân Bằng",
+    "en": "Balance Scale"
+  },
+  "desc": {
+    "vi": "Cân bằng vật thể hai bên.",
+    "en": "Balance objects on scale."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/balance-scale/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "rhythm-tap",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Nhịp Điệu",
+    "en": "Rhythm Tap"
+  },
+  "desc": {
+    "vi": "Tap theo nhịp nhạc.",
+    "en": "Tap to the rhythm."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/rhythm-tap/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "music",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tower-stack",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Xếp Tháp",
+    "en": "Tower Stack"
+  },
+  "desc": {
+    "vi": "Xếp khối xây tháp cao.",
+    "en": "Stack blocks to build tower."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tower-stack/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "avoid-shapes",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Tránh Hình",
+    "en": "Avoid Shapes"
+  },
+  "desc": {
+    "vi": "Di chuyển tránh chướng ngại.",
+    "en": "Move to avoid obstacles."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/avoid-shapes/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "reflex",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "word-search",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Tìm Từ",
+    "en": "Word Search"
+  },
+  "desc": {
+    "vi": "Tìm từ ẩn trong lưới chữ.",
+    "en": "Find hidden words in grid."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/word-search/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sudoku-lite",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Sudoku Nhẹ",
+    "en": "Sudoku Lite"
+  },
+  "desc": {
+    "vi": "Sudoku 4x4 đơn giản.",
+    "en": "Simple 4x4 Sudoku."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sudoku-lite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dice-poker",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Xúc Xắc",
+    "en": "Dice Poker"
+  },
+  "desc": {
+    "vi": "Tung xúc xắc tạo bộ đẹp.",
+    "en": "Roll dice for best hand."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dice-poker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "luck",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "code-breaker",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Phá Mã",
+    "en": "Code Breaker"
+  },
+  "desc": {
+    "vi": "Đoán mã 4 số.",
+    "en": "Guess 4-digit code."
+  },
+  "group": "mind",
+  "tier": 1,
+  "status": "live",
+  "path": "games/code-breaker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "puzzle",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "emoji-story",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Truyện Emoji",
+    "en": "Emoji Story"
+  },
+  "desc": {
+    "vi": "Kể chuyện bằng emoji.",
+    "en": "Tell stories with emojis."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/emoji-story/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "breathing-guide",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Hít Thở",
+    "en": "Breathing Guide"
+  },
+  "desc": {
+    "vi": "Hướng dẫn hít thở thiền.",
+    "en": "Guided breathing meditation."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/breathing-guide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gratitude-jar",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Lọ Biết Ơn",
+    "en": "Gratitude Jar"
+  },
+  "desc": {
+    "vi": "Ghi lại điều biết ơn mỗi ngày.",
+    "en": "Record daily gratitude."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gratitude-jar/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
 }
 ];
 
