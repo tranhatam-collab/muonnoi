@@ -5150,6 +5150,531 @@
   "genre": "wellness",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "micro-journal",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Nhật Ký Micro",
+    "en": "Micro Journal"
+  },
+  "desc": {
+    "vi": "Viết nhật ký 140 ký tự.",
+    "en": "Micro journal 140 chars."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/micro-journal/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "one-thing",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Một Việc",
+    "en": "One Thing"
+  },
+  "desc": {
+    "vi": "Tập trung vào một việc quan trọng.",
+    "en": "Focus on one important thing."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/one-thing/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spark-list",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Danh Sách Tia Lửa",
+    "en": "Spark List"
+  },
+  "desc": {
+    "vi": "Liệt kê 10 ý tưởng nhanh.",
+    "en": "List 10 ideas quickly."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spark-list/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "constraint-challenge",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Thử Thách Hạn Chế",
+    "en": "Constraint Challenge"
+  },
+  "desc": {
+    "vi": "Sáng tạo trong giới hạn.",
+    "en": "Create within constraints."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/constraint-challenge/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "reverse-brainstorm",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Brainstorm Ngược",
+    "en": "Reverse Brainstorm"
+  },
+  "desc": {
+    "vi": "Tìm cách làm hỏng trước.",
+    "en": "Find ways to break it first."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/reverse-brainstorm/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "scamper-game",
+  "gameId": "game-006",
+  "name": {
+    "vi": "SCAMPER",
+    "en": "SCAMPER Game"
+  },
+  "desc": {
+    "vi": "Game hóa kỹ thuật SCAMPER.",
+    "en": "Gamified SCAMPER technique."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/scamper-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "six-hats",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Sáu Chiếc Mũ",
+    "en": "Six Hats"
+  },
+  "desc": {
+    "vi": "Luyện tư duy 6 chiếc mũ.",
+    "en": "Practice six thinking hats."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/six-hats/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "five-whys",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Năm Tại Sao",
+    "en": "Five Whys"
+  },
+  "desc": {
+    "vi": "Đào sâu nguyên nhân.",
+    "en": "Dig deep into root causes."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/five-whys/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "fishbone-game",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Xương Cá",
+    "en": "Fishbone Game"
+  },
+  "desc": {
+    "vi": "Vẽ sơ đồ xương cá.",
+    "en": "Create fishbone diagrams."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/fishbone-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pareto-game",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Pareto",
+    "en": "Pareto Game"
+  },
+  "desc": {
+    "vi": "Tìm 20% tạo 80% kết quả.",
+    "en": "Find the vital 20%."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pareto-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "decision-matrix",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Ma Trận Quyết Định",
+    "en": "Decision Matrix"
+  },
+  "desc": {
+    "vi": "Đánh giá lựa chọn đa tiêu chí.",
+    "en": "Evaluate multi-criteria choices."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/decision-matrix/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pro-con-game",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Ưu Nhược Điểm",
+    "en": "Pro Con Game"
+  },
+  "desc": {
+    "vi": "Liệt kê ưu nhược điểm nhanh.",
+    "en": "Quick pro/con listing."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pro-con-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "logic",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "scenario-planning",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Lập Kế Hoạch Kịch Bản",
+    "en": "Scenario Planning"
+  },
+  "desc": {
+    "vi": "Vẽ kịch bản tương lai.",
+    "en": "Map future scenarios."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/scenario-planning/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "risk-mapper",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Bản Đồ Rủi Ro",
+    "en": "Risk Mapper"
+  },
+  "desc": {
+    "vi": "Đánh giá & sắp xếp rủi ro.",
+    "en": "Assess & prioritize risks."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/risk-mapper/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stakeholder-map",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Bản Đồ Bên Liên Quan",
+    "en": "Stakeholder Map"
+  },
+  "desc": {
+    "vi": "Vẽ bản đồ stakeholders.",
+    "en": "Map stakeholders."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stakeholder-map/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "empathy-map",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Bản Đồ Đồng Cảm",
+    "en": "Empathy Map"
+  },
+  "desc": {
+    "vi": "Tạo bản đồ empathy.",
+    "en": "Create empathy maps."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/empathy-map/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "journey-map",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Bản Đồ Hành Trình",
+    "en": "Journey Map"
+  },
+  "desc": {
+    "vi": "Vẽ hành trình chi tiết.",
+    "en": "Detailed journey mapping."
+  },
+  "group": "exploration",
+  "tier": 1,
+  "status": "live",
+  "path": "games/journey-map/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "blue-ocean",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Đại Dương Xanh",
+    "en": "Blue Ocean"
+  },
+  "desc": {
+    "vi": "Tìm không gian thị trường mới.",
+    "en": "Find new market space."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/blue-ocean/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "red-ocean",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Đại Dương Đỏ",
+    "en": "Red Ocean"
+  },
+  "desc": {
+    "vi": "Phân tích cạnh tranh hiện tại.",
+    "en": "Analyze current competition."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/red-ocean/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "porter-forces",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Lực Lượng Porter",
+    "en": "Porter Forces"
+  },
+  "desc": {
+    "vi": "Phân tích 5 lực Porter.",
+    "en": "Porter's five forces analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/porter-forces/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ansoff-matrix",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Ma Trận Ansoff",
+    "en": "Ansoff Matrix"
+  },
+  "desc": {
+    "vi": "Chiến lược tăng trưởng Ansoff.",
+    "en": "Ansoff growth strategies."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ansoff-matrix/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bcg-matrix",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Ma Trận BCG",
+    "en": "BCG Matrix"
+  },
+  "desc": {
+    "vi": "Phân loại danh mục BCG.",
+    "en": "BCG portfolio analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bcg-matrix/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pestle-game",
+  "gameId": "game-023",
+  "name": {
+    "vi": "PESTLE",
+    "en": "PESTLE Game"
+  },
+  "desc": {
+    "vi": "Phân tích môi trường PESTLE.",
+    "en": "PESTLE environment analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pestle-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vrio-game",
+  "gameId": "game-024",
+  "name": {
+    "vi": "VRIO",
+    "en": "VRIO Game"
+  },
+  "desc": {
+    "vi": "Đánh giá năng lực VRIO.",
+    "en": "VRIO capability assessment."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vrio-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "balanced-scorecard",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Thẻ Điểm Cân Bằng",
+    "en": "Balanced Scorecard"
+  },
+  "desc": {
+    "vi": "Tạo thẻ điểm cân bằng.",
+    "en": "Create balanced scorecard."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/balanced-scorecard/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "strategy",
+  "wave": 4,
+  "free": 5
 }
 ];
 
