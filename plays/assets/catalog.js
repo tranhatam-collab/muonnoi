@@ -15062,6 +15062,1770 @@
   "genre": "math",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "cost-benefit",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Chi Phí-Lợi Ích",
+    "en": "Cost Benefit"
+  },
+  "desc": {
+    "vi": "Phân tích chi phí-lợi ích.",
+    "en": "Cost-benefit analysis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cost-benefit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "npv-calc",
+  "gameId": "game-002",
+  "name": {
+    "vi": "NPV",
+    "en": "NPV Calc"
+  },
+  "desc": {
+    "vi": "Tính giá trị hiện tại thuần.",
+    "en": "Calculate NPV."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/npv-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "irr-calc",
+  "gameId": "game-003",
+  "name": {
+    "vi": "IRR",
+    "en": "IRR Calc"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất hoàn vốn nội bộ.",
+    "en": "Calculate IRR."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/irr-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "payback-period",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Thời Gian Hoàn Vốn",
+    "en": "Payback Period"
+  },
+  "desc": {
+    "vi": "Tính thời gian hoàn vốn.",
+    "en": "Calculate payback period."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/payback-period/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "wacc-calc",
+  "gameId": "game-005",
+  "name": {
+    "vi": "WACC",
+    "en": "WACC Calc"
+  },
+  "desc": {
+    "vi": "Tính chi phí vốn bình quân.",
+    "en": "Calculate WACC."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/wacc-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "capm-calc",
+  "gameId": "game-006",
+  "name": {
+    "vi": "CAPM",
+    "en": "CAPM Calc"
+  },
+  "desc": {
+    "vi": "Tính lợi suất kỳ vọng CAPM.",
+    "en": "Calculate expected CAPM return."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/capm-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "beta-calc",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Beta",
+    "en": "Beta Calc"
+  },
+  "desc": {
+    "vi": "Tính hệ số beta.",
+    "en": "Calculate beta coefficient."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/beta-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sharpe-ratio",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Sharpe Ratio",
+    "en": "Sharpe Ratio"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất Sharpe.",
+    "en": "Calculate Sharpe ratio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sharpe-ratio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sortino-ratio",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Sortino Ratio",
+    "en": "Sortino Ratio"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất Sortino.",
+    "en": "Calculate Sortino ratio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sortino-ratio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "treynor-ratio",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Treynor Ratio",
+    "en": "Treynor Ratio"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất Treynor.",
+    "en": "Calculate Treynor ratio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/treynor-ratio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "jensen-alpha",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Jensen Alpha",
+    "en": "Jensen Alpha"
+  },
+  "desc": {
+    "vi": "Tính alpha Jensen.",
+    "en": "Calculate Jensen's alpha."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/jensen-alpha/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "information-ratio",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Information Ratio",
+    "en": "Information Ratio"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất thông tin.",
+    "en": "Calculate information ratio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/information-ratio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tracking-error",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Tracking Error",
+    "en": "Tracking Error"
+  },
+  "desc": {
+    "vi": "Tính sai số theo dõi.",
+    "en": "Calculate tracking error."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tracking-error/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "var-calc",
+  "gameId": "game-014",
+  "name": {
+    "vi": "VaR",
+    "en": "VaR Calc"
+  },
+  "desc": {
+    "vi": "Tính giá trị rủi ro.",
+    "en": "Calculate Value at Risk."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/var-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cvar-calc",
+  "gameId": "game-015",
+  "name": {
+    "vi": "CVaR",
+    "en": "CVaR Calc"
+  },
+  "desc": {
+    "vi": "Tính rủi ro có điều kiện.",
+    "en": "Calculate Conditional VaR."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cvar-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "drawdown-calc",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Drawdown",
+    "en": "Drawdown Calc"
+  },
+  "desc": {
+    "vi": "Tính mức giảm tối đa.",
+    "en": "Calculate maximum drawdown."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/drawdown-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "calmar-ratio",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Calmar Ratio",
+    "en": "Calmar Ratio"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất Calmar.",
+    "en": "Calculate Calmar ratio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/calmar-ratio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sterling-ratio",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Sterling Ratio",
+    "en": "Sterling Ratio"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất Sterling.",
+    "en": "Calculate Sterling ratio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sterling-ratio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "burke-ratio",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Burke Ratio",
+    "en": "Burke Ratio"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất Burke.",
+    "en": "Calculate Burke ratio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/burke-ratio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "omega-ratio",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Omega Ratio",
+    "en": "Omega Ratio"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất Omega.",
+    "en": "Calculate Omega ratio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/omega-ratio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kelly-criterion",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Kelly Criterion",
+    "en": "Kelly Criterion"
+  },
+  "desc": {
+    "vi": "Tính phân bổ vốn Kelly.",
+    "en": "Calculate Kelly allocation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kelly-criterion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "martingale-sim",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Martingale",
+    "en": "Martingale Sim"
+  },
+  "desc": {
+    "vi": "Mô phỏng chiến lược Martingale.",
+    "en": "Simulate Martingale strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/martingale-sim/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "monte-carlo",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Monte Carlo",
+    "en": "Monte Carlo"
+  },
+  "desc": {
+    "vi": "Mô phỏng Monte Carlo.",
+    "en": "Run Monte Carlo simulation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/monte-carlo/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "random-walk",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Bước Ngẫu Nhiên",
+    "en": "Random Walk"
+  },
+  "desc": {
+    "vi": "Mô phỏng bước ngẫu nhiên.",
+    "en": "Simulate random walk."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/random-walk/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "brownian-motion",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Chuyển Động Brown",
+    "en": "Brownian Motion"
+  },
+  "desc": {
+    "vi": "Mô phỏng chuyển động Brown.",
+    "en": "Simulate Brownian motion."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/brownian-motion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "binomial-tree",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Cây Nhị Thức",
+    "en": "Binomial Tree"
+  },
+  "desc": {
+    "vi": "Xây dựng cây nhị thức.",
+    "en": "Build binomial tree."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/binomial-tree/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "black-scholes",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Black-Scholes",
+    "en": "Black Scholes"
+  },
+  "desc": {
+    "vi": "Tính giá quyền chọn Black-Scholes.",
+    "en": "Calculate Black-Scholes option price."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/black-scholes/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "greek-calc",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Greek",
+    "en": "Greek Calc"
+  },
+  "desc": {
+    "vi": "Tính các chỉ số Greek.",
+    "en": "Calculate option Greeks."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/greek-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "implied-vol",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Implied Volatility",
+    "en": "Implied Vol"
+  },
+  "desc": {
+    "vi": "Tính độ biến động ngầm.",
+    "en": "Calculate implied volatility."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/implied-vol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "yield-curve",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Đường Lợi Suất",
+    "en": "Yield Curve"
+  },
+  "desc": {
+    "vi": "Vẽ đường lợi suất.",
+    "en": "Plot yield curve."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/yield-curve/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "credit-spread",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Chênh Lệch Tín Dụng",
+    "en": "Credit Spread"
+  },
+  "desc": {
+    "vi": "Phân tích chênh lệch tín dụng.",
+    "en": "Analyze credit spread."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/credit-spread/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "term-structure",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Cấu Trúc Kỳ Hạn",
+    "en": "Term Structure"
+  },
+  "desc": {
+    "vi": "Phân tích cấu trúc kỳ hạn.",
+    "en": "Analyze term structure."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/term-structure/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "duration-calc",
+  "gameId": "game-033",
+  "name": {
+    "vi": "Duration",
+    "en": "Duration Calc"
+  },
+  "desc": {
+    "vi": "Tính duration trái phiếu.",
+    "en": "Calculate bond duration."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/duration-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "convexity-calc",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Convexity",
+    "en": "Convexity Calc"
+  },
+  "desc": {
+    "vi": "Tính convexity trái phiếu.",
+    "en": "Calculate bond convexity."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/convexity-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "immunization",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Miễn Dịch",
+    "en": "Immunization"
+  },
+  "desc": {
+    "vi": "Chiến lược miễn dịch danh mục.",
+    "en": "Portfolio immunization strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/immunization/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cash-matching",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Khớp Dòng Tiền",
+    "en": "Cash Matching"
+  },
+  "desc": {
+    "vi": "Chiến lược khớp dòng tiền.",
+    "en": "Cash matching strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cash-matching/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dedicated-portfolio",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Danh Mục Chuyên Dụng",
+    "en": "Dedicated Portfolio"
+  },
+  "desc": {
+    "vi": "Xây dựng danh mục chuyên dụng.",
+    "en": "Build dedicated portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dedicated-portfolio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bullet-portfolio",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Danh Mục Bullet",
+    "en": "Bullet Portfolio"
+  },
+  "desc": {
+    "vi": "Xây dựng bullet portfolio.",
+    "en": "Build bullet portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bullet-portfolio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "barbell-portfolio",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Danh Mục Barbell",
+    "en": "Barbell Portfolio"
+  },
+  "desc": {
+    "vi": "Xây dựng barbell portfolio.",
+    "en": "Build barbell portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/barbell-portfolio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ladder-portfolio",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Danh Mục Thang",
+    "en": "Ladder Portfolio"
+  },
+  "desc": {
+    "vi": "Xây dựng ladder portfolio.",
+    "en": "Build ladder portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ladder-portfolio/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "core-satellite",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Core-Satellite",
+    "en": "Core Satellite"
+  },
+  "desc": {
+    "vi": "Chiến lược core-satellite.",
+    "en": "Core-satellite strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/core-satellite/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tactical-alloc",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Phân Bổ Chiến Thuật",
+    "en": "Tactical Alloc"
+  },
+  "desc": {
+    "vi": "Phân bổ tài sản chiến thuật.",
+    "en": "Tactical asset allocation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tactical-alloc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "strategic-alloc",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Phân Bổ Chiến Lược",
+    "en": "Strategic Alloc"
+  },
+  "desc": {
+    "vi": "Phân bổ tài sản chiến lược.",
+    "en": "Strategic asset allocation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/strategic-alloc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "risk-parity",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Cân Bằng Rủi Ro",
+    "en": "Risk Parity"
+  },
+  "desc": {
+    "vi": "Phân bổ theo cân bằng rủi ro.",
+    "en": "Risk parity allocation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/risk-parity/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "minimum-variance",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Phương Sai Tối Thiểu",
+    "en": "Minimum Variance"
+  },
+  "desc": {
+    "vi": "Danh mục phương sai tối thiểu.",
+    "en": "Minimum variance portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/minimum-variance/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "max-diversification",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Đa Dạng Hóa Tối Đa",
+    "en": "Max Diversification"
+  },
+  "desc": {
+    "vi": "Danh mục đa dạng hóa tối đa.",
+    "en": "Max diversification portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/max-diversification/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "risk-budgeting",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Ngân Sách Rủi Ro",
+    "en": "Risk Budgeting"
+  },
+  "desc": {
+    "vi": "Phân bổ ngân sách rủi ro.",
+    "en": "Risk budgeting allocation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/risk-budgeting/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "factor-investing",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Đầu Tư Theo Yếu Tố",
+    "en": "Factor Investing"
+  },
+  "desc": {
+    "vi": "Danh mục đầu tư theo yếu tố.",
+    "en": "Factor investing portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/factor-investing/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "smart-beta",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Smart Beta",
+    "en": "Smart Beta"
+  },
+  "desc": {
+    "vi": "Chiến lược smart beta.",
+    "en": "Smart beta strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/smart-beta/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "equal-risk-contrib",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Đóng Góp Rủi Ro Bằng Nhau",
+    "en": "Equal Risk Contrib"
+  },
+  "desc": {
+    "vi": "Đóng góp rủi ro bằng nhau.",
+    "en": "Equal risk contribution."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/equal-risk-contrib/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "most-diversified",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Đa Dạng Nhất",
+    "en": "Most Diversified"
+  },
+  "desc": {
+    "vi": "Danh mục đa dạng nhất.",
+    "en": "Most diversified portfolio."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/most-diversified/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "inverse-vol",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Nghịch Đảo Biến Động",
+    "en": "Inverse Vol"
+  },
+  "desc": {
+    "vi": "Phân bổ nghịch đảo biến động.",
+    "en": "Inverse volatility weighting."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/inverse-vol/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "momentum-strat",
+  "gameId": "game-053",
+  "name": {
+    "vi": "Momentum",
+    "en": "Momentum Strat"
+  },
+  "desc": {
+    "vi": "Chiến lược đầu tư momentum.",
+    "en": "Momentum investing strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/momentum-strat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "value-strat",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Giá Trị",
+    "en": "Value Strat"
+  },
+  "desc": {
+    "vi": "Chiến lược đầu tư giá trị.",
+    "en": "Value investing strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/value-strat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "growth-strat",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Tăng Trưởng",
+    "en": "Growth Strat"
+  },
+  "desc": {
+    "vi": "Chiến lược đầu tư tăng trưởng.",
+    "en": "Growth investing strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/growth-strat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quality-strat",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Chất Lượng",
+    "en": "Quality Strat"
+  },
+  "desc": {
+    "vi": "Chiến lược đầu tư chất lượng.",
+    "en": "Quality investing strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quality-strat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "low-vol-strat",
+  "gameId": "game-057",
+  "name": {
+    "vi": "Biến Động Thấp",
+    "en": "Low Vol Strat"
+  },
+  "desc": {
+    "vi": "Chiến lược biến động thấp.",
+    "en": "Low volatility strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/low-vol-strat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dividend-strat",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Cổ Tức",
+    "en": "Dividend Strat"
+  },
+  "desc": {
+    "vi": "Chiến lược đầu tư cổ tức.",
+    "en": "Dividend investing strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dividend-strat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "small-cap-strat",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Vốn Hóa Nhỏ",
+    "en": "Small Cap Strat"
+  },
+  "desc": {
+    "vi": "Chiến lược vốn hóa nhỏ.",
+    "en": "Small cap strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/small-cap-strat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "large-cap-strat",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Vốn Hóa Lớn",
+    "en": "Large Cap Strat"
+  },
+  "desc": {
+    "vi": "Chiến lược vốn hóa lớn.",
+    "en": "Large cap strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/large-cap-strat/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sector-rotation",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Xoay Vòng Ngành",
+    "en": "Sector Rotation"
+  },
+  "desc": {
+    "vi": "Chiến lược xoay vòng ngành.",
+    "en": "Sector rotation strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sector-rotation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "style-rotation",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Xoay Vòng Phong Cách",
+    "en": "Style Rotation"
+  },
+  "desc": {
+    "vi": "Chiến lược xoay vòng phong cách.",
+    "en": "Style rotation strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/style-rotation/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "market-timing",
+  "gameId": "game-063",
+  "name": {
+    "vi": "Chọn Thời Điểm Thị Trường",
+    "en": "Market Timing"
+  },
+  "desc": {
+    "vi": "Chiến lược chọn thời điểm thị trường.",
+    "en": "Market timing strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/market-timing/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dollar-cost",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Trung Bình Giá",
+    "en": "Dollar Cost"
+  },
+  "desc": {
+    "vi": "Chiến lược trung bình giá.",
+    "en": "Dollar cost averaging."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dollar-cost/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "value-averaging",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Trung Bình Giá Trị",
+    "en": "Value Averaging"
+  },
+  "desc": {
+    "vi": "Chiến lược trung bình giá trị.",
+    "en": "Value averaging strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/value-averaging/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "constant-proportion",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Tỷ Lệ Không Đổi",
+    "en": "Constant Proportion"
+  },
+  "desc": {
+    "vi": "Chiến lược tỷ lệ không đổi.",
+    "en": "Constant proportion strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/constant-proportion/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cpipi",
+  "gameId": "game-067",
+  "name": {
+    "vi": "CPPI",
+    "en": "CPPI"
+  },
+  "desc": {
+    "vi": "Chiến lược CPPI.",
+    "en": "CPPI strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cpipi/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tipp",
+  "gameId": "game-068",
+  "name": {
+    "vi": "TIPP",
+    "en": "TIPP"
+  },
+  "desc": {
+    "vi": "Chiến lược TIPP.",
+    "en": "TIPP strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tipp/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "portfolio-insurance",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Bảo Hiểm Danh Mục",
+    "en": "Portfolio Insurance"
+  },
+  "desc": {
+    "vi": "Chiến lược bảo hiểm danh mục.",
+    "en": "Portfolio insurance strategy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/portfolio-insurance/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stop-loss",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Cắt Lỗ",
+    "en": "Stop Loss"
+  },
+  "desc": {
+    "vi": "Thiết lập điểm cắt lỗ.",
+    "en": "Set stop loss points."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stop-loss/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "take-profit",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Chốt Lời",
+    "en": "Take Profit"
+  },
+  "desc": {
+    "vi": "Thiết lập điểm chốt lời.",
+    "en": "Set take profit points."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/take-profit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trailing-stop",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Trailing Stop",
+    "en": "Trailing Stop"
+  },
+  "desc": {
+    "vi": "Thiết lập trailing stop.",
+    "en": "Set trailing stop."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trailing-stop/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bracket-order",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Lệnh Bracket",
+    "en": "Bracket Order"
+  },
+  "desc": {
+    "vi": "Thiết lập lệnh bracket.",
+    "en": "Set bracket orders."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bracket-order/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "oco-order",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Lệnh OCO",
+    "en": "OCO Order"
+  },
+  "desc": {
+    "vi": "Thiết lập lệnh OCO.",
+    "en": "Set OCO orders."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/oco-order/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "iceberg-order",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Lệnh Iceberg",
+    "en": "Iceberg Order"
+  },
+  "desc": {
+    "vi": "Thiết lập lệnh iceberg.",
+    "en": "Set iceberg orders."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/iceberg-order/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "twap-order",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Lệnh TWAP",
+    "en": "TWAP Order"
+  },
+  "desc": {
+    "vi": "Thiết lập lệnh TWAP.",
+    "en": "Set TWAP orders."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/twap-order/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vwap-order",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Lệnh VWAP",
+    "en": "VWAP Order"
+  },
+  "desc": {
+    "vi": "Thiết lập lệnh VWAP.",
+    "en": "Set VWAP orders."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vwap-order/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "pov-order",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Lệnh POV",
+    "en": "POV Order"
+  },
+  "desc": {
+    "vi": "Thiết lập lệnh POV.",
+    "en": "Set POV orders."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/pov-order/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "implementation-shortfall",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Thiếu Hụt Thực Hiện",
+    "en": "Implementation Shortfall"
+  },
+  "desc": {
+    "vi": "Tính thiếu hụt thực hiện.",
+    "en": "Calculate implementation shortfall."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/implementation-shortfall/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "market-impact",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Tác Động Thị Trường",
+    "en": "Market Impact"
+  },
+  "desc": {
+    "vi": "Ước tính tác động thị trường.",
+    "en": "Estimate market impact."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/market-impact/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "slippage-calc",
+  "gameId": "game-081",
+  "name": {
+    "vi": "Trượt Giá",
+    "en": "Slippage Calc"
+  },
+  "desc": {
+    "vi": "Tính trượt giá.",
+    "en": "Calculate slippage."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/slippage-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "liquidity-check",
+  "gameId": "game-082",
+  "name": {
+    "vi": "Thanh Khoản",
+    "en": "Liquidity Check"
+  },
+  "desc": {
+    "vi": "Đánh giá thanh khoản.",
+    "en": "Assess liquidity."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/liquidity-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spread-analysis",
+  "gameId": "game-083",
+  "name": {
+    "vi": "Chênh Lệch Giá",
+    "en": "Spread Analysis"
+  },
+  "desc": {
+    "vi": "Phân tích chênh lệch giá.",
+    "en": "Analyze bid-ask spread."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spread-analysis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "depth-analysis",
+  "gameId": "game-084",
+  "name": {
+    "vi": "Chiều Sâu",
+    "en": "Depth Analysis"
+  },
+  "desc": {
+    "vi": "Phân tích chiều sâu thị trường.",
+    "en": "Analyze market depth."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/depth-analysis/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
 }
 ];
 
