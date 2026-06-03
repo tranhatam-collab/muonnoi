@@ -10400,6 +10400,2862 @@
   "genre": "education",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "public-speaking",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Nói Trước Công Chúng",
+    "en": "Public Speaking"
+  },
+  "desc": {
+    "vi": "Luyện nói trước đám đông.",
+    "en": "Practice public speaking."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/public-speaking/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "presentation-design",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Thiết Kế Thuyết Trình",
+    "en": "Presentation Design"
+  },
+  "desc": {
+    "vi": "Thiết kế slide ấn tượng.",
+    "en": "Design impressive slides."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/presentation-design/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "data-visualize",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Trực Quan Hóa Dữ Liệu",
+    "en": "Data Visualize"
+  },
+  "desc": {
+    "vi": "Chọn biểu đồ phù hợp.",
+    "en": "Pick right chart type."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/data-visualize/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "storytelling-work",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Kể Chuyện Công Việc",
+    "en": "Storytelling Work"
+  },
+  "desc": {
+    "vi": "Kể chuyện dữ liệu.",
+    "en": "Tell data stories."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/storytelling-work/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "negotiation-case",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Tình Huống Đàm Phán",
+    "en": "Negotiation Case"
+  },
+  "desc": {
+    "vi": "Giải quyết tình huống đàm phán.",
+    "en": "Solve negotiation cases."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/negotiation-case/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ethics-dilemma",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Song Đề Đạo Đức",
+    "en": "Ethics Dilemma"
+  },
+  "desc": {
+    "vi": "Quyết định song đề đạo đức.",
+    "en": "Decide ethical dilemmas."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ethics-dilemma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "crisis-manage",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Quản Lý Khủng Hoảng",
+    "en": "Crisis Manage"
+  },
+  "desc": {
+    "vi": "Xử lý khủng hoảng giả lập.",
+    "en": "Manage simulated crisis."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/crisis-manage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "change-manage",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Quản Lý Thay Đổi",
+    "en": "Change Manage"
+  },
+  "desc": {
+    "vi": "Dẫn dắt thay đổi tổ chức.",
+    "en": "Lead organizational change."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/change-manage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "project-plan",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Lập Kế Hoạch Dự Án",
+    "en": "Project Plan"
+  },
+  "desc": {
+    "vi": "Lập kế hoạch dự án đơn giản.",
+    "en": "Plan simple projects."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/project-plan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "risk-assess",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Đánh Giá Rủi Ro",
+    "en": "Risk Assess"
+  },
+  "desc": {
+    "vi": "Đánh giá rủi ro dự án.",
+    "en": "Assess project risks."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/risk-assess/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "stakeholder-manage",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Quản Lý Bên Liên Quan",
+    "en": "Stakeholder Manage"
+  },
+  "desc": {
+    "vi": "Phân tích & quản lý stakeholders.",
+    "en": "Analyze & manage stakeholders."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/stakeholder-manage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "scope-define",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Xác Định Phạm Vi",
+    "en": "Scope Define"
+  },
+  "desc": {
+    "vi": "Xác định phạm vi dự án.",
+    "en": "Define project scope."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/scope-define/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "budget-estimate",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Ước Tính Ngân Sách",
+    "en": "Budget Estimate"
+  },
+  "desc": {
+    "vi": "Ước tính ngân sách dự án.",
+    "en": "Estimate project budget."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/budget-estimate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "schedule-build",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Lập Lịch Trình",
+    "en": "Schedule Build"
+  },
+  "desc": {
+    "vi": "Lập lịch trình dự án.",
+    "en": "Build project schedule."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/schedule-build/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quality-check",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Kiểm Tra Chất Lượng",
+    "en": "Quality Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra chất lượng sản phẩm.",
+    "en": "Check product quality."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quality-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "procurement-sim",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Mua Sắm Giả Lập",
+    "en": "Procurement Sim"
+  },
+  "desc": {
+    "vi": "Mua sắm & đấu thầu giả lập.",
+    "en": "Simulate procurement."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/procurement-sim/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "resource-allocate",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Phân Bổ Nguồn Lực",
+    "en": "Resource Allocate"
+  },
+  "desc": {
+    "vi": "Phân bổ nguồn lực tối ưu.",
+    "en": "Optimize resource allocation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/resource-allocate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "issue-track",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Theo Dõi Vấn Đề",
+    "en": "Issue Track"
+  },
+  "desc": {
+    "vi": "Theo dõi & giải quyết vấn đề.",
+    "en": "Track & resolve issues."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/issue-track/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lesson-learned",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Bài Học Kinh Nghiệm",
+    "en": "Lesson Learned"
+  },
+  "desc": {
+    "vi": "Ghi nhận bài học dự án.",
+    "en": "Record project lessons."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lesson-learned/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "knowledge-base",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Cơ Sở Tri Thức",
+    "en": "Knowledge Base"
+  },
+  "desc": {
+    "vi": "Xây dựng cơ sở tri thức.",
+    "en": "Build knowledge base."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/knowledge-base/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "wiki-build",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Xây Dựng Wiki",
+    "en": "Wiki Build"
+  },
+  "desc": {
+    "vi": "Tạo trang wiki nội bộ.",
+    "en": "Create internal wiki."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/wiki-build/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "faq-builder",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Xây Dựng FAQ",
+    "en": "FAQ Builder"
+  },
+  "desc": {
+    "vi": "Tạo danh sách FAQ.",
+    "en": "Build FAQ list."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/faq-builder/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "glossary-game",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Thuật Ngữ",
+    "en": "Glossary Game"
+  },
+  "desc": {
+    "vi": "Tạo bảng thuật ngữ.",
+    "en": "Build glossary."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/glossary-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "style-guide-write",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Viết Style Guide",
+    "en": "Style Guide Write"
+  },
+  "desc": {
+    "vi": "Viết hướng dẫn phong cách.",
+    "en": "Write style guide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/style-guide-write/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "brand-voice",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Giọng Thương Hiệu",
+    "en": "Brand Voice"
+  },
+  "desc": {
+    "vi": "Xác định giọng thương hiệu.",
+    "en": "Define brand voice."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/brand-voice/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "tagline-create",
+  "gameId": "game-026",
+  "name": {
+    "vi": "Tạo Slogan",
+    "en": "Tagline Create"
+  },
+  "desc": {
+    "vi": "Tạo slogan ấn tượng.",
+    "en": "Create catchy taglines."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/tagline-create/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "name-storm",
+  "gameId": "game-027",
+  "name": {
+    "vi": "Bão Tên",
+    "en": "Name Storm"
+  },
+  "desc": {
+    "vi": "Brainstorm tên sản phẩm.",
+    "en": "Brainstorm product names."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/name-storm/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "domain-hunt",
+  "gameId": "game-028",
+  "name": {
+    "vi": "Săn Tên Miền",
+    "en": "Domain Hunt"
+  },
+  "desc": {
+    "vi": "Kiểm tra & đề xuất tên miền.",
+    "en": "Check & suggest domains."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/domain-hunt/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "logo-critique",
+  "gameId": "game-029",
+  "name": {
+    "vi": "Phê Bình Logo",
+    "en": "Logo Critique"
+  },
+  "desc": {
+    "vi": "Phê bình & cải thiện logo.",
+    "en": "Critique & improve logos."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/logo-critique/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "packaging-design",
+  "gameId": "game-030",
+  "name": {
+    "vi": "Thiết Kế Bao Bì",
+    "en": "Packaging Design"
+  },
+  "desc": {
+    "vi": "Thiết kế bao bì sản phẩm.",
+    "en": "Design product packaging."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/packaging-design/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ux-review",
+  "gameId": "game-031",
+  "name": {
+    "vi": "Đánh Giá UX",
+    "en": "UX Review"
+  },
+  "desc": {
+    "vi": "Đánh giá trải nghiệm người dùng.",
+    "en": "Review user experience."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ux-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "accessibility-check",
+  "gameId": "game-032",
+  "name": {
+    "vi": "Kiểm Tra Truy Cập",
+    "en": "Accessibility Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra khả năng truy cập.",
+    "en": "Check accessibility."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/accessibility-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "seo-checklist",
+  "gameId": "game-033",
+  "name": {
+    "vi": "SEO",
+    "en": "SEO Checklist"
+  },
+  "desc": {
+    "vi": "Kiểm tra yếu tố SEO.",
+    "en": "Check SEO factors."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/seo-checklist/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "content-calendar",
+  "gameId": "game-034",
+  "name": {
+    "vi": "Lịch Nội Dung",
+    "en": "Content Calendar"
+  },
+  "desc": {
+    "vi": "Lập lịch nội dung.",
+    "en": "Plan content calendar."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/content-calendar/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "hashtag-gen",
+  "gameId": "game-035",
+  "name": {
+    "vi": "Máy Hashtag",
+    "en": "Hashtag Gen"
+  },
+  "desc": {
+    "vi": "Tạo hashtag phù hợp.",
+    "en": "Generate relevant hashtags."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/hashtag-gen/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "caption-write",
+  "gameId": "game-036",
+  "name": {
+    "vi": "Viết Chú Thích",
+    "en": "Caption Write"
+  },
+  "desc": {
+    "vi": "Viết chú thích mạng xã hội.",
+    "en": "Write social captions."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/caption-write/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ad-copy",
+  "gameId": "game-037",
+  "name": {
+    "vi": "Viết Quảng Cáo",
+    "en": "Ad Copy"
+  },
+  "desc": {
+    "vi": "Viết quảng cáo ngắn gọn.",
+    "en": "Write ad copy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ad-copy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "landing-page",
+  "gameId": "game-038",
+  "name": {
+    "vi": "Trang Đích",
+    "en": "Landing Page"
+  },
+  "desc": {
+    "vi": "Thiết kế trang đích.",
+    "en": "Design landing page."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/landing-page/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "email-campaign",
+  "gameId": "game-039",
+  "name": {
+    "vi": "Chiến Dịch Email",
+    "en": "Email Campaign"
+  },
+  "desc": {
+    "vi": "Thiết kế email marketing.",
+    "en": "Design marketing emails."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/email-campaign/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "survey-build",
+  "gameId": "game-040",
+  "name": {
+    "vi": "Xây Dựng Khảo Sát",
+    "en": "Survey Build"
+  },
+  "desc": {
+    "vi": "Tạo khảo sát hiệu quả.",
+    "en": "Build effective surveys."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/survey-build/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "interview-script",
+  "gameId": "game-041",
+  "name": {
+    "vi": "Kịch Bản Phỏng Vấn",
+    "en": "Interview Script"
+  },
+  "desc": {
+    "vi": "Viết câu hỏi phỏng vấn.",
+    "en": "Write interview questions."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/interview-script/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "onboarding-flow",
+  "gameId": "game-042",
+  "name": {
+    "vi": "Quy Trình Đón Nhận",
+    "en": "Onboarding Flow"
+  },
+  "desc": {
+    "vi": "Thiết kế onboarding.",
+    "en": "Design onboarding flow."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/onboarding-flow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "offboarding",
+  "gameId": "game-043",
+  "name": {
+    "vi": "Rời Bỏ",
+    "en": "Offboarding"
+  },
+  "desc": {
+    "vi": "Quy trình rời bỏ chuyên nghiệp.",
+    "en": "Professional offboarding."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/offboarding/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "exit-interview",
+  "gameId": "game-044",
+  "name": {
+    "vi": "Phỏng Vấn Ra Đi",
+    "en": "Exit Interview"
+  },
+  "desc": {
+    "vi": "Chuẩn bị phỏng vấn ra đi.",
+    "en": "Prepare exit interview."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/exit-interview/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "performance-review",
+  "gameId": "game-045",
+  "name": {
+    "vi": "Đánh Giá Hiệu Suất",
+    "en": "Performance Review"
+  },
+  "desc": {
+    "vi": "Viết đánh giá hiệu suất.",
+    "en": "Write performance reviews."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/performance-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "goal-setting",
+  "gameId": "game-046",
+  "name": {
+    "vi": "Đặt Mục Tiêu",
+    "en": "Goal Setting"
+  },
+  "desc": {
+    "vi": "Thiết lập SMART goals.",
+    "en": "Set SMART goals."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/goal-setting/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "action-plan",
+  "gameId": "game-047",
+  "name": {
+    "vi": "Kế Hoạch Hành Động",
+    "en": "Action Plan"
+  },
+  "desc": {
+    "vi": "Lập kế hoạch hành động chi tiết.",
+    "en": "Create detailed action plans."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/action-plan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "milestone-track",
+  "gameId": "game-048",
+  "name": {
+    "vi": "Theo Dõi Cột Mốc",
+    "en": "Milestone Track"
+  },
+  "desc": {
+    "vi": "Theo dõi cột mốc dự án.",
+    "en": "Track project milestones."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/milestone-track/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "deliverable-check",
+  "gameId": "game-049",
+  "name": {
+    "vi": "Kiểm Tra Bàn Giao",
+    "en": "Deliverable Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra bàn giao sản phẩm.",
+    "en": "Check deliverables."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/deliverable-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "acceptance-criteria",
+  "gameId": "game-050",
+  "name": {
+    "vi": "Tiêu Chí Chấp Nhận",
+    "en": "Acceptance Criteria"
+  },
+  "desc": {
+    "vi": "Viết tiêu chí chấp nhận.",
+    "en": "Write acceptance criteria."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/acceptance-criteria/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "user-story",
+  "gameId": "game-051",
+  "name": {
+    "vi": "Câu Chuyện Người Dùng",
+    "en": "User Story"
+  },
+  "desc": {
+    "vi": "Viết user story.",
+    "en": "Write user stories."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/user-story/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "use-case",
+  "gameId": "game-052",
+  "name": {
+    "vi": "Tình Huống Sử Dụng",
+    "en": "Use Case"
+  },
+  "desc": {
+    "vi": "Mô tả tình huống sử dụng.",
+    "en": "Describe use cases."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/use-case/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "requirement-gather",
+  "gameId": "game-053",
+  "name": {
+    "vi": "Thu Thập Yêu Cầu",
+    "en": "Requirement Gather"
+  },
+  "desc": {
+    "vi": "Thu thập yêu cầu phần mềm.",
+    "en": "Gather software requirements."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/requirement-gather/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "technical-spec",
+  "gameId": "game-054",
+  "name": {
+    "vi": "Đặc Tả Kỹ Thuật",
+    "en": "Technical Spec"
+  },
+  "desc": {
+    "vi": "Viết đặc tả kỹ thuật.",
+    "en": "Write technical specs."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/technical-spec/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "api-design",
+  "gameId": "game-055",
+  "name": {
+    "vi": "Thiết Kế API",
+    "en": "API Design"
+  },
+  "desc": {
+    "vi": "Thiết kế API RESTful.",
+    "en": "Design RESTful APIs."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/api-design/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "database-schema",
+  "gameId": "game-056",
+  "name": {
+    "vi": "Sơ Đồ CSDL",
+    "en": "Database Schema"
+  },
+  "desc": {
+    "vi": "Thiết kế sơ đồ cơ sở dữ liệu.",
+    "en": "Design database schema."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/database-schema/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "system-architecture",
+  "gameId": "game-057",
+  "name": {
+    "vi": "Kiến Trúc Hệ Thống",
+    "en": "System Architecture"
+  },
+  "desc": {
+    "vi": "Vẽ kiến trúc hệ thống.",
+    "en": "Draw system architecture."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/system-architecture/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "code-review",
+  "gameId": "game-058",
+  "name": {
+    "vi": "Xem Xét Code",
+    "en": "Code Review"
+  },
+  "desc": {
+    "vi": "Kiểm tra code.",
+    "en": "Review code."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/code-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "bug-report",
+  "gameId": "game-059",
+  "name": {
+    "vi": "Báo Cáo Lỗi",
+    "en": "Bug Report"
+  },
+  "desc": {
+    "vi": "Viết báo cáo lỗi chi tiết.",
+    "en": "Write detailed bug reports."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/bug-report/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "test-case",
+  "gameId": "game-060",
+  "name": {
+    "vi": "Trường Hợp Kiểm Tra",
+    "en": "Test Case"
+  },
+  "desc": {
+    "vi": "Viết test case.",
+    "en": "Write test cases."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/test-case/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "deployment-check",
+  "gameId": "game-061",
+  "name": {
+    "vi": "Kiểm Tra Triển Khai",
+    "en": "Deployment Check"
+  },
+  "desc": {
+    "vi": "Checklist triển khai.",
+    "en": "Deployment checklist."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/deployment-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "monitor-alert",
+  "gameId": "game-062",
+  "name": {
+    "vi": "Giám Sát Cảnh Báo",
+    "en": "Monitor Alert"
+  },
+  "desc": {
+    "vi": "Thiết lập cảnh báo giám sát.",
+    "en": "Setup monitoring alerts."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/monitor-alert/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "incident-response",
+  "gameId": "game-063",
+  "name": {
+    "vi": "Phản Hồi Sự Cố",
+    "en": "Incident Response"
+  },
+  "desc": {
+    "vi": "Quy trình phản hồi sự cố.",
+    "en": "Incident response plan."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/incident-response/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "disaster-recover",
+  "gameId": "game-064",
+  "name": {
+    "vi": "Khôi Phục Thảm Họa",
+    "en": "Disaster Recover"
+  },
+  "desc": {
+    "vi": "Kế hoạch khôi phục thảm họa.",
+    "en": "Disaster recovery plan."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/disaster-recover/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "backup-check",
+  "gameId": "game-065",
+  "name": {
+    "vi": "Kiểm Tra Sao Lưu",
+    "en": "Backup Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra & kiểm tra sao lưu.",
+    "en": "Check & verify backups."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/backup-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "security-audit",
+  "gameId": "game-066",
+  "name": {
+    "vi": "Kiểm Tra Bảo Mật",
+    "en": "Security Audit"
+  },
+  "desc": {
+    "vi": "Kiểm tra bảo mật hệ thống.",
+    "en": "Security audit checklist."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/security-audit/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "password-policy",
+  "gameId": "game-067",
+  "name": {
+    "vi": "Chính Sách Mật Khẩu",
+    "en": "Password Policy"
+  },
+  "desc": {
+    "vi": "Thiết lập chính sách mật khẩu.",
+    "en": "Set password policy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/password-policy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "data-privacy",
+  "gameId": "game-068",
+  "name": {
+    "vi": "Quyền Riêng Tư Dữ Liệu",
+    "en": "Data Privacy"
+  },
+  "desc": {
+    "vi": "Đánh giá quyền riêng tư dữ liệu.",
+    "en": "Assess data privacy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/data-privacy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "compliance-check",
+  "gameId": "game-069",
+  "name": {
+    "vi": "Tuân Thủ",
+    "en": "Compliance Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra tuân thủ quy định.",
+    "en": "Check regulatory compliance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/compliance-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "contract-review",
+  "gameId": "game-070",
+  "name": {
+    "vi": "Xem Xét Hợp Đồng",
+    "en": "Contract Review"
+  },
+  "desc": {
+    "vi": "Kiểm tra điều khoản hợp đồng.",
+    "en": "Review contract terms."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/contract-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ip-check",
+  "gameId": "game-071",
+  "name": {
+    "vi": "Sở Hữu Trí Tuệ",
+    "en": "IP Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra sở hữu trí tuệ.",
+    "en": "Check intellectual property."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ip-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "patent-search",
+  "gameId": "game-072",
+  "name": {
+    "vi": "Tìm Kiếm Bằng Sáng Chế",
+    "en": "Patent Search"
+  },
+  "desc": {
+    "vi": "Tìm kiếm bằng sáng chế.",
+    "en": "Search patents."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/patent-search/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "trademark-check",
+  "gameId": "game-073",
+  "name": {
+    "vi": "Kiểm Tra Thương Hiệu",
+    "en": "Trademark Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra đăng ký thương hiệu.",
+    "en": "Check trademark registration."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/trademark-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "copyright-fair",
+  "gameId": "game-074",
+  "name": {
+    "vi": "Bản Quyền Công Bằng",
+    "en": "Copyright Fair"
+  },
+  "desc": {
+    "vi": "Đánh giá sử dụng hợp lý bản quyền.",
+    "en": "Assess fair use."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/copyright-fair/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "open-source",
+  "gameId": "game-075",
+  "name": {
+    "vi": "Mã Nguồn Mở",
+    "en": "Open Source"
+  },
+  "desc": {
+    "vi": "Đánh giá giấy phép mã nguồn mở.",
+    "en": "Assess open source licenses."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/open-source/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "contrib-guide",
+  "gameId": "game-076",
+  "name": {
+    "vi": "Hướng Dẫn Đóng Góp",
+    "en": "Contrib Guide"
+  },
+  "desc": {
+    "vi": "Viết hướng dẫn đóng góp.",
+    "en": "Write contribution guide."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/contrib-guide/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "code-of-conduct",
+  "gameId": "game-077",
+  "name": {
+    "vi": "Quy Tắc Ứng Xử",
+    "en": "Code of Conduct"
+  },
+  "desc": {
+    "vi": "Viết quy tắc ứng xử.",
+    "en": "Write code of conduct."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/code-of-conduct/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "education",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "release-note",
+  "gameId": "game-078",
+  "name": {
+    "vi": "Ghi Chú Phát Hành",
+    "en": "Release Note"
+  },
+  "desc": {
+    "vi": "Viết ghi chú phát hành.",
+    "en": "Write release notes."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/release-note/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "changelog-build",
+  "gameId": "game-079",
+  "name": {
+    "vi": "Xây Dựng Changelog",
+    "en": "Changelog Build"
+  },
+  "desc": {
+    "vi": "Xây dựng changelog.",
+    "en": "Build changelog."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/changelog-build/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "roadmap-plan",
+  "gameId": "game-080",
+  "name": {
+    "vi": "Lập Lộ Trình",
+    "en": "Roadmap Plan"
+  },
+  "desc": {
+    "vi": "Lập lộ trình sản phẩm.",
+    "en": "Plan product roadmap."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/roadmap-plan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "feature-spec",
+  "gameId": "game-081",
+  "name": {
+    "vi": "Đặc Tả Tính Năng",
+    "en": "Feature Spec"
+  },
+  "desc": {
+    "vi": "Viết đặc tả tính năng.",
+    "en": "Write feature specification."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/feature-spec/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mockup-review",
+  "gameId": "game-082",
+  "name": {
+    "vi": "Đánh Giá Mockup",
+    "en": "Mockup Review"
+  },
+  "desc": {
+    "vi": "Phê bình thiết kế mockup.",
+    "en": "Critique mockup designs."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mockup-review/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "prototype-test",
+  "gameId": "game-083",
+  "name": {
+    "vi": "Thử Nghiệm Nguyên Mẫu",
+    "en": "Prototype Test"
+  },
+  "desc": {
+    "vi": "Thử nghiệm nguyên mẫu.",
+    "en": "Test prototypes."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/prototype-test/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "a-b-test",
+  "gameId": "game-084",
+  "name": {
+    "vi": "Thử Nghiệm A/B",
+    "en": "A/B Test"
+  },
+  "desc": {
+    "vi": "Thiết kế thử nghiệm A/B.",
+    "en": "Design A/B tests."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/a-b-test/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "metric-define",
+  "gameId": "game-085",
+  "name": {
+    "vi": "Xác Định Chỉ Số",
+    "en": "Metric Define"
+  },
+  "desc": {
+    "vi": "Xác định chỉ số đo lường.",
+    "en": "Define metrics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/metric-define/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dashboard-design",
+  "gameId": "game-086",
+  "name": {
+    "vi": "Thiết Kế Bảng Điều Khiển",
+    "en": "Dashboard Design"
+  },
+  "desc": {
+    "vi": "Thiết kế dashboard KPI.",
+    "en": "Design KPI dashboard."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dashboard-design/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "alert-design",
+  "gameId": "game-087",
+  "name": {
+    "vi": "Thiết Kế Cảnh Báo",
+    "en": "Alert Design"
+  },
+  "desc": {
+    "vi": "Thiết kế cảnh báo thông minh.",
+    "en": "Design smart alerts."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/alert-design/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "notification-copy",
+  "gameId": "game-088",
+  "name": {
+    "vi": "Viết Thông Báo",
+    "en": "Notification Copy"
+  },
+  "desc": {
+    "vi": "Viết copy thông báo đẩy.",
+    "en": "Write push notification copy."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/notification-copy/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "empty-state",
+  "gameId": "game-089",
+  "name": {
+    "vi": "Trạng Thái Trống",
+    "en": "Empty State"
+  },
+  "desc": {
+    "vi": "Thiết kế trạng thái trống.",
+    "en": "Design empty states."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/empty-state/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "error-message",
+  "gameId": "game-090",
+  "name": {
+    "vi": "Thông Báo Lỗi",
+    "en": "Error Message"
+  },
+  "desc": {
+    "vi": "Viết thông báo lỗi thân thiện.",
+    "en": "Write friendly error messages."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/error-message/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "loading-state",
+  "gameId": "game-091",
+  "name": {
+    "vi": "Trạng Thái Tải",
+    "en": "Loading State"
+  },
+  "desc": {
+    "vi": "Thiết kế trạng thái tải.",
+    "en": "Design loading states."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/loading-state/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "success-state",
+  "gameId": "game-092",
+  "name": {
+    "vi": "Trạng Thái Thành Công",
+    "en": "Success State"
+  },
+  "desc": {
+    "vi": "Thiết kế trạng thái thành công.",
+    "en": "Design success states."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/success-state/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "onboarding-check",
+  "gameId": "game-093",
+  "name": {
+    "vi": "Kiểm Tra Đón Nhận",
+    "en": "Onboarding Check"
+  },
+  "desc": {
+    "vi": "Kiểm tra quy trình đón nhận.",
+    "en": "Check onboarding flow."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/onboarding-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "retention-check",
+  "gameId": "game-094",
+  "name": {
+    "vi": "Kiểm Tra Giữ Chân",
+    "en": "Retention Check"
+  },
+  "desc": {
+    "vi": "Phân tích yếu tố giữ chân.",
+    "en": "Analyze retention factors."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/retention-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "churn-predict",
+  "gameId": "game-095",
+  "name": {
+    "vi": "Dự Đoán Rời Bỏ",
+    "en": "Churn Predict"
+  },
+  "desc": {
+    "vi": "Dự đoán khách hàng rời bỏ.",
+    "en": "Predict customer churn."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/churn-predict/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ltv-calculate",
+  "gameId": "game-096",
+  "name": {
+    "vi": "Tính LTV",
+    "en": "LTV Calculate"
+  },
+  "desc": {
+    "vi": "Tính giá trị vòng đời khách hàng.",
+    "en": "Calculate customer LTV."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ltv-calculate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cac-calculate",
+  "gameId": "game-097",
+  "name": {
+    "vi": "Tính CAC",
+    "en": "CAC Calculate"
+  },
+  "desc": {
+    "vi": "Tính chi phí thu hút khách hàng.",
+    "en": "Calculate customer CAC."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cac-calculate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "roi-calculate",
+  "gameId": "game-098",
+  "name": {
+    "vi": "Tính ROI",
+    "en": "ROI Calculate"
+  },
+  "desc": {
+    "vi": "Tính tỷ suất hoàn vốn.",
+    "en": "Calculate ROI."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/roi-calculate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "break-even",
+  "gameId": "game-099",
+  "name": {
+    "vi": "Điểm Hòa Vốn",
+    "en": "Break Even"
+  },
+  "desc": {
+    "vi": "Tính điểm hòa vốn.",
+    "en": "Calculate break-even point."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/break-even/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "margin-calculate",
+  "gameId": "game-100",
+  "name": {
+    "vi": "Tính Biên Lợi Nhuận",
+    "en": "Margin Calculate"
+  },
+  "desc": {
+    "vi": "Tính biên lợi nhuận.",
+    "en": "Calculate profit margin."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/margin-calculate/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cash-flow",
+  "gameId": "game-101",
+  "name": {
+    "vi": "Dòng Tiền",
+    "en": "Cash Flow"
+  },
+  "desc": {
+    "vi": "Lập báo cáo dòng tiền.",
+    "en": "Create cash flow report."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cash-flow/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "balance-sheet",
+  "gameId": "game-102",
+  "name": {
+    "vi": "Bảng Cân Đối",
+    "en": "Balance Sheet"
+  },
+  "desc": {
+    "vi": "Lập bảng cân đối kế toán.",
+    "en": "Create balance sheet."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/balance-sheet/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "income-statement",
+  "gameId": "game-103",
+  "name": {
+    "vi": "Báo Cáo Thu Nhập",
+    "en": "Income Statement"
+  },
+  "desc": {
+    "vi": "Lập báo cáo thu nhập.",
+    "en": "Create income statement."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/income-statement/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "depreciation-calc",
+  "gameId": "game-104",
+  "name": {
+    "vi": "Khấu Hao",
+    "en": "Depreciation Calc"
+  },
+  "desc": {
+    "vi": "Tính khấu hao tài sản.",
+    "en": "Calculate depreciation."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/depreciation-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "inventory-manage",
+  "gameId": "game-105",
+  "name": {
+    "vi": "Quản Lý Tồn Kho",
+    "en": "Inventory Manage"
+  },
+  "desc": {
+    "vi": "Tính toán tồn kho tối ưu.",
+    "en": "Optimize inventory."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/inventory-manage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "eoq-calc",
+  "gameId": "game-106",
+  "name": {
+    "vi": "EOQ",
+    "en": "EOQ Calc"
+  },
+  "desc": {
+    "vi": "Tính số lượng đặt hàng tối ưu.",
+    "en": "Calculate EOQ."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/eoq-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "reorder-point",
+  "gameId": "game-107",
+  "name": {
+    "vi": "Điểm Đặt Hàng Lại",
+    "en": "Reorder Point"
+  },
+  "desc": {
+    "vi": "Tính điểm đặt hàng lại.",
+    "en": "Calculate reorder point."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/reorder-point/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lead-time",
+  "gameId": "game-108",
+  "name": {
+    "vi": "Thời Gian Chờ",
+    "en": "Lead Time"
+  },
+  "desc": {
+    "vi": "Tính & tối ưu thời gian chờ.",
+    "en": "Calculate & optimize lead time."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lead-time/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "supplier-eval",
+  "gameId": "game-109",
+  "name": {
+    "vi": "Đánh Giá Nhà Cung Cấp",
+    "en": "Supplier Eval"
+  },
+  "desc": {
+    "vi": "Đánh giá nhà cung cấp.",
+    "en": "Evaluate suppliers."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/supplier-eval/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "logistics-optimize",
+  "gameId": "game-110",
+  "name": {
+    "vi": "Tối Ưu Logistics",
+    "en": "Logistics Optimize"
+  },
+  "desc": {
+    "vi": "Tối ưu tuyến đường vận chuyển.",
+    "en": "Optimize delivery routes."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/logistics-optimize/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "warehouse-layout",
+  "gameId": "game-111",
+  "name": {
+    "vi": "Bố Trí Kho",
+    "en": "Warehouse Layout"
+  },
+  "desc": {
+    "vi": "Thiết kế bố trí kho hàng.",
+    "en": "Design warehouse layout."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/warehouse-layout/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "safety-stock",
+  "gameId": "game-112",
+  "name": {
+    "vi": "Tồn Kho An Toàn",
+    "en": "Safety Stock"
+  },
+  "desc": {
+    "vi": "Tính tồn kho an toàn.",
+    "en": "Calculate safety stock."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/safety-stock/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "demand-forecast",
+  "gameId": "game-113",
+  "name": {
+    "vi": "Dự Báo Nhu Cầu",
+    "en": "Demand Forecast"
+  },
+  "desc": {
+    "vi": "Dự báo nhu cầu sản phẩm.",
+    "en": "Forecast product demand."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/demand-forecast/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "capacity-plan",
+  "gameId": "game-114",
+  "name": {
+    "vi": "Kế Hoạch Năng Lực",
+    "en": "Capacity Plan"
+  },
+  "desc": {
+    "vi": "Lập kế hoạch năng lực sản xuất.",
+    "en": "Plan production capacity."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/capacity-plan/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quality-control",
+  "gameId": "game-115",
+  "name": {
+    "vi": "Kiểm Soát Chất Lượng",
+    "en": "Quality Control"
+  },
+  "desc": {
+    "vi": "Thiết kế kiểm soát chất lượng.",
+    "en": "Design quality control."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quality-control/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "six-sigma",
+  "gameId": "game-116",
+  "name": {
+    "vi": "Six Sigma",
+    "en": "Six Sigma"
+  },
+  "desc": {
+    "vi": "Áp dụng DMAIC Six Sigma.",
+    "en": "Apply DMAIC Six Sigma."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/six-sigma/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "lean-game",
+  "gameId": "game-117",
+  "name": {
+    "vi": "Tinh Gọn",
+    "en": "Lean Game"
+  },
+  "desc": {
+    "vi": "Áp dụng nguyên tắc tinh gọn.",
+    "en": "Apply lean principles."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/lean-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kaizen-game",
+  "gameId": "game-118",
+  "name": {
+    "vi": "Kaizen",
+    "en": "Kaizen Game"
+  },
+  "desc": {
+    "vi": "Cải tiến liên tục Kaizen.",
+    "en": "Continuous Kaizen improvement."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kaizen-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "5s-game",
+  "gameId": "game-119",
+  "name": {
+    "vi": "5S",
+    "en": "5S Game"
+  },
+  "desc": {
+    "vi": "Thực hành 5S.",
+    "en": "Practice 5S methodology."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/5s-game/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kanban-calc",
+  "gameId": "game-120",
+  "name": {
+    "vi": "Kanban Tính Toán",
+    "en": "Kanban Calc"
+  },
+  "desc": {
+    "vi": "Tính toán số lượng thẻ Kanban.",
+    "en": "Calculate Kanban card count."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kanban-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "takt-time",
+  "gameId": "game-121",
+  "name": {
+    "vi": "Takt Time",
+    "en": "Takt Time"
+  },
+  "desc": {
+    "vi": "Tính takt time sản xuất.",
+    "en": "Calculate takt time."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/takt-time/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "cycle-time",
+  "gameId": "game-122",
+  "name": {
+    "vi": "Cycle Time",
+    "en": "Cycle Time"
+  },
+  "desc": {
+    "vi": "Tính & cải thiện cycle time.",
+    "en": "Calculate & improve cycle time."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/cycle-time/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "throughput",
+  "gameId": "game-123",
+  "name": {
+    "vi": "Throughput",
+    "en": "Throughput"
+  },
+  "desc": {
+    "vi": "Tính throughput hệ thống.",
+    "en": "Calculate system throughput."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/throughput/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "utilization",
+  "gameId": "game-124",
+  "name": {
+    "vi": "Utilization",
+    "en": "Utilization"
+  },
+  "desc": {
+    "vi": "Tính tỷ lệ sử dụng thiết bị.",
+    "en": "Calculate equipment utilization."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/utilization/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "oee-calc",
+  "gameId": "game-125",
+  "name": {
+    "vi": "OEE",
+    "en": "OEE Calc"
+  },
+  "desc": {
+    "vi": "Tính OEE tổng thể.",
+    "en": "Calculate overall OEE."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/oee-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mtbf-calc",
+  "gameId": "game-126",
+  "name": {
+    "vi": "MTBF",
+    "en": "MTBF Calc"
+  },
+  "desc": {
+    "vi": "Tính thời gian trung bình giữa các lỗi.",
+    "en": "Calculate MTBF."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mtbf-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mttr-calc",
+  "gameId": "game-127",
+  "name": {
+    "vi": "MTTR",
+    "en": "MTTR Calc"
+  },
+  "desc": {
+    "vi": "Tính thời gian sửa chữa trung bình.",
+    "en": "Calculate MTTR."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mttr-calc/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "spare-parts",
+  "gameId": "game-128",
+  "name": {
+    "vi": "Phụ Tùng",
+    "en": "Spare Parts"
+  },
+  "desc": {
+    "vi": "Quản lý tồn kho phụ tùng.",
+    "en": "Manage spare parts inventory."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/spare-parts/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "maintenance-sched",
+  "gameId": "game-129",
+  "name": {
+    "vi": "Lịch Bảo Trì",
+    "en": "Maintenance Sched"
+  },
+  "desc": {
+    "vi": "Lập lịch bảo trì thiết bị.",
+    "en": "Schedule equipment maintenance."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/maintenance-sched/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "asset-track",
+  "gameId": "game-130",
+  "name": {
+    "vi": "Theo Dõi Tài Sản",
+    "en": "Asset Track"
+  },
+  "desc": {
+    "vi": "Theo dõi tài sản cố định.",
+    "en": "Track fixed assets."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/asset-track/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "warranty-check",
+  "gameId": "game-131",
+  "name": {
+    "vi": "Bảo Hành",
+    "en": "Warranty Check"
+  },
+  "desc": {
+    "vi": "Theo dõi & quản lý bảo hành.",
+    "en": "Track & manage warranties."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/warranty-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "recall-manage",
+  "gameId": "game-132",
+  "name": {
+    "vi": "Thu Hồi",
+    "en": "Recall Manage"
+  },
+  "desc": {
+    "vi": "Quản lý thu hồi sản phẩm.",
+    "en": "Manage product recalls."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/recall-manage/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sustainability",
+  "gameId": "game-133",
+  "name": {
+    "vi": "Bền Vững",
+    "en": "Sustainability"
+  },
+  "desc": {
+    "vi": "Đánh giá tác động bền vững.",
+    "en": "Assess sustainability impact."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sustainability/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "carbon-footprint",
+  "gameId": "game-134",
+  "name": {
+    "vi": "Dấu Chân Carbon",
+    "en": "Carbon Footprint"
+  },
+  "desc": {
+    "vi": "Tính toán dấu chân carbon.",
+    "en": "Calculate carbon footprint."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/carbon-footprint/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "math",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "esg-check",
+  "gameId": "game-135",
+  "name": {
+    "vi": "ESG",
+    "en": "ESG Check"
+  },
+  "desc": {
+    "vi": "Đánh giá ESG.",
+    "en": "Assess ESG factors."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/esg-check/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sdg-align",
+  "gameId": "game-136",
+  "name": {
+    "vi": "SDG",
+    "en": "SDG Align"
+  },
+  "desc": {
+    "vi": "Căn chỉnh với Mục tiêu Phát triển Bền vững.",
+    "en": "Align with SDGs."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sdg-align/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "simulation",
+  "wave": 4,
+  "free": 5
 }
 ];
 
