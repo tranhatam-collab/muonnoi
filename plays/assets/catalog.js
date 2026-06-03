@@ -4100,6 +4100,531 @@
   "genre": "creative",
   "wave": 4,
   "free": 5
+},
+{
+  "id": "zen-garden",
+  "gameId": "game-001",
+  "name": {
+    "vi": "Vườn Thiền",
+    "en": "Zen Garden"
+  },
+  "desc": {
+    "vi": "Thiết kế vườn zen tĩnh lặng.",
+    "en": "Design a serene zen garden."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/zen-garden/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "dream-journal",
+  "gameId": "game-002",
+  "name": {
+    "vi": "Nhật Ký Giấc Mơ",
+    "en": "Dream Journal"
+  },
+  "desc": {
+    "vi": "Ghi chép & phân tích giấc mơ.",
+    "en": "Record & analyze dreams."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/dream-journal/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "quote-machine",
+  "gameId": "game-003",
+  "name": {
+    "vi": "Máy Danh Ngôn",
+    "en": "Quote Machine"
+  },
+  "desc": {
+    "vi": "Tạo & chia sẻ danh ngôn.",
+    "en": "Generate & share quotes."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/quote-machine/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mood-ring",
+  "gameId": "game-004",
+  "name": {
+    "vi": "Nhẫn Tâm Trạng",
+    "en": "Mood Ring"
+  },
+  "desc": {
+    "vi": "Chọn màu theo tâm trạng.",
+    "en": "Pick color by mood."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mood-ring/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "collab-canvas",
+  "gameId": "game-005",
+  "name": {
+    "vi": "Vẽ Chung",
+    "en": "Collab Canvas"
+  },
+  "desc": {
+    "vi": "Vẽ cùng người khác.",
+    "en": "Draw together with others."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/collab-canvas/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "truth-dare",
+  "gameId": "game-006",
+  "name": {
+    "vi": "Thật Hay Thách",
+    "en": "Truth Dare"
+  },
+  "desc": {
+    "vi": "Thật hay thách phiên bản nhẹ.",
+    "en": "Light truth or dare."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/truth-dare/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "would-you-rather",
+  "gameId": "game-007",
+  "name": {
+    "vi": "Bạn Chọn Gì",
+    "en": "Would You Rather"
+  },
+  "desc": {
+    "vi": "Chọn giữa hai phương án.",
+    "en": "Choose between two options."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/would-you-rather/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "icebreaker",
+  "gameId": "game-008",
+  "name": {
+    "vi": "Phá Băng",
+    "en": "Icebreaker"
+  },
+  "desc": {
+    "vi": "Câu hỏi phá băng.",
+    "en": "Icebreaker questions."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/icebreaker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "debate-club",
+  "gameId": "game-009",
+  "name": {
+    "vi": "Câu Lạc Bộ Tranh Luận",
+    "en": "Debate Club"
+  },
+  "desc": {
+    "vi": "Tranh luận chủ đề ngẫu nhiên.",
+    "en": "Debate random topics."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/debate-club/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "social",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "brain-dump",
+  "gameId": "game-010",
+  "name": {
+    "vi": "Xả Não",
+    "en": "Brain Dump"
+  },
+  "desc": {
+    "vi": "Viết ra mọi ý nghĩ trong 60 giây.",
+    "en": "Dump all thoughts in 60s."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/brain-dump/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "priority-matrix",
+  "gameId": "game-011",
+  "name": {
+    "vi": "Ma Trận Ưu Tiên",
+    "en": "Priority Matrix"
+  },
+  "desc": {
+    "vi": "Sắp xếp việc theo ưu tiên.",
+    "en": "Sort tasks by priority."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/priority-matrix/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "goal-mapper",
+  "gameId": "game-012",
+  "name": {
+    "vi": "Bản Đồ Mục Tiêu",
+    "en": "Goal Mapper"
+  },
+  "desc": {
+    "vi": "Vẽ bản đồ mục tiêu.",
+    "en": "Map out your goals."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/goal-mapper/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "skill-tree",
+  "gameId": "game-013",
+  "name": {
+    "vi": "Cây Kỹ Năng",
+    "en": "Skill Tree"
+  },
+  "desc": {
+    "vi": "Xây dựng cây kỹ năng cá nhân.",
+    "en": "Build personal skill tree."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/skill-tree/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mini-paint",
+  "gameId": "game-014",
+  "name": {
+    "vi": "Vẽ Mini",
+    "en": "Mini Paint"
+  },
+  "desc": {
+    "vi": "Bảng vẽ pixel mini.",
+    "en": "Mini pixel paint board."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mini-paint/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "ascii-art",
+  "gameId": "game-015",
+  "name": {
+    "vi": "Nghệ Thuật ASCII",
+    "en": "ASCII Art"
+  },
+  "desc": {
+    "vi": "Tạo tranh ASCII.",
+    "en": "Create ASCII art."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/ascii-art/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "sound-board",
+  "gameId": "game-016",
+  "name": {
+    "vi": "Bảng Âm Thanh",
+    "en": "Sound Board"
+  },
+  "desc": {
+    "vi": "Phát âm thanh thư giãn.",
+    "en": "Play relaxing sounds."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/sound-board/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "breath-pacer",
+  "gameId": "game-017",
+  "name": {
+    "vi": "Nhịp Thở",
+    "en": "Breath Pacer"
+  },
+  "desc": {
+    "vi": "Hít thở theo nhịp điệu.",
+    "en": "Breathe to the rhythm."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/breath-pacer/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "gratitude-wall",
+  "gameId": "game-018",
+  "name": {
+    "vi": "Tường Biết Ơn",
+    "en": "Gratitude Wall"
+  },
+  "desc": {
+    "vi": "Dán lời biết ơn lên tường.",
+    "en": "Pin gratitude notes on wall."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/gratitude-wall/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "kindness-roulette",
+  "gameId": "game-019",
+  "name": {
+    "vi": "Vòng Quay Tử Tế",
+    "en": "Kindness Roulette"
+  },
+  "desc": {
+    "vi": "Quay để nhận hành động tử tế.",
+    "en": "Spin for a kind act."
+  },
+  "group": "social",
+  "tier": 1,
+  "status": "live",
+  "path": "games/kindness-roulette/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "wellness",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "daily-challenge",
+  "gameId": "game-020",
+  "name": {
+    "vi": "Thử Thách Hàng Ngày",
+    "en": "Daily Challenge"
+  },
+  "desc": {
+    "vi": "Hoàn thành thử thách mỗi ngày.",
+    "en": "Complete daily challenges."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/daily-challenge/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "mind-sweep",
+  "gameId": "game-021",
+  "name": {
+    "vi": "Quét Tâm Trí",
+    "en": "Mind Sweep"
+  },
+  "desc": {
+    "vi": "Liệt kê & tổ chức suy nghĩ.",
+    "en": "List & organize thoughts."
+  },
+  "group": "work",
+  "tier": 1,
+  "status": "live",
+  "path": "games/mind-sweep/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "productivity",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "idea-generator",
+  "gameId": "game-022",
+  "name": {
+    "vi": "Máy Tạo Ý Tưởng",
+    "en": "Idea Generator"
+  },
+  "desc": {
+    "vi": "Tạo ý tưởng ngẫu nhiên.",
+    "en": "Generate random ideas."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/idea-generator/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "story-starter",
+  "gameId": "game-023",
+  "name": {
+    "vi": "Khởi Đầu Truyện",
+    "en": "Story Starter"
+  },
+  "desc": {
+    "vi": "Nhận mở đầu truyện ngẫu nhiên.",
+    "en": "Get random story starters."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/story-starter/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "poem-maker",
+  "gameId": "game-024",
+  "name": {
+    "vi": "Máy Làm Thơ",
+    "en": "Poem Maker"
+  },
+  "desc": {
+    "vi": "Tạo thơ từ từ khóa.",
+    "en": "Create poems from keywords."
+  },
+  "group": "creator",
+  "tier": 1,
+  "status": "live",
+  "path": "games/poem-maker/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
+},
+{
+  "id": "vision-board",
+  "gameId": "game-025",
+  "name": {
+    "vi": "Tấm Nhìn",
+    "en": "Vision Board"
+  },
+  "desc": {
+    "vi": "Tạo bảng tầm nhìn cá nhân.",
+    "en": "Create personal vision board."
+  },
+  "group": "life",
+  "tier": 1,
+  "status": "live",
+  "path": "games/vision-board/index.html",
+  "difficulty": "easy",
+  "duration": "2-5 min",
+  "genre": "creative",
+  "wave": 4,
+  "free": 5
 }
 ];
 
