@@ -99,6 +99,48 @@
     return pa !== pb;
   }
 
+  function pickSmartMove(fromIdx, moves, aiKing) {
+    const playerKing = '♔';
+    let playerPos = -1;
+    for (let i = 0; i < SIZE * SIZE; i++) if (board[i] === playerKing) { playerPos = i; break; }
+    const fromR = Math.floor(fromIdx / SIZE), fromC = fromIdx % SIZE;
+    const playerR = Math.floor(playerPos / SIZE), playerC = playerPos % SIZE;
+
+    // Evaluate each move: lower score = better for AI
+    let best = moves[0], bestScore = Infinity;
+    for (const m of moves) {
+      const mr = Math.floor(m / SIZE), mc = m % SIZE;
+      // Simulate move
+      const oldFrom = board[fromIdx];
+      const oldTo = board[m];
+      board[m] = aiKing; board[fromIdx] = '';
+      const playerMoves = hasAnyMoveCount(playerKing);
+      const distToPlayer = Math.abs(mr - playerR) + Math.abs(mc - playerC);
+      board[fromIdx] = oldFrom; board[m] = oldTo;
+
+      let score = 0;
+      if (level >= 5) {
+        // Aggressive: minimize player's moves, get close
+        score = playerMoves * 10 + distToPlayer;
+      } else {
+        // Smart: prefer getting closer, slight preference for limiting player
+        score = distToPlayer * 5 - (8 - playerMoves) * 2;
+      }
+      if (score < bestScore) { bestScore = score; best = m; }
+    }
+    return best;
+  }
+
+  function hasAnyMoveCount(ch) {
+    let count = 0;
+    for (let i = 0; i < SIZE * SIZE; i++) {
+      if (board[i] && (ch === '♔' ? board[i] === '♔' : board[i] === '♚')) {
+        count += getMoves(i, board[i]).length;
+      }
+    }
+    return count;
+  }
+
   function hasAnyMove(ch) {
     for (let i = 0; i < SIZE * SIZE; i++) {
       if (board[i] && (ch === '♔' ? board[i] === '♔' : board[i] === '♚')) {
@@ -136,7 +178,12 @@
       }
     }
     if (from === -1 || moves.length === 0) { endGame(false); return; }
-    const to = moves[Math.floor(Math.random() * moves.length)];
+    let to;
+    if (level >= 3) {
+      to = pickSmartMove(from, moves, aiKing);
+    } else {
+      to = moves[Math.floor(Math.random() * moves.length)];
+    }
     board[to] = aiKing; board[from] = '';
     render();
     if (!hasAnyMove('♔')) { endGame(false); return; }

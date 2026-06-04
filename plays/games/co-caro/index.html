@@ -99,7 +99,7 @@
     render();
     const winCells = checkWin('X');
     if (winCells) { highlight(winCells); endGame(true); return; }
-    if (board.every(c => c)) { endGame(null); return; }
+    if (board.every(c => c)) { endGame('draw'); return; }
     playerTurn = false;
     statusEl.textContent = LANG === 'vi' ? 'AI đang suy nghĩ...' : 'AI thinking...';
     setTimeout(aiMove, 400);
@@ -107,8 +107,19 @@
 
   function aiMove() {
     if (!isPlaying) return;
-    // Simple AI: block if player has 4, else random near existing
-    let move = findBlockMove('X', 4) || findBlockMove('O', 4) || findBlockMove('X', 3) || findRandom();
+    let move = null;
+    // Level-based AI difficulty
+    if (level >= 5) {
+      // Hard: try to win, block, build threats, block threats
+      move = findThreatMove('O', 4) || findBlockMove('X', 4) || findThreatMove('O', 3) || findBlockMove('X', 3) || findStrategic();
+    } else if (level >= 3) {
+      // Medium: try to win, block, then random
+      move = findThreatMove('O', 4) || findBlockMove('X', 4) || findStrategic();
+    } else {
+      // Easy: block only, then random
+      move = findBlockMove('X', 4) || findBlockMove('O', 4) || findRandom();
+    }
+    if (move === null) move = findRandom();
     board[move] = 'O';
     render();
     const winCells = checkWin('O');
@@ -116,6 +127,25 @@
     if (board.every(c => c)) { endGame(null); return; }
     playerTurn = true;
     statusEl.textContent = LANG === 'vi' ? 'Lượt của bạn' : 'Your turn';
+  }
+
+  function findThreatMove(ch, len) {
+    const dirs = [[1,0],[0,1],[1,1],[1,-1]];
+    for (let r = 0; r < SIZE; r++) for (let c = 0; c < SIZE; c++) {
+      for (const [dr,dc] of dirs) {
+        let count = 0, empty = -1;
+        for (let i = 0; i < len + 1; i++) {
+          const rr = r + dr*i, cc = c + dc*i;
+          if (rr < 0 || rr >= SIZE || cc < 0 || cc >= SIZE) break;
+          const idx = rr*SIZE+cc;
+          if (board[idx] === ch) count++;
+          else if (!board[idx] && empty === -1) empty = idx;
+          else break;
+        }
+        if (count === len && empty !== -1) return empty;
+      }
+    }
+    return null;
   }
 
   function findBlockMove(ch, len) {
@@ -137,8 +167,20 @@
     return null;
   }
 
+  function findStrategic() {
+    const empties = board.map((v,i) => v ? -1 : i).filter(i => i !== -1);
+    if (empties.length === 0) return null;
+    // Prefer center, then corners, then edges
+    const center = Math.floor(SIZE/2)*SIZE + Math.floor(SIZE/2);
+    const corners = [0, SIZE-1, (SIZE-1)*SIZE, SIZE*SIZE-1];
+    if (!board[center] && empties.includes(center)) return center;
+    for (const c of corners) if (!board[c] && empties.includes(c)) return c;
+    return empties[Math.floor(Math.random() * empties.length)];
+  }
+
   function findRandom() {
     const empties = board.map((v,i) => v ? -1 : i).filter(i => i !== -1);
+    if (empties.length === 0) return null;
     return empties[Math.floor(Math.random() * empties.length)];
   }
 
@@ -156,13 +198,20 @@
 
   function endGame(playerWin) {
     isPlaying = false;
-    if (playerWin) { score += level * 100; hud.setScore(score); level++; hud.setLevel(level); }
+    if (playerWin === true) { score += level * 100; hud.setScore(score); level++; hud.setLevel(level); }
     statusEl.textContent = playerWin === true ? (LANG === 'vi' ? 'Bạn thắng!' : 'You win!') :
                            playerWin === false ? (LANG === 'vi' ? 'AI thắng!' : 'AI wins!') :
-                           (LANG === 'vi' ? 'Hòa!' : 'Draw!');
-    PlaysSDK.saveScore(GAME_ID, score, { level: playerWin ? level : level });
+                           (LANG === 'vi' ? 'Hòa — tiếp tục!' : 'Draw — continue!');
+    PlaysSDK.saveScore(GAME_ID, score, { level });
     setTimeout(() => {
-      PlaysSDK.showGameOver(GAME_ID, score, { level }, () => { if (playerWin) { reset(); isPlaying = true; playerTurn = true; statusEl.textContent = LANG === 'vi' ? 'Lượt của bạn' : 'Your turn'; } else { location.reload(); } });
+      if (playerWin === true) {
+        PlaysSDK.showGameOver(GAME_ID, score, { level }, () => { reset(); isPlaying = true; playerTurn = true; statusEl.textContent = LANG === 'vi' ? 'Lượt của bạn' : 'Your turn'; });
+      } else if (playerWin === false) {
+        PlaysSDK.showGameOver(GAME_ID, score, { level }, () => { location.reload(); });
+      } else {
+        // Draw: continue same level without modal, just reset
+        reset(); isPlaying = true; playerTurn = true; statusEl.textContent = LANG === 'vi' ? 'Lượt của bạn' : 'Your turn';
+      }
     }, 600);
   }
 
