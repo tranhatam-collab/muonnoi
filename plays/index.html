@@ -164,12 +164,24 @@
   <!-- Mobile Menu -->
   <div class="mobmenu" id="mobmenu">
     <div class="mobpanel">
-      <h3>Menu</h3>
-      <a href="/">Trang chủ</a>
-      <a href="detail.html">Chi tiết</a>
-      <a href="register.html">Đăng ký</a>
-      <a href="terms.html">Điều khoản</a>
-      <a href="privacy.html">Quyền riêng tư</a>
+      <h3>📑 Mục lục</h3>
+      <a href="/">🏠 Trang chủ</a>
+      <a href="#sansang">✅ Sẵn sàng chơi</a>
+      <a href="#mucluc">🗂️ Theo tầng</a>
+      <a href="#hocvien">🎓 Học viện</a>
+      <a href="#quydinh">📋 Quy định</a>
+      <a href="stats.html">📊 Thống kê</a>
+      <a href="detail.html">📋 Chi tiết</a>
+      <a href="register.html">✍️ Đăng ký</a>
+      <a href="terms.html">⚖️ Điều khoản</a>
+      <a href="privacy.html">🔒 Quyền riêng tư</a>
+      <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">
+        <h3 style="margin-bottom:8px">🌐 Ngôn ngữ</h3>
+        <div style="display:flex;gap:10px">
+          <a href="?lang=vi" onclick="event.preventDefault();setLang('vi');document.getElementById('mobmenu').classList.remove('open')" style="border:1px solid var(--line);padding:6px 14px;border-radius:8px;font-size:13px">🇻🇳 Tiếng Việt</a>
+          <a href="?lang=en" onclick="event.preventDefault();setLang('en');document.getElementById('mobmenu').classList.remove('open')" style="border:1px solid var(--line);padding:6px 14px;border-radius:8px;font-size:13px">🇬🇧 English</a>
+        </div>
+      </div>
     </div>
   </div>
 

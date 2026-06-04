@@ -227,7 +227,11 @@
   }
 
   // ===== GAME OVER UI =====
-  function showGameOver(opts) {
+  function showGameOver(opts, scoreArg, metaArg, cbArg) {
+    // Backward-compatible overload: showGameOver(gameId, score, {level}, callback)
+    if (typeof opts === 'string') {
+      opts = { gameId: opts, score: scoreArg, level: metaArg && metaArg.level, best: 0, isNewBest: false, token: null, onRestart: cbArg, onBack: () => { location.href = '../../'; } };
+    }
     const { gameId, score, level, best, isNewBest, token, onRestart, onBack } = opts;
     const overlay = document.createElement('div');
     overlay.className = 'plays-gameover-overlay';
@@ -312,12 +316,14 @@
     setLang,
     getGuestScores,
     saveGuestScore,
+    saveScore: saveGuestScore, // backward-compat alias
     getAllGuestProgress,
     syncProgress,
     submitScore,
     getLeaderboard,
     getPointsBalance,
     buildTutorial,
+    showTutorial: (gameId, steps) => buildTutorial({ steps, onFinish: () => {}, onClose: () => {} }).open(), // backward-compat wrapper
     showGameOver,
     createHud,
     init,

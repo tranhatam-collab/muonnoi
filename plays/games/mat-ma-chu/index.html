@@ -48,7 +48,7 @@
   <script src="../../assets/plays-sdk.js"></script>
   <script>
     const WORDS = ['Cat','Dog','House','Water','Fire','Wind','Sky','Sun','Moon','Star','Tree','Flower','Friend','Family','Love','Book','Pen','Table','Chair','Door','Window','School','Teacher','Student','Music','Dance','Color','Green','Blue','Red'];
-    let level=1,score=0,solved=0,current='',shuffled='',placed=[];
+    let level=1,score=0,solved=0,current='',shuffled='',placed=[],lives=3;
     const hLevel=document.getElementById('hLevel'),hScore=document.getElementById('hScore'),hSolved=document.getElementById('hSolved');
     const hintEl=document.getElementById('hint'),cipherEl=document.getElementById('cipher'),slotsEl=document.getElementById('slots'),keyboardEl=document.getElementById('keyboard');
 
@@ -84,13 +84,20 @@
         MNPlays.saveProgress('mat-ma-chu',{level,score});
         setTimeout(makeRound,1000);
       }else{
+        lives--;
+        if(lives<=0){endGame();return;}
         placed=[]; keyboardEl.querySelectorAll('button').forEach(b=>{b.classList.remove('used'); b.disabled=false;});
         renderSlots();
       }
     }
+    function endGame(){
+      MNPlays.saveProgress('mat-ma-chu',{level,score});
+      MNPlays.showGameOver('mat-ma-chu',score,{level},()=>{location.reload();});
+    }
     document.getElementById('startBtn').onclick=()=>{
       document.getElementById('overlay').style.display='none';
       document.getElementById('gameArea').style.display='';
+      lives=3; score=0; level=1; solved=0;
       makeRound();
     };
     (async()=>{

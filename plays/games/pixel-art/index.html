@@ -60,7 +60,7 @@
   const sampleGrid = document.getElementById('sample-grid');
   const pixelGrid = document.getElementById('pixel-grid');
 
-  let score = 0, level = 1, isPlaying = false, pattern = new Set(), filled = new Set(), size = 6;
+  let score = 0, level = 1, isPlaying = false, pattern = new Set(), filled = new Set(), size = 6, wrongCount = 0, maxWrong = 3;
 
   function getConfig(lv) {
     if (lv <= 2) return { size: 4, cells: 3 };
@@ -75,7 +75,7 @@
     const total = size * size;
     pattern = new Set();
     while (pattern.size < cfg.cells) pattern.add(Math.floor(Math.random() * total));
-    filled = new Set();
+    filled = new Set(); wrongCount = 0;
     sampleGrid.style.gridTemplateColumns = `repeat(${size}, 14px)`;
     sampleGrid.innerHTML = '';
     pixelGrid.style.gridTemplateColumns = `repeat(${size}, 28px)`;
@@ -107,9 +107,11 @@
       }
     } else {
       cell.classList.add('wrong');
+      wrongCount++;
       score = Math.max(0, score - 20);
       hud.setScore(score);
       setTimeout(() => cell.classList.remove('wrong'), 400);
+      if (wrongCount >= maxWrong) { endGame(); return; }
     }
   }
 

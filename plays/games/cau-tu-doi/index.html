@@ -59,7 +59,7 @@
       {vn:'Sách',en:'Book'},{vn:'Bút',en:'Pen'},{vn:'Bàn',en:'Table'},{vn:'Ghế',en:'Chair'},
       {vn:'Cửa',en:'Door'},{vn:'Cửa sổ',en:'Window'}
     ];
-    let level=1,score=0,streak=0,current=null;
+    let level=1,score=0,streak=0,current=null,lives=3;
     const hLevel=document.getElementById('hLevel'),hScore=document.getElementById('hScore'),hStreak=document.getElementById('hStreak');
     const wVn=document.getElementById('wVn'),wEn=document.getElementById('wEn'),choicesEl=document.getElementById('choices');
 
@@ -82,8 +82,9 @@
         btn.classList.add('correct'); wEn.textContent=current.en; wEn.classList.add('matched');
         streak++; score += 10*streak;
       }else{
-        btn.classList.add('wrong'); streak=0;
+        btn.classList.add('wrong'); streak=0; lives--;
         const right = choicesEl.querySelector(`[data-ans="${current.en}"]`); if(right) right.classList.add('correct');
+        if(lives<=0){endGame();return;}
       }
       hScore.textContent=score; hStreak.textContent=streak;
       if(score>=level*50){level++; hLevel.textContent=level;}
@@ -91,9 +92,14 @@
       setTimeout(makeRound, correct?800:1500);
       MNPlays.saveProgress('cau-tu-doi',{level,score});
     }
+    function endGame(){
+      MNPlays.saveProgress('cau-tu-doi',{level,score});
+      MNPlays.showGameOver('cau-tu-doi',score,{level},()=>{location.reload();});
+    }
     document.getElementById('startBtn').onclick = ()=>{
       document.getElementById('overlay').style.display='none';
       document.getElementById('gameArea').style.display='';
+      lives=3; score=0; level=1; streak=0;
       makeRound();
     };
     (async()=>{

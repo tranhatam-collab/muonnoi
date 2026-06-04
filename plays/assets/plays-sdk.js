@@ -296,6 +296,27 @@
       </div>`);
   }
 
+  // ---------- game over helper ----------
+  function showGameOver(opts) {
+    if (typeof opts === 'string') {
+      opts = { gameId: opts, score: arguments[1], level: arguments[2] && arguments[2].level, onRestart: arguments[3] };
+    }
+    const { gameId, score, level, onRestart } = opts || {};
+    const bg = document.createElement('div');
+    bg.className = 'mn-modal-bg';
+    bg.innerHTML = `<div class="mn-modal">
+      <h3>Kết thúc · Game Over</h3>
+      <p>Điểm: <b>${score || 0}</b></p>
+      ${level ? `<p>Mức: <b>${level}</b></p>` : ''}
+      <div class="acts">
+        <button class="btn" id="mnRestart">Chơi lại</button>
+        <a class="btn secondary" href="${pageUrl('index.html')}" style="text-align:center;text-decoration:none">Về mục lục</a>
+      </div>
+    </div>`;
+    document.body.appendChild(bg);
+    bg.querySelector('#mnRestart').onclick = () => { document.body.removeChild(bg); if (onRestart) onRestart(); else location.reload(); };
+  }
+
   // ---------- misc ----------
   function isLoggedIn() { return _state.loggedIn; }
   function getUser() { return _state.user; }
@@ -315,7 +336,7 @@
 
   root.MNPlays = {
     init, isLoggedIn, getUser, onAuthChange, loginUrl, registerUrl, termsUrl, privacyUrl,
-    loadProgress, saveProgress, awardPoints, getBalance,
+    loadProgress, saveProgress, awardPoints, getBalance, showGameOver,
     beginPlay, playsLeft, ensureConsent, ensureAge, getAge, TERMS_VERSION,
   };
 })(typeof window !== 'undefined' ? window : globalThis);

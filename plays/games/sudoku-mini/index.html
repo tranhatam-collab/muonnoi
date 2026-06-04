@@ -64,7 +64,7 @@
   const hud = PlaysSDK.createHud('hud-root', { showLevel: true });
   const gridEl = document.getElementById('sudoku-grid');
 
-  let board = [], fixed = [], selectedIdx = -1, score = 0, level = 1, isPlaying = false;
+  let board = [], fixed = [], selectedIdx = -1, score = 0, level = 1, isPlaying = false, lives = 3;
 
   function generateBoard() {
     const base = [1,2,3,4];
@@ -133,7 +133,7 @@
 
   function startGame() {
     document.getElementById('start-overlay').style.display = 'none';
-    score = 0; level = 1; isPlaying = true;
+    score = 0; level = 1; isPlaying = true; lives = 3;
     hud.setScore(0); hud.setLevel(1);
     startLevel();
   }
@@ -149,9 +149,11 @@
       if (!isPlaying || selectedIdx < 0 || fixed[selectedIdx]) return;
       const num = parseInt(btn.dataset.num);
       if (!isValid(board, selectedIdx, num)) {
+        lives--;
         const cells = gridEl.children;
         cells[selectedIdx].classList.add('error');
         setTimeout(() => cells[selectedIdx].classList.remove('error'), 300);
+        if (lives <= 0) { endGame(); return; }
         return;
       }
       board[selectedIdx] = num;
