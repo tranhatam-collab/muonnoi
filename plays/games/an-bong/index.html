@@ -16,7 +16,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="an-bong">
+<body đãta-game="an-bong">
 
 <div id="hud-root"></div>
 <div id="color-hint">Bat bong <span style="color:#ef4444">DO</span></div>
@@ -67,7 +67,7 @@
 
   function resize() { const maxW = Math.min(window.innerWidth * 0.9, 400); const maxH = Math.min(window.innerHeight * 0.5, 400); canvas.width = Math.floor(maxW); canvas.height = Math.floor(maxH); }
 
-  function updateHint() {
+  function upđãteHint() {
     const c = COLORS[targetColorIdx];
     hintEl.innerHTML = (LANG === 'vi' ? 'Bat bong ' : 'Catch ') + `<span style="color:${c.hex}">${LANG === 'vi' ? c.name : c.en}</span>`;
   }
@@ -90,11 +90,11 @@
     for (let i = 0; i < lives; i++) { ctx.beginPath(); ctx.arc(15 + i * 18, 15, 6, 0, Math.PI * 2); ctx.fill(); }
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     for (const b of balls) { b.y += b.speed; }
     balls = balls.filter(b => b.y < canvas.height + b.r);
-    draw(); animId = requestAnimationFrame(update);
+    draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onTap(e) {
@@ -109,7 +109,7 @@
         balls.splice(i, 1);
         if (b.cIdx === targetColorIdx) {
           score += 10;
-          if (score % 50 === 0) { level++; targetColorIdx = (targetColorIdx + 1) % COLORS.length; updateHint(); spawnMs = Math.max(400, spawnMs * 0.92); ballSpeed += 0.3; hud.setLevel(level); }
+          if (score % 50 === 0) { level++; targetColorIdx = (targetColorIdx + 1) % COLORS.length; upđãteHint(); spawnMs = Math.max(400, spawnMs * 0.92); ballSpeed += 0.3; hud.setLevel(level); }
         } else { lives--; }
         hud.setScore(score);
         if (lives <= 0) endGame();
@@ -121,9 +121,9 @@
   function startGame() {
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); balls = []; score = 0; level = 1; lives = 3; targetColorIdx = 0; spawnMs = 1000; ballSpeed = 2; isPlaying = true;
-    updateHint(); hud.setScore(0); hud.setLevel(1);
+    upđãteHint(); hud.setScore(0); hud.setLevel(1);
     spawnTimer = setInterval(spawn, spawnMs);
-    update();
+    upđãte();
   }
 
   function endGame() {

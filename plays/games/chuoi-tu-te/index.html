@@ -114,11 +114,11 @@
       d.className='link'+(a.done?' done':'');
       const check = a.done ? '<span class="x">✓</span> ' : '';
       const pass = a.passto ? ` <span class="conn">→ ${esc(a.passto)}</span>` : '';
-      const btn = a.done ? '' : ` <button class="pill" style="padding:2px 8px;font-size:11px" data-i="${i}">đã làm? +20</button>`;
+      const btn = a.done ? '' : ` <button class="pill" style="padding:2px 8px;font-size:11px" đãta-i="${i}">đã làm? +20</button>`;
       d.innerHTML = check + esc(a.text) + pass + btn;
       c.appendChild(d);
     });
-    c.querySelectorAll('button[data-i]').forEach(b=> b.onclick=()=>markDone(+b.dataset.i));
+    c.querySelectorAll('button[đãta-i]').forEach(b=> b.onclick=()=>markDone(+b.đãtaset.i));
   }
 
   async function save(){
@@ -131,7 +131,7 @@
     const text=($('act').value.trim()||selected).trim();
     if(!text){ toast('Hãy chọn hoặc viết một việc tử tế.'); return; }
     const gate = await MNPlays.beginPlay(GAME_ID, FREE);
-    if (!gate.allowed) return; // SDK hiện modal đồng ý / đăng ký
+    if (!gate.allowed) return; // SDK hiện mođãl đồng ý / đăng ký
     const passto=$('passto').value.trim();
     acts.push({text, passto, done:false, ts:Date.now()});
     $('act').value=''; $('passto').value=''; selected='';

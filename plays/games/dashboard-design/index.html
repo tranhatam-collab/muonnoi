@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8"/>
-  <meta name="description" content="Thiết kế dashboard KPI."/>
+  <meta name="description" content="Thiết kế đãshboard KPI."/>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
   <title>Thiết Kế Bảng Điều Khiển · Muôn Nơi Plays</title>
   <link rel="stylesheet" href="../../assets/plays.css">
@@ -25,17 +25,17 @@
     <div class="stage" id="stage">
       <div class="overlay" id="overlay">
         <h2>Thiết Kế Bảng Điều Khiển</h2>
-        <p class="small">Thiết kế dashboard KPI.</p>
+        <p class="small">Thiết kế đãshboard KPI.</p>
         <button class="btn" id="startBtn">Bắt đầu</button>
         <div class="note" id="ovBest"></div>
       </div>
       <div id="gameArea" style="display:none">
         <div class="game-box">
           <h3>🎮 Thiết Kế Bảng Điều Khiển</h3>
-          <p class="small">Thiết kế dashboard KPI.</p>
+          <p class="small">Thiết kế đãshboard KPI.</p>
           <div class="actions">
             <button class="btn" id="playBtn">▶ Chơi</button>
-            <button class="btn secondary" id="scoreBtn">💾 Lưu điểm</button>
+            <button class="btn seconđãry" id="scoreBtn">💾 Lưu điểm</button>
           </div>
         </div>
       </div>
@@ -54,11 +54,11 @@
       alert('+10 điểm!');
     };
     document.getElementById('scoreBtn').onclick = ()=>{
-      MNPlays.saveProgress('dashboard-design',{score,level});
+      MNPlays.saveProgress('đãshboard-design',{score,level});
       alert('Đã lưu: ' + score + 'đ');
     };
     (async()=>{
-      const p=await MNPlays.loadProgress('dashboard-design');
+      const p=await MNPlays.loadProgress('đãshboard-design');
       if(p){score=p.score||0;level=p.level||1;document.getElementById('hScore').textContent=score;document.getElementById('hLevel').textContent=level;}
       document.getElementById('ovBest').textContent = p?`Kỷ lục: ${p.score||0}đ`:'';
     })();

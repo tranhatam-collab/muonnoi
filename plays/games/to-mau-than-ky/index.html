@@ -33,18 +33,18 @@
       </div>
       <div id="gameArea" style="display:none">
         <div class="tools">
-          <button class="color" style="background:#ef4444" data-c="#ef4444"></button>
-          <button class="color" style="background:#f59e0b" data-c="#f59e0b"></button>
-          <button class="color" style="background:#22c55e" data-c="#22c55e"></button>
-          <button class="color" style="background:#3b82f6" data-c="#3b82f6"></button>
-          <button class="color" style="background:#8b5cf6" data-c="#8b5cf6"></button>
-          <button class="color" style="background:#000" data-c="#000"></button>
-          <button class="color active" style="background:#fff;border:2px solid var(--line)" data-c="#fff"></button>
+          <button class="color" style="background:#ef4444" đãta-c="#ef4444"></button>
+          <button class="color" style="background:#f59e0b" đãta-c="#f59e0b"></button>
+          <button class="color" style="background:#22c55e" đãta-c="#22c55e"></button>
+          <button class="color" style="background:#3b82f6" đãta-c="#3b82f6"></button>
+          <button class="color" style="background:#8b5cf6" đãta-c="#8b5cf6"></button>
+          <button class="color" style="background:#000" đãta-c="#000"></button>
+          <button class="color active" style="background:#fff;border:2px solid var(--line)" đãta-c="#fff"></button>
           <div class="size"><label>Size</label><input type="range" id="size" min="2" max="30" value="8"></div>
         </div>
         <canvas id="cv" width="340" height="340"></canvas>
         <div class="actions">
-          <button class="btn secondary" id="clearBtn">🗑️ Xóa</button>
+          <button class="btn seconđãry" id="clearBtn">🗑️ Xóa</button>
           <button class="btn" id="saveBtn">💾 Lưu & điểm</button>
         </div>
       </div>
@@ -65,7 +65,7 @@
     cv.addEventListener('mousedown',start); cv.addEventListener('mousemove',move); cv.addEventListener('mouseup',end); cv.addEventListener('mouseleave',end);
     cv.addEventListener('touchstart',start,{passive:false}); cv.addEventListener('touchmove',move,{passive:false}); cv.addEventListener('touchend',end);
 
-    document.querySelectorAll('.color').forEach(b=>{b.onclick=()=>{document.querySelectorAll('.color').forEach(x=>x.classList.remove('active'));b.classList.add('active');color=b.dataset.c;};});
+    document.querySelectorAll('.color').forEach(b=>{b.onclick=()=>{document.querySelectorAll('.color').forEach(x=>x.classList.remove('active'));b.classList.add('active');color=b.đãtaset.c;};});
     document.getElementById('size').oninput=(e)=>{size=parseInt(e.target.value);};
     document.getElementById('clearBtn').onclick=()=>{ctx.clearRect(0,0,cv.width,cv.height);};
     document.getElementById('saveBtn').onclick=()=>{done++;score+=50;document.getElementById('hDone').textContent=done;document.getElementById('hScore').textContent=score;MNPlays.saveProgress('to-mau-than-ky',{score,done});alert('Đã lưu! +' + 50 + ' điểm');};

@@ -18,7 +18,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="truot-duong">
+<body đãta-game="truot-duong">
 
 <div id="hud-root"></div>
 <canvas id="slide-canvas" width="300" height="400" aria-label="Slide canvas"></canvas>
@@ -85,7 +85,7 @@
     }
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     for (let i = obstacles.length - 1; i >= 0; i--) {
       const o = obstacles[i]; o.y += speed;
@@ -97,7 +97,7 @@
     }
     if (!obstacles.length || Math.random() < 0.02) spawnObs();
     if (score > 0 && score % 80 === 0) { level++; speed = Math.min(10, speed + 0.3); if (lanes < 4) lanes++; resize(); hud.setLevel(level); }
-    hud.setScore(score); draw(); animId = requestAnimationFrame(update);
+    hud.setScore(score); draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function moveLeft() { if (playerLane > 0) playerLane--; }
@@ -106,7 +106,7 @@
   function startGame() {
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); lanes = 3; playerLane = 1; obstacles = []; score = 0; level = 1; speed = 3; isPlaying = true;
-    hud.setScore(0); hud.setLevel(1); update();
+    hud.setScore(0); hud.setLevel(1); upđãte();
   }
 
   function endGame() {

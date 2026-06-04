@@ -17,7 +17,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="nuoi-cay">
+<body đãta-game="nuoi-cay">
 
 <div id="hud-root"></div>
 <div id="grow-bar"><div id="grow-fill"></div></div>
@@ -77,7 +77,7 @@
     }
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     tree.water -= dryRate;
     if (tree.water > 30) { tree.h += growRate; score += Math.floor(growRate); }
@@ -85,7 +85,7 @@
     fillEl.style.width = Math.max(0, tree.water) + '%';
     fillEl.style.background = tree.water > 60 ? '#3b82f6' : tree.water > 30 ? '#f59e0b' : '#ef4444';
     if (tree.h > level * 60) { level++; dryRate += 0.05; growRate += 0.1; tree.maxW = Math.min(100, tree.maxW + 5); hud.setLevel(level); }
-    hud.setScore(score); draw(); animId = requestAnimationFrame(update);
+    hud.setScore(score); draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onTap() { if (!isPlaying) return; tree.water = Math.min(tree.maxW, tree.water + 15); }
@@ -93,7 +93,7 @@
   function startGame() {
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); tree.h = 20; tree.water = 50; tree.maxW = 100; score = 0; level = 1; dryRate = 0.2; growRate = 0.3; isPlaying = true;
-    hud.setScore(0); hud.setLevel(1); update();
+    hud.setScore(0); hud.setLevel(1); upđãte();
   }
 
   function endGame() {

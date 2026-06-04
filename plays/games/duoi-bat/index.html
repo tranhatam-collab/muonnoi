@@ -12,7 +12,7 @@
   canvas { display:block; width:100%; height:100%; }
 </style>
 </head>
-<body data-game="duoi-bat">
+<body đãta-game="duoi-bat">
 
 <div id="hud-root"></div>
 <div id="game-root">
@@ -71,14 +71,14 @@
     ctx.fillText((LANG === 'vi' ? 'Thoát: ' : 'Escapes: ') + escapes + '/' + maxEscapes, 10, 20);
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     target.x += target.vx;
     target.y += target.vy;
     if (target.x < target.r || target.x > canvas.width - target.r) target.vx *= -1;
     if (target.y < target.r || target.y > canvas.height - target.r) target.vy *= -1;
     draw();
-    requestAnimationFrame(update);
+    requestAnimationFrame(upđãte);
   }
 
   function catchTarget() {
@@ -113,7 +113,7 @@
     score = 0; level = 1; escapes = 0; isPlaying = true;
     hud.setScore(0); hud.setLevel(1);
     target = { x: 160, y: 200, r: 16, vx: 2, vy: 1.5 };
-    update();
+    upđãte();
     startEscapeTimer();
   }
 

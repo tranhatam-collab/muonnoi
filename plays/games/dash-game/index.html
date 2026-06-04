@@ -35,7 +35,7 @@
           <p class="small">Sử dụng dấu gạch ngang.</p>
           <div class="actions">
             <button class="btn" id="playBtn">▶ Chơi</button>
-            <button class="btn secondary" id="scoreBtn">💾 Lưu điểm</button>
+            <button class="btn seconđãry" id="scoreBtn">💾 Lưu điểm</button>
           </div>
         </div>
       </div>
@@ -54,11 +54,11 @@
       alert('+10 điểm!');
     };
     document.getElementById('scoreBtn').onclick = ()=>{
-      MNPlays.saveProgress('dash-game',{score,level});
+      MNPlays.saveProgress('đãsh-game',{score,level});
       alert('Đã lưu: ' + score + 'đ');
     };
     (async()=>{
-      const p=await MNPlays.loadProgress('dash-game');
+      const p=await MNPlays.loadProgress('đãsh-game');
       if(p){score=p.score||0;level=p.level||1;document.getElementById('hScore').textContent=score;document.getElementById('hLevel').textContent=level;}
       document.getElementById('ovBest').textContent = p?`Kỷ lục: ${p.score||0}đ`:'';
     })();

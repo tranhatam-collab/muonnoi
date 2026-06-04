@@ -35,7 +35,7 @@
           <p class="small">Chọn biểu đồ phù hợp.</p>
           <div class="actions">
             <button class="btn" id="playBtn">▶ Chơi</button>
-            <button class="btn secondary" id="scoreBtn">💾 Lưu điểm</button>
+            <button class="btn seconđãry" id="scoreBtn">💾 Lưu điểm</button>
           </div>
         </div>
       </div>
@@ -54,11 +54,11 @@
       alert('+10 điểm!');
     };
     document.getElementById('scoreBtn').onclick = ()=>{
-      MNPlays.saveProgress('data-visualize',{score,level});
+      MNPlays.saveProgress('đãta-visualize',{score,level});
       alert('Đã lưu: ' + score + 'đ');
     };
     (async()=>{
-      const p=await MNPlays.loadProgress('data-visualize');
+      const p=await MNPlays.loadProgress('đãta-visualize');
       if(p){score=p.score||0;level=p.level||1;document.getElementById('hScore').textContent=score;document.getElementById('hLevel').textContent=level;}
       document.getElementById('ovBest').textContent = p?`Kỷ lục: ${p.score||0}đ`:'';
     })();

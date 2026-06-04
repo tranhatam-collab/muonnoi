@@ -15,7 +15,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="ne-laser">
+<body đãta-game="ne-laser">
 
 <div id="hud-root"></div>
 <canvas id="laser-canvas" width="320" height="320" aria-label="Laser canvas"></canvas>
@@ -38,7 +38,7 @@
   const TUTORIAL_STEPS = {
     vi: [
       { title: 'Ne Laser', desc: 'Keo nhấn vật để né các chum laser ngang va doc. Cham laser la mất mang.' },
-      { title: 'Day dac', desc: 'Laser xuất hiện càng nhiều va chuyển động càng nhanh. Co ca laser di chuyển!' },
+      { title: 'Day đãc', desc: 'Laser xuất hiện càng nhiều va chuyển động càng nhanh. Co ca laser di chuyển!' },
       { title: 'Vô hạn', desc: 'Không có giới hạn. Ton tai lau nhat có thể!' },
     ],
     en: [
@@ -82,7 +82,7 @@
     for (let i = 0; i < lives; i++) { ctx.beginPath(); ctx.arc(15 + i * 18, 15, 6, 0, Math.PI * 2); ctx.fill(); }
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     for (let i = lasers.length - 1; i >= 0; i--) {
       const l = lasers[i];
@@ -100,7 +100,7 @@
     }
     if (Math.random() < spawnRate) spawnLaser();
     if (score > 0 && score % 60 === 0) { level++; laserSpeed += 0.3; spawnRate = Math.min(0.05, spawnRate + 0.003); hud.setLevel(level); }
-    hud.setScore(score); draw(); animId = requestAnimationFrame(update);
+    hud.setScore(score); draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onMove(e) {
@@ -116,7 +116,7 @@
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); lasers = []; score = 0; level = 1; lives = 3; laserSpeed = 1; spawnRate = 0.015; isPlaying = true;
     player.x = canvas.width / 2; player.y = canvas.height / 2;
-    hud.setScore(0); hud.setLevel(1); update();
+    hud.setScore(0); hud.setLevel(1); upđãte();
   }
 
   function endGame() {

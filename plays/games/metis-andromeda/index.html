@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8"/>
-  <meta name="description" content="Tìm hiểu Metis Andromeda."/>
+  <meta name="description" content="Tìm hiểu Metis Andromeđã."/>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
   <title>Metis · Muôn Nơi Plays</title>
   <link rel="stylesheet" href="../../assets/plays.css">
@@ -25,17 +25,17 @@
     <div class="stage" id="stage">
       <div class="overlay" id="overlay">
         <h2>Metis</h2>
-        <p class="small">Tìm hiểu Metis Andromeda.</p>
+        <p class="small">Tìm hiểu Metis Andromeđã.</p>
         <button class="btn" id="startBtn">Bắt đầu</button>
         <div class="note" id="ovBest"></div>
       </div>
       <div id="gameArea" style="display:none">
         <div class="game-box">
           <h3>🎮 Metis</h3>
-          <p class="small">Tìm hiểu Metis Andromeda.</p>
+          <p class="small">Tìm hiểu Metis Andromeđã.</p>
           <div class="actions">
             <button class="btn" id="playBtn">▶ Chơi</button>
-            <button class="btn secondary" id="scoreBtn">💾 Lưu điểm</button>
+            <button class="btn seconđãry" id="scoreBtn">💾 Lưu điểm</button>
           </div>
         </div>
       </div>
@@ -54,11 +54,11 @@
       alert('+10 điểm!');
     };
     document.getElementById('scoreBtn').onclick = ()=>{
-      MNPlays.saveProgress('metis-andromeda',{score,level});
+      MNPlays.saveProgress('metis-andromeđã',{score,level});
       alert('Đã lưu: ' + score + 'đ');
     };
     (async()=>{
-      const p=await MNPlays.loadProgress('metis-andromeda');
+      const p=await MNPlays.loadProgress('metis-andromeđã');
       if(p){score=p.score||0;level=p.level||1;document.getElementById('hScore').textContent=score;document.getElementById('hLevel').textContent=level;}
       document.getElementById('ovBest').textContent = p?`Kỷ lục: ${p.score||0}đ`:'';
     })();

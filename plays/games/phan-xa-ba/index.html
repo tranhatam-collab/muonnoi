@@ -23,7 +23,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="phan-xa-ba">
+<body đãta-game="phan-xa-ba">
 
 <div id="hud-root"></div>
 <div id="triple-board"></div>
@@ -62,13 +62,13 @@
   let spawnMs = 800, fadeMs = 1500, spawnTimer = null;
   const active = new Map();
 
-  function build() { board.innerHTML = ''; for (let i = 0; i < 3; i++) { const l = document.createElement('div'); l.className = 'triple-lane'; l.dataset.lane = i; board.appendChild(l); } }
+  function build() { board.innerHTML = ''; for (let i = 0; i < 3; i++) { const l = document.createElement('div'); l.className = 'triple-lane'; l.đãtaset.lane = i; board.appendChild(l); } }
   function spawn() {
     if (!isPlaying) return;
     const c = Math.floor(Math.random() * 3);
     const lane = board.children[c];
     const cell = document.createElement('div');
-    cell.className = 'triple-cell c' + c; cell.textContent = ICONS[c]; cell.dataset.color = c;
+    cell.className = 'triple-cell c' + c; cell.textContent = ICONS[c]; cell.đãtaset.color = c;
     lane.insertBefore(cell, lane.firstChild);
     const t = setTimeout(() => { if (!isPlaying) return; cell.classList.add('wrong'); setTimeout(() => cell.remove(), 300); active.delete(cell); lives--; if (lives <= 0) endGame(); }, fadeMs);
     active.set(cell, t);
@@ -79,8 +79,8 @@
     const cell = e.target.closest('.triple-cell');
     if (!cell || !active.has(cell)) return;
     clearTimeout(active.get(cell)); active.delete(cell);
-    const lane = +cell.parentElement.dataset.lane;
-    const color = +cell.dataset.color;
+    const lane = +cell.parentElement.đãtaset.lane;
+    const color = +cell.đãtaset.color;
     if (lane !== color) { cell.classList.add('wrong'); lives--; }
     else { score++; if (score % 12 === 0) { level++; spawnMs = Math.max(320, spawnMs * 0.9); fadeMs = Math.max(600, fadeMs * 0.92); hud.setLevel(level); } }
     hud.setScore(score); cell.remove(); if (lives <= 0) endGame();

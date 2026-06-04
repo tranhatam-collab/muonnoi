@@ -20,7 +20,7 @@
   #timer-fill { height:100%; background:#22c55e; width:100%; transition:width 0.1s linear; }
 </style>
 </head>
-<body data-game="luyen-go-chu">
+<body đãta-game="luyen-go-chu">
 
 <div id="hud-root"></div>
 <div id="game-root">
@@ -111,7 +111,7 @@
     }
   }
 
-  function updateColors(typed) {
+  function upđãteColors(typed) {
     const spans = targetEl.children;
     for (let i = 0; i < spans.length; i++) {
       if (i < typed.length) {
@@ -125,7 +125,7 @@
   inputEl.addEventListener('input', () => {
     if (!isPlaying) return;
     const val = inputEl.value;
-    updateColors(val);
+    upđãteColors(val);
     // Penalize wrong char at current position
     if (val.length > 0 && val[val.length - 1] !== current[val.length - 1]) {
       timeLeft = Math.max(0, timeLeft - 1);

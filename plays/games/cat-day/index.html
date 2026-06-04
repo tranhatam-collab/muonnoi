@@ -15,7 +15,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="cat-day">
+<body đãta-game="cat-đãy">
 
 <div id="hud-root"></div>
 <canvas id="rope-canvas" width="320" height="240" aria-label="Rope canvas"></canvas>
@@ -23,7 +23,7 @@
 <div id="start-overlay">
   <div class="start-box">
     <h1>Cat Day</h1>
-    <p>Cat soi day đúng lúc để rơi vao gio. Nham là thua!</p>
+    <p>Cat soi đãy đúng lúc để rơi vao gio. Nham là thua!</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -33,12 +33,12 @@
 <script>
 (function() {
   'use strict';
-  const GAME_ID = 'cat-day';
+  const GAME_ID = 'cat-đãy';
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Cắt Dây', desc: 'Một vật treo trên sợi dây. Sợi dây dao động qua lại. Nhấn màn hình để cắt đúng lúc vật rơi vào giỏ.' },
-      { title: 'Giỏ di chuyển', desc: 'Sau mỗi lần thành công, giỏ sẽ di chuyển và sợi dây dao động nhanh hơn.' },
+      { title: 'Cắt Dây', desc: 'Một vật treo trên sợi dây. Sợi dây đão động qua lại. Nhấn màn hình để cắt đúng lúc vật rơi vào giỏ.' },
+      { title: 'Giỏ di chuyển', desc: 'Sau mỗi lần thành công, giỏ sẽ di chuyển và sợi dây đão động nhanh hơn.' },
       { title: 'Vô hạn', desc: 'Không có giới hạn số lần. Thử xem bạn được bao nhiêu điểm!' },
     ],
     en: [
@@ -86,7 +86,7 @@
     for (let i = 0; i < lives; i++) { ctx.beginPath(); ctx.arc(15 + i * 18, 15, 6, 0, Math.PI * 2); ctx.fill(); }
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     if (!objFalling) {
       ropeAngle += ropeSpeed;
@@ -109,7 +109,7 @@
         }
       }
     }
-    draw(); animId = requestAnimationFrame(update);
+    draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onTap() {
@@ -124,7 +124,7 @@
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); score = 0; level = 1; lives = 3; ropeAngle = 0; ropeSpeed = 0.03; objFalling = false;
     basketX = canvas.width / 2; basketW = 50; hud.setScore(0); hud.setLevel(1); isPlaying = true;
-    update();
+    upđãte();
   }
 
   function endGame() {

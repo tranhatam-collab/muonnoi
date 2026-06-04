@@ -15,7 +15,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="thap-can-bang">
+<body đãta-game="thap-can-bang">
 
 <div id="hud-root"></div>
 <canvas id="tower-canvas" width="320" height="320" aria-label="Tower canvas"></canvas>
@@ -86,13 +86,13 @@
     for (let i = 0; i < lives; i++) { ctx.beginPath(); ctx.arc(15 + i * 18, 15, 6, 0, Math.PI * 2); ctx.fill(); }
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     if (currentBlock) {
       currentBlock.x += speed * currentBlock.dir;
       if (currentBlock.x <= 0 || currentBlock.x + currentBlock.w >= canvas.width) currentBlock.dir *= -1;
     }
-    draw(); animId = requestAnimationFrame(update);
+    draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onTap() {
@@ -119,7 +119,7 @@
   function startGame() {
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); blocks = []; score = 0; level = 1; lives = 3; blockW = 120; speed = 2;
-    hud.setScore(0); hud.setLevel(1); isPlaying = true; resetBlock(); update();
+    hud.setScore(0); hud.setLevel(1); isPlaying = true; resetBlock(); upđãte();
   }
 
   function endGame() {

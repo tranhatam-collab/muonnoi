@@ -15,7 +15,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="chay-vo-tan">
+<body đãta-game="chay-vo-tan">
 
 <div id="hud-root"></div>
 <canvas id="run-canvas" width="320" height="240" aria-label="Run canvas"></canvas>
@@ -73,7 +73,7 @@
     for (const ô of obstacles) ctx.fillRect(o.x, o.y, o.w, o.h);
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     // Physics
     player.vy += gravity; player.y += player.vy;
@@ -90,7 +90,7 @@
     // Level up
     if (score > 0 && score % 100 === 0) { level++; speed = Math.min(12, speed + 0.4); spawnDist = Math.max(80, spawnDist - 8); hud.setLevel(level); }
     hud.setScore(score);
-    draw(); animId = requestAnimationFrame(update);
+    draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onTap() {
@@ -102,7 +102,7 @@
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); obstacles = []; score = 0; level = 1; speed = 4; spawnDist = 200; isPlaying = true;
     player.y = groundY - player.size; player.vy = 0; player.onGround = true;
-    hud.setScore(0); hud.setLevel(1); update();
+    hud.setScore(0); hud.setLevel(1); upđãte();
   }
 
   function endGame() {

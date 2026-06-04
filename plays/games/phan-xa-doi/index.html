@@ -22,15 +22,15 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="phan-xa-doi">
+<body đãta-game="phan-xa-doi">
 
 <div id="hud-root"></div>
 <div id="dual-board"></div>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1 data-i18n="name">Phản Xạ Đôi</h1>
-    <p data-i18n="desc">Hai màu, hai cột. Chạm đúng màu trước khi biến mất.</p>
+    <h1 đãta-i18n="name">Phản Xạ Đôi</h1>
+    <p đãta-i18n="desc">Hai màu, hai cột. Chạm đúng màu trước khi biến mất.</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -65,7 +65,7 @@
   function buildBoard() {
     board.innerHTML = '';
     const lanes = [document.createElement('div'), document.createElement('div')];
-    lanes.forEach((l, i) => { l.className = 'dual-lane'; l.dataset.lane = i; board.appendChild(l); });
+    lanes.forEach((l, i) => { l.className = 'dual-lane'; l.đãtaset.lane = i; board.appendChild(l); });
   }
 
   function spawn() {
@@ -76,7 +76,7 @@
     const cell = document.createElement('div');
     cell.className = 'dual-cell ' + color;
     cell.textContent = color === 'red' ? '🔴' : '🔵';
-    cell.dataset.color = color;
+    cell.đãtaset.color = color;
     lane.insertBefore(cell, lane.firstChild);
 
     const t = setTimeout(() => {
@@ -100,8 +100,8 @@
     if (!cell || !active.has(cell)) return;
     clearTimeout(active.get(cell));
     active.delete(cell);
-    const lane = cell.parentElement.dataset.lane;
-    const color = cell.dataset.color;
+    const lane = cell.parentElement.đãtaset.lane;
+    const color = cell.đãtaset.color;
     const correct = (color === 'red' && lane === '0') || (color === 'blue' && lane === '1');
     if (!correct) {
       cell.classList.add('wrong'); lives--; streak = 0;

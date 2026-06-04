@@ -15,7 +15,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="tim-thuc-an">
+<body đãta-game="tim-thuc-an">
 
 <div id="hud-root"></div>
 <canvas id="forage-canvas" width="320" height="320" aria-label="Forage canvas"></canvas>
@@ -67,7 +67,7 @@
     ctx.fillStyle = '#fff'; ctx.font = '12px sans-serif'; ctx.fillText('T: ' + timeLeft, 10, 20);
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     for (let i = foods.length - 1; i >= 0; i--) {
       const f = foods[i]; const d = Math.sqrt((player.x - f.x) ** 2 + (player.y - f.y) ** 2);
@@ -80,7 +80,7 @@
     }
     if (foods.length < 3) spawnFood();
     if (Math.random() < 0.005 && monsters.length < level + 1) spawnMonster();
-    hud.setScore(score); draw(); animId = requestAnimationFrame(update);
+    hud.setScore(score); draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onMove(e) {
@@ -99,7 +99,7 @@
     resize(); foods = []; monsters = []; score = 0; level = 1; timeLeft = 30; monsterSpeed = 0.6; isPlaying = true;
     player.x = canvas.width / 2; player.y = canvas.height / 2;
     for (let i = 0; i < 5; i++) spawnFood(); spawnMonster();
-    hud.setScore(0); hud.setLevel(1); timerInterval = setInterval(tick, 1000); update();
+    hud.setScore(0); hud.setLevel(1); timerInterval = setInterval(tick, 1000); upđãte();
   }
 
   function endGame() {

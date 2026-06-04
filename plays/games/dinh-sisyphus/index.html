@@ -74,7 +74,7 @@
   function loop(now){
     if(!G||!G.running) return;
     const dt=Math.min(50, now-G.last)/1000; G.last=now;
-    // marker dao động qua lại
+    // marker đão động qua lại
     G.marker += G.dir*G.speed*dt;
     if (G.marker>1){ G.marker=1; G.dir=-1; } if (G.marker<0){ G.marker=0; G.dir=1; }
     // trọng lực kéo xuống (chỉ sau khi bắt đầu)
@@ -141,7 +141,7 @@
       ctx.fillStyle='rgba(255,214,10,.7)'; ctx.font='11px system-ui'; ctx.textAlign='right';
       ctx.fillText('kỷ lục '+Math.round(best.score)+'m', W-6, by-4);
     }
-    // tảng đá (vị trí theo độ cao, dao động hiển thị trong khung)
+    // tảng đá (vị trí theo độ cao, đão động hiển thị trong khung)
     const by = boulderY(G.alt, steep, baseY);
     const bx = 60 + sk;
     const r = 20 + G.pushFx*3;

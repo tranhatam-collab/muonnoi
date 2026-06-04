@@ -12,7 +12,7 @@
   canvas { display:block; width:100%; height:100%; }
 </style>
 </head>
-<body data-game="nhay-du">
+<body đãta-game="nhay-du">
 
 <div id="hud-root"></div>
 <div id="game-root">
@@ -97,7 +97,7 @@
     ctx.fillText((LANG === 'vi' ? 'Độ cao: ' : 'Altitude: ') + Math.max(0, Math.floor((1200 - (player.y + scrollY)) / 10)), 10, 20);
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     player.vy += 0.05;
     if (player.parachute) player.vy = Math.max(player.vy, 1.5);
@@ -130,7 +130,7 @@
     if (player.y > scrollY + canvas.height + 100) endGame();
 
     draw();
-    requestAnimationFrame(update);
+    requestAnimationFrame(upđãte);
   }
 
   function startGame() {
@@ -138,7 +138,7 @@
     score = 0; level = 1; isPlaying = true;
     hud.setScore(0); hud.setLevel(1);
     resetLevel();
-    update();
+    upđãte();
   }
 
   function endGame() {

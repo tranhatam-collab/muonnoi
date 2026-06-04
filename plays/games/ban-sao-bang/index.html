@@ -15,7 +15,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="ban-sao-bang">
+<body đãta-game="ban-sao-bang">
 
 <div id="hud-root"></div>
 <canvas id="meteor-canvas" width="320" height="320" aria-label="Meteor canvas"></canvas>
@@ -78,7 +78,7 @@
     for (let i = 0; i < lives; i++) { ctx.beginPath(); ctx.arc(15 + i * 18, 15, 6, 0, Math.PI * 2); ctx.fill(); }
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     for (let i = meteors.length - 1; i >= 0; i--) {
       const m = meteors[i]; m.y += m.speed;
@@ -86,7 +86,7 @@
     }
     if (Math.random() < spawnRate) spawnMeteor();
     if (score > 0 && score % 80 === 0) { level++; speed += 0.4; spawnRate = Math.min(0.05, spawnRate + 0.003); hud.setLevel(level); }
-    hud.setScore(score); draw(); animId = requestAnimationFrame(update);
+    hud.setScore(score); draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onTap(e) {
@@ -103,7 +103,7 @@
   function startGame() {
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); meteors = []; score = 0; level = 1; lives = 3; speed = 1.5; spawnRate = 0.015; isPlaying = true;
-    hud.setScore(0); hud.setLevel(1); update();
+    hud.setScore(0); hud.setLevel(1); upđãte();
   }
 
   function endGame() {

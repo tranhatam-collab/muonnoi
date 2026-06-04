@@ -22,7 +22,7 @@
   #reverse-hint { text-align: center; font-size: 1.5rem; font-weight: 700; margin: 0.5rem 0; min-height: 2rem; }
 </style>
 </head>
-<body data-game="phan-xa-nguoc">
+<body đãta-game="phan-xa-nguoc">
 
 <div id="hud-root"></div>
 <div id="reverse-hint">Nhan nguoc mau!</div>
@@ -78,7 +78,7 @@
     }
   }
 
-  function updateHint() {
+  function upđãteHint() {
     const c = COLORS[activeIdx];
     const target = COLORS[(activeIdx + 2) % COLORS.length];
     hintEl.innerHTML = (LANG === 'vi' ? 'Neu <span style="color:' + c.hex + '">' + c.name + '</span> → nhấn <span style="color:' + target.hex + '">' + target.name + '</span>' : 'If <span style="color:' + c.hex + '">' + c.en + '</span> → tap <span style="color:' + target.hex + '">' + target.en + '</span>');

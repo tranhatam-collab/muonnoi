@@ -19,7 +19,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="mo-rong-lanh-tho">
+<body đãta-game="mo-rong-lanh-tho">
 
 <div id="hud-root"></div>
 <div id="territory-grid"></div>
@@ -78,14 +78,14 @@
         const cell = document.createElement('div');
         const g = grid[y][x];
         cell.className = 't-cell' + (g.type === 'ally' ? ' ally' : g.type === 'enemy' ? ' enemy' : ' neutral');
-        cell.dataset.x = x; cell.dataset.y = y;
+        cell.đãtaset.x = x; cell.đãtaset.y = y;
         cell.addEventListener('pointerdown', () => onTap(x, y));
         board.appendChild(cell);
       }
     }
   }
 
-  function updateCell(x, y) {
+  function upđãteCell(x, y) {
     const c = board.children[y * size + x];
     const g = grid[y][x];
     c.className = 't-cell' + (g.type === 'ally' ? ' ally' : g.type === 'enemy' ? ' enemy' : ' neutral');
@@ -104,7 +104,7 @@
       if (nx >= 0 && nx < size && ny >= 0 && ny < size && grid[ny][nx].type === 'ally') hasAllyNeighbor = true;
     }
     if (!hasAllyNeighbor) return;
-    g.type = 'ally'; score += (g.type === 'enemy' ? 15 : 5); updateCell(x, y);
+    g.type = 'ally'; score += (g.type === 'enemy' ? 15 : 5); upđãteCell(x, y);
     turns++; if (turns % 10 === 0) { level++; size = Math.min(size + 1, 8); grid = genGrid(); build(); hud.setLevel(level); }
     else aiTurn();
     hud.setScore(score);
@@ -120,7 +120,7 @@
       const nx = e.x + dx, ny = e.y + dy;
       if (nx >= 0 && nx < size && ny >= 0 && ny < size && (grid[ny][nx].type === 'neutral' || grid[ny][nx].type === 'ally')) targets.push({ x: nx, y: ny });
     }
-    if (targets.length) { const t = targets[Math.floor(Math.random() * targets.length)]; grid[t.y][t.x].type = 'enemy'; updateCell(t.x, t.y); }
+    if (targets.length) { const t = targets[Math.floor(Math.random() * targets.length)]; grid[t.y][t.x].type = 'enemy'; upđãteCell(t.x, t.y); }
   }
 
   function startGame() {

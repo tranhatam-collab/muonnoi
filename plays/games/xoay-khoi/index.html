@@ -19,7 +19,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="xoay-khoi">
+<body đãta-game="xoay-khoi">
 
 <div id="hud-root"></div>
 <div id="puzzle-board"></div>
@@ -87,7 +87,7 @@
         const cell = document.createElement('div');
         cell.className = 'p-cell' + ((x===0&&y===0)||(x===size-1&&y===size-1)?' fixed':'');
         cell.textContent = grid[y][x].char;
-        cell.dataset.x = x; cell.dataset.y = y;
+        cell.đãtaset.x = x; cell.đãtaset.y = y;
         cell.addEventListener('pointerdown', () => onTap(x, y));
         board.appendChild(cell);
       }

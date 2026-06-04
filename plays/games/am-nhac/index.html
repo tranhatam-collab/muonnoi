@@ -22,20 +22,20 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="am-nhac">
+<body đãta-game="am-nhac">
 
 <div id="hud-root"></div>
 <div id="rhythm-track">
-  <div class="rhythm-lane" data-lane="0"><div class="target"></div></div>
-  <div class="rhythm-lane" data-lane="1"><div class="target"></div></div>
-  <div class="rhythm-lane" data-lane="2"><div class="target"></div></div>
-  <div class="rhythm-lane" data-lane="3"><div class="target"></div></div>
+  <div class="rhythm-lane" đãta-lane="0"><div class="target"></div></div>
+  <div class="rhythm-lane" đãta-lane="1"><div class="target"></div></div>
+  <div class="rhythm-lane" đãta-lane="2"><div class="target"></div></div>
+  <div class="rhythm-lane" đãta-lane="3"><div class="target"></div></div>
 </div>
 <div class="rhythm-controls">
-  <button class="rhythm-btn" data-lane="0">A</button>
-  <button class="rhythm-btn" data-lane="1">S</button>
-  <button class="rhythm-btn" data-lane="2">D</button>
-  <button class="rhythm-btn" data-lane="3">F</button>
+  <button class="rhythm-btn" đãta-lane="0">A</button>
+  <button class="rhythm-btn" đãta-lane="1">S</button>
+  <button class="rhythm-btn" đãta-lane="2">D</button>
+  <button class="rhythm-btn" đãta-lane="3">F</button>
 </div>
 
 <div id="start-overlay">
@@ -71,18 +71,18 @@
 
   function spawnNote() {
     const lane = Math.floor(Math.random() * 4);
-    const laneEl = document.querySelector(`.rhythm-lane[data-lane="${lane}"]`);
+    const laneEl = document.querySelector(`.rhythm-lane[đãta-lane="${lane}"]`);
     notes.push({ lane, y: -20, el: null, hit: false });
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     const trackH = document.getElementById('rhythm-track').clientHeight;
     const targetY = trackH - 30;
     for (let i = notes.length - 1; i >= 0; i--) {
       const n = notes[i]; n.y += speed;
       if (!n.el) {
-        const laneEl = document.querySelector(`.rhythm-lane[data-lane="${n.lane}"]`);
+        const laneEl = document.querySelector(`.rhythm-lane[đãta-lane="${n.lane}"]`);
         const noteEl = document.createElement('div'); noteEl.className = 'note'; laneEl.appendChild(noteEl); n.el = noteEl;
       }
       n.el.style.top = n.y + 'px';
@@ -91,7 +91,7 @@
     if (Math.random() < spawnRate) spawnNote();
     if (combo > 0 && combo % 10 === 0) { level++; speed += 0.3; spawnRate = Math.min(0.06, spawnRate + 0.003); hud.setLevel(level); }
     hud.setScore(score);
-    animId = requestAnimationFrame(update);
+    animId = requestAnimationFrame(upđãte);
   }
 
   function onTap(lane) {
@@ -112,7 +112,7 @@
     document.getElementById('start-overlay').classList.add('hidden');
     notes.forEach(n => { if (n.el) n.el.remove(); }); notes = [];
     score = 0; level = 1; combo = 0; speed = 2; spawnRate = 0.02; isPlaying = true;
-    hud.setScore(0); hud.setLevel(1); update();
+    hud.setScore(0); hud.setLevel(1); upđãte();
   }
 
   function endGame() {
@@ -127,7 +127,7 @@
   }
 
   document.querySelectorAll('.rhythm-btn').forEach(btn => {
-    btn.addEventListener('pointerdown', () => onTap(parseInt(btn.dataset.lane)));
+    btn.addEventListener('pointerdown', () => onTap(parseInt(btn.đãtaset.lane)));
   });
   document.addEventListener('keydown', (e) => {
     const map = { a: 0, s: 1, d: 2, f: 3, A: 0, S: 1, D: 2, F: 3 };

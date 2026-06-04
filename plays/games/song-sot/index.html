@@ -15,7 +15,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="song-sot">
+<body đãta-game="song-sot">
 
 <div id="hud-root"></div>
 <canvas id="survive-canvas" width="320" height="320" aria-label="Survive canvas"></canvas>
@@ -83,7 +83,7 @@
     ctx.fillRect(10, 10, player.hp, 8);
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     // Move enemies toward player
     for (const e of enemies) {
@@ -103,7 +103,7 @@
     if (Math.random() < spawnRate) spawnEnemy();
     if (Math.random() < 0.003 && items.length < 3) spawnItem();
     if (score > 0 && score % 100 === 0) { level++; enemySpeed += 0.15; spawnRate = Math.min(0.04, spawnRate + 0.002); hud.setLevel(level); }
-    hud.setScore(score); draw(); animId = requestAnimationFrame(update);
+    hud.setScore(score); draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onMove(e) {
@@ -119,7 +119,7 @@
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); enemies = []; items = []; score = 0; level = 1; player.hp = 100; player.x = canvas.width / 2; player.y = canvas.height / 2;
     enemySpeed = 0.8; spawnRate = 0.01; isPlaying = true;
-    hud.setScore(0); hud.setLevel(1); update();
+    hud.setScore(0); hud.setLevel(1); upđãte();
   }
 
   function endGame() {

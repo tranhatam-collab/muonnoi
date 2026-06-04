@@ -17,7 +17,7 @@
   #status { margin-top:0.5rem; font-size:0.875rem; color:#94a3b8; }
 </style>
 </head>
-<body data-game="co-caro">
+<body đãta-game="co-caro">
 
 <div id="hud-root"></div>
 <div id="game-root">
@@ -209,7 +209,7 @@
       } else if (playerWin === false) {
         PlaysSDK.showGameOver(GAME_ID, score, { level }, () => { location.reload(); });
       } else {
-        // Draw: continue same level without modal, just reset
+        // Draw: continue same level without mođãl, just reset
         reset(); isPlaying = true; playerTurn = true; statusEl.textContent = LANG === 'vi' ? 'Lượt của bạn' : 'Your turn';
       }
     }, 600);

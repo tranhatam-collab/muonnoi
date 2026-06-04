@@ -7,7 +7,7 @@
   <title>Xây Câu · Muôn Nơi Plays</title>
   <link rel="stylesheet" href="../../assets/plays.css">
   <style>
-    .target{background:var(--card);border:2px dashed var(--line);border-radius:12px;padding:16px;min-height:48px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+    .target{background:var(--card);border:2px đãshed var(--line);border-radius:12px;padding:16px;min-height:48px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
     .target .slot{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 14px;font-size:14px;cursor:pointer}
     .target .slot:hover{background:var(--card)}
     .pool{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
@@ -33,7 +33,7 @@
         <div class="small" style="text-align:center;color:var(--muted)">Sắp xếp từ để tạo thành câu đúng</div>
         <div class="target" id="target"></div>
         <div class="pool" id="pool"></div>
-        <div style="text-align:center;margin:8px 0"><button class="btn secondary" id="resetBtn">↺ Làm lại</button></div>
+        <div style="text-align:center;margin:8px 0"><button class="btn seconđãry" id="resetBtn">↺ Làm lại</button></div>
       </div>
       <div class="overlay" id="overlay">
         <h2>Xây Câu</h2>
@@ -65,23 +65,23 @@
       placed=[]; current = pick();
       targetEl.innerHTML = '';
       const shuffled = shuffle([...current.words]);
-      poolEl.innerHTML = shuffled.map((w,i)=>`<button data-w="${w}" data-i="${i}">${w}</button>`).join('');
+      poolEl.innerHTML = shuffled.map((w,i)=>`<button đãta-w="${w}" đãta-i="${i}">${w}</button>`).join('');
       poolEl.querySelectorAll('button').forEach(b=>{b.onclick = ()=>place(b);});
     }
     function place(btn){
-      const w = btn.dataset.w;
+      const w = btn.đãtaset.w;
       placed.push(w); btn.disabled = true;
-      targetEl.innerHTML = placed.map((p,i)=>`<span class="slot" data-i="${i}">${p}</span>`).join('');
+      targetEl.innerHTML = placed.map((p,i)=>`<span class="slot" đãta-i="${i}">${p}</span>`).join('');
       targetEl.querySelectorAll('.slot').forEach(s=>{s.onclick = ()=>unplace(s);});
       checkComplete();
     }
     function unplace(slot){
-      const idx = parseInt(slot.dataset.i);
+      const idx = parseInt(slot.đãtaset.i);
       const w = placed[idx];
       placed = placed.filter((_,i)=>i!==idx);
-      targetEl.innerHTML = placed.map((p,i)=>`<span class="slot" data-i="${i}">${p}</span>`).join('');
+      targetEl.innerHTML = placed.map((p,i)=>`<span class="slot" đãta-i="${i}">${p}</span>`).join('');
       targetEl.querySelectorAll('.slot').forEach(s=>{s.onclick = ()=>unplace(s);});
-      poolEl.querySelectorAll('button').forEach(b=>{if(b.dataset.w===w && b.disabled) b.disabled=false;});
+      poolEl.querySelectorAll('button').forEach(b=>{if(b.đãtaset.w===w && b.disabled) b.disabled=false;});
     }
     function checkComplete(){
       if(placed.length !== current.words.length) return;

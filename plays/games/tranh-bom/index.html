@@ -12,7 +12,7 @@
   canvas { display:block; width:100%; height:100%; }
 </style>
 </head>
-<body data-game="tranh-bom">
+<body đãta-game="tranh-bom">
 
 <div id="hud-root"></div>
 <div id="game-root">
@@ -68,7 +68,7 @@
     });
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     bombs.forEach(b => { b.y += b.vy; });
     bombs = bombs.filter(b => b.y < canvas.height + 20);
@@ -80,7 +80,7 @@
       }
     }
     draw();
-    requestAnimationFrame(update);
+    requestAnimationFrame(upđãte);
   }
 
   function spawnBomb() {
@@ -101,7 +101,7 @@
     score = 0; level = 1; isPlaying = true; bombs = [];
     hud.setScore(0); hud.setLevel(1);
     player.x = canvas.width / 2;
-    update();
+    upđãte();
     spawnTimer = setInterval(spawnBomb, Math.max(400, 1200 - level * 60));
     scoreTimer = setInterval(() => {
       if (!isPlaying) return;

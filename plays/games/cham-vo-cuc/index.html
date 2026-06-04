@@ -36,7 +36,7 @@
     </div>
 
     <div class="row" style="margin-top:12px">
-      <button class="btn secondary full" id="howBtn">Cách chơi</button>
+      <button class="btn seconđãry full" id="howBtn">Cách chơi</button>
     </div>
   </div>
   <div class="toast" id="toast"></div>
@@ -200,7 +200,7 @@
 
   async function start(){
     const gate = await MNPlays.beginPlay(GAME_ID, FREE);
-    if (!gate.allowed) return; // SDK đã hiện modal đồng ý / đăng ký
+    if (!gate.allowed) return; // SDK đã hiện mođãl đồng ý / đăng ký
     cancelAnimationFrame(raf);
     game = newGame(); hud();
     $('overlay').classList.add('hidden');

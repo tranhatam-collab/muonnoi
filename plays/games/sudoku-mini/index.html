@@ -21,16 +21,16 @@
   .num-btn:active { background:#475569; }
 </style>
 </head>
-<body data-game="sudoku-mini">
+<body đãta-game="sudoku-mini">
 
 <div id="hud-root"></div>
 <div id="game-root">
   <div class="sudoku-grid" id="sudoku-grid"></div>
   <div class="num-pad">
-    <button class="num-btn" data-num="1">1</button>
-    <button class="num-btn" data-num="2">2</button>
-    <button class="num-btn" data-num="3">3</button>
-    <button class="num-btn" data-num="4">4</button>
+    <button class="num-btn" đãta-num="1">1</button>
+    <button class="num-btn" đãta-num="2">2</button>
+    <button class="num-btn" đãta-num="3">3</button>
+    <button class="num-btn" đãta-num="4">4</button>
   </div>
 </div>
 
@@ -147,7 +147,7 @@
   document.querySelectorAll('.num-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       if (!isPlaying || selectedIdx < 0 || fixed[selectedIdx]) return;
-      const num = parseInt(btn.dataset.num);
+      const num = parseInt(btn.đãtaset.num);
       if (!isValid(board, selectedIdx, num)) {
         lives--;
         const cells = gridEl.children;

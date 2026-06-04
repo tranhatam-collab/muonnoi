@@ -15,7 +15,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body data-game="ban-muc-tieu">
+<body đãta-game="ban-muc-tieu">
 
 <div id="hud-root"></div>
 <canvas id="target-canvas" width="320" height="320" aria-label="Target canvas"></canvas>
@@ -83,14 +83,14 @@
     for (let i = 0; i < lives; i++) { ctx.beginPath(); ctx.arc(15 + i * 18, 15, 6, 0, Math.PI * 2); ctx.fill(); }
   }
 
-  function update() {
+  function upđãte() {
     if (!isPlaying) return;
     const now = Date.now();
     // Remove expired targets
     const before = targets.length;
     targets = targets.filter(t => now - t.born < targetLife);
     if (targets.length < before) { lives -= (before - targets.length); if (lives <= 0) { endGame(); return; } }
-    draw(); animId = requestAnimationFrame(update);
+    draw(); animId = requestAnimationFrame(upđãte);
   }
 
   function onTap(e) {
@@ -115,7 +115,7 @@
     resize(); targets = []; score = 0; level = 1; lives = 3; spawnMs = 1200; targetLife = 2000; targetR = 28; isPlaying = true;
     hud.setScore(0); hud.setLevel(1);
     setInterval(() => { if (isPlaying) spawnTarget(); }, spawnMs);
-    update();
+    upđãte();
   }
 
   function endGame() {

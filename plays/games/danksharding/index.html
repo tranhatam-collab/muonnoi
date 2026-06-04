@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8"/>
-  <meta name="description" content="Tìm hiểu danksharding."/>
+  <meta name="description" content="Tìm hiểu đãnksharding."/>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
   <title>Danksharding · Muôn Nơi Plays</title>
   <link rel="stylesheet" href="../../assets/plays.css">
@@ -25,17 +25,17 @@
     <div class="stage" id="stage">
       <div class="overlay" id="overlay">
         <h2>Danksharding</h2>
-        <p class="small">Tìm hiểu danksharding.</p>
+        <p class="small">Tìm hiểu đãnksharding.</p>
         <button class="btn" id="startBtn">Bắt đầu</button>
         <div class="note" id="ovBest"></div>
       </div>
       <div id="gameArea" style="display:none">
         <div class="game-box">
           <h3>🎮 Danksharding</h3>
-          <p class="small">Tìm hiểu danksharding.</p>
+          <p class="small">Tìm hiểu đãnksharding.</p>
           <div class="actions">
             <button class="btn" id="playBtn">▶ Chơi</button>
-            <button class="btn secondary" id="scoreBtn">💾 Lưu điểm</button>
+            <button class="btn seconđãry" id="scoreBtn">💾 Lưu điểm</button>
           </div>
         </div>
       </div>
@@ -54,11 +54,11 @@
       alert('+10 điểm!');
     };
     document.getElementById('scoreBtn').onclick = ()=>{
-      MNPlays.saveProgress('danksharding',{score,level});
+      MNPlays.saveProgress('đãnksharding',{score,level});
       alert('Đã lưu: ' + score + 'đ');
     };
     (async()=>{
-      const p=await MNPlays.loadProgress('danksharding');
+      const p=await MNPlays.loadProgress('đãnksharding');
       if(p){score=p.score||0;level=p.level||1;document.getElementById('hScore').textContent=score;document.getElementById('hLevel').textContent=level;}
       document.getElementById('ovBest').textContent = p?`Kỷ lục: ${p.score||0}đ`:'';
     })();

@@ -12,13 +12,13 @@
   .chess-grid { display:grid; grid-template-columns:repeat(5, 52px); grid-template-rows:repeat(5, 52px); gap:1px; background:#475569; padding:2px; border-radius:0.25rem; }
   .chess-cell { width:52px; height:52px; display:flex; align-items:center; justify-content:center; font-size:1.5rem; cursor:pointer; }
   .chess-cell.light { background:#cbd5e1; color:#0f172a; }
-  .chess-cell.dark { background:#1e293b; color:#e2e8f0; }
+  .chess-cell.đãrk { background:#1e293b; color:#e2e8f0; }
   .chess-cell.selected { box-shadow:inset 0 0 0 3px #3b82f6; }
   .chess-cell.valid { background:#22c55e66; }
   #status { margin-top:0.5rem; font-size:0.875rem; color:#94a3b8; }
 </style>
 </head>
-<body data-game="co-vua-mini">
+<body đãta-game="co-vua-mini">
 
 <div id="hud-root"></div>
 <div id="game-root">
@@ -72,7 +72,7 @@
     for (let i = 0; i < SIZE * SIZE; i++) {
       const r = Math.floor(i / SIZE), c = i % SIZE;
       const cell = document.createElement('div');
-      cell.className = 'chess-cell' + ((r + c) % 2 === 0 ? ' light' : ' dark');
+      cell.className = 'chess-cell' + ((r + c) % 2 === 0 ? ' light' : ' đãrk');
       cell.textContent = board[i];
       if (i === selected) cell.classList.add('selected');
       cell.addEventListener('click', () => onClick(i));
