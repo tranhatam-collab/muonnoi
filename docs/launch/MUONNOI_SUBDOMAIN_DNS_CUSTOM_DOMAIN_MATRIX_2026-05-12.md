@@ -12,6 +12,37 @@ Evidence time: `2026-05-12 06:52 +07` (last updated `2026-05-19`)
 - `www.nguoiviet.muonnoi.org` → DNS configured (Cloudflare 104.21.93.187) but origin 522 → status `DNS_CONFIGURED_ORIGIN_PENDING`.
 - Added nguoiviet + cuocsong to allowed primary public links.
 
+## Update 2026-06-05 — Cloudflare API Pages binding executed
+
+**Action by Claude agent via Cloudflare API (token scope: Account.Pages:Edit + Zone:Read).**
+
+Domains bound (Pages custom domain → auto-creates managed CNAME):
+- `dulich.muonnoi.org` → Pages project `dulich-muonnoi-org` (newly created with `production_branch=main`)
+- `hoctap.muonnoi.org` → Pages project `hoctap-muonnoi-org` (already existed)
+- `www.nguoiviet.muonnoi.org` → Pages project `nguoiviet-muonnoi-org` (added as 2nd custom domain alongside apex)
+
+Live HTTP verify (2026-06-05 01:41 ICT):
+- `dulich.muonnoi.org` → HTTP 000 (Pages domain `status=pending verify=pending`, DNS not yet propagated) — status: `DNS_BOUND_PROPAGATION_PENDING`
+- `hoctap.muonnoi.org` → HTTP 522 (Pages domain `status=active verify=active`, but NO deployment exists yet on Pages project) — status: `DNS_BOUND_DEPLOYMENT_PENDING`
+- `www.nguoiviet.muonnoi.org` → HTTP 301 (Cloudflare auto-redirect to apex `https://nguoiviet.muonnoi.org/`, working as expected) — status: `LIVE_LINK_ALLOWED` (redirect counts)
+
+Evidence: `qa/dns-evidence/2026-06-05/binding-complete.txt`
+
+Pages projects state via API:
+- `cuocsong-muonnoi-org` → has deployment ✓
+- `nguoiviet-muonnoi-org` → has deployment ✓ (apex + www both bound)
+- `dulich-muonnoi-org` → exists, NO deployment yet (Sprint 2 Astro init pending per ADR-002)
+- `hoctap-muonnoi-org` → exists, NO deployment yet (Sprint 7 Astro init pending)
+
+LIVE_LINK_ALLOWED count: 8 → **9** (added www.nguoiviet only; dulich + hoctap remain not-yet-LIVE until first deployment).
+
+**Status legend update:**
+- `DNS_BOUND_PROPAGATION_PENDING` — domain registered with Pages, CNAME exists, but Cloudflare verification not yet complete
+- `DNS_BOUND_DEPLOYMENT_PENDING` — domain active + verified but Pages project has no deployment yet (returns 522)
+- Both are progress states; promoted to `LIVE_LINK_ALLOWED` only after first successful deployment returns HTTP 200.
+
+**Founder action pending:** Decide whether to push placeholder deployment to dulich/hoctap NOW for HTTP 200 (signal site exists), or wait until Sprint 2 Astro project ready (cleaner — no throwaway placeholders).
+
 Evidence commands used:
 - `wrangler pages project list`
 - `wrangler pages deployment list --project-name=muonnoi`

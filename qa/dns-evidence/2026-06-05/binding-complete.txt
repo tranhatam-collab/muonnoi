@@ -1,0 +1,37 @@
+=== DNS + Pages binding evidence — 2026-06-05 ===
+
+## Token & access scope used
+- Token: cfut_IVNVMad...(redacted)
+- Scope: Account.Cloudflare Pages:Edit + Zone.Zone:Read
+- Zone.DNS:Edit NOT granted (Pages custom domain API created CNAME automatically)
+- Account ID: f3f9e76222dcb488d5e303e29e8ba192
+- Zone ID muonnoi.org: e4fd0ac26e66d142107aa87b607fcce2
+
+## Actions executed
+1. Created Pages project 'dulich-muonnoi-org' (production_branch=main)
+2. Pages project 'hoctap-muonnoi-org' already existed (no-op)
+3. Bound custom domain dulich.muonnoi.org → dulich-muonnoi-org
+4. Bound custom domain hoctap.muonnoi.org → hoctap-muonnoi-org
+5. Bound custom domain www.nguoiviet.muonnoi.org → nguoiviet-muonnoi-org
+
+## Domain status (via Pages API)
+--- dulich-muonnoi-org ---
+  dulich.muonnoi.org: status=pending verify=pending ssl=google
+--- hoctap-muonnoi-org ---
+  hoctap.muonnoi.org: status=active verify=active ssl=google
+--- nguoiviet-muonnoi-org ---
+  nguoiviet.muonnoi.org: status=active verify=active ssl=google
+  www.nguoiviet.muonnoi.org: status=active verify=active ssl=google
+
+## Live HTTP probe
+  dulich.muonnoi.org        ip=                   http=000
+  nguoiviet.muonnoi.org     ip=172.67.214.1       http=200
+  www.nguoiviet.muonnoi.org ip=104.21.93.187      http=301
+  hoctap.muonnoi.org        ip=172.67.214.1       http=522
+
+## Notes
+- 522 = Pages project bound but no deployment (origin unreachable)
+- 000 = DNS still propagating (verify=pending side)
+- 301 (www.nguoiviet) = Cloudflare auto-redirect to apex, working as expected
+
+Captured: 2026-06-05 01:41:34 +07
