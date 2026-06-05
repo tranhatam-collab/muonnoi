@@ -213,7 +213,7 @@
 | C2 hoctap LIVE | ❌ FAIL | 2026-06-05 |
 | C3 pilot lock | ✅ PASS | 2026-06-05 |
 | C4 quest template | ✅ PASS | 2026-06-05 |
-| C5 10 quest content | ⏳ PENDING | — |
+| C5 10 quest content | ⏳ PENDING | 5/10 quests drafted 2026-06-05: 001-doi-thien-phuc-duc, 002-cho-sang-dalat, 003-vuon-dau-tay, 004-dap-xe-ho-tuyen-lam, 005-doi-che-cau-dat. 5 remaining needed for PASS. |
 | C6 receipt spec | ✅ PASS | 2026-06-05 |
 | C7 KYC policy | ✅ PASS | 2026-06-05 |
 | C8 host protocol | ✅ PASS | 2026-06-05 |

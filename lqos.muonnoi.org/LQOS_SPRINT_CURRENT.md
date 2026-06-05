@@ -13,10 +13,17 @@
 - [x] 3 canonical v2 docs created
 - [x] KYC verify.iai.one integrated
 - [x] Tracker updated 9/16 PASS
+- [x] 5 quest content drafted (batch 1)
+- [x] PR branch script created (`scripts/create-lqos-prs.sh`)
+- [x] Capacitor archive verification script created (`scripts/archive-capacitor-verify.sh`)
+- [x] Astro scaffolds for dulich + hoctap created (`sites/dulich/`, `sites/hoctap/`)
+- [x] Deploy script created (`sites/deploy.sh`)
 
 ### Phase 0.2 — DNS/Fix (Founder/Dev) ⏳ PENDING
-- [ ] Fix `dulich.muonnoi.org` → HTTP 200 placeholder
-- [ ] Fix `hoctap.muonnoi.org` → HTTP 200 placeholder
+- [x] Bind `dulich.muonnoi.org` → Pages project created, DNS bound 2026-06-05
+- [x] Bind `hoctap.muonnoi.org` → Pages project existed, DNS bound + verified 2026-06-05
+- [x] Bind `www.nguoiviet.muonnoi.org` → DNS bound + verified 2026-06-05
+- [ ] Deploy content to dulich + hoctap Pages projects (Astro scaffolds ready)
 - [ ] Archive Capacitor legacy (`mobile-shell/` → `_archive/`)
 - [ ] Add `GET /` health endpoint to `api.muonnoi.org`
 
@@ -41,17 +48,17 @@
 | 17:00 | Founder sign-off on corrected files | Founder | ⏳ |
 | 18:00 | Tracker update (files → PASS) | Cascade | ⏳ |
 
-### Day 2 (2026-06-07) — QUEST CONTENT BATCH 1
+### Day 2 (2026-06-07) — QUEST CONTENT BATCH 1 ✅ DONE EARLY
 | Time | Task | Owner | Status |
 |------|------|-------|--------|
-| 09:00 | Write 5 quest content Đà Lạt | Content + Cascade | ⏳ |
+| 09:00 | Write 5 quest content Đà Lạt | Content + Cascade | ✅ DONE 2026-06-05 |
 | 14:00 | Review quest content | Founder | ⏳ |
 | 17:00 | Corrections applied | Cascade | ⏳ |
 
 ### Day 3 (2026-06-08) — QUEST CONTENT BATCH 2
 | Time | Task | Owner | Status |
 |------|------|-------|--------|
-| 09:00 | Write 5 quest content Đà Lạt | Content + Cascade | ⏳ |
+| 09:00 | Write 5 quest content Đà Lạt (batch 2) | Content + Cascade | ⏳ |
 | 14:00 | All 10 quests seeded in `content/quests/dulich/dalat-2026-q3/` | Cascade | ⏳ |
 | 17:00 | Founder sign-off on quest content | Founder | ⏳ |
 | 18:00 | Tracker C5 → PASS | Cascade | ⏳ |
