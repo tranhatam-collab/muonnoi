@@ -14,10 +14,10 @@
 | Condition | `dulich.muonnoi.org` resolves HTTP 200 with placeholder or real content |
 | Verify | `curl -I https://dulich.muonnoi.org` |
 | Pass Criteria | HTTP 200, `content-type: text/html` |
-| Status | ❌ FAIL |
-| Evidence | HTTP 000/timeout (2026-06-05) |
+| Status | ⏳ PENDING |
+| Evidence | Pages project created 2026-06-05. DNS bound, pending DNS verify. Astro scaffold ready at sites/dulich/. Awaiting `wrangler pages deploy`. |
 | Owner | Dev |
-| Blocker | DNS/Pages project not created |
+| Blocker | Content deploy to Pages |
 
 ---
 
@@ -27,10 +27,10 @@
 | Condition | `hoctap.muonnoi.org` resolves HTTP 200 (content landing OK, no backend) |
 | Verify | `curl -I https://hoctap.muonnoi.org` |
 | Pass Criteria | HTTP 200 |
-| Status | ❌ FAIL |
-| Evidence | HTTP 000/timeout (2026-06-05) |
+| Status | ⏳ PENDING |
+| Evidence | Pages project existed. DNS bound + verified 2026-06-05. Astro scaffold ready at sites/hoctap/. Awaiting `wrangler pages deploy`. |
 | Owner | Dev |
-| Blocker | DNS/Pages project not created |
+| Blocker | Content deploy to Pages |
 
 ---
 

@@ -1,0 +1,8 @@
+name = "dulich-muonnoi-org"
+compatibility_date = "2024-06-01"
+
+[env.production]
+name = "dulich-muonnoi-org"
+
+[env.staging]
+name = "dulich-muonnoi-org-staging"

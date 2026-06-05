@@ -39,15 +39,17 @@
 - [x] Update KYC policy with `verify.iai.one` integration
 
 ### Phase 0.2: DNS/Fix (Founder/Dev)
-- [ ] Fix `dulich.muonnoi.org` → HTTP 200 placeholder
-- [ ] Fix `hoctap.muonnoi.org` → HTTP 200 placeholder
+- [x] Bind `dulich.muonnoi.org` → Pages project created, DNS bound 2026-06-05
+- [x] Bind `hoctap.muonnoi.org` → Pages project existed, DNS bound + verified 2026-06-05
+- [x] Bind `www.nguoiviet.muonnoi.org` → DNS bound + verified 2026-06-05
+- [ ] Deploy content to dulich + hoctap Pages projects (Astro scaffolds ready at `sites/dulich/`, `sites/hoctap/`)
 - [ ] Archive Capacitor legacy (`mobile-shell/` → `_archive/`)
 - [ ] Add `GET /` health endpoint to `api.muonnoi.org`
 
 ### Phase 0.3: Canonical v2 Docs (Cascade AI)
-- [ ] Write `MUONNOI_LQOS_STRATEGY_v2.md`
-- [ ] Write `MUONNOI_LQOS_PRODUCT_PLAN_v2.md`
-- [ ] Write `MUONNOI_LQOS_TECH_SPEC_v2.md`
+- [x] Write `MUONNOI_LQOS_STRATEGY_v2.md`
+- [x] Write `MUONNOI_LQOS_PRODUCT_PLAN_v2.md`
+- [x] Write `MUONNOI_LQOS_TECH_SPEC_v2.md`
 
 **Deliverable:** 16 files created + 3 canonical docs + 2 DNS fixes
 
