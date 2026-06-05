@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Thổi bong bóng càng nhiều càng tốt.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thoi Bong Bong — plays.muonnoi.org</title>
+<title>Thổi Bong Bóng — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #bubble-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 55vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
@@ -15,15 +15,15 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="thoi-bong-bong">
+<body data-game="thoi-bong-bong">
 
 <div id="hud-root"></div>
 <canvas id="bubble-canvas" width="320" height="320" aria-label="Bubble canvas"></canvas>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Thoi Bong Bong</h1>
-    <p>Cham để thổi bong bóng len. Cang lớn càng nhiều diem, nhung đừng để nó vỡ!</p>
+    <h1>Thổi Bong Bóng</h1>
+    <p>Chạm để thổi bong bóng lên. Càng lớn càng nhiều điểm, nhưng đừng để nó vỡ!</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -37,13 +37,13 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Thoi Bong Bong', desc: 'Cham giu để thổi bong bóng. Nhả ngón tay để dừng lại trước khi nó vỡ. Bong càng lớn điểm càng nhiều.' },
-      { title: 'Giới hạn', desc: 'Mỗi bong bóng có giới hạn kích thước khác nhau. Quá giới hạn sẽ nổ va mất điểm.' },
-      { title: 'Vô hạn', desc: 'Không có giới hạn số bong. Thoi càng nhiều càng tốt!' },
+      { title: 'Thổi Bong Bóng', desc: 'Chạm giữ để thổi bong bóng. Nhả ngón tay để dừng lại trước khi nó vỡ. Bong càng lớn điểm càng nhiều.' },
+      { title: 'Giới hạn', desc: 'Mỗi bong bóng có giới hạn kích thước khác nhau. Quá giới hạn sẽ nổ và mất điểm.' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn số bong. Thời càng nhiều càng tốt!' },
     ],
     en: [
-      { title: 'Blow Bubble', desc: 'Tap and hold to blow a bubble. Release before ít pops. Bigger bubble = more points.' },
-      { title: 'Limit', desc: 'Each bubble has a different size limit. Exceed ít and the bubble pops, losing points.' },
+      { title: 'Blow Bubble', desc: 'Tap and hold to blow a bubble. Release before it pops. Bigger bubble = more points.' },
+      { title: 'Limit', desc: 'Each bubble has a different size limit. Exceed it and the bubble pops, losing points.' },
       { title: 'Endless', desc: 'No bubble limit. Blow as many as you can!' },
     ],
   };
@@ -64,7 +64,7 @@
     }
   }
 
-  function upđãte() {
+  function update() {
     if (!isPlaying) return;
     for (let i = bubbles.length - 1; i >= 0; i--) {
       const b = bubbles[i];
@@ -74,7 +74,7 @@
     }
     hud.setScore(score);
     if (score > 0 && score % 100 === 0) { level++; hud.setLevel(level); }
-    draw(); animId = requestAnimationFrame(upđãte);
+    draw(); animId = requestAnimationFrame(update);
   }
 
   function onDown(e) {
@@ -90,7 +90,7 @@
   function startGame() {
     document.getElementById('start-overlay').classList.add('hidden');
     resize(); bubbles = []; score = 0; level = 1; isPlaying = true;
-    hud.setScore(0); hud.setLevel(1); upđãte();
+    hud.setScore(0); hud.setLevel(1); update();
   }
 
   function endGame() {

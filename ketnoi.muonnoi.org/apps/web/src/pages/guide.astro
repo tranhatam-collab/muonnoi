@@ -1,0 +1,87 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout
+  title="Hướng dẫn — Kết Nối Muôn Nơi"
+  description="Hướng dẫn sử dụng Kết Nối Muôn Nơi. Cách tạo hồ sơ, xác minh, và kết nối an toàn."
+>
+  <Header client:load />
+  <main class="px-4 py-16">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+        Hướng dẫn sử dụng
+      </h1>
+
+      <div class="space-y-8 text-slate-700 dark:text-slate-300">
+        <section>
+          <h2 class="mb-3 text-xl font-semibold text-slate-900 dark:text-white">1. Tạo tài khoản</h2>
+          <p class="mb-2">
+            Nhấn "Bắt đầu ngay" và điền email, nickname, tuổi. Bạn phải từ 18 tuổi trở lên.
+            Không cần mật khẩu — chúng tôi dùng magic link hoặc passkey để đăng nhập.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="mb-3 text-xl font-semibold text-slate-900 dark:text-white">2. Xác minh danh tính</h2>
+          <p class="mb-2">
+            Để được ghép đôi, bạn cần xác minh qua selfie + liveness check.
+            Hệ thống sẽ yêu cầu bạn quay video ngắn và làm theo hướng dẫn.
+            Ảnh gốc sẽ bị xóa sau khi xác minh — chúng tôi chỉ lưu hash.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="mb-3 text-xl font-semibold text-slate-900 dark:text-white">3. Hoàn thành hồ sơ</h2>
+          <p class="mb-2">
+            Hồ sơ của bạn gồm 3 phần: <strong>Identity</strong> (ảnh, tuổi), <strong>Intent</strong> (mục tiêu quan hệ),
+            và <strong>Compatibility</strong> (giá trị, lối sống, ranh giới).
+            Hồ sơ càng đầy đủ, ghép đôi càng chính xác.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="mb-3 text-xl font-semibold text-slate-900 dark:text-white">4. Nhận gợi ý</h2>
+          <p class="mb-2">
+            Mỗi ngày bạn nhận 5–12 gợi ý. Không swipe vô tận. Mỗi gợi ý được chọn dựa trên
+            intent, giá trị, lối sống, và mức độ tin cậy.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="mb-3 text-xl font-semibold text-slate-900 dark:text-white">5. Trò chuyện an toàn</h2>
+          <p class="mb-2">
+            Khi match, bạn có thể nhắn tin. Hệ thống sẽ cảnh báo nếu phát hiện yêu cầu tiền,
+            hoặc nếu đối phương cố kéo bạn sang nền tảng khác quá sớm.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="mb-3 text-xl font-semibold text-slate-900 dark:text-white">6. Safe Date Mode</h2>
+          <p class="mb-2">
+            Trước khi hẹn gặp, sử dụng Safe Date Mode để lên kế hoạch, chia sẻ với người thân,
+            và đặt check-in/check-out. Chọn địa điểm công cộng, đông người.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="mb-3 text-xl font-semibold text-slate-900 dark:text-white">7. Báo cáo & Kháng cáo</h2>
+          <p class="mb-2">
+            Nếu gặp hành vi không phù hợp, nhấn "Báo cáo" trên profile hoặc trong chat.
+            Nếu tài khoản bị suspend mà bạn cho rằng sai, dùng form kháng cáo — chúng tôi review trong 48 giờ.
+          </p>
+        </section>
+
+        <div class="rounded-xl border border-teal-200 bg-teal-50 p-4 dark:border-teal-900 dark:bg-teal-950">
+          <p class="text-sm text-teal-800 dark:text-teal-300">
+            <strong>Cần hỗ trợ?</strong> Liên hệ <a href="mailto:support@muonnoi.org" class="underline">support@muonnoi.org</a>
+            hoặc xem <a href="/safety" class="underline">trang An toàn</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

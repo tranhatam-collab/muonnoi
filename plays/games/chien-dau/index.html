@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Chiến đấu với đối thủ ngày càng mạnh.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chien Dau — plays.muonnoi.org</title>
+<title>Chiến Đấu — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #battle-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 55vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
@@ -18,7 +18,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="chien-đãu">
+<body data-game="chien-dau">
 
 <div id="hud-root"></div>
 <canvas id="battle-canvas" width="300" height="300" aria-label="Battle canvas"></canvas>
@@ -30,8 +30,8 @@
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Chien Dau</h1>
-    <p>Di chuyen va bạn hạ kẻ thù. Cang hạ càng nhiều kẻ dich.</p>
+    <h1>Chiến Đấu</h1>
+    <p>Di chuyển và bắn hạ kẻ thù. Càng hạ càng nhiều kẻ địch.</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -41,13 +41,13 @@
 <script>
 (function() {
   'use strict';
-  const GAME_ID = 'chien-đãu';
+  const GAME_ID = 'chien-dau';
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Chien Dau', desc: 'Di chuyển trái phải và nhấn nút bắn để hạ kẻ thù. Kẻ thù sẽ tự động bắn trở lại.' },
-      { title: 'Kẻ địch mạnh hơn', desc: 'Càng về sáu kẻ địch càng nhanh, càng nhiều va càng khó hạ.' },
-      { title: 'Vô hạn', desc: 'Không có giới hạn. Ha càng nhiều càng tốt!' },
+      { title: 'Chiến Đấu', desc: 'Di chuyển trái phải và nhấn nút bắn để hạ kẻ thù. Kẻ thù sẽ tự động bắn trở lại.' },
+      { title: 'Kẻ địch mạnh hơn', desc: 'Càng về sau kẻ địch càng nhanh, càng nhiều và càng khó hạ.' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn. Hạ càng nhiều càng tốt!' },
     ],
     en: [
       { title: 'Combat', desc: 'Move left/right and tap shoot to defeat enemies. Enemies shoot back automatically.' },

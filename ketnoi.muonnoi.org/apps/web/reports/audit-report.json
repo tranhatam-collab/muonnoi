@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-06-05T15:06:39.649Z",
+  "project": "ketnoi-muonnoi-web",
+  "checks": [
+    {
+      "name": "Dependencies",
+      "status": "PASS",
+      "detail": "All clear"
+    },
+    {
+      "name": "File Structure",
+      "status": "PASS",
+      "detail": "All required directories present"
+    },
+    {
+      "name": "Security Patterns",
+      "status": "PASS",
+      "detail": "No hardcoded secrets found"
+    },
+    {
+      "name": "i18n",
+      "status": "WARN",
+      "detail": "No /en or /vi subdirectories for i18n routing"
+    },
+    {
+      "name": "Accessibility",
+      "status": "PASS",
+      "detail": "Basic a11y OK"
+    },
+    {
+      "name": "Performance",
+      "status": "PASS",
+      "detail": "No heavy dependencies detected"
+    },
+    {
+      "name": "Pages Completeness",
+      "status": "PASS",
+      "detail": "All required pages present"
+    }
+  ],
+  "summary": {
+    "pass": 6,
+    "warn": 1,
+    "fail": 0,
+    "skip": 0,
+    "total": 7
+  }
+}

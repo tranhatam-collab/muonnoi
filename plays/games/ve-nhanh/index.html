@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Vẽ theo yêu cầu trong thời gian.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ve Nhanh — plays.muonnoi.org</title>
+<title>Vẽ Nhanh — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #draw-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 55vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
@@ -17,17 +17,17 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="ve-nhanh">
+<body data-game="ve-nhanh">
 
 <div id="hud-root"></div>
-<div id="draw-prompt">Ve hình vuông</div>
+<div id="draw-prompt">Vẽ hình vuông</div>
 <div id="draw-timer">10s</div>
 <canvas id="draw-canvas" width="300" height="300" aria-label="Draw canvas"></canvas>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Ve Nhanh</h1>
-    <p>Vẽ theo yêu cầu trong thời gian giới hạn. Cang giong càng nhiều diem!</p>
+    <h1>Vẽ Nhanh</h1>
+    <p>Vẽ theo yêu cầu trong thời gian giới hạn. Càng giống càng nhiều điểm!</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -42,21 +42,21 @@
   const TUTORIAL_STEPS = {
     vi: [
       { title: 'Vẽ Nhanh', desc: 'Màn hình sẽ yêu cầu bạn vẽ một hình. Dùng chuột hoặc ngón tay vẽ hình đó trên canvas. Càng giống càng nhiều điểm.' },
-      { title: 'Hình phức tạp', desc: 'Càng về sáu hình càng phức tạp (tam giác, hình sao, chữ Z). Thời gian càng ít.' },
+      { title: 'Hình phức tạp', desc: 'Càng về sau hình càng phức tạp (tam giác, hình sao, chữ Z). Thời gian càng ít.' },
       { title: 'Vô hạn', desc: 'Không có giới hạn. Vẽ càng nhiều càng tốt!' },
     ],
     en: [
-      { title: 'Quick Draw', desc: 'The screen asks you to draw a shape. Draw ít on the canvas. More similar = more points.' },
+      { title: 'Quick Draw', desc: 'The screen asks you to draw a shape. Draw it on the canvas. More similar = more points.' },
       { title: 'Complex Shapes', desc: 'Later shapes are more complex (star, zigzag). Less time per shape.' },
       { title: 'Endless', desc: 'No limit. Draw as many as you can!' },
     ],
   };
   const SHAPES = [
-    { vi: 'hinh vuong', en: 'square' },
-    { vi: 'hinh tron', en: 'circle' },
-    { vi: 'hinh tâm giac', en: 'triangle' },
-    { vi: 'duong cheo', en: 'diagonal' },
-    { vi: 'hinh sao', en: 'star' },
+    { vi: 'hình vuông', en: 'square' },
+    { vi: 'hình tròn', en: 'circle' },
+    { vi: 'hình tam giác', en: 'triangle' },
+    { vi: 'đường cheo', en: 'diagonal' },
+    { vi: 'hình sao', en: 'star' },
   ];
   const canvas = document.getElementById('draw-canvas');
   const ctx = canvas.getContext('2d');

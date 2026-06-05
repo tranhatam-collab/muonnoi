@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Bắn các thiên thạch rơi xuống.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ban Sao Bang — plays.muonnoi.org</title>
+<title>Bắn Sao Băng — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #meteor-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 55vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
@@ -15,14 +15,14 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="ban-sao-bang">
+<body data-game="ban-sao-bang">
 
 <div id="hud-root"></div>
 <canvas id="meteor-canvas" width="320" height="320" aria-label="Meteor canvas"></canvas>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Ban Sao Bang</h1>
+    <h1>Bắn Sao Băng</h1>
     <p>Bắn các thiên thạch rơi xuống trước khi chúng chạm đất.</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
@@ -37,9 +37,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Ban Sao Bang', desc: 'Thiên thạch sẽ rơi từ trên xuống. Chạm vào chúng để bắn. Nếu thiên thạch chạm đất, bạn mất mạng.' },
-      { title: 'Tốc độ tăng', desc: 'Càng về sáu thiên thạch rơi càng nhanh, càng nhiều va càng lớn. Tap trung!' },
-      { title: 'Vô hạn', desc: 'Không có giới hạn. Ban càng nhiều càng tốt!' },
+      { title: 'Bắn Sao Băng', desc: 'Thiên thạch sẽ rơi từ trên xuống. Chạm vào chúng để bắn. Nếu thiên thạch chạm đất, bạn mất mạng.' },
+      { title: 'Tốc độ tăng', desc: 'Càng về sau thiên thạch rơi càng nhanh, càng nhiều và càng lớn. Tập trung!' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn. Bạn càng nhiều càng tốt!' },
     ],
     en: [
       { title: 'Meteor Blaster', desc: 'Meteors fall from above. Tap them to blast. If a meteor reaches the ground, you lose a life.' },

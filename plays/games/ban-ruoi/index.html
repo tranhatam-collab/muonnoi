@@ -17,7 +17,7 @@
   .life.lost { background:#ef4444; }
 </style>
 </head>
-<body đãta-game="ban-ruoi">
+<body data-game="ban-ruoi">
 
 <div id="hud-root"></div>
 <div id="game-root">
@@ -57,7 +57,7 @@
 
   let score = 0, level = 1, isPlaying = false, lives = 3, flies = [], spawnTimer = null, animTimer = null;
 
-  function upđãteLives() {
+  function updateLives() {
     livesEl.innerHTML = '';
     for (let i = 0; i < 3; i++) {
       const d = document.createElement('div');
@@ -96,7 +96,7 @@
         fly.remove();
         flies = flies.filter(f => f !== fly);
         lives--;
-        upđãteLives();
+        updateLives();
         if (lives <= 0) endGame();
       } else {
         requestAnimationFrame(move);
@@ -126,7 +126,7 @@
     document.getElementById('start-overlay').style.display = 'none';
     score = 0; level = 1; lives = 3; isPlaying = true;
     hud.setScore(0); hud.setLevel(1);
-    upđãteLives();
+    updateLives();
     spawnFly();
     spawnTimer = setInterval(() => {
       if (!isPlaying) return;

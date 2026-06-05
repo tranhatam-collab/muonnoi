@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="description" content="Xếp các mảnh hình vào khung.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Xep Hinh — plays.muonnoi.org</title>
+<title>Xếp Hình — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #puzzle-grid { display: grid; gap: 3px; margin: 1rem auto; max-width: 320px; touch-action: none; }
   .puz-cell { aspect-ratio: 1; border-radius: 6px; background: #1f2937; border: 1px solid #374151; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #e5e7eb; cursor: pointer; transition: transform 0.1s; }
   .puz-cell:active { transform: scale(0.95); }
-  .puz-cell.empty { background: #111827; border: 1px đãshed #374151; cursor: default; }
+  .puz-cell.empty { background: #111827; border: 1px dashed #374151; cursor: default; }
   #start-overlay { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.85); z-index: 50; }
   #start-overlay.hidden { display: none; }
   .start-box { text-align: center; padding: 2rem; background: #111827; border-radius: 12px; border: 1px solid #374151; max-width: 320px; }
@@ -18,15 +18,15 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="xep-hinh">
+<body data-game="xep-hinh">
 
 <div id="hud-root"></div>
 <div id="puzzle-grid"></div>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Xep Hinh</h1>
-    <p>Sắp xếp các số theo thứ tự từ 1 đến N. Cang nhanh càng nhiều diem!</p>
+    <h1>Xếp Hình</h1>
+    <p>Sắp xếp các số theo thứ tự từ 1 đến N. Càng nhanh càng nhiều điểm!</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -85,7 +85,7 @@
       const cell = document.createElement('div');
       cell.className = grid[i] === 0 ? 'puz-cell empty' : 'puz-cell';
       cell.textContent = grid[i] === 0 ? '' : grid[i];
-      cell.đãtaset.idx = i;
+      cell.dataset.idx = i;
       cell.addEventListener('pointerdown', () => onTap(i));
       board.appendChild(cell);
     }

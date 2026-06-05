@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Làm ngược lại với phản xạ tự nhiên.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phan Xa Nguoc — plays.muonnoi.org</title>
+<title>Phản Xạ Ngược — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #reverse-board { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 1rem auto; max-width: 360px; }
@@ -22,15 +22,15 @@
   #reverse-hint { text-align: center; font-size: 1.5rem; font-weight: 700; margin: 0.5rem 0; min-height: 2rem; }
 </style>
 </head>
-<body đãta-game="phan-xa-nguoc">
+<body data-game="phan-xa-nguoc">
 
 <div id="hud-root"></div>
-<div id="reverse-hint">Nhan nguoc mau!</div>
+<div id="reverse-hint">Nhấn ngược màu!</div>
 <div id="reverse-board"></div>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Phan Xa Nguoc</h1>
+    <h1>Phản Xạ Ngược</h1>
     <p>Nhấn NGƯỢC LẠI với phản xạ tự nhiên. ĐỎ = XANH, XANH = ĐỎ!</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
@@ -45,9 +45,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Phan Xa Nguoc', desc: 'Một nút sẽ sáng lên. Nếu ĐỎ thì bạn phải nhấn XANH. Nếu XANH thì nhấn ĐỎ. Làm ngược lại với bản năng!' },
-      { title: 'Tốc độ tăng', desc: 'Càng về sáu toc đỏ hien càng nhanh. Đừng để não tự động điều khiển tay bạn.' },
-      { title: 'Vô hạn', desc: 'Không có giới hạn. Tap luyen phản xạ nguoc!' },
+      { title: 'Phản Xạ Ngược', desc: 'Một nút sẽ sáng lên. Nếu ĐỎ thì bạn phải nhấn XANH. Nếu XANH thì nhấn ĐỎ. Làm ngược lại với bản năng!' },
+      { title: 'Tốc độ tăng', desc: 'Càng về sau tốc độ hiện càng nhanh. Đừng để não tự động điều khiển tay bạn.' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn. Tập luyện phản xạ ngược!' },
     ],
     en: [
       { title: 'Reverse Reflex', desc: 'A button lights up. If RED, tap BLUE. If BLUE, tap RED. Override your instincts!' },
@@ -56,9 +56,9 @@
     ],
   };
   const COLORS = [
-    { key: 'red', name: 'DO', en: 'RED', hex: '#ef4444' },
+    { key: 'red', name: 'ĐỎ', en: 'RED', hex: '#ef4444' },
     { key: 'blue', name: 'XANH', en: 'BLUE', hex: '#3b82f6' },
-    { key: 'green', name: 'XANH LA', en: 'GREEN', hex: '#10b981' },
+    { key: 'green', name: 'XANH LÁ', en: 'GREEN', hex: '#10b981' },
     { key: 'yellow', name: 'VANG', en: 'YELLOW', hex: '#f59e0b' },
   ];
   const hud = PlaysSDK.createHud('hud-root', { showLevel: true });

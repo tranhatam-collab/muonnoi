@@ -1,0 +1,56 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout title="Điều khoản — Kết Nối Muôn Nơi" description="Điều khoản sử dụng Kết Nối Muôn Nơi">
+  <Header client:load />
+  <main class="px-4 py-16">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">Điều khoản sử dụng</h1>
+      <div class="space-y-6 text-slate-700 dark:text-slate-300">
+        <p class="text-sm text-slate-500">Có hiệu lực: 2026. Phiên bản v0.1.</p>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">1. Điều kiện sử dụng</h2>
+          <p>Bạn phải từ 18 tuổi trở lên. Bạn phải cung cấp thông tin chính xác. Bạn không được giả mạo danh tính.</p>
+        </section>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">2. Hành vi cấm</h2>
+          <ul class="list-disc space-y-1 pl-5">
+            <li>Quấy rối, đe dọa, hoặc kỳ thị</li>
+            <li>Lừa đảo tài chính hoặc yêu cầu tiền</li>
+            <li>Chia sẻ nội dung khiêu dâm không đồng ý</li>
+            <li>Deepfake hoặc ảnh AI giả mạo</li>
+            <li>Tạo nhiều tài khoản để lách ban</li>
+            <li>Khai thác trẻ vị thành niên (zero tolerance)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">3. Xác minh</h2>
+          <p>Bạn đồng ý xác minh danh tính qua selfie/liveness. Chúng tôi không lưu ảnh gốc, chỉ lưu hash để so khớp.</p>
+        </section>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">4. Dữ liệu và quyền riêng tư</h2>
+          <p>Chúng tôi không bán dữ liệu cá nhân. Chúng tôi không tracking quảng cáo. Xem <a href="/privacy" class="text-teal-700 underline dark:text-teal-400">Chính sách riêng tư</a>.</p>
+        </section>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">5. Chấm dứt</h2>
+          <p>Chúng tôi có quyền suspend hoặc ban tài khoản vi phạm. Bạn có quyền kháng cáo qua appeal form.</p>
+        </section>
+
+        <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-900">
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Các điều khoản này là bản nháp và sẽ được cập nhật sau khi legal counsel review.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

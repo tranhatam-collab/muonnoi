@@ -1,0 +1,77 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const {
+  title = 'Đầu Tư Muôn Nơi · Cổng quan tâm đầu tư hệ sinh thái Muôn Nơi',
+  description = 'Đầu Tư Muôn Nơi là cổng thông tin dành cho nhà đầu tư muốn tìm hiểu các dự án trong hệ sinh thái Muôn Nơi. Không phải lời chào bán chứng khoán. Không cam kết lợi nhuận.',
+  image = 'https://dautu.muonnoi.org/assets/og.png',
+  canonical = 'https://dautu.muonnoi.org/',
+  noindex = false,
+} = Astro.props;
+
+const siteName = 'Đầu Tư Muôn Nơi';
+const locale = 'vi_VN';
+---
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c4a6e" />
+  <meta name="color-scheme" content="dark light" />
+
+  {noindex ? (
+    <meta name="robots" content="noindex,nofollow" />
+  ) : (
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+  )}
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <link rel="canonical" href={canonical} />
+  <link rel="alternate" hreflang="vi" href={canonical} />
+  <link rel="alternate" hreflang="en" href={`${canonical}en/`} />
+  <link rel="alternate" hreflang="x-default" href={canonical} />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content={siteName} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={image} />
+  <meta property="og:locale" content={locale} />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={image} />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: siteName,
+    url: canonical,
+    description,
+    inLanguage: ['vi-VN', 'en-US'],
+    publisher: {
+      '@type': 'Organization',
+      name: 'Muôn Nơi',
+      url: 'https://www.muonnoi.org/'
+    }
+  })} />
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+  <slot />
+</body>
+</html>

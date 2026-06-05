@@ -114,11 +114,11 @@
       d.className='link'+(a.done?' done':'');
       const check = a.done ? '<span class="x">✓</span> ' : '';
       const pass = a.passto ? ` <span class="conn">→ ${esc(a.passto)}</span>` : '';
-      const btn = a.done ? '' : ` <button class="pill" style="padding:2px 8px;font-size:11px" đãta-i="${i}">đã làm? +20</button>`;
+      const btn = a.done ? '' : ` <button class="pill" style="padding:2px 8px;font-size:11px" data-i="${i}">đã làm? +20</button>`;
       d.innerHTML = check + esc(a.text) + pass + btn;
       c.appendChild(d);
     });
-    c.querySelectorAll('button[đãta-i]').forEach(b=> b.onclick=()=>markDone(+b.đãtaset.i));
+    c.querySelectorAll('button[data-i]').forEach(b=> b.onclick=()=>markDone(+b.dataset.i));
   }
 
   async function save(){

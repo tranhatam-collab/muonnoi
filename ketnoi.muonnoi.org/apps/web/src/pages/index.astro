@@ -1,0 +1,33 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Hero from '@components/Hero';
+import Features from '@components/Features';
+import Footer from '@components/Footer';
+---
+
+<MainLayout>
+  <Header client:load />
+  <main>
+    <Hero client:load />
+    <Features client:load />
+
+    <section class="px-4 py-16 bg-teal-50 dark:bg-slate-900">
+      <div class="mx-auto max-w-4xl text-center">
+        <h2 class="mb-4 text-3xl font-bold text-slate-900 dark:text-white">
+          Sẵn sàng gặp người thật?
+        </h2>
+        <p class="mb-8 text-slate-600 dark:text-slate-400">
+          Tạo tài khoản miễn phí. Xác minh danh tính. Khám phá những kết nối có ý nghĩa.
+        </p>
+        <a
+          href="/register"
+          class="inline-flex items-center gap-2 rounded-full bg-teal-700 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-700/20 transition-all hover:bg-teal-800 dark:bg-teal-600 dark:hover:bg-teal-500"
+        >
+          Tạo tài khoản miễn phí
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</MainLayout>

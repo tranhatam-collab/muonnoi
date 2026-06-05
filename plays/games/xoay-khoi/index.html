@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Xoay các khối để tạo đường đi.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Xoay Khoi — plays.muonnoi.org</title>
+<title>Xoay Khối — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #puzzle-board { display: grid; gap: 4px; margin: 1rem auto; max-width: 320px; touch-action: none; }
@@ -19,15 +19,15 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="xoay-khoi">
+<body data-game="xoay-khoi">
 
 <div id="hud-root"></div>
 <div id="puzzle-board"></div>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Xoay Khoi</h1>
-    <p>Xoay các khối để tạo đường đi từ góc trên trai đến góc dưới phai.</p>
+    <h1>Xoay Khối</h1>
+    <p>Xoay các khối để tạo đường đi từ góc trên trái đến góc dưới phải.</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -41,9 +41,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Xoay Khoi', desc: 'Moi ô có một doan duong. Nhan để xoay ô 90 do. Noi các doan thanh duong di lien mach.' },
-      { title: 'Giới hạn thời gian', desc: 'Ban có 30 giây cho mỗi me cung. Càng về sau, me cung càng lớn va phức tạp.' },
-      { title: 'Vô hạn', desc: 'Sang me cung mỗi sáu khi hoan thanh. Khong bao giờ het!' },
+      { title: 'Xoay Khối', desc: 'Mỗi ô có một đoạn đường. Nhấn để xoay ô 90 độ. Nối các đoạn thành đường đi liền mạch.' },
+      { title: 'Giới hạn thời gian', desc: 'Bạn có 30 giây cho mỗi mê cung. Càng về sau, mê cung càng lớn và phức tạp.' },
+      { title: 'Vô hạn', desc: 'Sang màn mê cung mới sau khi hoàn thành. Không bao giờ hết!' },
     ],
     en: [
       { title: 'Block Spin', desc: 'Each cell has a path segment. Tap to rotate 90 degrees. Connect segments into a continuous path.' },

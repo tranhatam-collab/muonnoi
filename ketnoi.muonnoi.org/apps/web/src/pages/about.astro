@@ -1,0 +1,62 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout
+  title="Về chúng tôi — Kết Nối Muôn Nơi"
+  description="Không gian kết nối nghiêm túc, an toàn, có trách nhiệm. Không phải dating app thông thường."
+>
+  <Header client:load />
+  <main class="px-4 py-16">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+        Về Kết Nối Muôn Nơi
+      </h1>
+
+      <div class="space-y-6 text-slate-700 dark:text-slate-300">
+        <p>
+          Kết Nối Muôn Nơi không phải là một dating app thông thường. Chúng tôi không tin vào
+          swipe vô tận, không tin vào việc bán cô đơn, và không tin vào việc khai thác dữ liệu
+          cá nhân để bán quảng cáo.
+        </p>
+
+        <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Chúng tôi tin vào điều gì?</h2>
+        <ul class="list-disc space-y-2 pl-5">
+          <li><strong>Gặp người thật:</strong> Xác minh danh tính qua selfie/liveness, không deepfake, không AI persona.</li>
+          <li><strong>Hiểu nhau thật:</strong> Matching dựa trên mục tiêu quan hệ, giá trị sống, lối sống — không chỉ ảnh + tuổi.</li>
+          <li><strong>Tôn trọng ranh giới thật:</strong> Privacy by default. Safe Date Mode. Không ai bị ép buộc.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-slate-900 dark:text-white">9 nguyên tắc sản phẩm</h2>
+        <ol class="list-decimal space-y-2 pl-5">
+          <li>Safety by Design</li>
+          <li>Trust by Verification</li>
+          <li>No Infinite Swipe</li>
+          <li>Intent-first</li>
+          <li>Privacy by Default</li>
+          <li>No AI Persona</li>
+          <li>Anti-Exploitation</li>
+          <li>Transparency</li>
+          <li>Community Accountability</li>
+        </ol>
+
+        <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Pháp nhân</h2>
+        <p>
+          Kết Nối Muôn Nơi được phát triển bởi <strong>Công ty Cổ phần Giáo dục Hành Trình Kasan</strong>
+          (Việt Nam), điều phối bởi <strong>VIET CAN NEW CORP</strong> (Hoa Kỳ).
+        </p>
+
+        <div class="rounded-xl border border-teal-200 bg-teal-50 p-4 dark:border-teal-900 dark:bg-teal-950">
+          <p class="text-sm text-teal-800 dark:text-teal-300">
+            <strong>Lưu ý:</strong> Kết Nối Muôn Nơi không phải dịch vụ hẹn hò truyền thống.
+            Chúng tôi là nền tảng kết nối có xác minh, hướng đến các mối quan hệ lành mạnh
+            và có trách nhiệm.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

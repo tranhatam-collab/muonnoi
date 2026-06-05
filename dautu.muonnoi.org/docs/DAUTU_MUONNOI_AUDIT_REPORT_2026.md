@@ -15,7 +15,7 @@ Phán quyết Founder Audit: **7.5/10 — APPROVED WITH MAJOR CONDITIONS**
 
 ## Tóm tắt tài liệu đã hoàn thành
 
-**Tổng cộng 20 file** trong `dautu.muonnoi.org/docs/`.
+**Tổng cộng 21 file** trong `dautu.muonnoi.org/docs/`.
 
 | # | Tài liệu | Trạng thái |
 |---|---|---|
@@ -39,6 +39,7 @@ Phán quyết Founder Audit: **7.5/10 — APPROVED WITH MAJOR CONDITIONS**
 | 18 | DAUTU_MUONNOI_PAYMENT_REFERENCE_POLICY_2026.md | ✅ Draft Ready |
 | 19 | DAUTU_MUONNOI_INVESTMENT_PAGE_PLAN_2026.md | ✅ Draft Ready |
 | 20 | DAUTU_MUONNOI_LEGAL_ENTITY_AND_PAYMENT_POLICY_2026.md | ✅ Draft Ready |
+| 21 | DAUTU_MUONNOI_PROJECT_KETNOI_INVESTMENT_PROFILE_2026.md | ✅ Draft Ready |
 
 ---
 
@@ -67,6 +68,16 @@ Phán quyết Founder Audit: **7.5/10 — APPROVED WITH MAJOR CONDITIONS**
 
 ---
 
+## Checklist GO / NO-GO cho ketnoi.muonnoi.org (hồ sơ đầu tư)
+
+- [ ] **21.** Đã có hồ sơ đầu tư riêng cho ketnoi (14 phần, thuyết phục, logic)?
+- [ ] **22.** Đã xác nhận ketnoi là Investor Interest Portal project, không phải securities offering?
+- [ ] **23.** Đã có dev roadmap (Phase 0–3 + v1.0) rõ ràng?
+- [ ] **24.** Đã có tech stack spec đầy đủ (Astro+React, RN/Expo, verify.iai.one)?
+- [ ] **25.** Đã có security & T&S checklist theo phase?
+
+---
+
 ## Đánh giá nhóm
 
 | Nhóm | Điểm | Nhận xét |
@@ -83,6 +94,10 @@ Phán quyết Founder Audit: **7.5/10 — APPROVED WITH MAJOR CONDITIONS**
 | Master Plan | 8 | Tổng hợp toàn bộ chiến lược |
 | SEO Plan | 7 | 7 ngôn ngữ, cần dev triển khai |
 | Public Copy | 8 | Copy chuẩn, CTA rõ ràng |
+| Project Ketnoi Profile | 8 | Hồ sơ đầu tư chi tiết, thuyết phục, logic |
+| Dev Roadmap | 7 | Phase 0–3 + v1.0, chờ Founder chốt 8 quyết định |
+| Tech Stack Spec | 7 | Stack rõ ràng, 2-region DB, ZK verify |
+| Security Checklist | 7 | Safety by Design, phase-based, zero tolerance CSAM |
 
 ---
 
@@ -96,6 +111,10 @@ Phán quyết Founder Audit: **7.5/10 — APPROVED WITH MAJOR CONDITIONS**
 - Thêm Data Room Structure chi tiết.
 - Cập nhật Risk Disclosure với 9 điều không hứa.
 - Hoàn thiện Payment & Entity Policy với quy trình 5 bước.
+- Thêm hồ sơ đầu tư riêng cho Kết Nối Muôn Nơi (ketnoi) — 14 phần, thuyết phục, logic.
+- Thêm Dev Roadmap liên tục từ Phase 0 đến v1.0 (12 sprint, 2-week cadence).
+- Thêm Tech Stack Spec đầy đủ (Astro+React, RN/Expo, 2-region DB, verify.iai.one ZK).
+- Thêm Security & T&S Checklist phase-based (CSAM zero tolerance, incident response).
 
 ---
 

@@ -86,7 +86,7 @@
         ${descEn ? `<div class="detail-desc" style="font-style:italic">${descEn}</div>` : ''}
         <div class="detail-actions">
           <a class="btn-play" href="${path}">▶ Chơi ngay</a>
-          <a class="btn-back" href="index.html">← Mục lục</a>
+          <a class="btn-back" href="index.html" onclick="if(history.length>1){history.back();return false}">← Mục lục</a>
         </div>
         <div class="leaderboard">
           <h3>🏆 Bảng xếp hạng</h3>

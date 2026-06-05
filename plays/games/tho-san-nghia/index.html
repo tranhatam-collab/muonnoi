@@ -67,14 +67,14 @@
       timeLeft = Math.max(5, 12 - Math.floor(level/2));
       wordBox.textContent = current.w;
       const opts = shuffle([...current.mean]);
-      meaningsEl.innerHTML = opts.map((o,i)=>`<button đãta-i="${i}">${o}</button>`).join('');
+      meaningsEl.innerHTML = opts.map((o,i)=>`<button data-i="${i}">${o}</button>`).join('');
       meaningsEl.querySelectorAll('button').forEach(b=>{
         b.onclick = ()=>check(b);
       });
-      upđãteTimer();
-      timer = setInterval(()=>{timeLeft--; upđãteTimer(); if(timeLeft<=0){timeUp();}}, 1000);
+      updateTimer();
+      timer = setInterval(()=>{timeLeft--; updateTimer(); if(timeLeft<=0){timeUp();}}, 1000);
     }
-    function upđãteTimer(){timerEl.textContent = `⏱️ ${timeLeft}s`; if(timeLeft<=3) timerEl.style.color='var(--err)'; else timerEl.style.color='var(--warn)';}
+    function updateTimer(){timerEl.textContent = `⏱️ ${timeLeft}s`; if(timeLeft<=3) timerEl.style.color='var(--err)'; else timerEl.style.color='var(--warn)';}
     function timeUp(){clearInterval(timer); streak=0; hStreak.textContent=0; const right=meaningsEl.querySelector(`button:nth-child(1)`); if(right) right.classList.add('correct'); meaningsEl.querySelectorAll('button').forEach(b=>b.disabled=true); setTimeout(makeRound,1500);}
     function check(btn){
       clearInterval(timer);

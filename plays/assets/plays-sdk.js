@@ -213,7 +213,7 @@
     if (minAge > 0) { const okAge = await ensureAge(minAge); if (!okAge) return { allowed: false, reason: 'age' }; }
     if (_state.loggedIn) return { allowed: true, left: Infinity };
     const c = playCount(gameId);
-    if (c >= free) { showRegisterModal(free); return { allowed: false, reason: 'register' }; }
+    if (c >= free) { showRegisterModal(free, gameId); return { allowed: false, reason: 'register' }; }
     lsSet('plays:' + gameId, c + 1);
     return { allowed: true, left: free - (c + 1) };
   }
@@ -253,14 +253,15 @@
     ok.onclick = () => { document.body.removeChild(bg); onAgree && onAgree(); };
     bg.querySelector('#mnDecline').onclick = () => { document.body.removeChild(bg); onDecline && onDecline(); };
   }
-  function showRegisterModal(free) {
+  function showRegisterModal(free, gameId) {
+    const regUrl = pageUrl('register.html') + (gameId ? '?returnTo=' + encodeURIComponent(gameId) : '');
     const bg = modal(`
       <h3>Hết lượt chơi miễn phí</h3>
       <p>Bạn đã dùng hết <b>${free} lượt chơi miễn phí</b> của trò này. Đăng ký thành viên (miễn phí) để
          <b>chơi tiếp không giới hạn</b>, lưu lịch sử & tiến trình, và nhận <b>Muôn Điểm</b>.</p>
       <div class="acts">
         <button class="btn secondary" id="mnClose">Để sau</button>
-        <a class="btn" id="mnReg" href="${pageUrl('register.html')}" style="text-align:center;text-decoration:none">Đăng ký thành viên</a>
+        <a class="btn" id="mnReg" href="${regUrl}" style="text-align:center;text-decoration:none">Đăng ký thành viên</a>
       </div>
       <p style="margin-top:10px">Đã có tài khoản? <a href="${loginUrl()}">Đăng nhập</a>.</p>`);
     bg.querySelector('#mnClose').onclick = () => document.body.removeChild(bg);
@@ -330,7 +331,7 @@
     } catch (_) {}
     return '/app.html';
   }
-  function registerUrl() { return pageUrl('register.html'); }
+  function registerUrl(gameId) { return pageUrl('register.html') + (gameId ? '?returnTo=' + encodeURIComponent(gameId) : ''); }
   function termsUrl() { return pageUrl('terms.html'); }
   function privacyUrl() { return pageUrl('privacy.html'); }
 

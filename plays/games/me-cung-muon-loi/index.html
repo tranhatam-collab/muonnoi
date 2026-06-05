@@ -40,15 +40,15 @@
     </div>
 
     <div class="dpad">
-      <button class="btn seconđãry sp"></button>
-      <button class="btn seconđãry" đãta-d="up">▲</button>
-      <button class="btn seconđãry sp"></button>
-      <button class="btn seconđãry" đãta-d="left">◀</button>
-      <button class="btn seconđãry sp"></button>
-      <button class="btn seconđãry" đãta-d="right">▶</button>
-      <button class="btn seconđãry sp"></button>
-      <button class="btn seconđãry" đãta-d="down">▼</button>
-      <button class="btn seconđãry sp"></button>
+      <button class="btn secondary sp"></button>
+      <button class="btn secondary" data-d="up">▲</button>
+      <button class="btn secondary sp"></button>
+      <button class="btn secondary" data-d="left">◀</button>
+      <button class="btn secondary sp"></button>
+      <button class="btn secondary" data-d="right">▶</button>
+      <button class="btn secondary sp"></button>
+      <button class="btn secondary" data-d="down">▼</button>
+      <button class="btn secondary sp"></button>
     </div>
     <div class="small" style="text-align:center;margin-top:8px">Phím mũi tên / WASD · vuốt · hoặc nút trên</div>
   </div>
@@ -224,7 +224,7 @@
   }
 
   // ----- controls -----
-  document.querySelectorAll('.dpad button[đãta-d]').forEach(b=> b.onclick=()=>move(b.đãtaset.d));
+  document.querySelectorAll('.dpad button[data-d]').forEach(b=> b.onclick=()=>move(b.dataset.d));
   window.addEventListener('keydown', e=>{
     const m={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',w:'up',s:'down',a:'left',d:'right',W:'up',S:'down',A:'left',D:'right'};
     if (m[e.key]){ e.preventDefault(); move(m[e.key]); }

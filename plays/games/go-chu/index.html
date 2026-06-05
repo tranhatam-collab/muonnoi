@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Gõ chữ nhanh hơn tốc độ rơi.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Go Chu — plays.muonnoi.org</title>
+<title>Gõ Chữ — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #type-area { text-align: center; margin: 1rem auto; max-width: 400px; }
@@ -19,12 +19,12 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="go-chu">
+<body data-game="go-chu">
 
 <div id="hud-root"></div>
 <div id="type-area">
   <div id="type-target"></div>
-  <input type="text" id="type-input" placeholder="Go từ ô đãy..." autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Type word">
+  <input type="text" id="type-input" placeholder="Gõ từ ô đây..." autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Type word">
 </div>
 
 <div id="start-overlay">
@@ -54,7 +54,7 @@
       { title: 'Endless', desc: 'No final level. Longer words = more points. Type as fast as you can!' },
     ],
   };
-  const WORDS_VI = ['viet','nam','muon','noi','chơi','vui','nhanh','cham','dong','tay','bac','nam','sao','bien','nui','song','ca','chim','hoa','la'];
+  const WORDS_VI = ['viet','nam','muon','nối','chơi','vui','nhanh','chạm','dong','tay','bac','nam','sao','bien','nui','song','ca','chim','hoa','la'];
   const WORDS_EN = ['play','game','fast','word','type','code','web','cloud','sky','sea','fire','wind','moon','star','tree','bird','fish','love','hope','dream'];
 
   const hud = PlaysSDK.createHud('hud-root', { showLevel: true });

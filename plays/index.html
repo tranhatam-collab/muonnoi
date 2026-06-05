@@ -69,13 +69,13 @@
 <body>
   <div class="container">
     <div class="topbar">
-      <div class="brand">
+      <a class="brand" href="/" style="text-decoration:none">
         <div class="mark"></div>
         <div>
           <h1>Muôn Nơi · Plays</h1>
           <div class="small">plays.muonnoi.org · Play Layer</div>
         </div>
-      </div>
+      </a>
       <div class="nav">
         <span class="pill" id="authPill">Đang kiểm tra…</span>
         <span class="pill" id="pointsPill" title="Muôn Điểm">◇ —</span>
@@ -103,8 +103,7 @@
       <a href="#mucluc">🗂️ Theo tầng</a>
       <a href="#hocvien">🎓 Học viện</a>
       <a href="#quydinh">📋 Quy định</a>
-      <a href="stats.html">📊 Thống kê</a>
-      <a href="register.html">✍️ Đăng ký</a>
+      <a href="register.html">✍️ Đăng ký / Đăng nhập</a>
       <a href="terms.html">⚖️ Điều khoản</a>
       <a href="privacy.html">🔒 Quyền riêng tư</a>
     </nav>
@@ -149,7 +148,6 @@
 
     <div class="footer">
       Muôn Điểm là điểm thưởng nội bộ — <b>không mua bằng tiền, không quy đổi ra tiền mặt</b>.<br/>
-      Lộ trình <span id="planCount"></span> game · Giai đoạn 1: <span id="p1Count"></span> game · IP mới: <span id="ipCount"></span> game.<br/>
       Học viện: <span id="colFoot"></span> — tất cả song ngữ Anh–Việt.<br/>
       <a href="terms.html">Điều khoản &amp; Miễn trừ trách nhiệm</a> ·
       <a href="privacy.html">Quyền riêng tư &amp; Bảo mật</a> ·
@@ -170,9 +168,8 @@
       <a href="#mucluc">🗂️ Theo tầng</a>
       <a href="#hocvien">🎓 Học viện</a>
       <a href="#quydinh">📋 Quy định</a>
-      <a href="stats.html">📊 Thống kê</a>
       <a href="detail.html">📋 Chi tiết</a>
-      <a href="register.html">✍️ Đăng ký</a>
+      <a href="register.html">✍️ Đăng ký / Đăng nhập</a>
       <a href="terms.html">⚖️ Điều khoản</a>
       <a href="privacy.html">🔒 Quyền riêng tư</a>
 
@@ -398,9 +395,6 @@
       }
     }
 
-    document.getElementById('planCount').textContent = C.counts.total;
-    document.getElementById('p1Count').textContent = C.counts.live;
-    document.getElementById('ipCount').textContent = Object.keys(C.groups).length;
     render();
 
     // Recently played (from localStorage)

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Thu thập thức ăn mà không bị bắt.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tim Thuc An — plays.muonnoi.org</title>
+<title>Tìm Thức Ăn — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #forage-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 55vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
@@ -15,15 +15,15 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="tim-thuc-an">
+<body data-game="tìm-thuc-an">
 
 <div id="hud-root"></div>
 <canvas id="forage-canvas" width="320" height="320" aria-label="Forage canvas"></canvas>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Tim Thuc An</h1>
-    <p>Thu thấp thuc ăn ma không bị quái vật bat.</p>
+    <h1>Tìm Thức Ăn</h1>
+    <p>Thu thập thức ăn mà không bị quái vật bắt.</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -33,13 +33,13 @@
 <script>
 (function() {
   'use strict';
-  const GAME_ID = 'tim-thuc-an';
+  const GAME_ID = 'tìm-thuc-an';
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Tim Thuc An', desc: 'Keo nhấn vật để thử thấp các bong vàng (thuc an). Tranh quái vật do. Moi mon ăn tầng them thời gian.' },
-      { title: 'Quai vat', desc: 'Quai vật se dưới theo ban. An càng nhiều, quái vật càng nhanh va càng nhiều.' },
-      { title: 'Vô hạn', desc: 'Không có giới hạn. Thu thấp càng nhiều càng tốt!' },
+      { title: 'Tìm Thức Ăn', desc: 'Kéo nhấn vật để thử thách các bóng vàng (thức ăn). Tránh quái vật độc. Mỗi món ăn tăng thêm thời gian.' },
+      { title: 'Quái vật', desc: 'Quái vật sẽ đuổi theo bạn. Ăn càng nhiều, quái vật càng nhanh và càng nhiều.' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn. Thu thập càng nhiều càng tốt!' },
     ],
     en: [
       { title: 'Forage', desc: 'Drag character to collect gold orbs (food). Avoid red monsters. Each food adds time.' },
@@ -67,7 +67,7 @@
     ctx.fillStyle = '#fff'; ctx.font = '12px sans-serif'; ctx.fillText('T: ' + timeLeft, 10, 20);
   }
 
-  function upđãte() {
+  function update() {
     if (!isPlaying) return;
     for (let i = foods.length - 1; i >= 0; i--) {
       const f = foods[i]; const d = Math.sqrt((player.x - f.x) ** 2 + (player.y - f.y) ** 2);
@@ -80,7 +80,7 @@
     }
     if (foods.length < 3) spawnFood();
     if (Math.random() < 0.005 && monsters.length < level + 1) spawnMonster();
-    hud.setScore(score); draw(); animId = requestAnimationFrame(upđãte);
+    hud.setScore(score); draw(); animId = requestAnimationFrame(update);
   }
 
   function onMove(e) {
@@ -99,7 +99,7 @@
     resize(); foods = []; monsters = []; score = 0; level = 1; timeLeft = 30; monsterSpeed = 0.6; isPlaying = true;
     player.x = canvas.width / 2; player.y = canvas.height / 2;
     for (let i = 0; i < 5; i++) spawnFood(); spawnMonster();
-    hud.setScore(0); hud.setLevel(1); timerInterval = setInterval(tick, 1000); upđãte();
+    hud.setScore(0); hud.setLevel(1); timerInterval = setInterval(tick, 1000); update();
   }
 
   function endGame() {

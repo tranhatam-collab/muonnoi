@@ -1,0 +1,20 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+import ProfileForm from '@components/ProfileForm';
+---
+
+<MainLayout title="Hồ sơ — Kết Nối Muôn Nơi" description="Quản lý hồ sơ của bạn">
+  <Header client:load />
+  <main class="min-h-[70vh] px-4 py-8">
+    <div class="mx-auto max-w-2xl">
+      <h1 class="mb-2 text-2xl font-bold text-slate-900 dark:text-white">Hồ sơ của bạn</h1>
+      <p class="mb-6 text-sm text-slate-600 dark:text-slate-400">
+        Hoàn thành hồ sơ để được ghép đôi chất lượng hơn.
+      </p>
+      <ProfileForm client:load />
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

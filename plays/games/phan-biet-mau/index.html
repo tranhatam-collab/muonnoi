@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Chọn màu đúng với chữ cái.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phan Biet Mau — plays.muonnoi.org</title>
+<title>Phân Biệt Màu — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #stroop-word { text-align: center; font-size: 3rem; font-weight: 800; margin: 1.5rem 0; min-height: 4rem; }
@@ -18,16 +18,16 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="phan-biet-mau">
+<body data-game="phan-biet-mau">
 
 <div id="hud-root"></div>
-<div id="stroop-word">DO</div>
+<div id="stroop-word">ĐỎ</div>
 <div id="stroop-options"></div>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Phan Biet Mau</h1>
-    <p>Chon màu CHU KHONG PHAI nghia cua tu. Dung bi đãnh lua!</p>
+    <h1>Phân Biệt Màu</h1>
+    <p>Chọn màu CHỮ KHÔNG PHẢI nghĩa của từ. Đừng bị đánh lừa!</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -42,7 +42,7 @@
   const TUTORIAL_STEPS = {
     vi: [
       { title: 'Phân Biệt Màu', desc: 'Từ viết "ĐỎ" nhưng tô màu XANH. Nhiệm vụ của bạn là chọn MÀU CHỮ (XANH), không phải nghĩa (ĐỎ).' },
-      { title: 'Hiệu ứng Stroop', desc: 'Não tự động đọc nghĩa từ. Bạn phải ép não bỏ quá nghĩa và chỉ tập trúng vào màu sắc.' },
+      { title: 'Hiệu ứng Stroop', desc: 'Não tự động đọc nghĩa từ. Bạn phải ép não bỏ qua nghĩa và chỉ tập trung vào màu sắc.' },
       { title: 'Vô hạn', desc: 'Không có giới hạn. Càng nhanh càng nhiều điểm!' },
     ],
     en: [
@@ -52,9 +52,9 @@
     ],
   };
   const COLORS = [
-    { name: 'DO', en: 'RED', hex: '#ef4444' },
+    { name: 'ĐỎ', en: 'RED', hex: '#ef4444' },
     { name: 'XANH', en: 'BLUE', hex: '#3b82f6' },
-    { name: 'XANH LA', en: 'GREEN', hex: '#10b981' },
+    { name: 'XANH LÁ', en: 'GREEN', hex: '#10b981' },
     { name: 'VANG', en: 'YELLOW', hex: '#f59e0b' },
   ];
   const hud = PlaysSDK.createHud('hud-root', { showLevel: true });
@@ -79,7 +79,7 @@
 
   function showProblem() {
     currentWordIdx = Math.floor(Math.random() * COLORS.length);
-    đỏ { currentColorIdx = Math.floor(Math.random() * COLORS.length); } while (currentColorIdx === currentWordIdx);
+    do { currentColorIdx = Math.floor(Math.random() * COLORS.length); } while (currentColorIdx === currentWordIdx);
     const c = COLORS[currentWordIdx];
     wordEl.textContent = LANG === 'vi' ? c.name : c.en;
     wordEl.style.color = COLORS[currentColorIdx].hex;

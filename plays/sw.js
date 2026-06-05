@@ -21,8 +21,20 @@ self.addEventListener('activate', (e) => {
 
 self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
+  const isNav = e.request.mode === 'navigate';
   e.respondWith(
     caches.match(e.request).then(cached => {
+      // Navigation: always fetch fresh first, fallback to cache
+      if (isNav) {
+        return fetch(e.request).then(res => {
+          if (res && res.status === 200 && res.type === 'basic') {
+            const clone = res.clone();
+            caches.open(CACHE).then(c => c.put(e.request, clone));
+          }
+          return res;
+        }).catch(() => cached);
+      }
+      // Static assets: cache first
       if (cached) return cached;
       return fetch(e.request).then(res => {
         if (!res || res.status !== 200 || res.type !== 'basic') return res;

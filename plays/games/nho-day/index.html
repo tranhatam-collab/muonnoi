@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Lặp lại dãy hiệu ứng.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nho Day — plays.muonnoi.org</title>
+<title>Nhớ Dãy — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #seq-board { display: grid; gap: 8px; margin: 1rem auto; max-width: 300px; touch-action: none; }
@@ -18,7 +18,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="nho-đãy">
+<body data-game="nho-day">
 
 <div id="hud-root"></div>
 <div id="seq-board"></div>
@@ -36,13 +36,13 @@
 <script>
 (function() {
   'use strict';
-  const GAME_ID = 'nho-đãy';
+  const GAME_ID = 'nho-day';
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
       { title: 'Nhớ Dãy', desc: '4 ô màu sẽ sáng lên theo một dãy. Quan sát kỹ rồi nhấn lại đúng thứ tự.' },
-      { title: 'Dài dần', desc: 'Mỗi lần đúng, dãy sẽ thêm 1 bước mới. Càng sáu dãy càng dài và nhanh.' },
-      { title: 'Vô hạn', desc: 'Không có giới hạn. Thu xem bạn nhỏ được bao nhiều buoc!' },
+      { title: 'Dài dần', desc: 'Mỗi lần đúng, dãy sẽ thêm 1 bước mới. Càng sau dãy càng dài và nhanh.' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn. Thử xem bạn nhớ được bao nhiêu bước!' },
     ],
     en: [
       { title: 'Sequence', desc: '4 colored cells will light up in sequence. Watch carefully then repeat in correct order.' },

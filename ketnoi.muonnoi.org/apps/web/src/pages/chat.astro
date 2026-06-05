@@ -1,0 +1,16 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+import ChatWindow from '@components/ChatWindow';
+---
+
+<MainLayout title="Trò chuyện — Kết Nối Muôn Nơi" description="Không gian trò chuyện an toàn">
+  <Header client:load />
+  <main class="min-h-[70vh] px-4 py-4">
+    <div class="mx-auto max-w-3xl">
+      <ChatWindow client:load />
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

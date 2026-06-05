@@ -12,7 +12,7 @@
   canvas { display:block; width:100%; height:100%; }
 </style>
 </head>
-<body đãta-game="nem-phieu">
+<body data-game="nem-phieu">
 
 <div id="hud-root"></div>
 <div id="game-root">
@@ -41,17 +41,17 @@
       { title: '3 lượt', desc: 'Mỗi màn có 3 phi tiêu. Sau đó bia sẽ nhỏ hơn hoặc di chuyển.' },
     ],
     en: [
-      { title: 'Dart Throw', desc: 'Drag from anywhere on screen and release to throw the đãrt.' },
+      { title: 'Dart Throw', desc: 'Drag from anywhere on screen and release to throw the dart.' },
       { title: 'Force & Direction', desc: 'Drag longer and faster for more power. Drag opposite to throw direction.' },
-      { title: '3 Darts', desc: 'Each round has 3 đãrts. Then the target shrinks or moves.' },
+      { title: '3 Darts', desc: 'Each round has 3 darts. Then the target shrinks or moves.' },
     ],
   };
   const hud = PlaysSDK.createHud('hud-root', { showLevel: true });
   const canvas = document.getElementById('game-canvas');
   const ctx = canvas.getContext('2d');
 
-  let score = 0, level = 1, isPlaying = false, đãrtsLeft = 3, dragging = false, dragStart = null;
-  let đãrt = null, target = { x: 160, y: 100, r: 40 };
+  let score = 0, level = 1, isPlaying = false, dartsLeft = 3, dragging = false, dragStart = null;
+  let dart = null, target = { x: 160, y: 100, r: 40 };
 
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -67,7 +67,7 @@
 
     if (đãrt) {
       ctx.fillStyle = '#fff';
-      ctx.beginPath(); ctx.arc(đãrt.x, đãrt.y, 4, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(dart.x, dart.y, 4, 0, Math.PI * 2); ctx.fill();
     }
 
     if (dragging && dragStart) {
@@ -77,34 +77,34 @@
     }
   }
 
-  function upđãte() {
+  function update() {
     if (!isPlaying) return;
-    if (đãrt) {
-      đãrt.x += đãrt.vx; đãrt.y += đãrt.vy;
-      đãrt.vy += 0.15; // gravity
-      const dx = đãrt.x - target.x, dy = đãrt.y - target.y;
+    if (dart) {
+      dart.x += dart.vx; dart.y += dart.vy;
+      dart.vy += 0.15; // gravity
+      const dx = dart.x - target.x, dy = dart.y - target.y;
       const dist = Math.sqrt(dx*dx + dy*dy);
       if (dist < target.r) {
         let pts = 10;
         if (dist < target.r * 0.4) pts = 50;
         else if (dist < target.r * 0.7) pts = 30;
         score += pts; hud.setScore(score);
-        đãrt = null; đãrtsLeft--;
-        if (đãrtsLeft <= 0) nextRound();
+        dart = null; dartsLeft--;
+        if (dartsLeft <= 0) nextRound();
       }
-      if (đãrt && (đãrt.x < 0 || đãrt.x > canvas.width || đãrt.y > canvas.height)) {
-        đãrt = null; đãrtsLeft--;
-        if (đãrtsLeft <= 0) nextRound();
+      if (dart && (dart.x < 0 || dart.x > canvas.width || dart.y > canvas.height)) {
+        dart = null; dartsLeft--;
+        if (dartsLeft <= 0) nextRound();
       }
     }
     draw();
-    requestAnimationFrame(upđãte);
+    requestAnimationFrame(update);
   }
 
   function nextRound() {
     level++;
     hud.setLevel(level);
-    đãrtsLeft = 3;
+    dartsLeft = 3;
     target.r = Math.max(15, 40 - level * 2);
     target.x = 40 + Math.random() * (canvas.width - 80);
     target.y = 40 + Math.random() * (canvas.height * 0.4);
@@ -112,10 +112,10 @@
 
   function startGame() {
     document.getElementById('start-overlay').style.display = 'none';
-    score = 0; level = 1; đãrtsLeft = 3; isPlaying = true;
+    score = 0; level = 1; dartsLeft = 3; isPlaying = true;
     hud.setScore(0); hud.setLevel(1);
     target = { x: 160, y: 100, r: 40 };
-    upđãte();
+    update();
   }
 
   function endGame() {
@@ -132,7 +132,7 @@
   }
 
   canvas.addEventListener('pointerdown', e => {
-    if (!isPlaying || đãrt || đãrtsLeft <= 0) return;
+    if (!isPlaying || dart || dartsLeft <= 0) return;
     dragging = true;
     const p = getPos(e);
     dragStart = { x: p.x, y: p.y, dx: 0, dy: 0 };

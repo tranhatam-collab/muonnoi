@@ -1,0 +1,70 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout
+  title="Chính sách an toàn — Kết Nối Muôn Nơi"
+  description="Chính sách an toàn chi tiết của Kết Nối Muôn Nơi"
+>
+  <Header client:load />
+  <main class="px-4 py-16">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">Chính sách an toàn</h1>
+      <div class="space-y-6 text-slate-700 dark:text-slate-300">
+        <p class="text-sm text-slate-500">Có hiệu lực: 2026. Phiên bản v0.1.</p>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">1. Cam kết</h2>
+          <p>An toàn người dùng là ưu tiên P0. Mọi tính năng phải vượt qua đánh giá tác động an toàn trước khi triển khai.</p>
+        </section>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">2. Phân loại rủi ro</h2>
+          <ul class="list-disc space-y-1 pl-5">
+            <li><strong>Low:</strong> Spam nhẹ, tin nhắn không phù hợp</li>
+            <li><strong>Medium:</strong> Quấy rối nhẹ, vi phạm nội quy, fake profile</li>
+            <li><strong>High:</strong> Scam, quấy rối nghiêm trọng, deepfake</li>
+            <li><strong>Emergency:</strong> Đe dọa tính mạng, CSAM, bạo lực</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">3. Cấm tuyệt đối</h2>
+          <ul class="list-disc space-y-1 pl-5">
+            <li>Trẻ vị thành niên (&lt;18) trong hẹn hò người lớn</li>
+            <li>CSAM (Child Sexual Abuse Material) — zero tolerance</li>
+            <li>Deepfake/AI persona giả mạo</li>
+            <li>Lừa đảo tài chính</li>
+            <li>Buôn người / môi giới</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">4. Biện pháp an toàn</h2>
+          <ul class="list-disc space-y-1 pl-5">
+            <li>Age gate tại đăng ký</li>
+            <li>ID/liveness check khi nghi ngờ tuổi</li>
+            <li>Safe Date Mode trước khi gặp offline</li>
+            <li>Panic button trong app</li>
+            <li>Check-in/check-out cho hẹn offline</li>
+            <li>Emergency contact bắt buộc</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="mb-2 text-lg font-semibold text-slate-900 dark:text-white">5. Hợp tác cơ quan chức năng</h2>
+          <p>Chúng tôi hợp tác đầy đủ với cơ quan chức năng. Báo cáo CSAM ngay lập tức cho Bộ Công an (VN) và NCMEC (US/UK).</p>
+        </section>
+
+        <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-900">
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Bản chính sách này là nháp. Sẽ được legal counsel review trước khi publish.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

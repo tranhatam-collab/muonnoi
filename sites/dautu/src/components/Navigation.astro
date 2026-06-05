@@ -1,0 +1,36 @@
+---
+const links = [
+  { href: '/', label: 'Trang chủ' },
+  { href: '/projects/', label: 'Dự án' },
+  { href: '/process/', label: 'Quy trình' },
+  { href: '/risk/', label: 'Cảnh báo rủi ro' },
+  { href: '/legal/', label: 'Pháp lý' },
+  { href: '/interest/', label: 'Quan tâm' },
+];
+---
+
+<nav class="bg-brand-900 text-white sticky top-0 z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="text-xl font-bold tracking-tight hover:text-brand-100 transition">
+        Đầu Tư Muôn Nơi
+      </a>
+      <div class="hidden md:flex space-x-1">
+        {links.map(link => (
+          <a
+            href={link.href}
+            class="px-3 py-2 rounded-md text-sm font-medium hover:bg-brand-700 transition"
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+      <a
+        href="/interest/"
+        class="hidden md:inline-block px-4 py-2 bg-white text-brand-900 rounded-lg font-semibold text-sm hover:bg-gray-100 transition"
+      >
+        Gửi quan tâm
+      </a>
+    </div>
+  </div>
+</nav>

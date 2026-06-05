@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Bắt bóng với đúng màu.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>An Bong — plays.muonnoi.org</title>
+<title>Ăn Bóng — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #catch-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 55vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
@@ -16,16 +16,16 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="an-bong">
+<body data-game="an-bong">
 
 <div id="hud-root"></div>
-<div id="color-hint">Bat bong <span style="color:#ef4444">DO</span></div>
+<div id="color-hint">Bắt bong <span style="color:#ef4444">ĐỎ</span></div>
 <canvas id="catch-canvas" width="320" height="320" aria-label="Catch canvas"></canvas>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>An Bong</h1>
-    <p>Bat bong đúng màu chi dinh. Bat nham mat mang!</p>
+    <h1>Ăn Bóng</h1>
+    <p>Bắt bong đúng màu chỉ định. Bắt nhầm mất mạng!</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -52,7 +52,7 @@
   const COLORS = [
     { name: 'ĐỎ', en: 'RED', hex: '#ef4444' },
     { name: 'XANH', en: 'BLUE', hex: '#3b82f6' },
-    { name: 'XANH LA', en: 'GREEN', hex: '#10b981' },
+    { name: 'XANH LÁ', en: 'GREEN', hex: '#10b981' },
     { name: 'VANG', en: 'YELLOW', hex: '#f59e0b' },
     { name: 'TIM', en: 'PURPLE', hex: '#a855f7' },
   ];
@@ -69,7 +69,7 @@
 
   function upđãteHint() {
     const c = COLORS[targetColorIdx];
-    hintEl.innerHTML = (LANG === 'vi' ? 'Bat bong ' : 'Catch ') + `<span style="color:${c.hex}">${LANG === 'vi' ? c.name : c.en}</span>`;
+    hintEl.innerHTML = (LANG === 'vi' ? 'Bắt bong ' : 'Catch ') + `<span style="color:${c.hex}">${LANG === 'vi' ? c.name : c.en}</span>`;
   }
 
   function spawn() {

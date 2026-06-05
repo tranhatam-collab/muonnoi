@@ -61,14 +61,14 @@
       cipherEl.textContent=shuffled;
       renderSlots();
       const uniq=[...new Set(current.split(''))];
-      keyboardEl.innerHTML=shuffle(uniq.join('')).split('').map(c=>`<button đãta-c="${c}">${c}</button>`).join('');
+      keyboardEl.innerHTML=shuffle(uniq.join('')).split('').map(c=>`<button data-c="${c}">${c}</button>`).join('');
       keyboardEl.querySelectorAll('button').forEach(b=>{b.onclick=()=>type(b);});
     }
     function renderSlots(){
       slotsEl.innerHTML=current.split('').map((_,i)=>`<div class="slot ${placed[i]?'filled':''} ${placed[i]&&placed[i]===current[i]?'correct':''}">${placed[i]||''}</div>`).join('');
     }
     function type(btn){
-      const c=btn.đãtaset.c;
+      const c=btn.dataset.c;
       const idx=placed.findIndex((p,i)=>!p&&current[i]===c);
       if(idx===-1) return;
       placed[idx]=c; btn.classList.add('used'); btn.disabled=true;

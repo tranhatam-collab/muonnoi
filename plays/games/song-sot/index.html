@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Tồn tại càng lâu càng tốt trong môi trường thù địch.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Song Sot — plays.muonnoi.org</title>
+<title>Sống Sót — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #survive-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 55vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
@@ -15,15 +15,15 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="song-sot">
+<body data-game="song-sot">
 
 <div id="hud-root"></div>
 <canvas id="survive-canvas" width="320" height="320" aria-label="Survive canvas"></canvas>
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Song Sot</h1>
-    <p>Ton tai càng lâu càng tốt trong môi trường thù địch.</p>
+    <h1>Sống Sót</h1>
+    <p>Tồn tại càng lâu càng tốt trong môi trường thù địch.</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -37,9 +37,9 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Song Sot', desc: 'Keo nhấn vật cua bạn trên màn hinh để tranh các hình tròn đỏ dich. Cang lau càng nhiều dich.' },
-      { title: 'Tien trien', desc: 'Dich se xuất hiện càng nhiều va di chuyển càng nhanh. Thu thấp các hat vàng để hồi máu.' },
-      { title: 'Vô hạn', desc: 'Khong có màn cuoi. Ton tai lau nhat có thể!' },
+      { title: 'Sống Sót', desc: 'Kéo nhấn vật của bạn trên màn hình để tránh các hình tròn đỏ địch. Càng lâu càng nhiều địch.' },
+      { title: 'Tiến triển', desc: 'Địch sẽ xuất hiện càng nhiều và di chuyển càng nhanh. Thu thập các hạt vàng để hồi máu.' },
+      { title: 'Vô hạn', desc: 'Không có màn cuối. Tồn tại lâu nhất có thể!' },
     ],
     en: [
       { title: 'Survive', desc: 'Drag your character to avoid red enemy circles. More enemies spawn over time.' },

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Tưới nước cho cây lớn không ngừng.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nuoi Cay — plays.muonnoi.org</title>
+<title>Nuôi Cây — plays.muonnoi.org</title>
 <link rel="stylesheet" href="../../styles/plays.css">
 <style>
   #grow-canvas { display: block; margin: 1rem auto; max-width: 90vw; max-height: 50vh; background: #111827; border: 1px solid #374151; border-radius: 6px; touch-action: none; }
@@ -17,7 +17,7 @@
   .start-box p { color: #9ca3af; margin-bottom: 1.5rem; font-size: 0.9rem; }
 </style>
 </head>
-<body đãta-game="nuoi-cay">
+<body data-game="nuoi-cay">
 
 <div id="hud-root"></div>
 <div id="grow-bar"><div id="grow-fill"></div></div>
@@ -25,8 +25,8 @@
 
 <div id="start-overlay">
   <div class="start-box">
-    <h1>Nuoi Cay</h1>
-    <p>Cham để tưới nước. Cay lớn = nhiều diem. De khó = thua!</p>
+    <h1>Nuôi Cây</h1>
+    <p>Chạm để tưới nước. Cây lớn = nhiều điểm. Để khô = thua!</p>
     <button class="plays-btn plays-btn-primary" id="btn-start">Nhấn để bắt đầu</button>
     <button class="plays-btn plays-btn-ghost" id="btn-tutorial">Hướng dẫn</button>
   </div>
@@ -40,13 +40,13 @@
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const TUTORIAL_STEPS = {
     vi: [
-      { title: 'Nuoi Cay', desc: 'Cham màn hinh để tưới nước. Cay lớn khi có du nuoc. De cây khó quá lau se heo.' },
-      { title: 'Cay lon', desc: 'Cay càng lớn can càng nhiều nước va khó càng nhanh. Quan ly thời gian tuoi!' },
-      { title: 'Vô hạn', desc: 'Không có giới hạn chiều cao. Nuoi càng cao càng tốt!' },
+      { title: 'Nuôi Cây', desc: 'Chạm màn hình để tưới nước. Cây lớn khi có đủ nước. Để cây khô quá lâu sẽ héo.' },
+      { title: 'Cây lớn', desc: 'Cây càng lớn cần càng nhiều nước và khô càng nhanh. Quản lý thời gian tưới!' },
+      { title: 'Vô hạn', desc: 'Không có giới hạn chiều cao. Nuôi càng cao càng tốt!' },
     ],
     en: [
-      { title: 'Grow Tree', desc: 'Tap to water the tree. It grows when watered. Let ít dry too long and ít wilts.' },
-      { title: 'Taller = Thirstier', desc: 'The taller, the more water needed and faster ít dries. Manage timing!' },
+      { title: 'Grow Tree', desc: 'Tap to water the tree. It grows when watered. Let it dry too long and it wilts.' },
+      { title: 'Taller = Thirstier', desc: 'The taller, the more water needed and faster it dries. Manage timing!' },
       { title: 'Endless', desc: 'No height limit. Grow as tall as you can!' },
     ],
   };
