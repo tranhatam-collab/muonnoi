@@ -31,6 +31,23 @@ EXCLUDE_DIRS=(
   "--exclude-dir=build"
   "--exclude-dir=.next"
   "--exclude-dir=.astro"
+  "--exclude-dir=plays.muonnoi.org"   # 7000+ generated HTML, never references Capacitor
+  "--exclude-dir=public"              # generated static output
+)
+# Only scan TS/JS/JSX/TSX and select config files — skip HTML/markdown
+INCLUDE_GLOB=(
+  "--include=*.ts"
+  "--include=*.tsx"
+  "--include=*.js"
+  "--include=*.jsx"
+  "--include=*.mjs"
+  "--include=*.cjs"
+  "--include=package.json"
+  "--include=tsconfig.json"
+  "--include=capacitor.config.*"
+  "--include=vite.config.*"
+  "--include=astro.config.*"
+  "--include=next.config.*"
 )
 
 PATTERNS=(
@@ -91,7 +108,7 @@ VIOLATIONS=0
 ALLOWED=0
 
 for pattern in "${PATTERNS[@]}"; do
-  results=$(grep -rEln "${EXCLUDE_DIRS[@]}" "$pattern" . 2>/dev/null || true)
+  results=$(grep -rEln "${EXCLUDE_DIRS[@]}" "${INCLUDE_GLOB[@]}" "$pattern" . 2>/dev/null || true)
   if [ -z "$results" ]; then
     continue
   fi
