@@ -51,6 +51,16 @@ app.use('*', cors({
 }));
 app.use('*', rateLimiter);
 
+// Root route for API domain
+app.get('/', (c) => {
+  return c.json({
+    success: true,
+    message: 'Kết Nối Muôn Nơi API',
+    version: '0.1.0',
+    docs: '/health',
+  });
+});
+
 // WebSocket chat rooms (Durable Objects)
 app.get('/ws/chat/:roomId', async (c) => {
   const roomId = c.req.param('roomId');
