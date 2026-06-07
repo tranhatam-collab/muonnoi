@@ -28,3 +28,12 @@ id = "9b71abe8135d4a76bb7e185a859893cd"
 [[r2_buckets]]
 binding = "BUCKET"
 bucket_name = "ketnoi-muonnoi-media"
+
+# Durable Objects (chat rooms)
+[[durable_objects.bindings]]
+name = "CHAT_ROOM"
+class_name = "ChatRoom"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatRoom"]

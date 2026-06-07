@@ -25,16 +25,54 @@ const initialMessages: Message[] = [
   },
 ];
 
-export default function ChatWindow() {
+const WS_BASE = 'wss://ketnoi-muonnoi-api.tranhatam.workers.dev';
+
+interface Props {
+  roomId?: string;
+  userId?: string;
+}
+
+export default function ChatWindow({ roomId = 'demo', userId = 'me' }: Props) {
   const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [input, setInput] = useState('');
   const [showWarning, setShowWarning] = useState(false);
   const [isChecking, setIsChecking] = useState(false);
+  const [wsStatus, setWsStatus] = useState<'connecting' | 'open' | 'closed'>('connecting');
+  const wsRef = useRef<WebSocket | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
+
+  useEffect(() => {
+    const ws = new WebSocket(`${WS_BASE}/ws/chat/${roomId}?userId=${userId}`);
+    wsRef.current = ws;
+
+    ws.onopen = () => setWsStatus('open');
+    ws.onclose = () => setWsStatus('closed');
+    ws.onmessage = (event) => {
+      try {
+        const payload = JSON.parse(event.data as string) as {
+          type: string;
+          data: { id: string; senderId: string; text: string; timestamp: number };
+        };
+        if (payload.type === 'message') {
+          const msg: Message = {
+            id: payload.data.id,
+            sender: payload.data.senderId === userId ? 'me' : 'them',
+            text: payload.data.text,
+            timestamp: new Date(payload.data.timestamp),
+          };
+          setMessages((prev) => [...prev, msg]);
+        }
+      } catch {
+        // ignore non-JSON
+      }
+    };
+
+    return () => ws.close();
+  }, [roomId, userId]);
 
   const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -62,7 +100,14 @@ export default function ChatWindow() {
       warning,
     };
 
-    setMessages((prev) => [...prev, newMsg]);
+    // Send via WebSocket if connected
+    if (wsRef.current?.readyState === WebSocket.OPEN) {
+      wsRef.current.send(JSON.stringify({ text: input }));
+    } else {
+      // Fallback: add locally if WS not available
+      setMessages((prev) => [...prev, newMsg]);
+    }
+
     setInput('');
 
     if (!safety.safe) {
@@ -83,6 +128,13 @@ export default function ChatWindow() {
           <div className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-500">
             <ShieldCheck className="h-3 w-3 text-teal-600" />
             Đã xác minh
+            <span className="mx-1">·</span>
+            <span
+              className={`inline-block h-1.5 w-1.5 rounded-full ${
+                wsStatus === 'open' ? 'bg-green-500' : wsStatus === 'connecting' ? 'bg-yellow-500' : 'bg-red-500'
+              }`}
+            />
+            {wsStatus === 'open' ? 'Trực tuyến' : wsStatus === 'connecting' ? 'Đang kết nối...' : 'Ngoại tuyến'}
           </div>
         </div>
       </div>

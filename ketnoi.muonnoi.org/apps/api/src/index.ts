@@ -10,11 +10,15 @@ import { safetyRoutes } from './routes/safety';
 import { verifyRoutes } from './routes/verify';
 import { errorHandler } from './middleware/error';
 import { rateLimiter } from './middleware/rate-limit';
+import { ChatRoom } from './lib/chatroom';
+
+export { ChatRoom };
 
 export interface Env {
   DB: D1Database;
   KV: KVNamespace;
   BUCKET: R2Bucket;
+  CHAT_ROOM: DurableObjectNamespace;
   ENVIRONMENT: string;
   JWT_SECRET: string;
   MAIL_API_URL?: string;
@@ -45,6 +49,17 @@ app.use('*', cors({
   credentials: true,
 }));
 app.use('*', rateLimiter);
+
+// WebSocket chat rooms (Durable Objects)
+app.get('/ws/chat/:roomId', async (c) => {
+  const roomId = c.req.param('roomId');
+  const userId = c.req.query('userId') || 'anonymous';
+  const id = c.env.CHAT_ROOM.idFromName(roomId);
+  const room = c.env.CHAT_ROOM.get(id);
+  const url = new URL(c.req.url);
+  url.searchParams.set('userId', userId);
+  return room.fetch(url.toString(), c.req.raw);
+});
 
 // Health check (no auth required)
 app.route('/health', healthRoutes);
