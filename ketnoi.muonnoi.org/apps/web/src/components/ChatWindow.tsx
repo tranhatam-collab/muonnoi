@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
-import { Send, AlertTriangle, Phone, ShieldCheck } from 'lucide-react';
+import { Send, AlertTriangle, Phone, ShieldCheck, Loader2 } from 'lucide-react';
+import { checkMessageSafety } from '../lib/safety';
 
 interface Message {
   id: string;
@@ -28,37 +29,45 @@ export default function ChatWindow() {
   const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [input, setInput] = useState('');
   const [showWarning, setShowWarning] = useState(false);
+  const [isChecking, setIsChecking] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
-
-  const scamKeywords = ['cho mượn tiền', 'đầu tư', 'crypto', 'usdt', 'chuyển khoản', 'ví điện tử', 'gửi tiền'];
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  const checkScam = (text: string) => {
-    return scamKeywords.some((k) => text.toLowerCase().includes(k));
-  };
-
-  const handleSend = (e: React.FormEvent) => {
+  const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!input.trim()) return;
+    if (!input.trim() || isChecking) return;
 
-    const isScam = checkScam(input);
+    setIsChecking(true);
+    const safety = await checkMessageSafety(input);
+    setIsChecking(false);
+
+    const flagLabels: Record<string, string> = {
+      'off-platform contact': 'Liên hệ ngoài nền tảng: Có thể chứa số điện thoại/Zalo/Telegram. Hãy cẩn thận.',
+      'financial request': 'Yêu cầu tài chính: Tin nhắn có thể chứa yêu cầu chuyển tiền. Đừng gửi tiền cho người bạn chưa gặp.',
+      'investment scam': 'Lừa đảo đầu tư: Có thể chứa đề xuất đầu tư/crypto. Hãy từ chối và báo cáo.',
+    };
+
+    const warning = safety.flags && safety.flags.length > 0
+      ? safety.flags.map((f) => flagLabels[f] || 'Cảnh báo an toàn: Nội dung này có thể rủi ro.').join(' ')
+      : undefined;
+
     const newMsg: Message = {
       id: Date.now().toString(),
       sender: 'me',
       text: input,
       timestamp: new Date(),
-      warning: isScam ? 'Money Request Shield: Tin nhắn này có thể chứa yêu cầu tài chính. Hãy cẩn thận.' : undefined,
+      warning,
     };
 
     setMessages((prev) => [...prev, newMsg]);
     setInput('');
 
-    if (isScam) {
+    if (!safety.safe) {
       setShowWarning(true);
-      setTimeout(() => setShowWarning(false), 5000);
+      setTimeout(() => setShowWarning(false), 6000);
     }
   };
 
@@ -143,10 +152,10 @@ export default function ChatWindow() {
           />
           <button
             type="submit"
-            disabled={!input.trim()}
+            disabled={!input.trim() || isChecking}
             className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-700 text-white transition-colors hover:bg-teal-800 disabled:opacity-40 dark:bg-teal-600 dark:hover:bg-teal-500"
           >
-            <Send className="h-4 w-4" />
+            {isChecking ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
           </button>
         </div>
       </form>
