@@ -1,0 +1,75 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import RiskBanner from '../components/RiskBanner.astro';
+
+const title = 'Cảnh báo rủi ro · Đầu Tư Muôn Nơi';
+const description = 'Rủi ro đầu tư vào dự án giai đoạn đầu. Không có bảo đảm lợi nhuận, hoàn vốn, hay thành công.';
+---
+
+<Layout title={title} description={description} canonical="https://dautu.muonnoi.org/risk/">
+  <Navigation />
+
+  <div class="bg-risk-700 text-white py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold">Cảnh báo rủi ro đầu tư</h1>
+      <p class="text-risk-100 mt-2">Vui lòng đọc kỹ trước khi bày tỏ quan tâm đầu tư.</p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <RiskBanner />
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Rủi ro chung cho mọi dự án</h2>
+      <div class="space-y-4 text-gray-700">
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">1. Mất toàn bộ vốn</h3>
+          <p>Đầu tư vào startup giai đoạn đầu có rủi ro mất toàn bộ vốn rất cao. Hầu hết startup thất bại.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">2. Không có thanh khoản</h3>
+          <p>Cổ phần/SAFE không có thị trường giao dịch thứ cấp. Bạn không thể bán dễ dàng.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">3. Không có bảo đảm lợi nhuận</h3>
+          <p>Không có cam kết cổ tức, lợi nhuận, hoặc thời hạn hoàn vốn.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">4. Thông tin chưa đầy đủ</h3>
+          <p>Các dự án ở giai đoạn sớm chưa có financial audit, chưa có traction, chưa có revenue.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">5. Pháp lý và tuân thủ</h3>
+          <p>Quy định pháp lý có thể thay đổi, ảnh hưởng đến khả năng hoạt động của dự án.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">6. Đội ngũ</h3>
+          <p>Founder 1 người, chưa có co-founder/CTO. Rủi ro key person dependency cao.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">7. Công nghệ</h3>
+          <p>Sản phẩm chưa hoàn thiện, chưa có user validation. Scope có thể quá rộng.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">8. Cạnh tranh</h3>
+          <p>Mỗi dự án đối mặt với đối thủ lớn đã có thị phần (Notion, Discord, Airbnb, Upwork, v.v.).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Khuyến nghị</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700 bg-gray-50 p-6 rounded-lg">
+        <li>Chỉ đầu tư số tiền bạn có thể chấp nhận mất hoàn toàn.</li>
+        <li>Tham khảo ý kiến chuyên gia tài chính, pháp lý, kế toán độc lập.</li>
+        <li>Đa dạng hóa danh mục đầu tư, không tập trung vào một dự án.</li>
+        <li>Đọc kỹ tài liệu pháp lý trước khi ký bất kỳ thỏa thuận nào.</li>
+        <li>Không dựa vào bất kỳ lời hứa lợi nhuận nào từ bên nào.</li>
+      </ul>
+    </section>
+  </div>
+
+  <Footer />
+</Layout>

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 9-Level Verification System */
+:root {
+  --level-1-free: transparent;
+  --level-2-silver: #C8CCD2;
+  --level-3-blue: #4DA3FF;
+  --level-4-green: #30C97A;
+  --level-5-gold: #F5C542;
+  --level-6-orange: #FF8A3D;
+  --level-7-ruby: #E3425F;
+  --level-8-purple: #9B6DFF;
+  --level-9-deep-purple: #4B1FAF;
+}
+
 @layer base {
   html {
     -webkit-font-smoothing: antialiased;

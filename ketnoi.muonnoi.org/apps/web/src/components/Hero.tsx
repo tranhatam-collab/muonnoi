@@ -18,8 +18,8 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
-          Không swipe vô tận. Không fake profile. Không bán cô đơn.
-          Chỉ có những kết nối nghiêm túc, an toàn, và có trách nhiệm.
+          Kết Nối Muôn Nơi giúp những người đã xác minh danh tính kết nối với nhau
+          thông qua giá trị sống, mục tiêu, nhịp sống và sự sẵn sàng cho một mối quan hệ lành mạnh.
         </p>
 
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -28,13 +28,13 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full bg-teal-700 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-700/20 transition-all hover:bg-teal-800 hover:shadow-teal-700/30 dark:bg-teal-600 dark:hover:bg-teal-500"
           >
             <Heart className="h-4 w-4" />
-            Bắt đầu ngay
+            Tạo hồ sơ
           </a>
           <a
-            href="/about"
+            href="/guide"
             className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition-all hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800"
           >
-            Tìm hiểu thêm
+            Tìm hiểu cách hoạt động
           </a>
         </div>
 

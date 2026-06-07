@@ -1,0 +1,40 @@
+---
+import Layout from '../../components/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import RiskBanner from '../../components/RiskBanner.astro';
+import { projects } from '../../data/projects';
+
+const title = 'Danh mục dự án · Đầu Tư Muôn Nơi';
+const description = '9 dự án trong hệ sinh thái Muôn Nơi đang mở cổng quan tâm đầu tư.';
+---
+
+<Layout title={title} description={description} canonical="https://dautu.muonnoi.org/projects/">
+  <Navigation />
+
+  <div class="bg-brand-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold">Danh mục dự án</h1>
+      <p class="text-brand-100 mt-2">9 dự án công nghệ, đời sống, giáo dục, cộng đồng trong hệ sinh thái Muôn Nơi.</p>
+    </div>
+  </div>
+
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map(project => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <RiskBanner />
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

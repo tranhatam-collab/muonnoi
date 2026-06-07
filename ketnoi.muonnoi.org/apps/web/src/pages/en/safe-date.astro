@@ -1,0 +1,135 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout
+  title="Safe Date Mode — Meet Muôn Nơi"
+  description="Plan safe meetups. Check-in, check-out, and quick help button. Optional safety assistance, not a 24/7 security service."
+>
+  <Header client:load />
+  <main class="px-4 py-16">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+        Safe Date Mode
+      </h1>
+      <p class="mb-8 text-lg text-slate-600 dark:text-slate-400">
+        An <strong>optional</strong> safety assistance feature when meeting someone from the platform.
+        Not a 24/7 security service. Does not replace personal judgment.
+      </p>
+
+      <div class="space-y-8">
+        <section class="rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+          <h2 class="mb-4 text-xl font-semibold text-slate-900 dark:text-white">Pre-date checklist</h2>
+          <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Verified the other person's trust tier (higher is better)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Chatted long enough to feel comfortable</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Picking a public, busy location</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Told a friend or family member about the date</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Arranged your own transportation there and back</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Not carrying large amounts of cash or valuables</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="rounded-xl border border-teal-200 bg-teal-50 p-6 dark:border-teal-900 dark:bg-teal-950">
+          <h2 class="mb-4 text-xl font-semibold text-teal-900 dark:text-teal-100">Check-in & Check-out</h2>
+          <p class="mb-4 text-teal-800 dark:text-teal-200">
+            When Safe Date Mode is active for a meetup, you can:
+          </p>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-lg bg-white p-4 dark:bg-slate-900">
+              <div class="mb-2 font-semibold text-slate-900 dark:text-white">Check-in</div>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Confirm you've arrived. Auto-notify your designated emergency contact.</p>
+            </div>
+            <div class="rounded-lg bg-white p-4 dark:bg-slate-900">
+              <div class="mb-2 font-semibold text-slate-900 dark:text-white">Check-out</div>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Confirm you're home safe. Automatically end the Safe Date session.</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-teal-700 dark:text-teal-300">
+            If no check-out occurs after expected time + 30 minutes, the system will remind you and your emergency contact.
+          </p>
+        </section>
+
+        <section class="rounded-xl border border-red-200 bg-red-50 p-6 dark:border-red-900 dark:bg-red-950">
+          <h2 class="mb-4 text-xl font-semibold text-red-900 dark:text-red-100">Quick help button</h2>
+          <p class="mb-4 text-red-800 dark:text-red-200">
+            In Safe Date Mode, you can activate the quick help button from the home screen or widget.
+          </p>
+          <div class="space-y-2 text-sm text-red-700 dark:text-red-300">
+            <p><strong>Tap once:</strong> Send current location and alert to your emergency contact.</p>
+            <p><strong>Double tap:</strong> Activate ambient recording (if permitted) and send elevated alert.</p>
+            <p><strong>Hold 3 seconds:</strong> Call the safety hotline (if configured).</p>
+          </div>
+          <div class="mt-4 rounded-lg bg-white p-4 dark:bg-slate-900">
+            <p class="text-sm font-medium text-red-800 dark:text-red-300">
+              Important: This is an optional safety assistance feature. Not an emergency response service.
+              In life-threatening situations, contact local emergency services immediately.
+            </p>
+          </div>
+        </section>
+
+        <section class="rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+          <h2 class="mb-4 text-xl font-semibold text-slate-900 dark:text-white">Safety principles</h2>
+          <div class="space-y-4 text-slate-700 dark:text-slate-300">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">🧭</div>
+              <div>
+                <div class="font-semibold">Always tell someone</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Tell at least one friend where, when, and who you're meeting.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">🏛️</div>
+              <div>
+                <div class="font-semibold">Public place first</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">First meetings should be at a café, restaurant, or other public space with people around.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">🚗</div>
+              <div>
+                <div class="font-semibold">Control your own transport</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Drive yourself, take public transit, or a taxi. Avoid sharing a ride with a stranger on the first meeting.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">💰</div>
+              <div>
+                <div class="font-semibold">Never send money</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Never transfer money, send credit card info, or invest in someone you just met on the platform.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">📵</div>
+              <div>
+                <div class="font-semibold">Stay on-platform</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Avoid moving to Telegram, WhatsApp, or Zalo too early. We can only help with conversations that happen here.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

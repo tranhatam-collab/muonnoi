@@ -1,0 +1,109 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'Deal Room · Đầu Tư Muôn Nơi';
+const description = 'Khu vực chia sẻ tài liệu đầu tư riêng cho nhà đầu tư đã được mời.';
+---
+
+<Layout title={title} description={description} canonical="https://dautu.muonnoi.org/deal-room/" noindex={true}>
+  <Navigation />
+
+  <div class="bg-brand-900 text-white py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold">Deal Room</h1>
+      <p class="text-brand-100 mt-2">Chỉ dành cho nhà đầu tư đã được mời và xác minh.</p>
+    </div>
+  </div>
+
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 text-center">
+      <div class="mx-auto w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center mb-4">
+        <svg class="w-8 h-8 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900 mb-3">Truy cập có kiểm soát</h2>
+      <p class="text-gray-600 mb-6">
+        Deal Room chỉ mở cho nhà đầu tư đã hoàn thành form quan tâm, được đội phụ trách xác minh,
+        và nhận lời mời riêng kèm mật khẩu.
+      </p>
+
+      <form id="dealRoomForm" class="max-w-md mx-auto space-y-4 text-left">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Mật khẩu Deal Room</label>
+          <input
+            type="password"
+            id="dealRoomPassword"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+            placeholder="Nhập mật khẩu từ lời mời"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full px-6 py-3 bg-brand-600 text-white rounded-lg font-semibold hover:bg-brand-700 transition"
+        >
+          Truy cập
+        </button>
+      </form>
+
+      <div id="dealRoomError" class="hidden mt-4 p-4 bg-risk-50 border border-risk-200 rounded-lg text-risk-700 text-sm">
+        Mật khẩu không đúng hoặc bạn chưa được mời. Vui lòng gửi <a href="/interest/" class="underline">form quan tâm</a> trước.
+      </div>
+
+      <div class="mt-8 text-sm text-gray-500">
+        <p>Chưa có lời mời? <a href="/interest/" class="text-brand-600 underline">Gửi form quan tâm</a> để bắt đầu.</p>
+        <p class="mt-2">Nếu bạn đã nhận lời mời nhưng quên mật khẩu, liên hệ đội phụ trách qua email.</p>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-gray-50 p-6 rounded-lg border border-gray-200">
+      <h3 class="font-bold text-gray-900 mb-3">Tài liệu có trong Deal Room</h3>
+      <ul class="space-y-2 text-gray-700 text-sm">
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          Term Sheet template (SAFE)
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          Financial model 3 năm
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          Cap table pro-forma
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          Due diligence checklist
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          Entity registration docs
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          Founder pitch deck
+        </li>
+      </ul>
+      <p class="text-xs text-gray-500 mt-4">* Tài liệu chỉ hiển thị sau khi nhập mật khẩu đúng.</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('dealRoomForm')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const password = (document.getElementById('dealRoomPassword') as HTMLInputElement)?.value;
+      const errorDiv = document.getElementById('dealRoomError');
+
+      // TODO: Replace with actual API call to verify password
+      // For now, show error (production should call /api/deal-room-auth)
+      if (errorDiv) {
+        errorDiv.classList.remove('hidden');
+      }
+    });
+  </script>
+
+  <Footer />
+</Layout>

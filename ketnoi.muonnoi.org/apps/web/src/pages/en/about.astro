@@ -1,0 +1,42 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+const title = 'About Us — Kết Nối Muôn Nơi';
+const description = 'Our vision, principles, and commitment to safe, meaningful connections.';
+---
+
+<MainLayout title={title} description={description}>
+  <Header client:load />
+  <main class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-teal-800 mb-8">About Us</h1>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Our Vision</h2>
+      <p class="text-gray-600 leading-relaxed">
+        We believe everyone deserves a safe, respectful place to find meaningful connections.
+        Not swipes. Not games. Real people, real values, real potential.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Core Principles</h2>
+      <ul class="space-y-3 text-gray-600">
+        <li><strong class="text-teal-700">Safety by Design:</strong> Verification, reporting, and moderation built into every layer.</li>
+        <li><strong class="text-teal-700">Privacy by Default:</strong> Your data is yours. We never sell it.</li>
+        <li><strong class="text-teal-700">Anti-Exploitation:</strong> Zero tolerance for scams, harassment, or abuse.</li>
+        <li><strong class="text-teal-700">Meaningful Matching:</strong> Compatibility based on values, not just photos.</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Legal Entities</h2>
+      <ul class="space-y-2 text-gray-600">
+        <li>Viet Can New Corp (Delaware, USA)</li>
+        <li>CP Giao duc Truyen Thong Viet Can New (Vietnam)</li>
+      </ul>
+    </section>
+  </main>
+  <Footer />
+</MainLayout>

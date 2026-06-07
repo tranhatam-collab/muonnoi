@@ -10,10 +10,23 @@ export default function LoginForm() {
     e.preventDefault();
     if (!email || loading) return;
     setLoading(true);
-    // TODO: call API /api/auth/magic-link
-    await new Promise((r) => setTimeout(r, 1500));
+    try {
+      const res = await fetch('/api/auth/magic-link', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        alert(data.error || 'Gửi magic link thất bại');
+        setLoading(false);
+        return;
+      }
+      setSent(true);
+    } catch (err) {
+      alert('Lỗi kết nối máy chủ. Vui lòng thử lại.');
+    }
     setLoading(false);
-    setSent(true);
   };
 
   const handlePasskey = async () => {

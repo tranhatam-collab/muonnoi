@@ -19,7 +19,7 @@ export const projects: Project[] = [
     tagline: 'Nền tảng kết nối người thật đã xác minh',
     category: 'Dating & Relationship',
     tam: '12 tỷ USD',
-    status: 'Founder Review Ready',
+    status: 'Founder Review Ready · Not Dev Ready · Not Legal Approved · Not Production Ready',
     fundingNeed: '250K – 500K USD',
     description:
       'Nền tảng kết nối con người đã xác minh, ưu tiên sự thật, an toàn, ranh giới, chống AI giả mạo, chống lừa đảo, quan hệ có trách nhiệm.',

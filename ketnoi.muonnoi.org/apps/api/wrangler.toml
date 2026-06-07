@@ -1,0 +1,30 @@
+name = "ketnoi-muonnoi-api"
+main = "src/index.ts"
+compatibility_date = "2024-10-22"
+
+[vars]
+ENVIRONMENT = "development"
+APP_ORIGIN = "https://ketnoi.muonnoi.org"
+
+# External IAI services (set secrets in CF dashboard)
+# MAIL_API_URL = "https://mail.iai.one"
+# MAIL_API_KEY = ""
+# VERIFY_API_URL = "https://verify.iai.one"
+# PAY_API_URL = "https://pay.iai.one"
+# PAY_API_KEY = ""
+
+# D1 Database (users, profiles, matches)
+[[d1_databases]]
+binding = "DB"
+database_name = "ketnoi-muonnoi-dev"
+database_id = "4fb45bd3-a4fb-4f53-95c7-c1131dd47709"
+
+# KV (sessions, rate limits)
+[[kv_namespaces]]
+binding = "KV"
+id = "9b71abe8135d4a76bb7e185a859893cd"
+
+# R2 (avatars, photos)
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "ketnoi-muonnoi-media"

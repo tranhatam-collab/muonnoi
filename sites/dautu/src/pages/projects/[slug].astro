@@ -1,0 +1,91 @@
+---
+import Layout from '../../components/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import RiskBanner from '../../components/RiskBanner.astro';
+import { projects } from '../../data/projects';
+
+export async function getStaticPaths() {
+  return projects.map(p => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const project = projects.find(p => p.slug === slug);
+
+if (!project) {
+  return Astro.redirect('/projects/');
+}
+
+const title = `${project.name} · Đầu Tư Muôn Nơi`;
+const description = project.description;
+---
+
+<Layout title={title} description={description} canonical={`https://dautu.muonnoi.org/projects/${project.slug}/`}>
+  <Navigation />
+
+  <div class="bg-brand-900 text-white py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span class="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-medium mb-3">{project.category}</span>
+      <h1 class="text-3xl sm:text-4xl font-bold">{project.name}</h1>
+      <p class="text-brand-100 text-lg mt-2">{project.tagline}</p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="bg-white p-5 rounded-lg border border-gray-200">
+        <div class="text-xs text-gray-500 uppercase tracking-wide mb-1">Trạng thái</div>
+        <div class="font-semibold text-gray-900">{project.status}</div>
+      </div>
+      <div class="bg-white p-5 rounded-lg border border-gray-200">
+        <div class="text-xs text-gray-500 uppercase tracking-wide mb-1">TAM</div>
+        <div class="font-semibold text-gray-900">{project.tam}</div>
+      </div>
+      <div class="bg-white p-5 rounded-lg border border-gray-200">
+        <div class="text-xs text-gray-500 uppercase tracking-wide mb-1">Nhu cầu vốn</div>
+        <div class="font-semibold text-gray-900">{project.fundingNeed}</div>
+      </div>
+    </div>
+
+    <div class="prose max-w-none mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Giới thiệu</h2>
+      <p class="text-gray-700 leading-relaxed text-lg">{project.description}</p>
+
+      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Điểm mạnh</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        {project.highlights.map(h => <li>{h}</li>)}
+      </ul>
+
+      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Rủi ro chính</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        {project.risks.map(r => <li>{r}</li>)}
+      </ul>
+
+      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Lộ trình</h3>
+      <div class="space-y-4">
+        {project.milestones.map(m => (
+          <div class="flex items-start gap-4 bg-gray-50 p-4 rounded-lg">
+            <span class="flex-shrink-0 w-10 h-10 bg-brand-100 text-brand-700 rounded-full flex items-center justify-center font-bold text-sm">{m.phase}</span>
+            <div>
+              <div class="font-semibold text-gray-900">{m.time}</div>
+              <div class="text-gray-600 text-sm">{m.goal}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <RiskBanner />
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-10">
+      <a href="/interest/" class="px-6 py-3 bg-brand-600 text-white rounded-lg font-semibold text-center hover:bg-brand-700 transition">
+        Gửi quan tâm đầu tư
+      </a>
+      <a href="/projects/" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold text-center hover:bg-gray-50 transition">
+        &larr; Quay lại danh mục
+      </a>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>

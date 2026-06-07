@@ -1,0 +1,1100 @@
+{
+  "timestamp": "2026-06-07T06:58:49.322Z",
+  "hardcoded": [
+    {
+      "file": "src/components/ChatWindow.tsx",
+      "line": 85,
+      "text": "<strong>Cảnh báo an toàn:</strong> Đừng chuyển tiền cho người bạn chưa gặp. Báo cáo nếu nghi ngờ."
+    },
+    {
+      "file": "src/components/ChatWindow.tsx",
+      "line": 92,
+      "text": "<strong>Mẹo an toàn:</strong> Đừng chia sẻ thông tin cá nhân quá sớm. Gặp ở nơi công cộng nếu hẹn offline."
+    },
+    {
+      "file": "src/components/ChatWindow.tsx",
+      "line": 126,
+      "text": "<strong>Lưu ý:</strong> Nếu bạn chuyển sang Telegram/Zalo/WhatsApp, chúng tôi không thể bảo vệ bạn."
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 16,
+      "text": "<div className=\"mb-3 text-sm font-semibold text-slate-900 dark:text-white\">Sản phẩm</div>"
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 18,
+      "text": "<li><a href=\"/\" className=\"hover:text-teal-700 dark:hover:text-teal-400\">Trang chủ</a></li>"
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 19,
+      "text": "<li><a href=\"/guide\" className=\"hover:text-teal-700 dark:hover:text-teal-400\">Hướng dẫn</a></li>"
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 20,
+      "text": "<li><a href=\"/safety\" className=\"hover:text-teal-700 dark:hover:text-teal-400\">An toàn</a></li>"
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 25,
+      "text": "<div className=\"mb-3 text-sm font-semibold text-slate-900 dark:text-white\">Pháp lý</div>"
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 27,
+      "text": "<li><a href=\"/terms\" className=\"hover:text-teal-700 dark:hover:text-teal-400\">Điều khoản</a></li>"
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 28,
+      "text": "<li><a href=\"/privacy\" className=\"hover:text-teal-700 dark:hover:text-teal-400\">Chính sách riêng tư</a></li>"
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 29,
+      "text": "<li><a href=\"/safety-policy\" className=\"hover:text-teal-700 dark:hover:text-teal-400\">Chính sách an toàn</a></li>"
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "line": 34,
+      "text": "<div className=\"mb-3 text-sm font-semibold text-slate-900 dark:text-white\">Liên hệ</div>"
+    },
+    {
+      "file": "src/components/Header.tsx",
+      "line": 19,
+      "text": "<span className=\"text-lg font-bold tracking-tight\">Kết Nối Muôn Nơi</span>"
+    },
+    {
+      "file": "src/components/Hero.tsx",
+      "line": 17,
+      "text": "<span className=\"text-teal-700 dark:text-teal-400\">Tôn trọng ranh giới thật.</span>"
+    },
+    {
+      "file": "src/components/LoginForm.tsx",
+      "line": 41,
+      "text": "<h3 className=\"mb-2 font-semibold text-slate-900 dark:text-white\">Magic link đã gửi!</h3>"
+    },
+    {
+      "file": "src/components/LoginForm.tsx",
+      "line": 43,
+      "text": "Kiểm tra hộp thư <strong>{email}</strong> và nhấp vào link để đăng nhập."
+    },
+    {
+      "file": "src/components/LoginForm.tsx",
+      "line": 85,
+      "text": "<span className=\"bg-white px-2 text-slate-500 dark:bg-slate-950 dark:text-slate-500\">hoặc</span>"
+    },
+    {
+      "file": "src/components/MatchCard.tsx",
+      "line": 59,
+      "text": "<span className=\"text-xs font-medium text-teal-700 dark:text-teal-400\">{compatibility}% phù hợp</span>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 157,
+      "text": "<option value=\"\">Chọn...</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 158,
+      "text": "<option value=\"ready\">Đã sẵn sàng</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 159,
+      "text": "<option value=\"soon\">Sắp sẵn sàng</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 160,
+      "text": "<option value=\"chat\">Muốn trò chuyện trước</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 172,
+      "text": "<option value=\"\">Chọn...</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 173,
+      "text": "<option value=\"slow\">Chậm và chắc</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 174,
+      "text": "<option value=\"medium\">Vừa phải</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 175,
+      "text": "<option value=\"open\">Tùy cảm xúc</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 212,
+      "text": "<label className=\"mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300\">Bạn là người sáng hay tối?</label>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 214,
+      "text": "<option value=\"\">Chọn...</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 215,
+      "text": "<option value=\"morning\">Sáng sớm</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 216,
+      "text": "<option value=\"night\">Đêm khuya</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 217,
+      "text": "<option value=\"both\">Linh hoạt</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 221,
+      "text": "<label className=\"mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300\">Thích ở nhà hay ra ngoài?</label>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 223,
+      "text": "<option value=\"\">Chọn...</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 224,
+      "text": "<option value=\"home\">Ở nhà</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 225,
+      "text": "<option value=\"out\">Ra ngoài</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 226,
+      "text": "<option value=\"balance\">Cân bằng</option>"
+    },
+    {
+      "file": "src/components/ProfileForm.tsx",
+      "line": 234,
+      "text": "<h2 className=\"mb-4 text-lg font-semibold text-slate-900 dark:text-white\">Ranh giới cá nhân</h2>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 84,
+      "text": "<h3 className=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">Đăng ký thành công!</h3>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 86,
+      "text": "Magic link đã gửi đến <strong>{form.email}</strong>. Vui lòng kiểm tra hộp thư."
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 126,
+      "text": "<label className=\"mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300\">Tuổi</label>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 144,
+      "text": "<label className=\"mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300\">Giới tính</label>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 151,
+      "text": "<option value=\"\">Chọn giới tính</option>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 153,
+      "text": "<option value=\"female\">Nữ</option>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 154,
+      "text": "<option value=\"other\">Khác</option>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 158,
+      "text": "<label className=\"mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300\">Thành phố / Vùng</label>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 174,
+      "text": "<p className=\"mb-2 font-medium\">Tóm tắt thông tin:</p>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 178,
+      "text": "<li>Tuổi: {form.age}</li>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 179,
+      "text": "<li>Giới tính: {form.gender}</li>"
+    },
+    {
+      "file": "src/components/RegisterForm.tsx",
+      "line": 180,
+      "text": "<li>Thành phố: {form.city}</li>"
+    },
+    {
+      "file": "src/layouts/MainLayout.astro",
+      "line": 42,
+      "text": "<meta property=\"og:site_name\" content=\"Kết Nối Muôn Nơi\" />"
+    },
+    {
+      "file": "src/pages/404.astro",
+      "line": 7,
+      "text": "<MainLayout title=\"Không tìm thấy — Kết Nối Muôn Nơi\" description=\"Trang không tồn tại\">"
+    },
+    {
+      "file": "src/pages/404.astro",
+      "line": 12,
+      "text": "<h2 class=\"mb-4 text-2xl font-bold text-slate-900 dark:text-white\">Trang không tồn tại</h2>"
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 25,
+      "text": "<h2 class=\"text-xl font-semibold text-slate-900 dark:text-white\">Chúng tôi tin vào điều gì?</h2>"
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 27,
+      "text": "<li><strong>Gặp người thật:</strong> Xác minh danh tính qua selfie/liveness, không deepfake, không AI persona.</li>"
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 28,
+      "text": "<li><strong>Hiểu nhau thật:</strong> Matching dựa trên mục tiêu quan hệ, giá trị sống, lối sống — không chỉ ảnh + tuổi.</li>"
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 29,
+      "text": "<li><strong>Tôn trọng ranh giới thật:</strong> Privacy by default. Safe Date Mode. Không ai bị ép buộc.</li>"
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 32,
+      "text": "<h2 class=\"text-xl font-semibold text-slate-900 dark:text-white\">9 nguyên tắc sản phẩm</h2>"
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 45,
+      "text": "<h2 class=\"text-xl font-semibold text-slate-900 dark:text-white\">Pháp nhân</h2>"
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 47,
+      "text": "Kết Nối Muôn Nơi được phát triển bởi <strong>Công ty Cổ phần Giáo dục Hành Trình Kasan</strong>"
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 48,
+      "text": "(Việt Nam), điều phối bởi <strong>VIET CAN NEW CORP</strong> (Hoa Kỳ)."
+    },
+    {
+      "file": "src/pages/about.astro",
+      "line": 53,
+      "text": "<strong>Lưu ý:</strong> Kết Nối Muôn Nơi không phải dịch vụ hẹn hò truyền thống."
+    },
+    {
+      "file": "src/pages/chat.astro",
+      "line": 8,
+      "text": "<MainLayout title=\"Trò chuyện — Kết Nối Muôn Nơi\" description=\"Không gian trò chuyện an toàn\">"
+    },
+    {
+      "file": "src/pages/en/safe-date.astro",
+      "line": 105,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">First meetings should be at a café, restaurant, or other public space with people around.</p>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 29,
+      "text": "<span>Đà Lạt — Nha Trang</span>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 33,
+      "text": "<span>Tối đa 8 gia đình mỗi đợt</span>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 49,
+      "text": "<h2 class=\"mb-4 text-2xl font-bold text-slate-900 dark:text-white\">Lịch trình</h2>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 53,
+      "text": "<h3 class=\"mb-1 font-semibold text-slate-900 dark:text-white\">Nhập nhà chung</h3>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 60,
+      "text": "<h3 class=\"mb-1 font-semibold text-slate-900 dark:text-white\">Làm việc & xây tầm nhìn</h3>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 67,
+      "text": "<h3 class=\"mb-1 font-semibold text-slate-900 dark:text-white\">Trồng cây & thu hoạch</h3>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 74,
+      "text": "<h3 class=\"mb-1 font-semibold text-slate-900 dark:text-white\">Tổng kết Đà Lạt</h3>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 81,
+      "text": "<h3 class=\"mb-1 font-semibold text-slate-900 dark:text-white\">Biển xanh Nha Trang</h3>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 88,
+      "text": "<h3 class=\"mb-1 font-semibold text-slate-900 dark:text-white\">Hội ngộ & kết thúc</h3>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 98,
+      "text": "<h2 class=\"text-2xl font-bold text-slate-900 dark:text-white\">Chương trình chi tiết</h2>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 101,
+      "text": "<h3 class=\"mb-3 text-xl font-semibold text-slate-900 dark:text-white\">Cha mẹ — Làm việc chung, xây tầm nhìn chung</h3>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 107,
+      "text": "<li>Workshop xây tầm nhìn chung</li>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 108,
+      "text": "<li>Chiến lược phát triển lâu dài cho gia đình</li>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 109,
+      "text": "<li>Tâm sự chung với chuyên gia Nhà Chung</li>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 110,
+      "text": "<li>Không bắt buộc workshop — tự chọn tham gia</li>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 115,
+      "text": "<h3 class=\"mb-3 text-xl font-semibold text-slate-900 dark:text-white\">Trẻ em — Vui chơi, học tập, trải nghiệm</h3>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 121,
+      "text": "<li>Trải nghiệm vườn & rừng — trồng cây, thu hoạch, tái thu hoạch</li>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 122,
+      "text": "<li>Lập trình viên nhí — từ ý tưởng đến sản phẩm nhỏ thật sự</li>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 123,
+      "text": "<li>Không thi cử, không xếp hạng</li>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 124,
+      "text": "<li>Ăn chung với cha mẹ, kể chuyện về ngày đã qua</li>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 163,
+      "text": "<h2 class=\"mb-4 text-xl font-semibold text-slate-900 dark:text-white\">Liên kết liên quan</h2>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 172,
+      "text": "<span>Nhà Chung Đà Lạt — Chương trình cho cả gia đình</span>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 182,
+      "text": "<span>Lập trình viên Nhí — Chương trình cho trẻ em</span>"
+    },
+    {
+      "file": "src/pages/events/mua-he-y-nghia-2026.astro",
+      "line": 192,
+      "text": "<span>Mùa hè ý nghĩa cho sinh viên — Chương trình cho người trẻ</span>"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 20,
+      "text": "<h2 class=\"mb-3 text-xl font-semibold text-slate-900 dark:text-white\">1. Tạo tài khoản</h2>"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 28,
+      "text": "<h2 class=\"mb-3 text-xl font-semibold text-slate-900 dark:text-white\">2. Xác minh danh tính</h2>"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 37,
+      "text": "<h2 class=\"mb-3 text-xl font-semibold text-slate-900 dark:text-white\">3. Hoàn thành hồ sơ</h2>"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 39,
+      "text": "Hồ sơ của bạn gồm 3 phần: <strong>Identity</strong> (ảnh, tuổi), <strong>Intent</strong> (mục tiêu quan hệ),"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 40,
+      "text": "và <strong>Compatibility</strong> (giá trị, lối sống, ranh giới)."
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 46,
+      "text": "<h2 class=\"mb-3 text-xl font-semibold text-slate-900 dark:text-white\">4. Nhận gợi ý</h2>"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 54,
+      "text": "<h2 class=\"mb-3 text-xl font-semibold text-slate-900 dark:text-white\">5. Trò chuyện an toàn</h2>"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 70,
+      "text": "<h2 class=\"mb-3 text-xl font-semibold text-slate-900 dark:text-white\">7. Báo cáo & Kháng cáo</h2>"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 79,
+      "text": "<strong>Cần hỗ trợ?</strong> Liên hệ <a href=\"mailto:support@muonnoi.org\" class=\"underline\">support@muonnoi.org</a>"
+    },
+    {
+      "file": "src/pages/guide.astro",
+      "line": 80,
+      "text": "hoặc xem <a href=\"/safety\" class=\"underline\">trang An toàn</a>."
+    },
+    {
+      "file": "src/pages/login.astro",
+      "line": 8,
+      "text": "<MainLayout title=\"Đăng nhập — Kết Nối Muôn Nơi\" description=\"Đăng nhập vào Kết Nối Muôn Nơi\">"
+    },
+    {
+      "file": "src/pages/login.astro",
+      "line": 13,
+      "text": "<h1 class=\"text-2xl font-bold text-slate-900 dark:text-white\">Đăng nhập</h1>"
+    },
+    {
+      "file": "src/pages/matching.astro",
+      "line": 8,
+      "text": "<MainLayout title=\"Khám phá — Kết Nối Muôn Nơi\" description=\"Những gợi ý kết nối phù hợp với bạn\">"
+    },
+    {
+      "file": "src/pages/matching.astro",
+      "line": 14,
+      "text": "<h1 class=\"text-2xl font-bold text-slate-900 dark:text-white\">Gợi ý hôm nay</h1>"
+    },
+    {
+      "file": "src/pages/matching.astro",
+      "line": 15,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">5–12 gợi ý chất lượng được chọn riêng cho bạn</p>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 7,
+      "text": "<MainLayout title=\"Chính sách riêng tư — Kết Nối Muôn Nơi\" description=\"Chính sách riêng tư Kết Nối Muôn Nơi\">"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 11,
+      "text": "<h1 class=\"mb-6 text-3xl font-bold text-slate-900 dark:text-white\">Chính sách riêng tư</h1>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 13,
+      "text": "<p class=\"text-sm text-slate-500\">Có hiệu lực: 2026. Phiên bản v0.1.</p>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 16,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">1. Dữ liệu chúng tôi thu thập</h2>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 18,
+      "text": "<li>Email, nickname, tuổi, giới tính, thành phố</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 19,
+      "text": "<li>Ảnh selfie (để xác minh, không lưu gốc)</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 20,
+      "text": "<li>Hồ sơ: intent, giá trị, lối sống, ranh giới</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 21,
+      "text": "<li>Nhật ký hoạt động: match, chat, report</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 22,
+      "text": "<li>Dữ liệu thiết bị: loại trình duyệt, OS (không tracking)</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 27,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">2. Dữ liệu chúng tôi KHÔNG thu thập</h2>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 29,
+      "text": "<li>Không lưu ID gốc (CMND/CCCD/Hộ chiếu)</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 30,
+      "text": "<li>Không lưu vị trí chính xác (chỉ vùng/thành phố)</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 31,
+      "text": "<li>Không sử dụng cookie tracking quảng cáo</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 32,
+      "text": "<li>Không bán dữ liệu cho bên thứ ba</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 45,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">4. Quyền của bạn</h2>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 47,
+      "text": "<li>Xem dữ liệu của bạn</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 48,
+      "text": "<li>Sửa dữ liệu sai</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 49,
+      "text": "<li>Xóa tài khoản và toàn bộ dữ liệu (hard-delete)</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 50,
+      "text": "<li>Tải xuống dữ liệu của bạn</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 51,
+      "text": "<li>Rút lời đồng ý (unsubscribe, delete)</li>"
+    },
+    {
+      "file": "src/pages/privacy.astro",
+      "line": 56,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">5. Liên hệ</h2>"
+    },
+    {
+      "file": "src/pages/profile.astro",
+      "line": 8,
+      "text": "<MainLayout title=\"Hồ sơ — Kết Nối Muôn Nơi\" description=\"Quản lý hồ sơ của bạn\">"
+    },
+    {
+      "file": "src/pages/profile.astro",
+      "line": 12,
+      "text": "<h1 class=\"mb-2 text-2xl font-bold text-slate-900 dark:text-white\">Hồ sơ của bạn</h1>"
+    },
+    {
+      "file": "src/pages/register.astro",
+      "line": 8,
+      "text": "<MainLayout title=\"Đăng ký — Kết Nối Muôn Nơi\" description=\"Tạo tài khoản Kết Nối Muôn Nơi\">"
+    },
+    {
+      "file": "src/pages/register.astro",
+      "line": 13,
+      "text": "<h1 class=\"text-2xl font-bold text-slate-900 dark:text-white\">Tạo tài khoản</h1>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 18,
+      "text": "Một tính năng hỗ trợ an toàn <strong>tuỳ chọn</strong> khi bạn hẹn gặp người từ nền tảng."
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 25,
+      "text": "<h2 class=\"mb-4 text-xl font-semibold text-slate-900 dark:text-white\">Checklist trước khi hẹn</h2>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 29,
+      "text": "<span>Đã xác minh cấp độ đối phương (càng cao càng tốt)</span>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 33,
+      "text": "<span>Đã chat đủ lâu để cảm thấy thoải mái</span>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 37,
+      "text": "<span>Chọn địa điểm công cộng, đông người</span>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 41,
+      "text": "<span>Thông báo cho bạn bè/người thân về cuộc hẹn</span>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 45,
+      "text": "<span>Tự sắp xếm phương tiện đi về (không đi chung ngay)</span>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 49,
+      "text": "<span>Không mang theo nhiều tiền mặt hoặc vật có giá trị cao</span>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 63,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Xác nhận đã đến nơi. Gửi thông báo tự động cho người bạn đã chỉ định.</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 67,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Xác nhận đã về nhà an toàn. Tự động kết thúc phiên Safe Date.</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 77,
+      "text": "<h2 class=\"mb-4 text-xl font-semibold text-red-900 dark:text-red-100\">Nút trợ giúp nhanh</h2>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 82,
+      "text": "<p><strong>Nhấn 1 lần:</strong> Gửi vị trí hiện tại và thông báo cho người liên hệ khẩn.</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 83,
+      "text": "<p><strong>Nhấn 2 lần liên tiếp:</strong> Kích hoạt ghi âm môi trường (nếu được phép) và gửi cảnh báo nâng cao.</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 84,
+      "text": "<p><strong>Nhấn giữ 3 giây:</strong> Gọi đường dây nóng an toàn (nếu đã cấu hình).</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 96,
+      "text": "<h2 class=\"mb-4 text-xl font-semibold text-slate-900 dark:text-white\">Nguyên tắc an toàn</h2>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 101,
+      "text": "<div class=\"font-semibold\">Luôn báo cho ai đó</div>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 102,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Nói với ít nhất một người bạn về địa điểm, thời gian, và người bạn sẽ gặp.</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 108,
+      "text": "<div class=\"font-semibold\">Chỗ công cộng đầu tiên</div>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 109,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Lần gặp đầu tiên nên ở quán cà phê, nhà hàng, hoặc không gian công cộng có người qua lại.</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 115,
+      "text": "<div class=\"font-semibold\">Tự chủ di chuyển</div>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 116,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Tự đi xe riêng, xe công cộng, hoặc taxi. Tránh đi chung xe với người lạ ngay lần đầu.</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 122,
+      "text": "<div class=\"font-semibold\">Không chuyển tiền</div>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 123,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Không bao giờ chuyển tiền, gửi thẻ tín dụng, hoặc đầu tư vào người bạn vừa gặp trên nền tảng.</p>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 129,
+      "text": "<div class=\"font-semibold\">Giữ liên lạc trên nền tảng</div>"
+    },
+    {
+      "file": "src/pages/safe-date.astro",
+      "line": 130,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Tránh chuyển sang Zalo, Telegram, WhatsApp quá sớm. Hệ thống chỉ có thể giúp đỡ khi chat ở đây.</p>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 14,
+      "text": "<h1 class=\"mb-6 text-3xl font-bold text-slate-900 dark:text-white\">Chính sách an toàn</h1>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 16,
+      "text": "<p class=\"text-sm text-slate-500\">Có hiệu lực: 2026. Phiên bản v0.1.</p>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 19,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">1. Cam kết</h2>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 20,
+      "text": "<p>An toàn người dùng là ưu tiên P0. Mọi tính năng phải vượt qua đánh giá tác động an toàn trước khi triển khai.</p>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 24,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">2. Phân loại rủi ro</h2>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 26,
+      "text": "<li><strong>Low:</strong> Spam nhẹ, tin nhắn không phù hợp</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 27,
+      "text": "<li><strong>Medium:</strong> Quấy rối nhẹ, vi phạm nội quy, fake profile</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 28,
+      "text": "<li><strong>High:</strong> Scam, quấy rối nghiêm trọng, deepfake</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 29,
+      "text": "<li><strong>Emergency:</strong> Đe dọa tính mạng, CSAM, bạo lực</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 34,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">3. Cấm tuyệt đối</h2>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 36,
+      "text": "<li>Trẻ vị thành niên (&lt;18) trong hẹn hò người lớn</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 38,
+      "text": "<li>Deepfake/AI persona giả mạo</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 39,
+      "text": "<li>Lừa đảo tài chính</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 40,
+      "text": "<li>Buôn người / môi giới</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 45,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">4. Biện pháp an toàn</h2>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 47,
+      "text": "<li>Age gate tại đăng ký</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 48,
+      "text": "<li>ID/liveness check khi nghi ngờ tuổi</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 49,
+      "text": "<li>Safe Date Mode trước khi gặp offline</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 51,
+      "text": "<li>Check-in/check-out cho hẹn offline</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 52,
+      "text": "<li>Emergency contact bắt buộc</li>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 57,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">5. Hợp tác cơ quan chức năng</h2>"
+    },
+    {
+      "file": "src/pages/safety-policy.astro",
+      "line": 58,
+      "text": "<p>Chúng tôi hợp tác đầy đủ với cơ quan chức năng. Báo cáo CSAM ngay lập tức cho Bộ Công an (VN) và NCMEC (US/UK).</p>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 24,
+      "text": "<h2 class=\"text-xl font-semibold text-slate-900 dark:text-white\">Hệ thống xác minh</h2>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 27,
+      "text": "<div class=\"mb-2 font-semibold text-slate-900 dark:text-white\">Cấp 1 — Cơ bản</div>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 28,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Email + SĐT + Tuổi</p>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 31,
+      "text": "<div class=\"mb-2 font-semibold text-slate-900 dark:text-white\">Cấp 2 — Xác thực</div>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 35,
+      "text": "<div class=\"mb-2 font-semibold text-slate-900 dark:text-white\">Cấp 3 — Tin cậy</div>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 36,
+      "text": "<p class=\"text-sm text-slate-600 dark:text-slate-400\">Video intro + Hành vi sạch</p>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 39,
+      "text": "<div class=\"mb-2 font-semibold text-slate-900 dark:text-white\">Cấp 4 — Cộng đồng</div>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 44,
+      "text": "<h2 class=\"text-xl font-semibold text-slate-900 dark:text-white\">Tính năng bảo vệ</h2>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 46,
+      "text": "<li><strong>Safe Date Mode:</strong> Lên kế hoạch hẹn, check-in/check-out, nút khẩn cấp.</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 47,
+      "text": "<li><strong>Money Request Shield:</strong> Phát hiện yêu cầu tiền/tài trợ/scam trong chat.</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 48,
+      "text": "<li><strong>Off-platform Warning:</strong> Cảnh báo khi bị kéo sang Telegram/WhatsApp quá sớm.</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 49,
+      "text": "<li><strong>Transparent Appeal:</strong> Lý do ban/suspend rõ ràng, có thể kháng cáo.</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 50,
+      "text": "<li><strong>Geo mờ:</strong> Không hiển thị vị trí chính xác, chỉ vùng/khu vực.</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 53,
+      "text": "<h2 class=\"text-xl font-semibold text-slate-900 dark:text-white\">Cam kết zero tolerance</h2>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 56,
+      "text": "<li>Không dung thứ cho nội dung liên quan trẻ em (CSAM)</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 57,
+      "text": "<li>Không dung thứ cho quấy rối nghiêm trọng</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 58,
+      "text": "<li>Không dung thứ cho lừa đảo tài chính</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 59,
+      "text": "<li>Không dung thứ cho deepfake/AI persona giả mạo</li>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 63,
+      "text": "<h2 class=\"text-xl font-semibold text-slate-900 dark:text-white\">SLA phản hồi</h2>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 67,
+      "text": "<th class=\"py-2 text-left font-semibold text-slate-900 dark:text-white\">Mức độ</th>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 68,
+      "text": "<th class=\"py-2 text-left font-semibold text-slate-900 dark:text-white\">Thời gian</th>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 72,
+      "text": "<tr class=\"border-b border-slate-100 dark:border-slate-800\"><td class=\"py-2\">Emergency (đe dọa tính mạng, CSAM)</td><td class=\"py-2 font-medium text-red-600 dark:text-red-400\">&lt; 4 giờ</td></tr>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 73,
+      "text": "<tr class=\"border-b border-slate-100 dark:border-slate-800\"><td class=\"py-2\">High (scam, quấy rối nghiêm trọng)</td><td class=\"py-2 font-medium text-orange-600 dark:text-orange-400\">&lt; 24 giờ</td></tr>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 74,
+      "text": "<tr class=\"border-b border-slate-100 dark:border-slate-800\"><td class=\"py-2\">Medium (fake profile, vi phạm nội quy)</td><td class=\"py-2 font-medium text-yellow-600 dark:text-yellow-400\">&lt; 48 giờ</td></tr>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 75,
+      "text": "<tr><td class=\"py-2\">Low (spam nhẹ)</td><td class=\"py-2 font-medium text-slate-600 dark:text-slate-400\">&lt; 72 giờ</td></tr>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 81,
+      "text": "Nếu bạn gặp tình huống khẩn cấp, hãy liên hệ <strong>safety@muonnoi.org</strong>"
+    },
+    {
+      "file": "src/pages/safety.astro",
+      "line": 83,
+      "text": "vui lòng gọi <strong>113</strong> (Công an Việt Nam)."
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 7,
+      "text": "<MainLayout title=\"Điều khoản — Kết Nối Muôn Nơi\" description=\"Điều khoản sử dụng Kết Nối Muôn Nơi\">"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 11,
+      "text": "<h1 class=\"mb-6 text-3xl font-bold text-slate-900 dark:text-white\">Điều khoản sử dụng</h1>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 13,
+      "text": "<p class=\"text-sm text-slate-500\">Có hiệu lực: 2026. Phiên bản v0.1.</p>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 16,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">1. Điều kiện sử dụng</h2>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 17,
+      "text": "<p>Bạn phải từ 18 tuổi trở lên. Bạn phải cung cấp thông tin chính xác. Bạn không được giả mạo danh tính.</p>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 21,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">2. Hành vi cấm</h2>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 23,
+      "text": "<li>Quấy rối, đe dọa, hoặc kỳ thị</li>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 24,
+      "text": "<li>Lừa đảo tài chính hoặc yêu cầu tiền</li>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 25,
+      "text": "<li>Chia sẻ nội dung khiêu dâm không đồng ý</li>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 26,
+      "text": "<li>Deepfake hoặc ảnh AI giả mạo</li>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 27,
+      "text": "<li>Tạo nhiều tài khoản để lách ban</li>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 28,
+      "text": "<li>Khai thác trẻ vị thành niên (zero tolerance)</li>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 33,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">3. Xác minh</h2>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 34,
+      "text": "<p>Bạn đồng ý xác minh danh tính qua selfie/liveness. Chúng tôi không lưu ảnh gốc, chỉ lưu hash để so khớp.</p>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 38,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">4. Dữ liệu và quyền riêng tư</h2>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 39,
+      "text": "<p>Chúng tôi không bán dữ liệu cá nhân. Chúng tôi không tracking quảng cáo. Xem <a href=\"/privacy\" class=\"text-teal-700 underline dark:text-teal-400\">Chính sách riêng tư</a>.</p>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 43,
+      "text": "<h2 class=\"mb-2 text-lg font-semibold text-slate-900 dark:text-white\">5. Chấm dứt</h2>"
+    },
+    {
+      "file": "src/pages/terms.astro",
+      "line": 44,
+      "text": "<p>Chúng tôi có quyền suspend hoặc ban tài khoản vi phạm. Bạn có quyền kháng cáo qua appeal form.</p>"
+    }
+  ]
+}

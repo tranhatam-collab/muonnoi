@@ -1,0 +1,150 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import RiskBanner from '../components/RiskBanner.astro';
+
+const title = 'Gửi quan tâm đầu tư · Đầu Tư Muôn Nơi';
+const description = 'Form bày tỏ quan tâm đầu tư vào các dự án trong hệ sinh thái Muôn Nơi.';
+---
+
+<Layout title={title} description={description} canonical="https://dautu.muonnoi.org/interest/">
+  <Navigation />
+
+  <div class="bg-brand-900 text-white py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold">Gửi quan tâm đầu tư</h1>
+      <p class="text-brand-100 mt-2">Bước đầu tiên — chỉ thông tin, chưa phải giao dịch.</p>
+    </div>
+  </div>
+
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <RiskBanner />
+
+    <div class="mt-10 bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Thông tin nhà đầu tư</h2>
+
+      <form id="interestForm" class="space-y-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Họ và tên <span class="text-red-500">*</span></label>
+            <input type="text" name="fullName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
+            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Số điện thoại</label>
+            <input type="tel" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Quốc gia cư trú <span class="text-red-500">*</span></label>
+            <input type="text" name="country" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Loại nhà đầu tư <span class="text-red-500">*</span></label>
+            <select name="investorType" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500">
+              <option value="">-- Chọn --</option>
+              <option value="individual">Cá nhân</option>
+              <option value="angel">Angel Investor</option>
+              <option value="corporate">Doanh nghiệp</option>
+              <option value="fund">Quỹ đầu tư</option>
+              <option value="strategic">Đối tác chiến lược</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Dự án quan tâm <span class="text-red-500">*</span></label>
+            <select name="projectInterest" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500">
+              <option value="">-- Chọn --</option>
+              <option value="portfolio">Toàn bộ hệ sinh thái</option>
+              <option value="ketnoi">Kết Nối Muôn Nơi</option>
+              <option value="nhachung">Nhà Chung Muôn Nơi</option>
+              <option value="dulich">Đường Muôn Nơi</option>
+              <option value="lamviec">Làm Việc Muôn Nơi</option>
+              <option value="hoctap">Học Tập Muôn Nơi</option>
+              <option value="cuocsong">Cuộc Sống Muôn Nơi</option>
+              <option value="nguoiviet">Người Việt Muôn Nơi</option>
+              <option value="plays">Plays Muôn Nơi</option>
+              <option value="family">Family Muôn Nơi</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-sm font-medium text-gray-700 mb-1">Mức quan tâm dự kiến</label>
+            <select name="amountRange" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500">
+              <option value="">-- Chọn --</option>
+              <option value="under-10k">Dưới 10.000 USD</option>
+              <option value="10k-50k">10.000 – 50.000 USD</option>
+              <option value="50k-100k">50.000 – 100.000 USD</option>
+              <option value="100k-500k">100.000 – 500.000 USD</option>
+              <option value="above-500k">Trên 500.000 USD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="space-y-3 pt-4 border-t border-gray-200">
+          <label class="flex items-start gap-3 cursor-pointer">
+            <input type="checkbox" name="riskAcknowledged" required class="mt-1 h-4 w-4 text-brand-600 border-gray-300 rounded focus:ring-brand-500" />
+            <span class="text-sm text-gray-700">Tôi đã đọc và hiểu <a href="/risk/" class="text-brand-600 underline">cảnh báo rủi ro</a>.</span>
+          </label>
+          <label class="flex items-start gap-3 cursor-pointer">
+            <input type="checkbox" name="notTransactionAcknowledged" required class="mt-1 h-4 w-4 text-brand-600 border-gray-300 rounded focus:ring-brand-500" />
+            <span class="text-sm text-gray-700">Tôi hiểu đây chỉ là bày tỏ quan tâm, chưa phải giao dịch đầu tư.</span>
+          </label>
+          <label class="flex items-start gap-3 cursor-pointer">
+            <input type="checkbox" name="contactAllowed" required class="mt-1 h-4 w-4 text-brand-600 border-gray-300 rounded focus:ring-brand-500" />
+            <span class="text-sm text-gray-700">Tôi đồng ý được đội phụ trách liên hệ qua email / điện thoại.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="w-full md:w-auto px-8 py-3 bg-brand-600 text-white rounded-lg font-semibold text-lg hover:bg-brand-700 transition">
+          Gửi thông tin quan tâm
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('interestForm');
+    const submitBtn = form?.querySelector('button[type="submit"]');
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!submitBtn) return;
+
+      const originalText = submitBtn.textContent || '';
+      submitBtn.textContent = 'Đang gửi...';
+      submitBtn.setAttribute('disabled', 'true');
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const res = await fetch('/api/interest', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+
+        if (res.ok) {
+          form.innerHTML = `<div class="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
+            <h3 class="text-xl font-bold text-green-800 mb-2">Đã nhận thông tin quan tâm</h3>
+            <p class="text-green-700">Cảm ơn bạn đã quan tâm. Đội phụ trách sẽ liên hệ trong vòng 3–5 ngày làm việc.</p>
+            <p class="text-sm text-green-600 mt-4">Lưu ý: Đây chỉ là bày tỏ quan tâm, chưa phải giao dịch đầu tư.</p>
+          </div>`;
+        } else {
+          const err = await res.json().catch(() => ({}));
+          alert('Lỗi: ' + (err.error || 'Không thể gửi. Vui lòng thử lại.'));
+          submitBtn.textContent = originalText;
+          submitBtn.removeAttribute('disabled');
+        }
+      } catch {
+        alert('Lỗi kết nối. Vui lòng thử lại.');
+        submitBtn.textContent = originalText;
+        submitBtn.removeAttribute('disabled');
+      }
+    });
+  </script>
+
+  <Footer />
+</Layout>

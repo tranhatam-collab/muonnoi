@@ -20,7 +20,7 @@ export const onRequestPost: PagesFunction = async (ctx) => {
 
   const link = `${env.APP_ORIGIN}/functions/api/auth/callback?token=${encodeURIComponent(token)}`;
 
-  // send via Resend
+  // send via mail.iai.one
   const subject = `${env.APP_NAME_VI} / ${env.APP_NAME_EN} – Magic Link`;
   const html = `
   <div style="font-family:ui-sans-serif,system-ui;line-height:1.5">
@@ -30,17 +30,19 @@ export const onRequestPost: PagesFunction = async (ctx) => {
     <p style="color:#666;margin-top:16px">Nếu bạn không yêu cầu, hãy bỏ qua email này.</p>
   </div>`;
 
-  const r = await fetch("https://api.resend.com/emails", {
+  const r = await fetch(`${env.MAIL_API_BASE_URL}/send`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      "authorization": `Bearer ${env.RESEND_API_KEY}`,
+      "x-api-key": env.MAIL_API_KEY,
+      "x-workspace-id": env.MAIL_API_WORKSPACE_ID || "muonnoi.org",
     },
     body: JSON.stringify({
-      from: env.MAIL_FROM,
+      from: env.EMAIL_FROM_NOREPLY || env.EMAIL_FROM,
       to: [email],
       subject,
       html,
+      text: `Đăng nhập / Sign in: ${link}\n\nNếu bạn không yêu cầu, hãy bỏ qua email này.`,
     }),
   });
 

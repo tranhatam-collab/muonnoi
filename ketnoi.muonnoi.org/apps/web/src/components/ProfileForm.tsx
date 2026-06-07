@@ -56,10 +56,33 @@ export default function ProfileForm() {
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // TODO: API call
-    await new Promise((r) => setTimeout(r, 1000));
+    try {
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/users/me', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token && { Authorization: `Bearer ${token}` }),
+        },
+        body: JSON.stringify({
+          bio: profile.bio,
+          intent: profile.intent,
+          values: JSON.stringify(profile.values),
+          boundaries: profile.boundaries,
+          dealbreakers: profile.dealbreakers,
+        }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || 'Lưu hồ sơ thất bại');
+        setLoading(false);
+        return;
+      }
+      setSaved(true);
+    } catch (err) {
+      alert('Lỗi kết nối máy chủ. Vui lòng thử lại.');
+    }
     setLoading(false);
-    setSaved(true);
   };
 
   return (

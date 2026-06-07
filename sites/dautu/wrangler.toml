@@ -1,0 +1,7 @@
+name = "dautu-muonnoi-org"
+compatibility_date = "2026-01-01"
+
+[[d1_databases]]
+binding = "D1"
+database_name = "dautu-muonnoi-db"
+database_id = "460d0379-9544-4de0-abf5-b61fd54a59b3"

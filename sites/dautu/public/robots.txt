@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /deal-room/
+Disallow: /data-room/
+
+Sitemap: https://dautu.muonnoi.org/sitemap.xml

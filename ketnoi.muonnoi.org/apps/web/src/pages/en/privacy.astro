@@ -1,0 +1,57 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+const title = 'Privacy Policy — Kết Nối Muôn Nơi';
+const description = 'How we collect, use, and protect your data.';
+---
+
+<MainLayout title={title} description={description}>
+  <Header client:load />
+  <main class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-teal-800 mb-8">Privacy Policy</h1>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Data We Collect</h2>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li>Account information (email, nickname)</li>
+        <li>Profile data (photos, bio, preferences)</li>
+        <li>Verification data (processed securely, stored encrypted)</li>
+        <li>Usage data (for platform improvement)</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Data We Do NOT Collect</h2>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li>Precise location history</li>
+        <li>Contacts from your device</li>
+        <li>Browsing activity outside our platform</li>
+        <li>Sensitive personal data without explicit consent</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Zero-Knowledge Verification</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Identity verification uses zero-knowledge proofs where possible. We verify you are a real person
+        without storing unnecessary personal data. Government IDs are processed by certified partners and not retained.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Your Rights</h2>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li>Right to access your data</li>
+        <li>Right to correct inaccurate data</li>
+        <li>Right to delete your account and data</li>
+        <li>Right to data portability</li>
+      </ul>
+      <p class="text-gray-600 mt-3">
+        Contact <a href="mailto:privacy@muonnoi.org" class="text-teal-600 underline">privacy@muonnoi.org</a> for data requests.
+      </p>
+    </section>
+  </main>
+  <Footer />
+</MainLayout>

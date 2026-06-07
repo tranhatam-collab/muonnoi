@@ -18,6 +18,18 @@ export default {
           900: '#134e4a',
           950: '#042f2e',
         },
+        // 9-level verification nickname colors
+        level: {
+          1: 'transparent',
+          2: '#C8CCD2',
+          3: '#4DA3FF',
+          4: '#30C97A',
+          5: '#F5C542',
+          6: '#FF8A3D',
+          7: '#E3425F',
+          8: '#9B6DFF',
+          9: '#4B1FAF',
+        },
       },
     },
   },

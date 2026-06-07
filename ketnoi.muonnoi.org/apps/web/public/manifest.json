@@ -1,0 +1,22 @@
+{
+  "name": "Kết Nối Muôn Nơi",
+  "short_name": "Kết Nối",
+  "description": "Meet real people, build real connections",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d9488",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["social", "lifestyle"],
+  "lang": "vi",
+  "dir": "ltr"
+}

@@ -52,10 +52,29 @@ export default function RegisterForm() {
         return;
       }
       setLoading(true);
-      // TODO: call API /api/auth/register
-      await new Promise((r) => setTimeout(r, 2000));
+      try {
+        const res = await fetch('/api/auth/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: form.email,
+            nickname: form.nickname,
+            age: parseInt(form.age),
+            gender: form.gender,
+            city: form.city,
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          setError(data.error || 'Đăng ký thất bại');
+          setLoading(false);
+          return;
+        }
+        setStep(4);
+      } catch (err) {
+        setError('Lỗi kết nối máy chủ. Vui lòng thử lại.');
+      }
       setLoading(false);
-      setStep(4);
     }
   };
 

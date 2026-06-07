@@ -1,0 +1,51 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+const title = 'Terms of Service — Kết Nối Muôn Nơi';
+const description = 'Conditions for using the Kết Nối Muôn Nơi platform.';
+---
+
+<MainLayout title={title} description={description}>
+  <Header client:load />
+  <main class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-teal-800 mb-8">Terms of Service</h1>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">1. Eligibility</h2>
+      <p class="text-gray-600 leading-relaxed">
+        You must be at least 18 years old to use this platform. We do not allow accounts created by minors.
+        Any account found to belong to a person under 18 will be permanently terminated.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">2. Prohibited Conduct</h2>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li>Harassment, hate speech, or discrimination</li>
+        <li>Solicitation, prostitution, or commercial sex work</li>
+        <li>Fraud, scams, or financial exploitation</li>
+        <li>Sharing personal information of others without consent</li>
+        <li>Impersonation or fake profiles</li>
+        <li>Promotion of illegal activities</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">3. Verification</h2>
+      <p class="text-gray-600 leading-relaxed">
+        We reserve the right to require identity verification at any time. Refusal to verify may result in account restrictions.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">4. Termination</h2>
+      <p class="text-gray-600 leading-relaxed">
+        We may suspend or terminate accounts that violate these terms without prior notice.
+        Serious violations may be reported to law enforcement.
+      </p>
+    </section>
+  </main>
+  <Footer />
+</MainLayout>

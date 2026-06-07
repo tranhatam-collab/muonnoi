@@ -18,9 +18,14 @@ APP_ORIGIN = "https://muonnoi.org"
 APP_NAME_VI = "Muôn Nói"
 APP_NAME_EN = "Muon Noi"
 SESSION_COOKIE = "mn_session"
+MAIL_API_BASE_URL = "https://mail.iai.one/_mail/v1"
+EMAIL_FROM = "Muôn Nói <hello@muonnoi.org>"
+EMAIL_FROM_NOREPLY = "Muôn Nói <noreply@muonnoi.org>"
+SUPPORT_EMAIL = "support@muonnoi.org"
+MAIL_API_WORKSPACE_ID = "muonnoi.org"
 
 # Required secrets (set in Cloudflare dashboard as Secrets, not here):
 # AUTH_SECRET
-# RESEND_API_KEY
-# MAIL_FROM
+# MAIL_API_KEY          # From mail.iai.one (replaces RESEND_API_KEY)
+# MAIL_API_WORKSPACE_ID # Paired workspace id for MAIL_API_KEY
 # ADMIN_EMAILS (comma-separated)

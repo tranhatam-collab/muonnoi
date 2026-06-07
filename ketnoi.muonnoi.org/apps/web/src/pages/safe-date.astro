@@ -1,0 +1,139 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout
+  title="Safe Date Mode — Kết Nối Muôn Nơi"
+  description="Lên kế hoạch hẹn gặp an toàn. Check-in, check-out, và nút trợ giúp nhanh. Optional safety assistance, không phải dịch vụ bảo vệ 24/7."
+>
+  <Header client:load />
+  <main class="px-4 py-16">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+        Safe Date Mode
+      </h1>
+      <p class="mb-8 text-lg text-slate-600 dark:text-slate-400">
+        Một tính năng hỗ trợ an toàn <strong>tuỳ chọn</strong> khi bạn hẹn gặp người từ nền tảng.
+        Không phải dịch vụ bảo vệ 24/7. Không thay thế quyết định cá nhân.
+      </p>
+
+      <div class="space-y-8">
+        <!-- Date Plan Checklist -->
+        <section class="rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+          <h2 class="mb-4 text-xl font-semibold text-slate-900 dark:text-white">Checklist trước khi hẹn</h2>
+          <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Đã xác minh cấp độ đối phương (càng cao càng tốt)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Đã chat đủ lâu để cảm thấy thoải mái</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Chọn địa điểm công cộng, đông người</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Thông báo cho bạn bè/người thân về cuộc hẹn</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Tự sắp xếm phương tiện đi về (không đi chung ngay)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600" />
+              <span>Không mang theo nhiều tiền mặt hoặc vật có giá trị cao</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Check-in / Check-out -->
+        <section class="rounded-xl border border-teal-200 bg-teal-50 p-6 dark:border-teal-900 dark:bg-teal-950">
+          <h2 class="mb-4 text-xl font-semibold text-teal-900 dark:text-teal-100">Check-in & Check-out</h2>
+          <p class="mb-4 text-teal-800 dark:text-teal-200">
+            Khi bật Safe Date Mode cho một cuộc hẹn, bạn có thể:
+          </p>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-lg bg-white p-4 dark:bg-slate-900">
+              <div class="mb-2 font-semibold text-slate-900 dark:text-white">Check-in</div>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Xác nhận đã đến nơi. Gửi thông báo tự động cho người bạn đã chỉ định.</p>
+            </div>
+            <div class="rounded-lg bg-white p-4 dark:bg-slate-900">
+              <div class="mb-2 font-semibold text-slate-900 dark:text-white">Check-out</div>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Xác nhận đã về nhà an toàn. Tự động kết thúc phiên Safe Date.</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-teal-700 dark:text-teal-300">
+            Nếu không check-out sau thời gian dự kiến + 30 phút, hệ thống sẽ nhắc nhở bạn và người liên hệ khẩn.
+          </p>
+        </section>
+
+        <!-- Panic Shortcut -->
+        <section class="rounded-xl border border-red-200 bg-red-50 p-6 dark:border-red-900 dark:bg-red-950">
+          <h2 class="mb-4 text-xl font-semibold text-red-900 dark:text-red-100">Nút trợ giúp nhanh</h2>
+          <p class="mb-4 text-red-800 dark:text-red-200">
+            Trong Safe Date Mode, bạn có thể kích hoạt nút trợ giúp nhanh từ màn hình chính hoặc widget.
+          </p>
+          <div class="space-y-2 text-sm text-red-700 dark:text-red-300">
+            <p><strong>Nhấn 1 lần:</strong> Gửi vị trí hiện tại và thông báo cho người liên hệ khẩn.</p>
+            <p><strong>Nhấn 2 lần liên tiếp:</strong> Kích hoạt ghi âm môi trường (nếu được phép) và gửi cảnh báo nâng cao.</p>
+            <p><strong>Nhấn giữ 3 giây:</strong> Gọi đường dây nóng an toàn (nếu đã cấu hình).</p>
+          </div>
+          <div class="mt-4 rounded-lg bg-white p-4 dark:bg-slate-900">
+            <p class="text-sm font-medium text-red-800 dark:text-red-300">
+              Lưu ý quan trọng: Đây là tính năng hỗ trợ an toàn tuỳ chọn. Không phải dịch vụ bảo vệ khẩn cấp 24/7.
+              Trong trường hợp nguy hiểm đến tính mạng, hãy gọi cơ quan chức năng địa phương ngay lập tức.
+            </p>
+          </div>
+        </section>
+
+        <!-- Safety Tips -->
+        <section class="rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+          <h2 class="mb-4 text-xl font-semibold text-slate-900 dark:text-white">Nguyên tắc an toàn</h2>
+          <div class="space-y-4 text-slate-700 dark:text-slate-300">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">🧭</div>
+              <div>
+                <div class="font-semibold">Luôn báo cho ai đó</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Nói với ít nhất một người bạn về địa điểm, thời gian, và người bạn sẽ gặp.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">🏛️</div>
+              <div>
+                <div class="font-semibold">Chỗ công cộng đầu tiên</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Lần gặp đầu tiên nên ở quán cà phê, nhà hàng, hoặc không gian công cộng có người qua lại.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">🚗</div>
+              <div>
+                <div class="font-semibold">Tự chủ di chuyển</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Tự đi xe riêng, xe công cộng, hoặc taxi. Tránh đi chung xe với người lạ ngay lần đầu.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">💰</div>
+              <div>
+                <div class="font-semibold">Không chuyển tiền</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Không bao giờ chuyển tiền, gửi thẻ tín dụng, hoặc đầu tư vào người bạn vừa gặp trên nền tảng.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 text-2xl">📵</div>
+              <div>
+                <div class="font-semibold">Giữ liên lạc trên nền tảng</div>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Tránh chuyển sang Zalo, Telegram, WhatsApp quá sớm. Hệ thống chỉ có thể giúp đỡ khi chat ở đây.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

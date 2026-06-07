@@ -1,0 +1,55 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+const title = 'User Guide — Kết Nối Muôn Nơi';
+const description = 'How to get started and stay safe on the platform.';
+---
+
+<MainLayout title={title} description={description}>
+  <Header client:load />
+  <main class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-teal-800 mb-8">User Guide</h1>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">1. Create Your Account</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Sign up with your email. You must be 18 or older. Choose a nickname — your real name is optional.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">2. Complete Verification</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Verify your email first. For better matching, complete ID verification. The higher your verification tier,
+        the more features you unlock.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">3. Build Your Profile</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Add photos, share your values, and define what you are looking for. Be honest — the algorithm
+        matches based on compatibility, not just appearance.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">4. Daily Matches</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Each day, you receive curated matches based on your values, interests, and compatibility scores.
+        Take time to read profiles before deciding.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">5. Chat Safely</h2>
+      <p class="text-gray-600 leading-relaxed">
+        All messages are encrypted. Never share financial information. If someone asks for money or tries to move
+        conversation to another platform, report immediately.
+      </p>
+    </section>
+  </main>
+  <Footer />
+</MainLayout>

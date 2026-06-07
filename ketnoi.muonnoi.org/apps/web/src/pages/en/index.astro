@@ -1,0 +1,20 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header';
+import Hero from '../../components/Hero';
+import Features from '../../components/Features';
+import Footer from '../../components/Footer';
+
+const title = 'Ket Noi Muon Noi — Meet Real People, Build Real Connections';
+const description = 'A safe, respectful platform for Vietnamese singles seeking meaningful relationships.';
+const canonicalURL = new URL('https://ketnoi.muonnoi.org/en');
+---
+
+<MainLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <Header client:load />
+  <main>
+    <Hero client:load />
+    <Features client:load />
+  </main>
+  <Footer />
+</MainLayout>

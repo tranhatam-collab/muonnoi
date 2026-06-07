@@ -27,9 +27,9 @@ const features = [
   },
   {
     icon: Gift,
-    title: 'Quà tặng ý nghĩa',
+    title: 'Biểu tượng quan tâm',
     description:
-      '99 món quà theo 9 khía cạnh cuộc sống. Thể hiện sự quan tâm, không mua tình cảm.',
+      '99 món biểu tượng theo 9 khía cạnh cuộc sống. Hoa cảm ơn, lời chúc, ngôi sao động viên, tách trà, cuốn sách, hành trình mới, hạt giống niềm tin. Không đổi ra tiền. Không cash out.',
   },
   {
     icon: Scale,

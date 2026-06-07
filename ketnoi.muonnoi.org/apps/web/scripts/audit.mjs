@@ -6,7 +6,6 @@
  * This script runs all sub-audits and generates a report.
  */
 
-import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -25,18 +24,6 @@ const COLOR = {
   cyan: '\x1b[36m',
   bold: '\x1b[1m',
 };
-
-function log(title, msg = '', color = 'reset') {
-  console.log(`${COLOR[color]}${COLOR.bold}[${title}]${COLOR.reset} ${msg}`);
-}
-
-function run(cmd, cwd = rootDir) {
-  try {
-    return execSync(cmd, { cwd, encoding: 'utf-8', stdio: 'pipe' });
-  } catch (e) {
-    return e.stdout || e.stderr || e.message;
-  }
-}
 
 // ─── CHECKS ─────────────────────────────────────────────
 
@@ -136,8 +123,11 @@ function auditI18n() {
   const issues = [];
   const pagesDir = path.join(rootDir, 'src/pages');
   if (fs.existsSync(pagesDir)) {
-    const pages = fs.readdirSync(pagesDir);
-    const hasI18nPages = pages.some((p) => p.startsWith('en/') || p.startsWith('vi/'));
+    const entries = fs.readdirSync(pagesDir);
+    const hasI18nPages = entries.some((p) => {
+      const fp = path.join(pagesDir, p);
+      return fs.statSync(fp).isDirectory() && (p === 'en' || p === 'vi');
+    });
     if (!hasI18nPages) {
       issues.push('No /en or /vi subdirectories for i18n routing');
     }

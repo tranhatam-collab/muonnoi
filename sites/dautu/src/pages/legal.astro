@@ -1,0 +1,85 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'Công bố pháp lý · Đầu Tư Muôn Nơi';
+const description = 'Thông tin pháp nhân, tuyên bố miễn trừ, và quy định pháp lý liên quan đến cổng đầu tư Muôn Nơi.';
+---
+
+<Layout title={title} description={description} canonical="https://dautu.muonnoi.org/legal/">
+  <Navigation />
+
+  <div class="bg-brand-900 text-white py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold">Công bố pháp lý</h1>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Pháp nhân</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">Điều phối quốc tế</h3>
+          <p class="text-gray-700 text-sm">VIET CAN NEW CORP</p>
+          <p class="text-gray-500 text-sm">United States</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">Đại diện thanh toán & vận hành VN</h3>
+          <p class="text-gray-700 text-sm">Công ty CP Giáo dục Truyền Thông Việt Can New</p>
+          <p class="text-gray-500 text-sm">Việt Nam</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">Đầu tư, kêu gọi, phát triển</h3>
+          <p class="text-gray-700 text-sm">Công ty CP Giáo dục Hành Trình Kasan</p>
+          <p class="text-gray-500 text-sm">Việt Nam</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Tuyên bố miễn trừ (Disclaimer)</h2>
+      <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 text-gray-700 leading-relaxed space-y-4">
+        <p>
+          <strong>dautu.muonnoi.org</strong> là cổng thông tin và tiếp nhận quan tâm đầu tư. 
+          <strong>Không phải</strong> trang bán cổ phần tự do, lời chào bán chứng khoán, hoặc cam kết lợi nhuận.
+        </p>
+        <p>
+          Mọi thông tin trên trang này chỉ nhằm mục đích cung cấp thông tin. 
+          Không phải tư vấn đầu tư, tư vấn pháp lý, hay tư vấn tài chính.
+        </p>
+        <p>
+          Nhà đầu tư cần tự đánh giá rủi ro và tham khảo ý kiến chuyên gia độc lập trước khi quyết định.
+        </p>
+        <p>
+          Thông tin tài khoản thanh toán chính thức chỉ được công bố trong tài liệu đã được kiểm duyệt hoặc trong hệ thống thanh toán chính thức liên kết với <code>pay.iai.one</code>.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Những gì chúng tôi KHÔNG làm</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Không chào bán cổ phần công khai.</li>
+        <li>Không hứa lợi nhuận, hoàn vốn, cổ tức.</li>
+        <li>Không nhận tiền tự động từ public page.</li>
+        <li>Không công bố định giá chính thức nếu chưa có legal memo.</li>
+        <li>Không công bố tài khoản thanh toán trên public page.</li>
+        <li>Form public chỉ là "bày tỏ quan tâm".</li>
+        <li>Deal room chỉ mở sau khi investor đủ điều kiện và legal review xong.</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Quy định theo khu vực</h2>
+      <div class="space-y-4 text-gray-700">
+        <p><strong>Hoa Kỳ (SEC Rule 506(c)):</strong> Nếu có general solicitation, người mua phải là accredited investors và issuer xác minh hợp lý trạng thái đó.</p>
+        <p><strong>Việt Nam (Luật Doanh nghiệp, PDPL):</strong> Tuân thủ quy định về gọi vốn, bảo vệ dữ liệu cá nhân, và thanh toán.</p>
+        <p><strong>Châu Âu (GDPR):</strong> Nếu có người dùng EU, áp dụng GDPR về xử lý dữ liệu cá nhân.</p>
+      </div>
+    </section>
+  </div>
+
+  <Footer />
+</Layout>

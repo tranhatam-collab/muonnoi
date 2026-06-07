@@ -1,0 +1,54 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+const title = 'Safety Center — Kết Nối Muôn Nơi';
+const description = 'Our safety commitments, verification tiers, and zero-tolerance policies.';
+---
+
+<MainLayout title={title} description={description}>
+  <Header client:load />
+  <main class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-teal-800 mb-8">Safety Center</h1>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Safety Commitments</h2>
+      <ul class="space-y-2 text-gray-600">
+        <li>Zero tolerance for harassment, abuse, or exploitation</li>
+        <li>Mandatory identity verification for all users</li>
+        <li>24/7 incident reporting with human review</li>
+        <li>Encrypted messaging with scam detection</li>
+        <li>Cooperation with law enforcement on all safety matters</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Verification Tiers</h2>
+      <div class="grid gap-4">
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold text-teal-700">Basic</h3>
+          <p class="text-gray-600 text-sm">Email verification required</p>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold text-teal-700">Verified</h3>
+          <p class="text-gray-600 text-sm">Government ID + selfie match</p>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold text-teal-700">Trusted</h3>
+          <p class="text-gray-600 text-sm">Background check + community standing</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-800 mb-3">Report an Incident</h2>
+      <p class="text-gray-600 mb-4">
+        If you or someone you know is in immediate danger, contact local emergency services.
+        For platform safety issues, report through the app or email <a href="mailto:safety@muonnoi.org" class="text-teal-600 underline">safety@muonnoi.org</a>.
+      </p>
+      <p class="text-sm text-gray-500">Response SLA: Within 4 hours for high-risk reports.</p>
+    </section>
+  </main>
+  <Footer />
+</MainLayout>

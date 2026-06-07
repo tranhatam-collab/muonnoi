@@ -18,3 +18,7 @@
 /manifesto   /manifesto/   301
 /press       /press/       301
 /newsletter  /newsletter/  301
+
+# Subdomain redirects
+https://henho.muonnoi.org/* https://ketnoi.muonnoi.org/:splat 301
+https://meet.muonnoi.org/*  https://ketnoi.muonnoi.org/en/:splat 301

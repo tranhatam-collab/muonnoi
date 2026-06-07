@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-05T15:06:39.649Z",
+  "timestamp": "2026-06-07T06:59:00.853Z",
   "project": "ketnoi-muonnoi-web",
   "checks": [
     {
@@ -19,8 +19,8 @@
     },
     {
       "name": "i18n",
-      "status": "WARN",
-      "detail": "No /en or /vi subdirectories for i18n routing"
+      "status": "PASS",
+      "detail": "i18n structure OK"
     },
     {
       "name": "Accessibility",
@@ -39,8 +39,8 @@
     }
   ],
   "summary": {
-    "pass": 6,
-    "warn": 1,
+    "pass": 7,
+    "warn": 0,
     "fail": 0,
     "skip": 0,
     "total": 7

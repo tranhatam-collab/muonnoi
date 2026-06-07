@@ -1,0 +1,137 @@
+---
+import Layout from '../components/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import RiskBanner from '../components/RiskBanner.astro';
+import { projects } from '../data/projects';
+---
+
+<Layout>
+  <Navigation />
+  <Hero />
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Vì sao Muôn Nơi cần đầu tư</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Muôn Nơi đang xây một hệ sinh thái nhiều lớp: kết nối con người thật, đời sống thật, học tập thật, làm việc thật, 
+          du lịch thật, gia đình thật, giải trí có trách nhiệm và hạ tầng xác minh niềm tin số.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-12">
+        <div class="p-6">
+          <div class="text-4xl font-extrabold text-brand-600 mb-2">65B+ USD</div>
+          <div class="text-gray-700">Tổng thị trường địa chỉ được (TAM)</div>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-extrabold text-brand-600 mb-2">9</div>
+          <div class="text-gray-700">Dự án trong hệ sinh thái</div>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-extrabold text-brand-600 mb-2">60%</div>
+          <div class="text-gray-700">Tiết kiệm dev cost nhờ shared infrastructure</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-10">
+        <h2 class="text-3xl font-bold text-gray-900">Dự án đang mở quan tâm</h2>
+        <a href="/projects/" class="text-brand-600 font-semibold hover:underline">Xem tất cả &rarr;</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.slice(0, 6).map(project => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Quy trình 6 bước</h2>
+      <ol class="space-y-6">
+        <li class="flex items-start gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">Xem thông tin dự án</h4>
+            <p class="text-gray-600 text-sm">Tìm hiểu kỹ dự án, thị trường, rủi ro, và pháp nhân.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">Đọc cảnh báo rủi ro</h4>
+            <p class="text-gray-600 text-sm">Hiểu rõ rủi ro đầu tư giai đoạn đầu.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">Gửi form quan tâm</h4>
+            <p class="text-gray-600 text-sm">Điền thông tin nhà đầu tư — không bắt buộc đăng nhập.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">4</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">Đội phụ trách kiểm tra</h4>
+            <p class="text-gray-600 text-sm">Review profile, quốc gia, tư cách nhà đầu tư.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">5</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">Vòng trao đổi riêng</h4>
+            <p class="text-gray-600 text-sm">Nếu phù hợp, mời vào deal room.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">6</span>
+          <div>
+            <h4 class="font-semibold text-gray-900">Giao dịch chính thức</h4>
+            <p class="text-gray-600 text-sm">Chỉ sau hồ sơ pháp lý + thanh toán chính thức từ pay.iai.one.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">Pháp nhân điều phối</h3>
+          <p class="text-gray-600 text-sm">VIET CAN NEW CORP, United States</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">Đại diện thanh toán VN</h3>
+          <p class="text-gray-600 text-sm">Công ty CP Giáo dục Truyền Thông Việt Can New</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+          <h3 class="font-bold text-gray-900 mb-2">Đơn vị đầu tư & phát triển</h3>
+          <p class="text-gray-600 text-sm">Công ty CP Giáo dục Hành Trình Kasan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <RiskBanner />
+      <div class="text-center mt-8">
+        <a href="/interest/" class="inline-block px-8 py-3 bg-brand-600 text-white rounded-lg font-semibold text-lg hover:bg-brand-700 transition">
+          Gửi quan tâm đầu tư
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
