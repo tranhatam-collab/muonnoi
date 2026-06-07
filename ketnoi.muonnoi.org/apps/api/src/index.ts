@@ -8,6 +8,7 @@ import { matchRoutes } from './routes/match';
 import { chatRoutes } from './routes/chat';
 import { safetyRoutes } from './routes/safety';
 import { verifyRoutes } from './routes/verify';
+import { notificationRoutes } from './routes/notification';
 import { errorHandler } from './middleware/error';
 import { rateLimiter } from './middleware/rate-limit';
 import { ChatRoom } from './lib/chatroom';
@@ -71,6 +72,7 @@ app.route('/api/v1/matches', matchRoutes);
 app.route('/api/v1/chat', chatRoutes);
 app.route('/api/v1/safety', safetyRoutes);
 app.route('/api/v1/verify', verifyRoutes);
+app.route('/api/v1/notifications', notificationRoutes);
 
 // Error handling
 app.onError(errorHandler);

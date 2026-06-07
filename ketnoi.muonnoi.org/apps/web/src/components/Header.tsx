@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Shield, LogOut, User } from 'lucide-react';
 import { getStoredToken, clearStoredToken } from '../lib/auth';
+import NotificationBell from './NotificationBell';
 
 const navItems = [
   { label: 'Trang chủ', href: '/' },
@@ -43,6 +44,7 @@ export default function Header() {
           ))}
           {isLoggedIn ? (
             <div className="flex items-center gap-3">
+              <NotificationBell />
               <a
                 href="/profile"
                 className="flex items-center gap-1.5 text-sm font-medium text-slate-600 transition-colors hover:text-teal-700 dark:text-slate-400 dark:hover:text-teal-400"
