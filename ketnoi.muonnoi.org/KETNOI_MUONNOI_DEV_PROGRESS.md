@@ -123,17 +123,24 @@
 ### Sprint 1.3 Complete ✅
 
 - [x] Frontend auth UI integration — ✅ Magic link form, verify page, auth state, Header login/logout
-- [x] WebAuthn passkey skeleton — ✅ Challenge generation, register/authenticate routes, KV storage
+- [x] WebAuthn passkey full implementation — ✅ COSE/CBOR parsing, signature verification, real public key storage
 - [x] E2E tests — ✅ Auth flow tests (magic link, verify, header state, persistence)
-- [ ] Scam detection in messages (safety pipeline) — ⏳ API route exists, frontend integration pending
-- [ ] Deploy to custom domain (ketnoi.muonnoi.org) — ⏳ Awaiting CF Dashboard action
+- [x] Scam detection in messages (safety pipeline) — ✅ ChatWindow calls /api/v1/safety/check with loading spinner
+- [ ] Deploy to custom domain (ketnoi.muonnoi.org) — ⏳ Domain mapped in CF Pages but still 404, awaiting DNS propagation
+
+### Sprint 1.4 Complete ✅
+
+- [x] Matching engine — ✅ /api/v1/match/suggestions + like/pass + connections, MatchingPage.tsx fetches real data
+- [x] Chat real-time — ✅ ChatRoom Durable Object with WebSocket, ChatWindow connects WSS, status indicator
+- [x] Notification system — ✅ notifications table + API + NotificationBell component with polling every 30s
 
 ### Latest Deploy
 
 | Service | URL | Status |
 |---------|-----|--------|
-| Web | https://c615bce9.ketnoi-muonnoi-web.pages.dev | 200 OK (23 pages) |
+| Web | https://450f182b.ketnoi-muonnoi-web.pages.dev | 200 OK (23 pages, SPA routing) |
 | API | https://ketnoi-muonnoi-api.tranhatam.workers.dev | Healthy |
+| Custom Domain | https://ketnoi.muonnoi.org | 404 (DNS propagating) |
 
 ### Auth Flow (End-to-End)
 
