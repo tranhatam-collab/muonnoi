@@ -120,13 +120,28 @@
 | KV Namespace | ✅ `ketnoi-muonnoi-kv` |
 | R2 Bucket | ✅ `ketnoi-muonnoi-media` |
 
-### Next Sprint (1.3)
+### Sprint 1.3 In Progress 🔄
 
+- [x] Frontend auth UI integration — ✅ Magic link form, verify page, auth state, Header login/logout
 - [ ] WebAuthn passkey authentication (full implementation)
-- [ ] Frontend auth integration (magic link UI flow)
 - [ ] E2E tests for registration → login → matching → chat
 - [ ] Scam detection in messages (safety pipeline)
 - [ ] Deploy to custom domain (ketnoi.muonnoi.org)
+
+### Latest Deploy
+
+| Service | URL | Status |
+|---------|-----|--------|
+| Web | https://c615bce9.ketnoi-muonnoi-web.pages.dev | 200 OK (23 pages) |
+| API | https://ketnoi-muonnoi-api.tranhatam.workers.dev | Healthy |
+
+### Auth Flow (End-to-End)
+
+1. User nhập email → `POST /api/v1/auth/magic-link` → nhận token
+2. Click link `/verify?token=xxx` → `POST /api/v1/auth/verify-magic-link` → tạo session
+3. Lưu token vào localStorage → redirect `/matching`
+4. Header hiển thị "Hồ sơ" + "Đăng xuất"
+5. Logout → xóa token → redirect `/`
 
 ---
 
