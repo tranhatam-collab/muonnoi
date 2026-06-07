@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { Menu, X, Shield, Heart } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Shield, LogOut, User } from 'lucide-react';
+import { getStoredToken, clearStoredToken } from '../lib/auth';
 
 const navItems = [
   { label: 'Trang chủ', href: '/' },
@@ -10,6 +11,17 @@ const navItems = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    setIsLoggedIn(!!getStoredToken());
+  }, []);
+
+  const handleLogout = () => {
+    clearStoredToken();
+    setIsLoggedIn(false);
+    window.location.href = '/';
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-950/80">
@@ -29,12 +41,31 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <a
-            href="/login"
-            className="rounded-full bg-teal-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-800 dark:bg-teal-600 dark:hover:bg-teal-500"
-          >
-            Đăng nhập
-          </a>
+          {isLoggedIn ? (
+            <div className="flex items-center gap-3">
+              <a
+                href="/profile"
+                className="flex items-center gap-1.5 text-sm font-medium text-slate-600 transition-colors hover:text-teal-700 dark:text-slate-400 dark:hover:text-teal-400"
+              >
+                <User className="h-4 w-4" />
+                Hồ sơ
+              </a>
+              <button
+                onClick={handleLogout}
+                className="flex items-center gap-1.5 rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
+              >
+                <LogOut className="h-4 w-4" />
+                Đăng xuất
+              </button>
+            </div>
+          ) : (
+            <a
+              href="/login"
+              className="rounded-full bg-teal-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-800 dark:bg-teal-600 dark:hover:bg-teal-500"
+            >
+              Đăng nhập
+            </a>
+          )}
         </nav>
 
         <button
@@ -59,13 +90,31 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            <a
-              href="/login"
-              className="mt-2 rounded-full bg-teal-700 px-4 py-2 text-center text-sm font-medium text-white dark:bg-teal-600"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Đăng nhập
-            </a>
+            {isLoggedIn ? (
+              <>
+                <a
+                  href="/profile"
+                  className="text-sm font-medium text-slate-600 dark:text-slate-400"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Hồ sơ
+                </a>
+                <button
+                  onClick={() => { setMobileMenuOpen(false); handleLogout(); }}
+                  className="mt-2 rounded-full bg-slate-100 px-4 py-2 text-center text-sm font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                >
+                  Đăng xuất
+                </button>
+              </>
+            ) : (
+              <a
+                href="/login"
+                className="mt-2 rounded-full bg-teal-700 px-4 py-2 text-center text-sm font-medium text-white dark:bg-teal-600"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Đăng nhập
+              </a>
+            )}
           </nav>
         </div>
       )}

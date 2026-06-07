@@ -1,30 +1,28 @@
 import { useState } from 'react';
 import { Mail, KeyRound, ArrowRight, Loader2 } from 'lucide-react';
+import { requestMagicLink } from '../lib/auth';
 
 export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState('');
 
   const handleMagicLink = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || loading) return;
     setLoading(true);
+    setError('');
     try {
-      const res = await fetch('/api/auth/magic-link', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json();
-      if (!res.ok) {
-        alert(data.error || 'Gửi magic link thất bại');
+      const result = await requestMagicLink(email);
+      if (!result.success) {
+        setError(result.error || 'Gửi magic link thất bại');
         setLoading(false);
         return;
       }
       setSent(true);
     } catch (err) {
-      alert('Lỗi kết nối máy chủ. Vui lòng thử lại.');
+      setError('Lỗi kết nối máy chủ. Vui lòng thử lại.');
     }
     setLoading(false);
   };
@@ -42,12 +40,20 @@ export default function LoginForm() {
         <p className="text-sm text-slate-600 dark:text-slate-400">
           Kiểm tra hộp thư <strong>{email}</strong> và nhấp vào link để đăng nhập.
         </p>
+        <p className="mt-2 text-xs text-slate-500 dark:text-slate-500">
+          Link có hiệu lực trong 15 phút.
+        </p>
       </div>
     );
   }
 
   return (
     <div className="space-y-4">
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700 dark:border-red-900 dark:bg-red-950 dark:text-red-400">
+          {error}
+        </div>
+      )}
       <form onSubmit={handleMagicLink} className="space-y-4">
         <div>
           <label htmlFor="email" className="mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300">
