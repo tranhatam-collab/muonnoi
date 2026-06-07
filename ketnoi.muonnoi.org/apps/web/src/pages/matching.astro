@@ -2,7 +2,7 @@
 import MainLayout from '@layouts/MainLayout.astro';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
-import MatchCard from '@components/MatchCard';
+import MatchingPage from '@components/MatchingPage';
 ---
 
 <MainLayout title="Khám phá — Kết Nối Muôn Nơi" description="Những gợi ý kết nối phù hợp với bạn">
@@ -14,46 +14,8 @@ import MatchCard from '@components/MatchCard';
           <h1 class="text-2xl font-bold text-slate-900 dark:text-white">Gợi ý hôm nay</h1>
           <p class="text-sm text-slate-600 dark:text-slate-400">5–12 gợi ý chất lượng được chọn riêng cho bạn</p>
         </div>
-        <div class="rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-800 dark:bg-teal-950 dark:text-teal-300">
-          Còn 8/12
-        </div>
       </div>
-
-      <div class="space-y-4">
-        <MatchCard
-          client:load
-          name="Minh Anh"
-          age={28}
-          location="Hà Nội"
-          intent="Tìm hiểu nghiêm túc"
-          bio="Đang học thêm về bản thân mỗi ngày. Thích đọc sách, đi bộ đường dài và pha cà phê sáng."
-          verified={true}
-          compatibility={87}
-          values={['Gia đình', 'Học tập', 'Sức khỏe']}
-        />
-        <MatchCard
-          client:load
-          name="Hải Yến"
-          age={26}
-          location="TP.HCM"
-          intent="Tìm bạn đồng hành"
-          bio="Yêu thích du lịch bụi và chụp ảnh phim. Đang tìm người cùng đi Đà Lạt cuối tuần."
-          verified={true}
-          compatibility={72}
-          values={['Du lịch', 'Nghệ thuật', 'Sức khỏe']}
-        />
-        <MatchCard
-          client:load
-          name="Quốc Bảo"
-          age={30}
-          location="Đà Nẵng"
-          intent="Tìm bạn đời"
-          bio="Làm việc từ xa, thích cuộc sống chậm. Tìm người muốn xây dựng tương lai bền vững."
-          verified={false}
-          compatibility={65}
-          values={['Gia đình', 'Sự nghiệp', 'Tâm linh']}
-        />
-      </div>
+      <MatchingPage client:load />
     </div>
   </main>
   <Footer />
