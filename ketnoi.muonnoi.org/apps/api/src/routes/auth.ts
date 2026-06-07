@@ -1,7 +1,17 @@
 import { Hono } from 'hono';
 import type { AppContext } from '../index';
 import { sendMagicLink, verifyMagicLink, logout, getCurrentUser } from '../lib/auth';
-import { generateChallenge, storeChallenge, verifyChallenge } from '../lib/webauthn';
+import {
+  generateChallenge,
+  storeChallenge,
+  verifyChallenge,
+  base64UrlDecode,
+  cborDecode,
+  parseAuthenticatorData,
+  coseToRawPublicKey,
+  importEC2PublicKey,
+  verifyWebAuthnSignature,
+} from '../lib/webauthn';
 
 export const authRoutes = new Hono<AppContext>();
 
@@ -196,17 +206,31 @@ authRoutes.post('/passkey/register/finish', async (c) => {
     return c.json({ success: false, error: 'Invalid or expired challenge' }, 400);
   }
 
-  // TODO: Validate attestation and extract public key
-  // For now, store the credential ID as a placeholder
-  await c.env.DB
-    .prepare('INSERT INTO passkeys (id, user_id, public_key, counter, created_at) VALUES (?, ?, ?, ?, ?)')
-    .bind(body.credentialId, user.id, body.attestationObject, 0, new Date().toISOString())
-    .run();
+  try {
+    const attObjBytes = base64UrlDecode(body.attestationObject);
+    const attObj = cborDecode(attObjBytes) as Map<unknown, unknown>;
+    const authData = attObj.get('authData') as Uint8Array;
+    const parsed = parseAuthenticatorData(authData);
 
-  return c.json({
-    success: true,
-    message: 'Passkey registered successfully',
-  });
+    if (!parsed.cosePublicKey) {
+      return c.json({ success: false, error: 'No public key in attestation' }, 400);
+    }
+
+    const rawPublicKey = coseToRawPublicKey(parsed.cosePublicKey);
+    const publicKeyB64 = btoa(String.fromCharCode(...rawPublicKey));
+
+    await c.env.DB
+      .prepare('INSERT INTO passkeys (id, user_id, public_key, counter, created_at) VALUES (?, ?, ?, ?, ?)')
+      .bind(body.credentialId, user.id, publicKeyB64, parsed.signCount, new Date().toISOString())
+      .run();
+
+    return c.json({
+      success: true,
+      message: 'Passkey registered successfully',
+    });
+  } catch (err) {
+    return c.json({ success: false, error: (err as Error).message }, 400);
+  }
 });
 
 // Passkey authentication
@@ -239,14 +263,55 @@ authRoutes.post('/passkey/authenticate/finish', async (c) => {
     challenge: string;
   }>();
 
-  // TODO: Retrieve stored passkey, verify signature with public key
-  // This requires full CBOR/COSE parsing which is complex for a skeleton
+  try {
+    // Retrieve stored passkey
+    const { results } = await c.env.DB
+      .prepare('SELECT * FROM passkeys WHERE id = ?')
+      .bind(body.credentialId)
+      .all<Record<string, unknown>>();
 
-  return c.json({
-    success: true,
-    message: 'Authenticated with passkey (full verification pending)',
-    token: 'passkey-session-token',
-  });
+    const passkey = (results || [])[0];
+    if (!passkey) {
+      return c.json({ success: false, error: 'Passkey not found' }, 404);
+    }
+
+    // Verify challenge
+    const userId = passkey.user_id as string;
+    const challengeValid = await verifyChallenge(c.env.KV, userId, body.challenge, 'authenticate');
+    if (!challengeValid) {
+      return c.json({ success: false, error: 'Invalid or expired challenge' }, 400);
+    }
+
+    // Import public key and verify signature
+    const publicKeyB64 = passkey.public_key as string;
+    const rawPublicKey = Uint8Array.from(atob(publicKeyB64), (c) => c.charCodeAt(0));
+    const publicKey = await importEC2PublicKey(rawPublicKey);
+
+    const authData = base64UrlDecode(body.authenticatorData);
+    const sig = base64UrlDecode(body.signature);
+    const valid = await verifyWebAuthnSignature(publicKey, sig, authData, body.clientDataJSON);
+
+    if (!valid) {
+      return c.json({ success: false, error: 'Invalid signature' }, 401);
+    }
+
+    // Create session
+    const sessionToken = crypto.randomUUID();
+    const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString();
+    await c.env.DB
+      .prepare('INSERT INTO sessions (id, user_id, token_type, expires_at) VALUES (?, ?, ?, ?)')
+      .bind(sessionToken, userId, 'session', expiresAt)
+      .run();
+
+    return c.json({
+      success: true,
+      message: 'Authenticated with passkey',
+      token: sessionToken,
+      expiresAt,
+    });
+  } catch (err) {
+    return c.json({ success: false, error: (err as Error).message }, 400);
+  }
 });
 
 // Logout
