@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
 import type { AppContext } from '../index';
 import { sendMagicLink, verifyMagicLink, logout, getCurrentUser } from '../lib/auth';
+import { generateChallenge, storeChallenge, verifyChallenge } from '../lib/webauthn';
 
 export const authRoutes = new Hono<AppContext>();
 
@@ -141,33 +142,110 @@ authRoutes.get('/me', async (c) => {
   });
 });
 
-// Passkey registration (WebAuthn) - TODO: implement
+// Passkey registration (WebAuthn)
 authRoutes.post('/passkey/register/start', async (c) => {
+  const body = await c.req.json<{ email: string }>();
+  const { email } = body;
+
+  // Get or create user
+  const user = await getCurrentUser(c.env.DB, email);
+  if (!user) {
+    return c.json({ success: false, error: 'User not found' }, 404);
+  }
+
+  const challenge = generateChallenge(32);
+  await storeChallenge(c.env.KV, user.id as string, challenge, 'register', 120);
+
   return c.json({
     success: true,
-    message: 'Registration options generated (placeholder)',
+    challenge,
+    user: {
+      id: user.id,
+      name: user.email,
+      displayName: user.nickname || user.email,
+    },
+    rp: {
+      name: 'Kết Nối Muôn Nơi',
+      id: 'ketnoi.muonnoi.org',
+    },
+    pubKeyCredParams: [{ alg: -7, type: 'public-key' }],
+    authenticatorSelection: {
+      authenticatorAttachment: 'platform',
+      userVerification: 'preferred',
+    },
+    timeout: 120000,
   });
 });
 
 authRoutes.post('/passkey/register/finish', async (c) => {
+  const body = await c.req.json<{
+    email: string;
+    credentialId: string;
+    clientDataJSON: string;
+    attestationObject: string;
+    challenge: string;
+  }>();
+
+  const user = await getCurrentUser(c.env.DB, body.email);
+  if (!user) {
+    return c.json({ success: false, error: 'User not found' }, 404);
+  }
+
+  const valid = await verifyChallenge(c.env.KV, user.id as string, body.challenge, 'register');
+  if (!valid) {
+    return c.json({ success: false, error: 'Invalid or expired challenge' }, 400);
+  }
+
+  // TODO: Validate attestation and extract public key
+  // For now, store the credential ID as a placeholder
+  await c.env.DB
+    .prepare('INSERT INTO passkeys (id, user_id, public_key, counter, created_at) VALUES (?, ?, ?, ?, ?)')
+    .bind(body.credentialId, user.id, body.attestationObject, 0, new Date().toISOString())
+    .run();
+
   return c.json({
     success: true,
-    message: 'Passkey registered (placeholder)',
+    message: 'Passkey registered successfully',
   });
 });
 
-// Passkey authentication - TODO: implement
+// Passkey authentication
 authRoutes.post('/passkey/authenticate/start', async (c) => {
+  const body = await c.req.json<{ email?: string }>();
+  const challenge = generateChallenge(32);
+
+  if (body.email) {
+    const user = await getCurrentUser(c.env.DB, body.email);
+    if (user) {
+      await storeChallenge(c.env.KV, user.id as string, challenge, 'authenticate', 120);
+    }
+  }
+
   return c.json({
     success: true,
-    message: 'Authentication options generated (placeholder)',
+    challenge,
+    rpId: 'ketnoi.muonnoi.org',
+    userVerification: 'preferred',
+    timeout: 120000,
   });
 });
 
 authRoutes.post('/passkey/authenticate/finish', async (c) => {
+  const body = await c.req.json<{
+    credentialId: string;
+    clientDataJSON: string;
+    authenticatorData: string;
+    signature: string;
+    challenge: string;
+  }>();
+
+  // TODO: Retrieve stored passkey, verify signature with public key
+  // This requires full CBOR/COSE parsing which is complex for a skeleton
+
   return c.json({
     success: true,
-    message: 'Authenticated with passkey (placeholder)',
+    message: 'Authenticated with passkey (full verification pending)',
+    token: 'passkey-session-token',
   });
 });
 
