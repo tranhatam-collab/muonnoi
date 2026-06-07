@@ -1,0 +1,90 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout
+  title="Meet Muon Noi — Real People, Real Trust"
+  description="A dating space for real people with real intentions. No bots, no tracking, no games."
+>
+  <Header client:load />
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-teal-900 px-4 py-20 text-white dark:bg-slate-950">
+      <div class="mx-auto max-w-4xl text-center">
+        <h1 class="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
+          Real people.<br />Real intentions.<br />Real trust.
+        </h1>
+        <p class="mb-8 text-lg text-teal-100 dark:text-slate-300">
+          No infinite swipe. No bots. No tracking. Just meaningful connections with verified humans.
+        </p>
+        <div class="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+          <a
+            href="/matching"
+            class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-teal-900 transition-colors hover:bg-teal-50"
+          >
+            Discover matches
+          </a>
+          <a
+            href="/about"
+            class="rounded-full border border-teal-400 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-teal-800"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust badges -->
+    <section class="border-b border-slate-200 bg-slate-50 px-4 py-12 dark:border-slate-800 dark:bg-slate-900">
+      <div class="mx-auto grid max-w-4xl grid-cols-1 gap-8 text-center sm:grid-cols-3">
+        <div>
+          <div class="mb-2 text-3xl font-bold text-teal-700 dark:text-teal-400">Verified</div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Every profile is verified as a real human</p>
+        </div>
+        <div>
+          <div class="mb-2 text-3xl font-bold text-teal-700 dark:text-teal-400">Private</div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">No trackers. No data selling. Privacy by default.</p>
+        </div>
+        <div>
+          <div class="mb-2 text-3xl font-bold text-teal-700 dark:text-teal-400">Intentional</div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">5–12 quality suggestions daily. No endless scrolling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="px-4 py-16">
+      <div class="mx-auto max-w-3xl">
+        <h2 class="mb-10 text-center text-2xl font-bold text-slate-900 dark:text-white">How it works</h2>
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-100 font-bold text-teal-700 dark:bg-teal-950 dark:text-teal-400">1</div>
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white">Verify as a real human</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">A quick video selfie check. No ID uploads stored.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-100 font-bold text-teal-700 dark:bg-teal-950 dark:text-teal-400">2</div>
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white">Share your intention</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">What are you looking for? We match by values, not just photos.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-100 font-bold text-teal-700 dark:bg-teal-950 dark:text-teal-400">3</div>
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white">Connect safely</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Built-in safety features, scam warnings, and safe-date mode.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</MainLayout>

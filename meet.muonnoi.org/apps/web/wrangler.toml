@@ -1,0 +1,5 @@
+name = "meet-muonnoi-web"
+compatibility_date = "2025-01-01"
+
+[env.production]
+name = "meet-muonnoi-web"

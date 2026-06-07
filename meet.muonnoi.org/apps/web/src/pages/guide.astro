@@ -1,0 +1,39 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout title="Guide — Meet Muon Noi">
+  <Header client:load />
+  <main class="px-4 py-12">
+    <div class="mx-auto max-w-2xl space-y-8">
+      <h1 class="text-3xl font-bold text-slate-900 dark:text-white">Community guide</h1>
+      <p class="text-slate-600 dark:text-slate-400">
+        Meet Muon Noi is built on respect, honesty, and safety. By using this platform, you agree to follow these guidelines.
+      </p>
+
+      <div class="space-y-6">
+        <div class="rounded-xl border border-teal-200 bg-teal-50 p-5 dark:border-teal-900 dark:bg-teal-950">
+          <h2 class="mb-2 font-semibold text-teal-900 dark:text-teal-100">Be real</h2>
+          <p class="text-sm text-teal-700 dark:text-teal-400">
+            Use your real photos and honest intentions. No impersonation, no fake profiles.
+          </p>
+        </div>
+        <div class="rounded-xl border border-teal-200 bg-teal-50 p-5 dark:border-teal-900 dark:bg-teal-950">
+          <h2 class="mb-2 font-semibold text-teal-900 dark:text-teal-100">Be respectful</h2>
+          <p class="text-sm text-teal-700 dark:text-teal-400">
+            Harassment, hate speech, and unwanted messages are not tolerated.
+          </p>
+        </div>
+        <div class="rounded-xl border border-teal-200 bg-teal-50 p-5 dark:border-teal-900 dark:bg-teal-950">
+          <h2 class="mb-2 font-semibold text-teal-900 dark:text-teal-100">Be safe</h2>
+          <p class="text-sm text-teal-700 dark:text-teal-400">
+            Never send money to someone you met online. Meet in public places. Tell a friend your plans.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

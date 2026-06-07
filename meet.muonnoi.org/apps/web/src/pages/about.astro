@@ -1,0 +1,28 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout title="About — Meet Muon Noi">
+  <Header client:load />
+  <main class="px-4 py-12">
+    <div class="mx-auto max-w-2xl space-y-8">
+      <h1 class="text-3xl font-bold text-slate-900 dark:text-white">About Meet Muon Noi</h1>
+      <p class="text-slate-600 dark:text-slate-400">
+        Meet Muon Noi is the global, English-first dating layer of the Muon Noi ecosystem. Built on the
+        same trust-first principles as ketnoi.muonnoi.org, but designed for intentional daters
+        anywhere in the world.
+      </p>
+      <h2 class="text-xl font-semibold text-slate-900 dark:text-white">What makes us different</h2>
+      <ul class="list-disc space-y-2 pl-5 text-slate-600 dark:text-slate-400">
+        <li><strong>Verified human only</strong> — every profile is verified via video selfie</li>
+        <li><strong>No infinite swipe</strong> — 5–12 curated suggestions daily</li>
+        <li><strong>Privacy by default</strong> — no trackers, no data selling</li>
+        <li><strong>Safety built in</strong> — scam warnings, safe-date mode, off-platform alerts</li>
+        <li><strong>Intention-first</strong> — match by values and goals, not just looks</li>
+      </ul>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

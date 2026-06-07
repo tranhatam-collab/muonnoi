@@ -1,0 +1,51 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout title="Safety — Meet Muon Noi">
+  <Header client:load />
+  <main class="px-4 py-12">
+    <div class="mx-auto max-w-2xl space-y-8">
+      <h1 class="text-3xl font-bold text-slate-900 dark:text-white">Safety first</h1>
+      <p class="text-slate-600 dark:text-slate-400">
+        Your safety is our top priority. Here are the tools and guidelines we use to keep the community secure.
+      </p>
+
+      <div class="space-y-6">
+        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+          <h2 class="mb-2 font-semibold text-slate-900 dark:text-white">Verified human only</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Every member completes a video selfie verification before matching. No bots, no catfish.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+          <h2 class="mb-2 font-semibold text-slate-900 dark:text-white">Money request shield</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Our system flags money-related language and warns you before you respond.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+          <h2 class="mb-2 font-semibold text-slate-900 dark:text-white">Safe date mode</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Share your date plan with a trusted contact, set check-in times, and access emergency shortcuts.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+          <h2 class="mb-2 font-semibold text-slate-900 dark:text-white">Off-platform warning</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            If someone tries to move you to another app too quickly, we warn you about common scams.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+          <h2 class="mb-2 font-semibold text-slate-900 dark:text-white">Report and block</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            One-tap report with human review. We act within 24 hours on safety reports.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

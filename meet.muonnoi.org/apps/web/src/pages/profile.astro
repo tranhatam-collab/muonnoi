@@ -1,0 +1,39 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+---
+
+<MainLayout title="Profile — Meet Muon Noi">
+  <Header client:load />
+  <main class="px-4 py-12">
+    <div class="mx-auto max-w-lg">
+      <h1 class="mb-6 text-2xl font-bold text-slate-900 dark:text-white">Your profile</h1>
+      <div class="space-y-6">
+        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+          <h2 class="mb-3 font-semibold text-slate-900 dark:text-white">Verification status</h2>
+          <div class="flex items-center gap-2 text-sm text-teal-700 dark:text-teal-400">
+            <span class="h-2.5 w-2.5 rounded-full bg-teal-500"></span>
+            Verified human
+          </div>
+          <p class="mt-1 text-xs text-slate-500 dark:text-slate-400">
+            Your profile is verified and visible to matches.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+          <h2 class="mb-3 font-semibold text-slate-900 dark:text-white">Intent</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            What are you looking for? (Set in settings)
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+          <h2 class="mb-3 font-semibold text-slate-900 dark:text-white">Account</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            <a href="/" class="text-teal-700 hover:underline dark:text-teal-400">Delete account</a> — all data is permanently removed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>
