@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://meet.muonnoi.org/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://henho.muonnoi.org/sitemap.xml

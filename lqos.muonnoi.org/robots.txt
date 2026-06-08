@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lqos.muonnoi.org/sitemap.xml

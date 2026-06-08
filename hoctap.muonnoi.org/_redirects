@@ -1,0 +1,14 @@
+# Canonical: www -> non-www
+https://www.hoctap.muonnoi.org/* https://hoctap.muonnoi.org/:splat 301
+
+# Trailing slash for nha-chung-3-buoi
+/nha-chung-3-buoi /nha-chung-3-buoi/ 301
+
+# Clean aliases
+/dang-ky /nha-chung-3-buoi/dang-ky/ 301
+/lich-hoc /nha-chung-3-buoi/lich-hoc/ 301
+/noi-dung /nha-chung-3-buoi/noi-dung/ 301
+/faq /nha-chung-3-buoi/faq/ 301
+/hoc-phi /nha-chung-3-buoi/chinh-sach-hoc-phi/ 301
+/sinh-vien /nha-chung-3-buoi/sinh-vien/ 301
+/sau-khoa-hoc /nha-chung-3-buoi/sau-khoa-hoc/ 301
