@@ -1,2 +1,6 @@
+name = "ketnoi-muonnoi-web"
+compatibility_date = "2025-06-01"
+
 [build]
-command = ""
+command = "cd apps/web && npm ci && npm run build"
+output_dir = "apps/web/dist"

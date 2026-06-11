@@ -266,4 +266,36 @@ export const projects: Project[] = [
       { phase: 'M4', time: 'Tháng 10–12', goal: 'Revenue 8K/month + 5K families' },
     ],
   },
+  {
+    slug: 'maytinhai',
+    name: 'Máy Tính AI',
+    tagline: 'AI Computer platform — máy AI cho người Việt và doanh nghiệp',
+    category: 'AI & Automation',
+    tam: '65 tỷ USD',
+    status: 'Gen1 Engine Live · Gen2 MVP Deployed · Academy Building · Pre-revenue',
+    fundingNeed: '100 triệu – 1 tỷ VND',
+    description:
+      'Nền tảng AI Computer thế hệ 2 (maytinhai.org) đưa engine AI automation từ Gen1 (computer.iai.one) thành sản phẩm công khai: thuê bao AI agent theo tier, học viện chứng nhận, triển khai SME, và creator economy.',
+    highlights: [
+      'Gen 1 engine đã chạy thật — không phải prototype',
+      '8 plan thuê bao từ 199K đến 7.999K VND/tháng (Aether canonical)',
+      'Curriculum 100 bài + hệ thống proof 3 cấp chứng nhận',
+      'Vendor-agnostic AI stack — không bị khóa vào 1 nhà cung cấp',
+      '4 trụ doanh thu: Machine + Academy + SME + Marketplace',
+    ],
+    risks: [
+      'Execution risk — đội vận hành không dựng kịp machine/academy/automation',
+      'Conversion risk — free user không chuyển sang trả phí đủ cao',
+      'Retention risk — user vào vì tò mò AI, không ở lại',
+      'Cost risk — AI API tốn hơn dự kiến, gross margin bị bóp',
+      'Trust/legal risk — claims sai, data privacy, tài chính/sức khỏe',
+      'Dilution risk — cần thêm vốn sớm vì runway không đủ',
+    ],
+    milestones: [
+      { phase: 'M1', time: 'Tháng 1–3', goal: 'Gen2 machine MVP + 8 plan live + payment gate + SELLING_ENABLED=true' },
+      { phase: 'M2', time: 'Tháng 4–6', goal: 'Academy Alpha 10 bài + chứng nhận cấp 1 + cohort pilot' },
+      { phase: 'M3', time: 'Tháng 7–9', goal: 'SME offer + 3 doanh nghiệp pilot + MRR 250 triệu' },
+      { phase: 'M4', time: 'Tháng 10–12', goal: 'Creator economy + marketplace + MRR 1 tỷ + Series A prep' },
+    ],
+  },
 ];

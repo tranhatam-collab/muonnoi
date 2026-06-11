@@ -12,7 +12,7 @@ Subdomain: ketnoi.muonnoi.org
 
 Bản draft trước ghi:
 
-> "1 USD = 100 điểm"
+> "[tỷ lệ neo tiền — đã xóa theo legal review]"
 
 **SAI. NGUY HIỂM. PHẢI XÓA.**
 
@@ -129,7 +129,7 @@ Ví dụ:
 
 ### 7.1. Không dùng
 - ❌ "Mua điểm"
-- ❌ "1 USD = 100 điểm"
+- ❌ "[tỷ lệ neo tiền — đã xóa]"
 - ❌ "Nạp tiền"
 - ❌ "Rút tiền"
 - ❌ "Chuyển điểm"
