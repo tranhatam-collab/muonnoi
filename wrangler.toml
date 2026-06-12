@@ -15,7 +15,7 @@ bucket_name = "muonnoi-uploads"
 
 [vars]
 APP_ORIGIN = "https://muonnoi.org"
-APP_NAME_VI = "Muôn Nói"
+APP_NAME_VI = "Muôn Nơi"
 APP_NAME_EN = "Muon Noi"
 SESSION_COOKIE = "mn_session"
 MAIL_API_BASE_URL = "https://mail.iai.one/_mail/v1"

@@ -23,8 +23,9 @@
       <a href="/dang-ky-quan-tam" data-nav>Gửi Quan Tâm</a>
     </nav>
     <a href="/member/" class="header-cta active">Thành Viên</a>
-    <button class="mobile-menu-btn" aria-label="Mở menu" aria-expanded="false">☰</button>
-  </div>
+  <a href="/login.html" class="header-cta" id="nav-login" style="display:none">Đăng Nhập</a>
+  <button class="mobile-menu-btn" aria-label="Mở menu" aria-expanded="false">☰</button>
+</div>
 </header>
 
 <div class="mobile-nav" aria-label="Menu di động">
@@ -36,35 +37,50 @@
   <a href="/faq" data-nav>FAQ</a>
   <a href="/dang-ky-quan-tam" data-nav>Gửi Quan Tâm</a>
   <a href="/member/" class="active">Thành Viên</a>
+  <a href="/login.html" id="mobile-login">Đăng Nhập</a>
+  <a href="#" id="mobile-logout" style="display:none">Đăng Xuất</a>
 </div>
 
 <main>
 
-<section class="hero" style="padding-top:6rem;padding-bottom:3rem">
-  <span class="eyebrow">Member Portal</span>
+<!-- NOT LOGGED IN -->
+<section id="guest-section" style="padding-top:8rem;padding-bottom:4rem">
+  <span class="eyebrow">Thành Viên</span>
   <h1>Cổng thành viên</h1>
-  <p>Đăng ký, xác thực và theo dõi trạng thái review.</p>
+  <p>Đăng nhập để xem ví đầu tư, theo dõi khoản đầu tư và báo cáo.</p>
+  <div class="mt-4">
+    <a href="/login.html" class="btn btn-primary" style="margin-right:0.5rem">Đăng Nhập</a>
+    <a href="/dang-ky-quan-tam" class="btn btn-ghost">Gửi Quan Tâm</a>
+  </div>
 </section>
 
-<section class="section">
+<!-- LOGGED IN -->
+<section id="member-hero" style="padding-top:6rem;padding-bottom:2rem;display:none">
+  <span class="eyebrow">Member Portal</span>
+  <h1>Chào mừng, <span id="user-email">Thành viên</span></h1>
+  <p>Theo dõi ví đầu tư, khoản đầu tư và báo cáo của bạn.</p>
+  <button id="btn-logout" class="btn btn-ghost" style="margin-top:1rem">Đăng Xuất</button>
+</section>
+
+<section class="section" id="member-nav-cards" style="display:none">
   <div class="card-grid">
     <div class="card status-panel">
-      <div class="icon">🔐</div>
-      <h2>Xác thực tài khoản</h2>
-      <p>Hoàn tất xác thực qua verify.iai.one để mở các tính năng dành cho thành viên đã duyệt.</p>
-      <a href="/member/verify" class="btn btn-primary">Xác Thực Ngay</a>
+      <div class="icon">�</div>
+      <h2>Hồ sơ đầu tư</h2>
+      <p>Cập nhật thông tin cá nhân, KYC và hồ sơ nhà đầu tư.</p>
+      <a href="/member/investor-profile" class="btn btn-primary">Cập Nhật</a>
     </div>
     <div class="card status-panel">
       <div class="icon">📋</div>
       <h2>Trạng thái review</h2>
-      <p>Kiểm tra trạng thái hồ sơ, lane đã chọn và kết quả phân loại.</p>
+      <p>Kiểm tra trạng thái hồ sơ và quyền truy cập dự án.</p>
       <a href="/member/review-status" class="btn btn-secondary">Xem Trạng Thái</a>
     </div>
     <div class="card status-panel">
-      <div class="icon">💳</div>
-      <h2>Thông tin thanh toán</h2>
-      <p>Chỉ hiển thị sau khi xác thực, duyệt lane và được cấp quyền.</p>
-      <a href="/member/payment-info" class="btn btn-ghost">Kiểm Tra Quyền Truy Cập</a>
+      <div class="icon">�</div>
+      <h2>Tài liệu</h2>
+      <p>Xem tài liệu dự án, hợp đồng và chứng từ.</p>
+      <a href="/member/documents" class="btn btn-ghost">Xem Tài Liệu</a>
     </div>
   </div>
 </section>
