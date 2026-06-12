@@ -1,5 +1,6 @@
 name = "muonnoi"
 compatibility_date = "2026-02-03"
+pages_build_output_dir = "apps/web/public"
 
 # Cloudflare Pages will pick up /functions automatically.
 # This file is still useful for local dev with wrangler pages dev.
