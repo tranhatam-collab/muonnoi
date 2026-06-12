@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cổng thành viên Sáng kiến Công nghệ Cộng đồng IAI. Đăng ký, xác thực và theo dõi trạng thái review.">
+<meta name="robots" content="noindex, nofollow">
+<title>Thành Viên | Đồng hành phát triển AI, tự động hóa và giáo dục công nghệ cộng đồng | Muôn Nơi</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="Trang chủ">Đầu Tư <span>· Muôn Nơi</span></a>
+    <nav class="nav-desktop" aria-label="Điều hướng chính">
+      <a href="/" data-nav>Tổng Quan</a>
+      <a href="/du-an" data-nav>3 Dự Án Ưu Tiên</a>
+      <a href="/hinh-thuc-dong-hanh" data-nav>Hình Thức Đồng Hành</a>
+      <a href="/quy-trinh-review" data-nav>Quy Trình Review</a>
+      <a href="/governance" data-nav>Governance</a>
+      <a href="/faq" data-nav>FAQ</a>
+      <a href="/dang-ky-quan-tam" data-nav>Gửi Quan Tâm</a>
+    </nav>
+    <a href="/member/" class="header-cta active">Thành Viên</a>
+    <button class="mobile-menu-btn" aria-label="Mở menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<div class="mobile-nav" aria-label="Menu di động">
+  <a href="/" data-nav>Tổng Quan</a>
+  <a href="/du-an" data-nav>3 Dự Án Ưu Tiên</a>
+  <a href="/hinh-thuc-dong-hanh" data-nav>Hình Thức Đồng Hành</a>
+  <a href="/quy-trinh-review" data-nav>Quy Trình Review</a>
+  <a href="/governance" data-nav>Governance</a>
+  <a href="/faq" data-nav>FAQ</a>
+  <a href="/dang-ky-quan-tam" data-nav>Gửi Quan Tâm</a>
+  <a href="/member/" class="active">Thành Viên</a>
+</div>
+
+<main>
+
+<section class="hero" style="padding-top:6rem;padding-bottom:3rem">
+  <span class="eyebrow">Member Portal</span>
+  <h1>Cổng thành viên</h1>
+  <p>Đăng ký, xác thực và theo dõi trạng thái review.</p>
+</section>
+
+<section class="section">
+  <div class="card-grid">
+    <div class="card status-panel">
+      <div class="icon">🔐</div>
+      <h2>Xác thực tài khoản</h2>
+      <p>Hoàn tất xác thực qua verify.iai.one để mở các tính năng dành cho thành viên đã duyệt.</p>
+      <a href="/member/verify" class="btn btn-primary">Xác Thực Ngay</a>
+    </div>
+    <div class="card status-panel">
+      <div class="icon">📋</div>
+      <h2>Trạng thái review</h2>
+      <p>Kiểm tra trạng thái hồ sơ, lane đã chọn và kết quả phân loại.</p>
+      <a href="/member/review-status" class="btn btn-secondary">Xem Trạng Thái</a>
+    </div>
+    <div class="card status-panel">
+      <div class="icon">💳</div>
+      <h2>Thông tin thanh toán</h2>
+      <p>Chỉ hiển thị sau khi xác thực, duyệt lane và được cấp quyền.</p>
+      <a href="/member/payment-info" class="btn btn-ghost">Kiểm Tra Quyền Truy Cập</a>
+    </div>
+  </div>
+</section>
+
+<!-- WALLET DASHBOARD -->
+<section class="section section-alt" id="wallet-section" style="display:none">
+  <span class="eyebrow">Sổ Cái Đầu Tư</span>
+  <h2 class="section-title">Ví Thành Viên</h2>
+  <p class="section-subtitle">Theo dõi tiền đã ghi nhận, cam kết đầu tư và báo cáo sử dụng vốn.</p>
+
+  <div class="card-grid" id="wallet-buckets">
+    <div class="card">
+      <h3 style="font-size:0.875rem;color:var(--text-secondary)">Tổng đã ghi nhận</h3>
+      <p style="font-size:1.75rem;font-weight:700;color:var(--accent)" id="total-recorded">—</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.875rem;color:var(--text-secondary)">Đang chờ đối soát</h3>
+      <p style="font-size:1.75rem;font-weight:700;color:var(--text-primary)" id="cash-pending">—</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.875rem;color:var(--text-secondary)">Đã cam kết đầu tư</h3>
+      <p style="font-size:1.75rem;font-weight:700;color:var(--text-primary)" id="capital-committed">—</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.875rem;color:var(--text-secondary)">Đã phân bổ sử dụng</h3>
+      <p style="font-size:1.75rem;font-weight:700;color:var(--text-primary)" id="capital-deployed">—</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.875rem;color:var(--text-secondary)">Credit nội bộ</h3>
+      <p style="font-size:1.75rem;font-weight:700;color:var(--text-primary)" id="platform-credit">—</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.875rem;color:var(--text-secondary)">Khoản đang khóa</h3>
+      <p style="font-size:1.75rem;font-weight:700;color:var(--danger)" id="locked-amount">—</p>
+    </div>
+  </div>
+
+  <div class="mt-4 text-center">
+    <button id="btn-deposit" class="btn btn-primary" style="display:none">Nạp Tiền</button>
+    <button id="btn-invest" class="btn btn-secondary" style="display:none;margin-left:0.5rem">Đầu Tư</button>
+    <button id="btn-history" class="btn btn-ghost" style="margin-left:0.5rem">Lịch Sử Giao Dịch</button>
+  </div>
+</section>
+
+<!-- INVESTMENT TRACKING -->
+<section class="section" id="investment-section" style="display:none">
+  <span class="eyebrow">Theo Dõi Đầu Tư</span>
+  <h2 class="section-title">Khoản Đầu Tư Của Tôi</h2>
+  <div id="investment-list" class="card-grid">
+    <p style="color:var(--text-secondary);text-align:center;padding:2rem">Đang tải...</p>
+  </div>
+</section>
+
+<!-- TRANSACTION HISTORY -->
+<section class="section section-alt" id="history-section" style="display:none">
+  <span class="eyebrow">Lịch Sử</span>
+  <h2 class="section-title">Giao Dịch</h2>
+  <div class="card" style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:0.875rem">
+      <thead>
+        <tr style="border-bottom:1px solid var(--border)">
+          <th style="text-align:left;padding:0.75rem">Loại</th>
+          <th style="text-align:left;padding:0.75rem">Số tiền</th>
+          <th style="text-align:left;padding:0.75rem">Trạng thái</th>
+          <th style="text-align:left;padding:0.75rem">Ngày</th>
+          <th style="text-align:left;padding:0.75rem">Mô tả</th>
+        </tr>
+      </thead>
+      <tbody id="tx-table-body">
+        <tr><td colspan="5" style="text-align:center;padding:2rem;color:var(--text-secondary)">Đang tải...</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+// Member Wallet Dashboard
+(async function() {
+  const token = localStorage.getItem('dautu_token');
+  if (!token) {
+    document.querySelector('#wallet-section').style.display = 'block';
+    document.querySelector('#wallet-section .section-subtitle').textContent = 'Vui lòng đăng nhập để xem ví.';
+    return;
+  }
+
+  const fmt = (n) => new Intl.NumberFormat('vi-VN').format(n || 0) + ' VND';
+
+  try {
+    // Load wallet
+    const wRes = await fetch('/api/wallet', { headers: { 'Authorization': 'Bearer ' + token } });
+    if (!wRes.ok) throw new Error('Wallet fetch failed');
+    const wData = await wRes.json();
+    if (wData.ok && wData.data) {
+      document.querySelector('#wallet-section').style.display = 'block';
+      document.querySelector('#investment-section').style.display = 'block';
+      const d = wData.data;
+      document.querySelector('#total-recorded').textContent = fmt(d.cash_confirmed + d.capital_committed);
+      document.querySelector('#cash-pending').textContent = fmt(d.cash_pending);
+      document.querySelector('#capital-committed').textContent = fmt(d.capital_committed);
+      document.querySelector('#capital-deployed').textContent = fmt(d.capital_deployed);
+      document.querySelector('#platform-credit').textContent = fmt(d.platform_credit);
+      document.querySelector('#locked-amount').textContent = fmt(d.locked_amount);
+      document.querySelector('#btn-deposit').style.display = 'inline-block';
+      document.querySelector('#btn-invest').style.display = 'inline-block';
+    }
+  } catch (e) {
+    console.error('Wallet load error:', e);
+    document.querySelector('#wallet-section').style.display = 'block';
+    document.querySelector('#wallet-section .section-subtitle').textContent = 'Tải ví thất bại. Vui lòng thử lại sau.';
+  }
+
+  // Load investments
+  try {
+    const iRes = await fetch('/api/investments', { headers: { 'Authorization': 'Bearer ' + token } });
+    if (iRes.ok) {
+      const iData = await iRes.json();
+      const list = document.querySelector('#investment-list');
+      if (iData.ok && iData.data && iData.data.length > 0) {
+        list.innerHTML = iData.data.map(inv => `
+          <div class="card">
+            <h3>${inv.project_name || 'Dự án'}</h3>
+            <p><strong>${fmt(inv.amount)}</strong> · ${inv.investment_type} · ${inv.status}</p>
+            <p style="font-size:0.875rem;color:var(--text-secondary)">Ngày: ${new Date(inv.created_at).toLocaleDateString('vi-VN')}</p>
+            <a href="/member/investment.html?id=${inv.id}" class="btn btn-ghost" style="margin-top:0.5rem">Xem chi tiết</a>
+          </div>
+        `).join('');
+      } else {
+        list.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:2rem">Chưa có khoản đầu tư nào.</p>';
+      }
+    }
+  } catch (e) {
+    console.error('Investment load error:', e);
+  }
+
+  // Load history
+  document.querySelector('#btn-history').addEventListener('click', async () => {
+    const sec = document.querySelector('#history-section');
+    sec.style.display = sec.style.display === 'none' ? 'block' : 'none';
+    if (sec.style.display === 'block') {
+      try {
+        const hRes = await fetch('/api/wallet/history', { headers: { 'Authorization': 'Bearer ' + token } });
+        if (hRes.ok) {
+          const hData = await hRes.json();
+          const tbody = document.querySelector('#tx-table-body');
+          if (hData.ok && hData.data && hData.data.length > 0) {
+            tbody.innerHTML = hData.data.map(tx => `
+              <tr style="border-bottom:1px solid var(--border-light)">
+                <td style="padding:0.75rem">${tx.transaction_type}</td>
+                <td style="padding:0.75rem">${fmt(tx.amount)}</td>
+                <td style="padding:0.75rem"><span class="badge badge-${tx.status === 'confirmed' ? 'success' : 'warn'}">${tx.status}</span></td>
+                <td style="padding:0.75rem">${new Date(tx.created_at).toLocaleDateString('vi-VN')}</td>
+                <td style="padding:0.75rem">${tx.description || '-'}</td>
+              </tr>
+            `).join('');
+          } else {
+            tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;padding:2rem;color:var(--text-secondary)">Chưa có giao dịch.</td></tr>';
+          }
+        }
+      } catch (e) {
+        console.error('History load error:', e);
+      }
+    }
+  });
+})();
+</script>
+
+<section class="section section-alt">
+  <div class="card" style="padding:2rem;max-width:640px;margin:0 auto">
+    <h3 style="font-size:1rem;margin-bottom:0.75rem;color:var(--text-primary)">Lưu ý bảo mật</h3>
+    <ul class="check-list">
+      <li>Không chia sẻ tài khoản hoặc mật khẩu.</li>
+      <li>Không chụp màn hình thông tin thanh toán và chia sẻ công khai.</li>
+      <li>Mọi lần xem thông tin thanh toán đều được ghi log audit.</li>
+      <li>Quyền truy cập có thể bị thu hồi bất cứ lúc nào.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="legal-footer">
+  <div class="legal-inner">
+    <p><strong>Tuyên bố pháp lý:</strong> Nội dung trên trang này chỉ nhằm mục đích thông tin và bày tỏ quan tâm, không phải lời mời chào bán chứng khoán, không phải chào mời đầu tư đại chúng, không phải tư vấn đầu tư, tài chính, thuế, kế toán hoặc pháp lý và không bảo đảm lợi nhuận. Thông tin pháp nhân, quyền ký kết, quyền nhận tài trợ, quyền chào bán cổ phần và nghĩa vụ pháp lý liên quan cần được xác nhận theo hồ sơ doanh nghiệp và tư vấn pháp lý trước khi ký bất kỳ tài liệu ràng buộc nào.</p>
+    <p>Pháp nhân vận hành đề xuất — Trong nước: <strong>Công Ty Cổ Phần Giáo Dục Và BĐS IAI</strong> | Quốc tế: <strong>Công Ty Cổ Phần Đầu Tư Việt Úc Toàn Cầu</strong>. Việc sử dụng tên pháp nhân trên trang này không đồng nghĩa với việc đã hoàn tất rà soát pháp lý cuối cùng.</p>
+    <p>Số tài khoản ngân hàng, mã QR chuyển khoản hoặc hướng dẫn thanh toán không được hiển thị công khai. Thông tin này, nếu phù hợp, chỉ được hiển thị sau khi người quan tâm đăng ký thành viên, hoàn tất xác thực phù hợp, được phân loại đúng lane và được phê duyệt vào quy trình phù hợp.</p>
+    <div class="status-badge">
+      <span class="badge">CONTENT_PACK_READY</span>
+      <span class="badge">DEPLOYED</span>
+      <span class="badge badge-warn">CUSTOM_DOMAIN_LIVE</span>
+      <span class="badge badge-warn">DO_NOT_CLAIM_LEGAL_REVIEWED</span>
+      <span class="badge badge-danger">NOT_A_PUBLIC_SECURITIES_OFFERING_DOCUMENT</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

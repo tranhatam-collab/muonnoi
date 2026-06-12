@@ -17,6 +17,16 @@
 /journey              /journeys/   301
 /dalat                /journeys/dalat/   301
 
+# New pages (Global Nonprofit Positioning)
+/mission              /mission/    301
+/programs             /programs/   301
+/chapters             /chapters/   301
+/join                 /join/       301
+/governance            /governance/  301
+/impact               /impact/     301
+/support              /support/    301
+/safety               /safety/     301
+
 # Legal page aliases
 /policy               /privacy/    301
 /privacy-policy       /privacy/    301

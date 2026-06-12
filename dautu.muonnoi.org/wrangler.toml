@@ -1,2 +1,16 @@
-[build]
-command = ""
+name = "dautu-muonnoi-org"
+compatibility_date = "2026-06-12"
+pages_build_output_dir = "deploy"
+
+# D1 Database
+[[d1_databases]]
+binding = "D1"
+database_name = "dautu-muonnoi-org-db"
+database_id = "8548b5a4-f707-424f-8f6d-74642ac4698e"
+
+# Environment variables
+[vars]
+PAY_IAI_ONE_BASE_URL = "https://pay.iai.one"
+PAY_IAI_ONE_TENANT_CODE = "muonnoi"
+PAY_IAI_ONE_SITE_CODE = "dautu"
+PAY_IAI_ONE_CALLBACK_BASE_URL = "https://dautu.muonnoi.org"

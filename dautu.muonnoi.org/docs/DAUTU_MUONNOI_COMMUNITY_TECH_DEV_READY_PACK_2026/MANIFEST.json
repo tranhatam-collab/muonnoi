@@ -1,0 +1,42 @@
+{
+  "pack_name": "DAUTU_MUONNOI_COMMUNITY_TECH_DEV_READY_PACK_2026",
+  "created_at": "2026-06-12T03:03:47Z",
+  "scope": [
+    "dautu.muonnoi.org",
+    "dautu.nhachung.org",
+    "invest.iai.one related posture"
+  ],
+  "status": [
+    "CONTENT_PACK_READY",
+    "DO_NOT_CLAIM_DEPLOYED",
+    "DO_NOT_CLAIM_LEGAL_REVIEWED",
+    "NOT_A_PUBLIC_SECURITIES_OFFERING_DOCUMENT"
+  ],
+  "legal_entities": {
+    "domestic": "Công Ty Cổ Phần Giáo Dục Và BĐS IAI",
+    "international": "Công Ty Cổ Phần Đầu Tư Việt Úc Toàn Cầu"
+  },
+  "verify_gate": "verify.iai.one",
+  "hard_rules": [
+    "Public page = mission, lanes, projects, governance, qualification flow",
+    "Member-only = deeper information by lane",
+    "Verify-gated = individual/corporate strategic review",
+    "Private review = strategic capital, legal, valuation, terms",
+    "Bank account = only after registration, verification, lane classification and approval",
+    "No public ROI",
+    "No public equity terms",
+    "No public valuation",
+    "No public term sheet",
+    "No public payment instructions",
+    "No invest-now CTA"
+  ],
+  "files": [
+    "README.md",
+    "COMMUNITY_TECH_FUND_PUBLIC_POSITIONING_2026.md",
+    "DAUTU_MUONNOI_3_FLAGSHIP_PROJECTS_INVESTOR_BRIEF_2026.md",
+    "DAUTU_MUONNOI_PUBLIC_PORTAL_COPY_AND_LEGAL_DISCLOSURE_2026.md",
+    "DAUTU_MUONNOI_VERIFY_GATE_AND_MEMBER_ONLY_PAYMENT_FLOW_2026.md",
+    "DAUTU_MUONNOI_DEV_IMPLEMENTATION_HANDOFF_2026.md",
+    "MANIFEST.json"
+  ]
+}
