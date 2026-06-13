@@ -1398,6 +1398,191 @@ article blockquote,
   color: var(--mn-azure-700);
 }
 
+/* ─── Ecosystem Map ─────────────────────────────────────────── */
+
+.mn-ecosystemMap {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .mn-ecosystemMap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mn-ecosystemMap__core {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(74, 168, 107, 0.15), rgba(59, 126, 255, 0.15));
+  border: 2px solid rgba(74, 168, 107, 0.3);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+}
+
+.mn-ecosystemMap__coreInner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mn-ecosystemMap__coreLabel {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(233, 239, 233, 0.7);
+}
+
+.mn-ecosystemMap__coreName {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--mn-white-100);
+}
+
+.mn-ecosystemMap__verticals {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mn-ecosystemMap__group {
+  background: rgba(233, 239, 233, 0.03);
+  border: 1px solid rgba(233, 239, 233, 0.08);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.mn-ecosystemMap__groupLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(233, 239, 233, 0.8);
+  margin-bottom: 12px;
+}
+
+.mn-ecosystemMap__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.mn-ecosystemMap__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  background: rgba(233, 239, 233, 0.05);
+  border: 1px solid rgba(233, 239, 233, 0.1);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mn-ecosystemMap__item:hover {
+  background: rgba(74, 168, 107, 0.1);
+  border-color: rgba(74, 168, 107, 0.3);
+  transform: translateY(-2px);
+}
+
+.mn-ecosystemMap__itemIcon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.mn-ecosystemMap__itemText {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mn-white-100);
+}
+
+.mn-ecosystemMap__itemSub {
+  font-size: 11px;
+  color: rgba(233, 239, 233, 0.6);
+}
+
+/* ─── Trust Strip ─────────────────────────────────────────────── */
+
+.mn-trustStrip {
+  background: linear-gradient(135deg, rgba(74, 168, 107, 0.1), rgba(59, 126, 255, 0.1));
+  border: 1px solid rgba(74, 168, 107, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.mn-trustStrip__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .mn-trustStrip__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.mn-trustStrip__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(233, 239, 233, 0.05);
+  border: 1px solid rgba(233, 239, 233, 0.1);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--mn-white-100);
+}
+
+.mn-trustStrip__icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.mn-trustStrip__text {
+  font-weight: 500;
+}
+
+/* ─── Final CTA ─────────────────────────────────────────────── */
+
+.mn-finalCTA {
+  background: linear-gradient(135deg, rgba(74, 168, 107, 0.15), rgba(59, 126, 255, 0.15));
+  border: 2px solid rgba(74, 168, 107, 0.3);
+  border-radius: 20px;
+  padding: 32px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.mn-finalCTA__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mn-finalCTA__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--mn-white-100);
+  margin: 0 0 12px;
+}
+
+.mn-finalCTA__desc {
+  font-size: 16px;
+  color: rgba(233, 239, 233, 0.8);
+  margin: 0 0 20px;
+}
+
+.mn-btn--large {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
 /* ─── Scrollbar — azure ─────────────────────────────── */
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
