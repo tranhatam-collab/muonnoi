@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAUTU_MUONNOI_SEO_SYSTEM_SPEC_2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 40px;
+        }
+        .spec {
+            background: #e8f4f8;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .forbidden {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .required {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>DAUTU_MUONNOI_SEO_SYSTEM_SPEC_2026</h1>
+    <p><strong>Status:</strong> LOCKED — SEO System Specification</p>
+    <p><strong>Last Updated:</strong> 2026-06-13</p>
+    <p><strong>Version:</strong> 1.0</p>
+
+    <div class="spec">
+        <h3>🔍 SEO SYSTEM SPECIFICATION</h3>
+        <p>Quy tắc SEO bắt buộc cho toàn bộ dautu.muonnoi.org với hỗ trợ song ngữ VI/EN hoàn chỉnh</p>
+    </div>
+
+    <h2>1. SEO FILE STRUCTURE</h2>
+
+    <h3>1.1. Bắt buộc có các file</h3>
+    <div class="required">
+        <ul>
+            <li><code>/robots.txt</code> — Robot instructions</li>
+            <li><code>/sitemap.xml</code> — Sitemap</li>
+            <li><code>/_headers</code> — HTTP headers</li>
+            <li><code>/_redirects</code> — URL redirects</li>
+            <li><code>/content/seo.vi.json</code> — VI SEO metadata</li>
+            <li><code>/content/seo.en.json</code> — EN SEO metadata</li>
+        </ul>
+    </div>
+
+    <h2>2. ROBOTS.TXT</h2>
+
+    <h3>2.1. Robots.txt content</h3>
+    <pre><code>User-agent: *
+Allow: /
+
+Sitemap: https://dautu.muonnoi.org/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /member/
+Disallow: /api/
+
+# Disallow backup/staging
+Disallow: /_old_backup/
+Disallow: /backup/</code></pre>
+
+    <h2>3. SITEMAP.XML</h2>
+
+    <h3>3.1. Sitemap structure</h3>
+    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://dautu.muonnoi.org/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-13&lt;/lastmod&gt;
+    &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+    &lt;priority&gt;1.0&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://dautu.muonnoi.org/du-an/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-13&lt;/lastmod&gt;
+    &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+    &lt;priority&gt;0.8&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://dautu.muonnoi.org/hinh-thuc-dong-hanh/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-13&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.7&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://dautu.muonnoi.org/quy-trinh-review/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-13&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.6&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://dautu.muonnoi.org/governance/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-13&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.5&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://dautu.muonnoi.org/faq/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-13&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.5&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://dautu.muonnoi.org/dang-ky-quan-tam/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-13&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.4&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://dautu.muonnoi.org/legal/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-13&lt;/lastmod&gt;
+    &lt;changefreq&gt;yearly&lt;/changefreq&gt;
+    &lt;priority&gt;0.3&lt;/priority&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</code></pre>
+
+    <h2>4. HTTP HEADERS (_headers)</h2>
+
+    <h3>4.1. Security headers</h3>
+    <pre><code>
+# Security Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# HSTS
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+# COOP and CORP
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin</code></pre>
+
+    <h3>4.2. Cache headers</h3>
+    <pre><code>
+# Static assets
+/assets/*: Cache-Control: public, max-age=31536000, immutable
+
+# Content files
+/content/*: Cache-Control: public, max-age=86400
+
+# HTML files
+/*.html: Cache-Control: public, max-age=3600</code></pre>
+
+    <h2>5. URL REDIRECTS (_redirects)</h2>
+
+    <h3>5.1. Common redirects</h3>
+    <pre><code>
+# Old to new routes
+/du-an.html /du-an/
+/hinh-thuc-dong-hanh.html /hinh-thuc-dong-hanh/
+/quy-trinh-review.html /quy-trinh-review/
+/governance.html /governance/
+/faq.html /faq/
+/dang-ky-quan-tam.html /dang-ky-quan-tam/
+/legal.html /legal/
+
+# Trailing slash normalization
+/du-an /du-an/
+/hinh-thuc-dong-hanh /hinh-thuc-dong-hanh/</code></pre>
+
+    <h2>6. METADATA REQUIREMENTS</h2>
+
+    <h3>6.1. Title tags</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Length:</strong> 50-60 characters</li>
+            <li><strong>Format:</strong> [Page Title] | [Site Name]</li>
+            <li><strong>Unique:</strong> Mỗi page có title riêng</li>
+            <li><strong>Bilingual:</strong> VI và EN có title riêng</li>
+        </ul>
+    </div>
+
+    <h3>6.2. Meta descriptions</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Length:</strong> 150-160 characters</li>
+            <li><strong>Content:</strong> Descriptive, not keyword stuffing</li>
+            <li><strong>Unique:</strong> Mỗi page có description riêng</li>
+            <li><strong>Bilingual:</strong> VI và EN có description riêng</li>
+        </ul>
+    </div>
+
+    <h3>6.3. Open Graph tags</h3>
+    <div class="required">
+        <ul>
+            <li><strong>og:title:</strong> Same as page title</li>
+            <li><strong>og:description:</strong> Same as meta description</li>
+            <li><strong>og:image:</strong> Relevant image (1200x630px)</li>
+            <li><strong>og:url:</strong> Canonical URL</li>
+            <li><strong>og:type:</strong> website</li>
+        </ul>
+    </div>
+
+    <h2>7. HREFLANG IMPLEMENTATION</h2>
+
+    <h3>7.1. Nếu dùng separate routes (/vi/, /en/)</h3>
+    <pre><code>&lt;!-- VI version --&gt;
+&lt;link rel="alternate" hreflang="vi" href="https://dautu.muonnoi.org/vi/" /&gt;
+&lt;link rel="alternate" hreflang="en" href="https://dautu.muonnoi.org/en/" /&gt;
+&lt;link rel="canonical" href="https://dautu.muonnoi.org/vi/" /&gt;
+
+&lt;!-- EN version --&gt;
+&lt;link rel="alternate" hreflang="vi" href="https://dautu.muonnoi.org/vi/" /&gt;
+&lt;link rel="alternate" hreflang="en" href="https://dautu.muonnoi.org/en/" /&gt;
+&lt;link rel="canonical" href="https://dautu.muonnoi.org/en/" /&gt;</code></pre>
+
+    <h3>7.2. Nếu dùng query parameter (?lang=)</h3>
+    <pre><code>&lt;!-- Default VI --&gt;
+&lt;link rel="alternate" hreflang="vi" href="https://dautu.muonnoi.org/?lang=vi" /&gt;
+&lt;link rel="alternate" hreflang="en" href="https://dautu.muonnoi.org/?lang=en" /&gt;
+&lt;link rel="canonical" href="https://dautu.muonnoi.org/" /&gt;</code></pre>
+
+    <h2>8. STRUCTURED DATA</h2>
+
+    <h3>8.1. Organization schema</h3>
+    <pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Muôn Nơi",
+  "url": "https://dautu.muonnoi.org",
+  "description": "Hành trình đầu tư trí tuệ: học trước, hiểu trước, đồng hành nếu phù hợp",
+  "sameAs": [
+    "https://www.muonnoi.org"
+  ]
+}
+&lt;/script&gt;</code></pre>
+
+    <h3>8.2. WebSite schema</h3>
+    <pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "dautu.muonnoi.org",
+  "url": "https://dautu.muonnoi.org",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://dautu.muonnoi.org/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+&lt;/script&gt;</code></pre>
+
+    <h2>9. PAGE-SPECIFIC SEO</h2>
+
+    <h3>9.1. Homepage (/)</h3>
+    <div class="section">
+        <h4>VI Title:</h4>
+        <p>Đầu tư trí tuệ: Học trước, hiểu trước, đồng hành nếu phù hợp | Muôn Nơi</p>
+        
+        <h4>EN Title:</h4>
+        <p>Intellectual Investment: Learn First, Understand First, Collaborate If Suitable | Muôn Nơi</p>
+        
+        <h4>VI Description:</h4>
+        <p>Khám phá hành trình đầu tư trí tuệ tại Muôn Nơi: học trước, hiểu trước, đồng hành nếu phù hợp. Không cam kết lợi nhuận, không cam kết hoàn vốn.</p>
+        
+        <h4>EN Description:</h4>
+        <p>Discover the intellectual investment journey at Muôn Nơi: learn first, understand first, collaborate if suitable. No guaranteed returns, no capital repayment promises.</p>
+    </div>
+
+    <h3>9.2. Projects (/du-an/)</h3>
+    <div class="section">
+        <h4>VI Title:</h4>
+        <p>Dự án | Đầu tư trí tuệ Muôn Nơi</p>
+        
+        <h4>EN Title:</h4>
+        <p>Projects | Intellectual Investment Muôn Nơi</p>
+        
+        <h4>VI Description:</h4>
+        <p>Xem các dự án và cơ hội đồng hành tại Muôn Nơi. Tìm hiểu về AI Computer Ecosystem, AIAgent Infrastructure và các chương trình cộng đồng.</p>
+        
+        <h4>EN Description:</h4>
+        <p>View projects and collaboration opportunities at Muôn Nơi. Learn about AI Computer Ecosystem, AIAgent Infrastructure, and community programs.</p>
+    </div>
+
+    <h3>9.3. Participation (/hinh-thuc-dong-hanh/)</h3>
+    <div class="section">
+        <h4>VI Title:</h4>
+        <p>Hình thức đồng hành | Đầu tư trí tuệ Muôn Nơi</p>
+        
+        <h4>EN Title:</h4>
+        <p>Participation | Intellectual Investment Muôn Nơi</p>
+        
+        <h4>VI Description:</h4>
+        <p>Tìm hiểu các mức tham gia: học, quan tâm, review, member layer, strategic participation. Chọn hình thức phù hợp với bạn.</p>
+        
+        <h4>EN Description:</h4>
+        <p>Learn about participation levels: learn, interest, review, member layer, strategic participation. Choose the right level for you.</p>
+    </div>
+
+    <h2>10. PERFORMANCE SEO</h2>
+
+    <h3>10.1. Core Web Vitals targets</h3>
+    <div class="required">
+        <ul>
+            <li><strong>LCP (Largest Contentful Paint):</strong> &lt; 2.5s</li>
+            <li><strong>FID (First Input Delay):</strong> &lt; 100ms</li>
+            <li><strong>CLS (Cumulative Layout Shift):</strong> &lt; 0.1</li>
+        </ul>
+    </div>
+
+    <h3>10.2. Image optimization</h3>
+    <ul>
+        <li>Use WebP format</li>
+            <li>Compress images</li>
+            <li>Lazy load below-fold images</li>
+            <li>Use responsive images (srcset)</li>
+            <li>Include alt text</li>
+        </ul>
+
+    <h3>10.3. Code optimization</h3>
+    <ul>
+        <li>Minify CSS and JavaScript</li>
+        <li>Remove unused CSS</li>
+        <li>Defer non-critical JavaScript</li>
+        <li>Use system fonts</li>
+        <li>Enable compression</li>
+    </ul>
+
+    <h2>11. ACCESSIBILITY SEO</h2>
+
+    <h3>11.1. Semantic HTML</h3>
+    <div class="required">
+        <ul>
+            <li>Use proper heading hierarchy (H1 → H2 → H3)</li>
+            <li>Use semantic elements (nav, main, footer, article)</li>
+            <li>Include alt text for all images</li>
+            <li>Use ARIA labels for interactive elements</li>
+        </ul>
+    </div>
+
+    <h3>11.2. Color contrast</h3>
+    <ul>
+        <li>Text contrast ratio: 4.5:1 minimum</li>
+        <li>Large text contrast ratio: 3:1 minimum</li>
+        <li>Interactive elements: 3:1 minimum</li>
+    </ul>
+
+    <h2>12. SEO QA CHECKLIST</h2>
+
+    <div class="section">
+        <h3>12.1. Technical SEO</h3>
+        <ul>
+            <li>[ ] robots.txt present and valid</li>
+            <li>[ ] sitemap.xml present and valid</li>
+            <li>[ ] _headers configured correctly</li>
+            <li>[ ] _redirects configured correctly</li>
+            <li>[ ] HTTPS enabled</li>
+            <li>[ ] HSTS enabled</li>
+        </ul>
+
+        <h3>12.2. On-page SEO</h3>
+        <ul>
+            <li>[ ] Title tags unique VI/EN</li>
+            <li>[ ] Meta descriptions unique VI/EN</li>
+            <li>[ ] Only 1 H1 per page</li>
+            <li>[ ] Heading hierarchy correct</li>
+            <li>[ ] Alt text present</li>
+            <li>[ ] Internal links working</li>
+        </ul>
+
+        <h3>12.3. Bilingual SEO</h3>
+        <ul>
+            <li>[ ] Hreflang tags present</li>
+            <li>[ ] Canonical tags correct</li>
+            <li>[ ] Language switcher working</li>
+            <li>[ ] No mixed language content</li>
+            <li>[ ] Internal links language-specific</li>
+        </ul>
+
+        <h3>12.4. Performance</h3>
+        <ul>
+            <li>[ ] LCP &lt; 2.5s</li>
+            <li>[ ] FID &lt; 100ms</li>
+            <li>[ ] CLS &lt; 0.1</li>
+            <li>[ ] Images optimized</li>
+            <li>[ ] Code minified</li>
+        </ul>
+    </div>
+
+    <div class="spec">
+        <h3>🔒 SEO LOCK</h3>
+        <p>SEO system bị khóa. Bất kỳ thay đổi nào phải tuân theo quy tắc trong spec này.</p>
+        <p>Team dev có quyền từ chối implement bất kỳ SEO change nào vi phạm quy tắc.</p>
+    </div>
+
+    <hr>
+    <p><strong>Document Owner:</strong> SEO Specialist + Technical Lead</p>
+    <p><strong>Content Owner:</strong> Content Lead</p>
+    <p><strong>Last Review:</strong> 2026-06-13</p>
+    <p><strong>Next Review:</strong> 2026-09-13</p>
+</body>
+</html>

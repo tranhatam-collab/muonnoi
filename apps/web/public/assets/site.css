@@ -655,6 +655,21 @@ html[data-theme="light"] .mn-btn--primary{
   background: transparent;
   color: var(--mn-muted);
 }
+.mn-chip--live{
+  background: #0f5132;
+  color: #75b798;
+  border-color: #0f5132;
+}
+.mn-chip--building{
+  background: #664d03;
+  color: #ffc107;
+  border-color: #664d03;
+}
+.mn-chip--planned{
+  background: #332d00;
+  color: #9ca3ff;
+  border-color: #332d00;
+}
 .mn-hero__cta{
   display:flex;
   gap:10px;

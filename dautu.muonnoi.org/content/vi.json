@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Đầu tư trí tuệ: Học trước, hiểu trước, đồng hành nếu phù hợp | Muôn Nơi",
+    "description": "Khám phá hành trình đầu tư trí tuệ tại Muôn Nơi: học trước, hiểu trước, đồng hành nếu phù hợp. Không cam kết lợi nhuận, không cam kết hoàn vốn."
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "projects": "Dự án",
+    "participation": "Hình thức đồng hành",
+    "process": "Quy trình review",
+    "governance": "Quản trị",
+    "faq": "Câu hỏi thường gặp",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "h1": "Đầu tư ở đây là hành trình học, làm, trưởng thành và cùng phát triển",
+    "subheadline": "Khám phá triết lý đầu tư trí tuệ: học trước, hiểu trước, đồng hành nếu phù hợp",
+    "cta_primary": "Tìm hiểu triết lý đầu tư",
+    "cta_secondary": "Xem hành trình tham gia"
+  },
+  "sections": {
+    "philosophy": {
+      "title": "Chân lý đầu tư",
+      "content": "Đầu tư trí tuệ không giống đầu tư tài chính thông thường. Nó đòi hỏi hiểu rõ rủi ro, mechanism, và phù hợp với bản thân trước khi commit capital. Chúng tôi tin rằng người tham gia càng hiểu rõ, càng có khả năng đưa ra quyết định đúng."
+    },
+    "not_investment": {
+      "title": "Đầu tư ở đây không phải là gì",
+      "content": "Đây không phải lời mời chào bán chứng khoán đại chúng. Không cam kết lợi nhuận. Không cam kết hoàn vốn. Không phải cơ hội 'get rich quick'. Không phải nơi để 'chốt suất' hay 'giữ deal'."
+    },
+    "journey": {
+      "title": "Hành trình người tham gia",
+      "content": "Từ quan tâm → học → review → đồng hành. Mỗi bước đều được thiết kế để đảm bảo người tham gia hiểu rõ rủi ro và cơ hội trước khi commit capital."
+    },
+    "value": {
+      "title": "Giá trị nhận được",
+      "content": "Giá trị lớn nhất là kiến thức, network, và cơ hội phát triển — không phải số tiền lãi. Đầu tư trí tuệ là đầu tư vào bản thân và năng lực."
+    },
+    "risk": {
+      "title": "Rủi ro và sự thật",
+      "content": "Rủi ro mất vốn là thật. Không có cam kết hoàn vốn. Không có cam kết lợi nhuận. Quyết định đầu tư là trách nhiệm của bạn."
+    },
+    "system": {
+      "title": "Hệ thống và dự án",
+      "content": "Các dự án chúng tôi đang phát triển: AI Computer Ecosystem, AIAgent Infrastructure, và Nhà Chung / Muôn Nơi Workforce & Community Tech Program."
+    },
+    "getting_started": {
+      "title": "Bắt đầu",
+      "content": "Bắt đầu từ việc tìm hiểu triết lý, xem hành trình, và bày tỏ mong muốn đồng hành — không phải chuyển khoản ngay."
+    }
+  },
+  "forms": {
+    "interest": {
+      "full_name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "country": "Quốc gia",
+      "interest_type": "Loại quan tâm",
+      "message": "Ghi chú",
+      "submit": "Gửi quan tâm"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Muôn Nơi. Tất cả quyền được bảo lưu.",
+    "legal": "Điều khoản và điều kiện",
+    "privacy": "Chính sách bảo mật"
+  }
+}

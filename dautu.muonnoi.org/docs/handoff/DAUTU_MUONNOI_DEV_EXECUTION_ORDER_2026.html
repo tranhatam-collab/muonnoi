@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAUTU_MUONNOI_DEV_EXECUTION_ORDER_2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 40px;
+        }
+        .execution {
+            background: #e8f4f8;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .forbidden {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .required {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>DAUTU_MUONNOI_DEV_EXECUTION_ORDER_2026</h1>
+    <p><strong>Status:</strong> LOCKED — Development Execution Order</p>
+    <p><strong>Last Updated:</strong> 2026-06-13</p>
+    <p><strong>Version:</strong> 1.0</p>
+
+    <div class="execution">
+        <h3>⚡ DEV EXECUTION ORDER</h3>
+        <p>Thứ tự thực thi bắt buộc cho team dev dautu.muonnoi.org — đảm bảo đúng doctrine, đúng process, và đúng quality</p>
+    </div>
+
+    <h2>1. EXECUTION PRINCIPLES</h2>
+
+    <h3>1.1. Core principles</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Doctrine-first</strong> — Doctrine là source of truth</li>
+            <li><strong>Sequential execution</strong> — Không skip phases</li>
+            <li><strong>Quality gates</strong> — Mỗi phase phải pass QA</li>
+            <li><strong>No partial deployment</strong> — Không live từng phần rác</li>
+            <li><strong>Documentation first</strong> — Docs trước khi code</li>
+        </ul>
+    </div>
+
+    <h2>2. PHASE EXECUTION ORDER</h2>
+
+    <h3>2.1. Phase 1 — Lock Doctrine</h3>
+    <div class="section">
+        <h4>Objective:</strong> Khóa định nghĩa đầu tư, tone, và CTA registry</h4>
+        
+        <h4>Tasks:</h4>
+        <ol>
+            <li>Review và approve Master Doctrine document</li>
+            <li>Khóa định nghĩa đầu tư</li>
+            <li>Khóa anti-definition</li>
+            <li>Khóa tone guidelines</li>
+            <li>Khóa CTA registry</li>
+            <li>Khóa forbidden words list</li>
+        </ol>
+        
+        <h4>Deliverable:</strong> Doctrine approved and locked</li>
+        <h4>Gate:</strong> Founder sign-off required</li>
+    </div>
+
+    <h3>2.2. Phase 2 — Lock Content Source</h3>
+    <div class="section">
+        <h4>Objective:</strong> Tạo hệ thống content source chuẩn</h4>
+        
+        <h4>Tasks:</h4>
+        <ol>
+            <li>Tạo <code>/content/vi.json</code></li>
+            <li>Tạo <code>/content/en.json</code></li>
+            <li>Tạo <code>/content/seo.vi.json</code></li>
+            <li>Tạo <code>/content/seo.en.json</code></li>
+            <li>Map toàn bộ text hiện tại</li>
+            <li>Remove hard-coded text</li>
+        </ol>
+        
+        <h4>Deliverable:</strong> Content source system complete</li>
+        <h4>Gate:</strong> Content lead sign-off required</li>
+    </div>
+
+    <h3>2.3. Phase 3 — Rebuild Homepage</h3>
+    <div class="section">
+        <h4>Objective:</strong> Rebuild homepage theo doctrine</h4>
+        
+        <h4>Tasks:</h4>
+        <ol>
+            <li>Sửa H1 theo doctrine</li>
+            <li>Sửa hero theo doctrine</li>
+            <li>Sửa CTA theo doctrine</li>
+            <li>Thêm section doctrine</li>
+            <li>Thêm section risk</li>
+            <li>Thêm journey map</li>
+            <li>Thêm final CTA đúng</li>
+        </ol>
+        
+        <h4>Deliverable:</strong> Homepage rebuilt per doctrine</li>
+        <h4>Gate:</strong> Founder + Content lead sign-off required</li>
+    </div>
+
+    <h3>2.4. Phase 4 — Rebuild 7 Routes</h3>
+    <div class="section">
+        <h4>Objective:</strong> Rebuild 7 public routes còn lại</h4>
+        
+        <h4>Tasks:</h4>
+        <ol>
+            <li>Rebuild <code>/du-an/</code></li>
+            <li>Rebuild <code>/hinh-thuc-dong-hanh/</code></li>
+            <li>Rebuild <code>/quy-trinh-review/</code></li>
+            <li>Rebuild <code>/governance/</code></li>
+            <li>Rebuild <code>/faq/</code></li>
+            <li>Rebuild <code>/dang-ky-quan-tam/</code></li>
+            <li>Rebuild <code>/legal/</code></li>
+            <li>Đồng bộ nav/footer</li>
+            <li>Đồng bộ metadata</li>
+            <li>Đồng bộ bilingual content</li>
+        </ol>
+        
+        <h4>Deliverable:</strong> 7 routes rebuilt per doctrine</li>
+        <h4>Gate:</strong> Content lead sign-off required</li>
+    </div>
+
+    <h3>2.5. Phase 5 — QA 4 Pass</h3>
+    <div class="section">
+        <h4>Objective:</strong> QA qua 4 layers</h4>
+        
+        <h4>Tasks:</h4>
+        <ol>
+            <li>AI pass — Automated content check</li>
+            <li>Editor/Content pass — Manual content review</li>
+            <li>SEO pass — SEO validation</li>
+            <li>QA/Dev pass — Technical QA</li>
+        </ol>
+        
+        <h4>Deliverable:</strong> All 4 QA passes complete</li>
+        <h4>Gate:</strong> All 4 QA leads sign-off required</li>
+    </div>
+
+    <h3>2.6. Phase 6 — Live Only When Clean</h3>
+    <div class="section">
+        <h4>Objective:</strong> Deploy khi tất cả clean</h4>
+        
+        <h4>Tasks:</h4>
+        <ol>
+            <li>Final deployment preparation</li>
+            <li>Staging deployment</li>
+            <li>Final staging QA</li>
+            <li>Production deployment</li>
+            <li>Post-deployment verification</li>
+        </ol>
+        
+        <h4>Deliverable:</strong> Clean production deployment</li>
+        <h4>Gate:</strong> Founder final approval required</li>
+    </div>
+
+    <h2>3. WITHIN-PHASE EXECUTION ORDER</h2>
+
+    <h3>3.1. Content creation order</h3>
+    <div class="required">
+        <ol>
+            <li>Write VI content first</li>
+            <li>Review VI content</li>
+            <li>Translate to EN</li>
+            <li>Review EN content</li>
+            <li>Update JSON files</li>
+            <li>Test language switcher</li>
+        </ol>
+    </div>
+
+    <h3>3.2. Page build order</h3>
+    <div class="required">
+        <ol>
+            <li>Create page structure</li>
+            <li>Integrate content from JSON</li>
+            <li>Apply UI/UX system</li>
+            <li>Add SEO metadata</li>
+            <li>Test responsive</li>
+            <li>Test accessibility</li>
+            <li>Internal QA</li>
+        </ol>
+    </div>
+
+    <h3>3.3. SEO implementation order</h3>
+    <div class="required">
+        <ol>
+            <li>Implement title tags</li>
+            <li>Implement meta descriptions</li>
+            <li>Implement OG tags</li>
+            <li>Implement hreflang</li>
+            <li>Update sitemap</li>
+            <li>Update robots.txt</li>
+            <li>Configure headers</li>
+            <li>Test SEO tools</li>
+        </ol>
+    </div>
+
+    <h2>4. QUALITY GATES</h2>
+
+    <h3>4.1. Phase completion gates</h3>
+    <div class="section">
+        <h4>Phase 1 Gate:</h4>
+        <ul>
+            <li>[ ] Founder sign-off</li>
+            <li>[ ] Doctrine document approved</li>
+            <li>[ ] Team understands doctrine</li>
+        </ul>
+
+        <h4>Phase 2 Gate:</h4>
+        <ul>
+            <li>[ ] Content lead sign-off</li>
+            <li>[ ] JSON files created</li>
+            <li>[ ] No hard-coded text remaining</li>
+        </ul>
+
+        <h4>Phase 3 Gate:</h4>
+        <ul>
+            <li>[ ] Founder sign-off</li>
+            <li>[ ] Content lead sign-off</li>
+            <li>[ ] Homepage passes doctrine check</li>
+        </ul>
+
+        <h4>Phase 4 Gate:</h4>
+        <ul>
+            <li>[ ] Content lead sign-off</li>
+            <li>[ ] All 7 routes pass doctrine check</li>
+            <li>[ ] Bilingual content validated</li>
+        </ul>
+
+        <h4>Phase 5 Gate:</h4>
+        <ul>
+            <li>[ ] AI pass complete</li>
+            <li>[ ] Editor/Content pass complete</li>
+            <li>[ ] SEO pass complete</li>
+            <li>[ ] QA/Dev pass complete</li>
+        </ul>
+
+        <h4>Phase 6 Gate:</h4>
+        <ul>
+            <li>[ ] Founder final approval</li>
+            <li>[ ] Staging QA pass</li>
+            <li>[ ] Production deployment successful</li>
+            <li>[ ] Post-deployment verification pass</li>
+        </ul>
+    </div>
+
+    <h2>5. FORBIDDEN EXECUTION PATTERNS</h2>
+
+    <h3>5.1. Không được skip phases</h3>
+    <div class="forbidden">
+        <p><strong>KHÔNG ĐƯỢC:</strong></p>
+        <ul>
+            <li>Skip Phase 1 (Doctrine lock)</li>
+            <li>Skip Phase 2 (Content source)</li>
+            <li>Skip Phase 5 (QA 4 pass)</li>
+            <li>Deploy từng phần rác</li>
+            <li>Live khi chưa QA xong</li>
+        </ul>
+    </div>
+
+    <h3>5.2. Không được violate doctrine</h3>
+    <div class="forbidden">
+        <p><strong>KHÔNG ĐƯỢC:</strong></p>
+        <ul>
+            <li>Implement content vi phạm doctrine</li>
+            <li>Use CTA vi phạm CTA registry</li>
+            <li>Use từ vi phạm forbidden words</li>
+            <li>Display payment info public</li>
+            <li>Make claims vi phạm legal posture</li>
+        </ul>
+    </div>
+
+    <h2>6. TEAM RESPONSIBILITIES</h2>
+
+    <h3>6.1. Founder responsibilities</h3>
+    <div class="required">
+        <ul>
+            <li>Approve doctrine (Phase 1)</li>
+            <li>Approve homepage (Phase 3)</li>
+            <li>Final approval for live (Phase 6)</li>
+            <li>Provide legal/accounting resources</li>
+        </ul>
+    </div>
+
+    <h3>6.2. Content lead responsibilities</h3>
+    <div class="required">
+        <ul>
+            <li>Create and approve content source (Phase 2)</li>
+            <li>Approve homepage rebuild (Phase 3)</li>
+            <li>Approve 7 routes rebuild (Phase 4)</li>
+            <li>Lead content QA (Phase 5)</li>
+        </ul>
+    </div>
+
+    <h3>6.3. Developer responsibilities</h3>
+    <div class="required">
+        <ul>
+            <li>Implement content source system</li>
+            <li>Rebuild pages per doctrine</li>
+            <li>Implement SEO requirements</li>
+            <li>Implement UI/UX system</li>
+            <li>Technical QA (Phase 5)</li>
+            <li>Deployment (Phase 6)</li>
+        </ul>
+    </div>
+
+    <h3>6.4. SEO specialist responsibilities</h3>
+    <div class="required">
+        <ul>
+            <li>Create SEO specifications</li>
+            <li>Approve SEO implementation</li>
+            <li>Lead SEO QA (Phase 5)</li>
+            <li>Monitor SEO performance</li>
+        </ul>
+    </div>
+
+    <h2>7. TIMELINE ESTIMATES</h2>
+
+    <h3>7.1. Phase duration estimates</h3>
+    <div class="section">
+        <h4>Phase 1 — Lock Doctrine:</h4>
+        <ul>
+            <li>Duration: 1-2 days</li>
+            <li>Dependencies: None</li>
+        </ul>
+
+        <h4>Phase 2 — Lock Content Source:</h4>
+        <ul>
+            <li>Duration: 2-3 days</li>
+            <li>Dependencies: Phase 1 complete</li>
+        </ul>
+
+        <h4>Phase 3 — Rebuild Homepage:</h4>
+        <ul>
+            <li>Duration: 3-5 days</li>
+            <li>Dependencies: Phase 2 complete</li>
+        </ul>
+
+        <h4>Phase 4 — Rebuild 7 Routes:</h4>
+        <ul>
+            <li>Duration: 5-7 days</li>
+            <li>Dependencies: Phase 3 complete</li>
+        </ul>
+
+        <h4>Phase 5 — QA 4 Pass:</h4>
+        <ul>
+            <li>Duration: 3-5 days</li>
+            <li>Dependencies: Phase 4 complete</li>
+        </ul>
+
+        <h4>Phase 6 — Live Only When Clean:</h4>
+        <ul>
+            <li>Duration: 1-2 days</li>
+            <li>Dependencies: Phase 5 complete</li>
+        </ul>
+    </div>
+
+    <h3>7.2. Total timeline estimate</h3>
+    <div class="required">
+        <p><strong>Total:</strong> 15-24 days (3-4 weeks)</p>
+        <p><strong>Best case:</strong> 15 days (all gates pass first time)</p>
+        <p><strong>Worst case:</strong> 24 days (multiple iterations needed)</p>
+    </div>
+
+    <h2>8. RISK MITIGATION</h2>
+
+    <h3>8.1. Timeline risks</h3>
+    <div class="section">
+        <h4>Risk:</h4>
+        <p>Founder approval delays</p>
+        
+        <h4>Mitigation:</h4>
+        <ul>
+            <li>Clear approval criteria upfront</li>
+            <li>Scheduled review meetings</li>
+            <li>Parallel work where possible</li>
+        </ul>
+    </div>
+
+    <h3>8.2. Quality risks</h3>
+    <div class="section">
+        <h4>Risk:</h4>
+        <p>QA failures requiring rework</p>
+        
+        <h4>Mitigation:</h4>
+        <ul>
+            <li>Early and frequent QA</li>
+            <li>Clear QA criteria</li>
+            <li>Automated QA tools</li>
+        </ul>
+    </div>
+
+    <h3>8.3. Resource risks</h3>
+    <div class="section">
+        <h4>Risk:</h4>
+        <p>Team availability issues</p>
+        
+        <h4>Mitigation:</h4>
+        <ul>
+            <li>Clear resource allocation</li>
+            <li>Backup resource planning</li>
+            <li>Scope management</li>
+        </ul>
+    </div>
+
+    <h2>9. SUCCESS CRITERIA</h2>
+
+    <h3>9.1. Project success criteria</h3>
+    <div class="required">
+        <ul>
+            <li>All 6 phases complete</li>
+            <li>All quality gates pass</li>
+            <li>Doctrine compliance 100%</li>
+            <li>SEO compliance 100%</li>
+            <li>Legal-safe posture 100%</li>
+            <li>Bilingual content 100%</li>
+            <li>Production deployment successful</li>
+        </ul>
+    </div>
+
+    <h3>9.2. Quality success criteria</h3>
+    <div class="required">
+        <ul>
+            <li>No forbidden content</li>
+            <li>No hard-coded text</li>
+            <li>No broken links</li>
+            <li>No console errors</li>
+            <li>No accessibility issues</li>
+            <li>No SEO issues</li>
+        </ul>
+    </div>
+
+    <h2>10. POST-LAUNCH MONITORING</h2>
+
+    <h3>10.1. Immediate monitoring (Week 1)</h3>
+    <div class="required">
+        <ul>
+            <li>Monitor traffic patterns</li>
+            <li>Monitor user feedback</li>
+            <li>Monitor technical performance</li>
+            <li>Monitor SEO rankings</li>
+            <li>Monitor any legal concerns</li>
+        </ul>
+    </div>
+
+    <h3>10.2. Ongoing monitoring (Month 1)</h3>
+    <div class="required">
+        <ul>
+            <li>Weekly performance reviews</li>
+            <li>Monthly content reviews</li>
+            <li>Monthly SEO reviews</li>
+            <li>Monthly legal compliance checks</li>
+        </ul>
+    </div>
+
+    <div class="execution">
+        <h3>⚡ EXECUTION LOCK</h3>
+        <p>Execution order bị khóa. Bất kỳ thay đổi nào phải tuân theo quy tắc trong document này.</p>
+        <p>Team dev có quyền từ chối execute bất kỳ task nào vi phạm quy tắc execution order.</p>
+    </div>
+
+    <hr>
+    <p><strong>Document Owner:</strong> Project Manager + Technical Lead</p>
+    <p><strong>Approval:</strong> Founder</p>
+    <p><strong>Last Review:</strong> 2026-06-13</p>
+    <p><strong>Next Review:</strong> 2026-09-13</p>
+</body>
+</html>

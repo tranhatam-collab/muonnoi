@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAUTU_MUONNOI_HANDOFF_PACKAGE_COMPLETE_2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        .cover {
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .cover h1 {
+            color: white;
+            border-bottom: none;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .cover .subtitle {
+            font-size: 24px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .cover .meta {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        .toc {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border-left: 4px solid #0066cc;
+        }
+        .toc h2 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc li {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+        .toc a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .file-section {
+            background: white;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            page-break-before: always;
+        }
+        .file-section h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .file-section h2 {
+            color: #0066cc;
+            margin-top: 40px;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .forbidden {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .required {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: none;
+        }
+        .back-to-top:hover {
+            background: #004499;
+        }
+        @media print {
+            .back-to-top {
+                display: none;
+            }
+            .file-section {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <h1>DAUTU_MUONNOI HANDOFF PACKAGE</h1>
+        <div class="subtitle">Complete Doctrine-Locked Development Package</div>
+        <div class="meta">
+            <p><strong>Status:</strong> LOCKED — DO NOT DEVIATE</p>
+            <p><strong>Last Updated:</strong> 2026-06-13</p>
+            <p><strong>Version:</strong> 1.0</p>
+            <p><strong>Document Owner:</strong> Founder</p>
+        </div>
+    </div>
+
+    <div class="warning" style="margin-top: 40px;">
+        <h3>⚠️ CRITICAL SOURCE OF TRUTH STATEMENT</h3>
+        <p><strong>Bộ này là source of truth cho phần public shell của dautu.muonnoi.org. Nếu bất kỳ implementation nào mâu thuẫn với doctrine trong bộ này, implementation phải bị dừng lại để review lại, không được "code trước sửa sau".</strong></p>
+    </div>
+
+    <div class="toc">
+        <h2>📋 Table of Contents</h2>
+        <ul>
+            <li><a href="#file-1">1. DAUTU_MUONNOI_MASTER_DOCTRINE_2026 — Doctrine gốc, source of truth</a></li>
+            <li><a href="#file-2">2. DAUTU_MUONNOI_HOMEPAGE_THESIS_2026 — Homepage structure với 7 câu hỏi cốt lõi</a></li>
+            <li><a href="#file-3">3. DAUTU_MUONNOI_BILINGUAL_CONTENT_CODEX_2026 — Hệ thống content song ngữ VI/EN</a></li>
+            <li><a href="#file-4">4. DAUTU_MUONNOI_SEO_SYSTEM_SPEC_2026 — Quy tắc SEO hoàn chỉnh</a></li>
+            <li><a href="#file-5">5. DAUTU_MUONNOI_INFORMATION_ARCHITECTURE_2026 — Cấu trúc thông tin và user journey</a></li>
+            <li><a href="#file-6">6. DAUTU_MUONNOI_PUBLIC_ROUTE_COPY_VI_EN_2026 — Nội dung chuẩn cho 8 public routes</a></li>
+            <li><a href="#file-7">7. DAUTU_MUONNOI_UI_UX_SYSTEM_2026 — Hệ thống thiết kế UI/UX</a></li>
+            <li><a href="#file-8">8. DAUTU_MUONNOI_LEGAL_SAFE_POSTURE_2026 — Legal-safe posture và compliance</a></li>
+            <li><a href="#file-9">9. DAUTU_MUONNOI_DEV_EXECUTION_ORDER_2026 — Thứ tự thực thi 6 phases</a></li>
+            <li><a href="#file-10">10. DAUTU_MUONNOI_QA_GO_LIVE_CHECKLIST_2026 — Checklist QA trước go-live</a></li>
+        </ul>
+    </div>
+
+    <!-- FILE 1: MASTER DOCTRINE -->
+    <div class="file-section" id="file-1">
+        <h1>FILE 1: DAUTU_MUONNOI_MASTER_DOCTRINE_2026</h1>
+        <p><strong>Status:</strong> LOCKED — DO NOT DEVIATE</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+
+        <div class="warning">
+            <h3>⚠️ CRITICAL WARNING</h3>
+            <p>This document is the source of truth for all dautu.muonnoi.org development. Any deviation from this doctrine without explicit Founder approval is considered a critical violation.</p>
+        </div>
+
+        <h2>0. MỤC TIÊU DUY NHẤT</h2>
+        <div class="section">
+            <p>dautu.muonnoi.org <strong>không được xây như một trang gọi vốn thông thường</strong>.</p>
+            <p>Nó phải được khóa là:</p>
+            <ul>
+                <li><strong>cổng hành trình đầu tư trí tuệ</strong></li>
+                <li><strong>học trước, hiểu trước, đồng hành nếu phù hợp</strong></li>
+                <li><strong>không lôi kéo, không ép buộc</strong></li>
+                <li><strong>không cam kết lợi nhuận, không cam kết hoàn vốn</strong></li>
+            </ul>
+            <p>Toàn bộ UI, UX, content, SEO, route, metadata, legal wording, CTA, form, bilingual content phải phục vụ đúng doctrine này.</p>
+        </div>
+
+        <h2>1. SOURCE OF TRUTH PHẢI KHÓA</h2>
+        
+        <h3>1.1. Chỉ dùng 1 bộ nguồn nội dung chuẩn</h3>
+        <div class="required">
+            <p>Team <strong>không được hard-code text public rải rác trong component</strong>.</p>
+            <p>Bắt buộc dùng:</p>
+            <ul>
+                <li><code>/content/vi.json</code></li>
+                <li><code>/content/en.json</code></li>
+            </ul>
+            <p>Hoặc nếu đang dùng static HTML thuần, phải có một content registry tương đương để kiểm soát toàn bộ text.</p>
+        </div>
+
+        <h3>1.2. Tiếng Việt là bản gốc</h3>
+        <ul>
+            <li><strong>VI là nguồn chuẩn</strong></li>
+            <li><strong>EN là bản song song quốc tế</strong></li>
+            <li><strong>Không được viết EN trước rồi dịch ngược về VI</strong></li>
+            <li><strong>Không được dịch máy lộ liễu</strong></li>
+        </ul>
+
+        <h3>1.3. Tất cả text public phải nằm trong hệ thống kiểm soát</h3>
+        <p>Bao gồm:</p>
+        <ul>
+            <li>nav, hero, section title, body copy, CTA</li>
+            <li>form label, placeholder, empty state, error state</li>
+            <li>footer, legal text ngắn</li>
+            <li>title, meta description, OG title, OG description, alt text</li>
+        </ul>
+
+        <h2>2. HOMEPAGE THESIS PHẢI KHÓA CỨNG</h2>
+
+        <h3>2.1. Homepage phải trả lời đúng 7 câu</h3>
+        <div class="section">
+            <ol>
+                <li>Đầu tư ở đây là gì?</li>
+                <li>Đầu tư ở đây không phải là gì?</li>
+                <li>Vì sao phải học trước khi tham gia?</li>
+                <li>Người phù hợp là ai?</li>
+                <li>Rủi ro thật là gì?</li>
+                <li>Giá trị lớn nhất người tham gia nhận được là gì?</li>
+                <li>Bắt đầu từ đâu?</li>
+            </ol>
+        </div>
+
+        <h3>2.2. H1 phải khóa theo doctrine</h3>
+        <div class="forbidden">
+            <p><strong>Không dùng kiểu:</strong></p>
+            <ul>
+                <li>cơ hội đầu tư</li>
+                <li>tham gia đầu tư</li>
+                <li>cơ hội đồng hành tài chính</li>
+                <li>đầu tư ngay</li>
+            </ul>
+        </div>
+        <div class="required">
+            <p><strong>H1 phải theo logic:</strong></p>
+            <p>Đầu tư ở đây là hành trình học, làm, trưởng thành và cùng phát triển.</p>
+        </div>
+
+        <h3>2.3. CTA phải đổi toàn bộ</h3>
+        <div class="required">
+            <p><strong>CTA đúng:</strong></p>
+            <ul>
+                <li>Tìm hiểu triết lý đầu tư</li>
+                <li>Xem hành trình tham gia</li>
+                <li>Bày tỏ mong muốn đồng hành</li>
+            </ul>
+        </div>
+        <div class="forbidden">
+            <p><strong>CTA sai:</strong></p>
+            <ul>
+                <li>Đầu tư ngay</li>
+                <li>Giữ suất</li>
+                <li>Chốt cơ hội</li>
+                <li>Tham gia deal</li>
+                <li>Xem lợi nhuận</li>
+            </ul>
+        </div>
+
+        <h3>2.4. Hero không được có 4 CTA ngang nhau</h3>
+        <div class="section">
+            <p>Hero chỉ nên có:</p>
+            <ul>
+                <li><strong>CTA #1:</strong> tìm hiểu triết lý / bắt đầu đúng</li>
+                <li><strong>CTA #2:</strong> xem hành trình / kéo xuống section tiếp theo</li>
+            </ul>
+            <p>Không được biến hero thành menu của: kế hoạch, roadmap, manifesto, legal, investment process cùng một lúc.</p>
+        </div>
+
+        <h2>3. CẤU TRÚC ROUTE PUBLIC BẮT BUỘC</h2>
+        
+        <h3>3.1. Bộ route public cần khóa đồng bộ</h3>
+        <div class="required">
+            <ul>
+                <li><code>/</code> — Homepage doctrine-first</li>
+                <li><code>/du-an/</code> — Danh mục dự án/lane nhưng không được viết như catalog bán suất</li>
+                <li><code>/hinh-thuc-dong-hanh/</code> — Giải thích các mức tham gia: học, quan tâm, review, member layer, strategic participation</li>
+                <li><code>/quy-trinh-review/</code> — Giải thích các bước đi vào sâu hơn</li>
+                <li><code>/governance/</code> — Giải thích posture: công ty là công cụ vận hành, không phải lời mời chào bán chứng khoán đại chúng</li>
+                <li><code>/faq/</code> — Giải đáp các hiểu lầm lớn: có cam kết lợi nhuận không, có hoàn vốn không, có rủi ro không</li>
+                <li><code>/dang-ky-quan-tam/</code> — Form bày tỏ mong muốn đồng hành, không phải cổng nhận tiền</li>
+                <li><code>/legal/</code> — Tuyên bố rõ: educational and participation posture, no guaranteed returns</li>
+            </ul>
+        </div>
+
+        <h2>4. SEO SONG NGỮ VI/EN PHẢI LÀM ĐỦ 100%</h2>
+
+        <h3>4.1. Mỗi route phải có riêng cho từng ngôn ngữ</h3>
+        <div class="required">
+            <ul>
+                <li>title, meta description, canonical</li>
+                <li>OG title, OG description, alt text</li>
+                <li>internal links đúng ngôn ngữ</li>
+            </ul>
+        </div>
+
+        <h3>4.2. Không được dùng chung metadata cho cả 2 ngôn ngữ</h3>
+        <div class="forbidden">
+            <p><strong>Sai:</strong></p>
+            <ul>
+                <li>cùng một title VI cho EN</li>
+                <li>cùng một meta description cho cả hai</li>
+                <li>cùng alt text một ngôn ngữ</li>
+            </ul>
+        </div>
+        <div class="required">
+            <p><strong>Đúng:</strong></p>
+            <ul>
+                <li>VI riêng, EN riêng</li>
+                <li>nghĩa tương đương</li>
+                <li>tone thống nhất</li>
+            </ul>
+        </div>
+
+        <h2>5. LANGUAGE CODEX BẮT BUỘC</h2>
+
+        <h3>5.1. Tiếng Việt</h3>
+        <ul>
+            <li>có dấu đầy đủ</li>
+            <li>rõ nghĩa</li>
+            <li>không sáo rỗng</li>
+            <li>không hype</li>
+            <li>không sales-speak</li>
+            <li>không dùng ngôn ngữ tài chính dụ dỗ</li>
+            <li>nghiêm túc, sáng, dễ hiểu</li>
+        </ul>
+
+        <h3>5.2. Tiếng Anh</h3>
+        <ul>
+            <li>ngắn, rõ, tự nhiên</li>
+            <li>American/international professional</li>
+            <li>không dịch từng chữ từ tiếng Việt</li>
+            <li>không dùng "investment opportunity hype language"</li>
+        </ul>
+
+        <h3>5.3. Từ cấm trên toàn site</h3>
+        <div class="forbidden">
+            <p><strong>Cấm hoặc chỉ được xuất hiện trong ngữ cảnh phủ định / legal clarification:</strong></p>
+            <ul>
+                <li>lợi nhuận cam kết</li>
+                <li>guaranteed return</li>
+                <li>passive income</li>
+                <li>ROI promise</li>
+                <li>hoàn vốn chắc chắn</li>
+                <li>secure profit</li>
+                <li>investment slot</li>
+                <li>buy equity now</li>
+                <li>join now for profit</li>
+                <li>chốt suất</li>
+                <li>giữ deal</li>
+            </ul>
+        </div>
+
+        <h2>6. CONTENT MODEL PHẢI CHUẨN HÓA</h2>
+
+        <h3>6.1. Mỗi page phải có đúng khung</h3>
+        <div class="section">
+            <ul>
+                <li>page title</li>
+                <li>page intent</li>
+                <li>user question</li>
+                <li>H1</li>
+                <li>3–6 H2 chính</li>
+                <li>CTA cuối</li>
+                <li>FAQ nếu cần</li>
+                <li>legal note nếu cần</li>
+                <li>SEO metadata</li>
+                <li>OG copy</li>
+                <li>alt text list</li>
+            </ul>
+        </div>
+
+        <h3>6.2. Mỗi section trên homepage phải có role rõ</h3>
+        <div class="section">
+            <p><strong>Ví dụ homepage:</strong></p>
+            <ul>
+                <li><strong>S1 — Hero:</strong> Role: định nghĩa đúng</li>
+                <li><strong>S2 — Chân lý đầu tư:</strong> Role: khóa doctrine</li>
+                <li><strong>S3 — Không phải là gì:</strong> Role: loại bỏ hiểu sai</li>
+                <li><strong>S4 — Hành trình người tham gia:</strong> Role: mô tả journey</li>
+                <li><strong>S5 — Giá trị nhận được:</strong> Role: giải thích "lợi nhuận vô hạn" theo nghĩa đúng</li>
+                <li><strong>S6 — Rủi ro và sự thật:</strong> Role: nói thật</li>
+                <li><strong>S7 — Các lane / project rooms:</strong> Role: giới thiệu hệ</li>
+                <li><strong>S8 — Bắt đầu:</strong> Role: chuyển đổi đúng tinh thần</li>
+            </ul>
+        </div>
+
+        <h2>7. BỘ FILE DEV PHẢI CÓ</h2>
+
+        <h3>7.1. Static public routes</h3>
+        <div class="required">
+            <ul>
+                <li><code>/index.html</code></li>
+                <li><code>/du-an/index.html</code></li>
+                <li><code>/hinh-thuc-dong-hanh/index.html</code></li>
+                <li><code>/quy-trinh-review/index.html</code></li>
+                <li><code>/governance/index.html</code></li>
+                <li><code>/faq/index.html</code></li>
+                <li><code>/dang-ky-quan-tam/index.html</code></li>
+                <li><code>/legal/index.html</code></li>
+            </ul>
+        </div>
+
+        <h3>7.2. Shared assets</h3>
+        <ul>
+            <li><code>/assets/ui.css</code></li>
+            <li><code>/assets/ui.js</code></li>
+        </ul>
+
+        <h3>7.3. SEO/system files</h3>
+        <ul>
+            <li><code>/_headers</code></li>
+            <li><code>/_redirects</code></li>
+            <li><code>/robots.txt</code></li>
+            <li><code>/sitemap.xml</code></li>
+        </ul>
+
+        <h3>7.4. Content source</h3>
+        <div class="required">
+            <ul>
+                <li><code>/content/vi.json</code></li>
+                <li><code>/content/en.json</code></li>
+                <li><code>/content/seo.vi.json</code></li>
+                <li><code>/content/seo.en.json</code></li>
+            </ul>
+            <p>Nếu chưa có content JSON, phải tạo ngay. Không tiếp tục hard-code.</p>
+        </div>
+
+        <h2>8. UI / UX PHẢI ĐỒNG BỘ TOÀN BỘ</h2>
+
+        <h3>8.1. Design language</h3>
+        <ul>
+            <li>premium nhưng không hào nhoáng</li>
+            <li>calm, sáng, sâu, rõ, tin cậy</li>
+            <li>không fintech hype</li>
+            <li>không dashboard crypto</li>
+            <li>không startup pitch-deck UI</li>
+        </ul>
+
+        <h3>8.2. Component consistency</h3>
+        <ul>
+            <li>header đồng bộ</li>
+            <li>footer đồng bộ</li>
+            <li>CTA style đồng bộ</li>
+            <li>badge/status đồng bộ</li>
+            <li>section spacing đồng bộ</li>
+            <li>typography đồng bộ</li>
+            <li>language switcher đồng bộ</li>
+        </ul>
+
+        <h3>8.3. Motion</h3>
+        <p>Chỉ dùng motion nhẹ: hover nhẹ, reveal nhẹ, section transition nhẹ, reduced motion fallback.</p>
+        <p>Không dùng motion gây mất trust.</p>
+
+        <h2>9. FORM LOGIC PHẢI ĐÚNG</h2>
+
+        <h3>/dang-ky-quan-tam/</h3>
+        <p>Form không được viết như order form.</p>
+        <p>Phải là:</p>
+        <ul>
+            <li>họ tên</li>
+            <li>email</li>
+            <li>khu vực</li>
+            <li>mối quan tâm</li>
+            <li>dự án quan tâm</li>
+            <li>điều họ muốn học / tham gia / đồng hành</li>
+            <li>ghi chú thêm</li>
+        </ul>
+
+        <div class="forbidden">
+            <p><strong>Không được có wording:</strong></p>
+            <ul>
+                <li>đầu tư bao nhiêu</li>
+                <li>chuyển khoản ngay</li>
+                <li>giữ suất</li>
+                <li>ưu tiên slot</li>
+                <li>nạp tiền để bắt đầu</li>
+            </ul>
+        </div>
+
+        <p>Nếu backend chưa có, phải ghi rõ: form đang ở chế độ ghi nhận quan tâm, chưa phải cổng giao dịch.</p>
+
+        <h2>10. LEGAL POSTURE PHẢI CÓ Ở 3 TẦNG</h2>
+
+        <h3>10.1. Public copy</h3>
+        <p>Ngắn, rõ, không đe dọa người đọc, nhưng nói thật.</p>
+
+        <h3>10.2. FAQ</h3>
+        <p>Giải thích các hiểu lầm chính.</p>
+
+        <h3>10.3. Legal page</h3>
+        <p>Ghi rõ:</p>
+        <ul>
+            <li>không cam kết lợi nhuận</li>
+            <li>không cam kết hoàn vốn</li>
+            <li>có rủi ro mất vốn</li>
+            <li>nội dung mang tính giáo dục / giải thích / strategic participation</li>
+            <li>bước vào sâu hơn cần review, xác minh, tài liệu riêng</li>
+        </ul>
+
+        <h2>11. CÂU KHÓA CUỐI CHO TEAM</h2>
+        <div class="section">
+            <p><strong>dautu.muonnoi.org không phải nơi kêu gọi người khác bỏ tiền vào một hứa hẹn.</strong></p>
+            <p><strong>Nó là nơi giúp người phù hợp hiểu đúng một hành trình đầu tư trí tuệ, học trước, làm trước, trưởng thành trước, rồi mới đồng hành sâu hơn nếu thật sự phù hợp.</strong></p>
+        </div>
+
+        <div class="warning">
+            <h3>🔒 DOCTRINE LOCK</h3>
+            <p>Bất kỳ thay đổi nào đối với doctrine này phải có Founder approval bằng văn bản (email hoặc document sign-off).</p>
+            <p>Team dev có quyền từ chối implement bất kỳ request nào vi phạm doctrine này.</p>
+        </div>
+
+        <hr>
+        <p><strong>Document Owner:</strong> Founder</p>
+        <p><strong>Technical Owner:</strong> Lead Developer</p>
+        <p><strong>Last Review:</strong> 2026-06-13</p>
+        <p><strong>Next Review:</strong> 2026-09-13</p>
+    </div>
+
+    <!-- FILE 2: HOMEPAGE THESIS -->
+    <div class="file-section" id="file-2">
+        <h1>FILE 2: DAUTU_MUONNOI_HOMEPAGE_THESIS_2026</h1>
+        <p><strong>Status:</strong> LOCKED — Homepage Structure & Content</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>🎯 HOMEPAGE THESIS</h3>
+            <p>Homepage dautu.muonnoi.org phải trả lời đúng 7 câu cốt lõi để khóa doctrine đầu tư trí tuệ.</p>
+        </div>
+
+        <h2>1. 7 CÂU HỎI CỐT LÕI HOMEPAGE PHẢI TRẢ LỜI</h2>
+
+        <div class="section">
+            <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                <strong>Câu 1: Đầu tư ở đây là gì?</strong>
+                <p>Đầu tư ở đây là hành trình học, làm, trưởng thành và cùng phát triển — không phải bỏ tiền vào một hứa hẹn.</p>
+            </div>
+
+            <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                <strong>Câu 2: Đầu tư ở đây không phải là gì?</strong>
+                <p>Không phải lời mời chào bán chứng khoán đại chúng, không phải cam kết lợi nhuận, không phải cơ hội "get rich quick".</p>
+            </div>
+
+            <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                <strong>Câu 3: Vì sao phải học trước khi tham gia?</strong>
+                <p>Vì đầu tư trí tuệ cần hiểu rõ rủi ro, mechanism, và phù hợp với bản thân trước khi commit capital.</p>
+            </div>
+
+            <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                <strong>Câu 4: Người phù hợp là ai?</strong>
+                <p>Người muốn học, hiểu, và trưởng thành — không phải người tìm kiếm "guaranteed returns".</p>
+            </div>
+
+            <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                <strong>Câu 5: Rủi ro thật là gì?</strong>
+                <p>Rủi ro mất vốn là thật. Không có cam kết hoàn vốn. Không có cam kết lợi nhuận.</p>
+            </div>
+
+            <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                <strong>Câu 6: Giá trị lớn nhất người tham gia nhận được là gì?</strong>
+                <p>Giá trị lớn nhất là kiến thức, network, và cơ hội phát triển — không phải số tiền lãi.</p>
+            </div>
+
+            <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                <strong>Câu 7: Bắt đầu từ đâu?</strong>
+                <p>Bắt đầu từ việc tìm hiểu triết lý, xem hành trình, và bày tỏ mong muốn đồng hành — không phải chuyển khoản ngay.</p>
+            </div>
+        </div>
+
+        <h2>2. H1 PHẢI KHÓA THEO DOCTRINE</h2>
+
+        <div class="forbidden">
+            <h3>❌ H1 KHÔNG ĐƯỢC DÙNG</h3>
+            <ul>
+                <li>Cơ hội đầu tư</li>
+                <li>Tham gia đầu tư</li>
+                <li>Cơ hội đồng hành tài chính</li>
+                <li>Đầu tư ngay</li>
+                <li>Giữ suất đầu tư</li>
+                <li>Chốt cơ hội</li>
+            </ul>
+        </div>
+
+        <div class="required">
+            <h3>✅ H1 PHẢI DÙNG</h3>
+            <p><strong>Primary Option:</strong></p>
+            <p>Đầu tư ở đây là hành trình học, làm, trưởng thành và cùng phát triển.</p>
+            
+            <p><strong>Alternative Options (same doctrine):</strong></p>
+            <ul>
+                <li>Hành trình đầu tư trí tuệ: học trước, hiểu trước, đồng hành nếu phù hợp</li>
+                <li>Đầu tư không phải bỏ tiền — là học, làm, và trưởng thành cùng nhau</li>
+                <li>Tìm hiểu triết lý đầu tư trước khi quyết định đồng hành</li>
+            </ul>
+        </div>
+
+        <h2>3. CTA PHẢI ĐỔI TOÀN BỘ</h2>
+
+        <div class="required">
+            <h3>✅ CTA ĐÚNG DOCTRINE</h3>
+            <ul>
+                <li>Tìm hiểu triết lý đầu tư</li>
+                <li>Xem hành trình tham gia</li>
+                <li>Bày tỏ mong muốn đồng hành</li>
+                <li>Đăng ký để nhận thông tin</li>
+                <li>Xem các dự án đang mở</li>
+                <li>Tìm hiểu về rủi ro</li>
+            </ul>
+        </div>
+
+        <div class="forbidden">
+            <h3>❌ CTA SAI DOCTRINE</h3>
+            <ul>
+                <li>Đầu tư ngay</li>
+                <li>Giữ suất</li>
+                <li>Chốt cơ hội</li>
+                <li>Tham gia deal</li>
+                <li>Xem lợi nhuận</li>
+                <li>Mua cổ phần</li>
+                <li>Góp vốn ngay</li>
+                <li>Nhận ROI</li>
+            </ul>
+        </div>
+
+        <h2>4. HERO STRUCTURE PHẢI ĐÚNG</h2>
+
+        <div class="section">
+            <h3>4.1. Hero chỉ nên có 2 CTA</h3>
+            <ul>
+                <li><strong>CTA #1 (Primary):</strong> Tìm hiểu triết lý đầu tư / Bắt đầu đúng</li>
+                <li><strong>CTA #2 (Secondary):</strong> Xem hành trình tham gia / Kéo xuống section tiếp theo</li>
+            </ul>
+
+            <h3>4.2. Hero không được biến thành menu</h3>
+            <div class="forbidden">
+                <p>Không được đưa cùng lúc vào hero:</p>
+                <ul>
+                    <li>Kế hoạch</li>
+                    <li>Roadmap</li>
+                    <li>Manifesto</li>
+                    <li>Legal</li>
+                    <li>Investment process</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>5. HOMEPAGE SECTION STRUCTURE</h2>
+
+        <div class="section">
+            <h3>5.1. 8 Sections bắt buộc</h3>
+            
+            <h4>S1 — Hero Section</h4>
+            <ul>
+                <li><strong>Role:</strong> Định nghĩa đúng đầu tư ở đây</li>
+                <li><strong>Content:</strong> H1 doctrine + subheadline + 2 CTA đúng</li>
+                <li><strong>Anti-pattern:</strong> Không hype, không promise, không urgency</li>
+            </ul>
+
+            <h4>S2 — Chân lý đầu tư (Investment Philosophy)</h4>
+            <ul>
+                <li><strong>Role:</strong> Khóa doctrine</li>
+                <li><strong>Content:</strong> Giải thích vì sao học trước, hiểu trước</li>
+                <li><strong>Key message:</strong> Đầu tư trí tuệ ≠ đầu tư tài chính thông thường</li>
+            </ul>
+
+            <h4>S3 — Không phải là gì (What it's NOT)</h4>
+            <ul>
+                <li><strong>Role:</strong> Loại bỏ hiểu sai</li>
+                <li><strong>Content:</strong> Clear anti-definitions</li>
+                <li><strong>Key message:</strong> Không phải cam kết lợi nhuận, không phải get rich quick</li>
+            </ul>
+
+            <h4>S4 — Hành trình người tham gia (Participant Journey)</h4>
+            <ul>
+                <li><strong>Role:</strong> Mô tả journey</li>
+                <li><strong>Content:</strong> Các bước từ quan tâm → học → review → đồng hành</li>
+                <li><strong>Visual:</strong> Timeline hoặc step-by-step diagram</li>
+            </ul>
+
+            <h4>S5 — Giá trị nhận được (Value Proposition)</h4>
+            <ul>
+                <li><strong>Role:</strong> Giải thích "lợi nhuận vô hạn" theo nghĩa đúng</li>
+                <li><strong>Content:</strong> Kiến thức, network, cơ hội phát triển</li>
+                <li><strong>Anti-pattern:</strong> Không focus vào financial returns</li>
+            </ul>
+
+            <h4>S6 — Rủi ro và sự thật (Risk & Reality)</h4>
+            <ul>
+                <li><strong>Role:</strong> Nói thật</li>
+                <li><strong>Content:</strong> Rủi ro mất vốn, không cam kết hoàn vốn</li>
+                <li><strong>Tone:</strong> Transparent, không sugar-coat</li>
+            </ul>
+
+            <h4>S7 — Các lane / project rooms (System Overview)</h4>
+            <ul>
+                <li><strong>Role:</strong> Giới thiệu hệ</li>
+                <li><strong>Content:</strong> Các mức tham gia, dự án đang mở</li>
+                <li><strong>Anti-pattern:</strong> Không viết như catalog bán suất</li>
+            </ul>
+
+            <h4>S8 — Bắt đầu (Getting Started)</h4>
+            <ul>
+                <li><strong>Role:</strong> Chuyển đổi đúng tinh thần</li>
+                <li><strong>Content:</strong> CTA cuối cùng, hướng dẫn next steps</li>
+                <li><strong>CTA:</strong> Bày tỏ mong muốn đồng hành</li>
+            </ul>
+        </div>
+
+        <h2>6. HOMEPAGE COPY REQUIREMENTS</h2>
+
+        <div class="section">
+            <h3>6.1. Tone & Voice</h3>
+            <ul>
+                <li>Nghiêm túc nhưng không cứng nhắc</li>
+                <li>Rõ ràng nhưng không giáo điều</li>
+                <li>Trung thực nhưng không bi quan</li>
+                <li>Chuyên nghiệp nhưng không corporate</li>
+            </ul>
+
+            <h3>6.2. Length Guidelines</h3>
+            <ul>
+                <li>H1: 1-2 lines max</li>
+                <li>Subheadline: 2-3 lines max</li>
+                <li>Section intro: 3-5 lines max</li>
+                <li>Section body: Concise, scannable</li>
+            </ul>
+
+            <h3>6.3. Bilingual Consistency</h3>
+            <ul>
+                <li>VI là nguồn chuẩn</li>
+                <li>EN phải tương đương về meaning</li>
+                <li>Không dịch máy lộ liễu</li>
+                <li>Tone phải đồng bộ giữa 2 ngôn ngữ</li>
+            </ul>
+        </div>
+
+        <h2>7. HOMEPAGE SEO REQUIREMENTS</h2>
+
+        <div class="section">
+            <h3>7.1. Title Tags</h3>
+            <div class="required">
+                <p><strong>VI:</strong></p>
+                <p>Đầu tư trí tuệ: Học trước, hiểu trước, đồng hành nếu phù hợp | Muôn Nơi</p>
+                
+                <p><strong>EN:</strong></p>
+                <p>Intellectual Investment: Learn First, Understand First, Collaborate If Suitable | Muôn Nơi</p>
+            </div>
+
+            <h3>7.2. Meta Descriptions</h3>
+            <div class="required">
+                <p><strong>VI:</strong></p>
+                <p>Khám phá hành trình đầu tư trí tuệ tại Muôn Nơi: học trước, hiểu trước, đồng hành nếu phù hợp. Không cam kết lợi nhuận, không cam kết hoàn vốn.</p>
+                
+                <p><strong>EN:</strong></p>
+                <p>Discover the intellectual investment journey at Muôn Nơi: learn first, understand first, collaborate if suitable. No guaranteed returns, no capital repayment promises.</p>
+            </div>
+
+            <h3>7.3. H1 Requirements</h3>
+            <ul>
+                <li>Chỉ 1 H1 per page</li>
+                <li>Phải chứa doctrine keywords</li>
+                <li>Phải dưới 70 characters</li>
+                <li>Phải match title intent</li>
+            </ul>
+
+            <h3>7.4. Heading Structure</h3>
+            <ul>
+                <li>H1: 1 time (hero)</li>
+                <li>H2: 8 times (section headers)</li>
+                <li>H3: As needed (sub-sections)</li>
+                <li>Hierarchy phải logic</li>
+            </ul>
+        </div>
+
+        <h2>8. HOMEPAGE UI/UX REQUIREMENTS</h2>
+
+        <div class="section">
+            <h3>8.1. Visual Hierarchy</h3>
+            <ul>
+                <li>H1 > H2 > H3 > body text</li>
+                <li>CTA primary > CTA secondary</li>
+                <li>Section headers > section content</li>
+            </ul>
+
+            <h3>8.2. Spacing</h3>
+            <ul>
+                <li>Section spacing: 80-120px</li>
+                <li>Element spacing: 20-40px</li>
+                <li>Consistent throughout</li>
+            </ul>
+
+            <h3>8.3. Typography</h3>
+            <ul>
+                <li>Font size hierarchy clear</li>
+                <li>Line height: 1.5-1.6</li>
+                <li>Max width: 65-75 characters per line</li>
+            </ul>
+
+            <h3>8.4. Color Usage</h3>
+            <ul>
+                <li>Primary: Trustworthy blue (#0066cc)</li>
+                <li>Secondary: Calm gray (#666)</li>
+                <li>Accent: Muted gold (#d4af37)</li>
+                <li>No bright/neon colors</li>
+            </ul>
+        </div>
+
+        <h2>9. HOMEPAGE TECHNICAL REQUIREMENTS</h2>
+
+        <div class="section">
+            <h3>9.1. Performance</h3>
+            <ul>
+                <li>LCP < 2.5s</li>
+                <li>FID < 100ms</li>
+                <li>CLS < 0.1</li>
+                <li>Optimize images</li>
+                <li>Minimize CSS/JS</li>
+            </ul>
+
+            <h3>9.2. Responsiveness</h3>
+            <ul>
+                <li>Mobile-first approach</li>
+                <li>Breakpoints: 320px, 768px, 1024px, 1200px</li>
+                <li>Touch-friendly CTA (min 44x44px)</li>
+                <li>Readable on mobile</li>
+            </ul>
+
+            <h3>9.3. Accessibility</h3>
+            <ul>
+                <li>ARIA labels for interactive elements</li>
+                <li>Alt text for all images</li>
+                <li>Keyboard navigation</li>
+                <li>Color contrast ratio 4.5:1</li>
+            </ul>
+        </div>
+
+        <h2>10. HOMEPAGE QA CHECKLIST</h2>
+
+        <div class="section">
+            <h3>10.1. Content QA</h3>
+            <ul>
+                <li>[ ] H1 matches doctrine</li>
+                <li>[ ] All 7 questions answered</li>
+                <li>[ ] No forbidden words</li>
+                <li>[ ] CTA correct</li>
+                <li>[ ] Tone consistent</li>
+            </ul>
+
+            <h3>10.2. SEO QA</h3>
+            <ul>
+                <li>[ ] Title tags unique VI/EN</li>
+                <li>[ ] Meta descriptions unique VI/EN</li>
+                <li>[ ] Only 1 H1</li>
+                <li>[ ] Heading hierarchy correct</li>
+                <li>[ ] Alt text present</li>
+            </ul>
+
+            <h3>10.3. UX QA</h3>
+            <ul>
+                <li>[ ] Hero has 2 CTA max</li>
+                <li>[ ] Visual hierarchy clear</li>
+                <li>[ ] Spacing consistent</li>
+                <li>[ ] Mobile responsive</li>
+                <li>[ ] Language switcher works</li>
+            </ul>
+
+            <h3>10.4. Technical QA</h3>
+            <ul>
+                <li>[ ] No console errors</li>
+                <li>[ ] Performance scores met</li>
+                <li>[ ] Accessibility pass</li>
+                <li>[ ] Cross-browser compatible</li>
+                <li>[ ] Links work correctly</li>
+            </ul>
+        </div>
+
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>🔒 HOMEPAGE LOCK</h3>
+            <p>Homepage structure, content, và doctrine bị khóa. Bất kỳ thay đổi nào phải đi qua Founder approval.</p>
+            <p>Team dev có quyền từ chối implement bất kỳ homepage change nào vi phạm thesis này.</p>
+        </div>
+
+        <hr>
+        <p><strong>Document Owner:</strong> Founder + Content Lead</p>
+        <p><strong>Technical Owner:</strong> Lead Developer</p>
+        <p><strong>Last Review:</strong> 2026-06-13</p>
+        <p><strong>Next Review:</strong> 2026-09-13</p>
+    </div>
+
+    <!-- Note: Due to length constraints, files 3-10 are summarized here. Full content available in individual files. -->
+
+    <div class="file-section" id="file-3">
+        <h1>FILE 3: DAUTU_MUONNOI_BILINGUAL_CONTENT_CODEX_2026</h1>
+        <p><strong>Status:</strong> LOCKED — Bilingual Content System</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+        
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>🌐 BILINGUAL CONTENT CODEX</h3>
+            <p>Quy tắc bắt buộc cho hệ thống nội dung song ngữ VI/EN trên toàn bộ dautu.muonnoi.org</p>
+        </div>
+
+        <h2>KEY REQUIREMENTS</h2>
+        <div class="required">
+            <ul>
+                <li><strong>File content bắt buộc:</strong> /content/vi.json, /content/en.json, /content/seo.vi.json, /content/seo.en.json</li>
+                <li><strong>Không hard-code text:</strong> Tất cả text public phải nằm trong JSON files</li>
+                <li><strong>Tiếng Việt là nguồn gốc:</strong> VI là source of truth, EN là bản song song</li>
+                <li><strong>Quy tắc dịch thuật:</strong> Meaning equivalence, cultural adaptation, length consideration</li>
+                <li><strong>Từ cấm:</strong> "lợi nhuận cam kết", "guaranteed return", "passive income", "ROI promise"</li>
+            </ul>
+        </div>
+
+        <p><em>Full content available in DAUTU_MUONNOI_BILINGUAL_CONTENT_CODEX_2026.html</em></p>
+    </div>
+
+    <div class="file-section" id="file-4">
+        <h1>FILE 4: DAUTU_MUONNOI_SEO_SYSTEM_SPEC_2026</h1>
+        <p><strong>Status:</strong> LOCKED — SEO System Specification</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+        
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>🔍 SEO SYSTEM SPECIFICATION</h3>
+            <p>Quy tắc SEO bắt buộc cho toàn bộ dautu.muonnoi.org với hỗ trợ song ngữ VI/EN hoàn chỉnh</p>
+        </div>
+
+        <h2>KEY REQUIREMENTS</h2>
+        <div class="required">
+            <ul>
+                <li><strong>SEO files:</strong> robots.txt, sitemap.xml, _headers, _redirects</li>
+                <li><strong>Metadata:</strong> Title (50-60 chars), Meta description (150-160 chars), OG tags</li>
+                <li><strong>Bilingual:</strong> Title, meta description, OG tags riêng cho VI và EN</li>
+                <li><strong>Hreflang:</strong> Implementation cho separate routes hoặc query parameter</li>
+                <li><strong>Performance:</strong> LCP < 2.5s, FID < 100ms, CLS < 0.1</li>
+            </ul>
+        </div>
+
+        <p><em>Full content available in DAUTU_MUONNOI_SEO_SYSTEM_SPEC_2026.html</em></p>
+    </div>
+
+    <div class="file-section" id="file-5">
+        <h1>FILE 5: DAUTU_MUONNOI_INFORMATION_ARCHITECTURE_2026</h1>
+        <p><strong>Status:</strong> LOCKED — Information Architecture</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+        
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>🏗️ INFORMATION ARCHITECTURE</h3>
+            <p>Cấu trúc thông tin bắt buộc cho dautu.muonnoi.org — đảm bảo user journey rõ ràng, doctrine-first, và SEO-friendly</p>
+        </div>
+
+        <h2>KEY REQUIREMENTS</h2>
+        <div class="required">
+            <ul>
+                <li><strong>8 Public routes:</strong> /, /du-an/, /hinh-thuc-dong-hanh/, /quy-trinh-review/, /governance/, /faq/, /dang-ky-quan-tam/, /legal/</li>
+                <li><strong>User journey:</strong> Awareness → Understanding → Interest → Engagement → Review → Participation</li>
+                <li><strong>Page hierarchy:</strong> Level 1 (Core), Level 2 (Supporting), Level 3 (Functional)</li>
+                <li><strong>Navigation:</strong> Main nav (6-7 items), Footer, Breadcrumbs</li>
+                <li><strong>URL structure:</strong> Lowercase, hyphens, trailing slash, no special characters</li>
+            </ul>
+        </div>
+
+        <p><em>Full content available in DAUTU_MUONNOI_INFORMATION_ARCHITECTURE_2026.html</em></p>
+    </div>
+
+    <div class="file-section" id="file-6">
+        <h1>FILE 6: DAUTU_MUONNOI_PUBLIC_ROUTE_COPY_VI_EN_2026</h1>
+        <p><strong>Status:</strong> LOCKED — Public Route Copy (Bilingual)</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+        
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>📝 PUBLIC ROUTE COPY</h3>
+            <p>Nội dung chuẩn cho tất cả public routes của dautu.muonnoi.org — Tiếng Việt và Tiếng Anh</p>
+        </div>
+
+        <h2>KEY ROUTES</h2>
+        <div class="required">
+            <ul>
+                <li><strong>Homepage (/):</strong> H1 doctrine, 7 sections, 2 CTA max</li>
+                <li><strong>Projects (/du-an/):</strong> Project categories, không viết như catalog bán suất</li>
+                <li><strong>Participation (/hinh-thuc-dong-hanh/):</strong> 3 levels: Learn, Interest, Review, Participate</li>
+                <li><strong>Process (/quy-trinh-review/):</strong> 8 steps từ quan tâm đến đồng hành</li>
+                <li><strong>Governance (/governance/):</strong> Entity disclosure, legal posture</li>
+                <li><strong>FAQ (/faq/):</strong> Key questions về rủi ro, cam kết, hoàn vốn</li>
+                <li><strong>Interest Form (/dang-ky-quan-tam/):</strong> Form ghi nhận quan tâm, không cổng nhận tiền</li>
+                <li><strong>Legal (/legal/):</strong> Risk disclosure, no guaranteed returns</li>
+            </ul>
+        </div>
+
+        <p><em>Full content available in DAUTU_MUONNOI_PUBLIC_ROUTE_COPY_VI_EN_2026.html</em></p>
+    </div>
+
+    <div class="file-section" id="file-7">
+        <h1>FILE 7: DAUTU_MUONNOI_UI_UX_SYSTEM_2026</h1>
+        <p><strong>Status:</strong> LOCKED — UI/UX System</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+        
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>🎨 UI/UX SYSTEM</h3>
+            <p>Quy tắc thiết kế UI/UX bắt buộc cho dautu.muonnoi.org — đảm bảo consistency, trust, và doctrine-first experience</p>
+        </div>
+
+        <h2>KEY REQUIREMENTS</h2>
+        <div class="required">
+            <ul>
+                <li><strong>Design language:</strong> Premium nhưng không hào nhoáng, calm, sáng, sâu, rõ, tin cậy</li>
+                <li><strong>Anti-patterns:</strong> Không fintech hype, không dashboard crypto, không startup pitch-deck UI</li>
+                <li><strong>Color system:</strong> Primary blue (#0066cc), neutral colors, muted gold (#d4af37)</li>
+                <li><strong>Typography:</strong> System fonts, H1: 32px, Body: 16px, Line height: 1.5-1.6</li>
+                <li><strong>Spacing:</strong> Section: 80-120px, Element: 20-40px</li>
+                <li><strong>Motion:</strong> Chỉ motion nhẹ, reduced motion fallback</li>
+            </ul>
+        </div>
+
+        <p><em>Full content available in DAUTU_MUONNOI_UI_UX_SYSTEM_2026.html</em></p>
+    </div>
+
+    <div class="file-section" id="file-8">
+        <h1>FILE 8: DAUTU_MUONNOI_LEGAL_SAFE_POSTURE_2026</h1>
+        <p><strong>Status:</strong> LOCKED — Legal Safe Posture</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+        
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>⚖️ LEGAL SAFE POSTURE</h3>
+            <p>Quy tắc legal-safe posture bắt buộc cho toàn bộ dautu.muonnoi.org — đảm bảo compliance và tránh rủi ro pháp lý</p>
+        </div>
+
+        <h2>KEY REQUIREMENTS</h2>
+        <div class="required">
+            <ul>
+                <li><strong>Core principles:</strong> Educational posture, no guaranteed returns, no public solicitation, risk disclosure</li>
+                <li><strong>Forbidden claims:</strong> Guaranteed returns, risk-free investment, passive income, get rich quick</li>
+                <li><strong>Three-tier posture:</strong> Public copy (ngắn, rõ), FAQ (giải thích hiểu lầm), Legal page (comprehensive)</li>
+                <li><strong>Payment info:</strong> KHÔNG được hiển thị public, chỉ hiển thị sau khi verify</li>
+                <li><strong>Required disclosures:</strong> No guaranteed returns, risk of capital loss, educational content</li>
+            </ul>
+        </div>
+
+        <p><em>Full content available in DAUTU_MUONNOI_LEGAL_SAFE_POSTURE_2026.html</em></p>
+    </div>
+
+    <div class="file-section" id="file-9">
+        <h1>FILE 9: DAUTU_MUONNOI_DEV_EXECUTION_ORDER_2026</h1>
+        <p><strong>Status:</strong> LOCKED — Development Execution Order</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+        
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>⚡ DEV EXECUTION ORDER</h3>
+            <p>Thứ tự thực thi bắt buộc cho team dev dautu.muonnoi.org — đảm bảo đúng doctrine, đúng process, và đúng quality</p>
+        </div>
+
+        <h2>6 PHASES EXECUTION</h2>
+        <div class="required">
+            <ol>
+                <li><strong>Phase 1 (1-2 ngày):</strong> Lock Doctrine — Founder approval required</li>
+                <li><strong>Phase 2 (2-3 ngày):</strong> Lock Content Source — Create vi.json, en.json</li>
+                <li><strong>Phase 3 (3-5 ngày):</strong> Rebuild Homepage — Founder + Content lead approval</li>
+                <li><strong>Phase 4 (5-7 ngày):</strong> Rebuild 7 Routes — Content lead approval</li>
+                <li><strong>Phase 5 (3-5 ngày):</strong> QA 4 Pass — AI, Content, SEO, Dev</li>
+                <li><strong>Phase 6 (1-2 ngày):</strong> Live Only When Clean — Founder final approval</li>
+            </ol>
+        </div>
+
+        <p><strong>Total timeline:</strong> 15-24 days (3-4 weeks)</p>
+
+        <p><em>Full content available in DAUTU_MUONNOI_DEV_EXECUTION_ORDER_2026.html</em></p>
+    </div>
+
+    <div class="file-section" id="file-10">
+        <h1>FILE 10: DAUTU_MUONNOI_QA_GO_LIVE CHECKLIST_2026</h1>
+        <p><strong>Status:</strong> LOCKED — QA Go-Live Checklist</p>
+        <p><strong>Last Updated:</strong> 2026-06-13</p>
+        <p><strong>Version:</strong> 1.0</p>
+        
+        <div class="section" style="background: #e8f4f8; border-left: 4px solid #0066cc;">
+            <h3>✅ QA GO-LIVE CHECKLIST</h3>
+            <p>Checklist bắt buộc trước khi go-live dautu.muonnoi.org — đảm bảo doctrine, quality, và compliance</p>
+        </div>
+
+        <h2>CRITICAL CHECKLIST ITEMS</h2>
+        <div class="required">
+            <ul>
+                <li><strong>Pre-launch:</strong> 10 handoff files created, all approvals obtained</li>
+                <li><strong>Doctrine compliance:</strong> H1 match doctrine, no forbidden words, CTA correct</li>
+                <li><strong>Content quality:</strong> VI có dấu đầy đủ, EN không dịch máy, tone consistent</li>
+                <li><strong>SEO compliance:</strong> Title/meta/OG riêng VI/EN, hreflang present</li>
+                <li><strong>Legal posture:</strong> No public payment info, risk disclosure present</li>
+                <li><strong>Technical:</strong> No console errors, performance met, accessibility pass</li>
+            </ul>
+        </div>
+
+        <h2>CRITICAL GO/NO-GO GATES</h2>
+        <div class="forbidden">
+            <p><strong>Không được go-live nếu fail:</strong></p>
+            <ul>
+                <li>Doctrine compliance 100%</li>
+                <li>Legal-safe posture 100%</li>
+                <li>No public payment information</li>
+                <li>No forbidden claims</li>
+                <li>All approvals obtained</li>
+                <li>All QA passes complete</li>
+            </ul>
+        </div>
+
+        <p><em>Full content available in DAUTU_MUONNOI_QA_GO_LIVE_CHECKLIST_2026.html</em></p>
+    </div>
+
+    <!-- FINAL SUMMARY -->
+    <div class="file-section" style="background: linear-gradient(135deg, #0066cc 0%, #004499 100%); color: white;">
+        <h1 style="color: white; border-bottom: none;">📦 HANDOFF PACKAGE SUMMARY</h1>
+        
+        <h2 style="color: white;">PACKAGE OVERVIEW</h2>
+        <ul>
+            <li><strong>Total Files:</strong> 10 HTML handoff documents</li>
+            <li><strong>Status:</strong> LOCKED — DO NOT DEVIATE</li>
+            <li><strong>Version:</strong> 1.0</li>
+            <li><strong>Last Updated:</strong> 2026-06-13</li>
+        </ul>
+
+        <h2 style="color: white;">DOCTRINE CORE</h2>
+        <p><strong>Đầu tư trí tuệ = Học trước, hiểu trước, đồng hành nếu phù hợp</strong></p>
+        <p><strong>Posture:</strong> Không cam kết lợi nhuận, không phải chào bán công khai</p>
+
+        <h2 style="color: white;">EXECUTION TIMELINE</h2>
+        <p><strong>Estimated:</strong> 15-24 days (3-4 weeks)</p>
+        <p><strong>Phases:</strong> 6 sequential phases with quality gates</p>
+
+        <h2 style="color: white;">APPROVALS REQUIRED</h2>
+        <ul>
+            <li>Founder approval (Doctrine, Homepage, Go-live)</li>
+            <li>Content lead approval (Content source, 7 routes)</li>
+            <li>SEO specialist approval (SEO implementation)</li>
+            <li>QA lead approval (QA passes)</li>
+        </ul>
+
+        <h2 style="color: white;">CRITICAL LOCK STATEMENT</h2>
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <p><strong>Bộ này là source of truth cho phần public shell của dautu.muonnoi.org. Nếu bất kỳ implementation nào mâu thuẫn với doctrine trong bộ này, implementation phải bị dừng lại để review lại, không được "code trước sửa sau".</strong></p>
+        </div>
+
+        <hr style="border-color: rgba(255,255,255,0.3);">
+        
+        <p><strong>Document Owner:</strong> Founder</p>
+        <p><strong>Technical Owner:</strong> Lead Developer</p>
+        <p><strong>Content Owner:</strong> Content Lead</p>
+        <p><strong>Last Review:</strong> 2026-06-13</p>
+        <p><strong>Next Review:</strong> 2026-09-13</p>
+    </div>
+
+    <a href="#" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">↑ Back to Top</a>
+
+    <script>
+        // Show back-to-top button when scrolling
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

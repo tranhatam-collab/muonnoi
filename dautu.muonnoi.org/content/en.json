@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Intellectual Investment: Learn First, Understand First, Collaborate If Suitable | Muôn Nơi",
+    "description": "Discover the intellectual investment journey at Muôn Nơi: learn first, understand first, collaborate if suitable. No guaranteed returns, no capital repayment promises."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "participation": "Participation",
+    "process": "Review Process",
+    "governance": "Governance",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "h1": "Investment here is a journey of learning, doing, growing, and developing together",
+    "subheadline": "Discover the philosophy of intellectual investment: learn first, understand first, collaborate if suitable",
+    "cta_primary": "Explore Investment Philosophy",
+    "cta_secondary": "View Participation Journey"
+  },
+  "sections": {
+    "philosophy": {
+      "title": "Investment Philosophy",
+      "content": "Intellectual investment is different from conventional financial investment. It requires understanding risks, mechanisms, and personal suitability before committing capital. We believe that the more participants understand, the better their decision-making ability."
+    },
+    "not_investment": {
+      "title": "What Investment Here is NOT",
+      "content": "This is not a public securities offering. No guaranteed returns. No capital repayment promises. Not a 'get rich quick' opportunity. Not a place to 'secure slots' or 'lock in deals'."
+    },
+    "journey": {
+      "title": "Participant Journey",
+      "content": "From interest → learn → review → participate. Each step is designed to ensure participants understand risks and opportunities before committing capital."
+    },
+    "value": {
+      "title": "Value Received",
+      "content": "The greatest value is knowledge, network, and development opportunities — not financial returns. Intellectual investment is investing in yourself and your capabilities."
+    },
+    "risk": {
+      "title": "Risk and Reality",
+      "content": "Risk of capital loss is real. No capital repayment promises. No guaranteed returns. Investment decisions are your responsibility."
+    },
+    "system": {
+      "title": "System and Projects",
+      "content": "The projects we're developing: AI Computer Ecosystem, AIAgent Infrastructure, and Nhà Chung / Muôn Nơi Workforce & Community Tech Program."
+    },
+    "getting_started": {
+      "title": "Getting Started",
+      "content": "Start by understanding the philosophy, viewing the journey, and expressing collaboration interest — not by transferring money immediately."
+    }
+  },
+  "forms": {
+    "interest": {
+      "full_name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "country": "Country",
+      "interest_type": "Interest Type",
+      "message": "Message",
+      "submit": "Submit Interest"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Muôn Nơi. All rights reserved.",
+    "legal": "Terms and Conditions",
+    "privacy": "Privacy Policy"
+  }
+}

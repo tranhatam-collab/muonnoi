@@ -1,0 +1,6 @@
+name = "muonnoi-public"
+compatibility_date = "2026-02-03"
+
+# Static public shell deploy config
+# No R2 bindings, no worker-only bindings
+# Only for publishing static assets from apps/web/public/

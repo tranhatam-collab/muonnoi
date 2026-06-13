@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Đăng Nhập | Đầu Tư · Muôn Nơi</title>
+<link rel="stylesheet" href="/css/styles.css">
+<style>
+.auth-container { max-width: 420px; margin: 0 auto; padding: 2rem 1rem }
+.auth-step { display: none }
+.auth-step.active { display: block }
+.form-group { margin-bottom: 1.25rem }
+.form-label { display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.375rem; color: var(--text-primary) }
+.form-input { width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-elevated); color: var(--text-primary); font-size: 1rem }
+.form-input:focus { outline: none; border-color: var(--accent) }
+.form-hint { font-size: 0.8125rem; color: var(--text-secondary); margin-top: 0.375rem }
+.btn-full { width: 100%; justify-content: center }
+.alert { padding: 0.875rem 1rem; border-radius: var(--radius-sm); font-size: 0.875rem; margin-bottom: 1rem }
+.alert-success { background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); color: #10b981 }
+.alert-error { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); color: #ef4444 }
+.alert-info { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.3); color: #3b82f6 }
+.otp-display { font-family: monospace; font-size: 1.5rem; letter-spacing: 0.5rem; text-align: center; padding: 1rem; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-sm); margin: 1rem 0 }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="Trang chủ">Đầu Tư <span>· Muôn Nơi</span></a>
+    <nav class="nav-desktop" aria-label="Điều hướng chính">
+      <a href="/" data-nav>Tổng Quan</a>
+      <a href="/du-an" data-nav>3 Dự Án Ưu Tiên</a>
+      <a href="/hinh-thuc-dong-hanh" data-nav>Hình Thức Đồng Hành</a>
+      <a href="/quy-trinh-review" data-nav>Quy Trình Review</a>
+      <a href="/governance" data-nav>Governance</a>
+      <a href="/faq" data-nav>FAQ</a>
+      <a href="/dang-ky-quan-tam" data-nav>Gửi Quan Tâm</a>
+    </nav>
+    <a href="/member/" class="header-cta">Thành Viên</a>
+    <button class="mobile-menu-btn" aria-label="Mở menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<div class="mobile-nav" aria-label="Menu di động">
+  <a href="/" data-nav>Tổng Quan</a>
+  <a href="/du-an" data-nav>3 Dự Án Ưu Tiên</a>
+  <a href="/hinh-thuc-dong-hanh" data-nav>Hình Thức Đồng Hành</a>
+  <a href="/quy-trinh-review" data-nav>Quy Trình Review</a>
+  <a href="/governance" data-nav>Governance</a>
+  <a href="/faq" data-nav>FAQ</a>
+  <a href="/dang-ky-quan-tam" data-nav>Gửi Quan Tâm</a>
+  <a href="/member/">Thành Viên</a>
+</div>
+
+<main>
+<section class="hero" style="padding-top:8rem;padding-bottom:2rem">
+  <span class="eyebrow">Thành Viên</span>
+  <h1>Đăng nhập</h1>
+  <p>Xác thực bằng email + OTP. Không lưu mật khẩu.</p>
+</section>
+
+<section class="section">
+  <div class="auth-container">
+
+    <!-- STEP 1: Email -->
+    <div id="step-email" class="auth-step active">
+      <div class="card" style="padding:2rem">
+        <h2 style="font-size:1.125rem;margin-bottom:1.25rem">Nhập email</h2>
+        <div id="msg-email"></div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" id="email" class="form-input" placeholder="you@example.com" autocomplete="email">
+          <p class="form-hint">Chúng tôi sẽ gửi mã OTP đến email này.</p>
+        </div>
+        <button id="btn-send-otp" class="btn btn-primary btn-full">Gửi Mã OTP</button>
+        <p style="text-align:center;margin-top:1rem;font-size:0.8125rem;color:var(--text-secondary)">
+          Chưa có tài khoản? Nhập email — hệ thống tự tạo.
+        </p>
+      </div>
+    </div>
+
+    <!-- STEP 2: OTP -->
+    <div id="step-otp" class="auth-step">
+      <div class="card" style="padding:2rem">
+        <h2 style="font-size:1.125rem;margin-bottom:1.25rem">Nhập mã OTP</h2>
+        <div id="msg-otp"></div>
+        <div class="otp-display" id="otp-display" style="display:none">------</div>
+        <div class="form-group">
+          <label class="form-label" for="otp">Mã OTP 6 số</label>
+          <input type="text" id="otp" class="form-input" placeholder="123456" maxlength="6" inputmode="numeric">
+          <p class="form-hint">Mã có hiệu lực trong 5 phút.</p>
+        </div>
+        <button id="btn-verify-otp" class="btn btn-primary btn-full">Xác Thực</button>
+        <button id="btn-back-email" class="btn btn-ghost btn-full" style="margin-top:0.5rem">Quay lại</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: Success -->
+    <div id="step-success" class="auth-step">
+      <div class="card" style="padding:2rem;text-align:center">
+        <h2 style="font-size:1.125rem;margin-bottom:1rem;color:#10b981">Đăng nhập thành công!</h2>
+        <p style="color:var(--text-secondary);margin-bottom:1.5rem">Đang chuyển đến cổng thành viên...</p>
+        <a href="/member/" class="btn btn-primary">Vào Cổng Thành Viên</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="legal-footer">
+  <div class="legal-inner">
+    <p><strong>Tuyên bố pháp lý:</strong> Nội dung trên trang này chỉ nhằm mục đích thông tin và bày tỏ quan tâm, không phải lời mời chào bán chứng khoán, không phải chào mời đầu tư đại chúng, không phải tư vấn đầu tư, tài chính, thuế, kế toán hoặc pháp lý và không bảo đảm lợi nhuận.</p>
+    <div class="status-badge">
+      <span class="badge">SANDBOX_MODE</span>
+      <span class="badge badge-warn">NOT_REAL_MONEY</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script>
+(function() {
+  const stepEmail = document.getElementById('step-email');
+  const stepOtp = document.getElementById('step-otp');
+  const stepSuccess = document.getElementById('step-success');
+  const emailInput = document.getElementById('email');
+  const otpInput = document.getElementById('otp');
+  const otpDisplay = document.getElementById('otp-display');
+
+  function showStep(step) {
+    [stepEmail, stepOtp, stepSuccess].forEach(s => s.classList.remove('active'));
+    step.classList.add('active');
+  }
+
+  function msg(id, text, type) {
+    const el = document.getElementById(id);
+    el.innerHTML = text ? '<div class="alert alert-' + type + '">' + text + '</div>' : '';
+  }
+
+  document.getElementById('btn-send-otp').addEventListener('click', async () => {
+    const email = emailInput.value.trim();
+    if (!email) { msg('msg-email', 'Vui lòng nhập email.', 'error'); return; }
+
+    msg('msg-email', 'Đang gửi OTP...', 'info');
+    try {
+      const res = await fetch('/api/auth', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      const data = await res.json();
+      if (data.ok) {
+        msg('msg-email', 'OTP đã được gửi.', 'success');
+        // Show OTP for sandbox testing
+        if (data.otp) {
+          otpDisplay.textContent = data.otp;
+          otpDisplay.style.display = 'block';
+        }
+        setTimeout(() => showStep(stepOtp), 500);
+      } else {
+        msg('msg-email', data.error?.message || data.error || 'Lỗi', 'error');
+      }
+    } catch (e) {
+      msg('msg-email', 'Lỗi kết nối. Vui lòng thử lại.', 'error');
+    }
+  });
+
+  document.getElementById('btn-verify-otp').addEventListener('click', async () => {
+    const email = emailInput.value.trim();
+    const otp = otpInput.value.trim();
+    if (!otp || otp.length !== 6) { msg('msg-otp', 'Vui lòng nhập đủ 6 số.', 'error'); return; }
+
+    msg('msg-otp', 'Đang xác thực...', 'info');
+    try {
+      const res = await fetch('/api/auth/verify-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, otp })
+      });
+      const data = await res.json();
+      if (data.ok && data.data) {
+        localStorage.setItem('dautu_token', data.data.accessToken);
+        localStorage.setItem('dautu_refresh', data.data.refreshToken);
+        localStorage.setItem('dautu_user', JSON.stringify(data.data.user));
+        msg('msg-otp', 'Xác thực thành công!', 'success');
+        setTimeout(() => showStep(stepSuccess), 500);
+        setTimeout(() => { window.location.href = '/member/'; }, 1500);
+      } else {
+        msg('msg-otp', data.error || 'OTP không đúng hoặc đã hết hạn.', 'error');
+      }
+    } catch (e) {
+      msg('msg-otp', 'Lỗi kết nối. Vui lòng thử lại.', 'error');
+    }
+  });
+
+  document.getElementById('btn-back-email').addEventListener('click', () => {
+    showStep(stepEmail);
+    msg('msg-otp', '');
+  });
+})();
+</script>
+</body>
+</html>

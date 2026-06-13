@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAUTU_MUONNOI_BILINGUAL_CONTENT_CODEX_2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 40px;
+        }
+        .codex {
+            background: #e8f4f8;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .forbidden {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .required {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>DAUTU_MUONNOI_BILINGUAL_CONTENT_CODEX_2026</h1>
+    <p><strong>Status:</strong> LOCKED — Bilingual Content System</p>
+    <p><strong>Last Updated:</strong> 2026-06-13</p>
+    <p><strong>Version:</strong> 1.0</p>
+
+    <div class="codex">
+        <h3>🌐 BILINGUAL CONTENT CODEX</h3>
+        <p>Quy tắc bắt buộc cho hệ thống nội dung song ngữ VI/EN trên toàn bộ dautu.muonnoi.org</p>
+    </div>
+
+    <h2>1. NGUỒN NỘI DUNG CHUẨN</h2>
+
+    <h3>1.1. File content bắt buộc</h3>
+    <div class="required">
+        <ul>
+            <li><code>/content/vi.json</code> — Nội dung tiếng Việt (nguồn gốc)</li>
+            <li><code>/content/en.json</code> — Nội dung tiếng Anh (bản song song)</li>
+            <li><code>/content/seo.vi.json</code> — SEO metadata tiếng Việt</li>
+            <li><code>/content/seo.en.json</code> — SEO metadata tiếng Anh</li>
+        </ul>
+    </div>
+
+    <h3>1.2. Không hard-code text</h3>
+    <div class="forbidden">
+        <p><strong>KHÔNG ĐƯỢC:</strong></p>
+        <ul>
+            <li>Hard-code text trực tiếp trong HTML component</li>
+            <li>Hard-code text trong JavaScript</li>
+            <li>Hard-code text trong CSS (pseudo-elements)</li>
+            <li>Dùng string literals rải rác</li>
+        </ul>
+    </div>
+
+    <div class="required">
+        <p><strong>PHẢI:</strong></p>
+        <ul>
+            <li>Tất cả text public phải nằm trong JSON files</li>
+            <li>Component chỉ reference key từ JSON</li>
+            <li>Một source of truth cho mỗi text</li>
+        </ul>
+    </div>
+
+    <h2>2. CẤU TRÚC JSON FILE</h2>
+
+    <h3>2.1. vi.json structure</h3>
+    <pre><code>{
+  "meta": {
+    "title": "Đầu tư trí tuệ: Học trước, hiểu trước, đồng hành nếu phù hợp",
+    "description": "Khám phá hành trình đầu tư trí tuệ tại Muôn Nơi"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "projects": "Dự án",
+    "participation": "Hình thức đồng hành",
+    "process": "Quy trình review",
+    "governance": "Quản trị",
+    "faq": "Câu hỏi thường gặp",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "h1": "Đầu tư ở đây là hành trình học, làm, trưởng thành và cùng phát triển",
+    "subheadline": "Khám phá triết lý đầu tư trí tuệ: học trước, hiểu trước, đồng hành nếu phù hợp",
+    "cta_primary": "Tìm hiểu triết lý đầu tư",
+    "cta_secondary": "Xem hành trình tham gia"
+  },
+  "sections": {
+    "philosophy": {
+      "title": "Chân lý đầu tư",
+      "content": "..."
+    },
+    "not_investment": {
+      "title": "Đầu tư ở đây không phải là gì",
+      "content": "..."
+    }
+  },
+  "forms": {
+    "interest": {
+      "full_name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "country": "Quốc gia",
+      "interest_type": "Loại quan tâm",
+      "message": "Ghi chú",
+      "submit": "Gửi quan tâm"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Muôn Nơi. Tất cả quyền được bảo lưu.",
+    "legal": "Điều khoản và điều kiện",
+    "privacy": "Chính sách bảo mật"
+  }
+}</code></pre>
+
+    <h3>2.2. en.json structure</h3>
+    <pre><code>{
+  "meta": {
+    "title": "Intellectual Investment: Learn First, Understand First, Collaborate If Suitable",
+    "description": "Discover the intellectual investment journey at Muôn Nơi"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "participation": "Participation",
+    "process": "Review Process",
+    "governance": "Governance",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "h1": "Investment here is a journey of learning, doing, growing, and developing together",
+    "subheadline": "Discover the philosophy of intellectual investment: learn first, understand first, collaborate if suitable",
+    "cta_primary": "Explore Investment Philosophy",
+    "cta_secondary": "View Participation Journey"
+  },
+  "sections": {
+    "philosophy": {
+      "title": "Investment Philosophy",
+      "content": "..."
+    },
+    "not_investment": {
+      "title": "What Investment Here is NOT",
+      "content": "..."
+    }
+  },
+  "forms": {
+    "interest": {
+      "full_name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "country": "Country",
+      "interest_type": "Interest Type",
+      "message": "Message",
+      "submit": "Submit Interest"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Muôn Nơi. All rights reserved.",
+    "legal": "Terms and Conditions",
+    "privacy": "Privacy Policy"
+  }
+}</code></pre>
+
+    <h2>3. QUY TẮC DỊCH THUẬT</h2>
+
+    <h3>3.1. Tiếng Việt là nguồn gốc</h3>
+    <div class="required">
+        <ul>
+            <li><strong>VI là source of truth</strong></li>
+            <li>Viết VI trước, dịch EN sau</li>
+            <li>Không viết EN trước rồi dịch ngược</li>
+            <li>Không dùng AI translation mà không review</li>
+        </ul>
+    </div>
+
+    <h3>3.2. Nguyên tắc dịch thuật</h3>
+    <div class="section">
+        <h4>3.2.1. Meaning equivalence</h4>
+        <ul>
+            <li>EN phải tương đương về meaning với VI</li>
+            <li>Không dịch từng chữ (word-for-word)</li>
+            <li>Dịch theo context và intent</li>
+            <li>Giữ tone và voice đồng bộ</li>
+        </ul>
+
+        <h4>3.2.2. Cultural adaptation</h4>
+        <ul>
+            <li>EN dùng American/international professional tone</li>
+            <li>Không dùng VI-specific idioms trong EN</li>
+            <li>Adapt examples cho international audience</li>
+            <li>Giữ formal nhưng accessible</li>
+        </ul>
+
+        <h4>3.2.3. Length consideration</h4>
+        <ul>
+            <li>EN thường ngắn hơn VI 20-30%</li>
+            <li>Cắt redundant words trong EN</li>
+            <li>Giữ core meaning</li>
+            <li>Optimize cho scannability</li>
+        </ul>
+    </div>
+
+    <h2>4. LANGUAGE CODEX — TIẾNG VIỆT</h2>
+
+    <h3>4.1. Tone & Voice</h3>
+    <div class="section">
+        <ul>
+            <li><strong>Có dấu đầy đủ</strong> — Không viết thiếu dấu</li>
+            <li><strong>Rõ nghĩa</strong> — Không sáo rỗng, không vague</li>
+            <li><strong>Không hype</strong> — Không dùng từ ngữ cường điệu</li>
+            <li><strong>Không sales-speak</strong> — Không dùng ngôn ngữ bán hàng</li>
+            <li><strong>Không tài chính dụ dỗ</strong> — Không dùng từ ngữ tài chính lôi kéo</li>
+            <li><strong>Nghiêm túc</strong> — Professional, trustworthy</li>
+            <li><strong>Sáng</strong> — Clear, transparent</li>
+            <li><strong>Dễ hiểu</strong> — Accessible, không jargon</li>
+        </ul>
+    </div>
+
+    <h3>4.2. Từ cấm (Forbidden words)</h3>
+    <div class="forbidden">
+        <p><strong>Chỉ được xuất hiện trong ngữ cảnh phủ định hoặc legal clarification:</strong></p>
+        <ul>
+            <li>Lợi nhuận cam kết</li>
+            <li>Hoàn vốn chắc chắn</li>
+            <li>Đầu tư an toàn tuyệt đối</li>
+            <li>Không rủi ro</li>
+            <li>Chốt suất</li>
+            <li>Giữ deal</li>
+            <li>Cơ hội độc quyền</li>
+            <li>Ưu đãi đặc biệt</li>
+            <li>Cam kết sinh lời</li>
+            <li>Bảo đảm lợi nhuận</li>
+        </ul>
+    </div>
+
+    <h3>4.3. Từ được khuyến khích</h3>
+    <div class="required">
+        <ul>
+            <li>Học trước</li>
+            <li>Hiểu trước</li>
+            <li>Đồng hành</li>
+            <li>Phù hợp</li>
+            <li>Rủi ro</li>
+            <li>Trưởng thành</li>
+            <li>Phát triển</li>
+            <li>Kiến thức</li>
+            <li>Network</li>
+            <li>Cơ hội</li>
+        </ul>
+    </div>
+
+    <h2>5. LANGUAGE CODEX — TIẾNG ANH</h2>
+
+    <h3>5.1. Tone & Voice</h3>
+    <div class="section">
+        <ul>
+            <li><strong>Ngắn</strong> — Concise, to the point</li>
+            <li><strong>Rõ</strong> — Clear, unambiguous</li>
+            <li><strong>Tự nhiên</strong> — Natural flow, not stilted</li>
+            <li><strong>American/international professional</strong> — Standard business English</li>
+            <li><strong>Không dịch từng chữ</strong> — Adapt for English readers</li>
+            <li><strong>Không investment hype language</strong> — No "get rich quick" terminology</li>
+        </ul>
+    </div>
+
+    <h3>5.2. Từ cấm (Forbidden words)</h3>
+    <div class="forbidden">
+        <p><strong>Chỉ được xuất hiện trong ngữ cảnh phủ định hoặc legal clarification:</strong></p>
+        <ul>
+            <li>Guaranteed return</li>
+            <li>Risk-free</li>
+            <li>Passive income</li>
+            <li>ROI promise</li>
+            <li>Secure profit</li>
+            <li>Investment slot</li>
+            <li>Buy equity now</li>
+            <li>Join now for profit</li>
+            <li>Exclusive opportunity</li>
+            <li>Limited time offer</li>
+        </ul>
+    </div>
+
+    <h3>5.3. Từ được khuyến khích</h3>
+    <div class="required">
+        <ul>
+            <li>Learn first</li>
+            <li>Understand first</li>
+            <li>Collaborate</li>
+            <li>Suitable</li>
+            <li>Risk</li>
+            <li>Growth</li>
+            <li>Development</li>
+            <li>Knowledge</li>
+            <li>Network</li>
+            <li>Opportunity</li>
+        </ul>
+    </div>
+
+    <h2>6. SEO BILINGUAL REQUIREMENTS</h2>
+
+    <h3>6.1. Metadata riêng cho từng ngôn ngữ</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Title:</strong> VI riêng, EN riêng</li>
+            <li><strong>Meta description:</strong> VI riêng, EN riêng</li>
+            <li><strong>OG title:</strong> VI riêng, EN riêng</li>
+            <li><strong>OG description:</strong> VI riêng, EN riêng</li>
+            <li><strong>Alt text:</strong> VI riêng, EN riêng</li>
+        </ul>
+    </div>
+
+    <div class="forbidden">
+        <p><strong>Không được:</strong></p>
+        <ul>
+            <li>Dùng chung title cho cả 2 ngôn ngữ</li>
+            <li>Dùng chung meta description</li>
+            <li>Dùng chung alt text</li>
+            <li>Dịch máy metadata</li>
+        </ul>
+    </div>
+
+    <h3>6.2. seo.vi.json structure</h3>
+    <pre><code>{
+  "homepage": {
+    "title": "Đầu tư trí tuệ: Học trước, hiểu trước, đồng hành nếu phù hợp | Muôn Nơi",
+    "description": "Khám phá hành trình đầu tư trí tuệ tại Muôn Nơi: học trước, hiểu trước, đồng hành nếu phù hợp. Không cam kết lợi nhuận, không cam kết hoàn vốn.",
+    "og_title": "Đầu tư trí tuệ tại Muôn Nơi",
+    "og_description": "Hành trình học, làm, trưởng thành và cùng phát triển."
+  },
+  "projects": {
+    "title": "Dự án | Đầu tư trí tuệ Muôn Nơi",
+    "description": "Xem các dự án và cơ hội đồng hành tại Muôn Nơi."
+  },
+  "participation": {
+    "title": "Hình thức đồng hành | Đầu tư trí tuệ Muôn Nơi",
+    "description": "Tìm hiểu các mức tham gia: học, quan tâm, review, member layer, strategic participation."
+  }
+}</code></pre>
+
+    <h3>6.3. seo.en.json structure</h3>
+    <pre><code>{
+  "homepage": {
+    "title": "Intellectual Investment: Learn First, Understand First, Collaborate If Suitable | Muôn Nơi",
+    "description": "Discover the intellectual investment journey at Muôn Nơi: learn first, understand first, collaborate if suitable. No guaranteed returns, no capital repayment promises.",
+    "og_title": "Intellectual Investment at Muôn Nơi",
+    "og_description": "A journey of learning, doing, growing, and developing together."
+  },
+  "projects": {
+    "title": "Projects | Intellectual Investment Muôn Nơi",
+    "description": "View projects and collaboration opportunities at Muôn Nơi."
+  },
+  "participation": {
+    "title": "Participation | Intellectual Investment Muôn Nơi",
+    "description": "Learn about participation levels: learn, interest, review, member layer, strategic participation."
+  }
+}</code></pre>
+
+    <h2>7. INTERNAL LINKING BILINGUAL</h2>
+
+    <h3>7.1. Language-specific internal links</h3>
+    <div class="required">
+        <ul>
+            <li>Trang VI phải ưu tiên link đến VI</li>
+            <li>Trang EN phải ưu tiên link đến EN</li>
+            <li>Không để người đọc EN bị redirect sang VI</li>
+            <li>Language switcher phải chuyển đúng page tương ứng</li>
+        </ul>
+    </div>
+
+    <h3>7.2. URL structure options</h3>
+    <div class="section">
+        <h4>Option 1: Same file, client-side switch</h4>
+        <pre><code>/homepage/  (switch VI/EN via JS)</code></pre>
+
+        <h4>Option 2: Separate routes</h4>
+        <pre><code>/vi/homepage/
+/en/homepage/</code></pre>
+
+        <h4>Option 3: Subdomain</h4>
+        <pre><code>vi.dautu.muonnoi.org/homepage/
+en.dautu.muonnoi.org/homepage/</code></pre>
+    </div>
+
+    <h2>8. HREFLANG IMPLEMENTATION</h2>
+
+    <h3>8.1. Nếu dùng separate routes</h3>
+    <pre><code>&lt;link rel="alternate" hreflang="vi" href="https://dautu.muonnoi.org/vi/homepage/" /&gt;
+&lt;link rel="alternate" hreflang="en" href="https://dautu.muonnoi.org/en/homepage/" /&gt;
+&lt;link rel="canonical" href="https://dautu.muonnoi.org/vi/homepage/" /&gt;</code></pre>
+
+    <h3>8.2. Nếu dùng client-side switch</h3>
+    <pre><code>&lt;link rel="alternate" hreflang="vi" href="https://dautu.muonnoi.org/homepage/?lang=vi" /&gt;
+&lt;link rel="alternate" hreflang="en" href="https://dautu.muonnoi.org/homepage/?lang=en" /&gt;
+&lt;link rel="canonical" href="https://dautu.muonnoi.org/homepage/" /&gt;</code></pre>
+
+    <h2>9. CONTENT MAINTENANCE</h2>
+
+    <h3>9.1. Update process</h3>
+    <div class="section">
+        <ol>
+            <li>Update VI content in vi.json</li>
+            <li>Update EN content in en.json (maintain equivalence)</li>
+            <li>Update SEO metadata in seo.vi.json and seo.en.json</li>
+            <li>Test language switcher</li>
+            <li>QA both language versions</li>
+            <li>Deploy together</li>
+        </ol>
+    </div>
+
+    <h3>9.2. Review schedule</h3>
+    <ul>
+        <li>Monthly: Check for broken translations</li>
+        <li>Quarterly: Review tone consistency</li>
+        <li>Annually: Full content audit</li>
+    </ul>
+
+    <h2>10. QA CHECKLIST BILINGUAL</h2>
+
+    <div class="section">
+        <h3>10.1. Content QA</h3>
+        <ul>
+            <li>[ ] VI và EN tương đương về meaning</li>
+            <li>[ ] Không có text bị thiếu translation</li>
+            <li>[ ] Không có text bị over-translated</li>
+            <li>[ ] Tone đồng bộ giữa 2 ngôn ngữ</li>
+            <li>[ ] Không có từ cấm trong cả 2 ngôn ngữ</li>
+        </ul>
+
+        <h3>10.2. SEO QA</h3>
+        <ul>
+            <li>[ ] Title riêng cho VI và EN</li>
+            <li>[ ] Meta description riêng cho VI và EN</li>
+            <li>[ ] OG tags riêng cho VI và EN</li>
+            <li>[ ] Alt text riêng cho VI và EN</li>
+            <li>[ ] Hreflang đúng</li>
+            <li>[ ] Canonical đúng</li>
+        </ul>
+
+        <h3>10.3. UX QA</h3>
+        <ul>
+            <li>[ ] Language switcher hoạt động đúng</li>
+            <li>[ ] Internal links đúng ngôn ngữ</li>
+            <li>[ ] Form labels đúng ngôn ngữ</li>
+            <li>[ ] Error messages đúng ngôn ngữ</li>
+            <li>[ ] Không bị trộn ngôn ngữ</li>
+        </ul>
+    </div>
+
+    <div class="codex">
+        <h3>🔒 BILINGUAL LOCK</h3>
+        <p>Hệ thống nội dung song ngữ bị khóa. Bất kỳ thay đổi nào phải tuân theo quy tắc trong codex này.</p>
+        <p>Team dev có quyền từ chối implement bất kỳ content nào vi phạm quy tắc bilingual.</p>
+    </div>
+
+    <hr>
+    <p><strong>Document Owner:</strong> Content Lead</p>
+    <p><strong>Technical Owner:</strong> Lead Developer</p>
+    <p><strong>Last Review:</strong> 2026-06-13</p>
+    <p><strong>Next Review:</strong> 2026-09-13</p>
+</body>
+</html>

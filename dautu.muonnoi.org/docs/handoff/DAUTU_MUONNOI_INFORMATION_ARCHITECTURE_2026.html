@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAUTU_MUONNOI_INFORMATION_ARCHITECTURE_2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 40px;
+        }
+        .architecture {
+            background: #e8f4f8;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .forbidden {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .required {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>DAUTU_MUONNOI_INFORMATION_ARCHITECTURE_2026</h1>
+    <p><strong>Status:</strong> LOCKED — Information Architecture</p>
+    <p><strong>Last Updated:</strong> 2026-06-13</p>
+    <p><strong>Version:</strong> 1.0</p>
+
+    <div class="architecture">
+        <h3>🏗️ INFORMATION ARCHITECTURE</h3>
+        <p>Cấu trúc thông tin bắt buộc cho dautu.muonnoi.org — đảm bảo user journey rõ ràng, doctrine-first, và SEO-friendly</p>
+    </div>
+
+    <h2>1. SITE STRUCTURE OVERVIEW</h2>
+
+    <h3>1.1. Primary navigation structure</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Homepage (/)</strong> — Entry point, doctrine-first</li>
+            <li><strong>Projects (/du-an/)</strong> — Project catalog (not sales catalog)</li>
+            <li><strong>Participation (/hinh-thuc-dong-hanh/)</strong> — Participation levels</li>
+            <li><strong>Process (/quy-trinh-review/)</strong> — Review process</li>
+            <li><strong>Governance (/governance/)</strong> — Governance & legal posture</li>
+            <li><strong>FAQ (/faq/)</strong> — Common questions</li>
+            <li><strong>Contact (/dang-ky-quan-tam/)</strong> — Interest form (not payment)</li>
+            <li><strong>Legal (/legal/)</strong> — Legal disclaimers</li>
+        </ul>
+    </div>
+
+    <h2>2. USER JOURNEY ARCHITECTURE</h2>
+
+    <h3>2.1. Primary user flow</h3>
+    <div class="section">
+        <pre><code>Awareness (Homepage)
+    ↓
+Understanding (Philosophy Sections)
+    ↓
+Interest (Projects/Participation)
+    ↓
+Engagement (Interest Form)
+    ↓
+Review (Private Review Process)
+    ↓
+Participation (If Suitable)</code></pre>
+    </div>
+
+    <h3>2.2. Secondary user flows</h3>
+    <div class="section">
+        <h4>Flow A: Quick FAQ Access</h4>
+        <pre><code>Homepage → FAQ → Specific Answer → Back to Interest</code></pre>
+
+        <h4>Flow B: Governance Check</h4>
+        <pre><code>Homepage → Governance → Legal → Interest Form</code></pre>
+
+        <h4>Flow C: Project Deep Dive</h4>
+        <pre><code>Homepage → Projects → Specific Project → Participation → Interest Form</code></pre>
+    </div>
+
+    <h2>3. PAGE HIERARCHY</h2>
+
+    <h3>3.1. Level 1: Core Pages</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Homepage (/)</strong> — Priority 1.0</li>
+            <li><strong>Projects (/du-an/)</strong> — Priority 0.8</li>
+            <li><strong>Participation (/hinh-thuc-dong-hanh/)</strong> — Priority 0.7</li>
+        </ul>
+    </div>
+
+    <h3>3.2. Level 2: Supporting Pages</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Process (/quy-trinh-review/)</strong> — Priority 0.6</li>
+            <li><strong>Governance (/governance/)</strong> — Priority 0.5</li>
+            <li><strong>FAQ (/faq/)</strong> — Priority 0.5</li>
+        </ul>
+    </div>
+
+    <h3>3.3. Level 3: Functional Pages</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Interest Form (/dang-ky-quan-tam/)</strong> — Priority 0.4</li>
+            <li><strong>Legal (/legal/)</strong> — Priority 0.3</li>
+        </ul>
+    </div>
+
+    <h2>4. CONTENT HIERARCHY</h2>
+
+    <h3>4.1. Homepage content hierarchy</h3>
+    <div class="section">
+        <ol>
+            <li><strong>Hero Section</strong> — Primary doctrine statement</li>
+            <li><strong>Philosophy Section</strong> — Why learn first</li>
+            <li><strong>Anti-Definition Section</strong> — What it's NOT</li>
+            <li><strong>Journey Section</strong> — User journey map</li>
+            <li><strong>Value Section</strong> — True value proposition</li>
+            <li><strong>Risk Section</strong> — Honest risk disclosure</li>
+            <li><strong>System Section</strong> — Projects/participation overview</li>
+            <li><strong>CTA Section</strong> — Getting started</li>
+        </ol>
+    </div>
+
+    <h3>4.2. Supporting page content hierarchy</h3>
+    <div class="section">
+        <h4>Projects Page:</h4>
+        <ol>
+            <li>Page title & intro</li>
+            <li>Project categories/lanes</li>
+            <li>Project cards (overview)</li>
+            <li>Participation levels</li>
+            <li>Next steps CTA</li>
+        </ol>
+
+        <h4>Participation Page:</h4>
+        <ol>
+            <li>Page title & intro</li>
+            <li>Participation philosophy</li>
+            <li>Level descriptions (Learn → Review → Participate)</li>
+            <li>Suitability criteria</li>
+            <li>Next steps CTA</li>
+        </ol>
+    </div>
+
+    <h2>5. NAVIGATION ARCHITECTURE</h2>
+
+    <h3>5.1. Main navigation</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Logo</strong> — Links to homepage</li>
+            <li><strong>Nav Items</strong> — 6-7 items max</li>
+            <li><strong>Language Switcher</strong> — VI/EN toggle</li>
+            <li><strong>CTA Button</strong> — "Bày tỏ quan tâm" / "Express Interest"</li>
+        </ul>
+    </div>
+
+    <h3>5.2. Footer navigation</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Primary Links</strong> — Main pages</li>
+            <li><strong>Legal Links</strong> — Legal, Privacy, Terms</li>
+            <li><strong>Contact Info</strong> — Minimal contact details</li>
+            <li><strong>Copyright</strong> — Standard copyright</li>
+        </ul>
+    </div>
+
+    <h3>5.3. Breadcrumb navigation</h3>
+    <div class="section">
+        <h4>Use breadcrumbs for:</h4>
+        <ul>
+            <li>Project detail pages (if implemented)</li>
+            <li>FAQ category pages (if implemented)</li>
+            <li>Multi-level content pages</li>
+        </ul>
+    </div>
+
+    <h2>6. INTERNAL LINKING STRATEGY</h2>
+
+    <h3>6.1. Contextual linking</h3>
+    <div class="required">
+        <ul>
+            <li>Link from philosophy to participation</li>
+            <li>Link from risk to legal</li>
+            <li>Link from projects to participation</li>
+            <li>Link from FAQ to relevant sections</li>
+        </ul>
+    </div>
+
+    <h3>6.2. CTA linking</h3>
+    <div class="required">
+        <ul>
+            <li>Primary CTA → Interest form</li>
+            <li>Secondary CTA → Relevant information page</li>
+            <li>Tertiary CTA → FAQ or Governance</li>
+        </ul>
+    </div>
+
+    <h2>7. CONTENT MODEL ARCHITECTURE</h2>
+
+    <h3>7.1. Page template structure</h3>
+    <div class="section">
+        <pre><code>Page Template:
+├── Header (Navigation)
+├── Hero Section (Page-specific)
+├── Main Content
+│   ├── Introduction
+│   ├── Core Sections (3-6 sections)
+│   ├── Supporting Content
+│   └── CTA Section
+├── FAQ Section (if applicable)
+├── Legal Note (if applicable)
+└── Footer</code></pre>
+    </div>
+
+    <h3>7.2. Section template structure</h3>
+    <div class="section">
+        <pre><code>Section Template:
+├── Section Header (H2)
+├── Section Intro (1-2 paragraphs)
+├── Section Content
+│   ├── Sub-sections (H3)
+│   ├── Lists/Tables
+│   └── Visual Elements
+└── Section CTA (if applicable)</code></pre>
+    </div>
+
+    <h2>8. TAXONOMY ARCHITECTURE</h2>
+
+    <h3>8.1. Project categories</h3>
+    <div class="required">
+        <ul>
+            <li><strong>AI Computer Ecosystem</strong> — AI infrastructure</li>
+            <li><strong>AIAgent Infrastructure</strong> — Agent systems</li>
+            <li><strong>Community Programs</strong> — Education & workforce</li>
+        </ul>
+    </div>
+
+    <h3>8.2. Participation levels</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Learn</strong> — Educational content only</li>
+            <li><strong>Interest</strong> — Express interest, no commitment</li>
+            <li><strong>Review</strong> — Private review process</li>
+            <li><strong>Participate</strong> — Active participation</li>
+        </ul>
+    </div>
+
+    <h3>8.3. FAQ categories</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Philosophy</strong> — Investment philosophy questions</li>
+            <li><strong>Risk</strong> — Risk-related questions</li>
+            <li><strong>Process</strong> — Process questions</li>
+            <li><strong>Legal</strong> — Legal questions</li>
+        </ul>
+    </div>
+
+    <h2>9. URL ARCHITECTURE</h2>
+
+    <h3>9.1. URL structure rules</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Lowercase</strong> — All URLs lowercase</li>
+            <li><strong>Hyphens</strong> — Use hyphens, not underscores</li>
+            <li><strong>Trailing slash</strong> — Include trailing slash</li>
+            <li><strong>Short & descriptive</strong> — Keep URLs concise</li>
+            <li><strong>No special characters</strong> — Avoid special chars</li>
+        </ul>
+    </div>
+
+    <h3>9.2. URL examples</h3>
+    <div class="section">
+        <pre><code>✅ Correct:
+/du-an/
+/hinh-thuc-dong-hanh/
+/quy-trinh-review/
+/governance/
+/faq/
+/dang-ky-quan-tam/
+/legal/
+
+❌ Incorrect:
+/Du-An/
+/hinh_thuc_dong_hanh/
+/QuyTrinhReview/
+/governance?page=1
+/faq?id=123</code></pre>
+    </div>
+
+    <h2>10. MOBILE INFORMATION ARCHITECTURE</h2>
+
+    <h3>10.1. Mobile navigation</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Hamburger menu</strong> — Collapsible navigation</li>
+            <li><strong>Sticky CTA</strong> — Primary CTA always visible</li>
+            <li><strong>Back navigation</strong> — Clear back buttons</li>
+            <li><strong>Touch targets</strong> — Min 44x44px</li>
+        </ul>
+    </div>
+
+    <h3>10.2. Mobile content hierarchy</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Progressive disclosure</strong> — Show key info first</li>
+            <li><strong>Collapsible sections</strong> — Expandable content</li>
+            <li><strong>Sticky headers</strong> — Section headers visible</li>
+            <li><strong>Optimized reading</strong> — Readable font sizes</li>
+        </ul>
+    </div>
+
+    <h2>11. SCHEMA.ORG ARCHITECTURE</h2>
+
+    <h3>11.1. Required schema types</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Organization</strong> — Site-wide</li>
+            <li><strong>WebSite</strong> — Site-wide</li>
+            <li><strong>FAQPage</strong> — FAQ page</li>
+            <li><strong>BreadcrumbList</strong> — Breadcrumb pages</li>
+        </ul>
+    </div>
+
+    <h3>11.2. Optional schema types</h3>
+    <div class="section">
+        <ul>
+            <li><strong>Article</strong> — Blog/content pages</li>
+            <li><strong>Event</strong> — Event pages (if applicable)</li>
+            <li><strong>Person</strong> — Team pages (if applicable)</li>
+        </ul>
+    </div>
+
+    <h2>12. ACCESSIBILITY ARCHITECTURE</h2>
+
+    <h3>12.1. Semantic structure</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Header</strong> — &lt;header&gt; element</li>
+            <li><strong>Navigation</strong> — &lt;nav&gt; element</li>
+            <li><strong>Main content</strong> — &lt;main&gt; element</li>
+            <li><strong>Sections</strong> — &lt;section&gt; elements</li>
+            <li><strong>Footer</strong> — &lt;footer&gt; element</li>
+        </ul>
+    </div>
+
+    <h3>12.2. ARIA architecture</h3>
+    <div class="required">
+        <ul>
+            <li><strong>Landmarks</strong> — ARIA landmarks</li>
+            <li><strong>Labels</strong> — ARIA labels for interactive elements</li>
+            <li><strong>Descriptions</strong> — ARIA descriptions where needed</li>
+            <li><strong>Live regions</strong> — For dynamic content</li>
+        </ul>
+    </div>
+
+    <h2>13. IA QA CHECKLIST</h2>
+
+    <div class="section">
+        <h3>13.1. Structure QA</h3>
+        <ul>
+            <li>[ ] All routes follow URL structure rules</li>
+            <li>[ ] Navigation hierarchy correct</li>
+            <li>[ ] Content hierarchy logical</li>
+            <li>[ ] Internal links working</li>
+            <li>[ ] No orphan pages</li>
+        </ul>
+
+        <h3>13.2. User Journey QA</h3>
+        <ul>
+            <li>[ ] Primary user flow complete</li>
+            <li>[ ] Secondary user flows complete</li>
+            <li>[ ] No dead ends</li>
+            <li>[ ] Clear CTAs at each step</li>
+            <li>[ ] Back navigation available</li>
+        </ul>
+
+        <h3>13.3. Mobile QA</h3>
+        <ul>
+            <li>[ ] Mobile navigation working</li>
+            <li>[ ] Touch targets adequate</li>
+            <li>[ ] Content readable on mobile</li>
+            <li>[ ] No horizontal scrolling</li>
+            <li>[ ] Performance acceptable</li>
+        </ul>
+    </div>
+
+    <div class="architecture">
+        <h3>🔒 IA LOCK</h3>
+        <p>Information architecture bị khóa. Bất kỳ thay đổi nào phải tuân theo quy tắc trong architecture này.</p>
+        <p>Team dev có quyền từ chối implement bất kỳ IA change nào vi phạm quy tắc.</p>
+    </div>
+
+    <hr>
+    <p><strong>Document Owner:</strong> UX Lead + Information Architect</p>
+    <p><strong>Technical Owner:</strong> Lead Developer</p>
+    <p><strong>Last Review:</strong> 2026-06-13</p>
+    <p><strong>Next Review:</strong> 2026-09-13</p>
+</body>
+</html>
