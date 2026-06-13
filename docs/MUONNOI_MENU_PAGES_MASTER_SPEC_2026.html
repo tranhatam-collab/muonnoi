@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUONNOI_MENU_PAGES_MASTER_SPEC_2026</title>
+  <style>
+    body{font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;max-width:1100px;margin:0 auto;padding:32px 20px 80px;background:#f7f7f5;color:#141414}
+    h1,h2,h3{line-height:1.25} h1{font-size:38px} h2{font-size:28px;color:#0f4c81;margin-top:34px} h3{font-size:20px;margin-top:22px}
+    .hero,.card,.warn,.ok{background:#fff;border:1px solid #e5e5e0;border-radius:14px;padding:18px}
+    .hero{background:linear-gradient(135deg,#0f4c81,#153f63);color:#fff;border:none}
+    .warn{background:#fff7ec;border-left:6px solid #b25b00}
+    .ok{background:#eefaf6;border-left:6px solid #0c6b58}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    pre{white-space:pre-wrap;background:#111827;color:#f9fafb;padding:16px;border-radius:12px}
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>MUONNOI_MENU_PAGES_MASTER_SPEC_2026</h1>
+    <p>Bộ thuyết minh chi tiết cho từng trang trong menu homepage của <strong>muonnoi.org</strong>, để team dev/content/SEO build đồng bộ, không lệch thesis.</p>
+  </section>
+
+  <h2>1. Nguyên tắc chung</h2>
+  <div class="ok">
+    <ul>
+      <li>Mỗi page phải có vai trò riêng, không được trùng nhau.</li>
+      <li>Mỗi page phải đúng giọng Muôn Nơi: calm, rõ, sâu, không hype.</li>
+      <li>VI là gốc. EN song song, không dịch máy.</li>
+      <li>Không overclaim readiness của các vertical chưa live thật.</li>
+      <li>Mọi page đều phải kéo về cùng một hệ nhận diện và cùng một social core.</li>
+    </ul>
+  </div>
+
+  <h2>2. Trang chủ /</h2>
+  <div class="card"><p><strong>Vai trò:</strong> định nghĩa Muôn Nơi, dẫn vào social core, thiết lập trust, cho thấy hệ sinh thái ở mức dễ hiểu.</p><p><strong>Phải có:</strong> H1 khóa, 11 sections chuẩn, CTA rõ, ecosystem map nhẹ, trust strip, final CTA.</p><p><strong>Không được có:</strong> docs index, roadmap-first, quá nhiều CTA ngang hàng, internal status nặng.</p></div>
+
+  <h2>3. Hệ sinh thái /ecosystem</h2>
+  <div class="card"><p><strong>Vai trò:</strong> giải thích kiến trúc toàn hệ, cho thấy các vertical không phải website rời.</p><p><strong>Phải có:</strong></p><ul><li>bản đồ hệ</li><li>phân lớp rõ: brand shell / social core / AI layer / trust layer / ecosystem lanes / strategic resource layer</li><li>readiness badges: LIVE / BUILDING / PLANNED / RESERVED</li></ul><p><strong>Không được có:</strong> overclaim domain chưa tồn tại là live; list domain kiểu nội bộ khó hiểu.</p></div>
+
+  <h2>4. Lộ trình /roadmap</h2>
+  <div class="card"><p><strong>Vai trò:</strong> cho thấy thứ tự build đúng, cái gì trước cái gì sau.</p><p><strong>Phải có:</strong> phase rõ, cái gì live, cái gì đang build, cái gì phase sau, readiness gates.</p><p><strong>Không được có:</strong> roadmap như danh sách ước mơ hoặc timeline hứa quá đà.</p></div>
+
+  <h2>5. Bảo mật /security</h2>
+  <div class="card"><p><strong>Vai trò:</strong> trả lời vì sao người dùng tin được.</p><p><strong>Phải có:</strong></p><ul><li>no tracking pixel</li><li>no behavior selling</li><li>minimal data</li><li>report / block / appeal</li><li>anti-fake / anti-scam / anti-impersonation</li><li>child / family safety principles</li></ul><p><strong>Không được có:</strong> claim “an toàn tuyệt đối” hoặc overclaim security chưa có evidence.</p></div>
+
+  <h2>6. Hướng dẫn /guide</h2>
+  <div class="card"><p><strong>Vai trò:</strong> onboarding user mới, giảm friction, giảm support load.</p><p><strong>Phải có:</strong> tạo tài khoản, tạo hồ sơ, xác minh, tham gia cộng đồng, đi vào vertical phù hợp, FAQ ngắn, flow rõ.</p><p><strong>Không được có:</strong> guide kiểu docs kỹ thuật nội bộ.</p></div>
+
+  <h2>7. Kế hoạch /plan</h2>
+  <div class="card"><p><strong>Vai trò:</strong> dành cho người muốn hiểu sâu hơn ở tầng builder / partner / serious member.</p><p><strong>Phải có:</strong> Muôn Nơi là gì, không là gì, 5 trụ, 10 lớp, 3 wedge, real-life loop, governance logic.</p><p><strong>Không được có:</strong> dump note nội bộ hoặc lặp 100% homepage.</p></div>
+
+  <h2>8. Đầu tư /investment</h2>
+  <div class="card"><p><strong>Vai trò:</strong> strategic review layer, không phải cổng bán cổ phần public.</p><p><strong>Phải có:</strong> link sang <code>dautu.muonnoi.org</code>, posture rõ: học trước, review trước, no guaranteed returns, not public solicitation where not allowed.</p><p><strong>Không được có:</strong> bank detail public, sales language tài chính, hứa lợi nhuận.</p></div>
+
+  <h2>9. Menu header chuẩn</h2>
+  <pre>Trang chủ
+Hệ sinh thái
+Lộ trình
+Bảo mật
+Hướng dẫn
+Kế hoạch
+Đầu tư
+Vào MXH Muôn Nơi   (CTA nổi bật riêng)</pre>
+
+  <div class="warn"><p><strong>Không đưa lên header:</strong> admin, complaints, raw status pages, internal docs, utility pages quá kỹ thuật.</p></div>
+
+  <h2>10. SEO và metadata cho từng page</h2>
+  <div class="grid">
+    <div class="card"><h3>Title</h3><p>Riêng cho từng page, riêng cho VI và EN.</p></div>
+    <div class="card"><h3>Description</h3><p>Không dịch máy, phản ánh đúng intent của page.</p></div>
+    <div class="card"><h3>Canonical</h3><p>Đúng route, không tự trỏ lung tung giữa root và preview.</p></div>
+    <div class="card"><h3>OG</h3><p>Có OG title, OG description, OG image phù hợp page.</p></div>
+    <div class="card"><h3>Heading</h3><p>Mỗi page chỉ 1 H1, H2/H3 logic.</p></div>
+    <div class="card"><h3>Internal links</h3><p>Đi đúng ngôn ngữ, đúng intent, không để link chết.</p></div>
+  </div>
+
+  <h2>11. Kết luận</h2>
+  <div class="ok"><p>Menu của <strong>muonnoi.org</strong> không phải để trưng bày nhiều page. Nó là hệ điều hướng có thứ tự, dẫn người dùng từ hiểu đúng → tin đúng → vào đúng lõi.</p></div>
+</body>
+</html>
