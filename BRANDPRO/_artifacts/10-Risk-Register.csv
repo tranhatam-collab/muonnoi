@@ -1,0 +1,4 @@
+ID,Risk Description,Category,Probability (1-5),Impact (1-5),Risk Score,Status,Mitigation Plan,Owner,Due Date,Last Review
+R-001,<<...>>,<<Brand/Legal/Financial/Tech/Market/Ops>>,<<...>>,<<...>>,<<...>>,<<Active/Mitigated/Closed/Escalated>>,<<...>>,<<...>>,<<...>>,<<...>>
+R-002,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>
+R-003,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>,<<...>>

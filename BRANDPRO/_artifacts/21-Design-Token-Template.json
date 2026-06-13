@@ -1,0 +1,97 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format",
+  "name": "<<Brand>> Design Tokens",
+  "description": "Design tokens for <<Brand>> visual identity",
+  "version": "1.0.0",
+  "tokens": {
+    "color": {
+      "primary": {
+        "400": { "value": "<<HEX_LIGHT>>", "type": "color", "description": "Light variant" },
+        "500": { "value": "<<HEX_MAIN>>", "type": "color", "description": "Main primary color" },
+        "600": { "value": "<<HEX_DARK>>", "type": "color", "description": "Dark variant" }
+      },
+      "secondary": {
+        "400": { "value": "<<HEX>>", "type": "color" },
+        "500": { "value": "<<HEX>>", "type": "color" },
+        "600": { "value": "<<HEX>>", "type": "color" }
+      },
+      "neutral": {
+        "100": { "value": "<<HEX>>", "type": "color", "description": "Background" },
+        "200": { "value": "<<HEX>>", "type": "color", "description": "Surface" },
+        "300": { "value": "<<HEX>>", "type": "color", "description": "Border" },
+        "400": { "value": "<<HEX>>", "type": "color", "description": "Placeholder" },
+        "500": { "value": "<<HEX>>", "type": "color", "description": "Text secondary" },
+        "900": { "value": "<<HEX>>", "type": "color", "description": "Text primary" }
+      },
+      "semantic": {
+        "success": { "value": "<<HEX>>", "type": "color" },
+        "warning": { "value": "<<HEX>>", "type": "color" },
+        "error": { "value": "<<HEX>>", "type": "color" },
+        "info": { "value": "<<HEX>>", "type": "color" }
+      }
+    },
+    "type": {
+      "display": {
+        "l": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>", "letterSpacing": "<<>>" }, "type": "typography" },
+        "m": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>", "letterSpacing": "<<>>" }, "type": "typography" }
+      },
+      "heading": {
+        "h1": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>", "letterSpacing": "<<>>" }, "type": "typography" },
+        "h2": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>", "letterSpacing": "<<>>" }, "type": "typography" },
+        "h3": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>", "letterSpacing": "<<>>" }, "type": "typography" }
+      },
+      "body": {
+        "l": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>" }, "type": "typography" },
+        "m": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>" }, "type": "typography" },
+        "s": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>" }, "type": "typography" }
+      },
+      "label": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>", "letterSpacing": "<<>>" }, "type": "typography" },
+      "code": { "value": { "fontSize": "<<px>>", "lineHeight": "<<px>>", "fontWeight": "<<>>" }, "type": "typography" }
+    },
+    "space": {
+      "1": { "value": "4px", "type": "dimension" },
+      "2": { "value": "8px", "type": "dimension" },
+      "3": { "value": "12px", "type": "dimension" },
+      "4": { "value": "16px", "type": "dimension" },
+      "5": { "value": "24px", "type": "dimension" },
+      "6": { "value": "32px", "type": "dimension" },
+      "8": { "value": "48px", "type": "dimension" },
+      "10": { "value": "64px", "type": "dimension" },
+      "12": { "value": "96px", "type": "dimension" }
+    },
+    "border": {
+      "radius": {
+        "sm": { "value": "4px", "type": "dimension" },
+        "md": { "value": "8px", "type": "dimension" },
+        "lg": { "value": "16px", "type": "dimension" }
+      },
+      "width": {
+        "thin": { "value": "1px", "type": "dimension" },
+        "medium": { "value": "2px", "type": "dimension" }
+      }
+    },
+    "shadow": {
+      "sm": { "value": "0 1px 2px 0 rgba(0,0,0,0.05)", "type": "shadow" },
+      "md": { "value": "0 4px 6px -1px rgba(0,0,0,0.1)", "type": "shadow" },
+      "lg": { "value": "0 10px 15px -3px rgba(0,0,0,0.1)", "type": "shadow" }
+    },
+    "motion": {
+      "duration": {
+        "fast": { "value": "150ms", "type": "duration" },
+        "normal": { "value": "300ms", "type": "duration" },
+        "slow": { "value": "500ms", "type": "duration" }
+      },
+      "easing": {
+        "default": { "value": "cubic-bezier(0.4, 0, 0.2, 1)", "type": "cubicBezier" },
+        "enter": { "value": "cubic-bezier(0, 0, 0.2, 1)", "type": "cubicBezier" },
+        "exit": { "value": "cubic-bezier(0.4, 0, 1, 1)", "type": "cubicBezier" }
+      }
+    },
+    "breakpoint": {
+      "mobile": { "value": "480px", "type": "dimension" },
+      "tablet": { "value": "768px", "type": "dimension" },
+      "desktop": { "value": "1024px", "type": "dimension" },
+      "wide": { "value": "1440px", "type": "dimension" }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "<<BRAND_NAME>>",
+  "url": "<<CANONICAL_DOMAIN>>",
+  "logo": "<<LOGO_URL>>",
+  "sameAs": [
+    "<<WIKIDATA_URL>>",
+    "<<LINKEDIN_COMPANY_URL>>",
+    "<<CRUNCHBASE_URL>>",
+    "<<FACEBOOK_URL>>",
+    "<<INSTAGRAM_URL>>",
+    "<<X_TWITTER_URL>>",
+    "<<YOUTUBE_URL>>",
+    "<<GITHUB_ORG_URL>>"
+  ],
+  "description": "<<SHORT_DESCRIPTION_160_CHARS>>",
+  "foundingDate": "<<YYYY-MM-DD>>",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "<<FOUNDER_NAME>>"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "<<VN/US/SG/...>>"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "<<support@domain.com>>"
+  }
+}
