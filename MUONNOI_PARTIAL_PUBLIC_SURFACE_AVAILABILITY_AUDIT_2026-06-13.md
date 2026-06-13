@@ -11,7 +11,7 @@
 
 ## Mục tiêu
 
-Audit availability của một phần public surface domain để xem còn bao nhiêu % nữa.
+Audit availability của toàn bộ public surface domain theo ecosystem map để xem còn bao nhiêu % nữa.
 
 ---
 
@@ -75,7 +75,7 @@ Audit availability của một phần public surface domain để xem còn bao n
 
 ---
 
-## 3. Subdomain Audit (Partial)
+## 3. Subdomain Audit (Full)
 
 ### 3.1 Root Domain
 
@@ -91,7 +91,7 @@ Audit availability của một phần public surface domain để xem còn bao n
 
 ---
 
-### 3.2 Vertical Domains (Cấp 1) — Partial Audit
+### 3.2 Vertical Domains (Cấp 1)
 
 **app.muonnoi.org**
 - HTTP Status: 200 ✅
@@ -159,7 +159,7 @@ Audit availability của một phần public surface domain để xem còn bao n
 
 ---
 
-### 3.3 Module Domains (Cấp 2) — Partial Audit
+### 3.3 Module Domains (Cấp 2)
 
 **plays.muonnoi.org**
 - HTTP Status: 200 ✅
@@ -176,43 +176,58 @@ Audit availability của một phần public surface domain để xem còn bao n
 
 ---
 
-### 3.4 Subdomains Not Audited (Theo Ecosystem Map)
+### 3.4 Other Domains (Theo Ecosystem Map)
 
 **nhachung.muonnoi.org**
-- Status: DNS không tồn tại ❌
-- Verdict: ❌ NOT AUDITED
+- HTTP Status: DNS không tồn tại ❌
+- Status: ❌ NOT LIVE
+- Verdict: ❌ FAIL
 
 **verify.muonnoi.org**
-- Status: Lỗi TLS ❌
-- Verdict: ❌ NOT AUDITED
+- HTTP Status: SSL_ERROR_SYSCALL ❌
+- Status: ❌ NOT LIVE
+- Verdict: ❌ FAIL
 
 **dulich.muonnoi.org**
-- Status: DNS không tồn tại ❌
-- Verdict: ❌ NOT AUDITED
+- HTTP Status: DNS không tồn tại ❌
+- Status: ❌ NOT LIVE
+- Verdict: ❌ FAIL
 
 **cuocsong.muonnoi.org**
-- Status: HTTP 200 ✅
-- Verdict: ⏳ NOT AUDITED
+- HTTP Status: 200 ✅
+- Status: ✅ LIVE
+- Note: HTTP 200 không đồng nghĩa PASS — chưa chứng minh features hoàn chỉnh
+- Verdict: ⏳ PARTIAL
 
 **docs.muonnoi.org**
-- Status: HTTP 200 ✅
-- Verdict: ⏳ NOT AUDITED
+- HTTP Status: 200 ✅
+- Status: ✅ LIVE
+- Note: HTTP 200 không đồng nghĩa PASS — chưa chứng minh docs features hoàn chỉnh
+- Verdict: ⏳ PARTIAL
+
+---
+
+### 3.5 Planned Domains
 
 **sukien.muonnoi.org**
 - Status: Planned ❌
-- Verdict: ❌ NOT AUDITED
+- Verdict: ❌ NOT LIVE
 
 **giaitri.muonnoi.org**
 - Status: Planned ❌
-- Verdict: ❌ NOT AUDITED
+- Verdict: ❌ NOT LIVE
 
 **challenge.muonnoi.org**
 - Status: Planned ❌
-- Verdict: ❌ NOT AUDITED
+- Verdict: ❌ NOT LIVE
 
 **festival.muonnoi.org**
 - Status: Planned ❌
-- Verdict: ❌ NOT AUDITED
+- Verdict: ❌ NOT LIVE
+
+---
+
+### 3.6 Internal Domains
 
 **admin.muonnoi.org**
 - Status: Internal ❌
@@ -252,9 +267,29 @@ Audit availability của một phần public surface domain để xem còn bao n
 **Module Cấp 2 (Not Live):**
 - trochoi.muonnoi.org — Trò Chơi (module real-life quests) — ❌ Not Live (SSL_ERROR_SYSCALL)
 
+**Other Domains (Live):**
+- cuocsong.muonnoi.org — HTTP 200 ✅ Live (⏳ PARTIAL)
+- docs.muonnoi.org — HTTP 200 ✅ Live (⏳ PARTIAL)
+
+**Other Domains (Not Live):**
+- nhachung.muonnoi.org — DNS không tồn tại ❌
+- verify.muonnoi.org — Lỗi TLS ❌
+- dulich.muonnoi.org — DNS không tồn tại ❌
+
+**Planned Domains:**
+- sukien.muonnoi.org — Planned ❌
+- giaitri.muonnoi.org — Planned ❌
+- challenge.muonnoi.org — Planned ❌
+- festival.muonnoi.org — Planned ❌
+
+**Internal Domains:**
+- admin.muonnoi.org — Internal ❌
+- status.muonnoi.org — Internal ❌
+- complaints.muonnoi.org — Internal ❌
+
 ---
 
-## 5. Overall Progress (Partial)
+## 5. Overall Progress (Full)
 
 ### 5.1 Canonical Files
 
@@ -276,23 +311,23 @@ Audit availability của một phần public surface domain để xem còn bao n
 
 ---
 
-### 5.3 Subdomains (Partial Audit)
+### 5.3 Subdomains (Full Audit)
 
-**Total:** 12 subdomains được audit
-**Live:** 7 subdomains (58.3%)
-**Not Live:** 5 subdomains (41.7%)
+**Total:** 21 subdomains được audit (excluding internal domains)
+**Live:** 11 subdomains (52.4%)
+**Not Live:** 10 subdomains (47.6%)
 
-**Nếu tính thêm muonnoi.org và www.muonnoi.org:** 9/14 host = 64.3%
+**Nếu tính thêm muonnoi.org và www.muonnoi.org:** 13/23 host = 56.5%
 
-**Progress:** ⏳ 58.3% (partial audit)
+**Progress:** ⏳ 52.4% (full audit)
 
 ---
 
-### 5.4 Overall Progress (Partial)
+### 5.4 Overall Progress (Full)
 
 **Total:** 3 categories
 **Complete:** 2 categories (canonical files, homepage)
-**In Progress:** 1 category (subdomains — partial audit)
+**In Progress:** 1 category (subdomains — full audit)
 
 **Progress:** ⏳ PARTIAL — chưa có mẫu số đủ để công bố phần trăm hoàn thành toàn dự án
 
@@ -300,7 +335,7 @@ Audit availability của một phần public surface domain để xem còn bao n
 
 ## 6. Remaining Work
 
-### 6.1 Subdomains Not Live (5 domains)
+### 6.1 Subdomains Not Live (10 domains)
 
 **ketnoi.muonnoi.org**
 - Status: 404
@@ -327,22 +362,33 @@ Audit availability của một phần public surface domain để xem còn bao n
 - Note: Pages origin HTTP 200
 - Action: Chuyển DNS/custom domain sang Pages
 
----
+**nhachung.muonnoi.org**
+- Status: DNS không tồn tại
+- Action: Tạo DNS record
 
-### 6.2 Subdomains Not Audited (Theo Ecosystem Map)
+**verify.muonnoi.org**
+- Status: Lỗi TLS
+- Action: Fix SSL certificate
 
-**nhachung.muonnoi.org** — DNS không tồn tại
-**verify.muonnoi.org** — Lỗi TLS
-**dulich.muonnoi.org** — DNS không tồn tại
-**cuocsong.muonnoi.org** — HTTP 200 (not audited)
-**docs.muonnoi.org** — HTTP 200 (not audited)
-**sukien.muonnoi.org** — Planned
-**giaitri.muonnoi.org** — Planned
-**challenge.muonnoi.org** — Planned
-**festival.muonnoi.org** — Planned
-**admin.muonnoi.org** — Internal
-**status.muonnoi.org** — Internal
-**complaints.muonnoi.org** — Internal
+**dulich.muonnoi.org**
+- Status: DNS không tồn tại
+- Action: Tạo DNS record
+
+**sukien.muonnoi.org**
+- Status: Planned
+- Action: Deploy khi planned
+
+**giaitri.muonnoi.org**
+- Status: Planned
+- Action: Deploy khi planned
+
+**challenge.muonnoi.org**
+- Status: Planned
+- Action: Deploy khi planned
+
+**festival.muonnoi.org**
+- Status: Planned
+- Action: Deploy khi planned
 
 ---
 
@@ -350,11 +396,11 @@ Audit availability của một phần public surface domain để xem còn bao n
 
 **Canonical Files:** ✅ 100% COMPLETE
 **Homepage:** ✅ 100% COMPLETE
-**Subdomains (Partial Audit):** ⏳ 58.3% COMPLETE (7/12 live)
+**Subdomains (Full Audit):** ⏳ 52.4% COMPLETE (11/21 live)
 
 **Overall Progress:** ⏳ PARTIAL — chưa có mẫu số đủ để công bố phần trăm hoàn thành toàn dự án
 
-**Note:** Đây là audit availability của một phần domain, không phải báo cáo hoàn thành hệ sinh thái. Chưa tính SSO, API, payment/email, mobile, moderation, trust và QA.
+**Note:** Đây là audit availability của toàn bộ public surface domain, không phải báo cáo hoàn thành hệ sinh thái. Chưa tính SSO, API, payment/email, mobile, moderation, trust và QA.
 
 ---
 
