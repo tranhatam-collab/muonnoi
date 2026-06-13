@@ -10,9 +10,11 @@ binding = "DB"
 database_name = "muonnoi_db"
 database_id = "2106abac-ff84-4f13-b80f-d73c76fb7d27"
 
-[[r2_buckets]]
-binding = "BUCKET"
-bucket_name = "muonnoi-uploads"
+# [[r2_buckets]]
+# binding = "BUCKET"
+# bucket_name = "muonnoi-uploads"
+# TEMPORARILY COMMENTED FOR STATIC SHELL DEPLOY
+# UNCOMMENT AFTER STATIC DEPLOY FOR WORKER/API DEPLOY
 
 [vars]
 APP_ORIGIN = "https://muonnoi.org"
